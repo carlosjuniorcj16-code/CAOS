@@ -2356,22 +2356,6 @@
       "access_pt": "Gratuito; condições e licenças variam"
     },
     {
-      "id": 148,
-      "title": "Global Research Identifier Database (GRID) archive via ROR",
-      "category": "cross",
-      "subcategory": "Research organization registry",
-      "description": "Registro aberto de identificadores para organizações de pesquisa e suas relações.",
-      "url": "https://ror.org/",
-      "type": "Research resource",
-      "access": "Gratuito; condições e licenças variam",
-      "tags": [
-        "Research organization registry"
-      ],
-      "description_pt": "Registro aberto de identificadores para organizações de pesquisa e suas relações.",
-      "subcategory_pt": "Research organization registry",
-      "access_pt": "Gratuito; condições e licenças variam"
-    },
-    {
       "id": 149,
       "title": "Open Knowledge Maps",
       "category": "cross",
@@ -2402,6 +2386,390 @@
       "description_pt": "Plataforma de divulgação pública de análises e artigos produzidos por pesquisadores e especialistas.",
       "subcategory_pt": "Research-based public communication",
       "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 151,
+      "title": "PLOS",
+      "category": "cross",
+      "subcategory": "Open access scientific publishing",
+      "description": "Editora sem fins lucrativos de periódicos científicos de acesso aberto em diversas disciplinas.",
+      "url": "https://plos.org/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças abertas variam por artigo",
+      "tags": [
+        "Open access scientific publishing"
+      ],
+      "description_pt": "Editora sem fins lucrativos de periódicos científicos de acesso aberto em diversas disciplinas.",
+      "subcategory_pt": "Open access scientific publishing",
+      "access_pt": "Gratuito; licenças abertas variam por artigo"
+    },
+    {
+      "id": 152,
+      "title": "OpenEdition",
+      "category": "cross",
+      "subcategory": "Humanities and social sciences publishing",
+      "description": "Plataforma de publicações acadêmicas em ciências humanas e sociais, incluindo livros e periódicos.",
+      "url": "https://www.openedition.org/",
+      "type": "Research resource",
+      "access": "Acesso aberto e modalidades variadas",
+      "tags": [
+        "Humanities and social sciences publishing"
+      ],
+      "description_pt": "Plataforma de publicações acadêmicas em ciências humanas e sociais, incluindo livros e periódicos.",
+      "subcategory_pt": "Humanities and social sciences publishing",
+      "access_pt": "Acesso aberto e modalidades variadas"
+    },
+    {
+      "id": 153,
+      "title": "JSTOR Open Content",
+      "category": "cross",
+      "subcategory": "Digitized scholarly collections",
+      "description": "Coleções digitais de artigos, livros e fontes primárias com conteúdos de acesso aberto.",
+      "url": "https://about.jstor.org/oa-and-free/",
+      "type": "Research resource",
+      "access": "Conteúdos gratuitos e acesso institucional",
+      "tags": [
+        "Digitized scholarly collections"
+      ],
+      "description_pt": "Coleções digitais de artigos, livros e fontes primárias com conteúdos de acesso aberto.",
+      "subcategory_pt": "Digitized scholarly collections",
+      "access_pt": "Conteúdos gratuitos e acesso institucional"
+    },
+    {
+      "id": 154,
+      "title": "HathiTrust Digital Library",
+      "category": "cross",
+      "subcategory": "Research library collections",
+      "description": "Biblioteca digital de acervos acadêmicos e patrimoniais de instituições participantes.",
+      "url": "https://www.hathitrust.org/",
+      "type": "Research resource",
+      "access": "Acesso varia conforme obra e instituição",
+      "tags": [
+        "Research library collections"
+      ],
+      "description_pt": "Biblioteca digital de acervos acadêmicos e patrimoniais de instituições participantes.",
+      "subcategory_pt": "Research library collections",
+      "access_pt": "Acesso varia conforme obra e instituição"
+    },
+    {
+      "id": 155,
+      "title": "Europeana",
+      "category": "cross",
+      "subcategory": "European cultural heritage",
+      "description": "Portal de descoberta de acervos culturais, históricos, artísticos e científicos europeus.",
+      "url": "https://www.europeana.eu/",
+      "type": "Research resource",
+      "access": "Gratuito; verificar direitos de cada item",
+      "tags": [
+        "European cultural heritage"
+      ],
+      "description_pt": "Portal de descoberta de acervos culturais, históricos, artísticos e científicos europeus.",
+      "subcategory_pt": "European cultural heritage",
+      "access_pt": "Gratuito; verificar direitos de cada item"
+    },
+    {
+      "id": 156,
+      "title": "DPLA — Digital Public Library of America",
+      "category": "cross",
+      "subcategory": "Digital cultural collections",
+      "description": "Portal de descoberta de coleções digitais de bibliotecas, arquivos e museus dos Estados Unidos.",
+      "url": "https://dp.la/",
+      "type": "Research resource",
+      "access": "Gratuito; direitos variam por item",
+      "tags": [
+        "Digital cultural collections"
+      ],
+      "description_pt": "Portal de descoberta de coleções digitais de bibliotecas, arquivos e museus dos Estados Unidos.",
+      "subcategory_pt": "Digital cultural collections",
+      "access_pt": "Gratuito; direitos variam por item"
+    },
+    {
+      "id": 157,
+      "title": "Unpaywall",
+      "category": "cross",
+      "subcategory": "Open access discovery",
+      "description": "Ferramenta para localizar versões legais de acesso aberto de artigos acadêmicos.",
+      "url": "https://unpaywall.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Open access discovery"
+      ],
+      "description_pt": "Ferramenta para localizar versões legais de acesso aberto de artigos acadêmicos.",
+      "subcategory_pt": "Open access discovery",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 158,
+      "title": "CORE Discovery",
+      "category": "cross",
+      "subcategory": "Open access research discovery",
+      "description": "Ferramentas de descoberta de artigos e trabalhos acadêmicos agregados de repositórios abertos.",
+      "url": "https://core.ac.uk/services/discovery",
+      "type": "Research resource",
+      "access": "Gratuito; serviços variam",
+      "tags": [
+        "Open access research discovery"
+      ],
+      "description_pt": "Ferramentas de descoberta de artigos e trabalhos acadêmicos agregados de repositórios abertos.",
+      "subcategory_pt": "Open access research discovery",
+      "access_pt": "Gratuito; serviços variam"
+    },
+    {
+      "id": 159,
+      "title": "Bielefeld University Library",
+      "category": "cross",
+      "subcategory": "Library and scholarly information",
+      "description": "Serviços e recursos de biblioteca universitária e informação científica da Universidade de Bielefeld.",
+      "url": "https://www.uni-bielefeld.de/ub/",
+      "type": "Research resource",
+      "access": "Acesso varia por recurso",
+      "tags": [
+        "Library and scholarly information"
+      ],
+      "description_pt": "Serviços e recursos de biblioteca universitária e informação científica da Universidade de Bielefeld.",
+      "subcategory_pt": "Library and scholarly information",
+      "access_pt": "Acesso varia por recurso"
+    },
+    {
+      "id": 160,
+      "title": "Biodiversity Heritage Library",
+      "category": "natural",
+      "subcategory": "Biodiversity literature",
+      "description": "Biblioteca digital aberta de literatura histórica sobre biodiversidade e ciências naturais.",
+      "url": "https://www.biodiversitylibrary.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Biodiversity literature"
+      ],
+      "description_pt": "Biblioteca digital aberta de literatura histórica sobre biodiversidade e ciências naturais.",
+      "subcategory_pt": "Biodiversity literature",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 161,
+      "title": "IRIS Earthquake Science",
+      "category": "natural",
+      "subcategory": "Seismology data and education",
+      "description": "Dados, ferramentas e recursos educacionais para pesquisa em sismologia.",
+      "url": "https://www.iris.edu/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Seismology data and education"
+      ],
+      "description_pt": "Dados, ferramentas e recursos educacionais para pesquisa em sismologia.",
+      "subcategory_pt": "Seismology data and education",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 162,
+      "title": "Paleobiology Database",
+      "category": "natural",
+      "subcategory": "Paleontology data",
+      "description": "Banco de dados colaborativo sobre fósseis, paleobiologia e história da vida.",
+      "url": "https://paleobiodb.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Paleontology data"
+      ],
+      "description_pt": "Banco de dados colaborativo sobre fósseis, paleobiologia e história da vida.",
+      "subcategory_pt": "Paleontology data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 163,
+      "title": "MorphoSource",
+      "category": "natural",
+      "subcategory": "3D biological specimens",
+      "description": "Repositório de dados digitais tridimensionais de espécimes biológicos e paleontológicos.",
+      "url": "https://www.morphosource.org/",
+      "type": "Research resource",
+      "access": "Acesso e licenças variam",
+      "tags": [
+        "3D biological specimens"
+      ],
+      "description_pt": "Repositório de dados digitais tridimensionais de espécimes biológicos e paleontológicos.",
+      "subcategory_pt": "3D biological specimens",
+      "access_pt": "Acesso e licenças variam"
+    },
+    {
+      "id": 164,
+      "title": "PhysioNet",
+      "category": "health",
+      "subcategory": "Physiological and clinical data",
+      "description": "Repositório de dados e ferramentas para pesquisa em fisiologia, medicina e saúde computacional.",
+      "url": "https://physionet.org/",
+      "type": "Research resource",
+      "access": "Gratuito; alguns conjuntos exigem treinamento ou credenciamento",
+      "tags": [
+        "Physiological and clinical data"
+      ],
+      "description_pt": "Repositório de dados e ferramentas para pesquisa em fisiologia, medicina e saúde computacional.",
+      "subcategory_pt": "Physiological and clinical data",
+      "access_pt": "Gratuito; alguns conjuntos exigem treinamento ou credenciamento"
+    },
+    {
+      "id": 165,
+      "title": "EMBL-EBI BioStudies",
+      "category": "health",
+      "subcategory": "Life sciences study data",
+      "description": "Repositório de estudos e dados associados em ciências da vida.",
+      "url": "https://www.ebi.ac.uk/biostudies/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Life sciences study data"
+      ],
+      "description_pt": "Repositório de estudos e dados associados em ciências da vida.",
+      "subcategory_pt": "Life sciences study data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 166,
+      "title": "Data.gov",
+      "category": "social",
+      "subcategory": "United States public data",
+      "description": "Catálogo de dados abertos publicados por órgãos do governo federal dos Estados Unidos.",
+      "url": "https://data.gov/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "United States public data"
+      ],
+      "description_pt": "Catálogo de dados abertos publicados por órgãos do governo federal dos Estados Unidos.",
+      "subcategory_pt": "United States public data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 167,
+      "title": "UNICEF Data",
+      "category": "social",
+      "subcategory": "Children and social indicators",
+      "description": "Estatísticas e indicadores internacionais sobre crianças, adolescentes e desenvolvimento.",
+      "url": "https://data.unicef.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Children and social indicators"
+      ],
+      "description_pt": "Estatísticas e indicadores internacionais sobre crianças, adolescentes e desenvolvimento.",
+      "subcategory_pt": "Children and social indicators",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 168,
+      "title": "FAOSTAT",
+      "category": "social",
+      "subcategory": "Food and agriculture statistics",
+      "description": "Base estatística internacional sobre alimentação, agricultura, pesca, florestas e recursos naturais.",
+      "url": "https://www.fao.org/faostat/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Food and agriculture statistics"
+      ],
+      "description_pt": "Base estatística internacional sobre alimentação, agricultura, pesca, florestas e recursos naturais.",
+      "subcategory_pt": "Food and agriculture statistics",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 169,
+      "title": "UNHCR Refugee Data Finder",
+      "category": "social",
+      "subcategory": "Displacement and refugee statistics",
+      "description": "Dados e estatísticas do ACNUR sobre deslocamento forçado, refugiados e apatridia.",
+      "url": "https://www.unhcr.org/refugee-statistics/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Displacement and refugee statistics"
+      ],
+      "description_pt": "Dados e estatísticas do ACNUR sobre deslocamento forçado, refugiados e apatridia.",
+      "subcategory_pt": "Displacement and refugee statistics",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 170,
+      "title": "QGIS",
+      "category": "engineering",
+      "subcategory": "Geospatial analysis software",
+      "description": "Sistema de informação geográfica livre e de código aberto para análise e cartografia.",
+      "url": "https://qgis.org/",
+      "type": "Research resource",
+      "access": "Gratuito e código aberto",
+      "tags": [
+        "Geospatial analysis software"
+      ],
+      "description_pt": "Sistema de informação geográfica livre e de código aberto para análise e cartografia.",
+      "subcategory_pt": "Geospatial analysis software",
+      "access_pt": "Gratuito e código aberto"
+    },
+    {
+      "id": 171,
+      "title": "OpenAerialMap",
+      "category": "engineering",
+      "subcategory": "Open aerial imagery",
+      "description": "Catálogo aberto de imagens aéreas e de satélite para uso humanitário e geoespacial.",
+      "url": "https://openaerialmap.org/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças variam",
+      "tags": [
+        "Open aerial imagery"
+      ],
+      "description_pt": "Catálogo aberto de imagens aéreas e de satélite para uso humanitário e geoespacial.",
+      "subcategory_pt": "Open aerial imagery",
+      "access_pt": "Gratuito; licenças variam"
+    },
+    {
+      "id": 172,
+      "title": "NASA Software Catalog",
+      "category": "engineering",
+      "subcategory": "Scientific software",
+      "description": "Catálogo de softwares e ferramentas desenvolvidos pela NASA para ciência e engenharia.",
+      "url": "https://software.nasa.gov/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças variam",
+      "tags": [
+        "Scientific software"
+      ],
+      "description_pt": "Catálogo de softwares e ferramentas desenvolvidos pela NASA para ciência e engenharia.",
+      "subcategory_pt": "Scientific software",
+      "access_pt": "Gratuito; licenças variam"
+    },
+    {
+      "id": 173,
+      "title": "Materials Cloud",
+      "category": "engineering",
+      "subcategory": "Materials science data",
+      "description": "Plataforma aberta para compartilhar dados, ferramentas e fluxos de trabalho em ciência dos materiais.",
+      "url": "https://www.materialscloud.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Materials science data"
+      ],
+      "description_pt": "Plataforma aberta para compartilhar dados, ferramentas e fluxos de trabalho em ciência dos materiais.",
+      "subcategory_pt": "Materials science data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 174,
+      "title": "NREL Data Catalog",
+      "category": "engineering",
+      "subcategory": "Renewable energy data",
+      "description": "Conjuntos de dados e ferramentas do laboratório norte-americano de energia renovável.",
+      "url": "https://data.nrel.gov/",
+      "type": "Research resource",
+      "access": "Gratuito; condições variam",
+      "tags": [
+        "Renewable energy data"
+      ],
+      "description_pt": "Conjuntos de dados e ferramentas do laboratório norte-americano de energia renovável.",
+      "subcategory_pt": "Renewable energy data",
+      "access_pt": "Gratuito; condições variam"
     }
   ]
 }
