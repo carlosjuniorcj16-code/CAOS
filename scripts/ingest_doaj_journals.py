@@ -169,6 +169,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--page-size", type=int, default=100)
     parser.add_argument("--max-pages", type=int, default=1)
+    parser.add_argument("--state-file", type=Path, default=ROOT / "data" / "discovery_state.json")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if not 1 <= args.limit <= 1000 or not 1 <= args.page_size <= 100 or not 1 <= args.max_pages <= 10:
@@ -183,8 +184,11 @@ def main() -> None:
     known_domains = {domain_key(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
     next_id = max((int(x.get("id", 0)) for x in resources if isinstance(x, dict) and str(x.get("id", "")).isdigit()), default=0) + 1
 
+    state = json.loads(args.state_file.read_text(encoding="utf-8")) if args.state_file.exists() else {}
+    start_page = max(1, int(state.get("doaj_next_page", 1)))
     additions, scanned, pages, rejected = [], 0, 0, 0
-    for page in range(1, args.max_pages + 1):
+    next_page = start_page
+    for page in range(start_page, start_page + args.max_pages):
         payload = request_page(page, args.page_size)
         pages += 1
         results = payload.get("results") or payload.get("records") or []
@@ -203,7 +207,15 @@ def main() -> None:
             known_domains.add(domain)
             if len(additions) >= args.limit:
                 break
+        total = payload.get("total")
+        if isinstance(total, int) and total > 0:
+            total_pages = (total + args.page_size - 1) // args.page_size
+            next_page = page + 1 if page < total_pages else 1
+        else:
+            next_page = page + 1 if len(results) >= args.page_size else 1
         if len(additions) >= args.limit or not results:
+            if not results:
+                next_page = 1
             break
         time.sleep(0.6)  # Stay below the public service's documented request rate.
 
@@ -211,6 +223,7 @@ def main() -> None:
         "provider": "DOAJ journal metadata API",
         "metadata_license": "CC0 1.0",
         "pages_read": pages,
+        "next_page": next_page,
         "records_scanned": scanned,
         "new_journal_sites": len(additions),
         "skipped_or_invalid": rejected,
@@ -219,11 +232,15 @@ def main() -> None:
         "sample": [{"title": x["title"], "url": x["url"], "topic": x["topic"], "country": x.get("country", "")} for x in additions[:15]],
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
-    if args.dry_run or not additions:
+    if args.dry_run:
         return
-    resources.extend(additions)
-    catalog["resources"] = resources
-    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    state["doaj_next_page"] = next_page
+    args.state_file.parent.mkdir(parents=True, exist_ok=True)
+    args.state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if additions:
+        resources.extend(additions)
+        catalog["resources"] = resources
+        args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 if __name__ == "__main__":
     try:
