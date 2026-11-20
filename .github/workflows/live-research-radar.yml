@@ -46,7 +46,7 @@ jobs:
       - name: Create or update reviewable research PR
         uses: peter-evans/create-pull-request@v6
         with:
-          token: \${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: refresh research radar and reading suggestions"
           title: "chore: refresh research radar and reading suggestions"
           body: |
