@@ -55,7 +55,7 @@ jobs:
             Sources: arXiv, Europe PMC, PubMed E-utilities and Crossref public scholarly metadata APIs.
             Includes the compact research radar and up to five recent reading suggestions across eight subject areas.
             Only generated JSON feeds are changed. No full-text articles or PDFs are copied.
-            Review source links and metadata before merging.
+            Eligible for automatic squash merge only after catalog validation and the Pages build succeed. Failed checks or additional branch-protection requirements keep the PR open.
           branch: automation/research-radar
           delete-branch: true
           add-paths: |
