@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
+AI_CATALOG = ROOT / "data" / "ai_sources.json"
 HTML = ROOT / "index.html"
 ALLOWED = {"natural", "formal", "social", "health", "engineering", "cross"}
 REQUIRED = {"id", "title", "category", "url", "type", "access", "tags"}
@@ -73,6 +74,46 @@ for i, item in enumerate(data, 1):
     for language, fields in translations.items():
         if language not in LANGUAGES or not isinstance(fields, dict):
             fail(f"Pacote de tradução inválido no registro {i}: {language}")
+try:
+    ai_data = json.loads(AI_CATALOG.read_text(encoding="utf-8"))
+    ai_records = ai_data.get("records") if isinstance(ai_data, dict) else None
+except Exception as exc:
+    fail(f"JSON inválido em data/ai_sources.json: {exc}")
+
+if not isinstance(ai_records, list) or not ai_records:
+    fail("O catálogo de dados para IA precisa conter uma lista não vazia em records.")
+
+AI_AREAS = {"web", "text", "hub", "knowledge", "scientific", "biomedical", "code", "image", "multimodal", "audio", "geospatial", "evaluation"}
+AI_REQUIRED = {"id", "name", "area", "kind", "formats", "languages", "volume", "license", "access", "update", "uses", "description_pt", "description_en", "caveat", "url", "docs"}
+ai_ids = set()
+ai_urls = set()
+for i, item in enumerate(ai_records, 1):
+    if not isinstance(item, dict):
+        fail(f"Registro de IA {i} não é um objeto.")
+    missing = AI_REQUIRED - item.keys()
+    if missing:
+        fail(f"Registro de IA {i} sem campos: {', '.join(sorted(missing))}")
+    ident = str(item["id"]).strip()
+    if not ident or ident in ai_ids:
+        fail(f"ID de dataset vazio ou duplicado: {ident}")
+    ai_ids.add(ident)
+    if item["area"] not in AI_AREAS:
+        fail(f"Área inválida no registro de IA {i}: {item['area']}")
+    for field in ("formats", "languages", "uses"):
+        if not isinstance(item[field], list) or not item[field] or not all(isinstance(v, str) and v.strip() for v in item[field]):
+            fail(f"Campo {field} inválido no registro de IA {i}.")
+    for field in ("name", "kind", "volume", "license", "access", "update", "description_pt", "description_en", "caveat"):
+        if not isinstance(item[field], str) or not item[field].strip():
+            fail(f"Campo {field} vazio no registro de IA {i}.")
+    for field in ("url", "docs"):
+        parsed = urlparse(str(item[field]))
+        if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+            fail(f"URL {field} inválida no registro de IA {i}: {item[field]}")
+    normalized = item["url"].strip().rstrip("/").lower()
+    if normalized in ai_urls:
+        fail(f"URL duplicada no catálogo de IA: {item['url']}")
+    ai_urls.add(normalized)
+
 translated = {lang: sum(bool(x.get("translations", {}).get(lang, {}).get("description")) for x in data) for lang in sorted(LANGUAGES)}
-print(f"OK: {len(data)} registros; IDs, categorias, campos e URLs estruturais válidos.")
+print(f"OK: {len(data)} registros principais e {len(ai_records)} fontes de IA; IDs, categorias, campos e URLs estruturais válidos.")
 print("Cobertura de descrições traduzidas: " + json.dumps(translated, ensure_ascii=False))
