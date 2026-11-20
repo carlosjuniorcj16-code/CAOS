@@ -114,7 +114,7 @@ def main() -> None:
                 "type_pt": "Instituição de pesquisa",
                 "access": "See official website",
                 "access_pt": "Consulte o site oficial",
-                "tags": [kind, country, "OpenAlex institution"],
+                "tags": [tag for tag in (kind, country, "OpenAlex institution") if tag],
                 "topic": topic,
                 "topic_pt": topic_pt,
                 "topic_en": topic_en,
