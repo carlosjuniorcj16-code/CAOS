@@ -20722,6 +20722,546 @@
       "topic_pt": "Recursos hídricos e saneamento",
       "topic_en": "Water resources & sanitation",
       "topic_group": "nature"
+    },
+    {
+      "id": 998,
+      "title": "UNODC",
+      "category": "cross",
+      "subcategory": "Criminologia e justiça criminal",
+      "description": "UN research, data and programmes on drugs and crime.",
+      "url": "https://www.unodc.org/",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Criminologia e justiça criminal"
+      ],
+      "description_pt": "Dados, pesquisas e programas das Nações Unidas sobre drogas e crime.",
+      "subcategory_pt": "Criminologia e justiça criminal",
+      "access_pt": "Gratuito",
+      "topic": "criminal-justice",
+      "topic_pt": "Criminologia e justiça criminal",
+      "topic_en": "Criminology & criminal justice",
+      "topic_group": "society"
+    },
+    {
+      "id": 999,
+      "title": "National Institute of Justice",
+      "category": "cross",
+      "subcategory": "Criminologia e justiça criminal",
+      "description": "Research and evidence on criminal justice and public safety.",
+      "url": "https://nij.ojp.gov/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Criminologia e justiça criminal"
+      ],
+      "description_pt": "Pesquisas e evidências sobre justiça criminal e segurança pública.",
+      "subcategory_pt": "Criminologia e justiça criminal",
+      "access_pt": "Gratuito",
+      "topic": "criminal-justice",
+      "topic_pt": "Criminologia e justiça criminal",
+      "topic_en": "Criminology & criminal justice",
+      "topic_group": "society"
+    },
+    {
+      "id": 1000,
+      "title": "World Prison Brief",
+      "category": "cross",
+      "subcategory": "Criminologia e justiça criminal",
+      "description": "International database on prison systems.",
+      "url": "https://www.prisonstudies.org/world-prison-brief-data",
+      "type": "Dataset",
+      "access": "Free",
+      "tags": [
+        "Criminologia e justiça criminal"
+      ],
+      "description_pt": "Base internacional de dados sobre sistemas prisionais.",
+      "subcategory_pt": "Criminologia e justiça criminal",
+      "access_pt": "Gratuito",
+      "topic": "criminal-justice",
+      "topic_pt": "Criminologia e justiça criminal",
+      "topic_en": "Criminology & criminal justice",
+      "topic_group": "society"
+    },
+    {
+      "id": 1001,
+      "title": "Fórum Brasileiro de Segurança Pública",
+      "category": "cross",
+      "subcategory": "Criminologia e justiça criminal",
+      "description": "Studies and annual reports on public safety and violence in Brazil.",
+      "url": "https://forumseguranca.org.br/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Criminologia e justiça criminal"
+      ],
+      "description_pt": "Estudos e anuários sobre segurança pública e violência no Brasil.",
+      "subcategory_pt": "Criminologia e justiça criminal",
+      "access_pt": "Gratuito",
+      "topic": "criminal-justice",
+      "topic_pt": "Criminologia e justiça criminal",
+      "topic_en": "Criminology & criminal justice",
+      "topic_group": "society"
+    },
+    {
+      "id": 1002,
+      "title": "CENAD",
+      "category": "cross",
+      "subcategory": "Desastres, riscos e proteção civil",
+      "description": "Brazilian information on civil protection and disaster response.",
+      "url": "https://www.gov.br/mdr/pt-br/assuntos/protecao-e-defesa-civil",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Desastres, riscos e proteção civil"
+      ],
+      "description_pt": "Informações brasileiras sobre proteção e defesa civil.",
+      "subcategory_pt": "Desastres, riscos e proteção civil",
+      "access_pt": "Gratuito",
+      "topic": "disaster-risk",
+      "topic_pt": "Desastres, riscos e proteção civil",
+      "topic_en": "Disasters, risk & civil protection",
+      "topic_group": "society"
+    },
+    {
+      "id": 1003,
+      "title": "FAO",
+      "category": "cross",
+      "subcategory": "Ciência dos alimentos e nutrição",
+      "description": "Data, research and publications on food and agriculture.",
+      "url": "https://www.fao.org/",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Ciência dos alimentos e nutrição"
+      ],
+      "description_pt": "Dados, pesquisas e publicações sobre alimentação e agricultura.",
+      "subcategory_pt": "Ciência dos alimentos e nutrição",
+      "access_pt": "Gratuito",
+      "topic": "food-science",
+      "topic_pt": "Ciência dos alimentos e nutrição",
+      "topic_en": "Food science & nutrition",
+      "topic_group": "nature"
+    },
+    {
+      "id": 1004,
+      "title": "ANVISA — Alimentos",
+      "category": "cross",
+      "subcategory": "Ciência dos alimentos e nutrição",
+      "description": "Brazilian food regulation, standards and information.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Ciência dos alimentos e nutrição"
+      ],
+      "description_pt": "Regulação, normas e informações sobre alimentos no Brasil.",
+      "subcategory_pt": "Ciência dos alimentos e nutrição",
+      "access_pt": "Gratuito",
+      "topic": "food-science",
+      "topic_pt": "Ciência dos alimentos e nutrição",
+      "topic_en": "Food science & nutrition",
+      "topic_group": "nature"
+    },
+    {
+      "id": 1005,
+      "title": "Institute of Food Technologists",
+      "category": "cross",
+      "subcategory": "Ciência dos alimentos e nutrição",
+      "description": "Scientific and professional resources in food science and technology.",
+      "url": "https://www.ift.org/",
+      "type": "Association",
+      "access": "Free",
+      "tags": [
+        "Ciência dos alimentos e nutrição"
+      ],
+      "description_pt": "Recursos científicos e profissionais de ciência e tecnologia de alimentos.",
+      "subcategory_pt": "Ciência dos alimentos e nutrição",
+      "access_pt": "Gratuito",
+      "topic": "food-science",
+      "topic_pt": "Ciência dos alimentos e nutrição",
+      "topic_en": "Food science & nutrition",
+      "topic_group": "nature"
+    },
+    {
+      "id": 1006,
+      "title": "Fashion Institute of Technology — Museum",
+      "category": "cross",
+      "subcategory": "Moda, têxteis e vestuário",
+      "description": "Collections and research on fashion and dress history.",
+      "url": "https://fashionmuseum.fitnyc.edu/",
+      "type": "Museum",
+      "access": "Free",
+      "tags": [
+        "Moda, têxteis e vestuário"
+      ],
+      "description_pt": "Coleções e pesquisa sobre história da moda e do vestuário.",
+      "subcategory_pt": "Moda, têxteis e vestuário",
+      "access_pt": "Gratuito",
+      "topic": "fashion",
+      "topic_pt": "Moda, têxteis e vestuário",
+      "topic_en": "Fashion, textiles & clothing",
+      "topic_group": "culture"
+    },
+    {
+      "id": 1007,
+      "title": "Victoria and Albert Museum — Fashion",
+      "category": "cross",
+      "subcategory": "Moda, têxteis e vestuário",
+      "description": "Collection and research on fashion, textiles and dress.",
+      "url": "https://www.vam.ac.uk/collections/fashion",
+      "type": "Museum",
+      "access": "Free",
+      "tags": [
+        "Moda, têxteis e vestuário"
+      ],
+      "description_pt": "Acervo e pesquisa de moda, tecidos e vestuário.",
+      "subcategory_pt": "Moda, têxteis e vestuário",
+      "access_pt": "Gratuito",
+      "topic": "fashion",
+      "topic_pt": "Moda, têxteis e vestuário",
+      "topic_en": "Fashion, textiles & clothing",
+      "topic_group": "culture"
+    },
+    {
+      "id": 1008,
+      "title": "Textile Research Centre",
+      "category": "cross",
+      "subcategory": "Moda, têxteis e vestuário",
+      "description": "Research and collections on textile history and culture.",
+      "url": "https://www.trc-leiden.nl/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Moda, têxteis e vestuário"
+      ],
+      "description_pt": "Pesquisa e coleções sobre história e cultura têxtil.",
+      "subcategory_pt": "Moda, têxteis e vestuário",
+      "access_pt": "Gratuito",
+      "topic": "fashion",
+      "topic_pt": "Moda, têxteis e vestuário",
+      "topic_en": "Fashion, textiles & clothing",
+      "topic_group": "culture"
+    },
+    {
+      "id": 1009,
+      "title": "The Costume Society",
+      "category": "cross",
+      "subcategory": "Moda, têxteis e vestuário",
+      "description": "Academic society dedicated to the study of dress and fashion.",
+      "url": "https://costumesociety.org.uk/",
+      "type": "Association",
+      "access": "Free",
+      "tags": [
+        "Moda, têxteis e vestuário"
+      ],
+      "description_pt": "Sociedade acadêmica dedicada ao estudo de vestuário e moda.",
+      "subcategory_pt": "Moda, têxteis e vestuário",
+      "access_pt": "Gratuito",
+      "topic": "fashion",
+      "topic_pt": "Moda, têxteis e vestuário",
+      "topic_en": "Fashion, textiles & clothing",
+      "topic_group": "culture"
+    },
+    {
+      "id": 1010,
+      "title": "International Organization for Migration",
+      "category": "cross",
+      "subcategory": "Migração, refúgio e diásporas",
+      "description": "International organization dedicated to migration and human mobility.",
+      "url": "https://www.iom.int/",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Migração, refúgio e diásporas"
+      ],
+      "description_pt": "Organização internacional dedicada à migração e mobilidade humana.",
+      "subcategory_pt": "Migração, refúgio e diásporas",
+      "access_pt": "Gratuito",
+      "topic": "migration",
+      "topic_pt": "Migração, refúgio e diásporas",
+      "topic_en": "Migration, refugees & diasporas",
+      "topic_group": "society"
+    },
+    {
+      "id": 1011,
+      "title": "Migration Policy Institute",
+      "category": "cross",
+      "subcategory": "Migração, refúgio e diásporas",
+      "description": "Analysis and data on migration policy.",
+      "url": "https://www.migrationpolicy.org/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Migração, refúgio e diásporas"
+      ],
+      "description_pt": "Análises e dados sobre políticas migratórias.",
+      "subcategory_pt": "Migração, refúgio e diásporas",
+      "access_pt": "Gratuito",
+      "topic": "migration",
+      "topic_pt": "Migração, refúgio e diásporas",
+      "topic_en": "Migration, refugees & diasporas",
+      "topic_group": "society"
+    },
+    {
+      "id": 1012,
+      "title": "Observatório das Migrações Internacionais",
+      "category": "cross",
+      "subcategory": "Migração, refúgio e diásporas",
+      "description": "Data and studies on international migration in Brazil.",
+      "url": "https://portaldeimigracao.mj.gov.br/pt/observatorio",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Migração, refúgio e diásporas"
+      ],
+      "description_pt": "Dados e estudos sobre migrações internacionais no Brasil.",
+      "subcategory_pt": "Migração, refúgio e diásporas",
+      "access_pt": "Gratuito",
+      "topic": "migration",
+      "topic_pt": "Migração, refúgio e diásporas",
+      "topic_en": "Migration, refugees & diasporas",
+      "topic_group": "society"
+    },
+    {
+      "id": 1013,
+      "title": "GitLab",
+      "category": "cross",
+      "subcategory": "Software livre e código aberto",
+      "description": "Collaborative development platform and Git repositories.",
+      "url": "https://about.gitlab.com/",
+      "type": "Platform",
+      "access": "Free",
+      "tags": [
+        "Software livre e código aberto"
+      ],
+      "description_pt": "Plataforma de desenvolvimento colaborativo e repositórios Git.",
+      "subcategory_pt": "Software livre e código aberto",
+      "access_pt": "Gratuito",
+      "topic": "opensource",
+      "topic_pt": "Software livre e código aberto",
+      "topic_en": "Free & open-source software",
+      "topic_group": "technology"
+    },
+    {
+      "id": 1014,
+      "title": "Codeberg",
+      "category": "cross",
+      "subcategory": "Software livre e código aberto",
+      "description": "Community service for hosting free-software projects.",
+      "url": "https://codeberg.org/",
+      "type": "Platform",
+      "access": "Free",
+      "tags": [
+        "Software livre e código aberto"
+      ],
+      "description_pt": "Serviço comunitário de hospedagem de projetos de software livre.",
+      "subcategory_pt": "Software livre e código aberto",
+      "access_pt": "Gratuito",
+      "topic": "opensource",
+      "topic_pt": "Software livre e código aberto",
+      "topic_en": "Free & open-source software",
+      "topic_group": "technology"
+    },
+    {
+      "id": 1015,
+      "title": "Stockholm International Peace Research Institute",
+      "category": "cross",
+      "subcategory": "Paz, conflitos e segurança internacional",
+      "description": "Data and research on conflict, arms and international security.",
+      "url": "https://www.sipri.org/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Paz, conflitos e segurança internacional"
+      ],
+      "description_pt": "Dados e pesquisas sobre conflitos, armamentos e segurança internacional.",
+      "subcategory_pt": "Paz, conflitos e segurança internacional",
+      "access_pt": "Gratuito",
+      "topic": "peace",
+      "topic_pt": "Paz, conflitos e segurança internacional",
+      "topic_en": "Peace, conflict & international security",
+      "topic_group": "society"
+    },
+    {
+      "id": 1016,
+      "title": "International Crisis Group",
+      "category": "cross",
+      "subcategory": "Paz, conflitos e segurança internacional",
+      "description": "Analysis and recommendations on conflict prevention and resolution.",
+      "url": "https://www.crisisgroup.org/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Paz, conflitos e segurança internacional"
+      ],
+      "description_pt": "Análises e recomendações sobre prevenção e resolução de conflitos.",
+      "subcategory_pt": "Paz, conflitos e segurança internacional",
+      "access_pt": "Gratuito",
+      "topic": "peace",
+      "topic_pt": "Paz, conflitos e segurança internacional",
+      "topic_en": "Peace, conflict & international security",
+      "topic_group": "society"
+    },
+    {
+      "id": 1017,
+      "title": "Peace Research Institute Oslo",
+      "category": "cross",
+      "subcategory": "Paz, conflitos e segurança internacional",
+      "description": "Research institute on peace, conflict and international relations.",
+      "url": "https://www.prio.org/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Paz, conflitos e segurança internacional"
+      ],
+      "description_pt": "Instituto de pesquisa sobre paz, conflitos e relações internacionais.",
+      "subcategory_pt": "Paz, conflitos e segurança internacional",
+      "access_pt": "Gratuito",
+      "topic": "peace",
+      "topic_pt": "Paz, conflitos e segurança internacional",
+      "topic_en": "Peace, conflict & international security",
+      "topic_group": "society"
+    },
+    {
+      "id": 1018,
+      "title": "Science Media Centre",
+      "category": "cross",
+      "subcategory": "Comunicação pública da ciência",
+      "description": "Connects journalists with experts and scientific evidence.",
+      "url": "https://www.sciencemediacentre.org/",
+      "type": "Organization",
+      "access": "Free",
+      "tags": [
+        "Comunicação pública da ciência"
+      ],
+      "description_pt": "Conecta jornalistas a especialistas e evidências científicas.",
+      "subcategory_pt": "Comunicação pública da ciência",
+      "access_pt": "Gratuito",
+      "topic": "science-communication",
+      "topic_pt": "Comunicação pública da ciência",
+      "topic_en": "Public communication of science",
+      "topic_group": "research"
+    },
+    {
+      "id": 1019,
+      "title": "SciDev.Net",
+      "category": "cross",
+      "subcategory": "Comunicação pública da ciência",
+      "description": "Journalism on science, technology and development.",
+      "url": "https://www.scidev.net/",
+      "type": "Publication",
+      "access": "Free",
+      "tags": [
+        "Comunicação pública da ciência"
+      ],
+      "description_pt": "Jornalismo sobre ciência, tecnologia e desenvolvimento.",
+      "subcategory_pt": "Comunicação pública da ciência",
+      "access_pt": "Gratuito",
+      "topic": "science-communication",
+      "topic_pt": "Comunicação pública da ciência",
+      "topic_en": "Public communication of science",
+      "topic_group": "research"
+    },
+    {
+      "id": 1020,
+      "title": "Agência Bori",
+      "category": "cross",
+      "subcategory": "Comunicação pública da ciência",
+      "description": "Connects scientific research and journalism in Brazil.",
+      "url": "https://abori.com.br/",
+      "type": "Organization",
+      "access": "Free",
+      "tags": [
+        "Comunicação pública da ciência"
+      ],
+      "description_pt": "Divulgação e conexão entre pesquisas científicas e jornalismo no Brasil.",
+      "subcategory_pt": "Comunicação pública da ciência",
+      "access_pt": "Gratuito",
+      "topic": "science-communication",
+      "topic_pt": "Comunicação pública da ciência",
+      "topic_en": "Public communication of science",
+      "topic_group": "research"
+    },
+    {
+      "id": 1021,
+      "title": "INEP",
+      "category": "cross",
+      "subcategory": "Pesquisa em educação e políticas educacionais",
+      "description": "Statistics, assessments and studies on Brazilian education.",
+      "url": "https://www.gov.br/inep/pt-br",
+      "type": "Institution",
+      "access": "Free",
+      "tags": [
+        "Pesquisa em educação e políticas educacionais"
+      ],
+      "description_pt": "Estatísticas, avaliações e estudos sobre educação brasileira.",
+      "subcategory_pt": "Pesquisa em educação e políticas educacionais",
+      "access_pt": "Gratuito",
+      "topic": "education-research",
+      "topic_pt": "Pesquisa em educação e políticas educacionais",
+      "topic_en": "Education research & policy",
+      "topic_group": "research"
+    },
+    {
+      "id": 1022,
+      "title": "Education Endowment Foundation",
+      "category": "cross",
+      "subcategory": "Pesquisa em educação e políticas educacionais",
+      "description": "Evidence summaries on educational practices and policies.",
+      "url": "https://educationendowmentfoundation.org.uk/",
+      "type": "Research",
+      "access": "Free",
+      "tags": [
+        "Pesquisa em educação e políticas educacionais"
+      ],
+      "description_pt": "Sínteses de evidências sobre práticas e políticas educacionais.",
+      "subcategory_pt": "Pesquisa em educação e políticas educacionais",
+      "access_pt": "Gratuito",
+      "topic": "education-research",
+      "topic_pt": "Pesquisa em educação e políticas educacionais",
+      "topic_en": "Education research & policy",
+      "topic_group": "research"
+    },
+    {
+      "id": 1023,
+      "title": "NIST Materials Data",
+      "category": "cross",
+      "subcategory": "Ciência dos materiais",
+      "description": "NIST reference data and resources on materials.",
+      "url": "https://www.nist.gov/materials-data",
+      "type": "Dataset",
+      "access": "Free",
+      "tags": [
+        "Ciência dos materiais"
+      ],
+      "description_pt": "Dados e recursos de referência sobre materiais do NIST.",
+      "subcategory_pt": "Ciência dos materiais",
+      "access_pt": "Gratuito",
+      "topic": "materials",
+      "topic_pt": "Ciência dos materiais",
+      "topic_en": "Materials science",
+      "topic_group": "nature"
+    },
+    {
+      "id": 1024,
+      "title": "ASM International",
+      "category": "cross",
+      "subcategory": "Ciência dos materiais",
+      "description": "Technical society and resources on materials and metallurgy.",
+      "url": "https://www.asminternational.org/",
+      "type": "Association",
+      "access": "Free",
+      "tags": [
+        "Ciência dos materiais"
+      ],
+      "description_pt": "Sociedade técnica e recursos sobre materiais e metalurgia.",
+      "subcategory_pt": "Ciência dos materiais",
+      "access_pt": "Gratuito",
+      "topic": "materials",
+      "topic_pt": "Ciência dos materiais",
+      "topic_en": "Materials science",
+      "topic_group": "nature"
     }
   ],
   "version": "1.6.0",
