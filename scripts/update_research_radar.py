@@ -81,6 +81,8 @@ def main():
                 selected.append(item)
             if len(selected) == 5:
                 break
+    if not selected:
+        raise SystemExit("No records returned by arXiv; preserving the previous radar feed.")
     payload = {
         "schema_version": 1,
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
