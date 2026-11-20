@@ -67,3 +67,12 @@ Cada registro em `data/ai_sources.json` documenta área, tipo, formatos, idiomas
 - Mozilla Common Voice — https://commonvoice.mozilla.org/terms/en.html
 
 As descrições de licença no catálogo são resumos de orientação, não pareceres jurídicos. Confirme a licença da versão, dos arquivos e dos materiais de origem antes de baixar, redistribuir ou usar em treinamento.
+
+
+## Atlas de sistemas operacionais e software open source
+
+A página **Atlas de Software Livre** ([software.html](./software.html)) reúne uma curadoria inicial de 177 recursos em nove ecossistemas: distribuições GNU/Linux; BSD e illumos; sistemas alternativos e de pesquisa; plataformas móveis; sistemas embarcados e RTOS; ambientes gráficos e distribuição de aplicações; forjas, fundações e registries; segurança da cadeia de software; linguagens, toolchains, frameworks, bancos de dados e infraestrutura de aplicações.
+
+Os links priorizam páginas oficiais de projetos, documentação, repositórios e índices de pacotes. A presença no atlas não é endosso, certificação de segurança, garantia de manutenção ou confirmação de que todos os componentes são livres. Projetos experimentais são identificados como tais; firmware, drivers, serviços, licenças mistas e dependências precisam de verificação própria.
+
+O arquivo data/open-source-software.json contém as sementes de descoberta e um esquema versionado de metadados para enriquecimento futuro: identificadores, URL canônica, plataformas, arquiteturas, versões, licenças SPDX e escopo, componentes proprietários, dependências, governança, mantenedores, SBOM, vulnerabilidades, proveniência de build, assinatura, atualizações seguras e evidências datadas. As entradas iniciais não têm todos esses campos preenchidos; ausência significa desconhecido, não que o recurso não possua a característica.
