@@ -1,52 +1,42 @@
 # Curadoria de fontes
 
-O catálogo reúne **575 fontes e recursos**, brasileiros e internacionais, distribuídos em cinco áreas científicas e uma categoria transversal multidisciplinar. É um diretório em expansão, não uma lista completa da internet nem um ranking.
+O catálogo reúne **893 fontes e recursos** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
-## Distribuição atual
+## Escopo
 
-| Categoria | Recursos |
-|---|---:|
-| Ciências naturais | 134 |
-| Ciências formais | 35 |
-| Ciências sociais | 131 |
-| Ciências da saúde e médicas | 49 |
-| Engenharia e ciências aplicadas | 69 |
-| Multidisciplinares | 157 |
-| **Total** | **575** |
+O diretório abrange, entre outros, ciência, tecnologia, educação, artes, cultura, literatura, história, direito, governo, saúde, meio ambiente, geografia, economia, estatística, linguística, arquivos, bibliotecas, museus, dados e ferramentas de referência.
 
-## Escopo e neutralidade
+A coleção combina fontes primárias, instituições públicas, bibliotecas, arquivos, repositórios, periódicos, índices, bases estatísticas, conjuntos de dados, coleções culturais, ferramentas de pesquisa e portais institucionais.
 
-A CAOS é um diretório de links para fontes de conhecimento e informação. Sua função é facilitar a descoberta de recursos originais, não controlar, certificar ou endossar as instituições e conteúdos indicados. A curadoria procura ser pública, plural, internacional, científica e neutra em relação a posições políticas, econômicas, religiosas ou tecnológicas.
+## Critérios de inclusão
 
-O catálogo combina bibliotecas, arquivos, repositórios, periódicos, índices bibliográficos, bases estatísticas, conjuntos de dados, coleções culturais, ferramentas de pesquisa e portais institucionais. As condições de acesso variam: há recursos gratuitos, coleções de acesso misto, serviços com cadastro e conteúdos sujeitos a assinatura.
+- Priorizar páginas oficiais, fontes primárias, instituições públicas, bibliotecas, arquivos e repositórios reconhecidos.
+- Buscar diversidade geográfica, cultural e linguística.
+- Descrever a função de cada recurso de forma factual e compreensível.
+- Informar quando o acesso pode exigir cadastro, vínculo institucional ou pagamento.
+- Evitar duplicatas e preferir a página oficial ou mais útil do serviço.
+- Conferir o endereço e a relevância do recurso antes de incluí-lo.
+- Diferenciar periódicos revisados por pares, preprints, bases de dados, documentos e materiais educativos.
+- Respeitar direitos autorais, licenças, privacidade e condições de reutilização.
+- A inclusão não representa endosso institucional nem garantia de qualidade de cada conteúdo externo.
 
-## Referências para a curadoria
+## Categorias
 
-- IBICT — Repositórios e Ciência Aberta: https://www.gov.br/ibict/pt-br/atuacao/pesquisa-servicos-e-iniciativas/repositorios-e-ciencia-aberta
-- IBICT — Repositórios Brasileiros: https://www.gov.br/ibict/pt-br/site-ibict-2025/assuntos/tecnologias-para-a-informacao/copy_of_repositorios-digitais/repositorios-brasileiros
-- UNESCO — Open Science: https://www.unesco.org/en/open-science
-- European Commission — Open Science and Open Access: https://ec.europa.eu/libraries/pages/openaccessresources/en/
-- University of Florida Libraries — Open Access Repositories: https://guides.uflib.ufl.edu/oar/repositories
-- University of Chicago Library — Open Access Repositories: https://guides.lib.uchicago.edu/openaccess/oa-repositories
-- MIT Libraries — Social Science Data: https://libguides.mit.edu/socscidata/general
-- NASA Science Data Portal: https://science.data.nasa.gov/
-- U.S. Geological Survey — Digital Repositories: https://www.usgs.gov/office-of-science-quality-and-integrity/acceptable-digital-repositories-usgs-scientific-data
-
-## Critérios e ressalvas
-
-- Priorizar fontes primárias, instituições científicas, infraestruturas públicas, repositórios reconhecidos, bases bibliográficas, dados de pesquisa e ferramentas relevantes.
-- Buscar diversidade geográfica e linguística, sem limitar a seleção a instituições dos Estados Unidos e da Europa.
-- Verificar a relevância, a procedência e o endereço oficial sempre que possível.
-- Uma página de busca gratuita não significa que todos os documentos estejam disponíveis gratuitamente.
-- Repositórios de preprints podem conter manuscritos que ainda não passaram por revisão por pares.
-- O acesso pode exigir cadastro, vínculo institucional ou pagamento; essas condições podem mudar.
-- A reutilização de dados, imagens e softwares depende da licença e dos termos de cada item.
-- A inclusão não representa endosso institucional nem garantia de qualidade de cada documento hospedado.
-- Os links são externos; a CAOS não hospeda nem controla o conteúdo de terceiros.
-- Duplicatas devem ser evitadas; quando duas entradas apontam para o mesmo serviço, deve-se preferir a página mais específica ou oficial.
+As categorias atuais são agrupamentos de navegação. Elas podem ser ampliadas, reorganizadas ou complementadas à medida que o catálogo cresce. Recursos que atravessam diferentes campos podem ser classificados como multidisciplinares e encontrados por busca e palavras-chave.
 
 ## Idiomas
 
-A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. As descrições dos registros são mantidas em português e, quando disponíveis, em inglês. Traduções adicionais devem ser feitas progressivamente, preservando nomes oficiais e sentido factual.
+A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. O português brasileiro é o idioma inicial. As descrições dos registros são mantidas em português e inglês quando disponíveis. Traduções adicionais devem preservar nomes oficiais e sentido factual.
+
+## Referências para a curadoria
+
+- UNESCO — Open Science: https://www.unesco.org/en/open-science
+- IBICT — Repositórios e Ciência Aberta: https://www.gov.br/ibict/pt-br/atuacao/pesquisa-servicos-e-iniciativas/repositorios-e-ciencia-aberta
+- Europeana: https://www.europeana.eu/
+- OpenDOAR: https://v2.sherpa.ac.uk/opendoar/
+- re3data: https://www.re3data.org/
+- WorldCat: https://www.worldcat.org/
+- Library of Congress: https://www.loc.gov/
+- UNESCO Digital Library: https://unesdoc.unesco.org/
 
 Os registros completos estão em `data/sources.json`.

@@ -1,50 +1,37 @@
-# CAOS — Diretório Público do Conhecimento
+# CAOS
 
-**Um diretório público, independente, científico e internacional de links para fontes de conhecimento e informação.**
+**Diretório internacional de links para fontes, dados, conhecimento e cultura.**
 
-A CAOS é um índice aberto que aproxima o público das fontes originais: bibliotecas, arquivos, instituições de pesquisa, periódicos, bases de dados, documentos, coleções culturais, estatísticas e ferramentas de referência. O catálogo organiza caminhos de acesso; não substitui, hospeda ou certifica os conteúdos externos.
+CAOS é o nome do diretório. O projeto reúne caminhos para bibliotecas, arquivos, museus, universidades, instituições públicas, periódicos, bases de dados, documentos, coleções culturais, ferramentas, serviços de referência e outras fontes de informação em diferentes países e idiomas.
 
-## Um catálogo em expansão
+O catálogo é amplo e aberto a novas áreas. A organização por categorias serve para facilitar a navegação; não pretende estabelecer fronteiras para o conhecimento nem limitar os assuntos que podem entrar no diretório.
 
-A versão atual reúne **575 fontes**, organizadas em seis áreas:
+## Catálogo
 
-| Área | Fontes |
-|---|---:|
-| Ciências naturais | 134 |
-| Ciências formais | 35 |
-| Ciências sociais | 131 |
-| Ciências da saúde e médicas | 49 |
-| Engenharia e ciências aplicadas | 69 |
-| Multidisciplinares | 157 |
-| **Total** | **575** |
+A versão desta expansão reúne **893 fontes**. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
-A coleção inclui fontes brasileiras e internacionais, com atenção a diferentes regiões, idiomas, tradições científicas e tipos de instituição. Não é uma lista exaustiva nem um ranking.
-
-## Áreas do conhecimento
-
-1. **Ciências naturais** — biologia, química, física, astronomia, ciências da Terra, ambiente e biodiversidade.
-2. **Ciências formais** — matemática, lógica, estatística, computação teórica e fundamentos.
-3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política, educação e estudos das sociedades.
-4. **Ciências da saúde e médicas** — medicina, saúde pública, neurociência, epidemiologia e pesquisa em saúde.
-5. **Engenharia e ciências aplicadas** — engenharia, robótica, materiais, infraestrutura, energia e tecnologias.
-6. **Multidisciplinares** — bibliotecas, catálogos, índices, arquivos e recursos que abrangem diferentes campos.
+A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
 ## Idiomas
 
-A interface está disponível em **português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo**. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As descrições do catálogo estão disponíveis prioritariamente em português e inglês e passam por tradução progressiva; em outros idiomas, os títulos originais permanecem para facilitar a identificação das fontes.
+A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As descrições são mantidas em português e inglês quando disponíveis; traduções adicionais podem ser aperfeiçoadas progressivamente.
 
-## Para que serve
+## Como usar
 
-O diretório pode apoiar estudo, ensino, jornalismo, pesquisa independente, descoberta de dados, preservação da informação e desenvolvimento de ferramentas de consulta. Os registros estruturados também podem servir como ponto de partida para mecanismos de busca, recuperação de informação e treinamento de sistemas de inteligência artificial. Essa é uma possibilidade entre várias, não o propósito exclusivo da CAOS.
+- Pesquise por nome, assunto, instituição, disciplina ou palavra-chave.
+- Use as categorias como atalhos de navegação.
+- Abra os links para consultar diretamente as fontes originais.
+- Confira as condições de acesso e reutilização no próprio site de cada fonte.
+- Sugira novos recursos e correções por meio do repositório.
 
-Qualquer consulta, cópia ou reutilização deve respeitar direitos autorais, licenças, privacidade, termos de uso e condições de acesso definidas por cada fonte. A inclusão no catálogo é informativa e não significa endosso.
+O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dados, preservação da informação, consulta cultural e exploração independente.
 
-## Estrutura do repositório
+## Estrutura
 
-- `index.html` — portal editorial multilíngue, com português brasileiro como padrão, busca, filtros e carregamento progressivo.
+- `index.html` — interface multilíngue, busca, filtros e carregamento progressivo.
 - `data/sources.json` — catálogo estruturado de fontes e links.
-- `CONTRIBUTING.md` — orientações para contribuições e curadoria.
-- `SOURCES.md` — critérios, distribuição e referências de curadoria.
+- `CONTRIBUTING.md` — orientações para contribuições.
+- `SOURCES.md` — critérios editoriais e referências de curadoria.
 
 ## Executar localmente
 
@@ -54,29 +41,19 @@ Na pasta do projeto, inicie um servidor estático:
 python -m http.server 8000
 ```
 
-Acesse `http://localhost:8000`. O portal não exige chave de API, backend, banco de dados ou modelo de IA.
-
-## Publicação
-
-O site pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Para GitHub Pages, selecione a branch `main` e a pasta raiz nas configurações do repositório.
+Acesse `http://localhost:8000`. O portal não exige chave de API, backend ou banco de dados.
 
 ## Princípios editoriais
 
+- Alcance internacional e diversidade geográfica, cultural e linguística.
 - Neutralidade política, econômica, religiosa e tecnológica.
-- Acesso público, pluralidade de perspectivas e alcance internacional.
-- Curadoria baseada em relevância, procedência e descrição factual.
-- Preferência por fontes primárias, instituições reconhecidas e repositórios estabelecidos.
-- Diversidade geográfica, linguística e institucional.
-- Informação clara sobre acesso, cadastro, restrições e licenças.
-- Diferenciação entre artigos revisados por pares, preprints, conjuntos de dados e documentos institucionais.
-- Inclusão não significa endosso nem garantia de exatidão.
-- Respeito à privacidade, aos direitos autorais, aos termos de uso e à legislação aplicável.
-- Não coletar credenciais, contornar controles de acesso, visar indivíduos privados ou facilitar vigilância clandestina.
-- Correções e classificações transparentes e passíveis de revisão pública.
-
-## Estado do projeto
-
-**Etapa 1 — Portal público e diretório de fontes.** O catálogo está em expansão. Links, descrições, traduções e classificações devem ser verificados e aperfeiçoados continuamente. A disponibilidade dos serviços externos pode mudar sem aviso.
+- Descrições factuais, claras e acessíveis.
+- Preferência por páginas oficiais, fontes primárias e repositórios reconhecidos.
+- Distinção entre acesso aberto, acesso gratuito, cadastro e assinatura.
+- Respeito a direitos autorais, licenças, privacidade e termos de uso.
+- Inclusão informativa, sem endosso institucional.
+- Duplicatas devem ser evitadas e links corrigidos quando identificados.
+- A disponibilidade dos serviços externos pode mudar sem aviso.
 
 ## Licenças
 
