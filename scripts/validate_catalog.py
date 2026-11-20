@@ -16,6 +16,8 @@ def fail(message):
 
 try:
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        data = data.get("resources")
 except Exception as exc:
     fail(f"JSON inválido em data/sources.json: {exc}")
 
