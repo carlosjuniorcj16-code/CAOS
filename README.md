@@ -1,71 +1,71 @@
-# CAOS — Cúpula dos Agentes Ordenados e Sensoriais
+# CAOS — Diretório Público do Conhecimento
 
-**Um portal aberto, descentralizado e multilíngue para o conhecimento público da humanidade.**
+**Um diretório público, independente, científico e internacional de links para fontes de conhecimento e informação.**
 
-A CAOS é uma iniciativa independente para indexar, organizar e facilitar a descoberta de fontes públicas de conhecimento. Sua primeira implementação é intencionalmente simples: um diretório pesquisável que conecta pessoas e sistemas a fontes relevantes nas cinco grandes áreas científicas.
+A CAOS organiza referências para facilitar a descoberta de fontes originais: bibliotecas, arquivos, instituições de pesquisa, periódicos, bases de dados, documentos, catálogos e ferramentas. Não é proprietária dessas fontes, não certifica todo o conteúdo indicado e não representa uma orientação política, econômica ou tecnológica.
 
-> A CAOS é um portal, não proprietária do conhecimento. O conhecimento permanece distribuído entre as pessoas, instituições, repositórios e comunidades que o produzem.
+## Objetivo
 
-## Missão
+Facilitar a descoberta de informação pública para estudo, ensino, pesquisa, jornalismo, consulta e investigação independente. A curadoria busca reunir recursos de diferentes países, idiomas e tradições acadêmicas, com critérios transparentes e participação aberta.
 
-Melhorar a descoberta, a organização, a interoperabilidade e o reúso do conhecimento publicamente disponível. Reduzir a distância entre curiosidade e fontes confiáveis. Ajudar pessoas e sistemas de IA a navegar pelo universo informacional, preservando procedência, contexto e condições de acesso.
-
-## Cinco áreas do conhecimento
+## Áreas do conhecimento
 
 1. **Ciências naturais** — biologia, química, física, astronomia, ciências da Terra e ambientais.
-2. **Ciências formais** — matemática, lógica, estatística, ciência da computação teórica e teoria dos sistemas.
-3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política e estudos dos sistemas humanos.
+2. **Ciências formais** — matemática, lógica, estatística, computação teórica e teoria dos sistemas.
+3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política e estudos das sociedades.
 4. **Ciências da saúde e médicas** — medicina, saúde pública, neurociência, epidemiologia e pesquisa em saúde.
-5. **Engenharia e ciências aplicadas** — disciplinas de engenharia, robótica, materiais, computação aplicada e tecnologia.
+5. **Engenharia e ciências aplicadas** — engenharia, robótica, materiais, infraestrutura e tecnologias.
+6. **Multidisciplinares** — bibliotecas, catálogos, índices e recursos que abrangem diferentes campos.
 
-Fontes que realmente abrangem várias disciplinas podem receber a classificação **Multidisciplinares**.
+O catálogo contém **173 fontes e recursos**: 35 em ciências naturais, 16 em ciências formais, 28 em ciências sociais, 25 em saúde e medicina, 27 em engenharia e ciências aplicadas e 42 multidisciplinares. É uma coleção em expansão, não uma lista exaustiva nem um ranking.
 
-O catálogo foi ampliado para **134 recursos**: 26 em ciências naturais, 14 em ciências formais, 21 em ciências sociais, 23 em saúde e medicina, 22 em engenharia e ciências aplicadas e 28 multidisciplinares. A coleção inclui fontes brasileiras e internacionais; consulte `SOURCES.md` para os critérios e a distribuição.
+## Diretório de links e idiomas
 
-## Por que começar por um diretório?
+A primeira versão é um site estático e pesquisável. Cada registro aponta para o endereço da fonte original. A CAOS não hospeda os materiais externos e não controla suas políticas de acesso, disponibilidade, licenciamento ou atualização.
 
-Um índice confiável é uma primeira etapa menor, mais econômica e mais simples de manter do que treinar ou operar um sistema multiagente. Posteriormente, a CAOS poderá oferecer dados estruturados e APIs para busca, recuperação de informação, agentes de pesquisa e fluxos de treinamento de IA. A versão inicial não exige chaves de API, servidor de banco de dados ou modelo de IA.
+A interface está disponível em **português brasileiro, inglês, espanhol, francês, alemão e italiano**. O português brasileiro é o idioma inicial. Os nomes oficiais das fontes são preservados; as descrições do catálogo estão sendo traduzidas progressivamente, portanto nem todo registro está disponível em todos os idiomas.
+
+## Possíveis usos
+
+O diretório pode apoiar pesquisa, educação, jornalismo, descoberta de dados, preservação da informação e desenvolvimento de ferramentas de consulta. Os registros estruturados também podem servir como ponto de partida para sistemas de busca, recuperação de informação e treinamento de inteligência artificial. Qualquer reutilização deve respeitar licenças, direitos autorais, privacidade, termos de uso e condições de acesso de cada fonte. Essa é uma possibilidade entre várias, não o propósito exclusivo do projeto.
 
 ## Estrutura do repositório
 
-- `index.html` — portal estático bilíngue (português brasileiro como padrão; inglês como segunda opção), com busca e filtros.
-- `data/sources.json` — diretório estruturado de fontes, com descrições em português e inglês.
+- `index.html` — portal estático multilíngue, com português brasileiro como padrão, busca e filtros.
+- `data/sources.json` — diretório estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições e curadoria.
-- `SOURCES.md` — notas sobre a seleção inicial de fontes e referências.
+- `SOURCES.md` — critérios, distribuição e referências de curadoria.
 
 ## Executar localmente
-
-Abra `index.html` por meio de um servidor estático local (recomendado) para que o navegador carregue `data/sources.json`. Exemplo:
 
 ```bash
 python -m http.server 8000
 ```
 
-Acesse `http://localhost:8000`.
-
-Nenhuma chave de API, backend, servidor de banco de dados ou modelo de IA é necessário.
+Acesse `http://localhost:8000`. A versão atual não exige chave de API, backend, banco de dados ou modelo de IA.
 
 ## Publicação
 
-O portal é um site estático e pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Ative o GitHub Pages nas configurações do repositório e selecione a branch `main` e a pasta raiz.
+O portal pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Para GitHub Pages, selecione a branch `main` e a pasta raiz nas configurações do repositório.
 
-## Princípios
+## Princípios editoriais
 
-- Priorizar fontes legalmente acessíveis ao público.
-- Software de código aberto e contribuição aberta.
-- Preservar links originais e atribuição das fontes.
-- Registrar ressalvas de licença e acesso; não sugerir que todo conteúdo vinculado tenha licença aberta.
-- Diferenciar pesquisas revisadas por pares, preprints, conjuntos de dados, orientações institucionais e obras de referência.
-- A inclusão de uma fonte não significa endosso nem garantia de exatidão.
-- Priorizar fontes primárias e repositórios reconhecidos.
-- Respeitar privacidade, direitos autorais, termos de uso e legislação aplicável.
-- Não coletar credenciais, contornar controles de acesso, visar indivíduos privados ou facilitar vigilância clandestina. A CAOS indexa conhecimento público obtido legalmente.
-- Classificações e resumos gerados por IA, quando introduzidos, devem ser rastreáveis e passíveis de revisão humana.
+- Neutralidade política, econômica, religiosa e tecnológica.
+- Acesso público, pluralidade de perspectivas e alcance internacional.
+- Curadoria baseada em relevância, procedência e descrição factual.
+- Preferência por fontes primárias, instituições reconhecidas e repositórios estabelecidos.
+- Preservação dos links originais e atribuição adequada.
+- Informação clara sobre acesso, cadastro, restrições e licenças.
+- Diferenciação entre artigos revisados por pares, preprints, conjuntos de dados e documentos institucionais.
+- Inclusão não significa endosso nem garantia de exatidão.
+- Respeito à privacidade, aos direitos autorais, aos termos de uso e à legislação aplicável.
+- Não coletar credenciais, contornar controles de acesso, visar indivíduos privados ou facilitar vigilância clandestina.
+- Critérios e classificações transparentes e passíveis de revisão pública.
 
 ## Situação atual
 
-**Etapa 1 — Portal estático e diretório inicial.** A coleção atual é um ponto de partida, não um índice exaustivo da internet. Os links devem ser verificados periodicamente e revisados pela comunidade.
+**Etapa 1 — Portal público e diretório inicial.** A coleção é um ponto de partida. Os links devem ser verificados periodicamente, e as descrições, traduções e classificações podem ser aperfeiçoadas pela comunidade.
 
 ## Licenças
 
-O código-fonte da CAOS pretende ser distribuído sob a licença MIT. Os metadados do diretório pretendem ser reutilizáveis sob CC0 quando legalmente possível. Essas licenças não alteram as licenças nem os termos dos conteúdos de terceiros vinculados.
+O código-fonte pretende ser distribuído sob MIT. Os metadados do diretório pretendem ser reutilizáveis sob CC0 quando legalmente possível. Essas licenças não alteram as licenças nem os termos dos conteúdos de terceiros vinculados.
