@@ -20,6 +20,8 @@ Melhorar a descoberta, a organização, a interoperabilidade e o reúso do conhe
 
 Fontes que realmente abrangem várias disciplinas podem receber a classificação **Multidisciplinares**.
 
+O catálogo foi ampliado para **134 recursos**: 26 em ciências naturais, 14 em ciências formais, 21 em ciências sociais, 23 em saúde e medicina, 22 em engenharia e ciências aplicadas e 28 multidisciplinares. A coleção inclui fontes brasileiras e internacionais; consulte `SOURCES.md` para os critérios e a distribuição.
+
 ## Por que começar por um diretório?
 
 Um índice confiável é uma primeira etapa menor, mais econômica e mais simples de manter do que treinar ou operar um sistema multiagente. Posteriormente, a CAOS poderá oferecer dados estruturados e APIs para busca, recuperação de informação, agentes de pesquisa e fluxos de treinamento de IA. A versão inicial não exige chaves de API, servidor de banco de dados ou modelo de IA.
@@ -33,7 +35,7 @@ Um índice confiável é uma primeira etapa menor, mais econômica e mais simple
 
 ## Executar localmente
 
-Abra `index.html por meio de um servidor estático local (recomendado) para que o navegador carregue `data/sources.json`. Exemplo:
+Abra `index.html` por meio de um servidor estático local (recomendado) para que o navegador carregue `data/sources.json`. Exemplo:
 
 ```bash
 python -m http.server 8000
