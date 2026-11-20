@@ -1,0 +1,825 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "editorial_policy": "Links point to official project, documentation, source-code, package-index or foundation pages. Open source does not imply that every firmware, driver, codec, cloud service, mobile app or bundled component is open. Project status and licensing must be checked at the upstream source before adoption.",
+  "categories": [
+    {
+      "id": "linux",
+      "title": "GNU/Linux distributions and ecosystems",
+      "description": "Independent distributions, families, immutable systems, source-based systems and fully free distributions. Follow each project's release, support and package policy.",
+      "resources": [
+        [
+          "Debian",
+          "https://www.debian.org/",
+          "Distribution",
+          "Community-governed universal GNU/Linux distribution; packages: https://packages.debian.org/"
+        ],
+        [
+          "Ubuntu",
+          "https://ubuntu.com/",
+          "Distribution",
+          "Debian-based desktop, server and cloud ecosystem; verify component-specific support and licensing."
+        ],
+        [
+          "Fedora Linux",
+          "https://fedoraproject.org/",
+          "Distribution",
+          "Community distribution and upstream ecosystem for Red Hat technologies; package index: https://packages.fedoraproject.org/"
+        ],
+        [
+          "Arch Linux",
+          "https://archlinux.org/",
+          "Distribution",
+          "Independent rolling-release distribution; official repositories and community build recipes are distinct."
+        ],
+        [
+          "Alpine Linux",
+          "https://alpinelinux.org/",
+          "Distribution",
+          "Small security-oriented distribution using musl and BusyBox; package index: https://pkgs.alpinelinux.org/"
+        ],
+        [
+          "Gentoo",
+          "https://www.gentoo.org/",
+          "Distribution",
+          "Source-oriented, highly configurable distribution; package index: https://packages.gentoo.org/"
+        ],
+        [
+          "openSUSE",
+          "https://www.opensuse.org/",
+          "Distribution",
+          "Community ecosystem including Leap and Tumbleweed; software portal: https://software.opensuse.org/"
+        ],
+        [
+          "NixOS",
+          "https://nixos.org/",
+          "Distribution",
+          "Declarative, reproducible system configuration; package search: https://search.nixos.org/packages"
+        ],
+        [
+          "GNU Guix System",
+          "https://guix.gnu.org/",
+          "Distribution",
+          "Functional package management and declarative GNU/Linux system; package index: https://packages.guix.gnu.org/"
+        ],
+        [
+          "Void Linux",
+          "https://voidlinux.org/",
+          "Distribution",
+          "Independent rolling-release distribution using runit and XBPS."
+        ],
+        [
+          "Slackware",
+          "https://www.slackware.com/",
+          "Distribution",
+          "Long-running independent GNU/Linux distribution."
+        ],
+        [
+          "Mageia",
+          "https://www.mageia.org/",
+          "Distribution",
+          "Community-developed GNU/Linux distribution."
+        ],
+        [
+          "Linux Mint",
+          "https://linuxmint.com/",
+          "Distribution",
+          "Desktop-oriented distribution based on Ubuntu and Debian editions."
+        ],
+        [
+          "Pop!_OS",
+          "https://system76.com/pop/",
+          "Distribution",
+          "Desktop distribution developed by System76; inspect hardware and release support."
+        ],
+        [
+          "elementary OS",
+          "https://elementary.io/",
+          "Distribution",
+          "Desktop-focused distribution and application ecosystem."
+        ],
+        [
+          "Rocky Linux",
+          "https://rockylinux.org/",
+          "Distribution",
+          "Community enterprise Linux distribution."
+        ],
+        [
+          "AlmaLinux OS",
+          "https://almalinux.org/",
+          "Distribution",
+          "Community enterprise Linux distribution."
+        ],
+        [
+          "Tails",
+          "https://tails.net/",
+          "Specialized distribution",
+          "Portable privacy-focused live operating system; threat model and hardware compatibility matter."
+        ],
+        [
+          "Qubes OS",
+          "https://www.qubes-os.org/",
+          "Specialized distribution",
+          "Security-by-compartmentalization desktop based on Xen; hardware requirements are significant."
+        ],
+        [
+          "Trisquel",
+          "https://trisquel.info/",
+          "Free-software distribution",
+          "GNU/Linux distribution committed to free software."
+        ],
+        [
+          "Parabola GNU/Linux-libre",
+          "https://www.parabola.nu/",
+          "Free-software distribution",
+          "Arch-derived distribution aligned with GNU free-system guidelines."
+        ],
+        [
+          "PureOS",
+          "https://pureos.net/",
+          "Free-software distribution",
+          "Debian-derived distribution emphasizing free software and privacy."
+        ],
+        [
+          "GNU Project — free distributions",
+          "https://www.gnu.org/distros/free-distros.html",
+          "Reference directory",
+          "FSF/GNU list of distributions meeting its free-system criteria; not a general ranking."
+        ]
+      ]
+    },
+    {
+      "id": "bsd-unix",
+      "title": "BSD, illumos and Unix-derived systems",
+      "description": "Independent kernels and operating-system families outside the Linux distribution ecosystem.",
+      "resources": [
+        [
+          "FreeBSD",
+          "https://www.freebsd.org/",
+          "Operating system",
+          "BSD operating system with handbook, ports and packages; desktop documentation: https://docs.freebsd.org/en/books/handbook/desktop/"
+        ],
+        [
+          "FreeBSD Ports",
+          "https://www.freebsd.org/ports/",
+          "Software collection",
+          "Ports tree and package ecosystem for FreeBSD."
+        ],
+        [
+          "OpenBSD",
+          "https://www.openbsd.org/",
+          "Operating system",
+          "BSD system with security-focused engineering and integrated documentation."
+        ],
+        [
+          "NetBSD",
+          "https://www.netbsd.org/",
+          "Operating system",
+          "Portable BSD system; pkgsrc package framework supports multiple Unix-like platforms."
+        ],
+        [
+          "pkgsrc",
+          "https://pkgsrc.org/",
+          "Package framework",
+          "Portable package build and distribution framework maintained by the pkgsrc community."
+        ],
+        [
+          "DragonFly BSD",
+          "https://www.dragonflybsd.org/",
+          "Operating system",
+          "Independent BSD system with its own kernel and HAMMER2 filesystem."
+        ],
+        [
+          "illumos",
+          "https://illumos.org/",
+          "Operating system kernel",
+          "Open-source Unix operating-system foundation descended from OpenSolaris."
+        ],
+        [
+          "OpenIndiana",
+          "https://www.openindiana.org/",
+          "Distribution",
+          "illumos-based operating-system distribution."
+        ],
+        [
+          "OmniOS",
+          "https://omnios.org/",
+          "Distribution",
+          "illumos-based server operating system."
+        ],
+        [
+          "SmartOS",
+          "https://www.smartos.org/",
+          "Distribution",
+          "illumos-based platform for cloud and virtualization workloads."
+        ],
+        [
+          "GhostBSD",
+          "https://www.ghostbsd.org/",
+          "Distribution",
+          "Desktop-oriented FreeBSD derivative."
+        ],
+        [
+          "MidnightBSD",
+          "https://www.midnightbsd.org/",
+          "Operating system",
+          "Desktop-oriented BSD operating system."
+        ]
+      ]
+    },
+    {
+      "id": "alternative",
+      "title": "Alternative, experimental and research operating systems",
+      "description": "Projects exploring different kernels, compatibility models, architectures or historical lineages. These are not all production-ready; verify hardware support and project activity.",
+      "resources": [
+        [
+          "Haiku",
+          "https://www.haiku-os.org/",
+          "Operating system",
+          "Open-source desktop OS inspired by BeOS; project status and hardware support vary."
+        ],
+        [
+          "ReactOS",
+          "https://reactos.org/",
+          "Operating system",
+          "Independent open-source project pursuing Windows application and driver compatibility; experimental."
+        ],
+        [
+          "Redox OS",
+          "https://redox-os.org/",
+          "Operating system",
+          "Unix-like microkernel OS written primarily in Rust; research and development project."
+        ],
+        [
+          "GNU Hurd",
+          "https://www.gnu.org/software/hurd/",
+          "Kernel",
+          "GNU's multiserver microkernel project."
+        ],
+        [
+          "MINIX 3",
+          "https://www.minix3.org/",
+          "Operating system",
+          "Microkernel operating-system research project."
+        ],
+        [
+          "SerenityOS",
+          "https://serenityos.org/",
+          "Operating system",
+          "From-scratch Unix-like desktop operating system and research project."
+        ],
+        [
+          "FreeDOS",
+          "https://www.freedos.org/",
+          "Operating system",
+          "Free DOS-compatible operating system."
+        ],
+        [
+          "KolibriOS",
+          "https://kolibrios.org/",
+          "Operating system",
+          "Compact operating system project with an assembly-language heritage."
+        ],
+        [
+          "Plan 9",
+          "https://9p.io/plan9/",
+          "Operating system",
+          "Research OS from Bell Labs; explore its distributed-system and namespace ideas."
+        ],
+        [
+          "HelenOS",
+          "https://www.helenos.org/",
+          "Operating system",
+          "Research microkernel operating system."
+        ],
+        [
+          "Genode",
+          "https://genode.org/",
+          "OS framework",
+          "Component-based OS framework supporting multiple microkernels and kernels."
+        ],
+        [
+          "RISC OS Open",
+          "https://www.riscosopen.org/",
+          "Operating system",
+          "Open-source development of the RISC OS platform; hardware and licensing details vary."
+        ]
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile and handheld open-source ecosystems",
+      "description": "Mobile platforms and distributions. AOSP-based systems can still depend on proprietary firmware, drivers, app services or device-specific components.",
+      "resources": [
+        [
+          "Android Open Source Project",
+          "https://source.android.com/",
+          "Platform source",
+          "Official Android platform source, architecture, build and contribution documentation; Google Play services are separate."
+        ],
+        [
+          "GrapheneOS",
+          "https://grapheneos.org/",
+          "Mobile OS",
+          "Security- and privacy-focused AOSP-based OS with device-specific support."
+        ],
+        [
+          "LineageOS",
+          "https://lineageos.org/",
+          "Mobile OS",
+          "Community Android distribution; device support and build status are device-specific."
+        ],
+        [
+          "postmarketOS",
+          "https://postmarketos.org/",
+          "Mobile Linux OS",
+          "Linux distribution targeting smartphones and other mobile devices."
+        ],
+        [
+          "Ubuntu Touch / UBports",
+          "https://ubports.com/",
+          "Mobile OS",
+          "Community-maintained Ubuntu Touch platform."
+        ],
+        [
+          "Mobian",
+          "https://mobian.org/",
+          "Mobile Linux OS",
+          "Debian-based mobile Linux distribution."
+        ],
+        [
+          "Droidian",
+          "https://droidian.org/",
+          "Mobile Linux OS",
+          "Debian-based mobile platform using components from Android device ecosystems."
+        ],
+        [
+          "Replicant",
+          "https://replicant.us/",
+          "Mobile OS",
+          "Android-derived system emphasizing software freedom; hardware compatibility is limited."
+        ],
+        [
+          "F-Droid",
+          "https://f-droid.org/",
+          "App repository",
+          "Repository and client for free and open-source Android applications; verify each app's metadata and build source."
+        ]
+      ]
+    },
+    {
+      "id": "embedded",
+      "title": "Embedded, real-time, router and device systems",
+      "description": "Operating systems, build systems and firmware foundations for routers, appliances, IoT, robotics and real-time hardware.",
+      "resources": [
+        [
+          "OpenWrt",
+          "https://openwrt.org/",
+          "Embedded Linux",
+          "Linux distribution for routers and embedded networking devices."
+        ],
+        [
+          "Buildroot",
+          "https://buildroot.org/",
+          "Build system",
+          "Tool for generating embedded Linux systems."
+        ],
+        [
+          "Yocto Project",
+          "https://www.yoctoproject.org/",
+          "Build framework",
+          "Collaborative framework and tools for building custom Linux-based systems."
+        ],
+        [
+          "Zephyr Project",
+          "https://www.zephyrproject.org/",
+          "RTOS",
+          "Scalable open-source real-time operating system for resource-constrained devices."
+        ],
+        [
+          "FreeRTOS",
+          "https://www.freertos.org/",
+          "RTOS",
+          "Real-time kernel for microcontrollers and small embedded systems."
+        ],
+        [
+          "Apache NuttX",
+          "https://nuttx.apache.org/",
+          "RTOS",
+          "Standards-oriented real-time operating system for embedded devices."
+        ],
+        [
+          "RIOT OS",
+          "https://www.riot-os.org/",
+          "IoT OS",
+          "Operating system for low-power Internet of Things devices."
+        ],
+        [
+          "RTEMS",
+          "https://www.rtems.org/",
+          "RTOS",
+          "Real-time operating system for embedded and mission-critical applications."
+        ],
+        [
+          "Tock OS",
+          "https://www.tockos.org/",
+          "Embedded OS",
+          "Secure embedded operating system using Rust components."
+        ],
+        [
+          "seL4",
+          "https://sel4.systems/",
+          "Microkernel",
+          "Formally verified microkernel and ecosystem; verification claims apply to specified configurations."
+        ],
+        [
+          "Eclipse ThreadX",
+          "https://threadx.io/",
+          "RTOS",
+          "Open-source real-time operating system project hosted by the Eclipse Foundation."
+        ]
+      ]
+    },
+    {
+      "id": "software-platforms",
+      "title": "Software distribution, desktops and package ecosystems",
+      "description": "Where software is packaged, signed, built, discovered and installed across operating systems. These channels are not interchangeable; prefer upstream project releases and native repositories when appropriate.",
+      "resources": [
+        [
+          "Flathub",
+          "https://flathub.org/",
+          "Desktop app repository",
+          "Central Flatpak application repository; each app has its own source, permissions and license."
+        ],
+        [
+          "Flatpak",
+          "https://flatpak.org/",
+          "Application framework",
+          "Cross-distribution desktop application packaging and sandboxing."
+        ],
+        [
+          "AppImage",
+          "https://appimage.org/",
+          "Application format",
+          "Portable Linux application packaging format; verify publisher signatures and provenance."
+        ],
+        [
+          "Snapcraft",
+          "https://snapcraft.io/",
+          "Application store and build system",
+          "Snap packaging ecosystem; review publisher identity, confinement and distribution model."
+        ],
+        [
+          "Homebrew",
+          "https://brew.sh/",
+          "Package manager",
+          "Open-source package manager for macOS and Linux."
+        ],
+        [
+          "MacPorts",
+          "https://www.macports.org/",
+          "Package manager",
+          "Open-source package management and ports framework for macOS."
+        ],
+        [
+          "winget",
+          "https://github.com/microsoft/winget-cli",
+          "Package manager",
+          "Windows package manager client; manifests and installer sources have separate trust considerations."
+        ],
+        [
+          "Chocolatey",
+          "https://chocolatey.org/",
+          "Package manager",
+          "Windows package management ecosystem; distinguish client code, community packages and commercial services."
+        ],
+        [
+          "Scoop",
+          "https://scoop.sh/",
+          "Package manager",
+          "Command-line installer and package bucket ecosystem for Windows."
+        ],
+        [
+          "KDE",
+          "https://kde.org/",
+          "Desktop and applications",
+          "KDE community, Plasma desktop and cross-platform applications."
+        ],
+        [
+          "GNOME",
+          "https://www.gnome.org/",
+          "Desktop and applications",
+          "GNOME desktop, developer platform and application ecosystem."
+        ],
+        [
+          "Xfce",
+          "https://www.xfce.org/",
+          "Desktop environment",
+          "Modular, lightweight desktop environment."
+        ],
+        [
+          "LXQt",
+          "https://lxqt-project.org/",
+          "Desktop environment",
+          "Lightweight Qt-based desktop environment."
+        ],
+        [
+          "MATE",
+          "https://mate-desktop.org/",
+          "Desktop environment",
+          "Traditional desktop environment forked from GNOME 2."
+        ],
+        [
+          "Cinnamon",
+          "https://projects.linuxmint.com/cinnamon/",
+          "Desktop environment",
+          "Linux desktop environment developed by the Linux Mint project."
+        ],
+        [
+          "COSMIC",
+          "https://system76.com/cosmic",
+          "Desktop environment",
+          "Rust-based desktop environment developed by System76."
+        ]
+      ]
+    },
+    {
+      "id": "developer-ecosystem",
+      "title": "Software engineering, source code and package registries",
+      "description": "The software-development backbone: source forges, project foundations, language registries, build systems, documentation and reusable components.",
+      "resources": [
+        [
+          "Git",
+          "https://git-scm.com/",
+          "Version control",
+          "Distributed version-control system."
+        ],
+        [
+          "GitHub",
+          "https://github.com/",
+          "Code forge",
+          "Hosted source-code collaboration platform; repository license and governance are project-specific."
+        ],
+        [
+          "GitLab",
+          "https://gitlab.com/",
+          "Code forge",
+          "Source-code collaboration and DevSecOps platform; distinguish open-source core from hosted/commercial tiers."
+        ],
+        [
+          "Codeberg",
+          "https://codeberg.org/",
+          "Code forge",
+          "Non-profit community platform powered by Forgejo."
+        ],
+        [
+          "Forgejo",
+          "https://forgejo.org/",
+          "Code forge software",
+          "Self-hostable forge for collaborative software development."
+        ],
+        [
+          "Gitea",
+          "https://about.gitea.com/",
+          "Code forge software",
+          "Self-hosted Git service and development collaboration platform."
+        ],
+        [
+          "SourceHut",
+          "https://sourcehut.org/",
+          "Code forge",
+          "Open-source software development platform with mailing-list-oriented workflows."
+        ],
+        [
+          "GNU Savannah",
+          "https://savannah.gnu.org/",
+          "Code forge",
+          "Hosting for GNU and free-software projects."
+        ],
+        [
+          "Apache Software Foundation projects",
+          "https://www.apache.org/projects/",
+          "Project foundation",
+          "Large portfolio of community-governed open-source projects across cloud, data, search and infrastructure."
+        ],
+        [
+          "Eclipse Foundation projects",
+          "https://projects.eclipse.org/",
+          "Project foundation",
+          "Open-source projects and working groups across developer tooling, cloud, IoT and runtimes."
+        ],
+        [
+          "CNCF Landscape",
+          "https://landscape.cncf.io/",
+          "Project landscape",
+          "Catalog of cloud-native projects and vendors; inclusion is not an endorsement or a security assessment."
+        ],
+        [
+          "Linux Foundation projects",
+          "https://www.linuxfoundation.org/projects",
+          "Project foundation",
+          "Open collaboration projects spanning Linux, networking, cloud, embedded and more."
+        ],
+        [
+          "OpenSSF",
+          "https://openssf.org/",
+          "Security foundation",
+          "Cross-industry initiative to improve open-source software security."
+        ],
+        [
+          "Open Source Initiative",
+          "https://opensource.org/licenses",
+          "License reference",
+          "OSI's open-source license approval list and definition."
+        ],
+        [
+          "Software Freedom Conservancy",
+          "https://sfconservancy.org/projects/",
+          "Project foundation",
+          "Non-profit fiscal host and support for free-software projects."
+        ],
+        [
+          "PyPI",
+          "https://pypi.org/",
+          "Package registry",
+          "Python package index."
+        ],
+        [
+          "npm",
+          "https://www.npmjs.com/",
+          "Package registry",
+          "JavaScript and TypeScript package registry."
+        ],
+        [
+          "crates.io",
+          "https://crates.io/",
+          "Package registry",
+          "Rust package registry."
+        ],
+        [
+          "Maven Central",
+          "https://central.sonatype.com/",
+          "Package registry",
+          "Central repository for Java ecosystem artifacts."
+        ],
+        [
+          "NuGet",
+          "https://www.nuget.org/",
+          "Package registry",
+          ".NET package ecosystem."
+        ],
+        [
+          "RubyGems",
+          "https://rubygems.org/",
+          "Package registry",
+          "Ruby package registry."
+        ],
+        [
+          "Packagist",
+          "https://packagist.org/",
+          "Package registry",
+          "Default Composer package repository for PHP."
+        ],
+        [
+          "Go Packages",
+          "https://pkg.go.dev/",
+          "Package index",
+          "Go package and module documentation index."
+        ],
+        [
+          "Hex",
+          "https://hex.pm/",
+          "Package registry",
+          "Elixir and Erlang package registry."
+        ],
+        [
+          "Hackage",
+          "https://hackage.haskell.org/",
+          "Package registry",
+          "Haskell package repository."
+        ],
+        [
+          "CPAN",
+          "https://www.cpan.org/",
+          "Package archive",
+          "Comprehensive Perl Archive Network."
+        ],
+        [
+          "CRAN",
+          "https://cran.r-project.org/",
+          "Package repository",
+          "R package repository."
+        ],
+        [
+          "Conda-forge",
+          "https://conda-forge.org/",
+          "Package ecosystem",
+          "Community-driven package distribution for scientific and general-purpose software."
+        ],
+        [
+          "Julia General Registry",
+          "https://github.com/JuliaRegistries/General",
+          "Package registry",
+          "General package registry for Julia."
+        ],
+        [
+          "vcpkg",
+          "https://vcpkg.io/",
+          "Package manager",
+          "C/C++ dependency manager maintained by Microsoft as an open-source project."
+        ],
+        [
+          "Conan",
+          "https://conan.io/",
+          "Package manager",
+          "C/C++ package manager and ecosystem."
+        ],
+        [
+          "Pub.dev",
+          "https://pub.dev/",
+          "Package registry",
+          "Dart and Flutter package repository."
+        ]
+      ]
+    },
+    {
+      "id": "software-assurance",
+      "title": "Licensing, provenance, security and software supply chain",
+      "description": "The framework that makes software discoverable and safer to reuse: license identification, SBOMs, vulnerability intelligence, signing, provenance, reproducible builds and project health.",
+      "resources": [
+        [
+          "SPDX",
+          "https://spdx.dev/",
+          "SBOM and licensing standard",
+          "ISO-standardized format and ecosystem for software bill of materials and license information."
+        ],
+        [
+          "CycloneDX",
+          "https://cyclonedx.org/",
+          "SBOM standard",
+          "Bill-of-materials standard covering components, services and supply-chain context."
+        ],
+        [
+          "REUSE",
+          "https://reuse.software/",
+          "License compliance",
+          "Specification and tools for making copyright and licensing information machine-readable."
+        ],
+        [
+          "OpenSSF Scorecard",
+          "https://scorecard.dev/",
+          "Project security assessment",
+          "Automated checks for selected software supply-chain security practices; scores are signals, not guarantees."
+        ],
+        [
+          "OSV.dev",
+          "https://osv.dev/",
+          "Vulnerability database",
+          "Open vulnerability database and API for open-source ecosystems."
+        ],
+        [
+          "deps.dev",
+          "https://deps.dev/",
+          "Dependency intelligence",
+          "Dependency graph and package metadata service."
+        ],
+        [
+          "SLSA",
+          "https://slsa.dev/",
+          "Build provenance framework",
+          "Framework for incrementally improving build integrity and provenance."
+        ],
+        [
+          "Sigstore",
+          "https://www.sigstore.dev/",
+          "Signing and verification",
+          "Tools and services for signing and verifying software artifacts."
+        ],
+        [
+          "The Update Framework",
+          "https://theupdateframework.io/",
+          "Update security framework",
+          "Framework for securing software update systems."
+        ],
+        [
+          "in-toto",
+          "https://in-toto.io/",
+          "Supply-chain integrity",
+          "Framework for recording and verifying steps in software supply chains."
+        ],
+        [
+          "OpenChain",
+          "https://openchainproject.org/",
+          "Open-source compliance",
+          "Standards and community for open-source license compliance in supply chains."
+        ],
+        [
+          "GUAC",
+          "https://guac.sh/",
+          "Supply-chain graph",
+          "Graph for understanding software supply-chain metadata and relationships."
+        ]
+      ]
+    }
+  ]
+}
