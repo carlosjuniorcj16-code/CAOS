@@ -75,3 +75,12 @@ O Crossref permanece cadastrado como fonte bibliográfica, mas não é usado par
 ## Validação do catálogo especializado de IA
 
 `python scripts/validate_catalog.py` também verifica `data/ai_sources.json`: IDs únicos, áreas permitidas, campos obrigatórios, listas de formatos/idiomas/usos e URLs HTTP(S) válidas. A validação do workflow de CI extrai e verifica a sintaxe JavaScript tanto de `index.html` quanto de `ai-data.html`.
+
+
+## Radar de pesquisa recente
+
+A página `radar.html` apresenta cinco publicações recentes em áreas distintas: inteligência artificial, linguagem, robótica, biociências e ciências da Terra/espaço. O coletor `scripts/update_research_radar.py` consulta os metadados públicos Atom da API do arXiv, respeitando intervalo de três segundos entre consultas e mantendo apenas títulos, autores, datas, resumos curtos e links de origem.
+
+O workflow `.github/workflows/live-research-radar.yml` atualiza `data/research-radar.json` duas vezes ao dia (07:20 e 19:20 UTC). Essa rotina altera somente o arquivo de dados gerado do Radar; não altera `data/sources.json` nem publica novos registros no diretório principal. Se a fonte não retornar registros, o coletor falha sem sobrescrever a última versão válida.
+
+O Radar é uma janela de recência e diversidade temática, não um ranking de qualidade, popularidade, revisão por pares ou consenso. Cada item direciona o leitor à publicação original. Documentação da API: https://info.arxiv.org/help/api/user-manual.html
