@@ -2146,6 +2146,262 @@
       "description_pt": "Catálogo central de conjuntos de dados públicos publicados por órgãos do governo brasileiro.",
       "subcategory_pt": "Brazilian public data",
       "access_pt": "Gratuito"
+    },
+    {
+      "id": 135,
+      "title": "NASA Earthdata",
+      "category": "natural",
+      "subcategory": "Earth observation data",
+      "description": "Portal de dados de observação da Terra da NASA, com produtos e ferramentas para pesquisa ambiental e climática.",
+      "url": "https://earthdata.nasa.gov/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Earth observation data"
+      ],
+      "description_pt": "Portal de dados de observação da Terra da NASA, com produtos e ferramentas para pesquisa ambiental e climática.",
+      "subcategory_pt": "Earth observation data",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 136,
+      "title": "USGS Earthquake Catalog",
+      "category": "natural",
+      "subcategory": "Seismology",
+      "description": "Catálogo de terremotos e dados sísmicos do Serviço Geológico dos Estados Unidos.",
+      "url": "https://earthquake.usgs.gov/earthquakes/search/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Seismology"
+      ],
+      "description_pt": "Catálogo de terremotos e dados sísmicos do Serviço Geológico dos Estados Unidos.",
+      "subcategory_pt": "Seismology",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 137,
+      "title": "Copernicus Data Space Ecosystem",
+      "category": "natural",
+      "subcategory": "Earth observation",
+      "description": "Acesso a dados de observação da Terra do programa europeu Copernicus.",
+      "url": "https://dataspace.copernicus.eu/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Earth observation"
+      ],
+      "description_pt": "Acesso a dados de observação da Terra do programa europeu Copernicus.",
+      "subcategory_pt": "Earth observation",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 138,
+      "title": "WorldClim",
+      "category": "natural",
+      "subcategory": "Climate data",
+      "description": "Conjunto de dados climáticos globais para aplicações ecológicas e ambientais.",
+      "url": "https://www.worldclim.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Climate data"
+      ],
+      "description_pt": "Conjunto de dados climáticos globais para aplicações ecológicas e ambientais.",
+      "subcategory_pt": "Climate data",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 139,
+      "title": "LIGO Open Science Center",
+      "category": "natural",
+      "subcategory": "Gravitational-wave astronomy",
+      "description": "Dados e materiais públicos de observatórios de ondas gravitacionais.",
+      "url": "https://gwosc.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Gravitational-wave astronomy"
+      ],
+      "description_pt": "Dados e materiais públicos de observatórios de ondas gravitacionais.",
+      "subcategory_pt": "Gravitational-wave astronomy",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 140,
+      "title": "Lean mathematical library",
+      "category": "formal",
+      "subcategory": "Formalized mathematics",
+      "description": "Biblioteca colaborativa de matemática formalizada no assistente de provas Lean.",
+      "url": "https://leanprover-community.github.io/mathlib4_docs/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Formalized mathematics"
+      ],
+      "description_pt": "Biblioteca colaborativa de matemática formalizada no assistente de provas Lean.",
+      "subcategory_pt": "Formalized mathematics",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 141,
+      "title": "SageMath",
+      "category": "formal",
+      "subcategory": "Computational mathematics",
+      "description": "Sistema matemático de código aberto para álgebra, geometria, teoria dos números e computação científica.",
+      "url": "https://www.sagemath.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Computational mathematics"
+      ],
+      "description_pt": "Sistema matemático de código aberto para álgebra, geometria, teoria dos números e computação científica.",
+      "subcategory_pt": "Computational mathematics",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 142,
+      "title": "Eurostat",
+      "category": "social",
+      "subcategory": "European statistics",
+      "description": "Base oficial de estatísticas da União Europeia sobre população, economia e sociedade.",
+      "url": "https://ec.europa.eu/eurostat/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "European statistics"
+      ],
+      "description_pt": "Base oficial de estatísticas da União Europeia sobre população, economia e sociedade.",
+      "subcategory_pt": "European statistics",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 143,
+      "title": "IPUMS",
+      "category": "social",
+      "subcategory": "Population and social science data",
+      "description": "Infraestrutura de acesso a microdados censitários e pesquisas populacionais harmonizadas.",
+      "url": "https://ipums.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Population and social science data"
+      ],
+      "description_pt": "Infraestrutura de acesso a microdados censitários e pesquisas populacionais harmonizadas.",
+      "subcategory_pt": "Population and social science data",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 144,
+      "title": "GDELT Project",
+      "category": "social",
+      "subcategory": "Global news and events data",
+      "description": "Projeto de dados abertos que monitora notícias, eventos e relações globais em escala ampla.",
+      "url": "https://www.gdeltproject.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Global news and events data"
+      ],
+      "description_pt": "Projeto de dados abertos que monitora notícias, eventos e relações globais em escala ampla.",
+      "subcategory_pt": "Global news and events data",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 145,
+      "title": "WorldCat",
+      "category": "cross",
+      "subcategory": "Global library catalog",
+      "description": "Catálogo coletivo que permite localizar acervos de bibliotecas em diferentes países.",
+      "url": "https://www.worldcat.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Global library catalog"
+      ],
+      "description_pt": "Catálogo coletivo que permite localizar acervos de bibliotecas em diferentes países.",
+      "subcategory_pt": "Global library catalog",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 146,
+      "title": "Open Library",
+      "category": "cross",
+      "subcategory": "Open book catalog",
+      "description": "Catálogo aberto de livros com informações bibliográficas e recursos de empréstimo digital quando disponíveis.",
+      "url": "https://openlibrary.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Open book catalog"
+      ],
+      "description_pt": "Catálogo aberto de livros com informações bibliográficas e recursos de empréstimo digital quando disponíveis.",
+      "subcategory_pt": "Open book catalog",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 147,
+      "title": "DataCite Commons",
+      "category": "cross",
+      "subcategory": "Research outputs discovery",
+      "description": "Ferramenta para descobrir e explorar dados de pesquisa e outros objetos com DOI.",
+      "url": "https://commons.datacite.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Research outputs discovery"
+      ],
+      "description_pt": "Ferramenta para descobrir e explorar dados de pesquisa e outros objetos com DOI.",
+      "subcategory_pt": "Research outputs discovery",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 148,
+      "title": "Global Research Identifier Database (GRID) archive via ROR",
+      "category": "cross",
+      "subcategory": "Research organization registry",
+      "description": "Registro aberto de identificadores para organizações de pesquisa e suas relações.",
+      "url": "https://ror.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Research organization registry"
+      ],
+      "description_pt": "Registro aberto de identificadores para organizações de pesquisa e suas relações.",
+      "subcategory_pt": "Research organization registry",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 149,
+      "title": "Open Knowledge Maps",
+      "category": "cross",
+      "subcategory": "Scientific knowledge discovery",
+      "description": "Ferramenta visual e aberta para explorar literatura científica por mapas temáticos.",
+      "url": "https://openknowledgemaps.org/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Scientific knowledge discovery"
+      ],
+      "description_pt": "Ferramenta visual e aberta para explorar literatura científica por mapas temáticos.",
+      "subcategory_pt": "Scientific knowledge discovery",
+      "access_pt": "Gratuito; condições e licenças variam"
+    },
+    {
+      "id": 150,
+      "title": "The Conversation",
+      "category": "cross",
+      "subcategory": "Research-based public communication",
+      "description": "Plataforma de divulgação pública de análises e artigos produzidos por pesquisadores e especialistas.",
+      "url": "https://theconversation.com/",
+      "type": "Research resource",
+      "access": "Gratuito; condições e licenças variam",
+      "tags": [
+        "Research-based public communication"
+      ],
+      "description_pt": "Plataforma de divulgação pública de análises e artigos produzidos por pesquisadores e especialistas.",
+      "subcategory_pt": "Research-based public communication",
+      "access_pt": "Gratuito; condições e licenças variam"
     }
   ]
 }
