@@ -2,13 +2,13 @@ name: CAOS multi-source academic discovery
 
 on:
   schedule:
-    - cron: "37 6 * * 1"
+    - cron: "37 6 * * *"
   workflow_dispatch:
     inputs:
       limit:
         description: Maximum new records from each provider
         required: false
-        default: "100"
+        default: "300"
         type: string
       dry_run:
         description: Preview only; do not modify the catalog
@@ -21,7 +21,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: caos-multi-source-discovery
+  group: caos-catalog-ingestion
   cancel-in-progress: false
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
           python -m py_compile scripts/ingest_openalex_institutions.py
       - name: Preview DOAJ journal discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
+        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json --dry-run
       - name: Preview OpenAlex institution discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         env:
@@ -53,11 +53,11 @@ jobs:
           if [ -z "$OPENALEX_API_KEY" ]; then
             echo "::notice::OpenAlex preview skipped: configure OPENALEX_API_KEY to enable cursor-based discovery."
           else
-            python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
+            python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json --dry-run
           fi
       - name: Import DOAJ journal websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json
+        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '300' || inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json
       - name: Import OpenAlex institutions
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
@@ -66,7 +66,7 @@ jobs:
           if [ -z "$OPENALEX_API_KEY" ]; then
             echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based weekly discovery."
           else
-            python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json
+            python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '300' || inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json
           fi
       - name: Validate catalog and rebuild search index
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
