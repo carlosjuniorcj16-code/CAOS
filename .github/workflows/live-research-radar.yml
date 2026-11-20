@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: caos-live-research-radar
@@ -40,14 +41,17 @@ jobs:
               assert item["title"] and item["area"] and item["published"]
           print("Radar payload valid.")
           PY
-      - name: Commit updated radar data
-        run: |
-          if git diff --quiet -- data/research-radar.json; then
-            echo "No radar changes."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/research-radar.json
-          git commit -m "chore: refresh live research radar"
-          git push origin HEAD:main
+      - name: Create or update a reviewable data PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: refresh live research radar"
+          title: "chore: refresh live research radar"
+          body: |
+            Automated refresh of the CAOS live research radar.
+
+            This PR changes only `data/research-radar.json`, generated from public arXiv metadata.
+            Review the entries and source links before merging. The main catalog is not modified.
+          branch: automation/research-radar
+          delete-branch: true
+          add-paths: data/research-radar.json
