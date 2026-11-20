@@ -89,7 +89,7 @@ jobs:
             - DOAJ public journal-level metadata (CC0 1.0).
             - OpenAlex institution metadata (CC0 1.0).
 
-            Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. Please review records and validation before merging.
+            Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
           add-paths: |
             data/sources.json
             data/discovery_state.json

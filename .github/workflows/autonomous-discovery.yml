@@ -73,6 +73,6 @@ jobs:
             - Each candidate's official homepage was checked against its robots.txt policy and verified with a low-volume HTTP request.
             - Only metadata and homepage URLs are reused; no website text, images, or documents are copied.
             - Existing catalog URLs and domains are deduplicated.
-            - Please review the new records and confirm validation before merging.
+            - This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
           add-paths: |
             data/sources.json

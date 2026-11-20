@@ -42,6 +42,8 @@ jobs:
               path = Path("data") / name
               data = json.loads(path.read_text(encoding="utf-8"))
               assert isinstance(data, dict) and "schema_version" in data
+              if name == "reading-recommendations.json":
+                  assert len(data.get("topics", [])) == 8
               for item in data.get("items", []):
                   assert item.get("url", "").startswith("https://")
               for topic in data.get("topics", []):

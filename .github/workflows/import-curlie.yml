@@ -49,5 +49,5 @@ jobs:
           title: "chore: refresh Curlie resource catalog"
           body: |
             Automated refresh of curated resources imported from the official Curlie dataset.
-            This pull request is created so repository branch protections and required validation checks remain enforced.
+            This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. Branch protections remain enforced.
           add-paths: data/sources.json

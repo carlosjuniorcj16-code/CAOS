@@ -36,7 +36,7 @@ jobs:
           radar = json.loads(Path("data/research-radar.json").read_text(encoding="utf-8"))
           reads = json.loads(Path("data/reading-recommendations.json").read_text(encoding="utf-8"))
           assert radar["schema_version"] == 2 and 1 <= len(radar["items"]) <= 5
-          assert reads["schema_version"] == 1 and len(reads["topics"]) == 5
+          assert reads["schema_version"] == 1 and len(reads["topics"]) == 8
           assert all(len(topic["items"]) <= 5 for topic in reads["topics"])
           for item in radar["items"] + [x for t in reads["topics"] for x in t["items"]]:
               assert item["url"].startswith("https://")
@@ -52,10 +52,10 @@ jobs:
           body: |
             Automated update of CAOS research discovery feeds.
 
-            Sources: arXiv, Europe PMC and Crossref public scholarly metadata APIs.
-            Includes the compact research radar and up to five recent reading suggestions per subject.
+            Sources: arXiv, Europe PMC, PubMed E-utilities and Crossref public scholarly metadata APIs.
+            Includes the compact research radar and up to five recent reading suggestions across eight subject areas.
             Only generated JSON feeds are changed. No full-text articles or PDFs are copied.
-            Review source links and metadata before merging.
+            Eligible for automatic squash merge only after catalog validation and the Pages build succeed. Failed checks or additional branch-protection requirements keep the PR open.
           branch: automation/research-radar
           delete-branch: true
           add-paths: |
