@@ -88,7 +88,7 @@ O Radar é uma janela de recência e diversidade temática, não um ranking de q
 
 ## Radar científico e sugestões de leitura
 
-O workflow \`.github/workflows/live-research-radar.yml\` consulta duas vezes ao dia (07:20 e 19:20 UTC) três APIs acadêmicas: arXiv, Europe PMC e Crossref. O coletor \`scripts/update_research_radar.py\` constrói:
+O workflow \`.github/workflows/live-research-radar.yml\` consulta duas vezes ao dia (07:20 e 19:20 UTC) quatro APIs acadêmicas: arXiv, PubMed, Europe PMC e Crossref. O coletor \`scripts/update_research_radar.py\` constrói:
 
 - \`data/research-radar.json\`: até cinco registros multidisciplinares recentes para o Radar.
 - \`data/reading-recommendations.json\`: até cinco leituras por eixo temático em cinco áreas, dentro de uma janela móvel de 45 dias.
