@@ -45,8 +45,23 @@ jobs:
               if name == "reading-recommendations.json":
                   assert len(data.get("topics", [])) == 8
               if name == "open-source-software.json":
-                  assert len(data.get("categories", [])) >= 9
-                  assert sum(len(c.get("resources", [])) for c in data["categories"]) >= 170
+                  assert len(data.get("categories", [])) >= 11
+                  resources = [item for category in data["categories"] for item in category.get("resources", [])]
+                  assert len(resources) >= 270
+                  seen_names, seen_urls = set(), set()
+                  for item in resources:
+                      assert isinstance(item, list) and 4 <= len(item) <= 7
+                      name, url = str(item[0]).strip().lower(), str(item[1]).strip()
+                      assert name and name not in seen_names, f"Duplicate resource name: {name}"
+                      assert url.startswith("https://"), f"Non-HTTPS resource URL: {url}"
+                      canonical = url.rstrip("/").lower()
+                      assert canonical not in seen_urls, f"Duplicate resource URL: {canonical}"
+                      seen_names.add(name)
+                      seen_urls.add(canonical)
+                      if len(item) >= 7:
+                          assert str(item[6]).startswith("https://"), f"Invalid documentation URL: {item[6]}"
+                  page = Path("software.html").read_text(encoding="utf-8")
+                  assert "data/open-source-software.json" in page
                   schema = data.get("record_schema", {})
                   required = {"id", "name", "canonical_url", "category_id", "resource_type", "license_status", "maintenance_status", "source_verified_at"}
                   assert required <= set(schema.get("required", []))
