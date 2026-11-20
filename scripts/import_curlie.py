@@ -131,6 +131,18 @@ def pick(row, *keys):
             return value.strip()
     return ""
 
+def language_from_path(path: str) -> str:
+    if not path.startswith("World/"):
+        return "en"
+    label = path.split("/", 2)[1]
+    return {
+        "Deutsch":"de", "Español":"es", "Français":"fr", "Italiano":"it",
+        "Português":"pt", "日本語":"ja", "Japanese":"ja", "Korean":"ko",
+        "Hindi":"hi", "العربية":"ar", "Nederlands":"nl", "Polski":"pl",
+        "Русский":"ru", "Russian":"ru", "Türkçe":"tr",
+        "Chinese_Simplified":"zh", "中文":"zh"
+    }.get(label, "und")
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dump", required=True, type=Path, help="Arquivo tar.gz ou diretório extraído do dump Curlie")
@@ -201,7 +213,7 @@ def main():
                 "source": "Curlie",
                 "source_id": pick(row, "id", "uid", "site_id"),
                 "source_category_path": category_path,
-                "source_language": "en",
+                "source_language": language_from_path(category_path),
                 "source_license": "CC BY 3.0",
                 "source_attribution": "Content from Curlie.org"
             })
