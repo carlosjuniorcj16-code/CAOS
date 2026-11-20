@@ -135,10 +135,10 @@ def main():
     # published artifact. GitHub Pages serves dist/ only; omitting these files
     # makes valid repository pages appear as 404s after deployment.
     for relative in (
-        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html",
+        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html",
         "data/sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
-        "data/open-source-software.json", "search-index.json",
+        "data/open-source-software.json", "data/freeware.json", "search-index.json",
     ):
         src = ROOT / relative
         if src.exists():
