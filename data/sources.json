@@ -175,10 +175,10 @@
       "description_pt": "Diretório para descobrir livros acadêmicos de acesso aberto com revisão por pares.",
       "subcategory_pt": "Livros de acesso aberto",
       "access_pt": "Gratuito",
-      "topic": "journals",
-      "topic_pt": "Periódicos e publicação científica",
-      "topic_en": "Journals & scholarly publishing",
-      "topic_group": "research"
+      "topic": "libraries",
+      "topic_pt": "Bibliotecas, livros e catálogos",
+      "topic_en": "Libraries, books & catalogs",
+      "topic_group": "culture"
     },
     {
       "id": 10,
@@ -975,10 +975,10 @@
       "description_pt": "Base de dados de informações sobre genes, mantida pelo Centro Nacional de Informação sobre Biotecnologia dos EUA.",
       "subcategory_pt": "Genética",
       "access_pt": "Gratuito",
-      "topic": "medicine",
-      "topic_pt": "Medicina e pesquisa clínica",
-      "topic_en": "Medicine & clinical research",
-      "topic_group": "health"
+      "topic": "genetics",
+      "topic_pt": "Genética e biologia molecular",
+      "topic_en": "Genetics & molecular biology",
+      "topic_group": "nature"
     },
     {
       "id": 50,
@@ -6033,9 +6033,9 @@
       "description_pt": "Dados e serviços abertos sobre proposições, votações, parlamentares e atividades legislativas da Câmara.",
       "subcategory_pt": "Brazilian legislative data",
       "access_pt": "Free",
-      "topic": "society",
-      "topic_pt": "Sociedade, sociologia e demografia",
-      "topic_en": "Society, sociology & demography",
+      "topic": "public-data",
+      "topic_pt": "Dados públicos e administração",
+      "topic_en": "Public data & administration",
       "topic_group": "society"
     },
     {
@@ -6054,9 +6054,9 @@
       "description_pt": "Portal de dados abertos do Senado Federal sobre atividade legislativa, matérias, sessões e informações institucionais.",
       "subcategory_pt": "Brazilian senate data",
       "access_pt": "Free",
-      "topic": "society",
-      "topic_pt": "Sociedade, sociologia e demografia",
-      "topic_en": "Society, sociology & demography",
+      "topic": "public-data",
+      "topic_pt": "Dados públicos e administração",
+      "topic_en": "Public data & administration",
       "topic_group": "society"
     },
     {
@@ -6226,9 +6226,9 @@
       "description_pt": "Plataforma de análises, séries e indicadores sobre contas públicas e política fiscal brasileira.",
       "subcategory_pt": "Fiscal policy data",
       "access_pt": "Free",
-      "topic": "society",
-      "topic_pt": "Sociedade, sociologia e demografia",
-      "topic_en": "Society, sociology & demography",
+      "topic": "politics",
+      "topic_pt": "Política, eleições e democracia",
+      "topic_en": "Politics, elections & democracy",
       "topic_group": "society"
     },
     {
@@ -6415,10 +6415,10 @@
       "description_pt": "Portal de dados abertos do SUS com conjuntos de dados e informações para pesquisa e transparência em saúde.",
       "subcategory_pt": "Brazilian health datasets",
       "access_pt": "Free",
-      "topic": "medicine",
-      "topic_pt": "Medicina e pesquisa clínica",
-      "topic_en": "Medicine & clinical research",
-      "topic_group": "health"
+      "topic": "public-data",
+      "topic_pt": "Dados públicos e administração",
+      "topic_en": "Public data & administration",
+      "topic_group": "society"
     },
     {
       "id": 316,
@@ -13192,10 +13192,10 @@
       ],
       "description_pt": "Portal, base de dados ou repositório de referência sobre brazil, com recursos para consulta, estudo e pesquisa.",
       "subcategory_pt": "Brazil",
-      "topic": "research",
-      "topic_pt": "Pesquisa acadêmica e repositórios",
-      "topic_en": "Academic research & repositories",
-      "topic_group": "research"
+      "topic": "history",
+      "topic_pt": "História e arqueologia",
+      "topic_en": "History & archaeology",
+      "topic_group": "culture"
     },
     {
       "id": 644,
@@ -13211,10 +13211,10 @@
       ],
       "description_pt": "Portal, base de dados ou repositório de referência sobre brazil, com recursos para consulta, estudo e pesquisa.",
       "subcategory_pt": "Brazil",
-      "topic": "research",
-      "topic_pt": "Pesquisa acadêmica e repositórios",
-      "topic_en": "Academic research & repositories",
-      "topic_group": "research"
+      "topic": "history",
+      "topic_pt": "História e arqueologia",
+      "topic_en": "History & archaeology",
+      "topic_group": "culture"
     },
     {
       "id": 645,
@@ -15346,9 +15346,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Parte dos padrões exige compra ou assinatura",
       "type_pt": "Padrões técnicos",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15369,9 +15369,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Documentos públicos",
       "type_pt": "Organização de padrões",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15390,9 +15390,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Muitos documentos públicos",
       "type_pt": "Organização internacional",
-      "topic": "internet",
-      "topic_pt": "Internet, redes e protocolos",
-      "topic_en": "Internet, networks & protocols",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15412,9 +15412,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; alguns recursos exigem conta",
       "type_pt": "Dados e ferramentas",
-      "topic": "internet",
-      "topic_pt": "Internet, redes e protocolos",
-      "topic_en": "Internet, networks & protocols",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15434,9 +15434,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Dados com condições específicas",
       "type_pt": "Centro de pesquisa",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15456,9 +15456,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Conteúdo público",
       "type_pt": "Laboratório de pesquisa",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15478,9 +15478,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Consulta pública",
       "type_pt": "Registro de Internet",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15500,9 +15500,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Consulta pública",
       "type_pt": "Registro de Internet",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15522,9 +15522,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; recursos variam",
       "type_pt": "Painel de dados",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15544,9 +15544,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Dados públicos",
       "type_pt": "Plataforma de medição",
-      "topic": "standards",
-      "topic_pt": "Normas técnicas e metrologia",
-      "topic_en": "Technical standards & metrology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15566,9 +15566,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Software e documentação",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15588,9 +15588,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15610,9 +15610,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; licença específica",
       "type_pt": "Software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15631,9 +15631,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Projeto de software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15653,9 +15653,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Projeto e ferramentas",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15675,9 +15675,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Especificações públicas; condições variam",
       "type_pt": "Padrão e comunidade",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15697,9 +15697,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Projetos públicos",
       "type_pt": "Comunidade técnica",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15719,9 +15719,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Documentação",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15741,9 +15741,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Documentação",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15763,9 +15763,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Documentação",
-      "topic": "computing",
-      "topic_pt": "Computação e ciência da computação",
-      "topic_en": "Computing & computer science",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15785,9 +15785,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; licenças por componente",
       "type_pt": "Projeto e documentação",
-      "topic": "computing",
-      "topic_pt": "Computação e ciência da computação",
-      "topic_en": "Computing & computer science",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15807,9 +15807,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; compatibilidade por dispositivo",
       "type_pt": "Projeto de software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15829,9 +15829,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Projeto de software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -15851,9 +15851,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; termos específicos",
       "type_pt": "Documentação técnica",
-      "topic": "computing",
-      "topic_pt": "Computação e ciência da computação",
-      "topic_en": "Computing & computer science",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16005,9 +16005,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Recursos públicos",
       "type_pt": "Organização técnica",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16027,9 +16027,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Padrão de dados",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16049,9 +16049,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito",
       "type_pt": "Software",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16071,9 +16071,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; atribuição e ODbL",
       "type_pt": "Mapa",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16093,9 +16093,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Acesso e uso sujeitos a termos",
       "type_pt": "Dados de aviação",
-      "topic": "internet",
-      "topic_pt": "Internet, redes e protocolos",
-      "topic_en": "Internet, networks & protocols",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16115,9 +16115,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Gratuito; verificar termos",
       "type_pt": "Dataset",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -16159,9 +16159,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Recursos públicos",
       "type_pt": "Fundação e projetos",
-      "topic": "engineering",
-      "topic_pt": "Engenharia e tecnologias aplicadas",
-      "topic_en": "Engineering & applied technology",
+      "topic": "transport",
+      "topic_pt": "Transportes e logística",
+      "topic_en": "Transport & logistics",
       "topic_group": "technology"
     },
     {
@@ -18750,9 +18750,9 @@
       "subcategory_pt": "Ferramentas e dados de neuroimagem",
       "access_pt": "Gratuito",
       "type_pt": "Diretório",
-      "topic": "medicine",
-      "topic_pt": "Medicina e pesquisa clínica",
-      "topic_en": "Medicine & clinical research",
+      "topic": "neuroscience",
+      "topic_pt": "Neurociência",
+      "topic_en": "Neuroscience",
       "topic_group": "health"
     },
     {
