@@ -241,7 +241,8 @@ def write_json(path, payload):
 def main():
     radar, readings = collect()
     assert 1 <= len(radar["items"]) <= 5
-    assert len(readings["topics"]) == 8\n    assert sum(len(t["items"]) for t in readings["topics"]) <= 40
+    assert len(readings["topics"]) == 8
+    assert sum(len(t["items"]) for t in readings["topics"]) <= 40
     for item in radar["items"] + [x for t in readings["topics"] for x in t["items"]]:
         assert item["url"].startswith("https://") and item["title"] and item["published"]
     write_json(RADAR_OUT, radar)
