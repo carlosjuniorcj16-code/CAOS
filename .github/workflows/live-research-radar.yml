@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 concurrency:
   group: caos-live-research-radar
@@ -44,6 +45,7 @@ jobs:
           print("Research feeds valid.")
           PY
       - name: Create or update reviewable research PR
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -61,3 +63,12 @@ jobs:
           add-paths: |
             data/research-radar.json
             data/reading-recommendations.json
+
+      - name: Dispatch validation and build for the bot PR
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: automation/research-radar
+        run: |
+          gh workflow run "Validate project" --ref "$BRANCH"
+          gh workflow run "Build and deploy CAOS SEO site" --ref "$BRANCH"
