@@ -44,18 +44,25 @@ jobs:
           python -m py_compile scripts/ingest_openalex_institutions.py
       - name: Preview DOAJ journal discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 1 --dry-run
+        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
       - name: Preview OpenAlex institution discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --dry-run
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
       - name: Import DOAJ journal websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1
+        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json
       - name: Import OpenAlex institutions
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1
+        run: |
+          if [ -z "$OPENALEX_API_KEY" ]; then
+            echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based weekly discovery."
+          else
+            python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json
+          fi
       - name: Validate catalog and rebuild search index
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
@@ -80,3 +87,4 @@ jobs:
             Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. Please review records and validation before merging.
           add-paths: |
             data/sources.json
+            data/discovery_state.json
