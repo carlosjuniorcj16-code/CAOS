@@ -25,6 +25,10 @@ O catálogo atual inclui 12.000 registros selecionados do dump oficial do Curlie
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 
+## Física quântica
+
+O portal possui um atlas especializado em [Física Quântica](quantum.html), com catálogo próprio em [data/quantum.json](data/quantum.json). A curadoria inicial reúne 47 recursos em nove frentes: fundamentos, informação e computação, materiais quânticos, óptica, sensores e metrologia, comunicações e redes, teoria quântica de campos, simulação e literatura científica. Inclui instituições, laboratórios, periódicos, ferramentas, cursos e destaques de pesquisa. Preprints, anúncios institucionais e resultados revisados por pares são identificados de forma distinta; a inclusão de uma fonte não representa endosso nem validação de cada resultado.
+
 ## Dados para Inteligência Artificial
 
 O portal possui uma área especializada em datasets e fontes primárias para IA em [ai-data.html](ai-data.html), com catálogo próprio em [data/ai_sources.json](data/ai_sources.json). A curadoria contém 32 fontes, entre corpora de texto, rastreamento web, conhecimento estruturado, literatura científica, biomedicina, código, imagens, áudio, dados geoespaciais, hubs e benchmarks, incluindo corpora multilíngues, avaliação de tradução, fala e engenharia de software. Os registros documentam área, tipo, formatos, idiomas, volume aproximado, licença/direitos, acesso, atualização, usos recomendados, ressalvas e links oficiais. A interface oferece busca e filtros em 15 idiomas. As descrições dos registros estão em português e inglês; o campo description_i18n aceita traduções adicionais. Volumes são indicativos e devem ser conferidos na documentação oficial.
@@ -44,6 +48,9 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 ## Estrutura
 
 - `index.html`: portal principal multilíngue.
+- `quantum.html`: atlas de física quântica, pesquisa e ferramentas científicas.
+- `data/quantum.json`: catálogo estruturado do atlas quântico.
+- `assets/caos-refresh.css`: sistema visual compartilhado, com tipografia e espaçamento responsivos.
 - `ai-data.html`: diretório especializado de datasets e fontes para IA.
 - `freeware.html`: curadoria de freeware confiável, servidores cloud e plataformas gratuitas.
 - `data/freeware.json`: metadados, limites, licenças, riscos e evidências oficiais da curadoria gratuita.

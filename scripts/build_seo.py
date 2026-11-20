@@ -135,10 +135,10 @@ def main():
     # published artifact. GitHub Pages serves dist/ only; omitting these files
     # makes valid repository pages appear as 404s after deployment.
     for relative in (
-        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html",
+        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html",
         "data/sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
-        "data/open-source-software.json", "data/freeware.json", "search-index.json",
+        "data/open-source-software.json", "data/freeware.json", "data/quantum.json", "search-index.json",
     ):
         src = ROOT / relative
         if src.exists():
@@ -336,7 +336,7 @@ def main():
         ai = ai.replace("</head>", '<link rel="canonical" href="' + e(absolute("/ai-data.html")) + '"><meta name="robots" content="index,follow"></head>')
         ai_page.write_text(ai, encoding="utf-8")
     add_url("/")
-    for standalone in ("/ai-data.html", "/radar.html", "/leituras.html", "/software.html", "/freeware.html"):
+    for standalone in ("/ai-data.html", "/radar.html", "/leituras.html", "/software.html", "/freeware.html", "/quantum.html"):
         add_url(standalone)
 
     chunks = [sitemap_urls[i:i + 40000] for i in range(0, len(sitemap_urls), 40000)]
