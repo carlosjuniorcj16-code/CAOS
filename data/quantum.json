@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "editorial_policy": "Curadoria de fontes primárias, instituições de pesquisa, periódicos, cursos, ferramentas científicas e laboratórios. A inclusão indica relevância informativa, não endosso nem validação independente de resultados. Diferencie teoria estabelecida, demonstração experimental, preprint, protótipo e promessa tecnológica.",
+  "categories": [
+    {
+      "id": "fundamentos",
+      "title": "Fundamentos e teoria",
+      "description": "Mecânica quântica, postulados, medição, estados, simetrias, emaranhamento, decoerência e fundamentos conceituais.",
+      "items": [
+        [
+          "NIST: Quantum Frontiers",
+          "https://www.nist.gov/physics/quantum-frontiers",
+          "Instituto científico",
+          "Panorama de marcos científicos, conceitos fundamentais, sensores, relógios atômicos e tecnologias quânticas.",
+          "institucional"
+        ],
+        [
+          "Stanford Encyclopedia of Philosophy: Quantum Mechanics",
+          "https://plato.stanford.edu/entries/qm/",
+          "Referência acadêmica",
+          "Discussão aprofundada sobre formulações, interpretação, medição e fundamentos da mecânica quântica.",
+          "teoria"
+        ],
+        [
+          "The Feynman Lectures on Physics",
+          "https://www.feynmanlectures.caltech.edu/",
+          "Livro-texto aberto",
+          "Curso clássico de física, incluindo capítulos de mecânica quântica e comportamento quântico.",
+          "educação"
+        ],
+        [
+          "Perimeter Institute: Quantum Foundations",
+          "https://perimeterinstitute.ca/",
+          "Instituto de pesquisa",
+          "Pesquisa e materiais sobre fundamentos, gravidade quântica, informação e física teórica.",
+          "institucional"
+        ],
+        [
+          "MIT OpenCourseWare: Quantum Physics",
+          "https://ocw.mit.edu/search/?q=quantum%20physics",
+          "Cursos universitários",
+          "Aulas, notas e materiais acadêmicos abertos de física quântica.",
+          "educação"
+        ],
+        [
+          "Nobel Prize in Physics 2025",
+          "https://www.nobelprize.org/prizes/physics/2025/summary/",
+          "Prêmio e documentação",
+          "Reconhecimento da demonstração de tunelamento quântico macroscópico e quantização de energia em circuitos elétricos.",
+          "marco científico"
+        ]
+      ]
+    },
+    {
+      "id": "informacao",
+      "title": "Informação, computação e algoritmos",
+      "description": "Qubits, circuitos, algoritmos, correção de erros, complexidade, compiladores e simulação.",
+      "items": [
+        [
+          "IBM Quantum Learning",
+          "https://learning.quantum.ibm.com/",
+          "Plataforma educacional",
+          "Cursos e módulos sobre circuitos, algoritmos, hardware, correção de erros e fundamentos.",
+          "educação"
+        ],
+        [
+          "IBM Quantum Platform",
+          "https://quantum.ibm.com/",
+          "Plataforma de computação",
+          "Acesso a ferramentas e recursos de computação quântica IBM, conforme elegibilidade e disponibilidade.",
+          "plataforma"
+        ],
+        [
+          "Qiskit",
+          "https://qiskit.org/",
+          "Software aberto",
+          "SDK para construir, otimizar e executar circuitos quânticos, com documentação e ecossistema próprios.",
+          "software"
+        ],
+        [
+          "Cirq",
+          "https://quantumai.google/cirq",
+          "Software",
+          "Framework para escrever, manipular e otimizar circuitos quânticos.",
+          "software"
+        ],
+        [
+          "PennyLane",
+          "https://pennylane.ai/",
+          "Software",
+          "Biblioteca para programação quântica diferenciável e integração com aprendizado de máquina.",
+          "software"
+        ],
+        [
+          "Microsoft Quantum / Q#",
+          "https://learn.microsoft.com/en-us/azure/quantum/",
+          "Linguagem e documentação",
+          "Linguagem Q#, ferramentas e documentação para desenvolvimento de aplicações quânticas.",
+          "software"
+        ],
+        [
+          "OpenFermion",
+          "https://quantumai.google/openfermion",
+          "Software aberto",
+          "Ferramentas para simulação de sistemas fermiónicos e problemas de química quântica.",
+          "software"
+        ],
+        [
+          "Quantum Computing Report: Research & Industry Directory",
+          "https://quantumcomputingreport.com/",
+          "Diretório setorial",
+          "Mapa de empresas, tecnologias e instituições; use como orientação e confirme informações na fonte primária.",
+          "diretório"
+        ]
+      ]
+    },
+    {
+      "id": "materiais",
+      "title": "Matéria condensada e materiais quânticos",
+      "description": "Supercondutividade, magnetismo quântico, isolantes topológicos, sistemas fortemente correlacionados e materiais emergentes.",
+      "items": [
+        [
+          "Berkeley Lab: Quantum Materials",
+          "https://www.lbl.gov/research/quantum/",
+          "Laboratório nacional",
+          "Pesquisa em síntese, caracterização e propriedades eletrônicas, magnéticas e quânticas de materiais.",
+          "laboratório"
+        ],
+        [
+          "Max Planck Institute for the Structure and Dynamics of Matter",
+          "https://www.mpsd.mpg.de/",
+          "Instituto de pesquisa",
+          "Pesquisa em matéria quântica, dinâmica ultrarrápida, materiais e interação luz-matéria.",
+          "institucional"
+        ],
+        [
+          "Max Planck Institute for Solid State Research",
+          "https://www.fkf.mpg.de/",
+          "Instituto de pesquisa",
+          "Pesquisa experimental e teórica em materiais, fenômenos quânticos e física do estado sólido.",
+          "institucional"
+        ],
+        [
+          "RIKEN Center for Quantum Computing",
+          "https://www.riken.jp/en/research/labs/rqc/",
+          "Centro de pesquisa",
+          "Pesquisa em informação quântica, hardware, algoritmos, teoria e arquitetura de computadores.",
+          "institucional"
+        ],
+        [
+          "Nature Physics",
+          "https://www.nature.com/nphys/",
+          "Periódico científico",
+          "Artigos e revisões em física, incluindo matéria condensada e fenômenos quânticos.",
+          "periódico"
+        ],
+        [
+          "Physical Review B",
+          "https://journals.aps.org/prb/",
+          "Periódico científico",
+          "Pesquisa em física da matéria condensada e materiais.",
+          "periódico"
+        ]
+      ]
+    },
+    {
+      "id": "optica",
+      "title": "Óptica quântica, fótons e átomos",
+      "description": "Fontes de fótons, cavidades, íons aprisionados, átomos ultrafrios, interferometria e interação luz-matéria.",
+      "items": [
+        [
+          "ICFO: Institute of Photonic Sciences",
+          "https://www.icfo.eu/",
+          "Instituto de pesquisa",
+          "Pesquisa em óptica, fotônica, ciência quântica, sensores e tecnologias baseadas em luz.",
+          "institucional"
+        ],
+        [
+          "University of Innsbruck: Quantum Optics and Spectroscopy",
+          "https://www.uibk.ac.at/en/iqoqi/",
+          "Instituto de pesquisa",
+          "Pesquisa em óptica quântica, íons aprisionados, informação e simulação quântica.",
+          "institucional"
+        ],
+        [
+          "NIST: Quantum Information Science",
+          "https://www.nist.gov/physics/quantum-information-science",
+          "Laboratório metrológico",
+          "Pesquisa em qubits, padrões de medição, óptica, relógios e tecnologias quânticas.",
+          "laboratório"
+        ],
+        [
+          "PTB: Quantum Physics",
+          "https://www.ptb.de/cms/en.html",
+          "Instituto metrológico",
+          "Metrologia de precisão, frequências ópticas, relógios e experimentos quânticos.",
+          "institucional"
+        ],
+        [
+          "Quantum Frontiers: Research Highlights",
+          "https://www.quantumfrontiers.de/en/research/research-highlights/",
+          "Rede de pesquisa",
+          "Resultados de pesquisa em átomos frios, interferometria, óptica e tecnologias quânticas.",
+          "atualizações"
+        ]
+      ]
+    },
+    {
+      "id": "sensores",
+      "title": "Sensores, metrologia e tecnologias",
+      "description": "Relógios atômicos, magnetometria, gravimetria, interferometria e limites fundamentais de medição.",
+      "items": [
+        [
+          "NIST: Atomic Clocks",
+          "https://www.nist.gov/pml/time-and-frequency-division/atomic-clocks",
+          "Metrologia",
+          "Referência sobre relógios atômicos, padrões de frequência e aplicações de precisão.",
+          "metrologia"
+        ],
+        [
+          "NIST: Quantum Sensors",
+          "https://www.nist.gov/quantum-sensors",
+          "Pesquisa aplicada",
+          "Pesquisa e recursos sobre sensores que exploram coerência, estados quânticos e medição de precisão.",
+          "laboratório"
+        ],
+        [
+          "Q-SEnSE Quantum Sensing Institute",
+          "https://qsense.org/",
+          "Instituto de pesquisa",
+          "Pesquisa em sensores quânticos e medições de campos, aceleração, gravidade e outras grandezas.",
+          "institucional"
+        ],
+        [
+          "European Quantum Flagship",
+          "https://qt.eu/",
+          "Programa científico",
+          "Panorama de pesquisa e desenvolvimento europeu em computação, simulação, comunicação e sensores quânticos.",
+          "programa"
+        ]
+      ]
+    },
+    {
+      "id": "comunicacoes",
+      "title": "Comunicações, redes e criptografia quântica",
+      "description": "Distribuição de emaranhamento, redes quânticas, repetidores, QKD e limites de segurança.",
+      "items": [
+        [
+          "Quantum Internet Alliance",
+          "https://quantuminternetalliance.org/",
+          "Consórcio científico",
+          "Pesquisa e desenvolvimento de arquitetura, protocolos e tecnologias para internet quântica.",
+          "consórcio"
+        ],
+        [
+          "QuTech",
+          "https://qutech.nl/",
+          "Instituto de pesquisa",
+          "Pesquisa em computação e internet quântica, qubits, redes e dispositivos.",
+          "institucional"
+        ],
+        [
+          "NSF: Quantum Information Science",
+          "https://www.nsf.gov/focus-areas/quantum",
+          "Agência científica",
+          "Institutos e projetos em arquiteturas híbridas, redes, sensores e simulação quântica.",
+          "agência"
+        ],
+        [
+          "ETSI: Quantum Safe Cryptography",
+          "https://www.etsi.org/technologies/quantum-safe-cryptography",
+          "Padrões técnicos",
+          "Trabalho de padronização em criptografia resistente a ataques de computadores quânticos; não é QKD.",
+          "padrões"
+        ]
+      ]
+    },
+    {
+      "id": "campos",
+      "title": "Teoria quântica de campos e altas energias",
+      "description": "Campos, partículas, simetrias, teorias de gauge, QCD, modelos matemáticos e interfaces com cosmologia.",
+      "items": [
+        [
+          "CERN: Theoretical Physics",
+          "https://theory.cern/",
+          "Centro de pesquisa",
+          "Pesquisa em física teórica de partículas, campos, simetrias e fenômenos fundamentais.",
+          "institucional"
+        ],
+        [
+          "INSPIRE-HEP",
+          "https://inspirehep.net/",
+          "Base bibliográfica",
+          "Literatura, autores, instituições e dados bibliográficos em física de altas energias.",
+          "base de dados"
+        ],
+        [
+          "arXiv: Quantum Physics",
+          "https://arxiv.org/archive/quant-ph",
+          "Repositório de preprints",
+          "Preprints e manuscritos sobre física quântica; a presença no arXiv não significa revisão por pares.",
+          "preprints"
+        ],
+        [
+          "arXiv: High Energy Physics - Theory",
+          "https://arxiv.org/archive/hep-th",
+          "Repositório de preprints",
+          "Preprints em teoria de campos, gravitação quântica e física matemática.",
+          "preprints"
+        ],
+        [
+          "CERN Document Server",
+          "https://cds.cern.ch/",
+          "Repositório institucional",
+          "Relatórios, documentos, teses e publicações de pesquisa do CERN.",
+          "repositório"
+        ]
+      ]
+    },
+    {
+      "id": "simulacao",
+      "title": "Simulação, computação científica e ferramentas",
+      "description": "Métodos numéricos, sistemas quânticos abertos, química quântica e ferramentas reprodutíveis.",
+      "items": [
+        [
+          "QuTiP",
+          "https://qutip.org/",
+          "Software aberto",
+          "Quantum Toolbox in Python para dinâmica de sistemas quânticos, sistemas abertos e óptica quântica.",
+          "software"
+        ],
+        [
+          "JuliaQuantum",
+          "https://github.com/JuliaQuantum",
+          "Ecossistema de software",
+          "Ferramentas e bibliotecas Julia para computação e simulação quântica.",
+          "software"
+        ],
+        [
+          "QuEra Aquila / AWS Braket",
+          "https://aws.amazon.com/braket/",
+          "Plataforma de pesquisa",
+          "Documentação de acesso a hardware e simuladores por serviço de nuvem; condições comerciais variam.",
+          "plataforma"
+        ],
+        [
+          "Quantum Open Source Foundation",
+          "https://qosf.org/",
+          "Comunidade e software",
+          "Comunidade voltada a ferramentas abertas, educação e infraestrutura de software quântico.",
+          "comunidade"
+        ]
+      ]
+    },
+    {
+      "id": "periodicos",
+      "title": "Periódicos, repositórios e literatura",
+      "description": "Fontes para acompanhar resultados revisados por pares e distinguir artigos, revisões, preprints e notícias.",
+      "items": [
+        [
+          "PRX Quantum",
+          "https://journals.aps.org/prxquantum/",
+          "Periódico científico",
+          "Periódico da American Physical Society dedicado à ciência e tecnologia quânticas.",
+          "periódico"
+        ],
+        [
+          "Quantum",
+          "https://quantum-journal.org/",
+          "Periódico científico aberto",
+          "Periódico de acesso aberto em ciência e tecnologia quânticas.",
+          "periódico"
+        ],
+        [
+          "npj Quantum Information",
+          "https://www.nature.com/npjqi/",
+          "Periódico científico",
+          "Pesquisa em informação quântica, comunicação, computação e tecnologias associadas.",
+          "periódico"
+        ],
+        [
+          "Quantum Science and Technology",
+          "https://iopscience.iop.org/journal/2058-9565",
+          "Periódico científico",
+          "Pesquisa fundamental e aplicada em ciência e tecnologias quânticas.",
+          "periódico"
+        ],
+        [
+          "APS Journals: Quantum Information",
+          "https://journals.aps.org/",
+          "Editora científica",
+          "Portal de periódicos da APS, incluindo Physical Review e PRX Quantum.",
+          "periódico"
+        ]
+      ]
+    }
+  ],
+  "research_highlights": [
+    {
+      "title": "Prêmio Nobel de Física 2025: tunelamento macroscópico em circuitos",
+      "date": "2025",
+      "kind": "Resultado consolidado e premiado",
+      "url": "https://www.nobelprize.org/prizes/physics/2025/summary/"
+    },
+    {
+      "title": "RIKEN: avanços em modos escuros, fônons e redução de ruído em qubits",
+      "date": "2026",
+      "kind": "Destaques institucionais de pesquisa",
+      "url": "https://www.riken.jp/en/research/labs/rqc/"
+    },
+    {
+      "title": "Quantum Frontiers: rede de fibra para tecnologias quânticas",
+      "date": "2026",
+      "kind": "Destaque institucional",
+      "url": "https://www.quantumfrontiers.de/en/research/research-highlights/"
+    },
+    {
+      "title": "Sandia: publicações em metrologia, emaranhamento e simulação quântica",
+      "date": "2026",
+      "kind": "Publicações científicas",
+      "url": "https://far-qu.sandia.gov/publications/"
+    },
+    {
+      "title": "Oxford: pesquisas recentes em fundamentos e preparação de estados quânticos",
+      "date": "2026",
+      "kind": "Publicações e preprints",
+      "url": "https://www.physics.ox.ac.uk/research/group/frontiers-quantum-physics/publications"
+    },
+    {
+      "title": "NSF: institutos de desafio para computação, redes, sensores e simulação",
+      "date": "Atualizado em 2026",
+      "kind": "Programa público de pesquisa",
+      "url": "https://www.nsf.gov/focus-areas/quantum"
+    }
+  ]
+}
