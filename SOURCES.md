@@ -28,6 +28,15 @@ O seletor apresenta uma lista temática ampla e plana, com categorias específic
 
 A interface está disponível em 15 idiomas: português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês, russo, neerlandês, polonês, coreano, árabe, hindi e turco. O português brasileiro é o idioma inicial. As traduções dos registros são armazenadas por idioma; nomes oficiais e títulos próprios devem ser preservados.
 
+## Fontes externas em grande escala
+
+O projeto pode incorporar o dump público do Curlie em lotes controlados. O diretório declara aproximadamente 2,9 milhões de entradas estruturadas, distribuídas por categorias e acompanhadas de URL, título e descrição editorial. O dump é atualizado periodicamente e distribuído em TSV compactado. O conteúdo está sob CC BY 3.0 Unported, com atribuição obrigatória em páginas públicas que o utilizem. O CAOS mantém a procedência por registro e exibe a atribuição no rodapé quando houver conteúdo importado.
+
+- Download oficial: https://www.curlie.org/docs/en/rdf.html
+- Licença e atribuição: https://www.curlie.org/docs/en/license.html
+
+A importação não foi executada automaticamente nesta etapa: o arquivo completo tem cerca de 200 MB e deve ser baixado e processado pelo pipeline documentado, com revisão do lote antes da publicação.
+
 ## Referências para a curadoria
 
 - UNESCO — Open Science: https://www.unesco.org/en/open-science
