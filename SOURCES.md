@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **13.022 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **13.519 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -35,7 +35,7 @@ O projeto pode incorporar o dump público do Curlie em lotes controlados. O dire
 - Download oficial: https://www.curlie.org/docs/en/rdf.html
 - Licença e atribuição: https://www.curlie.org/docs/en/license.html
 
-A versão atual do CAOS contém 12.000 registros selecionados do dump Curlie, dentro de um catálogo de 13.022 registros. Trata-se de uma amostra importada em lote, não do dump completo. Os registros preservam `source`, `source_license`, `source_attribution` e o caminho original de categoria; novas importações devem manter a atribuição CC BY 3.0 e passar por revisão antes da publicação.
+A versão atual do CAOS contém 12.000 registros selecionados do dump Curlie, dentro de um catálogo de 13.519 registros. Trata-se de uma amostra importada em lote, não do dump completo. Os registros preservam `source`, `source_license`, `source_attribution` e o caminho original de categoria; novas importações devem manter a atribuição CC BY 3.0 e passar por revisão antes da publicação.
 
 ## Referências para a curadoria
 
