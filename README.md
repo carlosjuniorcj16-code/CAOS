@@ -22,6 +22,12 @@ O CAOS está preparado para importar lotes de até 10.000 registros do dump Curl
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 
+## Dados para Inteligência Artificial
+
+O portal possui uma área especializada em datasets e fontes primárias para IA em [ai-data.html](ai-data.html), com catálogo próprio em [data/ai_sources.json](data/ai_sources.json). A primeira curadoria contém 27 fontes, entre corpora de texto, rastreamento web, conhecimento estruturado, literatura científica, biomedicina, código, imagens, áudio, dados geoespaciais, hubs e benchmarks. Os registros documentam área, tipo, formatos, idiomas, volume aproximado, licença/direitos, acesso, atualização, usos recomendados, ressalvas e links oficiais. A interface oferece busca e filtros em 15 idiomas. As descrições dos registros estão em português e inglês; o campo description_i18n aceita traduções adicionais. Volumes são indicativos e devem ser conferidos na documentação oficial.
+
+A inclusão no catálogo não certifica qualidade nem concede direitos de treinamento: cada licença, versão e conteúdo de origem deve ser auditado antes do uso.
+
 ## Como usar
 
 - Pesquise por nome, assunto, instituição, disciplina ou palavra-chave.
@@ -34,7 +40,9 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 
 ## Estrutura
 
-- `index.html` — interface multilíngue, busca com destaque de termos, categorias recolhíveis e carregamento progressivo.
+- `index.html` — portal principal multilíngue.
+- `ai-data.html` — diretório especializado de datasets e fontes para IA.
+- `data/ai_sources.json` — metadados estruturados de datasets e fontes para IA.
 - `data/sources.json` — catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições.
 - `SOURCES.md` — critérios editoriais e referências de curadoria.
