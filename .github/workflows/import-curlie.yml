@@ -1,6 +1,11 @@
 name: Import Curlie directory data
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_curlie.py'
+      - '.github/workflows/import-curlie.yml'
   workflow_dispatch:
   schedule:
     - cron: "30 4 1 * *"
