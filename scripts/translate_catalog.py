@@ -53,13 +53,19 @@ def main():
             topics[topic]={lang:tr(base,lang) for lang in langs}
     processed=0
     for item in data["resources"]:
-        if args.limit and processed>=args.limit: break
+        topic=item.get("topic","")
         base=item.get("description_pt") or item.get("description") or item.get("title","")
         if not base: continue
         translations=item.setdefault("translations",{})
+        needs_work=not all(translations.get(lang,{}).get("description") for lang in langs) or not item.get("topic_i18n")
+        if not needs_work: continue
+        if args.limit and processed>=args.limit: break
         for lang in langs:
             entry=translations.setdefault(lang,{})
-            if not entry.get("description"): entry["description"]=tr(base,lang)
+            if not entry.get("description"):
+                if lang=="pt" and item.get("description_pt"): entry["description"]=item["description_pt"]
+                elif lang=="en" and item.get("description"): entry["description"]=item["description"]
+                else: entry["description"]=tr(base,lang)
             if item.get("type") and not entry.get("type"): entry["type"]=tr(item["type"],lang)
             if item.get("access") and not entry.get("access"): entry["access"]=tr(item["access"],lang)
             if item.get("subcategory_pt") or item.get("subcategory"):
