@@ -67,3 +67,145 @@ Cada registro em `data/ai_sources.json` documenta área, tipo, formatos, idiomas
 - Mozilla Common Voice — https://commonvoice.mozilla.org/terms/en.html
 
 As descrições de licença no catálogo são resumos de orientação, não pareceres jurídicos. Confirme a licença da versão, dos arquivos e dos materiais de origem antes de baixar, redistribuir ou usar em treinamento.
+
+
+## Atlas de Software Livre e Open Source
+
+O atlas em `software.html` e os registros de `data/open-source-software.json` são uma curadoria de descoberta, não uma certificação. A primeira versão contém 226 referências em oito frentes: sistemas operacionais, diretórios e forjas, linguagens e registros de pacotes, ferramentas de desenvolvimento, frameworks, infraestrutura, segurança/licenças e comunidades/documentação.
+
+### Sistemas operacionais e plataformas
+
+- Linux kernel e documentação: https://kernel.org/ e https://docs.kernel.org/
+- Debian: https://www.debian.org/ e https://www.debian.org/doc/
+- Fedora: https://fedoraproject.org/ e https://docs.fedoraproject.org/
+- Arch Linux: https://archlinux.org/ e https://wiki.archlinux.org/
+- Gentoo: https://www.gentoo.org/ e https://wiki.gentoo.org/
+- NixOS: https://nixos.org/
+- Alpine Linux: https://alpinelinux.org/
+- openSUSE: https://www.opensuse.org/
+- GNU Guix: https://guix.gnu.org/
+- FreeBSD: https://www.freebsd.org/
+- OpenBSD: https://www.openbsd.org/
+- NetBSD: https://www.netbsd.org/
+- DragonFly BSD: https://www.dragonflybsd.org/
+- illumos e documentação: https://illumos.org/ e https://illumos.github.io/docs/
+- OpenIndiana: https://www.openindiana.org/
+- Haiku: https://www.haiku-os.org/
+- Redox OS: https://www.redox-os.org/
+- ReactOS: https://reactos.org/
+- GNU Hurd: https://www.gnu.org/software/hurd/
+- Genode: https://genode.org/
+- 9front: https://9front.org/
+- Android Open Source Project: https://source.android.com/
+- LineageOS: https://lineageos.org/
+- GrapheneOS: https://grapheneos.org/
+- postmarketOS: https://postmarketos.org/
+- Zephyr: https://www.zephyrproject.org/
+- FreeRTOS: https://www.freertos.org/
+- Apache NuttX: https://nuttx.apache.org/
+- RIOT OS: https://www.riot-os.org/
+- RTEMS: https://www.rtems.org/
+- seL4: https://sel4.systems/
+- OpenWrt: https://openwrt.org/
+- Buildroot: https://buildroot.org/
+- Yocto Project: https://www.yoctoproject.org/
+
+### Diretórios, forjas e governança de projetos
+
+- Free Software Directory (FSF): https://directory.fsf.org/
+- GNU Software: https://www.gnu.org/software/
+- Open Source Initiative: https://opensource.org/
+- OpenSSF Landscape: https://landscape.openssf.org/
+- CNCF Landscape: https://landscape.cncf.io/
+- Apache Software Foundation Projects: https://www.apache.org/projects/
+- Eclipse Projects: https://projects.eclipse.org/
+- OW2: https://www.ow2.org/
+- Codeberg / Forgejo: https://codeberg.org/ e https://forgejo.org/
+- SourceHut: https://sourcehut.org/
+- GNU Savannah: https://savannah.gnu.org/
+- KDE Invent: https://invent.kde.org/
+- GNOME GitLab: https://gitlab.gnome.org/
+- freedesktop.org: https://gitlab.freedesktop.org/
+
+### Linguagens, bibliotecas e distribuição
+
+- Python: https://www.python.org/
+- Rust: https://www.rust-lang.org/
+- Go: https://go.dev/
+- OpenJDK: https://openjdk.org/
+- GCC: https://gcc.gnu.org/
+- LLVM/Clang: https://llvm.org/
+- Julia: https://julialang.org/
+- Ruby: https://www.ruby-lang.org/
+- PHP: https://www.php.net/
+- Haskell: https://www.haskell.org/
+- OCaml: https://ocaml.org/
+- Elixir: https://elixir-lang.org/
+- Zig: https://ziglang.org/
+- PyPI: https://pypi.org/
+- npm: https://www.npmjs.com/
+- crates.io: https://crates.io/
+- Maven Central: https://central.sonatype.com/
+- NuGet: https://www.nuget.org/
+- RubyGems: https://rubygems.org/
+- Packagist: https://packagist.org/
+- CPAN: https://www.cpan.org/
+- Hackage: https://hackage.haskell.org/
+- Hex: https://hex.pm/
+- pub.dev: https://pub.dev/
+- CRAN: https://cran.r-project.org/
+- Conda-forge: https://conda-forge.org/
+- Repology: https://repology.org/
+- Libraries.io: https://libraries.io/
+
+### Toolchains, frameworks e infraestrutura
+
+- CMake: https://cmake.org/
+- Meson: https://mesonbuild.com/
+- Ninja: https://ninja-build.org/
+- Bazel: https://bazel.build/
+- Qt: https://www.qt.io/
+- GTK: https://www.gtk.org/
+- React: https://react.dev/
+- Vue: https://vuejs.org/
+- Angular: https://angular.dev/
+- Svelte: https://svelte.dev/
+- Django: https://www.djangoproject.com/
+- FastAPI: https://fastapi.tiangolo.com/
+- Ruby on Rails: https://rubyonrails.org/
+- Laravel: https://laravel.com/
+- Spring: https://spring.io/projects/spring-framework
+- PostgreSQL: https://www.postgresql.org/
+- MariaDB: https://mariadb.org/
+- SQLite: https://sqlite.org/
+- DuckDB: https://duckdb.org/
+- Valkey: https://valkey.io/
+- OpenSearch: https://opensearch.org/
+- Ceph: https://ceph.io/
+- OpenZFS: https://openzfs.org/
+- Kubernetes: https://kubernetes.io/
+- Podman: https://podman.io/
+- QEMU: https://www.qemu.org/
+- OpenStack: https://www.openstack.org/
+- OpenTofu: https://opentofu.org/
+- Ansible: https://www.ansible.com/
+- Prometheus: https://prometheus.io/
+- Grafana OSS: https://grafana.com/oss/
+- OpenTelemetry: https://opentelemetry.io/
+
+### Segurança, SBOM e licenças
+
+- OpenSSF Scorecard: https://scorecard.dev/
+- OSV.dev: https://osv.dev/
+- Trivy: https://trivy.dev/
+- Syft: https://github.com/anchore/syft
+- Grype: https://github.com/anchore/grype
+- Sigstore: https://www.sigstore.dev/
+- SLSA: https://slsa.dev/
+- SPDX: https://spdx.dev/
+- CycloneDX: https://cyclonedx.org/
+- REUSE: https://reuse.software/
+- Licenças GNU: https://www.gnu.org/licenses/
+- Choose a License: https://choosealicense.com/
+
+Os links apontam para projetos e documentação oficial sempre que possível. A licença do projeto não necessariamente cobre plugins, dependências, dados, assets, marcas, firmware ou todos os componentes de uma distribuição. Para análise de conformidade, use os arquivos de licença e avisos da versão exata, além dos metadados de dependências e SBOM. O atlas não é uma lista exaustiva de todos os sistemas operacionais nem de todos os projetos open source existentes; é uma base inicial ampla, estruturada para expansão contínua.
