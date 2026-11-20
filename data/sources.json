@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "updated": "2026-11-19",
   "note": "Diretório público e multilíngue de links para fontes de conhecimento e informação. A CAOS indica fontes originais; disponibilidade, licenças e condições de uso são definidas por cada fonte.",
   "resources": [
@@ -10245,6 +10245,741 @@
       ],
       "description_pt": "Fonte de referência sobre research publishing, com dados, documentos ou recursos para consulta e pesquisa.",
       "subcategory_pt": "Research publishing"
+    },
+    {
+      "id": 618,
+      "title": "InterPro",
+      "category": "natural",
+      "subcategory": "Bioinformatics",
+      "description": "Reference portal, database or repository on bioinformatics, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/interpro/",
+      "type": "Protein family database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Bioinformatics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre bioinformatics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Bioinformatics"
+    },
+    {
+      "id": 619,
+      "title": "Pfam",
+      "category": "natural",
+      "subcategory": "Proteomics",
+      "description": "Reference portal, database or repository on proteomics, with resources for consultation, study and research.",
+      "url": "https://pfam.xfam.org/",
+      "type": "Protein family database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Proteomics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre proteomics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Proteomics"
+    },
+    {
+      "id": 620,
+      "title": "STRING",
+      "category": "natural",
+      "subcategory": "Systems biology",
+      "description": "Reference portal, database or repository on systems biology, with resources for consultation, study and research.",
+      "url": "https://string-db.org/",
+      "type": "Protein interaction database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Systems biology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre systems biology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Systems biology"
+    },
+    {
+      "id": 621,
+      "title": "AlphaFold Protein Structure Database",
+      "category": "natural",
+      "subcategory": "Protein structures",
+      "description": "Reference portal, database or repository on protein structures, with resources for consultation, study and research.",
+      "url": "https://alphafold.ebi.ac.uk/",
+      "type": "Structural biology database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Protein structures"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre protein structures, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Protein structures"
+    },
+    {
+      "id": 622,
+      "title": "PDBe",
+      "category": "natural",
+      "subcategory": "Structural biology",
+      "description": "Reference portal, database or repository on structural biology, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/pdbe/",
+      "type": "Structural biology database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Structural biology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre structural biology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Structural biology"
+    },
+    {
+      "id": 623,
+      "title": "EMDB",
+      "category": "natural",
+      "subcategory": "Structural biology",
+      "description": "Reference portal, database or repository on structural biology, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/emdb/",
+      "type": "Electron microscopy database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Structural biology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre structural biology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Structural biology"
+    },
+    {
+      "id": 624,
+      "title": "PRIDE Archive",
+      "category": "natural",
+      "subcategory": "Proteomics",
+      "description": "Reference portal, database or repository on proteomics, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/pride/",
+      "type": "Proteomics data repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Proteomics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre proteomics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Proteomics"
+    },
+    {
+      "id": 625,
+      "title": "MetaboLights",
+      "category": "natural",
+      "subcategory": "Metabolomics",
+      "description": "Reference portal, database or repository on metabolomics, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/metabolights/",
+      "type": "Metabolomics repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Metabolomics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre metabolomics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Metabolomics"
+    },
+    {
+      "id": 626,
+      "title": "Reactome",
+      "category": "natural",
+      "subcategory": "Molecular biology",
+      "description": "Reference portal, database or repository on molecular biology, with resources for consultation, study and research.",
+      "url": "https://reactome.org/",
+      "type": "Pathway database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Molecular biology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre molecular biology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Molecular biology"
+    },
+    {
+      "id": 627,
+      "title": "BioModels",
+      "category": "natural",
+      "subcategory": "Systems biology",
+      "description": "Reference portal, database or repository on systems biology, with resources for consultation, study and research.",
+      "url": "https://www.ebi.ac.uk/biomodels/",
+      "type": "Computational biology database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Systems biology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre systems biology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Systems biology"
+    },
+    {
+      "id": 628,
+      "title": "ClinVar",
+      "category": "health",
+      "subcategory": "Genetics",
+      "description": "Reference portal, database or repository on genetics, with resources for consultation, study and research.",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "type": "Clinical genetics database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Genetics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre genetics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Genetics"
+    },
+    {
+      "id": 629,
+      "title": "dbSNP",
+      "category": "natural",
+      "subcategory": "Genomics",
+      "description": "Reference portal, database or repository on genomics, with resources for consultation, study and research.",
+      "url": "https://www.ncbi.nlm.nih.gov/snp/",
+      "type": "Genetic variation database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Genomics"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre genomics, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Genomics"
+    },
+    {
+      "id": 630,
+      "title": "Orphanet",
+      "category": "health",
+      "subcategory": "Rare diseases",
+      "description": "Reference portal, database or repository on rare diseases, with resources for consultation, study and research.",
+      "url": "https://www.orpha.net/",
+      "type": "Rare disease reference",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Rare diseases"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre rare diseases, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Rare diseases"
+    },
+    {
+      "id": 631,
+      "title": "ImmPort",
+      "category": "health",
+      "subcategory": "Immunology",
+      "description": "Reference portal, database or repository on immunology, with resources for consultation, study and research.",
+      "url": "https://www.immport.org/",
+      "type": "Immunology data repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Immunology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre immunology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Immunology"
+    },
+    {
+      "id": 632,
+      "title": "Immune Epitope Database",
+      "category": "health",
+      "subcategory": "Immunology",
+      "description": "Reference portal, database or repository on immunology, with resources for consultation, study and research.",
+      "url": "https://www.iedb.org/",
+      "type": "Immunology database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Immunology"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre immunology, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Immunology"
+    },
+    {
+      "id": 633,
+      "title": "WHO Data",
+      "category": "health",
+      "subcategory": "Public health",
+      "description": "Reference portal, database or repository on public health, with resources for consultation, study and research.",
+      "url": "https://data.who.int/",
+      "type": "Health data platform",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Public health"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre public health, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Public health"
+    },
+    {
+      "id": 634,
+      "title": "UNODC Data",
+      "category": "social",
+      "subcategory": "Crime and justice",
+      "description": "Reference portal, database or repository on crime and justice, with resources for consultation, study and research.",
+      "url": "https://dataunodc.un.org/",
+      "type": "Statistical database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Crime and justice"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre crime and justice, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Crime and justice"
+    },
+    {
+      "id": 635,
+      "title": "World Governance Indicators",
+      "category": "social",
+      "subcategory": "Governance",
+      "description": "Reference portal, database or repository on governance, with resources for consultation, study and research.",
+      "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+      "type": "Research indicators",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Governance"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre governance, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Governance"
+    },
+    {
+      "id": 636,
+      "title": "Library and Archives Canada",
+      "category": "cross",
+      "subcategory": "Canada",
+      "description": "Reference portal, database or repository on canada, with resources for consultation, study and research.",
+      "url": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+      "type": "National archive and library",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Canada"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre canada, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Canada"
+    },
+    {
+      "id": 637,
+      "title": "National Diet Library Search",
+      "category": "cross",
+      "subcategory": "Japan",
+      "description": "Reference portal, database or repository on japan, with resources for consultation, study and research.",
+      "url": "https://ndlsearch.ndl.go.jp/en/",
+      "type": "National library catalog",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Japan"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre japan, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Japan"
+    },
+    {
+      "id": 638,
+      "title": "National Library of Korea",
+      "category": "cross",
+      "subcategory": "South Korea",
+      "description": "Reference portal, database or repository on south korea, with resources for consultation, study and research.",
+      "url": "https://www.nl.go.kr/EN/",
+      "type": "National library catalog",
+      "access": "Free; terms may vary",
+      "tags": [
+        "South Korea"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre south korea, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "South Korea"
+    },
+    {
+      "id": 639,
+      "title": "National Library of China",
+      "category": "cross",
+      "subcategory": "China",
+      "description": "Reference portal, database or repository on china, with resources for consultation, study and research.",
+      "url": "https://www.nlc.cn/",
+      "type": "National library catalog",
+      "access": "Free; terms may vary",
+      "tags": [
+        "China"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre china, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "China"
+    },
+    {
+      "id": 640,
+      "title": "National Library of Spain",
+      "category": "cross",
+      "subcategory": "Spain",
+      "description": "Reference portal, database or repository on spain, with resources for consultation, study and research.",
+      "url": "https://www.bne.es/en",
+      "type": "National library portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Spain"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre spain, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Spain"
+    },
+    {
+      "id": 641,
+      "title": "National Library of Portugal",
+      "category": "cross",
+      "subcategory": "Portugal",
+      "description": "Reference portal, database or repository on portugal, with resources for consultation, study and research.",
+      "url": "https://www.bnportugal.gov.pt/",
+      "type": "National library portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Portugal"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre portugal, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Portugal"
+    },
+    {
+      "id": 642,
+      "title": "National Library of Brazil",
+      "category": "cross",
+      "subcategory": "Brazil",
+      "description": "Reference portal, database or repository on brazil, with resources for consultation, study and research.",
+      "url": "https://www.gov.br/bn/pt-br",
+      "type": "National library portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazil"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazil, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazil"
+    },
+    {
+      "id": 643,
+      "title": "Arquivo Nacional do Brasil",
+      "category": "cross",
+      "subcategory": "Brazil",
+      "description": "Reference portal, database or repository on brazil, with resources for consultation, study and research.",
+      "url": "https://www.gov.br/arquivonacional/pt-br",
+      "type": "National archives portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazil"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazil, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazil"
+    },
+    {
+      "id": 644,
+      "title": "Arquivo Público Mineiro",
+      "category": "cross",
+      "subcategory": "Brazil",
+      "description": "Reference portal, database or repository on brazil, with resources for consultation, study and research.",
+      "url": "https://www.siaapm.cultura.mg.gov.br/",
+      "type": "State archives portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazil"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazil, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazil"
+    },
+    {
+      "id": 645,
+      "title": "Museu do Índio Acervo Digital",
+      "category": "cross",
+      "subcategory": "Indigenous history",
+      "description": "Reference portal, database or repository on indigenous history, with resources for consultation, study and research.",
+      "url": "https://www.gov.br/museudoindio/pt-br",
+      "type": "Museum and cultural archive",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Indigenous history"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre indigenous history, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Indigenous history"
+    },
+    {
+      "id": 646,
+      "title": "Repositório Institucional Unicamp",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.unicamp.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 647,
+      "title": "Repositório Institucional Unesp",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.unesp.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 648,
+      "title": "Lume UFRGS",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://lume.ufrgs.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 649,
+      "title": "Repositório Institucional UFSC",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufsc.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 650,
+      "title": "Repositório Institucional UFPR",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://acervodigital.ufpr.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 651,
+      "title": "Repositório Institucional UFSCar",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufscar.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 652,
+      "title": "Repositório Institucional Unifesp",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.unifesp.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 653,
+      "title": "Repositório Institucional UERJ",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://www.bdtd.uerj.br/",
+      "type": "Thesis repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 654,
+      "title": "Repositório Institucional UFBA",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufba.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 655,
+      "title": "Repositório Institucional UFPE",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufpe.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 656,
+      "title": "Repositório Institucional UFG",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.bc.ufg.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 657,
+      "title": "Repositório Institucional UFPA",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufpa.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 658,
+      "title": "Repositório Institucional UFC",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufc.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 659,
+      "title": "Repositório Institucional UFSM",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufsm.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 660,
+      "title": "Repositório Institucional UFRN",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufrn.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 661,
+      "title": "Repositório Institucional UFES",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufes.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 662,
+      "title": "Repositório Institucional UFPB",
+      "category": "cross",
+      "subcategory": "Brazilian research",
+      "description": "Reference portal, database or repository on brazilian research, with resources for consultation, study and research.",
+      "url": "https://repositorio.ufpb.br/",
+      "type": "University repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Brazilian research"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre brazilian research, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Brazilian research"
+    },
+    {
+      "id": 663,
+      "title": "Open Knowledge Repository",
+      "category": "cross",
+      "subcategory": "Development",
+      "description": "Reference portal, database or repository on development, with resources for consultation, study and research.",
+      "url": "https://openknowledge.worldbank.org/",
+      "type": "Research publication repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Development"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre development, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Development"
+    },
+    {
+      "id": 664,
+      "title": "IDB Publications",
+      "category": "social",
+      "subcategory": "Latin America",
+      "description": "Reference portal, database or repository on latin america, with resources for consultation, study and research.",
+      "url": "https://publications.iadb.org/",
+      "type": "Research publication repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Latin America"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre latin america, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Latin America"
+    },
+    {
+      "id": 665,
+      "title": "UNEP Data",
+      "category": "natural",
+      "subcategory": "Environment",
+      "description": "Reference portal, database or repository on environment, with resources for consultation, study and research.",
+      "url": "https://www.unep.org/explore-topics/environmental-rights-and-governance/what-we-do/data",
+      "type": "Environmental data portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Environment"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre environment, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Environment"
+    },
+    {
+      "id": 666,
+      "title": "World Intellectual Property Organization",
+      "category": "social",
+      "subcategory": "Intellectual property",
+      "description": "Reference portal, database or repository on intellectual property, with resources for consultation, study and research.",
+      "url": "https://www.wipo.int/",
+      "type": "International organization",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Intellectual property"
+      ],
+      "description_pt": "Portal, base de dados ou repositório de referência sobre intellectual property, com recursos para consulta, estudo e pesquisa.",
+      "subcategory_pt": "Intellectual property"
     }
   ]
 }
