@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   validate:
-    name: Validate catalog, research feeds and JavaScript
+    name: Validate catalog and JavaScript
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
