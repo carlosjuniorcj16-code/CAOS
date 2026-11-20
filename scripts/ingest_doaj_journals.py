@@ -68,17 +68,17 @@ def request_page(page: int, page_size: int) -> dict:
 
 def homepage_from(record: dict) -> str:
     bib = record.get("bibjson") or {}
+    # DOAJ's canonical journal homepage is bibjson.ref.journal.
+    ref = bib.get("ref") or {}
+    candidate = normalized_url(str(ref.get("journal") or ""))
+    if candidate:
+        return candidate
     links = bib.get("link") or []
     if isinstance(links, dict):
         links = [links]
     preferred = [x for x in links if isinstance(x, dict) and str(x.get("type", "")).lower() in {"homepage", "journal"}]
-    for link in preferred + [x for x in links if isinstance(x, dict)]:
+    for link in preferred:
         candidate = normalized_url(str(link.get("url") or ""))
-        if candidate:
-            return candidate
-    ref = record.get("ref") or {}
-    for key in ("journal", "aimsScope"):
-        candidate = normalized_url(str(ref.get(key) or ""))
         if candidate:
             return candidate
     return ""
@@ -117,7 +117,9 @@ def build_record(item: dict, record_id: int) -> dict | None:
         country = str(publisher.get("country") or "").strip()
     topic = topic_for(item)
     topic_pt, topic_en = TOPICS[topic]
-    issns = [str(x).strip() for x in (bib.get("identifier") or []) if isinstance(x, dict) and str(x.get("type", "")).lower() in {"pissn", "eissn", "issn"} and x.get("id")]
+    issns = [str(value).strip() for value in (bib.get("pissn"), bib.get("eissn")) if value]
+    if not issns:
+        issns = [str(x).strip() for x in (bib.get("identifier") or []) if isinstance(x, dict) and str(x.get("type", "")).lower() in {"pissn", "eissn", "issn"} and x.get("id")]
     if not issns:
         issns = [str(x).strip() for x in (bib.get("issn") or []) if x]
     source_id = str(item.get("id") or (issns[0] if issns else url))
