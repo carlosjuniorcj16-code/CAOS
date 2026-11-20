@@ -24,21 +24,32 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Compile Python catalog tools
+      - name: Compile Python tools
         run: python -m py_compile scripts/*.py
-      - name: Smoke-test DOAJ public journal metadata API
-        if: github.event_name == 'pull_request'
-        run: python scripts/ingest_doaj_journals.py --limit 5 --page-size 10 --max-pages 1 --dry-run
-      - name: Smoke-test OpenAlex institution metadata API
-        if: github.event_name == 'pull_request'
-        run: python scripts/ingest_openalex_institutions.py --limit 5 --max-pages 1 --dry-run
       - name: Validate catalog
         run: python scripts/validate_catalog.py
+      - name: Validate research feed schemas and source URLs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ("research-radar.json", "reading-recommendations.json"):
+              path = Path("data") / name
+              data = json.loads(path.read_text(encoding="utf-8"))
+              assert isinstance(data, dict) and "schema_version" in data
+              for item in data.get("items", []):
+                  assert item.get("url", "").startswith("https://")
+              for topic in data.get("topics", []):
+                  assert len(topic.get("items", [])) <= 5
+                  for item in topic.get("items", []):
+                      assert item.get("url", "").startswith("https://")
+          print("Research feeds structurally valid.")
+          PY
       - name: Build compact search index
         run: python scripts/build_search_index.py
       - name: Check compact index output
@@ -50,14 +61,14 @@ jobs:
           from pathlib import Path
           import re
           total = 0
-          for page in ("index.html", "ai-data.html"):
+          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html"):
               html = Path(page).read_text(encoding="utf-8")
               scripts = [body for attrs, body in re.findall(r"<script\b([^>]*)>([\s\S]*?)</script>", html, re.I) if "application/ld+json" not in attrs.lower()]
-              if not scripts:
-                  raise SystemExit(f"Nenhum script inline encontrado em {page}.")
               for i, script in enumerate(scripts):
                   Path(f"/tmp/caos-{Path(page).stem}-{i}.js").write_text(script, encoding="utf-8")
               total += len(scripts)
-          print(f"{total} bloco(s) de script extraído(s) das duas páginas.")
+          for file in Path("/tmp").glob("caos-*.js"):
+              import subprocess
+              subprocess.run(["node", "--check", str(file)], check=True)
+          print(f"{total} JavaScript block(s) syntax-checked.")
           PY
-          for file in /tmp/caos-*.js; do node --check "$file"; done

@@ -1,4 +1,4 @@
-name: CAOS live research radar
+name: CAOS live research radar and reading suggestions
 
 on:
   schedule:
@@ -14,9 +14,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-radar:
+  update-research:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -26,32 +26,38 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Collect recent primary research metadata
+      - name: Collect research from scholarly APIs
         run: python scripts/update_research_radar.py
-      - name: Validate radar payload
+      - name: Validate generated feeds
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          data = json.loads(Path("data/research-radar.json").read_text(encoding="utf-8"))
-          assert data.get("schema_version") == 1
-          assert isinstance(data.get("items"), list) and len(data["items"]) <= 5
-          for item in data["items"]:
-              assert item["url"].startswith("https://arxiv.org/abs/")
-              assert item["title"] and item["area"] and item["published"]
-          print("Radar payload valid.")
+          radar = json.loads(Path("data/research-radar.json").read_text(encoding="utf-8"))
+          reads = json.loads(Path("data/reading-recommendations.json").read_text(encoding="utf-8"))
+          assert radar["schema_version"] == 2 and 1 <= len(radar["items"]) <= 5
+          assert reads["schema_version"] == 1 and len(reads["topics"]) == 5
+          assert all(len(topic["items"]) <= 5 for topic in reads["topics"])
+          for item in radar["items"] + [x for t in reads["topics"] for x in t["items"]]:
+              assert item["url"].startswith("https://")
+              assert item["title"] and item["published"] and item["area"]
+          print("Research feeds valid.")
           PY
-      - name: Create or update a reviewable data PR
+      - name: Create or update reviewable research PR
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore: refresh live research radar"
-          title: "chore: refresh live research radar"
+          commit-message: "chore: refresh research radar and reading suggestions"
+          title: "chore: refresh research radar and reading suggestions"
           body: |
-            Automated refresh of the CAOS live research radar.
+            Automated update of CAOS research discovery feeds.
 
-            This PR changes only `data/research-radar.json`, generated from public arXiv metadata.
-            Review the entries and source links before merging. The main catalog is not modified.
+            Sources: arXiv, Europe PMC and Crossref public scholarly metadata APIs.
+            Includes the compact research radar and up to five recent reading suggestions per subject.
+            Only generated JSON feeds are changed. No full-text articles or PDFs are copied.
+            Review source links and metadata before merging.
           branch: automation/research-radar
           delete-branch: true
-          add-paths: data/research-radar.json
+          add-paths: |
+            data/research-radar.json
+            data/reading-recommendations.json

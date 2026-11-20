@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "policy": "Store provider provenance and metadata rights separately from the rights governing each linked website or document. Do not infer a content license from the provider's metadata license.",
+  "version": 2,
+  "policy": "Store provider provenance and metadata rights separately from the rights governing each linked website or document. Do not infer a content license from the provider's metadata license. Never copy linked full text or PDFs into CAOS.",
   "providers": [
     {
       "id": "curlie",
@@ -10,13 +10,6 @@
       "metadata_license": "CC BY 3.0",
       "attribution_required": true,
       "redistribution": "allowed_with_attribution",
-      "required_record_fields": [
-        "source",
-        "source_id",
-        "source_license",
-        "source_attribution",
-        "source_category_path"
-      ],
       "notes": "Attribute Curlie on public pages containing imported records. Attribution does not imply endorsement."
     },
     {
@@ -30,52 +23,7 @@
       "recommended_attribution": "OpenAlex",
       "redistribution": "allowed_for_metadata",
       "content_license": "unknown_per_institution",
-      "required_record_fields": [
-        "source",
-        "source_id",
-        "source_url",
-        "source_license",
-        "source_attribution",
-        "imported_at",
-        "content_license"
-      ],
       "notes": "Only metadata and official homepage URLs are imported. The linked institution's website content is not relicensed by OpenAlex."
-    },
-    {
-      "id": "crossref",
-      "name": "Crossref REST API",
-      "kind": "bibliographic metadata",
-      "endpoint": "https://api.crossref.org/",
-      "documentation": "https://www.crossref.org/documentation/retrieve-metadata/rest-api",
-      "metadata_license": "CC0_for_crossref_generated_data_and_factual_metadata",
-      "attribution_required": false,
-      "redistribution": "metadata_only",
-      "content_license": "abstracts_remain_under_publisher_or_author_rights",
-      "notes": "Do not bulk-copy abstracts into CAOS. Use Crossref for DOI metadata, journal discovery and provenance."
-    },
-    {
-      "id": "wikidata",
-      "name": "Wikidata",
-      "kind": "structured knowledge graph",
-      "endpoint": "https://www.wikidata.org/wiki/Special:EntityData/",
-      "documentation": "https://www.wikidata.org/wiki/Wikidata:Licensing",
-      "metadata_license": "CC0 1.0",
-      "attribution_required": false,
-      "recommended_attribution": "Wikidata",
-      "redistribution": "allowed_for_structured_data",
-      "content_license": "external_link_targets_have_independent_rights",
-      "notes": "Structured data is CC0. Text in other Wikidata namespaces has different licensing; this registry covers structured entity data only."
-    },
-    {
-      "id": "core",
-      "name": "CORE",
-      "kind": "research discovery and repository API",
-      "endpoint": "https://api.core.ac.uk/",
-      "documentation": "https://core.ac.uk/terms",
-      "metadata_license": "license_required_for_api_and_most_datasets",
-      "attribution_required": "depends_on_license",
-      "redistribution": "obtain_license_before_product_or_bulk_use",
-      "notes": "CORE terms require a licence for the API and other datasets; contact CORE before building a product, search service or redistributable dataset on its data."
     },
     {
       "id": "doaj-journals",
@@ -88,16 +36,82 @@
       "recommended_attribution": "Directory of Open Access Journals (DOAJ)",
       "redistribution": "allowed_for_journal_level_metadata",
       "content_license": "independent_per_journal_website",
-      "required_record_fields": [
-        "source",
-        "source_id",
-        "source_url",
-        "source_license",
-        "source_attribution",
-        "imported_at",
-        "content_license"
-      ],
-      "notes": "Only journal-level metadata and homepage URLs are used. DOAJ metadata CC0 does not relicense the linked journal websites. Public API requests are deliberately rate-limited."
+      "notes": "Only journal-level metadata and homepage URLs are used."
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata",
+      "kind": "structured knowledge graph",
+      "endpoint": "https://www.wikidata.org/wiki/Special:EntityData/",
+      "documentation": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "metadata_license": "CC0 1.0",
+      "attribution_required": false,
+      "recommended_attribution": "Wikidata",
+      "redistribution": "allowed_for_structured_data",
+      "content_license": "external_link_targets_have_independent_rights",
+      "notes": "Structured entity data is CC0; linked content has independent rights."
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv API",
+      "kind": "preprint and research-paper metadata",
+      "endpoint": "https://export.arxiv.org/api/query",
+      "documentation": "https://info.arxiv.org/help/api/user-manual.html",
+      "metadata_license": "metadata_only; article rights remain with authors or rights holders",
+      "attribution_required": true,
+      "recommended_attribution": "arXiv",
+      "redistribution": "limited_metadata_with_source_links",
+      "notes": "Use the API politely. Do not imply that all preprints are peer reviewed."
+    },
+    {
+      "id": "europe-pmc",
+      "name": "Europe PMC REST API",
+      "kind": "life-sciences literature index",
+      "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "documentation": "https://europepmc.org/RestfulWebService",
+      "metadata_license": "metadata_and_article_rights_vary",
+      "attribution_required": true,
+      "recommended_attribution": "Europe PMC",
+      "redistribution": "bibliographic_metadata_and_source_links",
+      "content_license": "per_article",
+      "notes": "Free discovery does not imply full-text reuse. Article-specific rights govern abstracts and full text."
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref REST API",
+      "kind": "cross-disciplinary bibliographic metadata",
+      "endpoint": "https://api.crossref.org/works",
+      "documentation": "https://www.crossref.org/documentation/retrieve-metadata/rest-api",
+      "metadata_license": "metadata_reuse_per_crossref_terms; abstracts_may_be_copyrighted",
+      "attribution_required": false,
+      "recommended_attribution": "Crossref",
+      "redistribution": "bibliographic_metadata_only",
+      "content_license": "publisher_or_author_rights",
+      "notes": "Use polite request rates and a descriptive User-Agent. DOI metadata does not establish open access or peer review."
+    },
+    {
+      "id": "core",
+      "name": "CORE",
+      "kind": "research discovery and repository API",
+      "endpoint": "https://api.core.ac.uk/",
+      "documentation": "https://core.ac.uk/terms",
+      "metadata_license": "license_required_for_api_and_most_datasets",
+      "attribution_required": "depends_on_license",
+      "redistribution": "obtain_license_before_product_or_bulk_use",
+      "notes": "Not ingested until an appropriate API licence is confirmed."
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed / NCBI E-utilities",
+      "kind": "biomedical literature index",
+      "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+      "metadata_license": "metadata_and_article_rights_vary",
+      "attribution_required": true,
+      "recommended_attribution": "PubMed, National Library of Medicine",
+      "redistribution": "bibliographic_metadata_and_source_links",
+      "content_license": "abstracts_and_full_text_have_independent_rights",
+      "notes": "Use ESearch and ESummary in low-volume batches. The NCBI API key is optional for this conservative cadence; observe current request limits."
     }
   ]
 }

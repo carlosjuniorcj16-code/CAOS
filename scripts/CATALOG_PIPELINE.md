@@ -84,3 +84,17 @@ A página `radar.html` apresenta cinco publicações recentes em áreas distinta
 O workflow `.github/workflows/live-research-radar.yml` atualiza `data/research-radar.json` duas vezes ao dia (07:20 e 19:20 UTC). Essa rotina altera somente o arquivo de dados gerado do Radar; não altera `data/sources.json` nem publica novos registros no diretório principal. Se a fonte não retornar registros, o coletor falha sem sobrescrever a última versão válida.
 
 O Radar é uma janela de recência e diversidade temática, não um ranking de qualidade, popularidade, revisão por pares ou consenso. Cada item direciona o leitor à publicação original. Documentação da API: https://info.arxiv.org/help/api/user-manual.html
+
+
+## Radar científico e sugestões de leitura
+
+O workflow \`.github/workflows/live-research-radar.yml\` consulta duas vezes ao dia (07:20 e 19:20 UTC) quatro APIs acadêmicas: arXiv, PubMed, Europe PMC e Crossref. O coletor \`scripts/update_research_radar.py\` constrói:
+
+- \`data/research-radar.json\`: até cinco registros multidisciplinares recentes para o Radar.
+- \`data/reading-recommendations.json\`: até cinco leituras por eixo temático em cinco áreas, dentro de uma janela móvel de 45 dias.
+
+A página \`radar.html\` resume sinais recentes; \`leituras.html\` apresenta as sugestões segmentadas. A ordenação é por data e diversidade, não por qualidade, citações, popularidade ou consenso. Preprints não devem ser descritos como artigos revisados por pares.
+
+O workflow gera um PR automático com apenas os dois arquivos JSON. A revisão humana permanece necessária para publicar as atualizações. A execução automática depende da permissão do repositório para que GitHub Actions crie pull requests (Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests). Se uma execução falhar, consulte os logs da etapa correspondente em Actions.
+
+Política de conteúdo: guardar metadados bibliográficos mínimos e links diretos; não copiar PDFs, textos integrais ou imagens. Resumos e abstracts podem ter direitos próprios, portanto não são reproduzidos na página de sugestões. Consulte \`data/source_registry.json\` para a proveniência e os limites de reutilização por provedor.
