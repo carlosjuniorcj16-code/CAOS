@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updated": "2026-11-19",
   "note": "Diretório público e multilíngue de links para fontes de conhecimento e informação. A CAOS indica fontes originais; disponibilidade, licenças e condições de uso são definidas por cada fonte.",
   "resources": [
@@ -9645,6 +9645,321 @@
       "description_pt": "Portal de conhecimento sobre redução de riscos de desastres, resiliência, políticas e boas práticas.",
       "subcategory_pt": "Disaster risk information",
       "access_pt": "Free"
+    },
+    {
+      "id": 578,
+      "title": "USGS Science Data Catalog",
+      "category": "natural",
+      "subcategory": "Geoscience",
+      "description": "Catalog of USGS geological, hydrological and environmental data.",
+      "url": "https://data.usgs.gov/datacatalog/",
+      "type": "Data catalog",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Geoscience"
+      ],
+      "description_pt": "Catálogo de dados geológicos, hidrológicos e ambientais do USGS.",
+      "subcategory_pt": "Geoscience"
+    },
+    {
+      "id": 579,
+      "title": "BOLD Systems",
+      "category": "natural",
+      "subcategory": "Genetics",
+      "description": "Molecular data and DNA barcoding platform for biodiversity research.",
+      "url": "https://boldsystems.org/",
+      "type": "Research database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Genetics"
+      ],
+      "description_pt": "Plataforma de dados moleculares e códigos de barras de DNA para biodiversidade.",
+      "subcategory_pt": "Genetics"
+    },
+    {
+      "id": 580,
+      "title": "nLab",
+      "category": "formal",
+      "subcategory": "Category theory",
+      "description": "Academic wiki on mathematics, logic, category theory and mathematical physics.",
+      "url": "https://ncatlab.org/nlab/show/HomePage",
+      "type": "Collaborative knowledge base",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Category theory"
+      ],
+      "description_pt": "Wiki acadêmica sobre matemática, lógica, teoria das categorias e física matemática.",
+      "subcategory_pt": "Category theory"
+    },
+    {
+      "id": 581,
+      "title": "Isabelle",
+      "category": "formal",
+      "subcategory": "Theorem proving",
+      "description": "Proof assistant for mathematical logic and formal verification.",
+      "url": "https://isabelle.in.tum.de/",
+      "type": "Formal methods",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Theorem proving"
+      ],
+      "description_pt": "Assistente de provas para lógica matemática e verificação formal.",
+      "subcategory_pt": "Theorem proving"
+    },
+    {
+      "id": 582,
+      "title": "GAP System",
+      "category": "formal",
+      "subcategory": "Group theory",
+      "description": "Computer algebra system focused on group theory and algebraic structures.",
+      "url": "https://www.gap-system.org/",
+      "type": "Mathematical software",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Group theory"
+      ],
+      "description_pt": "Sistema de álgebra computacional voltado à teoria dos grupos e estruturas algébricas.",
+      "subcategory_pt": "Group theory"
+    },
+    {
+      "id": 583,
+      "title": "PARI/GP",
+      "category": "formal",
+      "subcategory": "Number theory",
+      "description": "Computer algebra system specialized in number theory.",
+      "url": "https://pari.math.u-bordeaux.fr/",
+      "type": "Mathematical software",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Number theory"
+      ],
+      "description_pt": "Sistema de computação algébrica especializado em teoria dos números.",
+      "subcategory_pt": "Number theory"
+    },
+    {
+      "id": 584,
+      "title": "IPUMS",
+      "category": "social",
+      "subcategory": "Demography",
+      "description": "Service harmonizing census and population-survey microdata.",
+      "url": "https://www.ipums.org/",
+      "type": "Research data service",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Demography"
+      ],
+      "description_pt": "Serviço que harmoniza microdados censitários e pesquisas populacionais.",
+      "subcategory_pt": "Demography"
+    },
+    {
+      "id": 585,
+      "title": "LAPOP Lab",
+      "category": "social",
+      "subcategory": "Political science",
+      "description": "Research lab on public opinion, governance and democracy in the Americas.",
+      "url": "https://www.vanderbilt.edu/lapop/",
+      "type": "Research data service",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Political science"
+      ],
+      "description_pt": "Laboratório de pesquisas sobre opinião pública, governança e democracia nas Américas.",
+      "subcategory_pt": "Political science"
+    },
+    {
+      "id": 586,
+      "title": "WHO ICTRP",
+      "category": "health",
+      "subcategory": "Clinical research",
+      "description": "WHO portal for searching clinical trial records from multiple registries.",
+      "url": "https://trialsearch.who.int/",
+      "type": "Clinical studies portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Clinical research"
+      ],
+      "description_pt": "Portal da OMS para pesquisar registros de ensaios clínicos de diferentes plataformas.",
+      "subcategory_pt": "Clinical research"
+    },
+    {
+      "id": 587,
+      "title": "ECDC Data",
+      "category": "health",
+      "subcategory": "Epidemiology",
+      "description": "Data and reports from the European Centre for Disease Prevention and Control.",
+      "url": "https://www.ecdc.europa.eu/en/data",
+      "type": "Public health data",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Epidemiology"
+      ],
+      "description_pt": "Dados e relatórios do Centro Europeu de Prevenção e Controle das Doenças.",
+      "subcategory_pt": "Epidemiology"
+    },
+    {
+      "id": 588,
+      "title": "IHME",
+      "category": "health",
+      "subcategory": "Global health",
+      "description": "Research institute publishing estimates, tools and studies on global health.",
+      "url": "https://www.healthdata.org/",
+      "type": "Research institute",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Global health"
+      ],
+      "description_pt": "Instituto de pesquisa que publica estimativas, ferramentas e estudos sobre saúde global.",
+      "subcategory_pt": "Global health"
+    },
+    {
+      "id": 589,
+      "title": "DailyMed",
+      "category": "health",
+      "subcategory": "Medicines",
+      "description": "US National Library of Medicine database of drug labeling and regulatory information.",
+      "url": "https://dailymed.nlm.nih.gov/",
+      "type": "Drug information database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Medicines"
+      ],
+      "description_pt": "Base da Biblioteca Nacional de Medicina dos EUA com bulas e informações regulatórias.",
+      "subcategory_pt": "Medicines"
+    },
+    {
+      "id": 590,
+      "title": "RxNorm",
+      "category": "health",
+      "subcategory": "Medical informatics",
+      "description": "Normalized vocabulary for drug names and concepts in health informatics.",
+      "url": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+      "type": "Terminology database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Medical informatics"
+      ],
+      "description_pt": "Vocabulário normalizado para nomes e conceitos de medicamentos na informática em saúde.",
+      "subcategory_pt": "Medical informatics"
+    },
+    {
+      "id": 591,
+      "title": "FDA Data Dashboard",
+      "category": "health",
+      "subcategory": "Public health",
+      "description": "Public dashboards and datasets from the US Food and Drug Administration.",
+      "url": "https://datadashboard.fda.gov/",
+      "type": "Regulatory data portal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Public health"
+      ],
+      "description_pt": "Painéis e conjuntos de dados públicos da agência reguladora de alimentos e medicamentos dos EUA.",
+      "subcategory_pt": "Public health"
+    },
+    {
+      "id": 592,
+      "title": "WorldCat",
+      "category": "cross",
+      "subcategory": "Bibliography",
+      "description": "Union catalogue for locating books, journals and materials in libraries.",
+      "url": "https://search.worldcat.org/",
+      "type": "Library catalog",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Bibliography"
+      ],
+      "description_pt": "Catálogo coletivo para localizar livros, periódicos e materiais em bibliotecas.",
+      "subcategory_pt": "Bibliography"
+    },
+    {
+      "id": 593,
+      "title": "OpenAIRE",
+      "category": "cross",
+      "subcategory": "Open science",
+      "description": "European infrastructure for discovering publications, data and research projects.",
+      "url": "https://www.openaire.eu/",
+      "type": "Research discovery platform",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open science"
+      ],
+      "description_pt": "Infraestrutura europeia para descobrir publicações, dados e projetos de pesquisa.",
+      "subcategory_pt": "Open science"
+    },
+    {
+      "id": 594,
+      "title": "Project Gutenberg",
+      "category": "cross",
+      "subcategory": "Public domain",
+      "description": "Digital library of public-domain books and works made available under applicable legal terms.",
+      "url": "https://www.gutenberg.org/",
+      "type": "Digital library",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Public domain"
+      ],
+      "description_pt": "Biblioteca digital de livros em domínio público e obras disponibilizadas conforme suas condições legais.",
+      "subcategory_pt": "Public domain"
+    },
+    {
+      "id": 595,
+      "title": "IETF RFC Editor",
+      "category": "engineering",
+      "subcategory": "Internet protocols",
+      "description": "Official repository of RFC documents on Internet protocols and standards.",
+      "url": "https://www.rfc-editor.org/",
+      "type": "Technical documentation",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Internet protocols"
+      ],
+      "description_pt": "Repositório oficial de documentos RFC sobre protocolos e padrões da Internet.",
+      "subcategory_pt": "Internet protocols"
+    },
+    {
+      "id": 596,
+      "title": "Open Energy Platform",
+      "category": "engineering",
+      "subcategory": "Energy systems",
+      "description": "Open data platform for modelling and analysing energy systems.",
+      "url": "https://openenergy-platform.org/",
+      "type": "Energy data platform",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Energy systems"
+      ],
+      "description_pt": "Plataforma de dados abertos para modelagem e análise de sistemas energéticos.",
+      "subcategory_pt": "Energy systems"
+    },
+    {
+      "id": 597,
+      "title": "MERLOT",
+      "category": "cross",
+      "subcategory": "Education",
+      "description": "Collection of digital materials and resources for teaching and learning.",
+      "url": "https://www.merlot.org/merlot/",
+      "type": "Learning resource repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Education"
+      ],
+      "description_pt": "Coleção de materiais e recursos digitais para ensino e aprendizagem.",
+      "subcategory_pt": "Education"
+    },
+    {
+      "id": 598,
+      "title": "UN Comtrade",
+      "category": "social",
+      "subcategory": "Trade",
+      "description": "United Nations database on international merchandise trade.",
+      "url": "https://comtradeplus.un.org/",
+      "type": "Trade statistics",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Trade"
+      ],
+      "description_pt": "Base de dados das Nações Unidas sobre comércio internacional de mercadorias.",
+      "subcategory_pt": "Trade"
     }
   ]
 }
