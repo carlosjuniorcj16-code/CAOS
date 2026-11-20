@@ -1,22 +1,37 @@
-# Seleção inicial de fontes
+# Curadoria de fontes
 
-Este primeiro diretório é uma coleção-semente, não uma lista completa ou um ranking do conhecimento global. Ele prioriza infraestruturas públicas de pesquisa, portais institucionais, ferramentas de descoberta acadêmica, conjuntos de dados, repositórios e padrões técnicos.
+O catálogo atual contém **134 recursos** internacionais e brasileiros, distribuídos em seis agrupamentos de navegação: cinco áreas do conhecimento e uma categoria transversal. É uma coleção curada em expansão, não uma lista completa nem um ranking de qualidade.
 
-Referências úteis para orientar a seleção inicial:
+## Distribuição atual
 
-- U.S. National Library of Medicine, Electronic Databases & Directories: https://www.nlm.nih.gov/services/databases_subject.html
-- University of Florida Libraries, Open Access Research and Resources: https://guides.uflib.ufl.edu/oar/repositories
-- World Bank Group Library, Free and Open Access resources: https://libguides.worldbank.org/open_access/databases
-- UNESCO, Open Science Knowledge Sharing Index: https://www.unesco.org/en/open-science/knowledge-sharing
-- European Commission, Open Science and Open Access repositories: https://ec-library-europa-eu.libguides.com/open-science/finding-open-access-research/repositories
-- University of California, Berkeley Library, Freely Available Science Resources: https://guides.lib.berkeley.edu/FreeResources/sciences
+| Categoria | Recursos |
+|---|---:|
+| Ciências naturais | 26 |
+| Ciências formais | 14 |
+| Ciências sociais | 21 |
+| Ciências da saúde e médicas | 23 |
+| Engenharia e ciências aplicadas | 22 |
+| Multidisciplinar | 28 |
+| **Total** | **134** |
 
-## Notas de curadoria
+## Referências para a curadoria
 
-- Uma base de dados com busca gratuita não necessariamente oferece texto completo gratuito para todos os registros.
-- Repositórios de preprints podem conter pesquisas que ainda não passaram por revisão por pares.
-- A reutilização de dados e softwares é regida pela licença e pelos termos de cada item.
-- Recursos institucionais podem mudar de endereço, cobertura e condições de acesso.
+- U.S. National Library of Medicine, bases e diretórios: https://www.nlm.nih.gov/services/databases_subject.html
+- University of Florida Libraries, repositórios de acesso aberto: https://guides.uflib.ufl.edu/oar/repositories
+- UNESCO, índice de plataformas de compartilhamento de conhecimento em ciência aberta: https://www.unesco.org/en/open-science/knowledge-sharing
+- IBICT, repositórios e ciência aberta no Brasil: https://www.gov.br/ibict/pt-br/atuacao/pesquisa-servicos-e-iniciativas/repositorios-e-ciencia-aberta
+- IBICT, repositórios brasileiros: https://www.gov.br/ibict/pt-br/site-ibict-2025/assuntos/tecnologias-para-a-informacao/copy_of_repositorios-digitais/repositorios-brasileiros
+- INPE, bases de dados e infraestrutura de informação científica: https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/acervo-digital/base-de-dados
+- University of California, Berkeley Library, recursos científicos gratuitos: https://guides.lib.berkeley.edu/FreeResources/sciences
+
+## Critérios e ressalvas
+
+- Priorizamos instituições científicas, infraestruturas públicas, repositórios reconhecidos, bases bibliográficas, dados primários e ferramentas técnicas relevantes.
+- Uma base com busca gratuita não necessariamente oferece texto completo gratuito para todos os registros.
+- Repositórios de preprints podem conter manuscritos que ainda não passaram por revisão por pares.
+- O acesso pode exigir cadastro, vínculo institucional ou pagamento; essas condições podem mudar.
+- A reutilização de dados, imagens e softwares depende da licença e dos termos de cada item.
+- A inclusão não representa endosso institucional nem garantia de qualidade de cada documento hospedado.
 - Os links são externos; a CAOS não hospeda nem controla o conteúdo de terceiros.
 
-Os registros iniciais estão em `data/sources.json`. Contribuidores devem adicionar fontes com descrições precisas e notas corretas sobre acesso.
+Os registros e descrições em português ficam em `data/sources.json`. Contribuições devem priorizar fontes confiáveis, descrições precisas, URLs oficiais e condições de acesso corretamente identificadas.
