@@ -1,0 +1,82 @@
+name: CAOS multi-source academic discovery
+
+on:
+  schedule:
+    - cron: "37 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum new records from each provider
+        required: false
+        default: "100"
+        type: string
+      dry_run:
+        description: Preview only; do not modify the catalog
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: caos-multi-source-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout current catalog
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile ingestion tools
+        run: |
+          python -m py_compile scripts/ingest_doaj_journals.py
+          python -m py_compile scripts/ingest_openalex_institutions.py
+      - name: Preview DOAJ journal discovery
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 1 --dry-run
+      - name: Preview OpenAlex institution discovery
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --dry-run
+      - name: Import DOAJ journal websites
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1
+      - name: Import OpenAlex institutions
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1
+      - name: Validate catalog and rebuild search index
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: |
+          python scripts/validate_catalog.py
+          python scripts/build_search_index.py
+      - name: Open reviewed catalog update
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/multi-source-academic-discovery
+          delete-branch: true
+          commit-message: "chore: expand directory from DOAJ and OpenAlex"
+          title: "chore: add verified-source academic directory records"
+          body: |
+            ## Multi-source academic discovery batch
+
+            Sources:
+            - DOAJ public journal-level metadata (CC0 1.0).
+            - OpenAlex institution metadata (CC0 1.0).
+
+            Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. Please review records and validation before merging.
+          add-paths: |
+            data/sources.json
