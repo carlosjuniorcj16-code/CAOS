@@ -49,7 +49,12 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
+        run: |
+          if [ -z "$OPENALEX_API_KEY" ]; then
+            echo "::notice::OpenAlex preview skipped: configure OPENALEX_API_KEY to enable cursor-based discovery."
+          else
+            python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json --dry-run
+          fi
       - name: Import DOAJ journal websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '100' || inputs.limit }}" --max-pages 1 --state-file data/discovery_state.json
