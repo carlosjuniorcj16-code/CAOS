@@ -103,7 +103,7 @@ def locate(root: Path, suffix: str) -> Path:
     hits=sorted(root.rglob("*"+suffix))
     if not hits: raise SystemExit(f"Arquivo *{suffix} não encontrado em {root}")
     return hits[0]
-def rows(path: Path):
+def rows(path: Path, fallback_columns=None):
     with path.open(encoding="utf-8",newline="") as f:
         sample=f.read(8192); f.seek(0)
         dialect=csv.excel_tab
@@ -117,7 +117,11 @@ def rows(path: Path):
             for row in reader:
                 if row: yield dict(zip(names,row))
         else:
-            raise SystemExit(f"{path.name} parece não ter cabeçalho. Consulte o README do dump e adapte o parser antes de importar. Primeira linha: {first[:8]}")
+            if not fallback_columns:
+                raise SystemExit(f"{path.name} não tem cabeçalho. Informe --site-columns e --category-columns.")
+            yield dict(zip(fallback_columns, first))
+            for row in reader:
+                if row: yield dict(zip(fallback_columns, row))
 def pick(row, *keys):
     for k in keys:
         v=row.get(k.casefold())
@@ -129,6 +133,8 @@ def main():
     ap.add_argument("--catalog",default=Path("data/sources.json"),type=Path)
     ap.add_argument("--limit",type=int,default=10000,help="Máximo de registros novos (padrão: 10.000)")
     ap.add_argument("--per-topic",type=int,default=500)
+    ap.add_argument("--site-columns",default="")
+    ap.add_argument("--category-columns",default="")
     ap.add_argument("--dry-run",action="store_true")
     args=ap.parse_args()
     root=args.dump
@@ -141,14 +147,14 @@ def main():
     sites=locate(root,"-c.tsv")
     cats=locate(root,"-s.tsv")
     category_map={}
-    for row in rows(cats):
+    for row in rows(cats,[x.strip().casefold() for x in args.category_columns.split(',') if x.strip()] or None):
         cid=pick(row,"catid","id","category_id")
         path=pick(row,"path","fullpath","category_path","name","title")
         if cid and path: category_map[cid]=path
     catalog=json.loads(args.catalog.read_text(encoding="utf-8"))
     existing={norm_url(x.get("url","")) for x in catalog.get("resources",[])}
     counts=defaultdict(int); additions=[]
-    for row in rows(sites):
+    for row in rows(sites,[x.strip().casefold() for x in args.site_columns.split(',') if x.strip()] or None):
         url=norm_url(pick(row,"url","site","link"))
         if not url or url in existing: continue
         title=pick(row,"title","name") or urlsplit(url).netloc
