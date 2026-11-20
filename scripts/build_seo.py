@@ -315,7 +315,7 @@ def main():
         '<link rel="canonical" href="' + e(absolute("/")) + '">'
         '<meta name="robots" content="index,follow,max-image-preview:large">'
         '<meta property="og:type" content="website"><meta property="og:site_name" content="CAOS">'
-        '<meta property="og:title" content="CAOS — Diretório público do conhecimento">'
+        '<meta property="og:title" content="CAOS: Diretório público do conhecimento">'
         '<meta property="og:description" content="Descubra bibliotecas, arquivos, instituições, pesquisas, bases de dados e fontes de conhecimento em todo o mundo.">'
         '<meta property="og:url" content="' + e(absolute("/")) + '"><meta name="twitter:card" content="summary">'
         '<script type="application/ld+json">' + json.dumps({
@@ -336,7 +336,8 @@ def main():
         ai = ai.replace("</head>", '<link rel="canonical" href="' + e(absolute("/ai-data.html")) + '"><meta name="robots" content="index,follow"></head>')
         ai_page.write_text(ai, encoding="utf-8")
     add_url("/")
-    add_url("/ai-data.html")
+    for standalone in ("/ai-data.html", "/radar.html", "/leituras.html", "/software.html", "/freeware.html"):
+        add_url(standalone)
 
     chunks = [sitemap_urls[i:i + 40000] for i in range(0, len(sitemap_urls), 40000)]
     sitemap_names = []
