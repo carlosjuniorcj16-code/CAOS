@@ -1,0 +1,52 @@
+name: Import Curlie directory data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_curlie.py'
+      - '.github/workflows/import-curlie.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: "30 4 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curlie-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Download official Curlie dataset
+        run: |
+          curl --fail --location --retry 3 --retry-delay 5 \
+            "https://share.innkube.fim.uni-passau.de/curlie-rdf/curlie-rdf-all.tar.gz" \
+            --output /tmp/curlie-rdf-all.tar.gz
+      - name: Import curated resources
+        run: |
+          python scripts/import_curlie.py \
+            --dump /tmp/curlie-rdf-all.tar.gz \
+            --catalog data/sources.json \
+            --limit 12000 \
+            --per-topic 250
+      - name: Commit catalog updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- data/sources.json; then
+            git add data/sources.json
+            git commit -m "chore: refresh curated Curlie resources"
+            git push
+          else
+            echo "No new Curlie resources to add."
+          fi
