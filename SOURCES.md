@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **926 fontes e recursos**, distribuídos em **38 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **1.022 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -26,7 +26,7 @@ O seletor apresenta uma lista temática ampla e plana, com categorias específic
 
 ## Idiomas
 
-A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. O português brasileiro é o idioma inicial. As descrições dos registros são mantidas em português e inglês quando disponíveis. Traduções adicionais devem preservar nomes oficiais e sentido factual.
+A interface está disponível em 15 idiomas: português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês, russo, neerlandês, polonês, coreano, árabe, hindi e turco. O português brasileiro é o idioma inicial. As traduções dos registros são armazenadas por idioma; nomes oficiais e títulos próprios devem ser preservados.
 
 ## Referências para a curadoria
 
@@ -39,4 +39,4 @@ A interface está disponível em português brasileiro, inglês, espanhol, franc
 - Library of Congress: https://www.loc.gov/
 - UNESCO Digital Library: https://unesdoc.unesco.org/
 
-Os registros completos estão em `data/sources.json`.
+Os registros completos estão em `data/sources.json`. Para ampliar o catálogo com o diretório Curlie, consulte `scripts/import_curlie.py`. O conteúdo Curlie é licenciado sob CC BY 3.0 Unported e exige atribuição pública; os registros importados mantêm `source`, `source_license`, `source_attribution` e o caminho de categoria original.
