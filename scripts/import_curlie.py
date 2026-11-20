@@ -99,89 +99,134 @@ def topic_for(path: str) -> str:
         if any(w in p for w in words): return topic
     top=p.split("/")[0].strip()
     return dict(TOPIC_RULES).get(top,"reference")
-def locate(root: Path, suffix: str) -> Path:
-    hits=sorted(root.rglob("*"+suffix))
-    if not hits: raise SystemExit(f"Arquivo *{suffix} não encontrado em {root}")
-    return hits[0]
-def rows(path: Path, fallback_columns=None):
-    with path.open(encoding="utf-8",newline="") as f:
-        sample=f.read(8192); f.seek(0)
-        dialect=csv.excel_tab
-        reader=csv.reader(f,dialect)
-        first=next(reader,None)
-        if not first: return
-        known={"url","title","description","catid","category","path","name","id","site"}
-        header=any(str(v).strip().casefold() in known for v in first)
-        if header:
-            names=[str(v).strip().casefold() for v in first]
+def locate_all(root: Path, suffix: str):
+    hits = sorted(root.rglob("*" + suffix))
+    if not hits:
+        raise SystemExit(f"Arquivos *{suffix} não encontrados em {root}")
+    return hits
+
+def rows(path: Path, fallback_columns):
+    with path.open(encoding="utf-8", newline="") as f:
+        reader = csv.reader(f, csv.excel_tab)
+        first = next(reader, None)
+        if not first:
+            return
+        known = {"url", "title", "description", "category_id", "category_path", "catid", "id"}
+        has_header = any(str(v).strip().casefold() in known for v in first)
+        if has_header:
+            names = [str(v).strip().casefold() for v in first]
             for row in reader:
-                if row: yield dict(zip(names,row))
+                if row:
+                    yield dict(zip(names, row))
         else:
-            if not fallback_columns:
-                raise SystemExit(f"{path.name} não tem cabeçalho. Informe --site-columns e --category-columns.")
             yield dict(zip(fallback_columns, first))
             for row in reader:
-                if row: yield dict(zip(fallback_columns, row))
+                if row:
+                    yield dict(zip(fallback_columns, row))
+
 def pick(row, *keys):
-    for k in keys:
-        v=row.get(k.casefold())
-        if v and v.strip(): return v.strip()
+    for key in keys:
+        value = row.get(key.casefold())
+        if value and value.strip():
+            return value.strip()
     return ""
+
 def main():
-    ap=argparse.ArgumentParser()
-    ap.add_argument("--dump",required=True,type=Path,help="Diretório extraído do arquivo oficial Curlie .tar.gz")
-    ap.add_argument("--catalog",default=Path("data/sources.json"),type=Path)
-    ap.add_argument("--limit",type=int,default=10000,help="Máximo de registros novos (padrão: 10.000)")
-    ap.add_argument("--per-topic",type=int,default=500)
-    ap.add_argument("--site-columns",default="")
-    ap.add_argument("--category-columns",default="")
-    ap.add_argument("--dry-run",action="store_true")
-    args=ap.parse_args()
-    root=args.dump
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dump", required=True, type=Path, help="Arquivo tar.gz ou diretório extraído do dump Curlie")
+    ap.add_argument("--catalog", default=Path("data/sources.json"), type=Path)
+    ap.add_argument("--limit", type=int, default=10000)
+    ap.add_argument("--per-topic", type=int, default=500)
+    ap.add_argument("--dry-run", action="store_true")
+    args = ap.parse_args()
+
+    root = args.dump
     if root.is_file() and tarfile.is_tarfile(root):
-        target=Path(tempfile.mkdtemp(prefix="curlie-"))
-        with tarfile.open(root,"r:gz") as tf:
-            for member in tf.getmembers():
-                if member.isfile() and not Path(member.name).is_absolute() and ".." not in Path(member.name).parts: tf.extract(member,target)
-        root=target
-    sites=locate(root,"-c.tsv")
-    cats=locate(root,"-s.tsv")
-    category_map={}
-    for row in rows(cats,[x.strip().casefold() for x in args.category_columns.split(',') if x.strip()] or None):
-        cid=pick(row,"catid","id","category_id")
-        path=pick(row,"path","fullpath","category_path","name","title")
-        if cid and path: category_map[cid]=path
-    catalog=json.loads(args.catalog.read_text(encoding="utf-8"))
-    existing={norm_url(x.get("url","")) for x in catalog.get("resources",[])}
-    counts=defaultdict(int); additions=[]
-    for row in rows(sites,[x.strip().casefold() for x in args.site_columns.split(',') if x.strip()] or None):
-        url=norm_url(pick(row,"url","site","link"))
-        if not url or url in existing: continue
-        title=pick(row,"title","name") or urlsplit(url).netloc
-        desc=pick(row,"description","desc","editorial_description")
-        cid=pick(row,"catid","category_id","category")
-        path=category_map.get(cid,pick(row,"category_path","path","category_name"))
-        if not desc or len(desc)<20: continue
-        topic=topic_for(path)
-        if counts[topic]>=args.per_topic: continue
-        counts[topic]+=1
-        additions.append({
-            "id":0,"title":title,"category":"cross","subcategory":TOPIC_NAMES.get(topic,"Referências"),
-            "description":desc,"description_pt":"","url":url,"type":"Website","access":"See source",
-            "tags":[path] if path else [],"topic":topic,"topic_pt":TOPIC_NAMES.get(topic,"Referências"),
-            "topic_en":TOPIC_EN.get(topic,topic.replace("-"," ").title()),"topic_group":"cross",
-            "source":"Curlie","source_id":pick(row,"id","uid","site_id"),
-            "source_category_path":path,"source_language":pick(row,"lang","language") or "en",
-            "source_license":"CC BY 3.0","source_attribution":"Content from Curlie.org"
-        })
-        existing.add(url)
-        if len(additions)>=args.limit: break
-      if len(additions)>=args.limit: break
+        target = Path(tempfile.mkdtemp(prefix="curlie-"))
+        with tarfile.open(root, "r:gz") as archive:
+            for member in archive.getmembers():
+                path = Path(member.name)
+                if member.isfile() and not path.is_absolute() and ".." not in path.parts:
+                    archive.extract(member, target)
+        root = target
+
+    site_files = locate_all(root, "-c.tsv")
+    category_files = locate_all(root, "-s.tsv")
+    site_columns = ["url", "title", "description", "category_id"]
+    category_columns = ["category_id", "category_path", "site_count", "description", "geo1", "geo2"]
+
+    category_map = {}
+    for file in category_files:
+        for row in rows(file, category_columns):
+            category_id = pick(row, "category_id", "catid", "id")
+            category_path = pick(row, "category_path", "path", "fullpath", "name", "title")
+            if category_id and category_path:
+                category_map[category_id] = category_path
+
+    catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
+    existing = {norm_url(item.get("url", "")) for item in catalog.get("resources", [])}
+    counts = defaultdict(int)
+    additions = []
+
+    for file in site_files:
+        for row in rows(file, site_columns):
+            url = norm_url(pick(row, "url", "site", "link"))
+            if not url or url in existing:
+                continue
+            title = pick(row, "title", "name") or urlsplit(url).netloc
+            description = pick(row, "description", "desc", "editorial_description")
+            category_id = pick(row, "category_id", "catid", "category")
+            category_path = category_map.get(category_id, pick(row, "category_path", "path", "category_name"))
+            if not description or len(description) < 20:
+                continue
+            topic = topic_for(category_path)
+            if counts[topic] >= args.per_topic:
+                continue
+            counts[topic] += 1
+            additions.append({
+                "id": 0,
+                "title": title,
+                "category": "cross",
+                "subcategory": TOPIC_NAMES.get(topic, "Referências"),
+                "description": description,
+                "description_pt": "",
+                "url": url,
+                "type": "Website",
+                "access": "See source",
+                "tags": [category_path] if category_path else [],
+                "topic": topic,
+                "topic_pt": TOPIC_NAMES.get(topic, "Referências"),
+                "topic_en": TOPIC_EN.get(topic, topic.replace("-", " ").title()),
+                "topic_group": "cross",
+                "source": "Curlie",
+                "source_id": pick(row, "id", "uid", "site_id"),
+                "source_category_path": category_path,
+                "source_language": "en",
+                "source_license": "CC BY 3.0",
+                "source_attribution": "Content from Curlie.org"
+            })
+            existing.add(url)
+            if len(additions) >= args.limit:
+                break
+        if len(additions) >= args.limit:
+            break
+
     if args.dry_run:
-        print(json.dumps({"new_records":len(additions),"by_topic":dict(counts),"site_files":len(site_files),"category_files":len(category_files)},ensure_ascii=False,indent=2)); return
-    next_id=max((int(x.get("id",0)) for x in catalog["resources"]),default=0)+1
-    for item in additions: item["id"]=next_id; next_id+=1
+        print(json.dumps({
+            "new_records": len(additions),
+            "by_topic": dict(counts),
+            "site_files": len(site_files),
+            "category_files": len(category_files)
+        }, ensure_ascii=False, indent=2))
+        return
+
+    next_id = max((int(item.get("id", 0)) for item in catalog["resources"]), default=0) + 1
+    for item in additions:
+        item["id"] = next_id
+        next_id += 1
     catalog["resources"].extend(additions)
-    args.catalog.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Importados {len(additions)} registros Curlie. Total: {len(catalog['resources'])}.")
-if __name__=="__main__": main()
+
+if __name__ == "__main__":
+    main()
