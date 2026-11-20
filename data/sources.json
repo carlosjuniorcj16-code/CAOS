@@ -2215,10 +2215,10 @@
       "description_pt": "Repositório público de conjuntos de dados produzidos por pesquisas e programas de metrologia do NIST.",
       "subcategory_pt": "Measurement and engineering data",
       "access_pt": "Gratuito",
-      "topic": "public-data",
-      "topic_pt": "Dados públicos e administração",
-      "topic_en": "Public data & administration",
-      "topic_group": "society"
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
     },
     {
       "id": 112,
@@ -2595,9 +2595,9 @@
       "description_pt": "Repositório de imagens, áudios e vídeos com licenças livres ou em domínio público.",
       "subcategory_pt": "Open media library",
       "access_pt": "Gratuito; verificar licença de cada item",
-      "topic": "libraries",
-      "topic_pt": "Bibliotecas, livros e catálogos",
-      "topic_en": "Libraries, books & catalogs",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
     },
     {
@@ -6521,10 +6521,10 @@
       "description_pt": "Repositório de publicações e documentos técnicos do Instituto Nacional de Metrologia, Qualidade e Tecnologia.",
       "subcategory_pt": "Metrology and standards",
       "access_pt": "Free",
-      "topic": "libraries",
-      "topic_pt": "Bibliotecas, livros e catálogos",
-      "topic_en": "Libraries, books & catalogs",
-      "topic_group": "culture"
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
     },
     {
       "id": 321,
@@ -9312,10 +9312,10 @@
       "description_pt": "Enciclopédia acadêmica de filosofia com artigos de referência escritos por especialistas.",
       "subcategory_pt": "Philosophy reference",
       "access_pt": "Free",
-      "topic": "internet",
-      "topic_pt": "Internet, redes e protocolos",
-      "topic_en": "Internet, networks & protocols",
-      "topic_group": "technology"
+      "topic": "philosophy",
+      "topic_pt": "Filosofia e pensamento",
+      "topic_en": "Philosophy & thought",
+      "topic_group": "culture"
     },
     {
       "id": 453,
@@ -9753,10 +9753,10 @@
       "description_pt": "Organização que publica diretrizes e recursos sobre ética editorial, integridade e boas práticas científicas.",
       "subcategory_pt": "Publication ethics guidance",
       "access_pt": "Free resources",
-      "topic": "journals",
-      "topic_pt": "Periódicos e publicação científica",
-      "topic_en": "Journals & scholarly publishing",
-      "topic_group": "research"
+      "topic": "philosophy",
+      "topic_pt": "Filosofia e pensamento",
+      "topic_en": "Philosophy & thought",
+      "topic_group": "culture"
     },
     {
       "id": 474,
@@ -15544,9 +15544,9 @@
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
       "access_pt": "Dados públicos",
       "type_pt": "Plataforma de medição",
-      "topic": "transport",
-      "topic_pt": "Transportes e logística",
-      "topic_en": "Transport & logistics",
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
       "topic_group": "technology"
     },
     {
@@ -16489,10 +16489,10 @@
       "subcategory_pt": "Cultura, educação e referência",
       "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
       "type_pt": "Recurso de referência",
-      "topic": "education",
-      "topic_pt": "Educação e ensino",
-      "topic_en": "Education & learning",
-      "topic_group": "culture"
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
     },
     {
       "id": 798,
@@ -17435,9 +17435,9 @@
       "subcategory_pt": "Cultura, educação e referência",
       "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
       "type_pt": "Coleção digital",
-      "topic": "education",
-      "topic_pt": "Educação e ensino",
-      "topic_en": "Education & learning",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
     },
     {
@@ -18645,9 +18645,9 @@
       "subcategory_pt": "Sociedade, direito e linguagem",
       "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
       "type_pt": "Recurso de referência",
-      "topic": "languages",
-      "topic_pt": "Línguas e linguística",
-      "topic_en": "Languages & linguistics",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
     },
     {
@@ -19149,9 +19149,9 @@
       "subcategory_pt": "Arquivo de notícias televisivas",
       "access_pt": "Gratuito",
       "type_pt": "Arquivo digital",
-      "topic": "history",
-      "topic_pt": "História e arqueologia",
-      "topic_en": "History & archaeology",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
     },
     {
@@ -19170,9 +19170,9 @@
       "subcategory_pt": "Corpus de linguagem jornalística contemporânea",
       "access_pt": "Gratuito com cadastro",
       "type_pt": "Corpus",
-      "topic": "languages",
-      "topic_pt": "Línguas e linguística",
-      "topic_en": "Languages & linguistics",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
     },
     {
@@ -19191,10 +19191,157 @@
       "subcategory_pt": "Conjunto de dados de notícias da web",
       "access_pt": "Gratuito",
       "type_pt": "Conjunto de dados",
-      "topic": "history",
-      "topic_pt": "História e arqueologia",
-      "topic_en": "History & archaeology",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
       "topic_group": "culture"
+    },
+    {
+      "id": 922,
+      "title": "Philosophy of Science Archive",
+      "category": "cross",
+      "subcategory": "Philosophy of science papers",
+      "description": "Open repository of scholarly work in philosophy of science, including preprints and research papers.",
+      "url": "https://philsci-archive.pitt.edu/",
+      "type": "Repository",
+      "access": "Free",
+      "tags": [
+        "Philosophy of science papers"
+      ],
+      "subcategory_pt": "Arquivo de filosofia da ciência",
+      "description_pt": "Repositório aberto de trabalhos acadêmicos em filosofia da ciência, incluindo preprints e artigos de pesquisa.",
+      "type_pt": "Repositório",
+      "access_pt": "Gratuito",
+      "topic": "philosophy",
+      "topic_pt": "Filosofia e pensamento",
+      "topic_en": "Philosophy & thought",
+      "topic_group": "culture"
+    },
+    {
+      "id": 923,
+      "title": "Early Modern Texts",
+      "category": "cross",
+      "subcategory": "Early modern philosophy texts",
+      "description": "Readable editions of important early modern philosophical works, with spelling and layout adapted for contemporary readers.",
+      "url": "https://www.earlymoderntexts.com/",
+      "type": "Digital library",
+      "access": "Free",
+      "tags": [
+        "Early modern philosophy texts"
+      ],
+      "subcategory_pt": "Textos filosóficos da primeira modernidade",
+      "description_pt": "Edições legíveis de obras filosóficas importantes da primeira modernidade, com ortografia e apresentação adaptadas aos leitores atuais.",
+      "type_pt": "Biblioteca digital",
+      "access_pt": "Gratuito",
+      "topic": "philosophy",
+      "topic_pt": "Filosofia e pensamento",
+      "topic_en": "Philosophy & thought",
+      "topic_group": "culture"
+    },
+    {
+      "id": 924,
+      "title": "Reuters Institute Digital News Report",
+      "category": "cross",
+      "subcategory": "International news and media research",
+      "description": "Annual international study of digital news consumption, audience behavior and the changing media environment.",
+      "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report",
+      "type": "Research report",
+      "access": "Free",
+      "tags": [
+        "International news and media research"
+      ],
+      "subcategory_pt": "Pesquisa internacional sobre notícias e mídia",
+      "description_pt": "Estudo internacional anual sobre consumo de notícias digitais, comportamento do público e mudanças no ambiente midiático.",
+      "type_pt": "Relatório de pesquisa",
+      "access_pt": "Gratuito",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
+      "topic_group": "culture"
+    },
+    {
+      "id": 925,
+      "title": "Global Media Monitoring Project",
+      "category": "cross",
+      "subcategory": "Global media monitoring research",
+      "description": "International research initiative examining gender representation and visibility in news media.",
+      "url": "https://whomakesthenews.org/",
+      "type": "Research project",
+      "access": "Free",
+      "tags": [
+        "Global media monitoring research"
+      ],
+      "subcategory_pt": "Pesquisa global de monitoramento da mídia",
+      "description_pt": "Iniciativa internacional de pesquisa sobre representação de gênero e visibilidade nos meios de comunicação.",
+      "type_pt": "Projeto de pesquisa",
+      "access_pt": "Gratuito",
+      "topic": "communication",
+      "topic_pt": "Comunicação, jornalismo e mídia",
+      "topic_en": "Communication, journalism & media",
+      "topic_group": "culture"
+    },
+    {
+      "id": 926,
+      "title": "NIST Standard Reference Data",
+      "category": "engineering",
+      "subcategory": "Scientific reference data and standards",
+      "description": "Curated scientific reference datasets and databases maintained by the United States National Institute of Standards and Technology.",
+      "url": "https://www.nist.gov/srd",
+      "type": "Reference database",
+      "access": "Varies by dataset",
+      "tags": [
+        "Scientific reference data and standards"
+      ],
+      "subcategory_pt": "Dados científicos de referência e padrões",
+      "description_pt": "Conjuntos de dados e bases científicas de referência mantidos pelo Instituto Nacional de Padrões e Tecnologia dos Estados Unidos.",
+      "type_pt": "Base de referência",
+      "access_pt": "Varia conforme o conjunto",
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
+    },
+    {
+      "id": 927,
+      "title": "BIPM SI Brochure",
+      "category": "engineering",
+      "subcategory": "International measurement standards",
+      "description": "Official publication describing the International System of Units and its definitions, conventions and updates.",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "type": "Standard",
+      "access": "Free",
+      "tags": [
+        "International measurement standards"
+      ],
+      "subcategory_pt": "Padrões internacionais de medição",
+      "description_pt": "Publicação oficial que descreve o Sistema Internacional de Unidades, suas definições, convenções e atualizações.",
+      "type_pt": "Norma",
+      "access_pt": "Gratuito",
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
+    },
+    {
+      "id": 928,
+      "title": "OIML Publications",
+      "category": "engineering",
+      "subcategory": "Legal metrology standards",
+      "description": "Publications and recommendations from the International Organization of Legal Metrology covering measurement instruments and legal metrology.",
+      "url": "https://www.oiml.org/en/publications",
+      "type": "Standards library",
+      "access": "Free",
+      "tags": [
+        "Legal metrology standards"
+      ],
+      "subcategory_pt": "Publicações de metrologia legal",
+      "description_pt": "Publicações e recomendações da Organização Internacional de Metrologia Legal sobre instrumentos de medição e metrologia legal.",
+      "type_pt": "Biblioteca de normas",
+      "access_pt": "Gratuito",
+      "topic": "standards",
+      "topic_pt": "Normas técnicas e metrologia",
+      "topic_en": "Technical standards & metrology",
+      "topic_group": "technology"
     }
   ],
   "version": "1.6.0",
