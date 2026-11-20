@@ -21,8 +21,7 @@ jobs:
     name: Merge trusted data updates after all checks pass
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.head_repository.full_name == github.repository &&
+      contains(fromJSON('["pull_request","workflow_dispatch"]'), github.event.workflow_run.event) &&
       contains(fromJSON('["automation/wikidata-discovery","automation/multi-source-academic-discovery","automation/research-radar","automation/curlie-catalog-update"]'), github.event.workflow_run.head_branch)
     runs-on: ubuntu-latest
     steps:
@@ -36,8 +35,9 @@ jobs:
         run: |
           CHECKS="$(gh api "repos/$REPO/commits/$SHA/check-runs" --jq '[.check_runs[] | select(.name == "Validate catalog and JavaScript" or .name == "build") | {name, status, conclusion}]')"
           echo "$CHECKS"
-          python -c 'import json,sys; c=json.load(sys.stdin); required={"Validate catalog and JavaScript","build"}; found={x["name"]:x for x in c}; sys.exit(0 if required <= found.keys() and all(found[n]["status"]=="completed" and found[n]["conclusion"]=="success" for n in required) else 1)' <<< "$CHECKS" || { echo "Required checks are not both successful yet; waiting for the other workflow."; exit 0; }
-          PR="$(gh pr list --repo "$REPO" --state open --head "$BRANCH" --json number,headRefOid,isDraft,url,author --jq ".[] | select(.headRefOid == \"$SHA\" and .isDraft == false and .author.login == \"github-actions[bot]\") | .url" | head -n 1)"
+          python -c 'import json,sys; c=json.load(sys.stdin); required={"Validate catalog and JavaScript","build"}; passed={x["name"] for x in c if x["status"]=="completed" and x["conclusion"]=="success"}; sys.exit(0 if required <= passed else 1)' <<< "$CHECKS" || { echo "Required checks are not both successful yet; waiting for the other workflow."; exit 0; }
+          OWNER="${REPO%%/*}"
+          PR="$(gh api "repos/$REPO/pulls?state=open&head=$OWNER:$BRANCH" --jq ".[] | select(.head.sha == \"$SHA\" and .draft == false and .user.login == \"github-actions[bot]\") | .html_url" | head -n 1)"
           if [ -z "$PR" ]; then
             echo "No matching non-draft open PR for this exact commit; nothing to merge."
             exit 0
