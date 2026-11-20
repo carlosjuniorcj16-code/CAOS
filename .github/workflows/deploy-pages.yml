@@ -32,7 +32,8 @@ jobs:
         env:
           CAOS_SITE_URL: https://carlosjuniorcj16-code.github.io/CAOS
         run: |
-          python -m py_compile scripts/build_seo.py
+          python -m py_compile scripts/build_seo.py scripts/build_search_index.py
+          python scripts/build_search_index.py
           python scripts/build_seo.py
           test -s dist/index.html
           test -s dist/robots.txt
