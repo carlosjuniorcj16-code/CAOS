@@ -99,6 +99,19 @@
       "attribution_required": "depends_on_license",
       "redistribution": "obtain_license_before_product_or_bulk_use",
       "notes": "Not ingested until an appropriate API licence is confirmed."
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed / NCBI E-utilities",
+      "kind": "biomedical literature index",
+      "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+      "metadata_license": "metadata_and_article_rights_vary",
+      "attribution_required": true,
+      "recommended_attribution": "PubMed, National Library of Medicine",
+      "redistribution": "bibliographic_metadata_and_source_links",
+      "content_license": "abstracts_and_full_text_have_independent_rights",
+      "notes": "Use ESearch and ESummary in low-volume batches. The NCBI API key is optional for this conservative cadence; observe current request limits."
     }
   ]
 }
