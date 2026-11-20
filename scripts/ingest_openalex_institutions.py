@@ -71,6 +71,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=500)
     parser.add_argument("--per-page", type=int, default=100)
     parser.add_argument("--max-pages", type=int, default=5)
+    parser.add_argument("--state-file", type=Path, default=ROOT / "data" / "discovery_state.json")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if args.limit < 1 or args.limit > 5000 or not 1 <= args.per_page <= 100 or args.max_pages < 1 or args.max_pages > 50:
@@ -86,9 +87,14 @@ def main() -> None:
         raise SystemExit("Formato inválido: resources deve ser uma lista.")
     known_urls = {normalized_url(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
     next_id = max((int(x.get("id", 0)) for x in resources if isinstance(x, dict) and str(x.get("id", "")).isdigit()), default=0) + 1
-    additions, cursor, pages, scanned = [], "*", 0, 0
+    state = json.loads(args.state_file.read_text(encoding="utf-8")) if args.state_file.exists() else {}
+    cursor = str(state.get("openalex_next_cursor") or "*")
+    if cursor != "*" and not api_key:
+        parser.error("Defina OPENALEX_API_KEY para continuar a paginação OpenAlex salva no estado.")
+    additions, pages, scanned = [], 0, 0
     while cursor and pages < args.max_pages and len(additions) < args.limit:
-        payload = fetch_page(cursor, api_key, args.per_page)
+        page_cursor = cursor
+        payload = fetch_page(page_cursor, api_key, args.per_page)
         pages += 1
         for item in payload.get("results", []):
             scanned += 1
@@ -132,11 +138,15 @@ def main() -> None:
             known_urls.add(url_key)
             if len(additions) >= args.limit:
                 break
-        cursor = (payload.get("meta") or {}).get("next_cursor")
+        next_cursor = (payload.get("meta") or {}).get("next_cursor")
+        # If the batch limit is reached mid-page, revisit this page next time;
+        # already imported URLs will be deduplicated and the remaining rows kept.
+        cursor = page_cursor if len(additions) >= args.limit else (next_cursor or "*")
 
     summary = {
         "provider": "OpenAlex Institutions API",
         "pages_read": pages,
+        "next_cursor_saved": bool(cursor and cursor != "*"),
         "records_scanned": scanned,
         "new_records": len(additions),
         "catalog_total_after_import": len(resources) + len(additions),
@@ -146,9 +156,13 @@ def main() -> None:
     if args.dry_run:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return
-    resources.extend(additions)
-    catalog["resources"] = resources
-    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    state["openalex_next_cursor"] = cursor or "*"
+    args.state_file.parent.mkdir(parents=True, exist_ok=True)
+    args.state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if additions:
+        resources.extend(additions)
+        catalog["resources"] = resources
+        args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
