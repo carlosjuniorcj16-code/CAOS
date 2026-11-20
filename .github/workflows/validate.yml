@@ -38,7 +38,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for name in ("research-radar.json", "reading-recommendations.json", "open-source-software.json"):
+          for name in ("research-radar.json", "reading-recommendations.json", "open-source-software.json", "freeware.json"):
               path = Path("data") / name
               data = json.loads(path.read_text(encoding="utf-8"))
               assert isinstance(data, dict) and "schema_version" in data
