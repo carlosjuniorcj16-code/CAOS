@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Relatar vulnerabilidade de segurança
+    url: https://github.com/carlosjuniorcj16-code/CAOS/blob/main/SECURITY.md
+    about: Não publique vulnerabilidades em issues públicas. Siga as instruções de segurança.
