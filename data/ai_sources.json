@@ -545,8 +545,8 @@
         "release-dependent"
       ],
       "volume": "Thousands of hours; varies by release",
-      "license": "CC0 for released contributions; verify release terms",
-      "access": "Dataset download and project platform",
+      "license": "CC0 for contributions and released datasets unless a release specifies otherwise",
+      "access": "Mozilla Data Collective; some downloads may require an email address",
       "update": "Periodic releases",
       "uses": [
         "Speech recognition",
@@ -554,7 +554,7 @@
       ],
       "description_pt": "Gravações de voz e validações comunitárias em muitos idiomas.",
       "description_en": "Community-contributed voice recordings and validations across many languages.",
-      "caveat": "Cobertura e qualidade variam entre idiomas e versões.",
+      "caveat": "Mozilla's terms direct users to access datasets through Mozilla Data Collective and ask users not to mirror or redistribute copies; verify each release's terms.",
       "url": "https://commonvoice.mozilla.org/en/datasets",
       "docs": "https://commonvoice.mozilla.org/en/datasets"
     },
