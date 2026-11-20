@@ -2,51 +2,63 @@
 
 **Um diretório público, independente, científico e internacional de links para fontes de conhecimento e informação.**
 
-A CAOS organiza referências para facilitar a descoberta de fontes originais: bibliotecas, arquivos, instituições de pesquisa, periódicos, bases de dados, documentos, catálogos e ferramentas. Não é proprietária dessas fontes, não certifica todo o conteúdo indicado e não representa uma orientação política, econômica ou tecnológica.
+A CAOS é um índice aberto que aproxima o público das fontes originais: bibliotecas, arquivos, instituições de pesquisa, periódicos, bases de dados, documentos, coleções culturais, estatísticas e ferramentas de referência. O catálogo organiza caminhos de acesso; não substitui, hospeda ou certifica os conteúdos externos.
 
-## Objetivo
+## Um catálogo em expansão
 
-Facilitar a descoberta de informação pública para estudo, ensino, pesquisa, jornalismo, consulta e investigação independente. A curadoria busca reunir recursos de diferentes países, idiomas e tradições acadêmicas, com critérios transparentes e participação aberta.
+A versão atual reúne **575 fontes**, organizadas em seis áreas:
+
+| Área | Fontes |
+|---|---:|
+| Ciências naturais | 134 |
+| Ciências formais | 35 |
+| Ciências sociais | 131 |
+| Ciências da saúde e médicas | 49 |
+| Engenharia e ciências aplicadas | 69 |
+| Multidisciplinares | 157 |
+| **Total** | **575** |
+
+A coleção inclui fontes brasileiras e internacionais, com atenção a diferentes regiões, idiomas, tradições científicas e tipos de instituição. Não é uma lista exaustiva nem um ranking.
 
 ## Áreas do conhecimento
 
-1. **Ciências naturais** — biologia, química, física, astronomia, ciências da Terra e ambientais.
-2. **Ciências formais** — matemática, lógica, estatística, computação teórica e teoria dos sistemas.
-3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política e estudos das sociedades.
+1. **Ciências naturais** — biologia, química, física, astronomia, ciências da Terra, ambiente e biodiversidade.
+2. **Ciências formais** — matemática, lógica, estatística, computação teórica e fundamentos.
+3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política, educação e estudos das sociedades.
 4. **Ciências da saúde e médicas** — medicina, saúde pública, neurociência, epidemiologia e pesquisa em saúde.
-5. **Engenharia e ciências aplicadas** — engenharia, robótica, materiais, infraestrutura e tecnologias.
-6. **Multidisciplinares** — bibliotecas, catálogos, índices e recursos que abrangem diferentes campos.
+5. **Engenharia e ciências aplicadas** — engenharia, robótica, materiais, infraestrutura, energia e tecnologias.
+6. **Multidisciplinares** — bibliotecas, catálogos, índices, arquivos e recursos que abrangem diferentes campos.
 
-O catálogo contém **173 fontes e recursos**: 35 em ciências naturais, 16 em ciências formais, 28 em ciências sociais, 25 em saúde e medicina, 27 em engenharia e ciências aplicadas e 42 multidisciplinares. É uma coleção em expansão, não uma lista exaustiva nem um ranking.
+## Idiomas
 
-## Diretório de links e idiomas
+A interface está disponível em **português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo**. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As descrições do catálogo estão disponíveis prioritariamente em português e inglês e passam por tradução progressiva; em outros idiomas, os títulos originais permanecem para facilitar a identificação das fontes.
 
-A primeira versão é um site estático e pesquisável. Cada registro aponta para o endereço da fonte original. A CAOS não hospeda os materiais externos e não controla suas políticas de acesso, disponibilidade, licenciamento ou atualização.
+## Para que serve
 
-A interface está disponível em **português brasileiro, inglês, espanhol, francês, alemão e italiano**. O português brasileiro é o idioma inicial. Os nomes oficiais das fontes são preservados; as descrições do catálogo estão sendo traduzidas progressivamente, portanto nem todo registro está disponível em todos os idiomas.
+O diretório pode apoiar estudo, ensino, jornalismo, pesquisa independente, descoberta de dados, preservação da informação e desenvolvimento de ferramentas de consulta. Os registros estruturados também podem servir como ponto de partida para mecanismos de busca, recuperação de informação e treinamento de sistemas de inteligência artificial. Essa é uma possibilidade entre várias, não o propósito exclusivo da CAOS.
 
-## Possíveis usos
-
-O diretório pode apoiar pesquisa, educação, jornalismo, descoberta de dados, preservação da informação e desenvolvimento de ferramentas de consulta. Os registros estruturados também podem servir como ponto de partida para sistemas de busca, recuperação de informação e treinamento de inteligência artificial. Qualquer reutilização deve respeitar licenças, direitos autorais, privacidade, termos de uso e condições de acesso de cada fonte. Essa é uma possibilidade entre várias, não o propósito exclusivo do projeto.
+Qualquer consulta, cópia ou reutilização deve respeitar direitos autorais, licenças, privacidade, termos de uso e condições de acesso definidas por cada fonte. A inclusão no catálogo é informativa e não significa endosso.
 
 ## Estrutura do repositório
 
-- `index.html` — portal estático multilíngue, com português brasileiro como padrão, busca e filtros.
-- `data/sources.json` — diretório estruturado de fontes e links.
+- `index.html` — portal editorial multilíngue, com português brasileiro como padrão, busca, filtros e carregamento progressivo.
+- `data/sources.json` — catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições e curadoria.
 - `SOURCES.md` — critérios, distribuição e referências de curadoria.
 
 ## Executar localmente
 
+Na pasta do projeto, inicie um servidor estático:
+
 ```bash
 python -m http.server 8000
 ```
 
-Acesse `http://localhost:8000`. A versão atual não exige chave de API, backend, banco de dados ou modelo de IA.
+Acesse `http://localhost:8000`. O portal não exige chave de API, backend, banco de dados ou modelo de IA.
 
 ## Publicação
 
-O portal pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Para GitHub Pages, selecione a branch `main` e a pasta raiz nas configurações do repositório.
+O site pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Para GitHub Pages, selecione a branch `main` e a pasta raiz nas configurações do repositório.
 
 ## Princípios editoriais
 
@@ -54,17 +66,17 @@ O portal pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hosped
 - Acesso público, pluralidade de perspectivas e alcance internacional.
 - Curadoria baseada em relevância, procedência e descrição factual.
 - Preferência por fontes primárias, instituições reconhecidas e repositórios estabelecidos.
-- Preservação dos links originais e atribuição adequada.
+- Diversidade geográfica, linguística e institucional.
 - Informação clara sobre acesso, cadastro, restrições e licenças.
 - Diferenciação entre artigos revisados por pares, preprints, conjuntos de dados e documentos institucionais.
 - Inclusão não significa endosso nem garantia de exatidão.
 - Respeito à privacidade, aos direitos autorais, aos termos de uso e à legislação aplicável.
 - Não coletar credenciais, contornar controles de acesso, visar indivíduos privados ou facilitar vigilância clandestina.
-- Critérios e classificações transparentes e passíveis de revisão pública.
+- Correções e classificações transparentes e passíveis de revisão pública.
 
-## Situação atual
+## Estado do projeto
 
-**Etapa 1 — Portal público e diretório inicial.** A coleção é um ponto de partida. Os links devem ser verificados periodicamente, e as descrições, traduções e classificações podem ser aperfeiçoadas pela comunidade.
+**Etapa 1 — Portal público e diretório de fontes.** O catálogo está em expansão. Links, descrições, traduções e classificações devem ser verificados e aperfeiçoados continuamente. A disponibilidade dos serviços externos pode mudar sem aviso.
 
 ## Licenças
 
