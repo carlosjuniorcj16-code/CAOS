@@ -29,6 +29,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Compile Python catalog tools
+        run: python -m py_compile scripts/*.py
       - name: Validate catalog
         run: python scripts/validate_catalog.py
       - name: Check inline JavaScript syntax
