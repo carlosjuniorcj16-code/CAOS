@@ -40,3 +40,15 @@ footer{padding:30px 0!important;font-size:14px!important}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #e0aa2d!important;outline-offset:3px!important}
 @media(max-width:850px){.wrap,.w{width:min(100% - 36px,720px)!important}header .top,header .topinner{align-items:flex-start!important;flex-direction:column!important;padding:16px 0!important}nav{display:flex!important;flex-wrap:wrap!important;gap:10px 16px!important}.hero{padding:52px 0 46px!important}.resource{grid-template-columns:42px minmax(0,1fr)!important;gap:12px!important}.resource-meta{grid-column:2;flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important}.cards,.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:560px){html{font-size:16px}.wrap,.w{width:calc(100% - 30px)!important}.hero h1,h1{font-size:clamp(39px,12vw,56px)!important}.hero p,.intro{font-size:18px!important}.topic-highlights,.cards,.grid,.controls{grid-template-columns:1fr!important}.introline,.directory-head,.category-head{align-items:flex-start!important;flex-direction:column!important}.searchrow{grid-template-columns:1fr!important}.searchrow button{min-height:48px!important}.resource{padding:20px 7px!important}.resource h3{font-size:22px!important}.resource p{font-size:14px!important}.resource-meta{grid-column:1/-1!important}.category-panel-inner{columns:1!important}.card,.item{padding:20px!important}}
+
+/* Featured quantum-science panel on the home page */
+.quantum-feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:28px;align-items:center;margin:22px 0 18px;padding:clamp(26px,4vw,46px);color:#f7f9ff;background:radial-gradient(circle at 85% 20%,#41638e 0,transparent 34%),linear-gradient(120deg,#101b35,#1b3763 68%,#16504e);border-radius:16px;box-shadow:0 16px 40px #17254a20;position:relative;overflow:hidden}
+.quantum-feature-copy>span{display:block;color:#f0cb70;font-size:12px;font-weight:850;letter-spacing:.15em}
+.quantum-feature h2{font:400 clamp(29px,3.6vw,43px)/1.12 Georgia,serif;color:#fff;margin:14px 0}
+.quantum-feature p{font-size:16px;line-height:1.7;color:#dce6f4;max-width:740px;margin:0 0 20px}
+.quantum-feature a{display:inline-flex;gap:12px;align-items:center;padding:12px 17px;border-radius:5px;background:#f0c35b;color:#172b4b;text-decoration:none;font-size:14px;font-weight:850}
+.quantum-feature-stat{border-left:1px solid #ffffff44;padding:12px 0 12px 25px}
+.quantum-feature-stat small{display:block;color:#f0cb70;font-size:11px;font-weight:850;letter-spacing:.14em}
+.quantum-feature-stat strong{display:block;font:400 clamp(30px,3.8vw,44px)/1.08 Georgia,serif;color:#fff;margin:12px 0}
+.quantum-feature-stat span{display:block;color:#dce6f4;font-size:14px;line-height:1.65}
+@media(max-width:700px){.quantum-feature{grid-template-columns:1fr;gap:20px}.quantum-feature-stat{border-left:0;border-top:1px solid #ffffff44;padding:20px 0 0}}
