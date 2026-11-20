@@ -2,11 +2,18 @@
 
 A CAOS é um diretório público e internacional de links para fontes de conhecimento e informação. Contribuições ajudam a ampliar a cobertura, corrigir registros e tornar a descoberta de fontes mais acessível.
 
+## Fluxo de contribuição
+
+1. Abra uma issue para propor mudanças editoriais ou discutir alterações amplas.
+2. Faça suas alterações em uma branch própria.
+3. Envie um Pull Request para `main`, explicando o que mudou e por quê.
+4. Aguarde a revisão e a aprovação do mantenedor. Não há inclusão automática de contribuições.
+
+Não solicite nem espere acesso de escrita ao repositório. Alterações enviadas por forks e Pull Requests são preferidas.
+
 ## Sugerir uma fonte
 
-Abra uma issue no GitHub ou envie um pull request adicionando um registro a `data/sources.json`.
-
-Cada registro deve conter:
+Cada registro em `data/sources.json` deve conter:
 
 - `id`: número inteiro único.
 - `title`: nome oficial da fonte.
@@ -15,8 +22,8 @@ Cada registro deve conter:
 - `description`: descrição factual, preferencialmente em inglês.
 - `description_pt`: descrição factual em português brasileiro.
 - `url`: endereço oficial ou canônico.
-- `type`: tipo de recurso, como base de dados, repositório, periódico, biblioteca ou portal institucional.
-- `access`: condições de acesso, incluindo cadastro, assinatura ou restrições quando conhecidas.
+- `type`: tipo de recurso.
+- `access`: condições de acesso conhecidas.
 - `tags`: termos úteis para busca.
 
 ## Critérios de inclusão
@@ -28,21 +35,16 @@ Cada registro deve conter:
 5. Diferencie publicações revisadas por pares de preprints e materiais não revisados.
 6. Informe restrições de acesso e licenças quando conhecidas.
 7. Busque diversidade geográfica, linguística e institucional.
-8. Mantenha descrições neutras, precisas e baseadas em evidências.
-9. Evite duplicatas, malware, downloads enganosos e fontes que facilitem atividades ilegais ou violações de privacidade.
-10. Não envie dados pessoais, credenciais vazadas, registros privados ou materiais obtidos sem autorização.
-11. Não use o diretório para visar, perfilar ou vigiar indivíduos privados.
+8. Evite duplicatas, malware, downloads enganosos e fontes que facilitem atividades ilegais ou violações de privacidade.
+9. Não envie dados pessoais, credenciais vazadas, registros privados ou materiais obtidos sem autorização.
+10. Não use o diretório para visar, perfilar ou vigiar indivíduos privados.
 
-## Classificação
+## Revisão e validação
 
-Use a taxonomia de cinco áreas científicas e uma categoria transversal descrita no README. Para fontes que abrangem várias disciplinas, use `cross` quando a classificação multidisciplinar for realmente adequada.
+Toda alteração está sujeita à revisão. O fluxo automatizado verifica estrutura JSON, campos obrigatórios, IDs, categorias e duplicatas de URL, além da sintaxe dos scripts JavaScript embutidos em `index.html`. A aprovação automatizada não substitui a revisão humana da qualidade, legitimidade ou segurança de uma fonte.
 
 ## Idiomas
 
 A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. As descrições do catálogo estão em português e inglês quando disponíveis. Traduções adicionais devem preservar o nome oficial e o sentido da descrição original.
-
-## Pull requests
-
-Mantenha as alterações focadas. Explique por que a fonte é relevante e inclua limitações de acesso ou licença. Verifique duplicatas por URL e nome antes de propor uma nova entrada. Toda contribuição está sujeita à revisão; a inclusão não é automática.
 
 A CAOS é um índice informativo, não um endosso. Cada pessoa deve avaliar as fontes em seu contexto.
