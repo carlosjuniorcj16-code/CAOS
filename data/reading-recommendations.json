@@ -2,12 +2,54 @@
   "schema_version": 1,
   "updated_at": null,
   "window_days": 45,
-  "method": "Awaiting first automated collection from arXiv, Europe PMC and Crossref.",
+  "method": "Metadados bibliográficos recentes consultados diretamente em APIs acadêmicas; ordenação por data dentro de cada subárea; sem ranking de qualidade ou popularidade.",
   "sources": [
     "arXiv",
     "Europe PMC",
+    "PubMed",
     "Crossref"
   ],
-  "topics": [],
+  "topics": [
+    {
+      "id": "ai",
+      "name": "Inteligência artificial",
+      "items": []
+    },
+    {
+      "id": "language",
+      "name": "Linguagem e comunicação",
+      "items": []
+    },
+    {
+      "id": "robotics",
+      "name": "Robótica e sistemas autônomos",
+      "items": []
+    },
+    {
+      "id": "biosciences",
+      "name": "Biociências e saúde",
+      "items": []
+    },
+    {
+      "id": "earth-space",
+      "name": "Terra, clima e espaço",
+      "items": []
+    },
+    {
+      "id": "datacenters",
+      "name": "Data centers e infraestrutura computacional",
+      "items": []
+    },
+    {
+      "id": "quantum",
+      "name": "Computação e informação quânticas",
+      "items": []
+    },
+    {
+      "id": "energy-thermo",
+      "name": "Energia, termodinâmica e sistemas complexos",
+      "items": []
+    }
+  ],
   "source_health": {}
 }
