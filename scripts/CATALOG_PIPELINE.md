@@ -63,7 +63,7 @@ O OpenAlex exige uma chave gratuita para paginação por cursor além da primeir
 
 ## Descoberta acadêmica multi-fonte
 
-O workflow `.github/workflows/multi-source-discovery.yml` executa semanalmente e pode ser iniciado manualmente em Actions. Ele consulta:
+O workflow `.github/workflows/multi-source-discovery.yml` executa diariamente às 06:37 UTC (03:37 em Brasília) e pode ser iniciado manualmente em Actions. Cada execução percorre até três páginas de 100 registros por provedor (limite de até 300 novos registros por provedor), mantendo cursores para avançar gradualmente. O workflow de Wikidata também executa diariamente, com até 100 novos registros e 350 verificações de homepage por execução. As rotinas de ingestão compartilham um grupo de concorrência para evitar que importadores simultâneos atribuam IDs sobrepostos ao catálogo. Os limites são tetos, não garantias de novos registros; deduplicação, disponibilidade e limites dos provedores reduzem os resultados reais. Ele consulta:
 
 - **DOAJ:** metadados de periódicos de acesso aberto e URLs de homepage fornecidas pelos periódicos. O metadado de nível de periódico é CC0 1.0. A API pública é consultada com intervalo conservador.
 - **OpenAlex:** instituições de pesquisa e URLs oficiais. Metadados CC0 1.0. A paginação contínua exige o secret `OPENALEX_API_KEY`; sem ele, a etapa OpenAlex é ignorada em vez de repetir indefinidamente a primeira página.
