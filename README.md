@@ -44,7 +44,9 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 ## Estrutura
 
 - `index.html`: portal principal multilíngue.
-- `ai-data.html`: diretório especializado de datasets e fontes para IA.\n- `freeware.html`: curadoria de freeware confiável, servidores cloud e plataformas gratuitas.\n- `data/freeware.json`: metadados, limites, licenças, riscos e evidências oficiais da curadoria gratuita.
+- `ai-data.html`: diretório especializado de datasets e fontes para IA.
+- `freeware.html`: curadoria de freeware confiável, servidores cloud e plataformas gratuitas.
+- `data/freeware.json`: metadados, limites, licenças, riscos e evidências oficiais da curadoria gratuita.
 - `data/ai_sources.json`: metadados estruturados de datasets e fontes para IA.
 - `data/sources.json`: catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md`: orientações para contribuições.
@@ -76,5 +78,3 @@ Acesse `http://localhost:8000`. O portal não exige chave de API, backend ou ban
 
 O código-fonte pretende ser distribuído sob MIT. Os metadados do diretório pretendem ser reutilizáveis sob CC0 quando legalmente possível. Essas licenças não alteram as licenças nem os termos dos conteúdos de terceiros vinculados.
 
-- `freeware.html`: curadoria de freeware seguro, serviços cloud gratuitos e infraestrutura de desenvolvimento.
-- `data/freeware.json`: metadados, limites, licenças, riscos e fontes oficiais da curadoria gratuita.
