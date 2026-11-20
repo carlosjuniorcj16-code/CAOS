@@ -44,7 +44,7 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 ## Estrutura
 
 - `index.html`: portal principal multilíngue.
-- `ai-data.html`: diretório especializado de datasets e fontes para IA.
+- `ai-data.html`: diretório especializado de datasets e fontes para IA.\n- `freeware.html`: curadoria de freeware confiável, servidores cloud e plataformas gratuitas.\n- `data/freeware.json`: metadados, limites, licenças, riscos e evidências oficiais da curadoria gratuita.
 - `data/ai_sources.json`: metadados estruturados de datasets e fontes para IA.
 - `data/sources.json`: catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md`: orientações para contribuições.
