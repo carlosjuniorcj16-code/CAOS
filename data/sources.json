@@ -2148,22 +2148,6 @@
       "access_pt": "Gratuito"
     },
     {
-      "id": 135,
-      "title": "NASA Earthdata",
-      "category": "natural",
-      "subcategory": "Earth observation data",
-      "description": "Portal de dados de observação da Terra da NASA, com produtos e ferramentas para pesquisa ambiental e climática.",
-      "url": "https://earthdata.nasa.gov/",
-      "type": "Research resource",
-      "access": "Gratuito; condições e licenças variam",
-      "tags": [
-        "Earth observation data"
-      ],
-      "description_pt": "Portal de dados de observação da Terra da NASA, com produtos e ferramentas para pesquisa ambiental e climática.",
-      "subcategory_pt": "Earth observation data",
-      "access_pt": "Gratuito; condições e licenças variam"
-    },
-    {
       "id": 136,
       "title": "USGS Earthquake Catalog",
       "category": "natural",
