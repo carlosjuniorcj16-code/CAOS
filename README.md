@@ -18,7 +18,7 @@ A interface está disponível em 15 idiomas: português brasileiro, inglês, esp
 
 ## Expansão do catálogo
 
-O CAOS está preparado para importar lotes de até 10.000 registros do dump Curlie, que contém aproximadamente 2,9 milhões de entradas. A importação mantém a categoria original, o idioma, a licença e a atribuição; não copia o dump inteiro para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md) antes de importar ou traduzir em massa.
+O catálogo atual inclui 12.000 registros selecionados do dump oficial do Curlie, que contém aproximadamente 2,9 milhões de entradas; isso não representa a importação integral do diretório. Os registros mantêm a categoria de origem, a licença CC BY 3.0 e a atribuição obrigatória. Novas importações devem ocorrer em lotes revisados, sem copiar o dump completo para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md).
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 
