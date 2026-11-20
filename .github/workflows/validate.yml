@@ -31,6 +31,12 @@ jobs:
           node-version: "22"
       - name: Compile Python catalog tools
         run: python -m py_compile scripts/*.py
+      - name: Smoke-test DOAJ public journal metadata API
+        if: github.event_name == 'pull_request'
+        run: python scripts/ingest_doaj_journals.py --limit 5 --page-size 10 --max-pages 1 --dry-run
+      - name: Smoke-test OpenAlex institution metadata API
+        if: github.event_name == 'pull_request'
+        run: python scripts/ingest_openalex_institutions.py --limit 5 --max-pages 1 --dry-run
       - name: Validate catalog
         run: python scripts/validate_catalog.py
       - name: Build compact search index
