@@ -52,7 +52,7 @@ jobs:
           total = 0
           for page in ("index.html", "ai-data.html"):
               html = Path(page).read_text(encoding="utf-8")
-              scripts = re.findall(r"<script\b[^>]*>([\s\S]*?)</script>", html, re.I)
+              scripts = [body for attrs, body in re.findall(r"<script\\b([^>]*)>([\\s\\S]*?)</script>", html, re.I) if "application/ld+json" not in attrs.lower()]
               if not scripts:
                   raise SystemExit(f"Nenhum script inline encontrado em {page}.")
               for i, script in enumerate(scripts):
