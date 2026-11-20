@@ -16,8 +16,8 @@ TOPICS = [
     ("Inteligência artificial", "cat:cs.AI OR cat:cs.LG"),
     ("Linguagem e comunicação", "cat:cs.CL"),
     ("Robótica", "cat:cs.RO"),
-    ("Biociências", "cat:q-bio"),
-    ("Terra, clima e espaço", "cat:physics.ao-ph OR cat:astro-ph"),
+    ("Biociências", "cat:q-bio.GN OR cat:q-bio.QM OR cat:q-bio.NC"),
+    ("Terra, clima e espaço", "cat:physics.ao-ph OR cat:astro-ph.CO OR cat:astro-ph.EP OR cat:astro-ph.GA"),
 ]
 NS = {"a": "http://www.w3.org/2005/Atom"}
 
