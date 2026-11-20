@@ -73,8 +73,8 @@ def main() -> None:
     parser.add_argument("--max-pages", type=int, default=5)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if args.limit < 1 or not 1 <= args.per_page <= 100 or args.max_pages < 1:
-        parser.error("--limit deve ser positivo; --per-page deve ficar entre 1 e 100; --max-pages deve ser positivo.")
+    if args.limit < 1 or args.limit > 5000 or not 1 <= args.per_page <= 100 or args.max_pages < 1 or args.max_pages > 50:
+        parser.error("--limit deve ficar entre 1 e 5000; --per-page entre 1 e 100; --max-pages entre 1 e 50.")
     api_key = os.environ.get("OPENALEX_API_KEY")
     if args.max_pages > 1 and not api_key:
         parser.error("Defina OPENALEX_API_KEY para paginação além da primeira página (cursor).")
