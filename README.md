@@ -8,7 +8,7 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão atual reúne **1.022 fontes**, distribuídas em **67 categorias temáticas com registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão atual reúne **13.022 fontes**, distribuídas em **67 categorias temáticas com registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
@@ -18,7 +18,7 @@ A interface está disponível em 15 idiomas: português brasileiro, inglês, esp
 
 ## Expansão do catálogo
 
-O CAOS está preparado para importar lotes de até 10.000 registros do dump Curlie, que contém aproximadamente 2,9 milhões de entradas. A importação mantém a categoria original, o idioma, a licença e a atribuição; não copia o dump inteiro para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md) antes de importar ou traduzir em massa.
+O catálogo atual inclui 12.000 registros selecionados do dump oficial do Curlie, que contém aproximadamente 2,9 milhões de entradas; isso não representa a importação integral do diretório. Os registros mantêm a categoria de origem, a licença CC BY 3.0 e a atribuição obrigatória. Novas importações devem ocorrer em lotes revisados, sem copiar o dump completo para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md).
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 

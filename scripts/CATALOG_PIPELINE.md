@@ -2,7 +2,7 @@
 
 ## Escopo atual
 
-O diretório contém 1.022 registros próprios e 67 categorias com fontes. O fluxo de importação foi preparado para incorporar até 10.000 registros por execução a partir do dump oficial do Curlie, mantendo URL, título, descrição editorial, categoria de origem, idioma e atribuição.
+O diretório contém 13.022 registros, distribuídos em 67 categorias com fontes. Desses, 12.000 são registros selecionados do dump Curlie — não a totalidade das aproximadamente 2,9 milhões de entradas disponíveis. Novos lotes devem preservar URL, título, descrição, categoria de origem, idioma, licença e atribuição, com deduplicação e revisão antes da publicação.
 
 O dump Curlie é distribuído em TSV, contém aproximadamente 2,9 milhões de entradas e é atualizado periodicamente. A licença do conteúdo é CC BY 3.0 Unported; a atribuição pública é obrigatória. Fontes:
 - https://www.curlie.org/docs/en/rdf.html
@@ -48,3 +48,15 @@ python scripts/validate_catalog.py
 \`\`\`
 
 O validador informa a cobertura de descrições por idioma. A interface preserva nomes oficiais e títulos próprios; não traduz URLs nem nomes institucionais arbitrariamente.
+
+## Importar instituições pelo OpenAlex
+
+O importador `scripts/ingest_openalex_institutions.py` adiciona somente metadados institucionais e URLs oficiais. Ele não copia conteúdo dos sites. A licença CC0 se aplica aos metadados do OpenAlex; a licença do conteúdo de cada instituição permanece independente e não é presumida.
+
+1. Crie uma chave gratuita no OpenAlex, conforme a [documentação de autenticação](https://help.openalex.org/api/authentication/).
+2. No GitHub, abra Settings → Secrets and variables → Actions e crie o secret `OPENALEX_API_KEY`. Nunca coloque a chave no código ou em arquivos do repositório.
+3. Abra Actions → Import OpenAlex institution directory → Run workflow. Mantenha `dry_run=true` primeiro.
+4. Revise o resumo do lote. Se estiver adequado, execute novamente com `dry_run=false` e um limite controlado.
+5. O workflow só permite importação na branch `main`, deduplica por URL e cria um commit do catálogo se houver novos registros.
+
+O OpenAlex exige uma chave gratuita para paginação por cursor além da primeira página. Respeite os limites atuais da API e faça lotes pequenos no começo. Consulte `data/source_registry.json` para a política de proveniência e reutilização.
