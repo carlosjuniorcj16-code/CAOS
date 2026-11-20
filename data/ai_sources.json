@@ -1,0 +1,769 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-20",
+  "records": [
+    {
+      "id": "common-crawl",
+      "name": "Common Crawl",
+      "area": "web",
+      "kind": "Web crawl",
+      "formats": [
+        "WARC",
+        "WAT",
+        "WET"
+      ],
+      "languages": [
+        "Multilingual"
+      ],
+      "volume": "Petabyte-scale archive; varies by snapshot",
+      "license": "Terms of use; underlying page rights remain with owners",
+      "access": "Bulk download, indexes, S3",
+      "update": "Monthly",
+      "uses": [
+        "Pretraining",
+        "RAG",
+        "research"
+      ],
+      "description_pt": "Arquivo de rastreamentos da web usado como matéria-prima para corpora. Exige filtragem, deduplicação e auditoria dos direitos de origem.",
+      "description_en": "Open web-crawl archive used as raw material for corpora; requires filtering, deduplication, and upstream rights review.",
+      "caveat": "Captura pública não concede automaticamente licença de reutilização.",
+      "url": "https://commoncrawl.org/get-started",
+      "docs": "https://commoncrawl.org/get-started"
+    },
+    {
+      "id": "fineweb",
+      "name": "FineWeb",
+      "area": "text",
+      "kind": "Web text corpus",
+      "formats": [
+        "Parquet"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "About 15 trillion tokens",
+      "license": "Dataset terms and upstream rights; inspect dataset card",
+      "access": "Hugging Face Hub; streaming or download",
+      "update": "Versioned",
+      "uses": [
+        "Pretraining"
+      ],
+      "description_pt": "Corpus derivado do Common Crawl, processado, filtrado e deduplicado para pesquisa de pré-treinamento.",
+      "description_en": "Common Crawl-derived corpus processed, filtered, and deduplicated for pretraining research.",
+      "caveat": "A licença do corpus não elimina direitos dos conteúdos de origem.",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "docs": "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+    },
+    {
+      "id": "fineweb-edu",
+      "name": "FineWeb-Edu",
+      "area": "text",
+      "kind": "Educational text corpus",
+      "formats": [
+        "Parquet"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "Billions of filtered examples; release-dependent",
+      "license": "See dataset card and upstream terms",
+      "access": "Hugging Face Hub",
+      "update": "Versioned",
+      "uses": [
+        "Pretraining",
+        "education"
+      ],
+      "description_pt": "Subconjunto do FineWeb filtrado para priorizar conteúdo educacional e explicativo.",
+      "description_en": "FineWeb subset filtered to prioritize educational and explanatory content.",
+      "caveat": "Curadoria automatizada não equivale a revisão pedagógica.",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+      "docs": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+    },
+    {
+      "id": "dolma",
+      "name": "Dolma",
+      "area": "text",
+      "kind": "Pretraining corpus",
+      "formats": [
+        "JSONL",
+        "Parquet"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "3 trillion tokens (original corpus)",
+      "license": "AI2 ImpACT License; verify version",
+      "access": "Hugging Face and project tooling",
+      "update": "Versioned",
+      "uses": [
+        "Pretraining",
+        "research"
+      ],
+      "description_pt": "Corpus do Allen Institute for AI que combina web, publicações acadêmicas, código, livros e material enciclopédico.",
+      "description_en": "Allen Institute for AI corpus combining web, academic publications, code, books, and encyclopedic material.",
+      "caveat": "Confira versão e licença aplicável antes do uso.",
+      "url": "https://allenai.org/dolma",
+      "docs": "https://allenai.org/dolma"
+    },
+    {
+      "id": "redpajama-v2",
+      "name": "RedPajama-Data-V2",
+      "area": "text",
+      "kind": "Web text corpus",
+      "formats": [
+        "Parquet",
+        "JSONL"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "Billions of documents across crawl snapshots",
+      "license": "Dataset and code terms differ; upstream rights apply",
+      "access": "Hugging Face Hub",
+      "update": "Versioned",
+      "uses": [
+        "Pretraining",
+        "data curation"
+      ],
+      "description_pt": "Documentos web com sinais de qualidade e identificadores de duplicatas para curadoria personalizada.",
+      "description_en": "Web documents with quality signals and duplicate identifiers for customizable curation.",
+      "caveat": "Sinais de qualidade não comprovam precisão nem autorização de reutilização.",
+      "url": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2",
+      "docs": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2"
+    },
+    {
+      "id": "the-pile",
+      "name": "The Pile",
+      "area": "text",
+      "kind": "Mixed text corpus",
+      "formats": [
+        "JSONL",
+        "compressed text"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "About 825 GiB (original release)",
+      "license": "Mixed licenses and source-specific terms",
+      "access": "Project website and mirrors",
+      "update": "Historical release",
+      "uses": [
+        "Pretraining",
+        "research"
+      ],
+      "description_pt": "Corpus composto por artigos, livros, código, fóruns e materiais acadêmicos.",
+      "description_en": "Mixture of papers, books, code, forums, and academic material.",
+      "caveat": "Cada componente pode ter condições próprias.",
+      "url": "https://pile.eleuther.ai/",
+      "docs": "https://pile.eleuther.ai/"
+    },
+    {
+      "id": "hf-datasets",
+      "name": "Hugging Face Datasets Hub",
+      "area": "hub",
+      "kind": "Dataset registry and hosting",
+      "formats": [
+        "CSV",
+        "JSON",
+        "Parquet",
+        "Audio",
+        "Image",
+        "Video"
+      ],
+      "languages": [
+        "Multilingual"
+      ],
+      "volume": "Over one million repositories; changing",
+      "license": "Varies by dataset; inspect each card",
+      "access": "Web, Git, HTTP, Python libraries and APIs",
+      "update": "Continuous",
+      "uses": [
+        "Pretraining",
+        "fine-tuning",
+        "RAG",
+        "evaluation"
+      ],
+      "description_pt": "Plataforma de descoberta e hospedagem de datasets comunitários para linguagem, áudio, imagens e vídeo.",
+      "description_en": "Discovery and hosting platform for community datasets covering language, audio, images, and video.",
+      "caveat": "A plataforma não concede licença única aos datasets hospedados.",
+      "url": "https://huggingface.co/datasets",
+      "docs": "https://huggingface.co/datasets"
+    },
+    {
+      "id": "wikimedia-dumps",
+      "name": "Wikimedia Dumps",
+      "area": "knowledge",
+      "kind": "Encyclopedic text",
+      "formats": [
+        "XML",
+        "JSON",
+        "SQL"
+      ],
+      "languages": [
+        "Hundreds of language editions"
+      ],
+      "volume": "Large; varies by language and dump",
+      "license": "Mostly CC BY-SA; individual files may differ",
+      "access": "Bulk HTTPS dumps",
+      "update": "Regular snapshots",
+      "uses": [
+        "Pretraining",
+        "RAG",
+        "knowledge graphs"
+      ],
+      "description_pt": "Exportações das wikis Wikimedia, úteis para corpora multilíngues e recuperação de conhecimento.",
+      "description_en": "Wikimedia wiki exports, useful for multilingual corpora and knowledge retrieval.",
+      "caveat": "Respeite atribuição, share-alike e licenças de mídia.",
+      "url": "https://dumps.wikimedia.org/",
+      "docs": "https://dumps.wikimedia.org/"
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata",
+      "area": "knowledge",
+      "kind": "Structured knowledge graph",
+      "formats": [
+        "JSON",
+        "RDF",
+        "SPARQL",
+        "TSV"
+      ],
+      "languages": [
+        "Many languages"
+      ],
+      "volume": "100M+ items; grows continuously",
+      "license": "CC0 for structured data",
+      "access": "SPARQL, APIs, weekly dumps",
+      "update": "Continuous",
+      "uses": [
+        "RAG",
+        "knowledge graphs",
+        "evaluation"
+      ],
+      "description_pt": "Base estruturada de entidades, propriedades e relações, adequada a grafos de conhecimento.",
+      "description_en": "Structured knowledge base of entities, properties, and relationships for knowledge graphs.",
+      "caveat": "Dumps podem ficar defasados; use consultas incrementais para dados recentes.",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+      "docs": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "area": "scientific",
+      "kind": "Scholarly metadata graph",
+      "formats": [
+        "JSON",
+        "API",
+        "Parquet"
+      ],
+      "languages": [
+        "Multilingual metadata"
+      ],
+      "volume": "Hundreds of millions of scholarly works",
+      "license": "CC0 for OpenAlex data",
+      "access": "REST API and full snapshot",
+      "update": "Continuous; periodic snapshots",
+      "uses": [
+        "RAG",
+        "research",
+        "knowledge graphs"
+      ],
+      "description_pt": "Catálogo aberto de trabalhos científicos, autores, instituições, periódicos e tópicos.",
+      "description_en": "Open catalog of scholarly works, authors, institutions, venues, and topics.",
+      "caveat": "Metadados não equivalem ao texto integral dos artigos.",
+      "url": "https://docs.openalex.org/",
+      "docs": "https://docs.openalex.org/"
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "area": "scientific",
+      "kind": "Scientific preprints",
+      "formats": [
+        "PDF",
+        "TeX",
+        "OAI-PMH",
+        "API"
+      ],
+      "languages": [
+        "Primarily English"
+      ],
+      "volume": "Millions of preprints; growing daily",
+      "license": "Article-specific licenses; no blanket reuse license",
+      "access": "Web, API, OAI-PMH and bulk access",
+      "update": "Daily",
+      "uses": [
+        "RAG",
+        "research",
+        "fine-tuning after rights review"
+      ],
+      "description_pt": "Repositório de preprints em física, matemática, computação, estatística e áreas relacionadas.",
+      "description_en": "Preprint repository covering physics, mathematics, computer science, statistics, and related fields.",
+      "caveat": "Acesso gratuito não significa permissão irrestrita para treinamento.",
+      "url": "https://info.arxiv.org/help/bulk_data.html",
+      "docs": "https://info.arxiv.org/help/bulk_data.html"
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed",
+      "area": "biomedical",
+      "kind": "Biomedical bibliography",
+      "formats": [
+        "XML",
+        "API",
+        "MEDLINE"
+      ],
+      "languages": [
+        "Primarily English",
+        "multilingual records"
+      ],
+      "volume": "Tens of millions of citations",
+      "license": "Metadata terms; article rights vary",
+      "access": "Web, E-utilities API and bulk files",
+      "update": "Daily",
+      "uses": [
+        "RAG",
+        "research",
+        "evaluation"
+      ],
+      "description_pt": "Índice bibliográfico biomédico com resumos, referências e identificadores de artigos.",
+      "description_en": "Biomedical literature index with abstracts, references, and article identifiers.",
+      "caveat": "PubMed não é repositório universal de textos completos.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/download/",
+      "docs": "https://pubmed.ncbi.nlm.nih.gov/download/"
+    },
+    {
+      "id": "pmc",
+      "name": "PubMed Central Open Access Subset",
+      "area": "biomedical",
+      "kind": "Full-text biomedical articles",
+      "formats": [
+        "JATS XML",
+        "PDF",
+        "FTP"
+      ],
+      "languages": [
+        "Primarily English",
+        "some multilingual"
+      ],
+      "volume": "Millions; subset and license filters apply",
+      "license": "Article-specific open-access licenses",
+      "access": "Bulk FTP, OAI-PMH and APIs",
+      "update": "Regularly updated",
+      "uses": [
+        "RAG",
+        "research",
+        "fine-tuning with license filtering"
+      ],
+      "description_pt": "Artigos biomédicos em texto completo sob licenças abertas identificadas individualmente.",
+      "description_en": "Full-text biomedical articles under individually identified open licenses.",
+      "caveat": "Filtre pela licença de cada artigo; nem todo conteúdo do PMC é OA.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/",
+      "docs": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/"
+    },
+    {
+      "id": "stack-v2",
+      "name": "The Stack v2",
+      "area": "code",
+      "kind": "Source code corpus",
+      "formats": [
+        "Parquet",
+        "JSONL"
+      ],
+      "languages": [
+        "Hundreds of programming languages"
+      ],
+      "volume": "Multi-terabyte; release-dependent",
+      "license": "Source repository licenses and dataset terms",
+      "access": "Hugging Face Hub and project tools",
+      "update": "Versioned",
+      "uses": [
+        "Code pretraining",
+        "fine-tuning",
+        "code search"
+      ],
+      "description_pt": "Código-fonte para pesquisa em modelos de programação, com metadados de repositório e licenciamento.",
+      "description_en": "Source-code collection for programming-model research, with repository and licensing metadata.",
+      "caveat": "Código público não significa código sem licença.",
+      "url": "https://huggingface.co/datasets/bigcode/the-stack-v2",
+      "docs": "https://huggingface.co/datasets/bigcode/the-stack-v2"
+    },
+    {
+      "id": "software-heritage",
+      "name": "Software Heritage",
+      "area": "code",
+      "kind": "Source code archive",
+      "formats": [
+        "Git",
+        "SWHID",
+        "API",
+        "graph"
+      ],
+      "languages": [
+        "All programming languages represented"
+      ],
+      "volume": "Billions of source-code objects",
+      "license": "Per-project license; metadata and code differ",
+      "access": "Web, API, Graph Dataset",
+      "update": "Continuous",
+      "uses": [
+        "Research",
+        "code retrieval",
+        "provenance"
+      ],
+      "description_pt": "Arquivo de código-fonte com identificadores persistentes e ferramentas de proveniência.",
+      "description_en": "Source-code archive with persistent identifiers and software provenance tools.",
+      "caveat": "Arquivamento não altera a licença do projeto.",
+      "url": "https://www.softwareheritage.org/",
+      "docs": "https://www.softwareheritage.org/"
+    },
+    {
+      "id": "imagenet",
+      "name": "ImageNet",
+      "area": "image",
+      "kind": "Labeled image dataset",
+      "formats": [
+        "JPEG",
+        "annotations",
+        "XML"
+      ],
+      "languages": [
+        "English labels"
+      ],
+      "volume": "14M+ images in broader collection",
+      "license": "Research access terms; image copyrights remain with owners",
+      "access": "Registration and download",
+      "update": "Versioned",
+      "uses": [
+        "Vision pretraining",
+        "classification",
+        "evaluation"
+      ],
+      "description_pt": "Base de imagens organizada por conceitos e rótulos, importante para classificação visual.",
+      "description_en": "Image collection organized by concepts and labels, important for visual classification.",
+      "caveat": "Confira termos de acesso e direitos das imagens individuais.",
+      "url": "https://www.image-net.org/download.php",
+      "docs": "https://www.image-net.org/download.php"
+    },
+    {
+      "id": "coco",
+      "name": "COCO",
+      "area": "image",
+      "kind": "Image and object annotations",
+      "formats": [
+        "JPEG",
+        "JSON"
+      ],
+      "languages": [
+        "Primarily English captions"
+      ],
+      "volume": "330K+ images; 1.5M+ object instances (2017 family)",
+      "license": "Images generally CC BY 4.0; verify components",
+      "access": "Direct download",
+      "update": "Fixed releases",
+      "uses": [
+        "Object detection",
+        "segmentation",
+        "captioning",
+        "evaluation"
+      ],
+      "description_pt": "Dataset de imagens com anotações de objetos, segmentação, pontos-chave e legendas.",
+      "description_en": "Image dataset with object, segmentation, keypoint, and caption annotations.",
+      "caveat": "Verifique licença de cada componente e uso comercial.",
+      "url": "https://cocodataset.org/#download",
+      "docs": "https://cocodataset.org/#download"
+    },
+    {
+      "id": "open-images",
+      "name": "Open Images",
+      "area": "image",
+      "kind": "Labeled image dataset",
+      "formats": [
+        "JPEG",
+        "CSV",
+        "bounding boxes",
+        "segmentation"
+      ],
+      "languages": [
+        "English labels"
+      ],
+      "volume": "9M+ images across versions",
+      "license": "Images commonly CC BY 2.0; annotations separate",
+      "access": "Google Cloud downloads",
+      "update": "Versioned",
+      "uses": [
+        "Classification",
+        "detection",
+        "segmentation"
+      ],
+      "description_pt": "Imagens com rótulos, caixas delimitadoras, relações e anotações de segmentação.",
+      "description_en": "Images with labels, bounding boxes, relationships, and segmentation annotations.",
+      "caveat": "Atribuição e direitos devem ser verificados por versão.",
+      "url": "https://storage.googleapis.com/openimages/web/download.html",
+      "docs": "https://storage.googleapis.com/openimages/web/download.html"
+    },
+    {
+      "id": "laion-5b",
+      "name": "LAION-5B",
+      "area": "multimodal",
+      "kind": "Image-text metadata pairs",
+      "formats": [
+        "Parquet",
+        "WebDataset",
+        "URL metadata"
+      ],
+      "languages": [
+        "Multilingual captions",
+        "web-dependent"
+      ],
+      "volume": "5.85 billion image-text pairs (original release)",
+      "license": "Image rights vary or may be unknown",
+      "access": "Metadata download; images fetched from original URLs",
+      "update": "Historical release",
+      "uses": [
+        "Multimodal research",
+        "image-text retrieval"
+      ],
+      "description_pt": "Pares imagem-texto em grande escala. A distribuição de metadados não transfere direitos das imagens.",
+      "description_en": "Large-scale image-text pairs. Metadata distribution does not transfer image rights.",
+      "caveat": "Exige auditoria de segurança, privacidade, qualidade e direitos.",
+      "url": "https://laion.ai/blog/laion-5b/",
+      "docs": "https://laion.ai/blog/laion-5b/"
+    },
+    {
+      "id": "common-voice",
+      "name": "Mozilla Common Voice",
+      "area": "audio",
+      "kind": "Crowdsourced speech corpus",
+      "formats": [
+        "MP3",
+        "TSV",
+        "validated clips"
+      ],
+      "languages": [
+        "100+ languages",
+        "release-dependent"
+      ],
+      "volume": "Thousands of hours; varies by release",
+      "license": "CC0 for released contributions; verify release terms",
+      "access": "Dataset download and project platform",
+      "update": "Periodic releases",
+      "uses": [
+        "Speech recognition",
+        "speech research"
+      ],
+      "description_pt": "Gravações de voz e validações comunitárias em muitos idiomas.",
+      "description_en": "Community-contributed voice recordings and validations across many languages.",
+      "caveat": "Cobertura e qualidade variam entre idiomas e versões.",
+      "url": "https://commonvoice.mozilla.org/en/datasets",
+      "docs": "https://commonvoice.mozilla.org/en/datasets"
+    },
+    {
+      "id": "librispeech",
+      "name": "LibriSpeech",
+      "area": "audio",
+      "kind": "Read speech corpus",
+      "formats": [
+        "FLAC",
+        "TXT",
+        "speaker metadata"
+      ],
+      "languages": [
+        "English"
+      ],
+      "volume": "About 1,000 hours of read speech",
+      "license": "CC BY 4.0",
+      "access": "OpenSLR direct downloads",
+      "update": "Fixed release",
+      "uses": [
+        "Automatic speech recognition",
+        "speech evaluation"
+      ],
+      "description_pt": "Corpus de cerca de mil horas de fala lida em inglês, alinhada a transcrições.",
+      "description_en": "About 1,000 hours of read English speech aligned with transcripts.",
+      "caveat": "Fala lida não representa plenamente fala espontânea ou todos os sotaques.",
+      "url": "https://www.openslr.org/12",
+      "docs": "https://www.openslr.org/12"
+    },
+    {
+      "id": "audioset",
+      "name": "AudioSet",
+      "area": "audio",
+      "kind": "Sound event dataset",
+      "formats": [
+        "YouTube IDs",
+        "CSV",
+        "ontology"
+      ],
+      "languages": [
+        "Labels mostly language-light"
+      ],
+      "volume": "2M+ labeled 10-second clips; 600+ sound classes",
+      "license": "Audio remains subject to original YouTube rights",
+      "access": "Annotations and links; source audio separately",
+      "update": "Fixed release",
+      "uses": [
+        "Sound classification",
+        "audio tagging",
+        "evaluation"
+      ],
+      "description_pt": "Rótulos de eventos sonoros associados a clipes e organizados por uma ontologia.",
+      "description_en": "Sound-event annotations linked to clips and organized through an ontology.",
+      "caveat": "IDs e anotações não concedem licença universal para os vídeos.",
+      "url": "https://research.google.com/audioset/",
+      "docs": "https://research.google.com/audioset/"
+    },
+    {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap Planet",
+      "area": "geospatial",
+      "kind": "Geospatial vector data",
+      "formats": [
+        "PBF",
+        "XML",
+        "changesets"
+      ],
+      "languages": [
+        "Multilingual tags"
+      ],
+      "volume": "Hundreds of GB compressed; varies by snapshot",
+      "license": "ODbL 1.0; attribution and share-alike may apply",
+      "access": "Planet dumps, regional extracts and APIs",
+      "update": "Weekly snapshots; minutely diffs",
+      "uses": [
+        "Geospatial ML",
+        "routing",
+        "mapping",
+        "RAG"
+      ],
+      "description_pt": "Base colaborativa de ruas, edifícios, pontos de interesse e infraestrutura.",
+      "description_en": "Collaborative database of roads, buildings, points of interest, and infrastructure.",
+      "caveat": "Observe atribuição e obrigações da ODbL em bases derivadas.",
+      "url": "https://planet.openstreetmap.org/",
+      "docs": "https://planet.openstreetmap.org/"
+    },
+    {
+      "id": "uci",
+      "name": "UCI Machine Learning Repository",
+      "area": "evaluation",
+      "kind": "Machine learning datasets",
+      "formats": [
+        "CSV",
+        "ARFF",
+        "tabular and other"
+      ],
+      "languages": [
+        "Varies by dataset"
+      ],
+      "volume": "Hundreds of datasets; sizes vary",
+      "license": "Varies by dataset; inspect each record",
+      "access": "Web download and Python package",
+      "update": "Periodic additions",
+      "uses": [
+        "Training",
+        "benchmarking",
+        "teaching",
+        "evaluation"
+      ],
+      "description_pt": "Repositório acadêmico de datasets para aprendizado de máquina, estatística e ensino.",
+      "description_en": "Academic repository of datasets for machine learning, statistics, and education.",
+      "caveat": "Conjuntos clássicos podem conter vieses ou licenças restritivas.",
+      "url": "https://archive.ics.uci.edu/",
+      "docs": "https://archive.ics.uci.edu/"
+    },
+    {
+      "id": "kaggle",
+      "name": "Kaggle Datasets",
+      "area": "hub",
+      "kind": "Dataset discovery platform",
+      "formats": [
+        "CSV",
+        "JSON",
+        "Parquet",
+        "images",
+        "audio"
+      ],
+      "languages": [
+        "Multilingual",
+        "dataset-dependent"
+      ],
+      "volume": "Large community catalog; continuously changing",
+      "license": "Varies by dataset; check individual license",
+      "access": "Web, Kaggle API and downloads",
+      "update": "Continuous; owner-dependent",
+      "uses": [
+        "Training",
+        "fine-tuning",
+        "evaluation",
+        "exploration"
+      ],
+      "description_pt": "Plataforma para descobrir e compartilhar datasets comunitários e de competições.",
+      "description_en": "Platform for discovering and sharing community datasets and competition data.",
+      "caveat": "Não presuma que datasets públicos podem ser redistribuídos ou usados comercialmente.",
+      "url": "https://www.kaggle.com/datasets",
+      "docs": "https://www.kaggle.com/datasets"
+    },
+    {
+      "id": "zenodo",
+      "name": "Zenodo",
+      "area": "hub",
+      "kind": "Research data repository",
+      "formats": [
+        "CSV",
+        "ZIP",
+        "PDF",
+        "code and many formats"
+      ],
+      "languages": [
+        "Multilingual",
+        "deposit-dependent"
+      ],
+      "volume": "Millions of research records; growing",
+      "license": "Per-record and per-file license; varies",
+      "access": "Web interface, REST API and downloads",
+      "update": "Continuous deposits",
+      "uses": [
+        "Research",
+        "reproducibility",
+        "training after review"
+      ],
+      "description_pt": "Repositório multidisciplinar de dados, artigos e software com DOI persistente.",
+      "description_en": "Multidisciplinary repository for data, papers, and software with persistent DOIs.",
+      "caveat": "A licença é escolhida por depósito e pode variar entre arquivos.",
+      "url": "https://zenodo.org/",
+      "docs": "https://zenodo.org/"
+    },
+    {
+      "id": "nasa",
+      "name": "NASA Open Data / Earthdata",
+      "area": "scientific",
+      "kind": "Scientific and Earth observation data",
+      "formats": [
+        "HDF",
+        "NetCDF",
+        "GeoTIFF",
+        "CSV",
+        "JSON",
+        "imagery"
+      ],
+      "languages": [
+        "Metadata primarily English"
+      ],
+      "volume": "Petabyte-scale archives across missions",
+      "license": "Many NASA-produced data are public domain; exceptions exist",
+      "access": "APIs, cloud archives, bulk download; some account access",
+      "update": "Mission- and product-specific",
+      "uses": [
+        "Scientific ML",
+        "climate",
+        "remote sensing",
+        "evaluation"
+      ],
+      "description_pt": "Catálogos de dados científicos, observação da Terra, clima, espaço e missões espaciais.",
+      "description_en": "Catalogs of scientific, Earth-observation, climate, space, and mission data.",
+      "caveat": "Confira a política de cada missão e identifique dados de terceiros.",
+      "url": "https://data.nasa.gov/",
+      "docs": "https://data.nasa.gov/"
+    }
+  ]
+}
