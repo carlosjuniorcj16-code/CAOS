@@ -1,0 +1,56 @@
+name: CAOS trusted automation auto-merge
+
+on:
+  workflow_run:
+    workflows:
+      - Validate project
+      - Build and deploy CAOS SEO site
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: caos-auto-merge-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  merge-validated-data:
+    name: Merge trusted data updates after all checks pass
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      contains(fromJSON('["automation/wikidata-discovery","automation/multi-source-academic-discovery","automation/research-radar","automation/curlie-catalog-update"]'), github.event.workflow_run.head_branch)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify both required checks and locate the exact open PR
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          REPO: ${{ github.repository }}
+        run: |
+          CHECKS="$(gh api "repos/$REPO/commits/$SHA/check-runs" --jq '[.check_runs[] | select(.name == "Validate catalog and JavaScript" or .name == "build") | {name, status, conclusion}]')"
+          echo "$CHECKS"
+          python -c 'import json,sys; c=json.load(sys.stdin); required={"Validate catalog and JavaScript","build"}; found={x["name"]:x for x in c}; sys.exit(0 if required <= found.keys() and all(found[n]["status"]=="completed" and found[n]["conclusion"]=="success" for n in required) else 1)' <<< "$CHECKS" || { echo "Required checks are not both successful yet; waiting for the other workflow."; exit 0; }
+          PR="$(gh pr list --repo "$REPO" --state open --head "$BRANCH" --json number,headRefOid,isDraft,url --jq ".[] | select(.headRefOid == \"$SHA\" and .isDraft == false) | .url" | head -n 1)"
+          if [ -z "$PR" ]; then
+            echo "No matching non-draft open PR for this exact commit; nothing to merge."
+            exit 0
+          fi
+          echo "pr_url=$PR" >> "$GITHUB_OUTPUT"
+      - name: Merge through GitHub branch protections
+        if: ${{ steps.gate.outputs.pr_url != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.gate.outputs.pr_url }}
+        run: gh pr merge "$PR_URL" --squash --delete-branch
+      - name: Trigger GitHub Pages deployment after bot merge
+        if: ${{ steps.gate.outputs.pr_url != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run "Build and deploy CAOS SEO site" --ref main
