@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
   "updated_at": "2026-11-20",
-  "editorial_policy": "Links point to official project, documentation, source-code, package-index or foundation pages. Open source does not imply that every firmware, driver, codec, cloud service, mobile app or bundled component is open. Project status and licensing must be checked at the upstream source before adoption.",
+  "editorial_policy": "Links point to official project, documentation, source-code, package-index or foundation pages. Open source does not imply that every firmware, driver, codec, cloud service, mobile app or bundled component is open. Project status and licensing must be checked at the upstream source before adoption. New seed records include platform context and a licensing caveat where available; absent technical fields remain unknown and must not be inferred.",
   "categories": [
     {
       "id": "linux",
-      "title": "GNU/Linux distributions and ecosystems",
-      "description": "Independent distributions, families, immutable systems, source-based systems and fully free distributions. Follow each project's release, support and package policy.",
+      "title": "Distribuições GNU/Linux e ecossistemas",
+      "description": "Distribuições independentes, famílias, sistemas imutáveis, projetos baseados em código-fonte e distribuições de software livre. Consulte políticas de versões, suporte e pacotes de cada projeto.",
       "resources": [
         [
           "Debian",
@@ -145,13 +145,49 @@
           "https://www.gnu.org/distros/free-distros.html",
           "Reference directory",
           "FSF/GNU list of distributions meeting its free-system criteria; not a general ranking."
+        ],
+        [
+          "Linux kernel",
+          "https://kernel.org/",
+          "kernel",
+          "Núcleo Linux, desenvolvimento upstream, versões, código-fonte e documentação técnica. Plataforma: Linux / kernel. Licença e direitos: GPL-2.0-only para o kernel; módulos e componentes podem ter licenças próprias.",
+          "Linux / kernel",
+          "GPL-2.0-only para o kernel; módulos e componentes podem ter licenças próprias.",
+          "https://docs.kernel.org/"
+        ],
+        [
+          "Devuan",
+          "https://www.devuan.org/",
+          "distribution",
+          "Distribuição derivada do Debian que oferece alternativas ao systemd como sistema init. Plataforma: GNU/Linux. Licença e direitos: Licenças por pacote; a base Debian mantém seus próprios termos.",
+          "GNU/Linux",
+          "Licenças por pacote; a base Debian mantém seus próprios termos.",
+          "https://www.devuan.org/os/documentation"
+        ],
+        [
+          "Kali Linux",
+          "https://www.kali.org/",
+          "distribution",
+          "Distribuição voltada a auditoria de segurança e testes autorizados, com grande coleção de ferramentas. Plataforma: GNU/Linux. Licença e direitos: Licenças individuais por pacote; ferramentas devem ser usadas apenas em sistemas autorizados.",
+          "GNU/Linux",
+          "Licenças individuais por pacote; ferramentas devem ser usadas apenas em sistemas autorizados.",
+          "https://www.kali.org/docs/"
+        ],
+        [
+          "Linux From Scratch",
+          "https://www.linuxfromscratch.org/",
+          "educational",
+          "Livro e projeto educacional para construir manualmente um sistema Linux a partir do código-fonte. Plataforma: GNU/Linux. Licença e direitos: Cada componente mantém sua licença própria; LFS é documentação e método de construção.",
+          "GNU/Linux",
+          "Cada componente mantém sua licença própria; LFS é documentação e método de construção.",
+          "https://www.linuxfromscratch.org/lfs/"
         ]
       ]
     },
     {
       "id": "bsd-unix",
-      "title": "BSD, illumos and Unix-derived systems",
-      "description": "Independent kernels and operating-system families outside the Linux distribution ecosystem.",
+      "title": "BSD, illumos e sistemas derivados de Unix",
+      "description": "Kernels e sistemas operacionais independentes fora do ecossistema de distribuições Linux.",
       "resources": [
         [
           "FreeBSD",
@@ -224,13 +260,56 @@
           "https://www.midnightbsd.org/",
           "Operating system",
           "Desktop-oriented BSD operating system."
+        ],
+        [
+          "HardenedBSD",
+          "https://hardenedbsd.org/",
+          "operating-system",
+          "Derivado de FreeBSD que integra mecanismos adicionais de hardening e segurança. Plataforma: BSD. Licença e direitos: Base BSD e licenças de componentes individuais.",
+          "BSD",
+          "Base BSD e licenças de componentes individuais."
+        ],
+        [
+          "OPNsense",
+          "https://opnsense.org/",
+          "appliance",
+          "Plataforma aberta de firewall e roteamento baseada em FreeBSD, com interface web e extensões. Plataforma: BSD. Licença e direitos: Core open source; plugins e componentes podem ter licenças distintas.",
+          "BSD",
+          "Core open source; plugins e componentes podem ter licenças distintas.",
+          "https://docs.opnsense.org/"
+        ],
+        [
+          "pfSense Community Edition",
+          "https://www.pfsense.org/",
+          "appliance",
+          "Distribuição de firewall baseada em FreeBSD, com edição comunitária e ecossistema comercial separado. Plataforma: BSD. Licença e direitos: Verificar a licença do CE e distinguir recursos comunitários de produtos comerciais.",
+          "BSD",
+          "Verificar a licença do CE e distinguir recursos comunitários de produtos comerciais.",
+          "https://docs.netgate.com/pfsense/en/latest/"
+        ],
+        [
+          "TrueNAS CORE",
+          "https://www.truenas.com/truenas-core/",
+          "storage",
+          "Sistema NAS baseado em FreeBSD e OpenZFS; projeto e suporte podem evoluir conforme o ciclo do produto. Plataforma: BSD. Licença e direitos: Verifique status de manutenção, licença e distinção entre CORE e SCALE antes de adotar.",
+          "BSD",
+          "Verifique status de manutenção, licença e distinção entre CORE e SCALE antes de adotar.",
+          "https://www.truenas.com/docs/"
+        ],
+        [
+          "Tribblix",
+          "https://www.tribblix.org/",
+          "distribution",
+          "Distribuição compacta de illumos, com abordagem tradicional e suporte a diferentes perfis de uso. Plataforma: illumos / Unix. Licença e direitos: Licenças por pacote e componente.",
+          "illumos / Unix",
+          "Licenças por pacote e componente."
         ]
       ]
     },
     {
       "id": "alternative",
-      "title": "Alternative, experimental and research operating systems",
-      "description": "Projects exploring different kernels, compatibility models, architectures or historical lineages. These are not all production-ready; verify hardware support and project activity.",
+      "title": "Sistemas operacionais alternativos, experimentais e de pesquisa",
+      "description": "Projetos que exploram kernels, arquiteturas, compatibilidade e linhagens históricas diferentes. Nem todos são indicados para produção; confira suporte de hardware e atividade.",
       "resources": [
         [
           "Haiku",
@@ -303,13 +382,47 @@
           "https://www.riscosopen.org/",
           "Operating system",
           "Open-source development of the RISC OS platform; hardware and licensing details vary."
+        ],
+        [
+          "9front",
+          "https://9front.org/",
+          "operating-system",
+          "Continuação comunitária da família Plan 9, com ambiente de pesquisa e sistema distribuído próprio. Plataforma: Plan 9 derivative. Licença e direitos: Licenças variam entre código herdado e contribuições; consulte o repositório e avisos.",
+          "Plan 9 derivative",
+          "Licenças variam entre código herdado e contribuições; consulte o repositório e avisos.",
+          "https://9front.org/faq.html"
+        ],
+        [
+          "AROS Research Operating System",
+          "https://aros.sourceforge.io/",
+          "operating-system",
+          "Sistema operacional compatível com APIs AmigaOS, com versões para diferentes arquiteturas. Plataforma: Amiga-like. Licença e direitos: Licenças por componente; verificar bibliotecas e componentes herdados.",
+          "Amiga-like",
+          "Licenças por componente; verificar bibliotecas e componentes herdados."
+        ],
+        [
+          "Fuchsia",
+          "https://fuchsia.dev/",
+          "operating-system",
+          "Sistema operacional modular baseado em Zircon, com código público e documentação técnica do projeto. Plataforma: Microkernel / Zircon. Licença e direitos: Repositório inclui componentes sob licenças diversas; não presumir que todo o ecossistema Google seja aberto.",
+          "Microkernel / Zircon",
+          "Repositório inclui componentes sob licenças diversas; não presumir que todo o ecossistema Google seja aberto.",
+          "https://fuchsia.dev/fuchsia-src"
+        ],
+        [
+          "OpenSolaris archives / OpenGrok",
+          "https://www.illumos.org/",
+          "archive",
+          "Portal comunitário para o ecossistema illumos, histórico de código e documentação de desenvolvimento. Plataforma: Unix / histórico. Licença e direitos: Conteúdo histórico e componentes possuem licenças diversas.",
+          "Unix / histórico",
+          "Conteúdo histórico e componentes possuem licenças diversas."
         ]
       ]
     },
     {
       "id": "mobile",
-      "title": "Mobile and handheld open-source ecosystems",
-      "description": "Mobile platforms and distributions. AOSP-based systems can still depend on proprietary firmware, drivers, app services or device-specific components.",
+      "title": "Sistemas móveis e plataformas portáteis",
+      "description": "Android/AOSP, sistemas móveis comunitários e ambientes alternativos para celulares e dispositivos portáteis.",
       "resources": [
         [
           "Android Open Source Project",
@@ -364,13 +477,22 @@
           "https://f-droid.org/",
           "App repository",
           "Repository and client for free and open-source Android applications; verify each app's metadata and build source."
+        ],
+        [
+          "Ubuntu Touch",
+          "https://ubuntu-touch.io/",
+          "distribution",
+          "Sistema operacional móvel mantido pela comunidade UBports, com foco em convergência e privacidade. Plataforma: Linux mobile. Licença e direitos: Componentes e blobs de hardware podem ter licenças distintas.",
+          "Linux mobile",
+          "Componentes e blobs de hardware podem ter licenças distintas.",
+          "https://docs.ubports.com/"
         ]
       ]
     },
     {
       "id": "embedded",
-      "title": "Embedded, real-time, router and device systems",
-      "description": "Operating systems, build systems and firmware foundations for routers, appliances, IoT, robotics and real-time hardware.",
+      "title": "Sistemas embarcados, tempo real, roteadores e dispositivos",
+      "description": "RTOS, sistemas para IoT, roteadores, microcontroladores e ferramentas para construir sistemas embarcados.",
       "resources": [
         [
           "OpenWrt",
@@ -442,8 +564,8 @@
     },
     {
       "id": "software-platforms",
-      "title": "Software distribution, desktops and package ecosystems",
-      "description": "Where software is packaged, signed, built, discovered and installed across operating systems. These channels are not interchangeable; prefer upstream project releases and native repositories when appropriate.",
+      "title": "Distribuição de software, desktops e ecossistemas de pacotes",
+      "description": "Diretórios de aplicações, catálogos, formatos de distribuição, gerenciadores e repositórios de pacotes.",
       "resources": [
         [
           "Flathub",
@@ -540,13 +662,80 @@
           "https://system76.com/cosmic",
           "Desktop environment",
           "Rust-based desktop environment developed by System76."
+        ],
+        [
+          "Free Software Directory",
+          "https://directory.fsf.org/",
+          "directory",
+          "Diretório pesquisável mantido pela Free Software Foundation, com foco em software que atende à definição de software livre. Plataforma: Catálogo de software. Licença e direitos: Critérios de inclusão FSF; confira licença e versão do pacote.",
+          "Catálogo de software",
+          "Critérios de inclusão FSF; confira licença e versão do pacote.",
+          "https://directory.fsf.org/wiki/Free_Software_Directory"
+        ],
+        [
+          "GNU Software Directory",
+          "https://www.gnu.org/software/",
+          "directory",
+          "Catálogo oficial de pacotes GNU, documentação e recursos de desenvolvimento. Plataforma: Catálogo de software. Licença e direitos: Pacotes GNU geralmente usam licenças GNU; confira cada pacote.",
+          "Catálogo de software",
+          "Pacotes GNU geralmente usam licenças GNU; confira cada pacote.",
+          "https://www.gnu.org/manual/"
+        ],
+        [
+          "OpenSSF Landscape",
+          "https://landscape.openssf.org/",
+          "landscape",
+          "Mapa navegável de projetos, ferramentas e organizações do ecossistema de segurança de software open source. Plataforma: Mapa de segurança open source. Licença e direitos: O mapa agrega projetos independentes; a inclusão não certifica segurança ou qualidade.",
+          "Mapa de segurança open source",
+          "O mapa agrega projetos independentes; a inclusão não certifica segurança ou qualidade.",
+          "https://github.com/ossf/ossf-landscape"
+        ],
+        [
+          "OW2 Projects",
+          "https://www.ow2.org/",
+          "foundation",
+          "Ecossistema europeu de projetos open source, com foco em infraestrutura, middleware e ferramentas. Plataforma: Projetos de software. Licença e direitos: Licenças individuais por projeto; conferir página de cada iniciativa.",
+          "Projetos de software",
+          "Licenças individuais por projeto; conferir página de cada iniciativa."
+        ],
+        [
+          "Open Hub",
+          "https://openhub.net/",
+          "directory",
+          "Índice comunitário para descobrir projetos e observar métricas públicas de desenvolvimento. Plataforma: Análise de projetos open source. Licença e direitos: Métricas não substituem avaliação de atividade, segurança ou governança.",
+          "Análise de projetos open source",
+          "Métricas não substituem avaliação de atividade, segurança ou governança."
+        ],
+        [
+          "Repology",
+          "https://repology.org/",
+          "index",
+          "Compara versões de pacotes em distribuições e repositórios de software, útil para rastrear divergências e manutenção. Plataforma: Índice de pacotes por distribuição. Licença e direitos: Agrega metadados de terceiros; confira o repositório original antes de instalar.",
+          "Índice de pacotes por distribuição",
+          "Agrega metadados de terceiros; confira o repositório original antes de instalar."
+        ],
+        [
+          "Libraries.io",
+          "https://libraries.io/",
+          "index",
+          "Descoberta de bibliotecas e dependências em diversos ecossistemas de linguagens e gerenciadores de pacotes. Plataforma: Índice de pacotes e dependências. Licença e direitos: Índice agregador; licenças e metadados devem ser confirmados na fonte de cada pacote.",
+          "Índice de pacotes e dependências",
+          "Índice agregador; licenças e metadados devem ser confirmados na fonte de cada pacote."
+        ],
+        [
+          "Awesome Lists",
+          "https://github.com/sindresorhus/awesome",
+          "curated-lists",
+          "Coleções comunitárias de recursos e ferramentas por linguagem, disciplina e tecnologia. Plataforma: Listas temáticas comunitárias. Licença e direitos: Qualidade e manutenção variam por lista; verificar atividade e origem de cada projeto.",
+          "Listas temáticas comunitárias",
+          "Qualidade e manutenção variam por lista; verificar atividade e origem de cada projeto."
         ]
       ]
     },
     {
       "id": "developer-ecosystem",
-      "title": "Software engineering, source code and package registries",
-      "description": "The software-development backbone: source forges, project foundations, language registries, build systems, documentation and reusable components.",
+      "title": "Engenharia de software, código-fonte e registros de pacotes",
+      "description": "Forjas de código, linguagens, toolchains, bibliotecas, registros de pacotes e recursos para desenvolvimento.",
       "resources": [
         [
           "Git",
@@ -739,13 +928,72 @@
           "https://pub.dev/",
           "Package registry",
           "Dart and Flutter package repository."
+        ],
+        [
+          "KDE Invent",
+          "https://invent.kde.org/",
+          "forge",
+          "Infraestrutura Git e revisão de código usada pelo ecossistema KDE. Plataforma: Forja do KDE. Licença e direitos: Projetos KDE possuem licenças próprias, frequentemente GPL/LGPL e permissivas.",
+          "Forja do KDE",
+          "Projetos KDE possuem licenças próprias, frequentemente GPL/LGPL e permissivas."
+        ],
+        [
+          "GNOME GitLab",
+          "https://gitlab.gnome.org/",
+          "forge",
+          "Instância GitLab usada para desenvolvimento do desktop GNOME e projetos associados. Plataforma: Forja do GNOME. Licença e direitos: Licenças definidas por projeto; conferir repositório individual.",
+          "Forja do GNOME",
+          "Licenças definidas por projeto; conferir repositório individual."
+        ],
+        [
+          "freedesktop.org GitLab",
+          "https://gitlab.freedesktop.org/",
+          "forge",
+          "Hospeda projetos fundamentais de gráficos, áudio, sessão, drivers e interoperabilidade em desktops Unix-like. Plataforma: Forja de infraestrutura desktop. Licença e direitos: Licenças por projeto; verificar metadados de cada repositório.",
+          "Forja de infraestrutura desktop",
+          "Licenças por projeto; verificar metadados de cada repositório."
+        ],
+        [
+          "Linux kernel Git",
+          "https://git.kernel.org/",
+          "forge",
+          "Infraestrutura oficial de publicação de árvores Git do kernel Linux e subsistemas. Plataforma: Repositório upstream do kernel. Licença e direitos: Licença do kernel GPL-2.0-only, com componentes e exceções documentadas.",
+          "Repositório upstream do kernel",
+          "Licença do kernel GPL-2.0-only, com componentes e exceções documentadas."
+        ],
+        [
+          "AUR",
+          "https://aur.archlinux.org/",
+          "community-repository",
+          "Repositório comunitário de receitas PKGBUILD mantido por usuários Arch; não é repositório binário oficial. Plataforma: Arch Linux. Licença e direitos: Receitas não são auditadas integralmente; revisar PKGBUILD e licença upstream antes de compilar.",
+          "Arch Linux",
+          "Receitas não são auditadas integralmente; revisar PKGBUILD e licença upstream antes de compilar.",
+          "https://wiki.archlinux.org/title/Arch_User_Repository"
+        ],
+        [
+          "Nixpkgs",
+          "https://github.com/NixOS/nixpkgs",
+          "package-collection",
+          "Coleção de expressões e pacotes para Nix, NixOS e outras plataformas. Plataforma: Nix / NixOS. Licença e direitos: Pacotes mantêm licenças upstream; Nixpkgs não concede direitos sobre software empacotado.",
+          "Nix / NixOS",
+          "Pacotes mantêm licenças upstream; Nixpkgs não concede direitos sobre software empacotado.",
+          "https://nixos.org/manual/nixpkgs/stable/"
+        ],
+        [
+          "Conan Center",
+          "https://conan.io/center",
+          "registry",
+          "Índice de receitas Conan para dependências C/C++ e construção multiplataforma. Plataforma: C / C++. Licença e direitos: Receitas e pacotes podem ter licenças diversas; verificar upstream.",
+          "C / C++",
+          "Receitas e pacotes podem ter licenças diversas; verificar upstream.",
+          "https://docs.conan.io/"
         ]
       ]
     },
     {
       "id": "software-assurance",
-      "title": "Licensing, provenance, security and software supply chain",
-      "description": "The framework that makes software discoverable and safer to reuse: license identification, SBOMs, vulnerability intelligence, signing, provenance, reproducible builds and project health.",
+      "title": "Licenças, proveniência, segurança e cadeia de suprimentos",
+      "description": "Ferramentas e padrões para avaliar licenças, vulnerabilidades, SBOM, assinatura, proveniência e integridade de builds.",
       "resources": [
         [
           "SPDX",
@@ -818,13 +1066,92 @@
           "https://guac.sh/",
           "Supply-chain graph",
           "Graph for understanding software supply-chain metadata and relationships."
+        ],
+        [
+          "OSV-Scanner",
+          "https://google.github.io/osv-scanner/",
+          "security-tool",
+          "Scanner que identifica vulnerabilidades em dependências e lockfiles usando o banco OSV. Plataforma: Scanner de dependências. Licença e direitos: Apache-2.0.",
+          "Scanner de dependências",
+          "Apache-2.0.",
+          "https://google.github.io/osv-scanner/"
+        ],
+        [
+          "Trivy",
+          "https://trivy.dev/",
+          "security-tool",
+          "Scanner para vulnerabilidades, configurações, segredos e SBOM em imagens, repositórios e sistemas. Plataforma: Scanner de segurança. Licença e direitos: Apache-2.0 para Trivy; feeds e bases de vulnerabilidade mantêm seus termos.",
+          "Scanner de segurança",
+          "Apache-2.0 para Trivy; feeds e bases de vulnerabilidade mantêm seus termos.",
+          "https://trivy.dev/latest/"
+        ],
+        [
+          "Syft",
+          "https://github.com/anchore/syft",
+          "security-tool",
+          "Ferramenta para gerar SBOMs a partir de imagens de contêiner, arquivos e diretórios. Plataforma: SBOM generator. Licença e direitos: Apache-2.0.",
+          "SBOM generator",
+          "Apache-2.0.",
+          "https://oss.anchore.com/docs/"
+        ],
+        [
+          "Grype",
+          "https://github.com/anchore/grype",
+          "security-tool",
+          "Scanner de vulnerabilidades para imagens de contêiner, diretórios e SBOMs. Plataforma: Scanner de vulnerabilidades. Licença e direitos: Apache-2.0.",
+          "Scanner de vulnerabilidades",
+          "Apache-2.0.",
+          "https://oss.anchore.com/docs/"
+        ],
+        [
+          "Open Source Initiative (OSI)",
+          "https://opensource.org/",
+          "standards-body",
+          "Organização que mantém a Open Source Definition e a lista de licenças aprovadas. Plataforma: Definição e licenças. Licença e direitos: A aprovação OSI é referência para licenças open source; não substitui aconselhamento jurídico.",
+          "Definição e licenças",
+          "A aprovação OSI é referência para licenças open source; não substitui aconselhamento jurídico.",
+          "https://opensource.org/licenses/"
+        ],
+        [
+          "Choose a License",
+          "https://choosealicense.com/",
+          "guide",
+          "Guia prático para comparar licenças comuns de software e escolher termos para um projeto. Plataforma: Guia de licenças. Licença e direitos: Material informativo; não é aconselhamento jurídico nem catálogo completo.",
+          "Guia de licenças",
+          "Material informativo; não é aconselhamento jurídico nem catálogo completo."
+        ],
+        [
+          "GNU Licenses",
+          "https://www.gnu.org/licenses/",
+          "legal-reference",
+          "Textos oficiais e explicações das licenças GPL, LGPL, AGPL e outras licenças GNU. Plataforma: Licenças GNU. Licença e direitos: Fonte primária dos textos de licença GNU.",
+          "Licenças GNU",
+          "Fonte primária dos textos de licença GNU."
+        ],
+        [
+          "OpenSSF Best Practices",
+          "https://bestpractices.coreinfrastructure.org/",
+          "assessment",
+          "Critérios e badges para avaliar práticas de desenvolvimento, documentação e segurança em projetos open source. Plataforma: Práticas de desenvolvimento seguro. Licença e direitos: Sinal de processo e transparência; não certifica ausência de bugs ou vulnerabilidades.",
+          "Práticas de desenvolvimento seguro",
+          "Sinal de processo e transparência; não certifica ausência de bugs ou vulnerabilidades.",
+          "https://www.bestpractices.dev/"
+        ],
+        [
+          "FOSSology",
+          "https://www.fossology.org/",
+          "License compliance scanner",
+          "Toolkit open source para análise de licenças, copyright e conformidade em bases de código. Plataforma: Linux / software composition analysis",
+          "Linux / software composition analysis",
+          "GPL-2.0-or-later para FOSSology; confira licenças dos scanners e componentes integrados.",
+          "https://github.com/fossology/fossology"
         ]
       ]
     },
     {
       "id": "toolchains-frameworks",
-      "title": "Linguagens, toolchains, frameworks e infraestrutura de aplicações",
-      "description": "A camada de construção e execução do software: linguagens, compiladores, runtimes, build systems, frameworks web, bibliotecas de interface, bancos de dados, containers, orquestração e infraestrutura como código. Licenças e edições podem variar por componente.",
+      "title": "Linguagens, toolchains, frameworks e aplicações",
+      "description": "Compiladores, sistemas de build, IDEs, bibliotecas, frameworks web/mobile/desktop e runtimes.",
       "resources": [
         [
           "GCC",
@@ -1125,6 +1452,518 @@
           "https://www.ansible.com/",
           "Automation framework",
           "Open-source automation platform and configuration-management ecosystem."
+        ],
+        [
+          "C++",
+          "https://isocpp.org/",
+          "language",
+          "Linguagem de sistemas e aplicações de alto desempenho; o site reúne padrões, documentação e recursos oficiais da comunidade. Plataforma: Linguagem / compilador. Licença e direitos: Implementações e bibliotecas possuem licenças próprias; o padrão ISO não é o mesmo que um compilador open source.",
+          "Linguagem / compilador",
+          "Implementações e bibliotecas possuem licenças próprias; o padrão ISO não é o mesmo que um compilador open source.",
+          "https://en.cppreference.com/w/"
+        ],
+        [
+          "Perl",
+          "https://www.perl.org/",
+          "language",
+          "Linguagem madura para automação, processamento de texto, administração e integração de sistemas. Plataforma: Linguagem / runtime. Licença e direitos: Artistic License ou GPL para Perl; módulos CPAN têm licenças próprias.",
+          "Linguagem / runtime",
+          "Artistic License ou GPL para Perl; módulos CPAN têm licenças próprias.",
+          "https://perldoc.perl.org/"
+        ],
+        [
+          "Haskell",
+          "https://www.haskell.org/",
+          "language",
+          "Linguagem funcional de tipagem estática, com avaliação preguiçosa e forte sistema de tipos. Plataforma: Linguagem funcional. Licença e direitos: Implementações e pacotes têm licenças individuais.",
+          "Linguagem funcional",
+          "Implementações e pacotes têm licenças individuais.",
+          "https://www.haskell.org/documentation/"
+        ],
+        [
+          "OCaml",
+          "https://ocaml.org/",
+          "language",
+          "Linguagem funcional e imperativa usada em compiladores, ferramentas formais e sistemas de alto desempenho. Plataforma: Linguagem funcional. Licença e direitos: Licença LGPL com exceção para runtime, além de licenças de pacotes.",
+          "Linguagem funcional",
+          "Licença LGPL com exceção para runtime, além de licenças de pacotes.",
+          "https://ocaml.org/docs"
+        ],
+        [
+          "Elixir",
+          "https://elixir-lang.org/",
+          "language",
+          "Linguagem funcional para sistemas concorrentes e distribuídos sobre a máquina virtual Erlang. Plataforma: Linguagem funcional / BEAM. Licença e direitos: Apache-2.0; bibliotecas Hex possuem licenças próprias.",
+          "Linguagem funcional / BEAM",
+          "Apache-2.0; bibliotecas Hex possuem licenças próprias.",
+          "https://hexdocs.pm/elixir/"
+        ],
+        [
+          "Erlang / OTP",
+          "https://www.erlang.org/",
+          "language",
+          "Plataforma de sistemas concorrentes e tolerantes a falhas, com runtime BEAM e bibliotecas OTP. Plataforma: Linguagem / runtime. Licença e direitos: Apache-2.0 para Erlang/OTP; dependências têm licenças próprias.",
+          "Linguagem / runtime",
+          "Apache-2.0 para Erlang/OTP; dependências têm licenças próprias.",
+          "https://www.erlang.org/doc/"
+        ],
+        [
+          "Lua",
+          "https://www.lua.org/",
+          "language",
+          "Linguagem de script leve, extensível e frequentemente embutida em aplicações, jogos e sistemas. Plataforma: Linguagem embutível. Licença e direitos: MIT license.",
+          "Linguagem embutível",
+          "MIT license.",
+          "https://www.lua.org/manual/"
+        ],
+        [
+          "Zig",
+          "https://ziglang.org/",
+          "language",
+          "Linguagem de sistemas com compilador integrado, foco em controle explícito e interoperabilidade C. Plataforma: Linguagem de sistemas. Licença e direitos: MIT para Zig; pacotes e bibliotecas externos têm licenças próprias.",
+          "Linguagem de sistemas",
+          "MIT para Zig; pacotes e bibliotecas externos têm licenças próprias.",
+          "https://ziglang.org/documentation/"
+        ],
+        [
+          "Nim",
+          "https://nim-lang.org/",
+          "language",
+          "Linguagem compilada com sintaxe expressiva, metaprogramação e geração de código nativo. Plataforma: Linguagem compilada. Licença e direitos: MIT para compilador e biblioteca padrão; pacotes têm licenças individuais.",
+          "Linguagem compilada",
+          "MIT para compilador e biblioteca padrão; pacotes têm licenças individuais.",
+          "https://nim-lang.org/docs/"
+        ],
+        [
+          "Eclipse Temurin",
+          "https://adoptium.net/temurin/",
+          "runtime",
+          "Builds binários do OpenJDK produzidos pela Eclipse Adoptium para múltiplas plataformas. Plataforma: Distribuição OpenJDK. Licença e direitos: Base OpenJDK e licenças de componentes; conferir release e notices.",
+          "Distribuição OpenJDK",
+          "Base OpenJDK e licenças de componentes; conferir release e notices.",
+          "https://adoptium.net/docs/"
+        ],
+        [
+          "GNU Make",
+          "https://www.gnu.org/software/make/",
+          "build-system",
+          "Ferramenta clássica de automação de builds e tarefas por dependências. Plataforma: Build system. Licença e direitos: GPL-3.0-or-later.",
+          "Build system",
+          "GPL-3.0-or-later.",
+          "https://www.gnu.org/software/make/manual/"
+        ],
+        [
+          "Cargo",
+          "https://doc.rust-lang.org/cargo/",
+          "package-manager",
+          "Gerenciador de pacotes e builds integrado ao toolchain Rust. Plataforma: Rust package manager. Licença e direitos: Parte do ecossistema Rust; crates têm licenças individuais.",
+          "Rust package manager",
+          "Parte do ecossistema Rust; crates têm licenças individuais.",
+          "https://doc.rust-lang.org/cargo/"
+        ],
+        [
+          "Autoconf / Automake",
+          "https://www.gnu.org/software/automake/",
+          "build-system",
+          "Ferramentas GNU para configurar e gerar builds portáveis em sistemas Unix-like. Plataforma: Build system Unix. Licença e direitos: GPL; verificar cada pacote e exceções.",
+          "Build system Unix",
+          "GPL; verificar cada pacote e exceções.",
+          "https://www.gnu.org/software/autoconf/manual/"
+        ],
+        [
+          "Eclipse IDE",
+          "https://eclipseide.org/",
+          "ide",
+          "Ambiente de desenvolvimento extensível para Java e outras linguagens, mantido pela Eclipse Foundation. Plataforma: IDE. Licença e direitos: EPL-2.0 para Eclipse IDE; plugins têm licenças próprias.",
+          "IDE",
+          "EPL-2.0 para Eclipse IDE; plugins têm licenças próprias.",
+          "https://help.eclipse.org/"
+        ],
+        [
+          "VSCodium",
+          "https://vscodium.com/",
+          "editor",
+          "Distribuições comunitárias do Code - OSS sem telemetria e marcas da distribuição oficial Microsoft. Plataforma: Editor de código. Licença e direitos: Código base MIT; extensões e marketplaces podem ter termos próprios.",
+          "Editor de código",
+          "Código base MIT; extensões e marketplaces podem ter termos próprios.",
+          "https://github.com/VSCodium/vscodium"
+        ],
+        [
+          "Neovim",
+          "https://neovim.io/",
+          "editor",
+          "Editor modal extensível, com API moderna e ecossistema de plugins. Plataforma: Editor de código. Licença e direitos: Apache-2.0.",
+          "Editor de código",
+          "Apache-2.0.",
+          "https://neovim.io/doc/"
+        ],
+        [
+          "GNU Emacs",
+          "https://www.gnu.org/software/emacs/",
+          "editor",
+          "Editor extensível e ambiente de trabalho programável com Lisp. Plataforma: Editor / ambiente. Licença e direitos: GPL-3.0-or-later.",
+          "Editor / ambiente",
+          "GPL-3.0-or-later.",
+          "https://www.gnu.org/software/emacs/manual/"
+        ],
+        [
+          "KDevelop",
+          "https://kdevelop.org/",
+          "ide",
+          "IDE livre do ecossistema KDE para C, C++, PHP, Python e outros projetos. Plataforma: IDE. Licença e direitos: GPL e licenças de componentes KDE; verificar cada plugin.",
+          "IDE",
+          "GPL e licenças de componentes KDE; verificar cada plugin.",
+          "https://docs.kde.org/"
+        ],
+        [
+          "GNOME Builder",
+          "https://apps.gnome.org/Builder/",
+          "ide",
+          "IDE do GNOME com integração a Git, Flatpak, Meson e ferramentas Linux. Plataforma: IDE. Licença e direitos: GPL e licenças de componentes GNOME; conferir dependências.",
+          "IDE",
+          "GPL e licenças de componentes GNOME; conferir dependências.",
+          "https://builder.readthedocs.io/"
+        ],
+        [
+          "wxWidgets",
+          "https://www.wxwidgets.org/",
+          "framework",
+          "Biblioteca de interface C++ com controles nativos para Windows, macOS e Linux. Plataforma: Framework multiplataforma. Licença e direitos: wxWindows Library Licence, compatível com uso comercial sob condições próprias.",
+          "Framework multiplataforma",
+          "wxWindows Library Licence, compatível com uso comercial sob condições próprias.",
+          "https://docs.wxwidgets.org/"
+        ],
+        [
+          "Electron",
+          "https://www.electronjs.org/",
+          "framework",
+          "Framework para aplicações desktop com tecnologias web e runtime Chromium/Node.js. Plataforma: Framework desktop. Licença e direitos: MIT para Electron; Chromium, Node.js e dependências têm licenças próprias.",
+          "Framework desktop",
+          "MIT para Electron; Chromium, Node.js e dependências têm licenças próprias.",
+          "https://www.electronjs.org/docs/latest"
+        ],
+        [
+          "Tauri",
+          "https://tauri.app/",
+          "framework",
+          "Framework para aplicações desktop com frontend web e backend Rust, usando webviews do sistema. Plataforma: Framework desktop. Licença e direitos: MIT ou Apache-2.0 para componentes centrais; plugins podem variar.",
+          "Framework desktop",
+          "MIT ou Apache-2.0 para componentes centrais; plugins podem variar.",
+          "https://v2.tauri.app/"
+        ],
+        [
+          "Flutter",
+          "https://flutter.dev/",
+          "framework",
+          "SDK open source para aplicações multiplataforma, com linguagem Dart e renderização própria. Plataforma: Framework mobile / UI. Licença e direitos: BSD-3-Clause para Flutter; SDKs de plataforma e pacotes têm licenças independentes.",
+          "Framework mobile / UI",
+          "BSD-3-Clause para Flutter; SDKs de plataforma e pacotes têm licenças independentes.",
+          "https://docs.flutter.dev/"
+        ],
+        [
+          "Spring Framework",
+          "https://spring.io/projects/spring-framework",
+          "framework",
+          "Framework para aplicações Java, injeção de dependências, web e integração. Plataforma: Framework JVM. Licença e direitos: Apache-2.0.",
+          "Framework JVM",
+          "Apache-2.0.",
+          "https://docs.spring.io/spring-framework/reference/"
+        ],
+        [
+          "Deno",
+          "https://deno.com/",
+          "runtime",
+          "Runtime para JavaScript, TypeScript e WebAssembly, com ferramentas integradas. Plataforma: Runtime JavaScript / TypeScript. Licença e direitos: MIT para Deno; dependências e módulos externos mantêm licenças próprias.",
+          "Runtime JavaScript / TypeScript",
+          "MIT para Deno; dependências e módulos externos mantêm licenças próprias.",
+          "https://docs.deno.com/"
+        ],
+        [
+          "Bun",
+          "https://bun.sh/",
+          "runtime",
+          "Runtime JavaScript e toolkit com bundler, test runner e gerenciador de pacotes. Plataforma: Runtime JavaScript. Licença e direitos: MIT para Bun; componentes e dependências devem ser verificados individualmente.",
+          "Runtime JavaScript",
+          "MIT para Bun; componentes e dependências devem ser verificados individualmente.",
+          "https://bun.sh/docs"
+        ]
+      ]
+    },
+    {
+      "id": "software-infrastructure",
+      "title": "Infraestrutura, dados, nuvem e observabilidade",
+      "description": "Bancos de dados, armazenamento, virtualização, contêineres, plataformas cloud, servidores, proxies e monitoramento.",
+      "resources": [
+        [
+          "DuckDB",
+          "https://duckdb.org/",
+          "database",
+          "Banco analítico embutido e vetorizado para análise local, arquivos e pipelines de dados. Plataforma: Banco analítico embutido. Licença e direitos: MIT.",
+          "Banco analítico embutido",
+          "MIT.",
+          "https://duckdb.org/docs/"
+        ],
+        [
+          "Apache Cassandra",
+          "https://cassandra.apache.org/",
+          "database",
+          "Banco NoSQL distribuído para alta disponibilidade e grandes volumes de escrita. Plataforma: Banco distribuído. Licença e direitos: Apache-2.0.",
+          "Banco distribuído",
+          "Apache-2.0.",
+          "https://cassandra.apache.org/doc/latest/"
+        ],
+        [
+          "Apache CouchDB",
+          "https://couchdb.apache.org/",
+          "database",
+          "Banco documental distribuído com API HTTP e replicação. Plataforma: Banco documental. Licença e direitos: Apache-2.0.",
+          "Banco documental",
+          "Apache-2.0.",
+          "https://docs.couchdb.org/"
+        ],
+        [
+          "OpenSearch",
+          "https://opensearch.org/",
+          "search-engine",
+          "Plataforma aberta de busca, observabilidade e analytics derivada do ecossistema Elasticsearch. Plataforma: Busca e analytics. Licença e direitos: Apache-2.0 para projetos OpenSearch; plugins e dados têm termos próprios.",
+          "Busca e analytics",
+          "Apache-2.0 para projetos OpenSearch; plugins e dados têm termos próprios.",
+          "https://opensearch.org/docs/latest/"
+        ],
+        [
+          "Ceph",
+          "https://ceph.io/",
+          "storage",
+          "Plataforma distribuída de armazenamento de objetos, blocos e arquivos. Plataforma: Armazenamento distribuído. Licença e direitos: LGPL e outras licenças por componente; conferir versão e módulos.",
+          "Armazenamento distribuído",
+          "LGPL e outras licenças por componente; conferir versão e módulos.",
+          "https://docs.ceph.com/"
+        ],
+        [
+          "OpenZFS",
+          "https://openzfs.org/",
+          "filesystem",
+          "Implementação open source do ZFS para Linux, FreeBSD e outras plataformas. Plataforma: Filesystem / storage. Licença e direitos: CDDL-1.0; verificar compatibilidade de licença com o kernel e distribuição.",
+          "Filesystem / storage",
+          "CDDL-1.0; verificar compatibilidade de licença com o kernel e distribuição.",
+          "https://openzfs.github.io/openzfs-docs/"
+        ],
+        [
+          "Buildah",
+          "https://buildah.io/",
+          "container-tool",
+          "Ferramenta para criar imagens OCI e contêineres sem exigir daemon Docker. Plataforma: Construção de imagens. Licença e direitos: Apache-2.0.",
+          "Construção de imagens",
+          "Apache-2.0.",
+          "https://buildah.io/"
+        ],
+        [
+          "Moby",
+          "https://mobyproject.org/",
+          "container-platform",
+          "Projeto upstream de componentes para construir sistemas de contêineres e ferramentas relacionadas ao Docker Engine. Plataforma: Plataforma de contêineres. Licença e direitos: Apache-2.0 para componentes principais; dependências e plugins variam.",
+          "Plataforma de contêineres",
+          "Apache-2.0 para componentes principais; dependências e plugins variam.",
+          "https://docs.docker.com/engine/"
+        ],
+        [
+          "QEMU",
+          "https://www.qemu.org/",
+          "virtualization",
+          "Emulação de hardware e virtualização para múltiplas arquiteturas e sistemas operacionais. Plataforma: Emulador / virtualizador. Licença e direitos: GPL e licenças por componente; verificar build e módulos.",
+          "Emulador / virtualizador",
+          "GPL e licenças por componente; verificar build e módulos.",
+          "https://www.qemu.org/docs/master/"
+        ],
+        [
+          "KVM",
+          "https://www.linux-kvm.org/",
+          "virtualization",
+          "Infraestrutura de virtualização no kernel Linux, usada por QEMU e plataformas de nuvem. Plataforma: Virtualização Linux. Licença e direitos: GPL-2.0-only como parte do kernel Linux.",
+          "Virtualização Linux",
+          "GPL-2.0-only como parte do kernel Linux.",
+          "https://docs.kernel.org/virt/kvm/"
+        ],
+        [
+          "Xen Project",
+          "https://xenproject.org/",
+          "virtualization",
+          "Hypervisor open source para virtualização, isolamento e ambientes cloud. Plataforma: Hypervisor. Licença e direitos: GPL-2.0-or-later para o hypervisor; ferramentas e componentes podem variar.",
+          "Hypervisor",
+          "GPL-2.0-or-later para o hypervisor; ferramentas e componentes podem variar.",
+          "https://xenbits.xen.org/docs/latest/"
+        ],
+        [
+          "Incus",
+          "https://linuxcontainers.org/incus/",
+          "virtualization",
+          "Gerenciador de contêineres de sistema e máquinas virtuais, sucessor comunitário do LXD. Plataforma: Containers e VMs. Licença e direitos: Apache-2.0.",
+          "Containers e VMs",
+          "Apache-2.0.",
+          "https://linuxcontainers.org/incus/docs/main/"
+        ],
+        [
+          "OpenStack",
+          "https://www.openstack.org/",
+          "cloud-platform",
+          "Plataforma aberta de infraestrutura cloud para computação, rede, identidade e armazenamento. Plataforma: Cloud IaaS. Licença e direitos: Apache-2.0 para projetos OpenStack; drivers e integrações podem variar.",
+          "Cloud IaaS",
+          "Apache-2.0 para projetos OpenStack; drivers e integrações podem variar.",
+          "https://docs.openstack.org/"
+        ],
+        [
+          "Apache HTTP Server",
+          "https://httpd.apache.org/",
+          "web-server",
+          "Servidor HTTP modular e multiplataforma mantido pela Apache Software Foundation. Plataforma: Servidor web. Licença e direitos: Apache-2.0.",
+          "Servidor web",
+          "Apache-2.0.",
+          "https://httpd.apache.org/docs/"
+        ],
+        [
+          "nginx Open Source",
+          "https://nginx.org/",
+          "web-server",
+          "Servidor HTTP, proxy reverso e balanceador com núcleo open source e ofertas comerciais separadas. Plataforma: Servidor web / proxy. Licença e direitos: BSD-2-Clause para nginx open source; recursos NGINX Plus são comerciais.",
+          "Servidor web / proxy",
+          "BSD-2-Clause para nginx open source; recursos NGINX Plus são comerciais.",
+          "https://nginx.org/en/docs/"
+        ],
+        [
+          "HAProxy",
+          "https://www.haproxy.org/",
+          "proxy",
+          "Proxy TCP/HTTP e balanceador de carga usado em infraestruturas de alta disponibilidade. Plataforma: Proxy / load balancer. Licença e direitos: GPL-2.0 para edição comunitária; produtos e módulos empresariais são separados.",
+          "Proxy / load balancer",
+          "GPL-2.0 para edição comunitária; produtos e módulos empresariais são separados.",
+          "https://docs.haproxy.org/"
+        ],
+        [
+          "Caddy",
+          "https://caddyserver.com/",
+          "web-server",
+          "Servidor web com HTTPS automático e configuração declarativa, extensível por módulos. Plataforma: Servidor web. Licença e direitos: Apache-2.0 para Caddy; módulos de terceiros têm licenças próprias.",
+          "Servidor web",
+          "Apache-2.0 para Caddy; módulos de terceiros têm licenças próprias.",
+          "https://caddyserver.com/docs/"
+        ],
+        [
+          "Traefik Proxy",
+          "https://traefik.io/traefik/",
+          "proxy",
+          "Proxy reverso e roteador cloud native com descoberta dinâmica de serviços. Plataforma: Proxy / ingress. Licença e direitos: MIT para Traefik Proxy OSS; Traefik Hub e Enterprise são produtos separados.",
+          "Proxy / ingress",
+          "MIT para Traefik Proxy OSS; Traefik Hub e Enterprise são produtos separados.",
+          "https://doc.traefik.io/traefik/"
+        ],
+        [
+          "Prometheus",
+          "https://prometheus.io/",
+          "observability",
+          "Sistema de monitoramento e alertas com modelo dimensional de métricas e PromQL. Plataforma: Monitoramento. Licença e direitos: Apache-2.0.",
+          "Monitoramento",
+          "Apache-2.0.",
+          "https://prometheus.io/docs/"
+        ],
+        [
+          "Grafana",
+          "https://grafana.com/oss/",
+          "observability",
+          "Plataforma de visualização e observabilidade com edição open source e ofertas comerciais. Plataforma: Dashboards. Licença e direitos: AGPL-3.0 para Grafana OSS atual; verificar plugins, versões e ofertas empresariais.",
+          "Dashboards",
+          "AGPL-3.0 para Grafana OSS atual; verificar plugins, versões e ofertas empresariais.",
+          "https://grafana.com/docs/"
+        ],
+        [
+          "OpenTelemetry",
+          "https://opentelemetry.io/",
+          "observability",
+          "Padrões e ferramentas vendor-neutral para traces, métricas e logs. Plataforma: Telemetria. Licença e direitos: Apache-2.0 para projetos principais; especificações sob termos próprios.",
+          "Telemetria",
+          "Apache-2.0 para projetos principais; especificações sob termos próprios.",
+          "https://opentelemetry.io/docs/"
+        ],
+        [
+          "Zabbix",
+          "https://www.zabbix.com/",
+          "observability",
+          "Plataforma de monitoramento de infraestrutura, redes, aplicações e serviços. Plataforma: Monitoramento. Licença e direitos: GPL-2.0-or-later para Zabbix; extensões e integrações podem variar.",
+          "Monitoramento",
+          "GPL-2.0-or-later para Zabbix; extensões e integrações podem variar.",
+          "https://www.zabbix.com/documentation/current/en/manual"
+        ]
+      ]
+    },
+    {
+      "id": "software-community",
+      "title": "Documentação, comunidades e contribuição",
+      "description": "Documentação técnica, aprendizagem, caminhos de contribuição, governança e sustentabilidade de projetos.",
+      "resources": [
+        [
+          "MDN Web Docs",
+          "https://developer.mozilla.org/",
+          "documentation",
+          "Referência aberta e colaborativa para HTML, CSS, JavaScript e APIs da plataforma web. Plataforma: Documentação web. Licença e direitos: Conteúdo sob CC BY-SA 2.5/3.0 conforme material; código de exemplos pode ter termos próprios.",
+          "Documentação web",
+          "Conteúdo sob CC BY-SA 2.5/3.0 conforme material; código de exemplos pode ter termos próprios."
+        ],
+        [
+          "DevDocs",
+          "https://devdocs.io/",
+          "documentation",
+          "Interface de consulta rápida para documentação de linguagens, bibliotecas e ferramentas. Plataforma: Documentação técnica agregada. Licença e direitos: O app é open source; documentação agregada mantém licenças e termos próprios.",
+          "Documentação técnica agregada",
+          "O app é open source; documentação agregada mantém licenças e termos próprios.",
+          "https://github.com/freeCodeCamp/devdocs"
+        ],
+        [
+          "Read the Docs",
+          "https://readthedocs.org/",
+          "documentation-platform",
+          "Plataforma aberta para construir e hospedar documentação técnica versionada. Plataforma: Hospedagem de documentação. Licença e direitos: Software e serviço têm termos próprios; documentos publicados preservam licenças dos autores.",
+          "Hospedagem de documentação",
+          "Software e serviço têm termos próprios; documentos publicados preservam licenças dos autores.",
+          "https://docs.readthedocs.io/"
+        ],
+        [
+          "Open Source Guides",
+          "https://opensource.guide/",
+          "learning",
+          "Guias sobre contribuição, manutenção, liderança, comunidades e sustentabilidade de projetos open source. Plataforma: Guias comunitários. Licença e direitos: Conteúdo e repositório abertos; verificar licença e idioma por guia.",
+          "Guias comunitários",
+          "Conteúdo e repositório abertos; verificar licença e idioma por guia."
+        ],
+        [
+          "CodeTriage",
+          "https://www.codetriage.com/",
+          "contribution",
+          "Ferramenta comunitária para encontrar issues abertas e contribuir com projetos open source. Plataforma: Contribuição a projetos. Licença e direitos: Serviço de descoberta; verificar issue e regras do repositório original.",
+          "Contribuição a projetos",
+          "Serviço de descoberta; verificar issue e regras do repositório original."
+        ],
+        [
+          "First Timers Only",
+          "https://www.firsttimersonly.com/",
+          "learning",
+          "Orientações para encontrar issues e realizar primeiras contribuições em projetos livres. Plataforma: Contribuição inicial. Licença e direitos: Guia comunitário; regras de cada projeto prevalecem.",
+          "Contribuição inicial",
+          "Guia comunitário; regras de cada projeto prevalecem."
+        ],
+        [
+          "FOSS Backstage",
+          "https://foss-backstage.de/",
+          "community",
+          "Conferência e comunidade dedicadas à governança, sustentabilidade e manutenção de software open source. Plataforma: Governança e comunidades. Licença e direitos: Recursos e eventos; verificar licenças e disponibilidade de cada material.",
+          "Governança e comunidades",
+          "Recursos e eventos; verificar licenças e disponibilidade de cada material."
+        ],
+        [
+          "Open Source Initiative — FAQ",
+          "https://opensource.org/faq/",
+          "reference",
+          "Explicações sobre a definição open source, licenças, marcas e práticas de distribuição. Plataforma: Conceitos open source. Licença e direitos: Fonte institucional de referência; não substitui aconselhamento jurídico.",
+          "Conceitos open source",
+          "Fonte institucional de referência; não substitui aconselhamento jurídico."
         ]
       ]
     }
@@ -1177,6 +2016,15 @@
       "build_provenance": "Record SLSA/in-toto attestations only when verifiable.",
       "artifact_signing": "Record signing system and verification instructions, not merely the presence of a checksum."
     },
-    "current_seed_records": "The current 150+ entries are discovery seeds with name, official URL, resource type and editorial note. They are not yet fully enriched records; fields absent from the seed are unknown, not negative."
+    "current_seed_records": "The atlas now contains 271 discovery seeds. Legacy entries may contain the original four tuple fields [name, canonical URL, resource type, editorial note]; newly curated entries may additionally include platform context, a licensing caveat and a documentation URL. They are not yet fully enriched records; fields absent from a seed are unknown, not negative.",
+    "seed_tuple_fields": [
+      "name",
+      "canonical_url",
+      "resource_type",
+      "editorial_note",
+      "platform_context_optional",
+      "license_caveat_optional",
+      "documentation_url_optional"
+    ]
   }
 }

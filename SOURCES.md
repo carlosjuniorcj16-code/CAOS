@@ -71,8 +71,238 @@ As descrições de licença no catálogo são resumos de orientação, não pare
 
 ## Atlas de sistemas operacionais e software open source
 
-A página **Atlas de Software Livre** ([software.html](./software.html)) reúne uma curadoria inicial de 177 recursos em nove ecossistemas: distribuições GNU/Linux; BSD e illumos; sistemas alternativos e de pesquisa; plataformas móveis; sistemas embarcados e RTOS; ambientes gráficos e distribuição de aplicações; forjas, fundações e registries; segurança da cadeia de software; linguagens, toolchains, frameworks, bancos de dados e infraestrutura de aplicações.
+A página [Atlas de Software Livre](software.html) e o arquivo [data/open-source-software.json](data/open-source-software.json) reúnem **271 recursos em 11 ecossistemas**. A coleção preserva os 177 registros iniciais e adiciona recursos oficiais de sistemas operacionais, mobile/embedded, diretórios e forjas, linguagens, pacotes, ferramentas, frameworks, infraestrutura, segurança e comunidades.
 
-Os links priorizam páginas oficiais de projetos, documentação, repositórios e índices de pacotes. A presença no atlas não é endosso, certificação de segurança, garantia de manutenção ou confirmação de que todos os componentes são livres. Projetos experimentais são identificados como tais; firmware, drivers, serviços, licenças mistas e dependências precisam de verificação própria.
+Os links do JSON apontam preferencialmente para a página oficial, documentação, repositório upstream ou registro canônico. A lista abaixo destaca fontes primárias e diretórios institucionais que orientam a descoberta; ela não substitui a revisão do registro individual.
 
-O arquivo data/open-source-software.json contém as sementes de descoberta e um esquema versionado de metadados para enriquecimento futuro: identificadores, URL canônica, plataformas, arquiteturas, versões, licenças SPDX e escopo, componentes proprietários, dependências, governança, mantenedores, SBOM, vulnerabilidades, proveniência de build, assinatura, atualizações seguras e evidências datadas. As entradas iniciais não têm todos esses campos preenchidos; ausência significa desconhecido, não que o recurso não possua a característica.
+### Sistemas operacionais — Linux, GNU e distribuições
+
+- Linux kernel: https://kernel.org/ e https://docs.kernel.org/
+- Debian: https://www.debian.org/ e https://www.debian.org/doc/
+- Fedora: https://fedoraproject.org/ e https://docs.fedoraproject.org/
+- Arch Linux: https://archlinux.org/ e https://wiki.archlinux.org/
+- Gentoo: https://www.gentoo.org/ e https://wiki.gentoo.org/
+- NixOS: https://nixos.org/ e https://search.nixos.org/
+- Alpine Linux: https://alpinelinux.org/ e https://wiki.alpinelinux.org/
+- openSUSE: https://www.opensuse.org/ e https://doc.opensuse.org/
+- Void Linux: https://voidlinux.org/ e https://docs.voidlinux.org/
+- GNU Guix: https://guix.gnu.org/ e https://guix.gnu.org/manual/
+- Devuan: https://www.devuan.org/
+- Slackware: https://www.slackware.com/
+- Ubuntu: https://ubuntu.com/ e https://help.ubuntu.com/
+- Linux Mint: https://linuxmint.com/
+- Qubes OS: https://www.qubes-os.org/
+- Tails: https://tails.net/
+- Kali Linux: https://www.kali.org/
+- Rocky Linux: https://rockylinux.org/
+- AlmaLinux: https://almalinux.org/
+- Linux From Scratch: https://www.linuxfromscratch.org/
+
+### Sistemas operacionais — BSD, illumos e alternativas
+
+- FreeBSD: https://www.freebsd.org/ e https://docs.freebsd.org/
+- OpenBSD: https://www.openbsd.org/
+- NetBSD: https://www.netbsd.org/ e https://www.netbsd.org/ports/
+- DragonFly BSD: https://www.dragonflybsd.org/
+- MidnightBSD: https://www.midnightbsd.org/
+- GhostBSD: https://ghostbsd.org/
+- HardenedBSD: https://hardenedbsd.org/
+- OPNsense: https://opnsense.org/ e https://docs.opnsense.org/
+- pfSense CE: https://www.pfsense.org/
+- illumos: https://illumos.org/ e https://illumos.github.io/docs/
+- OpenIndiana: https://www.openindiana.org/
+- OmniOS: https://omnios.org/
+- SmartOS: https://smartos.org/
+- Haiku: https://www.haiku-os.org/
+- Redox OS: https://www.redox-os.org/
+- SerenityOS: https://serenityos.org/
+- ReactOS: https://reactos.org/
+- FreeDOS: https://www.freedos.org/
+- GNU Hurd: https://www.gnu.org/software/hurd/
+- Genode: https://genode.org/
+- HelenOS: https://www.helenos.org/
+- MINIX 3: https://www.minix3.org/
+- 9front: https://9front.org/
+- AROS: https://aros.sourceforge.io/
+- KolibriOS: https://kolibrios.org/
+- RISC OS Open: https://www.riscosopen.org/
+- Fuchsia: https://fuchsia.dev/
+
+### Mobile, embarcados e tempo real
+
+- Android Open Source Project: https://source.android.com/
+- LineageOS: https://lineageos.org/ e https://wiki.lineageos.org/
+- GrapheneOS: https://grapheneos.org/
+- postmarketOS: https://postmarketos.org/
+- Mobian: https://mobian.org/
+- Ubuntu Touch / UBports: https://ubuntu-touch.io/ e https://docs.ubports.com/
+- Zephyr Project: https://www.zephyrproject.org/ e https://docs.zephyrproject.org/
+- FreeRTOS: https://www.freertos.org/
+- Apache NuttX: https://nuttx.apache.org/
+- RIOT OS: https://www.riot-os.org/
+- RTEMS: https://www.rtems.org/
+- Tock OS: https://www.tockos.org/
+- seL4: https://sel4.systems/
+- OpenWrt: https://openwrt.org/
+- Buildroot: https://buildroot.org/
+- Yocto Project: https://www.yoctoproject.org/
+
+### Diretórios, fundações e forjas
+
+- Free Software Directory / FSF: https://directory.fsf.org/
+- GNU Software: https://www.gnu.org/software/
+- Open Source Initiative: https://opensource.org/
+- Apache Software Foundation: https://www.apache.org/projects/
+- Eclipse Foundation: https://projects.eclipse.org/
+- OW2: https://www.ow2.org/
+- OpenSSF Landscape: https://landscape.openssf.org/
+- CNCF Landscape: https://landscape.cncf.io/
+- Open Hub: https://openhub.net/
+- Repology: https://repology.org/
+- Libraries.io: https://libraries.io/
+- GitHub: https://github.com/
+- GitLab: https://gitlab.com/
+- Codeberg: https://codeberg.org/
+- Forgejo: https://forgejo.org/
+- Gitea: https://about.gitea.com/
+- SourceHut: https://sourcehut.org/
+- GNU Savannah: https://savannah.gnu.org/
+- KDE Invent: https://invent.kde.org/
+- GNOME GitLab: https://gitlab.gnome.org/
+- freedesktop.org: https://gitlab.freedesktop.org/
+- Linux kernel Git: https://git.kernel.org/
+
+### Linguagens, runtimes e registros de pacotes
+
+- Python: https://www.python.org/ e https://docs.python.org/3/
+- Rust: https://www.rust-lang.org/ e https://doc.rust-lang.org/
+- Go: https://go.dev/ e https://go.dev/doc/
+- OpenJDK: https://openjdk.org/
+- C / GCC: https://gcc.gnu.org/
+- C++: https://isocpp.org/ e https://en.cppreference.com/w/
+- Julia: https://julialang.org/
+- Ruby: https://www.ruby-lang.org/
+- PHP: https://www.php.net/
+- Perl: https://www.perl.org/
+- Haskell: https://www.haskell.org/
+- OCaml: https://ocaml.org/
+- Elixir: https://elixir-lang.org/
+- Erlang/OTP: https://www.erlang.org/
+- Lua: https://www.lua.org/
+- R: https://www.r-project.org/
+- Zig: https://ziglang.org/
+- Nim: https://nim-lang.org/
+- Swift: https://www.swift.org/
+- Kotlin: https://kotlinlang.org/
+- PyPI: https://pypi.org/
+- npm: https://www.npmjs.com/
+- crates.io: https://crates.io/
+- Maven Central: https://central.sonatype.com/
+- NuGet: https://www.nuget.org/
+- RubyGems: https://rubygems.org/
+- Packagist: https://packagist.org/
+- CPAN: https://www.cpan.org/
+- Hackage: https://hackage.haskell.org/
+- Hex: https://hex.pm/
+- Go Packages: https://pkg.go.dev/
+- pub.dev: https://pub.dev/
+- CRAN: https://cran.r-project.org/
+- Conda-forge: https://conda-forge.org/
+- Homebrew: https://brew.sh/
+- Flathub: https://flathub.org/
+- AUR: https://aur.archlinux.org/
+- Nixpkgs: https://github.com/NixOS/nixpkgs
+- vcpkg: https://vcpkg.io/
+- Conan Center: https://conan.io/center
+
+### Toolchains, frameworks e infraestrutura
+
+- GCC: https://gcc.gnu.org/
+- LLVM/Clang: https://llvm.org/ e https://clang.llvm.org/
+- Eclipse Temurin: https://adoptium.net/temurin/
+- .NET: https://dotnet.microsoft.com/
+- CMake: https://cmake.org/
+- Meson: https://mesonbuild.com/
+- Ninja: https://ninja-build.org/
+- Bazel: https://bazel.build/
+- GNU Make: https://www.gnu.org/software/make/
+- Gradle: https://gradle.org/
+- Apache Maven: https://maven.apache.org/
+- Qt: https://www.qt.io/
+- GTK: https://www.gtk.org/
+- wxWidgets: https://www.wxwidgets.org/
+- React: https://react.dev/
+- Vue: https://vuejs.org/
+- Angular: https://angular.dev/
+- Svelte: https://svelte.dev/
+- Electron: https://www.electronjs.org/
+- Tauri: https://tauri.app/
+- Flutter: https://flutter.dev/
+- Django: https://www.djangoproject.com/
+- Flask: https://flask.palletsprojects.com/
+- FastAPI: https://fastapi.tiangolo.com/
+- Ruby on Rails: https://rubyonrails.org/
+- Laravel: https://laravel.com/
+- Symfony: https://symfony.com/
+- Spring: https://spring.io/projects/spring-framework
+- Quarkus: https://quarkus.io/
+- ASP.NET Core: https://dotnet.microsoft.com/apps/aspnet
+- Node.js: https://nodejs.org/
+- Deno: https://deno.com/
+- Bun: https://bun.sh/
+- PostgreSQL: https://www.postgresql.org/
+- MariaDB: https://mariadb.org/
+- SQLite: https://sqlite.org/
+- Valkey: https://valkey.io/
+- ClickHouse: https://clickhouse.com/
+- DuckDB: https://duckdb.org/
+- Apache Cassandra: https://cassandra.apache.org/
+- Apache CouchDB: https://couchdb.apache.org/
+- OpenSearch: https://opensearch.org/
+- Ceph: https://ceph.io/
+- OpenZFS: https://openzfs.org/
+- Kubernetes: https://kubernetes.io/
+- containerd: https://containerd.io/
+- Podman: https://podman.io/
+- Buildah: https://buildah.io/
+- Moby: https://mobyproject.org/
+- QEMU: https://www.qemu.org/
+- KVM: https://www.linux-kvm.org/
+- Xen: https://xenproject.org/
+- Incus: https://linuxcontainers.org/incus/
+- OpenTofu: https://opentofu.org/
+- Ansible: https://www.ansible.com/
+- OpenStack: https://www.openstack.org/
+- Apache HTTP Server: https://httpd.apache.org/
+- nginx: https://nginx.org/
+- HAProxy: https://www.haproxy.org/
+- Caddy: https://caddyserver.com/
+- Traefik: https://traefik.io/traefik/
+- Prometheus: https://prometheus.io/
+- Grafana OSS: https://grafana.com/oss/
+- OpenTelemetry: https://opentelemetry.io/
+- Zabbix: https://www.zabbix.com/
+
+### Segurança, SBOM, integridade e licenças
+
+- OpenSSF Scorecard: https://scorecard.dev/
+- OSV.dev: https://osv.dev/
+- OSV-Scanner: https://google.github.io/osv-scanner/
+- Trivy: https://trivy.dev/
+- Syft: https://github.com/anchore/syft
+- Grype: https://github.com/anchore/grype
+- Sigstore: https://www.sigstore.dev/
+- SLSA: https://slsa.dev/
+- SPDX: https://spdx.dev/
+- CycloneDX: https://cyclonedx.org/
+- REUSE: https://reuse.software/
+- The Update Framework (TUF): https://theupdateframework.io/
+- in-toto: https://in-toto.io/
+- OpenChain: https://openchainproject.org/
+- FOSSology: https://www.fossology.org/
+- GNU Licenses: https://www.gnu.org/licenses/
+- Choose a License: https://choosealicense.com/
+
+O esquema `record_schema` do JSON define os campos necessários para enriquecimento futuro: licença SPDX e escopo, estado de manutenção, plataformas e arquiteturas suportadas, componentes proprietários, dependências, SBOM, vulnerabilidades, proveniência de build, assinatura, atualização segura, governança, mantenedores e evidências. A coleção atual ainda contém sementes de descoberta; ausência de um campo significa desconhecido, não que o projeto não tenha aquela propriedade.
+
+A licença do projeto não necessariamente cobre plugins, dependências, dados, assets, marcas, firmware, drivers, codecs, documentação ou todos os componentes de uma distribuição. Para análise de conformidade, use os arquivos de licença e avisos da versão exata, além dos metadados de dependências e SBOM. O atlas não é uma lista exaustiva de todos os sistemas operacionais nem de todos os projetos open source existentes; é uma base ampla, estruturada para expansão contínua.
