@@ -41,6 +41,7 @@ jobs:
             --limit 12000 \
             --per-topic 250
       - name: Create catalog update pull request
+        id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
           branch: automation/curlie-catalog-update
@@ -51,3 +52,12 @@ jobs:
             Automated refresh of curated resources imported from the official Curlie dataset.
             This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. Branch protections remain enforced.
           add-paths: data/sources.json
+
+      - name: Dispatch validation and build for the bot PR
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: automation/curlie-catalog-update
+        run: |
+          gh workflow run "Validate project" --ref "$BRANCH"
+          gh workflow run "Build and deploy CAOS SEO site" --ref "$BRANCH"
