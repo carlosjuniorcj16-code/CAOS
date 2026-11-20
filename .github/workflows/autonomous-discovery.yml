@@ -1,0 +1,78 @@
+name: CAOS autonomous web discovery
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum number of verified new sites
+        required: false
+        default: "75"
+        type: string
+      dry_run:
+        description: Preview only; do not create a catalog update
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: caos-autonomous-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout current catalog
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile discovery engine
+        run: python -m py_compile scripts/discover_wikidata.py
+      - name: Preview discovery
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: python scripts/discover_wikidata.py --limit "${{ inputs.limit }}" --max-checks 250 --dry-run
+      - name: Discover and verify official websites
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: |
+          LIMIT="75"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            LIMIT="${{ inputs.limit }}"
+          fi
+          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 250
+      - name: Validate updated catalog
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: |
+          python scripts/validate_catalog.py
+          python scripts/build_search_index.py
+      - name: Open catalog update pull request
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/wikidata-discovery
+          delete-branch: true
+          commit-message: "chore: add verified institutional websites from Wikidata"
+          title: "chore: add verified institutional websites"
+          body: |
+            ## Autonomous discovery batch
+
+            This batch contains institutional websites discovered from Wikidata structured data (CC0 1.0).
+
+            - Each candidate's official homepage was checked against its robots.txt policy and verified with a low-volume HTTP request.
+            - Only metadata and homepage URLs are reused; no website text, images, or documents are copied.
+            - Existing catalog URLs and domains are deduplicated.
+            - Please review the new records and confirm validation before merging.
+          add-paths: |
+            data/sources.json
