@@ -44,6 +44,14 @@ jobs:
               assert isinstance(data, dict) and "schema_version" in data
               if name == "reading-recommendations.json":
                   assert len(data.get("topics", [])) == 8
+              if name == "open-source-software.json":
+                  assert len(data.get("categories", [])) >= 9
+                  assert sum(len(c.get("resources", [])) for c in data["categories"]) >= 170
+                  schema = data.get("record_schema", {})
+                  required = {"id", "name", "canonical_url", "category_id", "resource_type", "license_status", "maintenance_status", "source_verified_at"}
+                  assert required <= set(schema.get("required", []))
+                  assert "license_scope" in schema.get("field_rules", {})
+                  assert "proprietary_components" in schema.get("optional", [])
               for item in data.get("items", []):
                   assert item.get("url", "").startswith("https://")
               for topic in data.get("topics", []):
