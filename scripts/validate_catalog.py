@@ -60,7 +60,7 @@ LANGUAGES = {"pt", "en", "es", "fr", "de", "it", "zh", "ja", "ru", "nl", "pl", "
 html = HTML.read_text(encoding="utf-8")
 missing_languages = []
 for code in sorted(LANGUAGES):
-    if (f"L.{code}=" not in html) and (f"{code}:{{" not in html):
+    if (f"L.{code}=" not in html) and ((code + ":{") not in html):
         missing_languages.append(code)
 if missing_languages:
     fail("Idiomas sem pacote de interface: " + ", ".join(missing_languages))
