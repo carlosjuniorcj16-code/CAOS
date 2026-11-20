@@ -1,5 +1,8 @@
 # CAOS
 
+**Site publicado:** https://carlosjuniorcj16-code.github.io/CAOS/  
+**Hospedagem oficial:** GitHub Pages, com build e publicação pelo GitHub Actions.
+
 **Diretório internacional de links para fontes, dados, conhecimento e cultura.**
 
 CAOS é o nome do diretório. O projeto reúne caminhos para bibliotecas, arquivos, museus, universidades, instituições públicas, periódicos, bases de dados, documentos, coleções culturais, ferramentas, serviços de referência e outras fontes de informação em diferentes países e idiomas.
