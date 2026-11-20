@@ -14,7 +14,10 @@
       "access": "Free",
       "tags": [
         "Research discovery"
-      ]
+      ],
+      "description_pt": "Catálogo aberto de trabalhos acadêmicos, autores, instituições e temas de pesquisa.",
+      "subcategory_pt": "Descoberta de pesquisas",
+      "access_pt": "Gratuito"
     },
     {
       "id": 2,
@@ -27,7 +30,10 @@
       "access": "Free",
       "tags": [
         "Open-access journals"
-      ]
+      ],
+      "description_pt": "Diretório de periódicos e artigos científicos de acesso aberto com revisão por pares.",
+      "subcategory_pt": "Periódicos de acesso aberto",
+      "access_pt": "Gratuito"
     },
     {
       "id": 3,
@@ -40,7 +46,10 @@
       "access": "Free",
       "tags": [
         "Research discovery"
-      ]
+      ],
+      "description_pt": "Reúne artigos científicos de acesso aberto provenientes de repositórios e periódicos.",
+      "subcategory_pt": "Descoberta de pesquisas",
+      "access_pt": "Gratuito"
     },
     {
       "id": 4,
@@ -53,7 +62,10 @@
       "access": "Free to access",
       "tags": [
         "Research repository"
-      ]
+      ],
+      "description_pt": "Repositório aberto de artigos, conjuntos de dados, softwares e outros resultados de pesquisa; fornece identificadores DOI.",
+      "subcategory_pt": "Repositório de pesquisa",
+      "access_pt": "Acesso gratuito"
     },
     {
       "id": 5,
@@ -66,7 +78,10 @@
       "access": "Free",
       "tags": [
         "Research discovery"
-      ]
+      ],
+      "description_pt": "Permite descobrir publicações, dados, softwares e projetos de pesquisa europeus e internacionais.",
+      "subcategory_pt": "Descoberta de pesquisas",
+      "access_pt": "Gratuito"
     },
     {
       "id": 6,
@@ -79,7 +94,10 @@
       "access": "Free",
       "tags": [
         "Repository directory"
-      ]
+      ],
+      "description_pt": "Diretório internacional de repositórios acadêmicos de acesso aberto.",
+      "subcategory_pt": "Diretório de repositórios",
+      "access_pt": "Gratuito"
     },
     {
       "id": 7,
@@ -92,7 +110,10 @@
       "access": "Free search",
       "tags": [
         "Literature search"
-      ]
+      ],
+      "description_pt": "Ferramenta ampla de busca acadêmica em várias disciplinas; a disponibilidade do texto completo varia.",
+      "subcategory_pt": "Busca bibliográfica",
+      "access_pt": "Busca gratuita"
     },
     {
       "id": 8,
@@ -105,7 +126,10 @@
       "access": "Free",
       "tags": [
         "Literature search"
-      ]
+      ],
+      "description_pt": "Ferramenta de descoberta de literatura científica com recursos de IA e conexões entre citações.",
+      "subcategory_pt": "Busca bibliográfica",
+      "access_pt": "Gratuito"
     },
     {
       "id": 9,
@@ -118,7 +142,10 @@
       "access": "Free",
       "tags": [
         "Open books"
-      ]
+      ],
+      "description_pt": "Diretório para descobrir livros acadêmicos de acesso aberto com revisão por pares.",
+      "subcategory_pt": "Livros de acesso aberto",
+      "access_pt": "Gratuito"
     },
     {
       "id": 10,
@@ -131,7 +158,10 @@
       "access": "Mixed rights/access",
       "tags": [
         "Digital library"
-      ]
+      ],
+      "description_pt": "Biblioteca digital sem fins lucrativos com livros, mídias, páginas arquivadas e outras coleções; os direitos de uso variam.",
+      "subcategory_pt": "Biblioteca digital",
+      "access_pt": "Direitos e acesso variáveis"
     },
     {
       "id": 11,
@@ -144,7 +174,10 @@
       "access": "Free",
       "tags": [
         "Astronomy & space"
-      ]
+      ],
+      "description_pt": "Missões, descobertas, notícias científicas e materiais educacionais da NASA.",
+      "subcategory_pt": "Astronomia e espaço",
+      "access_pt": "Gratuito"
     },
     {
       "id": 12,
@@ -157,7 +190,10 @@
       "access": "Free",
       "tags": [
         "Earth & space data"
-      ]
+      ],
+      "description_pt": "Conjuntos de dados públicos produzidos por pesquisas e missões científicas da NASA.",
+      "subcategory_pt": "Dados da Terra e do espaço",
+      "access_pt": "Gratuito"
     },
     {
       "id": 13,
@@ -170,7 +206,10 @@
       "access": "Free; account may be required",
       "tags": [
         "Earth science"
-      ]
+      ],
+      "description_pt": "Dados, ferramentas e serviços de observação da Terra disponibilizados pela NASA.",
+      "subcategory_pt": "Ciências da Terra",
+      "access_pt": "Gratuito; pode exigir cadastro"
     },
     {
       "id": 14,
@@ -183,7 +222,10 @@
       "access": "Free",
       "tags": [
         "Astronomy & space"
-      ]
+      ],
+      "description_pt": "Ciências espaciais, observação da Terra, missões e recursos educacionais da Agência Espacial Europeia.",
+      "subcategory_pt": "Astronomia e espaço",
+      "access_pt": "Gratuito"
     },
     {
       "id": 15,
@@ -196,7 +238,10 @@
       "access": "Free",
       "tags": [
         "Climate & oceans"
-      ]
+      ],
+      "description_pt": "Conjuntos de dados ambientais, climáticos, oceanográficos e geofísicos.",
+      "subcategory_pt": "Clima e oceanos",
+      "access_pt": "Gratuito"
     },
     {
       "id": 16,
@@ -209,7 +254,10 @@
       "access": "Free",
       "tags": [
         "Earth sciences"
-      ]
+      ],
+      "description_pt": "Pesquisas e dados sobre geologia, água, ecossistemas, riscos naturais e observação da Terra.",
+      "subcategory_pt": "Ciências da Terra",
+      "access_pt": "Gratuito"
     },
     {
       "id": 17,
@@ -222,7 +270,10 @@
       "access": "Free; dataset licenses vary",
       "tags": [
         "Biodiversity"
-      ]
+      ],
+      "description_pt": "Infraestrutura global que oferece acesso aberto a registros de ocorrência de biodiversidade.",
+      "subcategory_pt": "Biodiversidade",
+      "access_pt": "Gratuito; licenças dos conjuntos de dados variam"
     },
     {
       "id": 18,
@@ -235,7 +286,10 @@
       "access": "Free",
       "tags": [
         "Biodiversity"
-      ]
+      ],
+      "description_pt": "Conhecimento colaborativo sobre biodiversidade e espécies.",
+      "subcategory_pt": "Biodiversidade",
+      "access_pt": "Gratuito"
     },
     {
       "id": 19,
@@ -248,7 +302,10 @@
       "access": "Free",
       "tags": [
         "Chemistry"
-      ]
+      ],
+      "description_pt": "Base de dados aberta de química, com informações sobre substâncias químicas e bioensaios.",
+      "subcategory_pt": "Química",
+      "access_pt": "Gratuito"
     },
     {
       "id": 20,
@@ -261,7 +318,10 @@
       "access": "Free",
       "tags": [
         "Chemistry research"
-      ]
+      ],
+      "description_pt": "Servidor de preprints de pesquisas em química; os manuscritos não necessariamente passaram por revisão por pares.",
+      "subcategory_pt": "Pesquisa em química",
+      "access_pt": "Gratuito"
     },
     {
       "id": 21,
@@ -274,7 +334,10 @@
       "access": "Free",
       "tags": [
         "Biology research"
-      ]
+      ],
+      "description_pt": "Servidor de preprints de pesquisas em biologia; os manuscritos podem não ter passado por revisão por pares.",
+      "subcategory_pt": "Pesquisa em biologia",
+      "access_pt": "Gratuito"
     },
     {
       "id": 22,
@@ -287,7 +350,10 @@
       "access": "Free",
       "tags": [
         "Earth sciences"
-      ]
+      ],
+      "description_pt": "Repositório aberto de preprints em ciências da Terra, ambientais e planetárias.",
+      "subcategory_pt": "Ciências da Terra",
+      "access_pt": "Gratuito"
     },
     {
       "id": 23,
@@ -300,7 +366,10 @@
       "access": "Free; not peer review",
       "tags": [
         "Mathematics & computation"
-      ]
+      ],
+      "description_pt": "Arquivo aberto de pesquisas em matemática, física, ciência da computação, estatística e áreas relacionadas.",
+      "subcategory_pt": "Matemática e computação",
+      "access_pt": "Gratuito; não equivale a revisão por pares"
     },
     {
       "id": 24,
@@ -313,7 +382,10 @@
       "access": "Free",
       "tags": [
         "Mathematics"
-      ]
+      ],
+      "description_pt": "Serviço de indexação, resumos e resenhas de literatura matemática.",
+      "subcategory_pt": "Matemática",
+      "access_pt": "Gratuito"
     },
     {
       "id": 25,
@@ -326,7 +398,10 @@
       "access": "Free",
       "tags": [
         "Integer sequences"
-      ]
+      ],
+      "description_pt": "Enciclopédia on-line pesquisável de sequências de números inteiros.",
+      "subcategory_pt": "Sequências de inteiros",
+      "access_pt": "Gratuito"
     },
     {
       "id": 26,
@@ -339,7 +414,10 @@
       "access": "Free/open-source",
       "tags": [
         "Logic & proof"
-      ]
+      ],
+      "description_pt": "Ecossistema e comunidade abertos para formalização matemática e demonstração de teoremas.",
+      "subcategory_pt": "Lógica e demonstração formal",
+      "access_pt": "Gratuito e de código aberto"
     },
     {
       "id": 27,
@@ -352,7 +430,10 @@
       "access": "Free/open-source",
       "tags": [
         "Logic & proof"
-      ]
+      ],
+      "description_pt": "Assistente de provas para especificação formal e verificação de programas e resultados matemáticos.",
+      "subcategory_pt": "Lógica e demonstração formal",
+      "access_pt": "Gratuito e de código aberto"
     },
     {
       "id": 28,
@@ -365,7 +446,10 @@
       "access": "Free",
       "tags": [
         "Mathematics reference"
-      ]
+      ],
+      "description_pt": "Referência técnica para funções matemáticas e fórmulas, mantida pelo NIST.",
+      "subcategory_pt": "Referência matemática",
+      "access_pt": "Gratuito"
     },
     {
       "id": 29,
@@ -378,7 +462,10 @@
       "access": "Free",
       "tags": [
         "Mathematics database"
-      ]
+      ],
+      "description_pt": "Base de dados colaborativa sobre funções L e formas modulares.",
+      "subcategory_pt": "Base de dados matemática",
+      "access_pt": "Gratuito"
     },
     {
       "id": 30,
@@ -391,7 +478,10 @@
       "access": "Free",
       "tags": [
         "Economics & development"
-      ]
+      ],
+      "description_pt": "Acesso aberto a indicadores globais de desenvolvimento e dados por país.",
+      "subcategory_pt": "Economia e desenvolvimento",
+      "access_pt": "Gratuito"
     },
     {
       "id": 31,
@@ -404,7 +494,10 @@
       "access": "Free",
       "tags": [
         "Economics & policy"
-      ]
+      ],
+      "description_pt": "Estatísticas internacionais comparáveis e indicadores publicados pela OCDE.",
+      "subcategory_pt": "Economia e políticas públicas",
+      "access_pt": "Gratuito"
     },
     {
       "id": 32,
@@ -417,7 +510,10 @@
       "access": "Free",
       "tags": [
         "Global statistics"
-      ]
+      ],
+      "description_pt": "Bases de dados estatísticos e indicadores do sistema das Nações Unidas.",
+      "subcategory_pt": "Estatísticas globais",
+      "access_pt": "Gratuito"
     },
     {
       "id": 33,
@@ -430,7 +526,10 @@
       "access": "Free; open licenses vary",
       "tags": [
         "Society & global trends"
-      ]
+      ],
+      "description_pt": "Pesquisas e visualizações sobre grandes problemas globais e tendências de longo prazo.",
+      "subcategory_pt": "Sociedade e tendências globais",
+      "access_pt": "Gratuito; licenças abertas variam"
     },
     {
       "id": 34,
@@ -443,7 +542,10 @@
       "access": "Free",
       "tags": [
         "Work & labor"
-      ]
+      ],
+      "description_pt": "Estatísticas, conjuntos de dados e recursos metodológicos internacionais sobre trabalho.",
+      "subcategory_pt": "Trabalho e emprego",
+      "access_pt": "Gratuito"
     },
     {
       "id": 35,
@@ -456,7 +558,10 @@
       "access": "Free",
       "tags": [
         "Education & culture"
-      ]
+      ],
+      "description_pt": "Dados internacionais comparáveis sobre educação, ciência, cultura e comunicação.",
+      "subcategory_pt": "Educação e cultura",
+      "access_pt": "Gratuito"
     },
     {
       "id": 36,
@@ -469,7 +574,10 @@
       "access": "Mixed access",
       "tags": [
         "Social research data"
-      ]
+      ],
+      "description_pt": "Arquivo de dados de pesquisas em ciências sociais e comportamentais; alguns conjuntos possuem condições específicas de acesso.",
+      "subcategory_pt": "Dados de pesquisa social",
+      "access_pt": "Acesso misto"
     },
     {
       "id": 37,
@@ -482,7 +590,10 @@
       "access": "Access varies",
       "tags": [
         "Social research data"
-      ]
+      ],
+      "description_pt": "Repositório de dados de pesquisas qualitativas e métodos mistos.",
+      "subcategory_pt": "Dados de pesquisa social",
+      "access_pt": "Acesso variável"
     },
     {
       "id": 38,
@@ -495,7 +606,10 @@
       "access": "Free",
       "tags": [
         "Public opinion"
-      ]
+      ],
+      "description_pt": "Pesquisas independentes, levantamentos e conjuntos de dados sobre tendências sociais e demográficas.",
+      "subcategory_pt": "Opinião pública",
+      "access_pt": "Gratuito"
     },
     {
       "id": 39,
@@ -508,7 +622,10 @@
       "access": "Free search",
       "tags": [
         "Biomedical literature"
-      ]
+      ],
+      "description_pt": "Ferramenta de busca de referências e resumos da literatura biomédica e das ciências da vida.",
+      "subcategory_pt": "Literatura biomédica",
+      "access_pt": "Busca gratuita"
     },
     {
       "id": 40,
@@ -521,7 +638,10 @@
       "access": "Free",
       "tags": [
         "Full-text biomedical research"
-      ]
+      ],
+      "description_pt": "Arquivo gratuito de textos completos de periódicos biomédicos e das ciências da vida.",
+      "subcategory_pt": "Pesquisa biomédica em texto completo",
+      "access_pt": "Gratuito"
     },
     {
       "id": 41,
@@ -534,7 +654,10 @@
       "access": "Free",
       "tags": [
         "Biomedical literature"
-      ]
+      ],
+      "description_pt": "Literatura das ciências da vida, preprints, financiamentos e conexões com dados de pesquisa.",
+      "subcategory_pt": "Literatura biomédica",
+      "access_pt": "Gratuito"
     },
     {
       "id": 42,
@@ -547,7 +670,10 @@
       "access": "Free",
       "tags": [
         "Public health"
-      ]
+      ],
+      "description_pt": "Orientações globais de saúde, publicações técnicas, dados e recursos institucionais da Organização Mundial da Saúde.",
+      "subcategory_pt": "Saúde pública",
+      "access_pt": "Gratuito"
     },
     {
       "id": 43,
@@ -560,7 +686,10 @@
       "access": "Free",
       "tags": [
         "Health statistics"
-      ]
+      ],
+      "description_pt": "Repositório da OMS com indicadores globais de saúde e estatísticas por país.",
+      "subcategory_pt": "Estatísticas de saúde",
+      "access_pt": "Gratuito"
     },
     {
       "id": 44,
@@ -573,7 +702,10 @@
       "access": "Mixed access",
       "tags": [
         "Evidence synthesis"
-      ]
+      ],
+      "description_pt": "Revisões sistemáticas e recursos de síntese de evidências em saúde; parte do conteúdo pode exigir acesso.",
+      "subcategory_pt": "Síntese de evidências",
+      "access_pt": "Acesso misto"
     },
     {
       "id": 45,
@@ -586,7 +718,10 @@
       "access": "Free",
       "tags": [
         "Clinical research"
-      ]
+      ],
+      "description_pt": "Registro e resultados de estudos clínicos financiados por instituições públicas e privadas.",
+      "subcategory_pt": "Pesquisa clínica",
+      "access_pt": "Gratuito"
     },
     {
       "id": 46,
@@ -599,7 +734,10 @@
       "access": "Free",
       "tags": [
         "Evidence-based healthcare"
-      ]
+      ],
+      "description_pt": "Base de dados de revisões sistemáticas e outras evidências relevantes para decisões em saúde.",
+      "subcategory_pt": "Saúde baseada em evidências",
+      "access_pt": "Gratuito"
     },
     {
       "id": 47,
@@ -612,7 +750,10 @@
       "access": "Free",
       "tags": [
         "Public health information"
-      ]
+      ],
+      "description_pt": "Informações de saúde voltadas ao público, disponibilizadas pela Biblioteca Nacional de Medicina dos Estados Unidos.",
+      "subcategory_pt": "Public health information",
+      "access_pt": "Gratuito"
     },
     {
       "id": 48,
@@ -625,7 +766,10 @@
       "access": "Free; terms apply",
       "tags": [
         "Neuroscience data"
-      ]
+      ],
+      "description_pt": "Plataforma aberta para compartilhamento de conjuntos de dados de neuroimagem e neurociência.",
+      "subcategory_pt": "Dados de neurociência",
+      "access_pt": "Gratuito; sujeito a termos"
     },
     {
       "id": 49,
@@ -638,7 +782,10 @@
       "access": "Free",
       "tags": [
         "Genetics"
-      ]
+      ],
+      "description_pt": "Base de dados de informações sobre genes, mantida pelo Centro Nacional de Informação sobre Biotecnologia dos EUA.",
+      "subcategory_pt": "Genética",
+      "access_pt": "Gratuito"
     },
     {
       "id": 50,
@@ -651,7 +798,10 @@
       "access": "Mixed access",
       "tags": [
         "Engineering research"
-      ]
+      ],
+      "description_pt": "Biblioteca digital de publicações sobre engenharia, computação e tecnologia; o acesso ao texto completo varia.",
+      "subcategory_pt": "Pesquisa em engenharia",
+      "access_pt": "Acesso misto"
     },
     {
       "id": 51,
@@ -664,7 +814,10 @@
       "access": "Mixed access",
       "tags": [
         "Computing research"
-      ]
+      ],
+      "description_pt": "Publicações e anais de pesquisa em computação e tecnologia da informação; as condições de acesso variam.",
+      "subcategory_pt": "Pesquisa em computação",
+      "access_pt": "Acesso misto"
     },
     {
       "id": 52,
@@ -677,7 +830,10 @@
       "access": "Free",
       "tags": [
         "Standards & measurement"
-      ]
+      ],
+      "description_pt": "Pesquisas, normas, medições e conjuntos de dados do Instituto Nacional de Padrões e Tecnologia dos Estados Unidos.",
+      "subcategory_pt": "Normas e metrologia",
+      "access_pt": "Gratuito"
     },
     {
       "id": 53,
@@ -690,7 +846,10 @@
       "access": "Free",
       "tags": [
         "Web technologies"
-      ]
+      ],
+      "description_pt": "Padrões abertos da web, especificações e recomendações técnicas.",
+      "subcategory_pt": "Tecnologias da web",
+      "access_pt": "Gratuito"
     },
     {
       "id": 54,
@@ -703,7 +862,10 @@
       "access": "Public projects vary",
       "tags": [
         "Open-source software"
-      ]
+      ],
+      "description_pt": "Plataforma de repositórios públicos de código-fonte, colaboração e desenvolvimento de software.",
+      "subcategory_pt": "Software de código aberto",
+      "access_pt": "Public projects vary"
     },
     {
       "id": 55,
@@ -716,7 +878,10 @@
       "access": "Free/open-source",
       "tags": [
         "Robotics"
-      ]
+      ],
+      "description_pt": "Ecossistema de código aberto do Robot Operating System, com pacotes e documentação.",
+      "subcategory_pt": "Robótica",
+      "access_pt": "Gratuito e de código aberto"
     },
     {
       "id": 56,
@@ -729,7 +894,10 @@
       "access": "Free; ODbL license",
       "tags": [
         "Geospatial technology"
-      ]
+      ],
+      "description_pt": "Base geográfica colaborativa e ecossistema aberto de mapas e dados geoespaciais.",
+      "subcategory_pt": "Tecnologia geoespacial",
+      "access_pt": "Gratuito; licença ODbL"
     },
     {
       "id": 57,
@@ -742,7 +910,10 @@
       "access": "Free; dataset terms vary",
       "tags": [
         "Scientific engineering"
-      ]
+      ],
+      "description_pt": "Conjuntos de dados abertos de experimentos de física de partículas e recursos de pesquisa relacionados.",
+      "subcategory_pt": "Engenharia científica",
+      "access_pt": "Gratuito; termos dos conjuntos de dados variam"
     },
     {
       "id": 58,
@@ -755,7 +926,10 @@
       "access": "Free",
       "tags": [
         "Energy & applied research"
-      ]
+      ],
+      "description_pt": "Resultados de pesquisa, publicações, softwares e conjuntos de dados do Departamento de Energia dos Estados Unidos.",
+      "subcategory_pt": "Energia e pesquisa aplicada",
+      "access_pt": "Gratuito"
     },
     {
       "id": 59,
@@ -768,7 +942,10 @@
       "access": "Free",
       "tags": [
         "Engineering research"
-      ]
+      ],
+      "description_pt": "Repositório aberto de preprints de engenharia; os manuscritos podem não ter passado por revisão por pares.",
+      "subcategory_pt": "Pesquisa em engenharia",
+      "access_pt": "Gratuito"
     },
     {
       "id": 60,
@@ -781,7 +958,10 @@
       "access": "Open; project licenses vary",
       "tags": [
         "Open engineering"
-      ]
+      ],
+      "description_pt": "Plataforma colaborativa para projetos e desenhos de hardware aberto.",
+      "subcategory_pt": "Engenharia aberta",
+      "access_pt": "Aberto; licenças dos projetos variam"
     }
   ]
 }
