@@ -831,7 +831,7 @@
       "languages": [
         "102 languages"
       ],
-      "volume": "Approximately 12 hours of speech per language (release-dependent)",
+      "volume": "Parallel speech corpus; per-language volume varies by release",
       "license": "CC BY 4.0; verify the dataset card",
       "access": "Hugging Face Hub",
       "update": "Released benchmark",
