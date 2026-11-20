@@ -29,6 +29,14 @@
 .resources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;display:flex;flex-direction:column;min-height:190px;transition:.18s}.card:hover{border-color:#a5cece;box-shadow:var(--shadow);transform:translateY(-2px)}.cardtop{display:flex;justify-content:space-between;gap:10px;align-items:center}.tag{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}.kind{font-size:9px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:4px 7px}.card h3{font-size:16px;letter-spacing:-.025em;margin:13px 0 6px}.card p{font-size:12px;color:var(--muted);margin:0 0 15px}.cardbottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}.access{font-size:10px;color:var(--muted)}.visit{font-size:11px;text-decoration:none;color:var(--accent);font-weight:750}.visit:hover{text-decoration:underline}.empty{grid-column:1/-1;text-align:center;padding:45px;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:14px}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:30px;background:#eaf1f2;border:1px solid var(--line);border-radius:18px;padding:25px;margin:48px 0}.about h2{font-size:21px;letter-spacing:-.04em;margin:0 0 8px}.about p{font-size:13px;color:var(--muted);margin:0}.foot{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:11px}.footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:var(--accent);text-decoration:none}
 @media(max-width:850px){.domains{grid-template-columns:repeat(2,1fr)}.resources{grid-template-columns:repeat(2,1fr)}}@media(max-width:580px){.shell{padding:0 17px}.hero{padding:54px 0 30px}.navlinks{gap:10px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.searchrow{flex-direction:column}.searchrow button{padding:13px}.resources{grid-template-columns:1fr}.about{grid-template-columns:1fr}.domains{gap:8px}.domain{min-height:110px;padding:12px}}
+
+/* Final domain palette overrides: keep category colors visible after base card styles. */
+.domain{background:color-mix(in srgb,var(--cat) 8%,white);border-color:color-mix(in srgb,var(--cat) 30%,white)}
+.domain:before{background:var(--cat)}
+.card{background:linear-gradient(145deg,color-mix(in srgb,var(--cat) 8%,white),#fff 78%);border-color:color-mix(in srgb,var(--cat) 30%,white)}
+.card:before{background:var(--cat)}
+.domain .num,.card .tag,.card .visit{color:var(--cat)}
+.domain:hover,.card:hover{border-color:var(--cat)}
 </style></head>
 <body>
 <header class="top"><div class="shell nav"><a class="brand" href="#"><span class="mark">C.</span><span><strong>CAOS</strong><small data-i18n="brand">PORTAL ABERTO DO CONHECIMENTO</small></span></a>
