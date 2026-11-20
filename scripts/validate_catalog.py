@@ -53,8 +53,10 @@ for i, item in enumerate(data, 1):
 html = HTML.read_text(encoding="utf-8")
 if not re.search(r'<script\b', html, re.I):
     fail("Nenhum script encontrado em index.html.")
-if "data/sources.json" not in html:
-    fail("index.html não referencia data/sources.json.")
+if not CATALOG.exists():
+    fail("Catálogo canônico data/sources.json não encontrado.")
+if "search-index.json" not in html:
+    fail("index.html não referencia o índice compacto search-index.json.")
 
 LANGUAGES = {"pt", "en", "es", "fr", "de", "it", "zh", "ja", "ru", "nl", "pl", "ko", "ar", "hi", "tr"}
 html = HTML.read_text(encoding="utf-8")
