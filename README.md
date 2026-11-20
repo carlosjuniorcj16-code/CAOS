@@ -8,7 +8,7 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão desta expansão reúne **893 fontes**. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão desta expansão reúne **926 fontes**, organizadas em **38 categorias temáticas com registros**. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
@@ -28,7 +28,7 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 
 ## Estrutura
 
-- `index.html` — interface multilíngue, busca, filtros e carregamento progressivo.
+- `index.html` — interface multilíngue, busca com destaque de termos, categorias recolhíveis e carregamento progressivo.
 - `data/sources.json` — catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições.
 - `SOURCES.md` — critérios editoriais e referências de curadoria.

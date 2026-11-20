@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **893 fontes e recursos** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **926 fontes e recursos**, distribuídos em **38 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -22,7 +22,7 @@ A coleção combina fontes primárias, instituições públicas, bibliotecas, ar
 
 ## Categorias
 
-As categorias atuais são agrupamentos de navegação. Elas podem ser ampliadas, reorganizadas ou complementadas à medida que o catálogo cresce. Recursos que atravessam diferentes campos podem ser classificados como multidisciplinares e encontrados por busca e palavras-chave.
+O seletor apresenta uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
 
 ## Idiomas
 
