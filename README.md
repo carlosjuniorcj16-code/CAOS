@@ -31,6 +31,14 @@ O portal possui uma área especializada em datasets e fontes primárias para IA 
 
 A inclusão no catálogo não certifica qualidade nem concede direitos de treinamento: cada licença, versão e conteúdo de origem deve ser auditado antes do uso.
 
+## Atlas de sistemas operacionais e software open source
+
+A página [Atlas de Software Livre](software.html) reúne **271 recursos curados em 11 ecossistemas**, incluindo distribuições GNU/Linux, BSD, illumos, sistemas independentes e de pesquisa, plataformas móveis, sistemas embarcados e RTOS, forjas de código, linguagens, runtimes, registros de pacotes, compiladores, toolchains, frameworks, bancos de dados, infraestrutura, segurança e cadeia de suprimentos.
+
+O catálogo está em [data/open-source-software.json](data/open-source-software.json). O esquema versionado prevê enriquecimento com plataformas, arquiteturas, versões, licenças SPDX e escopo, componentes proprietários, dependências, governança, mantenedores, SBOM, vulnerabilidades, proveniência de build, assinatura, mecanismos de atualização segura e evidências datadas. As entradas iniciais são sementes de descoberta: campos ausentes significam desconhecido, não ausência do recurso.
+
+A curadoria distingue software livre, open source, source-available, open-core e serviços hospedados. A inclusão não certifica manutenção, segurança, compatibilidade ou que todos os componentes de um sistema sejam livres. Confirme licença, versão, dependências, firmware, drivers e termos na fonte upstream antes de adotar ou redistribuir.
+
 ## Como usar
 
 - Pesquise por nome, assunto, instituição, disciplina ou palavra-chave.
@@ -44,7 +52,7 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 ## Estrutura
 
 - `index.html` — portal principal multilíngue.
-- `ai-data.html` — diretório especializado de datasets e fontes para IA.
+- `ai-data.html` — diretório especializado de datasets e fontes para IA.\n- `software.html` — atlas internacional de sistemas operacionais e ecossistema open source.\n- `data/open-source-software.json` — catálogo estruturado de recursos open source.
 - `data/ai_sources.json` — metadados estruturados de datasets e fontes para IA.
 - `data/sources.json` — catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições.
