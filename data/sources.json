@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "updated": "2026-11-19",
   "note": "Diretório público e multilíngue de links para fontes de conhecimento e informação. A CAOS indica fontes originais; disponibilidade, licenças e condições de uso são definidas por cada fonte.",
   "resources": [
@@ -10980,6 +10980,96 @@
       ],
       "description_pt": "Portal, base de dados ou repositório de referência sobre intellectual property, com recursos para consulta, estudo e pesquisa.",
       "subcategory_pt": "Intellectual property"
+    },
+    {
+      "id": 667,
+      "title": "International Centre for Theoretical Physics",
+      "category": "natural",
+      "subcategory": "Theoretical physics",
+      "description": "Reference portal or research resource on theoretical physics, providing data, documentation or scholarly material.",
+      "url": "https://www.ictp.it/",
+      "type": "Research institute",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Theoretical physics"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre theoretical physics, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "Theoretical physics"
+    },
+    {
+      "id": 668,
+      "title": "CERN Document Server",
+      "category": "natural",
+      "subcategory": "Particle physics",
+      "description": "Reference portal or research resource on particle physics, providing data, documentation or scholarly material.",
+      "url": "https://cds.cern.ch/",
+      "type": "Scientific repository",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Particle physics"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre particle physics, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "Particle physics"
+    },
+    {
+      "id": 669,
+      "title": "INSPIRE-HEP",
+      "category": "natural",
+      "subcategory": "High-energy physics",
+      "description": "Reference portal or research resource on high-energy physics, providing data, documentation or scholarly material.",
+      "url": "https://inspirehep.net/",
+      "type": "Bibliographic database",
+      "access": "Free; terms may vary",
+      "tags": [
+        "High-energy physics"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre high-energy physics, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "High-energy physics"
+    },
+    {
+      "id": 670,
+      "title": "Particle Data Group",
+      "category": "natural",
+      "subcategory": "Particle physics",
+      "description": "Reference portal or research resource on particle physics, providing data, documentation or scholarly material.",
+      "url": "https://pdg.lbl.gov/",
+      "type": "Scientific reference",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Particle physics"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre particle physics, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "Particle physics"
+    },
+    {
+      "id": 671,
+      "title": "Hubble Legacy Archive",
+      "category": "natural",
+      "subcategory": "Astronomy",
+      "description": "Reference portal or research resource on astronomy, providing data, documentation or scholarly material.",
+      "url": "https://hla.stsci.edu/",
+      "type": "Astronomy archive",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Astronomy"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre astronomy, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "Astronomy"
+    },
+    {
+      "id": 672,
+      "title": "MAST Portal",
+      "category": "natural",
+      "subcategory": "Space telescopes",
+      "description": "Reference portal or research resource on space telescopes, providing data, documentation or scholarly material.",
+      "url": "https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html",
+      "type": "Astronomy data archive",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Space telescopes"
+      ],
+      "description_pt": "Portal ou recurso de pesquisa sobre space telescopes, com dados, documentação ou material científico para consulta.",
+      "subcategory_pt": "Space telescopes"
     }
   ]
 }
