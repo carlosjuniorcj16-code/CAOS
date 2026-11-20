@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "editorial_policy": "Catalogo de ferramentas gratuitas e serviços com camada gratuita. Cada registro distingue software livre, freeware proprietário, serviços proprietários, créditos promocionais e limites de uso. Links apontam apenas para páginas oficiais. Verifique novamente preço, elegibilidade, região, limites, termos e política de cobrança antes de implantar.",
+  "safety_policy": [
+    "Nunca instale executáveis de espelhos, anúncios, encurtadores ou sites de download de terceiros quando houver distribuição oficial.",
+    "Para serviços cloud, configure alertas de orçamento, limites de gastos e notificações antes de criar recursos. Revise discos, snapshots, IPs, tráfego, backups, endereços IPv4, logs e serviços fora do nível gratuito.",
+    "Não armazene dados sensíveis em instâncias gratuitas sem avaliar criptografia, backups, região, controle de acesso e contrato de tratamento de dados.",
+    "Não exponha SSH, painéis administrativos, bancos de dados ou portas de gerenciamento diretamente à internet. Use chaves, MFA, firewall e atualizações.",
+    "Uma camada gratuita não equivale a SLA, alta disponibilidade, suporte empresarial ou capacidade garantida."
+  ],
+  "categories": [
+    {
+      "id": "virtual-machines",
+      "title": "Máquinas virtuais e servidores cloud",
+      "description": "Ofertas com computação de servidor real. Diferencie quotas permanentes, limites mensais, créditos temporários e disponibilidade regional.",
+      "items": [
+        {
+          "id": "oracle-oci-free",
+          "name": "Oracle Cloud Infrastructure Always Free",
+          "url": "https://www.oracle.com/cloud/free/",
+          "docs": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+          "category": "VM cloud",
+          "model": "Always Free com limites mensais; créditos iniciais são separados",
+          "platforms": [
+            "Linux",
+            "ARM64",
+            "x86-64"
+          ],
+          "capacity": "Ampere A1: quota equivalente a até 2 OCPUs e 12 GB de RAM por mês, além de até duas VMs AMD micro com 1 GB cada",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação oficial descreve 1.500 OCPU-horas e 9.000 GB-horas mensais na A1, equivalentes a 2 OCPUs e 12 GB de memória. A capacidade depende da região e da disponibilidade de hosts.",
+          "risks": "A1 é ARM64, não x86. Recursos Always Free ociosos podem ser reclamados; falta de capacidade regional pode impedir criação. Configure quotas e alertas.",
+          "priority": "Muito alta"
+        },
+        {
+          "id": "google-cloud-free",
+          "name": "Google Cloud Free Tier: Compute Engine",
+          "url": "https://cloud.google.com/free",
+          "docs": "https://docs.cloud.google.com/free/docs/free-cloud-features?hl=pt-BR",
+          "category": "VM cloud",
+          "model": "Nível gratuito mensal permanente para uma configuração elegível",
+          "platforms": [
+            "Linux",
+            "x86-64"
+          ],
+          "capacity": "Uma VM e2-micro não preemptiva em regiões específicas dos EUA, disco padrão de 30 GB e 1 GB/mês de saída elegível",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação lista e2-micro em us-west1, us-central1 ou us-east1, disco padrão de 30 GB e 1 GB de tráfego de saída da América do Norte.",
+          "risks": "A VM não fica em região brasileira. Tráfego, IPs, discos e outros produtos podem gerar custos. Crédito inicial de US$ 300 por 90 dias é oferta separada.",
+          "priority": "Alta"
+        },
+        {
+          "id": "azure-free-vm",
+          "name": "Microsoft Azure: máquinas virtuais gratuitas",
+          "url": "https://azure.microsoft.com/en-us/free/",
+          "docs": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-free-services",
+          "category": "VM cloud",
+          "model": "Oferta para novas contas por 12 meses, dentro de cotas",
+          "platforms": [
+            "Linux",
+            "Windows",
+            "ARM64",
+            "x86-64"
+          ],
+          "capacity": "Até 750 horas mensais de tipos B1S, B2pts v2 ARM e B2ats v2 AMD, conforme elegibilidade e oferta vigente",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação Microsoft descreve crédito inicial de US$ 200 por 30 dias e quantidades gratuitas de alguns serviços por até 12 meses.",
+          "risks": "Não é uma VM grande gratuita para sempre. Confirme a SKU e o sistema operacional elegíveis no portal Free Services; recursos fora da cota podem consumir crédito ou cobrar.",
+          "priority": "Média"
+        },
+        {
+          "id": "aws-free-plan",
+          "name": "AWS Free Plan e créditos",
+          "url": "https://aws.amazon.com/free/",
+          "docs": "https://aws.amazon.com/free/free-tier-faqs/",
+          "category": "VM cloud",
+          "model": "Plano gratuito de até 6 meses ou até acabar o crédito; até US$ 200 para novos clientes elegíveis",
+          "platforms": [
+            "Linux",
+            "Windows",
+            "ARM64",
+            "x86-64"
+          ],
+          "capacity": "Créditos podem ser aplicados a EC2 e outros serviços elegíveis; não é uma VM permanente com capacidade fixa",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A página oficial informa US$ 100 iniciais e até US$ 100 adicionais, com plano gratuito que termina após seis meses ou quando os créditos acabam.",
+          "risks": "Elegibilidade depende de ser novo cliente. Verifique a opção Free Plan, os produtos elegíveis e a expiração; não confunda tutoriais antigos de 12 meses com as regras atuais.",
+          "priority": "Média"
+        }
+      ]
+    },
+    {
+      "id": "serverless-app-hosting",
+      "title": "Aplicações, serverless e hospedagem gratuita",
+      "description": "Serviços úteis para APIs, aplicações pequenas e protótipos. Não oferecem necessariamente uma VM persistente nem acesso root.",
+      "items": [
+        {
+          "id": "cloudflare-workers",
+          "name": "Cloudflare Workers Free",
+          "url": "https://developers.cloudflare.com/workers/",
+          "docs": "https://developers.cloudflare.com/workers/platform/limits/",
+          "category": "Serverless",
+          "model": "Camada gratuita recorrente por limites de uso",
+          "platforms": [
+            "JavaScript",
+            "TypeScript",
+            "WebAssembly",
+            "APIs HTTP"
+          ],
+          "capacity": "Até 100.000 requisições por dia, 10 ms de CPU por invocação e 128 MB de memória no plano gratuito",
+          "license_status": "serviço proprietário; APIs e ferramentas têm licenças próprias",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação oficial, atualizada em novembro de 2026, publica limites diários, CPU, memória e tamanho do Worker.",
+          "risks": "Não é uma máquina Linux tradicional. Execução curta e ambiente isolado. Configure limites de gastos e revise produtos vinculados, armazenamento e tráfego.",
+          "priority": "Muito alta"
+        },
+        {
+          "id": "render-free",
+          "name": "Render Free",
+          "url": "https://render.com/docs/free",
+          "docs": "https://render.com/docs/free",
+          "category": "Hospedagem de aplicações",
+          "model": "Instâncias gratuitas para protótipos e projetos pessoais",
+          "platforms": [
+            "Node.js",
+            "Python",
+            "Go",
+            "Ruby",
+            "Docker",
+            "PostgreSQL"
+          ],
+          "capacity": "Web services gratuitos, 750 horas por workspace/mês; serviços web dormem após 15 minutos sem tráfego",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação diz expressamente que as instâncias gratuitas não são indicadas para produção. Postgres gratuito tem 1 GB e expira após 30 dias.",
+          "risks": "Disco local efêmero, sem SSH, sem discos persistentes e possíveis reinícios. Não use como banco permanente nem para serviço crítico.",
+          "priority": "Alta"
+        },
+        {
+          "id": "koyeb-free",
+          "name": "Koyeb Free Instance",
+          "url": "https://www.koyeb.com/docs/reference/instances",
+          "docs": "https://www.koyeb.com/docs/faqs/pricing",
+          "category": "Hospedagem de aplicações",
+          "model": "Uma instância web gratuita por organização",
+          "platforms": [
+            "Node.js",
+            "Python",
+            "Go",
+            "Rust",
+            "Java",
+            "Docker"
+          ],
+          "capacity": "512 MB RAM, 0,1 vCPU e 2 GB SSD; escala a zero após uma hora sem tráfego",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação oficial especifica a quota, regiões Frankfurt ou Washington, D.C. e ausência de volumes persistentes.",
+          "risks": "Muito limitada para cargas pesadas. Não é Worker de background, não oferece volume persistente na instância gratuita e pode acordar com atraso.",
+          "priority": "Média"
+        },
+        {
+          "id": "vercel-hobby",
+          "name": "Vercel Hobby",
+          "url": "https://vercel.com/docs/plans/hobby",
+          "docs": "https://vercel.com/docs/limits",
+          "category": "Frontend e funções",
+          "model": "Plano gratuito para projetos pessoais",
+          "platforms": [
+            "Next.js",
+            "React",
+            "Astro",
+            "Nuxt",
+            "Node.js",
+            "Edge Functions"
+          ],
+          "capacity": "Hospedagem estática e quotas mensais para funções, CPU, memória e tráfego, conforme limites Hobby",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação define o Hobby como plano gratuito voltado a projetos pessoais e aplicações de pequena escala.",
+          "risks": "Não é uma VM de uso geral. Restrições de uso comercial e quotas se aplicam. Confira limites e termos antes de hospedar serviços de terceiros.",
+          "priority": "Alta"
+        }
+      ]
+    },
+    {
+      "id": "static-ci-data",
+      "title": "Sites estáticos, automação e infraestrutura de desenvolvimento",
+      "description": "Recursos gratuitos que funcionam muito bem como infraestrutura auxiliar, mas não substituem servidores de propósito geral.",
+      "items": [
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "url": "https://docs.github.com/en/pages",
+          "docs": "https://docs.github.com/pt/pages/getting-started-with-github-pages/github-pages-limits",
+          "category": "Hospedagem estática",
+          "model": "Gratuito em repositórios públicos nos planos compatíveis",
+          "platforms": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Jekyll"
+          ],
+          "capacity": "Hospedagem estática com limites de tamanho, build e uso definidos pelo GitHub",
+          "license_status": "serviço proprietário; o conteúdo publicado mantém sua própria licença",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação confirma disponibilidade em repositórios públicos com GitHub Free e descreve limites e usos proibidos.",
+          "risks": "Não executa backend tradicional. Não é permitido usá-lo como hospedagem SaaS ou comércio eletrônico. Não publique segredos nem dados sensíveis.",
+          "priority": "Alta"
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions em repositórios públicos",
+          "url": "https://docs.github.com/en/actions",
+          "docs": "https://docs.github.com/en/actions/concepts/billing-and-usage",
+          "category": "CI/CD",
+          "model": "Runners padrão hospedados são gratuitos em repositórios públicos",
+          "platforms": [
+            "Linux",
+            "Windows",
+            "macOS"
+          ],
+          "capacity": "Execução de pipelines CI/CD em runners padrão, sujeita a limites de concorrência e políticas",
+          "license_status": "serviço proprietário",
+          "license_spdx": null,
+          "maintenance": "Serviço comercial ativo",
+          "evidence": "A documentação informa uso gratuito de runners padrão hospedados para repositórios públicos.",
+          "risks": "Não é hospedagem de aplicação permanente. Respeite termos, limites de concorrência e proteção contra exposição de segredos em workflows.",
+          "priority": "Alta"
+        }
+      ]
+    },
+    {
+      "id": "safe-desktop",
+      "title": "Programas gratuitos confiáveis para desktop",
+      "description": "Aplicativos conhecidos com distribuição oficial. A maioria desta seleção é software livre, mas a licença deve ser conferida para cada componente e versão.",
+      "items": [
+        {
+          "id": "libreoffice",
+          "name": "LibreOffice",
+          "url": "https://www.libreoffice.org/",
+          "docs": "https://www.libreoffice.org/get-help/documentation/",
+          "category": "Suíte de escritório",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
+          "capacity": "Editor de texto, planilhas, apresentações e formatos abertos",
+          "license_status": "software livre; licenciamento do projeto com componentes e exceções documentadas",
+          "license_spdx": "MPL-2.0",
+          "maintenance": "Ativo; releases publicados pelo projeto",
+          "evidence": "Projeto oficial The Document Foundation com downloads e documentação próprios.",
+          "risks": "Baixe somente de libreoffice.org ou espelhos oficiais indicados pelo projeto. Extensões de terceiros exigem revisão separada.",
+          "priority": "Alta"
+        },
+        {
+          "id": "vlc",
+          "name": "VLC media player",
+          "url": "https://www.videolan.org/vlc/",
+          "docs": "https://www.videolan.org/support/",
+          "category": "Multimídia",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android",
+            "iOS"
+          ],
+          "capacity": "Reprodutor multimídia multiplataforma",
+          "license_status": "software livre",
+          "license_spdx": "GPL-2.0-or-later",
+          "maintenance": "Ativo; releases no site oficial",
+          "evidence": "VideoLAN publica o software, código-fonte, downloads e suporte.",
+          "risks": "Use instaladores oficiais. Pacotes de terceiros e codecs externos podem ter licenças e riscos distintos.",
+          "priority": "Alta"
+        },
+        {
+          "id": "7zip",
+          "name": "7-Zip",
+          "url": "https://www.7-zip.org/",
+          "docs": "https://github.com/ip7z/7zip/blob/main/DOC/License.txt",
+          "category": "Compactação",
+          "model": "Gratuito e open source",
+          "platforms": [
+            "Windows",
+            "Linux"
+          ],
+          "capacity": "Compactação e extração de arquivos",
+          "license_status": "open source com LGPL predominante, componentes BSD e restrição unRAR específica",
+          "license_spdx": null,
+          "maintenance": "Ativo; releases oficiais",
+          "evidence": "O projeto publica downloads, código e FAQ no domínio oficial.",
+          "risks": "O código de extração RAR tem restrição própria e não pode ser usado para recriar o algoritmo proprietário RAR. Confira License.txt e não execute arquivos extraídos de fontes desconhecidas.",
+          "priority": "Alta"
+        },
+        {
+          "id": "keepassxc",
+          "name": "KeePassXC",
+          "url": "https://keepassxc.org/",
+          "docs": "https://keepassxc.org/docs/",
+          "category": "Gerenciador de senhas",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
+          "capacity": "Cofre local de senhas com criptografia",
+          "license_status": "software livre; código principal sob GPL-2 ou GPL-3, arquivos de terceiros podem ter outras licenças",
+          "license_spdx": null,
+          "maintenance": "Ativo; releases no projeto",
+          "evidence": "Projeto oficial publica código, downloads, documentação e política de segurança.",
+          "risks": "Proteja o arquivo do banco e suas cópias de segurança. Baixe apenas do site oficial ou canais assinados indicados pelo projeto.",
+          "priority": "Muito alta"
+        },
+        {
+          "id": "gimp",
+          "name": "GIMP",
+          "url": "https://www.gimp.org/",
+          "docs": "https://www.gimp.org/docs/",
+          "category": "Imagem e design",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
+          "capacity": "Edição e composição de imagens",
+          "license_status": "software livre",
+          "license_spdx": "GPL-3.0-or-later",
+          "maintenance": "Ativo; releases oficiais",
+          "evidence": "Projeto GIMP mantém downloads, documentação e código no domínio oficial.",
+          "risks": "Plugins e scripts externos podem executar código. Instale apenas extensões de fontes confiáveis.",
+          "priority": "Média"
+        },
+        {
+          "id": "blender",
+          "name": "Blender",
+          "url": "https://www.blender.org/",
+          "docs": "https://docs.blender.org/",
+          "category": "3D e criação",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
+          "capacity": "Modelagem, animação, renderização e criação 3D",
+          "license_status": "software livre",
+          "license_spdx": "GPL-3.0-or-later",
+          "maintenance": "Ativo; releases oficiais",
+          "evidence": "Blender Foundation mantém downloads, documentação e código-fonte.",
+          "risks": "Add-ons podem conter código de terceiros. Revise origem, permissões e manutenção antes de instalar.",
+          "priority": "Média"
+        },
+        {
+          "id": "obs-studio",
+          "name": "OBS Studio",
+          "url": "https://obsproject.com/",
+          "docs": "https://obsproject.com/kb/",
+          "category": "Gravação e transmissão",
+          "model": "Gratuito e software livre",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
+          "capacity": "Gravação de tela, captura e transmissão ao vivo",
+          "license_status": "software livre",
+          "license_spdx": "GPL-2.0-only",
+          "maintenance": "Ativo; releases oficiais",
+          "evidence": "Projeto OBS publica downloads, documentação, código e notas de versão.",
+          "risks": "Plugins e scripts podem acessar arquivos e dispositivos. Instale apenas fontes conhecidas e mantenha o programa atualizado.",
+          "priority": "Média"
+        },
+        {
+          "id": "powertoys",
+          "name": "Microsoft PowerToys",
+          "url": "https://learn.microsoft.com/en-us/windows/powertoys",
+          "docs": "https://github.com/microsoft/PowerToys",
+          "category": "Utilitários Windows",
+          "model": "Gratuito e open source",
+          "platforms": [
+            "Windows 10 2004+",
+            "Windows 11",
+            "x64",
+            "ARM64"
+          ],
+          "capacity": "Mais de 30 utilitários de produtividade, janelas, teclado, busca e personalização",
+          "license_status": "open source",
+          "license_spdx": "MIT",
+          "maintenance": "Ativo; releases e repositório oficial da Microsoft",
+          "evidence": "A documentação Microsoft descreve compatibilidade com Windows 10 e 11; o repositório oficial indica licença MIT.",
+          "risks": "O aplicativo coleta dados básicos de diagnóstico. Baixe pela Microsoft Store, WinGet ou repositório oficial. Extensões comunitárias precisam de avaliação separada.",
+          "priority": "Alta"
+        },
+        {
+          "id": "bitwarden-free",
+          "name": "Bitwarden Free",
+          "url": "https://bitwarden.com/pt-br/pricing/",
+          "docs": "https://bitwarden.com/pt-br/open-source/",
+          "category": "Gerenciador de senhas",
+          "model": "Plano individual gratuito; sincronização entre dispositivos",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android",
+            "iOS",
+            "Navegadores"
+          ],
+          "capacity": "Armazenamento de logins, notas, cartões e identidades com sincronização e criptografia ponta a ponta",
+          "license_status": "modelo misto: clientes e repositórios publicados; código distribuído sob AGPL-3.0 e Bitwarden License conforme componente; serviço cloud proprietário",
+          "license_spdx": null,
+          "maintenance": "Ativo; releases e auditorias publicados pelo fornecedor",
+          "evidence": "Bitwarden publica o código dos clientes e servidor, documenta licenças distintas por repositório e oferece plano individual gratuito.",
+          "risks": "Não confunda código publicado com licença única para todo o serviço. Proteja a conta com senha mestra forte e MFA; revise a política de recuperação e a confiança no serviço cloud.",
+          "priority": "Muito alta"
+        },
+        {
+          "id": "sysinternals",
+          "name": "Microsoft Sysinternals Suite",
+          "url": "https://learn.microsoft.com/en-us/sysinternals/",
+          "docs": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite",
+          "category": "Diagnóstico e administração",
+          "model": "Freeware gratuito para uso conforme os termos Microsoft; código não é open source",
+          "platforms": [
+            "Windows 10",
+            "Windows 11",
+            "Windows Server",
+            "x64",
+            "ARM64 conforme ferramenta"
+          ],
+          "capacity": "Ferramentas oficiais para processos, inicialização, rede, disco, diagnóstico e administração Windows",
+          "license_status": "freeware proprietário; termos Microsoft",
+          "license_spdx": null,
+          "maintenance": "Ativo; ferramentas e documentação atualizadas pela Microsoft",
+          "evidence": "A Microsoft mantém a suíte e páginas oficiais de cada utilitário, incluindo downloads e documentação.",
+          "risks": "Ferramentas administrativas podem alterar o sistema e encerrar processos. Execute somente o utilitário necessário, com privilégios mínimos, e baixe apenas de learn.microsoft.com ou Microsoft Sysinternals.",
+          "priority": "Alta"
+        }
+      ]
+    }
+  ]
+}

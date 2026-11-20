@@ -39,14 +39,19 @@ jobs:
           test -s dist/robots.txt
           test -s dist/sitemap.xml
           test -s dist/categorias/index.html
-          for path in radar.html leituras.html software.html data/research-radar.json data/reading-recommendations.json data/open-source-software.json assets/caos-mark.svg; do test -s "dist/$path"; done
+          for path in radar.html leituras.html software.html freeware.html data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json assets/caos-mark.svg; do test -s "dist/$path"; done
           python - <<'PY'
           from pathlib import Path
           import xml.etree.ElementTree as ET
           root = Path("dist")
           ET.parse(root / "sitemap.xml")
-          ET.parse(root / "sitemap-1.xml")
+          sitemap = ET.parse(root / "sitemap-1.xml")
           ET.parse(root / "assets/caos-mark.svg")
+          locations = {node.text for node in sitemap.findall(".//{*}loc")}
+          for page in ("radar.html", "leituras.html", "software.html", "freeware.html"):
+              expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
+              if expected not in locations:
+                  raise SystemExit(f"Missing standalone page in sitemap: {page}")
           pages = list(root.rglob("index.html"))
           if len(pages) < 2:
               raise SystemExit("SEO build produced too few HTML pages")

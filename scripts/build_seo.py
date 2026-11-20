@@ -135,10 +135,10 @@ def main():
     # published artifact. GitHub Pages serves dist/ only; omitting these files
     # makes valid repository pages appear as 404s after deployment.
     for relative in (
-        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html",
+        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html",
         "data/sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
-        "data/open-source-software.json", "search-index.json",
+        "data/open-source-software.json", "data/freeware.json", "search-index.json",
     ):
         src = ROOT / relative
         if src.exists():
@@ -202,7 +202,7 @@ def main():
         topic = str(item.get("topic") or "reference")
         for code, desc in variants.items():
             topic_title = topic_name(topic, code, topics, resources)
-            title = str(item["title"]) + " — " + topic_title + " | CAOS"
+            title = str(item["title"]) + " | " + topic_title + " | CAOS"
             host = parsed.netloc.lower().removeprefix("www.")
             category_route = route_for_category(topic, "pt")
             crumb_label = "Categorias" if code == "pt" else "Categories"
@@ -315,7 +315,7 @@ def main():
         '<link rel="canonical" href="' + e(absolute("/")) + '">'
         '<meta name="robots" content="index,follow,max-image-preview:large">'
         '<meta property="og:type" content="website"><meta property="og:site_name" content="CAOS">'
-        '<meta property="og:title" content="CAOS — Diretório público do conhecimento">'
+        '<meta property="og:title" content="CAOS: Diretório público do conhecimento">'
         '<meta property="og:description" content="Descubra bibliotecas, arquivos, instituições, pesquisas, bases de dados e fontes de conhecimento em todo o mundo.">'
         '<meta property="og:url" content="' + e(absolute("/")) + '"><meta name="twitter:card" content="summary">'
         '<script type="application/ld+json">' + json.dumps({
@@ -336,7 +336,8 @@ def main():
         ai = ai.replace("</head>", '<link rel="canonical" href="' + e(absolute("/ai-data.html")) + '"><meta name="robots" content="index,follow"></head>')
         ai_page.write_text(ai, encoding="utf-8")
     add_url("/")
-    add_url("/ai-data.html")
+    for standalone in ("/ai-data.html", "/radar.html", "/leituras.html", "/software.html", "/freeware.html"):
+        add_url(standalone)
 
     chunks = [sitemap_urls[i:i + 40000] for i in range(0, len(sitemap_urls), 40000)]
     sitemap_names = []

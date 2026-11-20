@@ -39,8 +39,8 @@ A versão atual do CAOS contém 12.000 registros selecionados do dump Curlie, de
 
 ## Referências para a curadoria
 
-- UNESCO — Open Science: https://www.unesco.org/en/open-science
-- IBICT — Repositórios e Ciência Aberta: https://www.gov.br/ibict/pt-br/atuacao/pesquisa-servicos-e-iniciativas/repositorios-e-ciencia-aberta
+- UNESCO: Open Science: https://www.unesco.org/en/open-science
+- IBICT: Repositórios e Ciência Aberta: https://www.gov.br/ibict/pt-br/atuacao/pesquisa-servicos-e-iniciativas/repositorios-e-ciencia-aberta
 - Europeana: https://www.europeana.eu/
 - OpenDOAR: https://v2.sherpa.ac.uk/opendoar/
 - re3data: https://www.re3data.org/
@@ -59,12 +59,12 @@ Cada registro em `data/ai_sources.json` documenta área, tipo, formatos, idiomas
 
 ### Referências oficiais dos novos benchmarks e corpora
 
-- MADLAD-400 — https://huggingface.co/datasets/allenai/MADLAD-400
-- FLORES-200 — https://huggingface.co/datasets/facebook/flores
-- FLEURS — https://huggingface.co/datasets/google/fleurs
-- MMLU — https://huggingface.co/datasets/cais/mmlu
-- SWE-bench — https://github.com/SWE-bench/SWE-bench
-- Mozilla Common Voice — https://commonvoice.mozilla.org/terms/en.html
+- MADLAD-400: https://huggingface.co/datasets/allenai/MADLAD-400
+- FLORES-200: https://huggingface.co/datasets/facebook/flores
+- FLEURS: https://huggingface.co/datasets/google/fleurs
+- MMLU: https://huggingface.co/datasets/cais/mmlu
+- SWE-bench: https://github.com/SWE-bench/SWE-bench
+- Mozilla Common Voice: https://commonvoice.mozilla.org/terms/en.html
 
 As descrições de licença no catálogo são resumos de orientação, não pareceres jurídicos. Confirme a licença da versão, dos arquivos e dos materiais de origem antes de baixar, redistribuir ou usar em treinamento.
 
@@ -76,3 +76,21 @@ A página **Atlas de Software Livre** ([software.html](./software.html)) reúne 
 Os links priorizam páginas oficiais de projetos, documentação, repositórios e índices de pacotes. A presença no atlas não é endosso, certificação de segurança, garantia de manutenção ou confirmação de que todos os componentes são livres. Projetos experimentais são identificados como tais; firmware, drivers, serviços, licenças mistas e dependências precisam de verificação própria.
 
 O arquivo data/open-source-software.json contém as sementes de descoberta e um esquema versionado de metadados para enriquecimento futuro: identificadores, URL canônica, plataformas, arquiteturas, versões, licenças SPDX e escopo, componentes proprietários, dependências, governança, mantenedores, SBOM, vulnerabilidades, proveniência de build, assinatura, atualizações seguras e evidências datadas. As entradas iniciais não têm todos esses campos preenchidos; ausência significa desconhecido, não que o recurso não possua a característica.
+
+## Freeware, cloud gratuito e infraestrutura de desenvolvimento
+
+- Oracle Cloud Free Tier e Always Free: https://www.oracle.com/cloud/free/ e https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm
+- Google Cloud Free Program: https://docs.cloud.google.com/free/docs/free-cloud-features?hl=pt-BR
+- AWS Free Tier e FAQs: https://aws.amazon.com/free/ e https://aws.amazon.com/free/free-tier-faqs/
+- Microsoft Azure Free Account: https://azure.microsoft.com/en-us/free/ e https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-free-services
+- Cloudflare Workers limits: https://developers.cloudflare.com/workers/platform/limits/
+- Render Free: https://render.com/docs/free
+- Koyeb instances and pricing: https://www.koyeb.com/docs/reference/instances e https://www.koyeb.com/docs/faqs/pricing
+- Vercel Hobby: https://vercel.com/docs/plans/hobby
+- GitHub Pages limits e GitHub Actions billing: https://docs.github.com/pt/pages/getting-started-with-github-pages/github-pages-limits e https://docs.github.com/en/actions/concepts/billing-and-usage
+- LibreOffice, VideoLAN VLC, 7-Zip, KeePassXC, GIMP, Blender e OBS Studio: páginas oficiais listadas em data/freeware.json.
+- Microsoft PowerToys: https://learn.microsoft.com/en-us/windows/powertoys e https://github.com/microsoft/PowerToys
+- Bitwarden: https://bitwarden.com/pt-br/open-source/ e https://bitwarden.com/pt-br/help/password-manager-plans/
+- Microsoft Sysinternals: https://learn.microsoft.com/en-us/sysinternals/
+
+A curadoria distingue cotas gratuitas recorrentes, créditos temporários, planos gratuitos limitados, serviços serverless e software livre. Nenhuma oferta cloud é tratada como capacidade ilimitada ou SLA de produção. Limites e elegibilidade devem ser revalidados nas fontes oficiais antes do uso.

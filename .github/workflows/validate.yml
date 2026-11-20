@@ -38,7 +38,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for name in ("research-radar.json", "reading-recommendations.json", "open-source-software.json"):
+          for name in ("research-radar.json", "reading-recommendations.json", "open-source-software.json", "freeware.json"):
               path = Path("data") / name
               data = json.loads(path.read_text(encoding="utf-8"))
               assert isinstance(data, dict) and "schema_version" in data
@@ -52,6 +52,15 @@ jobs:
                   assert required <= set(schema.get("required", []))
                   assert "license_scope" in schema.get("field_rules", {})
                   assert "proprietary_components" in schema.get("optional", [])
+              if name == "freeware.json":
+                  assert len(data.get("categories", [])) >= 4
+                  entries = [item for category in data["categories"] for item in category.get("items", [])]
+                  assert len(entries) >= 15
+                  for item in entries:
+                      assert item.get("url", "").startswith("https://")
+                      assert item.get("category") and item.get("platforms")
+                      assert item.get("license_status") and item.get("maintenance")
+                      assert item.get("evidence") and item.get("risks")
               for item in data.get("items", []):
                   assert item.get("url", "").startswith("https://")
               for topic in data.get("topics", []):
@@ -71,7 +80,7 @@ jobs:
           from pathlib import Path
           import re
           total = 0
-          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html", "software.html"):
+          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html"):
               html = Path(page).read_text(encoding="utf-8")
               scripts = [body for attrs, body in re.findall(r"<script\b([^>]*)>([\s\S]*?)</script>", html, re.I) if "application/ld+json" not in attrs.lower()]
               for i, script in enumerate(scripts):

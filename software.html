@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#17254a">
 <meta name="description" content="Atlas CAOS de sistemas operacionais open source, distribuições, BSD, sistemas móveis, embarcados, ferramentas, repositórios, linguagens e segurança de software.">
 <link rel="canonical" href="https://carlosjuniorcj16-code.github.io/CAOS/software.html">
-<title>Atlas de Software Livre — CAOS</title>
+<title>Atlas de Software Livre | CAOS</title>
 <style>
 :root{--navy:#17254a;--blue:#3158bd;--paper:#fffdf8;--cream:#f5f0e5;--ink:#202a35;--muted:#68727b;--line:#dedbd2;--orange:#e66a3b;--yellow:#f0c54b;--teal:#2e8b7d}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 "Avenir Next",Avenir,"Segoe UI",sans-serif}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
@@ -16,9 +16,9 @@ main{padding:28px 0 70px}.stats{display:flex;gap:18px;flex-wrap:wrap;color:var(-
 @media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.top{padding:12px 0;align-items:flex-start;flex-direction:column}.cards,.controls{grid-template-columns:1fr}.hero{padding:42px 0}.category h2{font-size:24px}}
 </style></head>
 <body>
-<header><div class="wrap top"><a class="brand" href="./index.html"><img src="./assets/caos-mark.svg" alt=""><span><strong>CAOS</strong><small>Atlas de software livre</small></span></a><nav><a href="./index.html">Diretório</a><a href="./radar.html">Radar científico</a><a href="./leituras.html">Leituras</a><a href="./ai-data.html">Dados para IA</a><a href="https://github.com/carlosjuniorcj16-code/CAOS" rel="noopener">Código e fontes ↗</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="kicker">Sistemas · código · infraestrutura · comunidades</div><h1>O universo do<br><em>software aberto.</em></h1><p>Um mapa navegável de sistemas operacionais, distribuições, kernels, plataformas móveis, sistemas embarcados, repositórios de pacotes, ferramentas de desenvolvimento, linguagens, fundações e segurança da cadeia de software. Comece pela plataforma — depois explore o ecossistema que a sustenta.</p></div></section>
-<main class="wrap"><div class="stats"><span><strong id="total">—</strong> recursos catalogados</span><span><strong id="groups">—</strong> ecossistemas</span><span id="updated">Carregando catálogo…</span></div>
+<header><div class="wrap top"><a class="brand" href="./index.html"><img src="./assets/caos-mark.svg" alt=""><span><strong>CAOS</strong><small>Atlas de software livre</small></span></a><nav><a href="./index.html">Diretório</a><a href="./radar.html">Radar científico</a><a href="./leituras.html">Leituras</a><a href="./ai-data.html">Dados para IA</a><a href="./freeware.html">Gratuitos</a><a href="https://github.com/carlosjuniorcj16-code/CAOS" rel="noopener">Código e fontes ↗</a></nav></div></header>
+<section class="hero"><div class="wrap"><div class="kicker">Sistemas · código · infraestrutura · comunidades</div><h1>O universo do<br><em>software aberto.</em></h1><p>Um mapa navegável de sistemas operacionais, distribuições, kernels, plataformas móveis, sistemas embarcados, repositórios de pacotes, ferramentas de desenvolvimento, linguagens, fundações e segurança da cadeia de software. Comece pela plataforma | depois explore o ecossistema que a sustenta.</p></div></section>
+<main class="wrap"><div class="stats"><span><strong id="total">0</strong> recursos catalogados</span><span><strong id="groups">0</strong> ecossistemas</span><span id="updated">Carregando catálogo…</span></div>
 <div class="controls"><input id="search" type="search" placeholder="Buscar sistema, linguagem, pacote, fundação…" aria-label="Buscar recursos"><select id="category" aria-label="Filtrar ecossistema"><option value="">Todos os ecossistemas</option></select></div>
 <div id="catalog"><div class="empty">Carregando atlas…</div></div>
 <section class="framework"><h2>Arcabouço de software do CAOS</h2><p>O catálogo não deve tratar “software” como uma categoria única. Cada registro futuro deve ser classificado em camadas e manter proveniência verificável.</p><ul>
@@ -29,7 +29,7 @@ main{padding:28px 0 70px}.stats{display:flex;gap:18px;flex-wrap:wrap;color:var(-
 <li><strong>Segurança:</strong> SBOM (SPDX/CycloneDX), vulnerabilidades (OSV), proveniência de build (SLSA), assinatura (Sigstore), atualização segura (TUF) e sinais de manutenção (OpenSSF Scorecard).</li>
 <li><strong>Distribuição e interoperabilidade:</strong> formatos de pacote, APIs, padrões abertos, compatibilidade, portabilidade e alternativas equivalentes.</li>
 </ul><p>O arquivo <code>data/open-source-software.json</code> também define um esquema de metadados versionado. Os 177 recursos iniciais são sementes de descoberta (nome, URL oficial, tipo e nota editorial), não fichas técnicas completas: campos ausentes permanecem desconhecidos. O esquema prevê identificadores, licença SPDX verificada, escopo da licença, plataformas, arquitetura, versões, dependências, mantenedores, governança, SBOM, vulnerabilidades, proveniência, assinatura, atualização segura e evidências datadas.</p><p>Uma página de catálogo é o primeiro mapa, não uma auditoria automática de segurança. Não inferimos que um projeto seja seguro, ativo ou inteiramente livre apenas porque seu código está publicado. Verifique licenças, versões, políticas e componentes na fonte oficial.</p></section>
-</main><footer><div class="wrap">CAOS — Diretório público do conhecimento · <a href="./index.html">Voltar ao diretório</a></div></footer>
+</main><footer><div class="wrap">CAOS | Diretório público do conhecimento · <a href="./index.html">Voltar ao diretório</a></div></footer>
 <script>
 const $=id=>document.getElementById(id), esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let catalog=null;
