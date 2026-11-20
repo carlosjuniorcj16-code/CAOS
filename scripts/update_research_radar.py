@@ -52,8 +52,13 @@ def normalize_date(value):
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00")).date().isoformat()
     except ValueError:
+        for fmt in ("%Y %b %d", "%Y %b", "%Y"):
+            try:
+                return datetime.strptime(value[:11].strip(), fmt).date().isoformat()
+            except ValueError:
+                pass
         match = re.search(r"\d{4}-\d{2}-\d{2}", value)
-        return match.group(0) if match else value[:10]
+        return match.group(0) if match else ""
 
 def record(area, title, published, url, source, authors=None, doi=""):
     title = clean(title)
@@ -114,6 +119,41 @@ def fetch_europe_pmc(topic):
             found.append(item)
     return found
 
+
+def fetch_pubmed(topic):
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+    search_params = urllib.parse.urlencode({
+        "db": "pubmed", "term": topic["pubmed"],
+        "datetype": "pdat", "mindate": FROM_DATE.strftime("%Y/%m/%d"),
+        "maxdate": TODAY.strftime("%Y/%m/%d"), "retmode": "json",
+        "retmax": 12, "sort": "pub+date",
+    })
+    search = get_json(base + "esearch.fcgi?" + search_params)
+    ids = search.get("esearchresult", {}).get("idlist", [])
+    if not ids:
+        return []
+    time.sleep(0.45)
+    summary_params = urllib.parse.urlencode({"db": "pubmed", "id": ",".join(ids), "retmode": "json"})
+    summary = get_json(base + "esummary.fcgi?" + summary_params).get("result", {})
+    found = []
+    for pmid in ids:
+        hit = summary.get(pmid, {})
+        if not hit:
+            continue
+        authors = [a.get("name", "") for a in hit.get("authors", [])]
+        doi = ""
+        for article_id in hit.get("articleids", []):
+            if article_id.get("idtype") == "doi":
+                doi = article_id.get("value", "")
+                break
+        item = record(topic["name"], hit.get("title"), hit.get("pubdate"),
+                      "https://pubmed.ncbi.nlm.nih.gov/" + pmid + "/",
+                      "PubMed", authors, doi)
+        if item:
+            item["venue"] = clean(hit.get("fulljournalname"))
+            found.append(item)
+    return found
+
 def fetch_crossref(topic):
     params = urllib.parse.urlencode({
         "query.bibliographic": topic["crossref"],
@@ -143,7 +183,7 @@ def collect():
     health = {}
     for topic in TOPICS:
         topic_items = []
-        for provider, fetcher in (("arXiv", fetch_arxiv), ("Europe PMC", fetch_europe_pmc), ("Crossref", fetch_crossref)):
+        for provider, fetcher in (("arXiv", fetch_arxiv), ("Europe PMC", fetch_europe_pmc), ("PubMed", fetch_pubmed), ("Crossref", fetch_crossref)):
             try:
                 topic_items.extend(fetcher(topic))
                 health[topic["id"] + ":" + provider] = "ok"
@@ -174,7 +214,7 @@ def collect():
         "schema_version": 2,
         "updated_at": now,
         "window_days": 45,
-        "sources": ["arXiv", "Europe PMC", "Crossref"],
+        "sources": ["arXiv", "Europe PMC", "PubMed", "Crossref"],
         "items": radar,
         "source_health": health,
     }, {
