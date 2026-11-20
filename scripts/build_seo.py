@@ -131,7 +131,7 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    for relative in ("index.html", "ai-data.html", "data/sources.json", "data/ai_sources.json", "data/languages.json"):
+    for relative in ("index.html", "ai-data.html", "data/sources.json", "data/ai_sources.json", "data/languages.json", "search-index.json"):
         src = ROOT / relative
         if src.exists():
             dest = OUT / relative
