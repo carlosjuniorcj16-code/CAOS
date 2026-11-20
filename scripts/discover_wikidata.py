@@ -125,7 +125,7 @@ def robots_allows(url: str) -> bool:
     except (URLError, TimeoutError):
         # Fail closed when the site's crawl policy cannot be retrieved.
         return False
-    return parser.can_fetch("CAOSBot", url)
+    return parser.can_fetch("CAOS-Directory", url)
 
 def homepage_is_live(url: str) -> tuple[bool, str]:
     if not robots_allows(url):
