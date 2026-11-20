@@ -89,5 +89,8 @@ O arquivo data/open-source-software.json contém as sementes de descoberta e um 
 - Vercel Hobby: https://vercel.com/docs/plans/hobby
 - GitHub Pages limits e GitHub Actions billing: https://docs.github.com/pt/pages/getting-started-with-github-pages/github-pages-limits e https://docs.github.com/en/actions/concepts/billing-and-usage
 - LibreOffice, VideoLAN VLC, 7-Zip, KeePassXC, GIMP, Blender e OBS Studio: páginas oficiais listadas em data/freeware.json.
+- Microsoft PowerToys: https://learn.microsoft.com/en-us/windows/powertoys e https://github.com/microsoft/PowerToys
+- Bitwarden: https://bitwarden.com/pt-br/open-source/ e https://bitwarden.com/pt-br/help/password-manager-plans/
+- Microsoft Sysinternals: https://learn.microsoft.com/en-us/sysinternals/
 
 A curadoria distingue cotas gratuitas recorrentes, créditos temporários, planos gratuitos limitados, serviços serverless e software livre. Nenhuma oferta cloud é tratada como capacidade ilimitada ou SLA de produção. Limites e elegibilidade devem ser revalidados nas fontes oficiais antes do uso.
