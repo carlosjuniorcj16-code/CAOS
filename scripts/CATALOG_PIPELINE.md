@@ -2,7 +2,7 @@
 
 ## Escopo atual
 
-O diretório contém 1.022 registros próprios e 67 categorias com fontes. O fluxo de importação foi preparado para incorporar até 10.000 registros por execução a partir do dump oficial do Curlie, mantendo URL, título, descrição editorial, categoria de origem, idioma e atribuição.
+O diretório contém 13.022 registros próprios e 67 categorias com fontes. O fluxo de importação foi preparado para incorporar até 10.000 registros por execução a partir do dump oficial do Curlie, mantendo URL, título, descrição editorial, categoria de origem, idioma e atribuição.
 
 O dump Curlie é distribuído em TSV, contém aproximadamente 2,9 milhões de entradas e é atualizado periodicamente. A licença do conteúdo é CC BY 3.0 Unported; a atribuição pública é obrigatória. Fontes:
 - https://www.curlie.org/docs/en/rdf.html
