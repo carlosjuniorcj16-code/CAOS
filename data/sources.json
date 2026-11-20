@@ -11072,11 +11072,11 @@
       "id": 673,
       "title": "ROS 2 Documentation",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Documentação oficial do ROS 2, middleware e ferramentas para desenvolvimento de sistemas robóticos.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "Official ROS 2 documentation, middleware and tools for developing robotic systems.",
       "url": "https://docs.ros.org/en/rolling/",
-      "type": "Documentação",
-      "access": "Gratuito",
+      "type": "Documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "ROS",
         "robótica",
@@ -11084,85 +11084,90 @@
       ],
       "description_pt": "Documentação oficial do ROS 2, middleware e ferramentas para desenvolvimento de sistemas robóticos.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Documentação"
     },
     {
       "id": 674,
       "title": "Open Robotics",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Organização que mantém projetos abertos e infraestrutura para comunidades de robótica.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An organisation maintaining open projects and infrastructure for robotics communities.",
       "url": "https://www.openrobotics.org/",
-      "type": "Organização",
-      "access": "Gratuito",
+      "type": "Organisation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "robótica",
         "open source"
       ],
       "description_pt": "Organização que mantém projetos abertos e infraestrutura para comunidades de robótica.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Organização"
     },
     {
       "id": 675,
       "title": "Gazebo Sim",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Simulador de robótica para testar sensores, ambientes e sistemas físicos em simulação.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A robotics simulator for testing sensors, environments and physical systems.",
       "url": "https://gazebosim.org/",
-      "type": "Simulador",
-      "access": "Gratuito",
+      "type": "Simulator",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "simulação",
         "robótica"
       ],
       "description_pt": "Simulador de robótica para testar sensores, ambientes e sistemas físicos em simulação.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Simulador"
     },
     {
       "id": 676,
       "title": "Webots",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Plataforma de simulação de robôs móveis, sensores e sistemas autônomos.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A platform for simulating mobile robots, sensors and autonomous systems.",
       "url": "https://cyberbotics.com/",
-      "type": "Simulador",
-      "access": "Gratuito",
+      "type": "Simulator",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "simulação",
         "robótica"
       ],
       "description_pt": "Plataforma de simulação de robôs móveis, sensores e sistemas autônomos.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Simulador"
     },
     {
       "id": 677,
       "title": "MuJoCo",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Motor de física para simulação de robôs, biomecânica e controle.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A physics engine for simulation in robotics, biomechanics and control.",
       "url": "https://mujoco.org/",
       "type": "Software",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "simulação",
         "controle"
       ],
       "description_pt": "Motor de física para simulação de robôs, biomecânica e controle.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software"
     },
     {
       "id": 678,
       "title": "NVIDIA Isaac Sim",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Ambiente de simulação e desenvolvimento para robótica e IA incorporada.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A simulation and development environment for robotics and embodied AI.",
       "url": "https://developer.nvidia.com/isaac/sim",
-      "type": "Plataforma",
-      "access": "Gratuito com condições",
+      "type": "Platform",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "simulação",
         "robótica",
@@ -11170,405 +11175,429 @@
       ],
       "description_pt": "Ambiente de simulação e desenvolvimento para robótica e IA incorporada.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito com condições"
+      "access_pt": "Gratuito com condições",
+      "type_pt": "Plataforma"
     },
     {
       "id": 679,
       "title": "MoveIt",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Framework de planejamento de movimento e manipulação robótica integrado ao ROS.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A framework for robotic motion planning and manipulation integrated with ROS.",
       "url": "https://moveit.ai/",
       "type": "Framework",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "manipulação",
         "ROS"
       ],
       "description_pt": "Framework de planejamento de movimento e manipulação robótica integrado ao ROS.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Framework"
     },
     {
       "id": 680,
       "title": "Navigation2",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Stack de navegação para robôs móveis baseado em ROS 2.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A navigation stack for mobile robots built on ROS 2.",
       "url": "https://navigation.ros.org/",
-      "type": "Documentação",
-      "access": "Gratuito",
+      "type": "Documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "navegação",
         "ROS"
       ],
       "description_pt": "Stack de navegação para robôs móveis baseado em ROS 2.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Documentação"
     },
     {
       "id": 681,
       "title": "OpenCV",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Biblioteca aberta de visão computacional usada em percepção e robótica.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An open computer vision library used in perception and robotics.",
       "url": "https://opencv.org/",
       "type": "Software",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "visão computacional"
       ],
       "description_pt": "Biblioteca aberta de visão computacional usada em percepção e robótica.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software"
     },
     {
       "id": 682,
       "title": "LeRobot",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Ferramentas abertas para aprendizado de robôs, conjuntos de dados e políticas de controle.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "Open tools for robot learning, datasets and control policies.",
       "url": "https://github.com/huggingface/lerobot",
-      "type": "Repositório",
-      "access": "Gratuito",
+      "type": "Repository",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "robot learning",
         "datasets"
       ],
       "description_pt": "Ferramentas abertas para aprendizado de robôs, conjuntos de dados e políticas de controle.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Repositório"
     },
     {
       "id": 683,
       "title": "Open X-Embodiment",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Iniciativa e conjunto de dados que reúne experiências robóticas de diferentes laboratórios e plataformas.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An initiative and dataset bringing together robotic experiences from multiple laboratories and platforms.",
       "url": "https://robotics-transformer-x.github.io/",
-      "type": "Dataset e projeto",
-      "access": "Gratuito; verificar licenças por conjunto",
+      "type": "Dataset project",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "datasets",
         "robótica"
       ],
       "description_pt": "Iniciativa e conjunto de dados que reúne experiências robóticas de diferentes laboratórios e plataformas.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito; verificar licenças por conjunto"
+      "access_pt": "Gratuito; verificar licenças por conjunto",
+      "type_pt": "Dataset e projeto"
     },
     {
       "id": 684,
       "title": "DROID Dataset",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Conjunto de dados de manipulação robótica em ambientes diversos, publicado para pesquisa.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A dataset of robotic manipulation in diverse environments, released for research.",
       "url": "https://droid-dataset.github.io/",
       "type": "Dataset",
-      "access": "Gratuito; verificar licença",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "datasets",
         "manipulação"
       ],
       "description_pt": "Conjunto de dados de manipulação robótica em ambientes diversos, publicado para pesquisa.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito; verificar licença"
+      "access_pt": "Gratuito; verificar licença",
+      "type_pt": "Dataset"
     },
     {
       "id": 685,
       "title": "BridgeData V2",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Dataset de demonstrações de manipulação robótica desenvolvido por pesquisadores da UC Berkeley.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A robotic manipulation demonstration dataset developed by researchers at UC Berkeley.",
       "url": "https://rail-berkeley.github.io/bridgedata/",
       "type": "Dataset",
-      "access": "Gratuito; verificar licença",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "datasets",
         "robótica"
       ],
       "description_pt": "Dataset de demonstrações de manipulação robótica desenvolvido por pesquisadores da UC Berkeley.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito; verificar licença"
+      "access_pt": "Gratuito; verificar licença",
+      "type_pt": "Dataset"
     },
     {
       "id": 686,
       "title": "KITTI Vision Benchmark Suite",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Benchmarks e dados para visão computacional, percepção e condução autônoma.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "Benchmarks and datasets for computer vision, perception and autonomous driving.",
       "url": "https://www.cvlibs.net/datasets/kitti/",
-      "type": "Dataset e benchmark",
-      "access": "Gratuito para pesquisa; verificar termos",
+      "type": "Dataset and benchmark",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "veículos autônomos",
         "visão"
       ],
       "description_pt": "Benchmarks e dados para visão computacional, percepção e condução autônoma.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito para pesquisa; verificar termos"
+      "access_pt": "Gratuito para pesquisa; verificar termos",
+      "type_pt": "Dataset e benchmark"
     },
     {
       "id": 687,
       "title": "nuScenes",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Dataset multimodal para percepção de veículos autônomos, com sensores e anotações.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A multimodal dataset for autonomous vehicle perception, with sensor data and annotations.",
       "url": "https://www.nuscenes.org/",
       "type": "Dataset",
-      "access": "Cadastro e termos específicos",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "veículos autônomos",
         "datasets"
       ],
       "description_pt": "Dataset multimodal para percepção de veículos autônomos, com sensores e anotações.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Cadastro e termos específicos"
+      "access_pt": "Cadastro e termos específicos",
+      "type_pt": "Dataset"
     },
     {
       "id": 688,
       "title": "Waymo Open Dataset",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Conjuntos de dados para pesquisa em percepção e condução autônoma.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "Datasets for research in autonomous vehicle perception and driving.",
       "url": "https://waymo.com/open/",
       "type": "Dataset",
-      "access": "Termos de uso específicos",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "veículos autônomos",
         "datasets"
       ],
       "description_pt": "Conjuntos de dados para pesquisa em percepção e condução autônoma.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Termos de uso específicos"
+      "access_pt": "Termos de uso específicos",
+      "type_pt": "Dataset"
     },
     {
       "id": 689,
       "title": "RoboCup",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Comunidade internacional de pesquisa e competições em robótica e inteligência artificial.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An international research community and competition programme in robotics and artificial intelligence.",
       "url": "https://www.robocup.org/",
-      "type": "Comunidade e competição",
-      "access": "Informações públicas",
+      "type": "Community and competition",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "competição",
         "pesquisa"
       ],
       "description_pt": "Comunidade internacional de pesquisa e competições em robótica e inteligência artificial.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Informações públicas"
+      "access_pt": "Informações públicas",
+      "type_pt": "Comunidade e competição"
     },
     {
       "id": 690,
       "title": "IEEE Robotics and Automation Society",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Sociedade científica internacional dedicada à robótica e automação.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An international scientific society dedicated to robotics and automation.",
       "url": "https://www.ieee-ras.org/",
-      "type": "Sociedade científica",
-      "access": "Parte do conteúdo pode exigir assinatura",
+      "type": "Scientific society",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "publicações",
         "robótica"
       ],
       "description_pt": "Sociedade científica internacional dedicada à robótica e automação.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Parte do conteúdo pode exigir assinatura"
+      "access_pt": "Parte do conteúdo pode exigir assinatura",
+      "type_pt": "Sociedade científica"
     },
     {
       "id": 691,
       "title": "Robotics: Science and Systems",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Conferência internacional de pesquisa em robótica, com artigos e materiais científicos.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "An international robotics research conference with papers and scientific materials.",
       "url": "https://roboticsconference.org/",
-      "type": "Conferência",
-      "access": "Materiais públicos; condições variáveis",
+      "type": "Conference",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "publicações"
       ],
       "description_pt": "Conferência internacional de pesquisa em robótica, com artigos e materiais científicos.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Materiais públicos; condições variáveis"
+      "access_pt": "Materiais públicos; condições variáveis",
+      "type_pt": "Conferência"
     },
     {
       "id": 692,
       "title": "CoRL Conference",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Conferência dedicada ao aprendizado de robôs e à conexão entre aprendizado de máquina e sistemas físicos.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A conference focused on robot learning and the connection between machine learning and physical systems.",
       "url": "https://www.robot-learning.org/",
-      "type": "Conferência",
-      "access": "Materiais públicos; condições variáveis",
+      "type": "Conference",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "robot learning"
       ],
       "description_pt": "Conferência dedicada ao aprendizado de robôs e à conexão entre aprendizado de máquina e sistemas físicos.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Materiais públicos; condições variáveis"
+      "access_pt": "Materiais públicos; condições variáveis",
+      "type_pt": "Conferência"
     },
     {
       "id": 693,
       "title": "Michigan Robotics Projects and Datasets",
       "category": "engineering",
-      "subcategory": "Robótica e sistemas autônomos",
-      "description": "Índice universitário de projetos de código aberto e conjuntos de dados em robótica.",
+      "subcategory": "Robotics and autonomous systems",
+      "description": "A university index of open-source robotics projects and datasets.",
       "url": "https://www.robotics.umich.edu/research/projects-and-datasets/",
-      "type": "Diretório acadêmico",
-      "access": "Gratuito; licenças variam",
+      "type": "Academic directory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "universidade",
         "datasets"
       ],
       "description_pt": "Índice universitário de projetos de código aberto e conjuntos de dados em robótica.",
       "subcategory_pt": "Robótica e sistemas autônomos",
-      "access_pt": "Gratuito; licenças variam"
+      "access_pt": "Gratuito; licenças variam",
+      "type_pt": "Diretório acadêmico"
     },
     {
       "id": 694,
       "title": "arXiv: Artificial Intelligence",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Preprints recentes de pesquisa em inteligência artificial.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "Recent preprints in artificial intelligence research.",
       "url": "https://arxiv.org/list/cs.AI/recent",
-      "type": "Repositório de artigos",
-      "access": "Gratuito",
+      "type": "Paper repository",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "artigos",
         "IA"
       ],
       "description_pt": "Preprints recentes de pesquisa em inteligência artificial.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Repositório de artigos"
     },
     {
       "id": 695,
       "title": "arXiv: Machine Learning",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Preprints de aprendizado de máquina, métodos, modelos e aplicações.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "Preprints on machine learning methods, models and applications.",
       "url": "https://arxiv.org/list/cs.LG/recent",
-      "type": "Repositório de artigos",
-      "access": "Gratuito",
+      "type": "Paper repository",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "machine learning",
         "artigos"
       ],
       "description_pt": "Preprints de aprendizado de máquina, métodos, modelos e aplicações.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Repositório de artigos"
     },
     {
       "id": 696,
       "title": "OpenReview",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Plataforma pública de submissão, revisão por pares e discussão de pesquisas científicas, especialmente em IA.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A public platform for scholarly submissions, peer review and research discussion, especially in AI.",
       "url": "https://openreview.net/",
-      "type": "Plataforma acadêmica",
-      "access": "Grande parte gratuita",
+      "type": "Academic platform",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "peer review",
         "IA"
       ],
       "description_pt": "Plataforma pública de submissão, revisão por pares e discussão de pesquisas científicas, especialmente em IA.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Grande parte gratuita"
+      "access_pt": "Grande parte gratuita",
+      "type_pt": "Plataforma acadêmica"
     },
     {
       "id": 697,
       "title": "ACL Anthology",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Biblioteca de artigos e anais científicos sobre linguística computacional e processamento de linguagem natural.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A library of research papers and proceedings on computational linguistics and natural language processing.",
       "url": "https://aclanthology.org/",
-      "type": "Biblioteca científica",
-      "access": "Gratuito",
+      "type": "Research library",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "NLP",
         "linguagem"
       ],
       "description_pt": "Biblioteca de artigos e anais científicos sobre linguística computacional e processamento de linguagem natural.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Biblioteca científica"
     },
     {
       "id": 698,
       "title": "NeurIPS",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Conferência internacional de pesquisa em sistemas neurais e aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An international research conference on neural information processing and machine learning.",
       "url": "https://neurips.cc/",
-      "type": "Conferência",
-      "access": "Artigos e materiais públicos",
+      "type": "Conference",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "machine learning"
       ],
       "description_pt": "Conferência internacional de pesquisa em sistemas neurais e aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Artigos e materiais públicos"
+      "access_pt": "Artigos e materiais públicos",
+      "type_pt": "Conferência"
     },
     {
       "id": 699,
       "title": "International Conference on Machine Learning",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Conferência científica internacional dedicada ao aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An international scientific conference dedicated to machine learning.",
       "url": "https://icml.cc/",
-      "type": "Conferência",
-      "access": "Artigos e materiais públicos",
+      "type": "Conference",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "machine learning"
       ],
       "description_pt": "Conferência científica internacional dedicada ao aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Artigos e materiais públicos"
+      "access_pt": "Artigos e materiais públicos",
+      "type_pt": "Conferência"
     },
     {
       "id": 700,
       "title": "International Conference on Learning Representations",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Conferência de pesquisa sobre aprendizado de representações e aprendizado profundo.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A research conference on representation learning and deep learning.",
       "url": "https://iclr.cc/",
-      "type": "Conferência",
-      "access": "Artigos e materiais públicos",
+      "type": "Conference",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "deep learning"
       ],
       "description_pt": "Conferência de pesquisa sobre aprendizado de representações e aprendizado profundo.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Artigos e materiais públicos"
+      "access_pt": "Artigos e materiais públicos",
+      "type_pt": "Conferência"
     },
     {
       "id": 701,
       "title": "Hugging Face Hub",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Repositório colaborativo de modelos, datasets, aplicações e ferramentas de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A collaborative repository of machine learning models, datasets, applications and tools.",
       "url": "https://huggingface.co/",
-      "type": "Plataforma",
-      "access": "Acesso gratuito com recursos e termos variáveis",
+      "type": "Platform",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "modelos",
         "datasets"
       ],
       "description_pt": "Repositório colaborativo de modelos, datasets, aplicações e ferramentas de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Acesso gratuito com recursos e termos variáveis"
+      "access_pt": "Acesso gratuito com recursos e termos variáveis",
+      "type_pt": "Plataforma"
     },
     {
       "id": 702,
       "title": "Papers with Code",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Índice que relaciona artigos científicos, implementações, datasets, tarefas e resultados de benchmarks.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An index connecting research papers with implementations, datasets, tasks and benchmark results.",
       "url": "https://paperswithcode.co/",
-      "type": "Índice de pesquisa",
-      "access": "Gratuito",
+      "type": "Research index",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "artigos",
         "código",
@@ -11576,710 +11605,752 @@
       ],
       "description_pt": "Índice que relaciona artigos científicos, implementações, datasets, tarefas e resultados de benchmarks.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Índice de pesquisa"
     },
     {
       "id": 703,
       "title": "PyTorch",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Framework de código aberto para computação tensorial e desenvolvimento de modelos de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An open-source framework for tensor computation and machine learning model development.",
       "url": "https://pytorch.org/",
       "type": "Framework",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "framework",
         "deep learning"
       ],
       "description_pt": "Framework de código aberto para computação tensorial e desenvolvimento de modelos de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Framework"
     },
     {
       "id": 704,
       "title": "TensorFlow",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Ecossistema de ferramentas para construção, treinamento e implantação de modelos de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A toolkit ecosystem for building, training and deploying machine learning models.",
       "url": "https://www.tensorflow.org/",
       "type": "Framework",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "framework",
         "deep learning"
       ],
       "description_pt": "Ecossistema de ferramentas para construção, treinamento e implantação de modelos de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Framework"
     },
     {
       "id": 705,
       "title": "JAX",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Biblioteca para computação numérica acelerada, transformação de funções e pesquisa em aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A library for accelerated numerical computing, function transformations and machine learning research.",
       "url": "https://docs.jax.dev/",
-      "type": "Biblioteca",
-      "access": "Gratuito",
+      "type": "Library",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "computação",
         "machine learning"
       ],
       "description_pt": "Biblioteca para computação numérica acelerada, transformação de funções e pesquisa em aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Biblioteca"
     },
     {
       "id": 706,
       "title": "Keras",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "API de alto nível para construção e treinamento de modelos de aprendizado profundo.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A high-level API for building and training deep learning models.",
       "url": "https://keras.io/",
       "type": "Framework",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "deep learning"
       ],
       "description_pt": "API de alto nível para construção e treinamento de modelos de aprendizado profundo.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Framework"
     },
     {
       "id": 707,
       "title": "ONNX",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Formato aberto para representação e interoperabilidade de modelos de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An open format for machine learning model representation and interoperability.",
       "url": "https://onnx.ai/",
-      "type": "Padrão e ferramentas",
-      "access": "Gratuito",
+      "type": "Standard and tools",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "interoperabilidade",
         "modelos"
       ],
       "description_pt": "Formato aberto para representação e interoperabilidade de modelos de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Padrão e ferramentas"
     },
     {
       "id": 708,
       "title": "vLLM",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Motor aberto de inferência e serving de modelos de linguagem de grande escala.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An open inference and serving engine for large language models.",
       "url": "https://docs.vllm.ai/",
       "type": "Software",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "inferência",
         "LLM"
       ],
       "description_pt": "Motor aberto de inferência e serving de modelos de linguagem de grande escala.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software"
     },
     {
       "id": 709,
       "title": "llama.cpp",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Projeto aberto para execução eficiente de modelos de linguagem em diferentes hardwares.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An open project for efficient execution of language models across different hardware.",
       "url": "https://github.com/ggml-org/llama.cpp",
-      "type": "Repositório",
-      "access": "Gratuito",
+      "type": "Repository",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "inferência",
         "LLM"
       ],
       "description_pt": "Projeto aberto para execução eficiente de modelos de linguagem em diferentes hardwares.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Repositório"
     },
     {
       "id": 710,
       "title": "Ollama",
       "category": "engineering",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Ferramenta para executar e gerenciar modelos de linguagem localmente.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A tool for running and managing language models locally.",
       "url": "https://ollama.com/",
       "type": "Software",
-      "access": "Gratuito; conferir termos dos modelos",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "modelos locais",
         "LLM"
       ],
       "description_pt": "Ferramenta para executar e gerenciar modelos de linguagem localmente.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito; conferir termos dos modelos"
+      "access_pt": "Gratuito; conferir termos dos modelos",
+      "type_pt": "Software"
     },
     {
       "id": 711,
       "title": "MLCommons",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Consórcio que desenvolve benchmarks, métricas e iniciativas abertas para sistemas de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A consortium developing open benchmarks, metrics and initiatives for machine learning systems.",
       "url": "https://mlcommons.org/",
-      "type": "Consórcio e benchmarks",
-      "access": "Recursos públicos",
+      "type": "Consortium and benchmarks",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "benchmarks",
         "avaliação"
       ],
       "description_pt": "Consórcio que desenvolve benchmarks, métricas e iniciativas abertas para sistemas de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Recursos públicos"
+      "access_pt": "Recursos públicos",
+      "type_pt": "Consórcio e benchmarks"
     },
     {
       "id": 712,
       "title": "Stanford HELM",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Projeto de avaliação abrangente de modelos de linguagem e sistemas de IA.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A project for comprehensive evaluation of language models and AI systems.",
       "url": "https://crfm.stanford.edu/helm/",
       "type": "Benchmark",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "avaliação",
         "LLM"
       ],
       "description_pt": "Projeto de avaliação abrangente de modelos de linguagem e sistemas de IA.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Benchmark"
     },
     {
       "id": 713,
       "title": "Allen Institute for AI",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Instituto de pesquisa que publica modelos, ferramentas, datasets e estudos em inteligência artificial.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A research institute publishing AI models, tools, datasets and studies.",
       "url": "https://allenai.org/",
-      "type": "Instituto de pesquisa",
-      "access": "Recursos públicos; condições variáveis",
+      "type": "Research institute",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "IA"
       ],
       "description_pt": "Instituto de pesquisa que publica modelos, ferramentas, datasets e estudos em inteligência artificial.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Recursos públicos; condições variáveis"
+      "access_pt": "Recursos públicos; condições variáveis",
+      "type_pt": "Instituto de pesquisa"
     },
     {
       "id": 714,
       "title": "Berkeley Artificial Intelligence Research",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Centro de pesquisa universitário em inteligência artificial e aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A university research centre in artificial intelligence and machine learning.",
       "url": "https://bair.berkeley.edu/",
-      "type": "Laboratório acadêmico",
-      "access": "Gratuito",
+      "type": "Academic laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "universidade"
       ],
       "description_pt": "Centro de pesquisa universitário em inteligência artificial e aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Laboratório acadêmico"
     },
     {
       "id": 715,
       "title": "Stanford Institute for Human-Centered AI",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Instituto interdisciplinar de pesquisa sobre inteligência artificial e seus impactos sociais e técnicos.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An interdisciplinary institute studying artificial intelligence and its social and technical impacts.",
       "url": "https://hai.stanford.edu/",
-      "type": "Instituto de pesquisa",
-      "access": "Gratuito",
+      "type": "Research institute",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "políticas de IA"
       ],
       "description_pt": "Instituto interdisciplinar de pesquisa sobre inteligência artificial e seus impactos sociais e técnicos.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Instituto de pesquisa"
     },
     {
       "id": 716,
       "title": "MIT CSAIL",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Laboratório de ciência da computação e inteligência artificial do MIT.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "MIT's computer science and artificial intelligence research laboratory.",
       "url": "https://www.csail.mit.edu/",
-      "type": "Laboratório acadêmico",
-      "access": "Gratuito",
+      "type": "Academic laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "computação"
       ],
       "description_pt": "Laboratório de ciência da computação e inteligência artificial do MIT.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Laboratório acadêmico"
     },
     {
       "id": 717,
       "title": "Google DeepMind Research",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Publicações, projetos e resultados de pesquisa em inteligência artificial.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "Research publications, projects and results in artificial intelligence.",
       "url": "https://deepmind.google/research/",
-      "type": "Laboratório de pesquisa",
-      "access": "Conteúdo público",
+      "type": "Research laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "IA"
       ],
       "description_pt": "Publicações, projetos e resultados de pesquisa em inteligência artificial.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Conteúdo público"
+      "access_pt": "Conteúdo público",
+      "type_pt": "Laboratório de pesquisa"
     },
     {
       "id": 718,
       "title": "Google Research",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Portal de projetos, publicações e ferramentas de pesquisa do Google em computação e IA.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "A portal for Google's research projects, publications and computing tools.",
       "url": "https://research.google/",
-      "type": "Laboratório de pesquisa",
-      "access": "Conteúdo público",
+      "type": "Research laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "IA"
       ],
       "description_pt": "Portal de projetos, publicações e ferramentas de pesquisa do Google em computação e IA.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Conteúdo público"
+      "access_pt": "Conteúdo público",
+      "type_pt": "Laboratório de pesquisa"
     },
     {
       "id": 719,
       "title": "Microsoft Research",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Publicações, projetos e ferramentas de pesquisa em computação, IA e sistemas.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "Research publications, projects and tools in computing, AI and systems.",
       "url": "https://www.microsoft.com/en-us/research/",
-      "type": "Laboratório de pesquisa",
-      "access": "Conteúdo público",
+      "type": "Research laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "pesquisa",
         "computação"
       ],
       "description_pt": "Publicações, projetos e ferramentas de pesquisa em computação, IA e sistemas.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Conteúdo público"
+      "access_pt": "Conteúdo público",
+      "type_pt": "Laboratório de pesquisa"
     },
     {
       "id": 720,
       "title": "EleutherAI",
       "category": "cross",
-      "subcategory": "Pesquisa e ferramentas de inteligência artificial",
-      "description": "Organização de pesquisa aberta em modelos de linguagem, datasets e infraestrutura de aprendizado de máquina.",
+      "subcategory": "Artificial intelligence research and tools",
+      "description": "An open research organisation focused on language models, datasets and machine learning infrastructure.",
       "url": "https://www.eleuther.ai/",
-      "type": "Organização de pesquisa",
-      "access": "Recursos públicos; licenças variam",
+      "type": "Research organisation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "pesquisa aberta"
       ],
       "description_pt": "Organização de pesquisa aberta em modelos de linguagem, datasets e infraestrutura de aprendizado de máquina.",
       "subcategory_pt": "Pesquisa e ferramentas de inteligência artificial",
-      "access_pt": "Recursos públicos; licenças variam"
+      "access_pt": "Recursos públicos; licenças variam",
+      "type_pt": "Organização de pesquisa"
     },
     {
       "id": 721,
       "title": "Hugging Face Datasets",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Biblioteca e documentação para localizar, carregar, processar e compartilhar datasets.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A library and documentation for finding, loading, processing and sharing datasets.",
       "url": "https://huggingface.co/docs/datasets/",
-      "type": "Biblioteca e catálogo",
-      "access": "Gratuito; licenças por dataset",
+      "type": "Library and catalogue",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "datasets",
         "treinamento"
       ],
       "description_pt": "Biblioteca e documentação para localizar, carregar, processar e compartilhar datasets.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licenças por dataset"
+      "access_pt": "Gratuito; licenças por dataset",
+      "type_pt": "Biblioteca e catálogo"
     },
     {
       "id": 722,
       "title": "OpenML",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Plataforma aberta para compartilhar datasets, tarefas e experimentos reprodutíveis de aprendizado de máquina.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An open platform for sharing datasets, tasks and reproducible machine learning experiments.",
       "url": "https://www.openml.org/",
-      "type": "Plataforma de dados",
-      "access": "Gratuito; termos por recurso",
+      "type": "Data platform",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "datasets",
         "reprodutibilidade"
       ],
       "description_pt": "Plataforma aberta para compartilhar datasets, tarefas e experimentos reprodutíveis de aprendizado de máquina.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; termos por recurso"
+      "access_pt": "Gratuito; termos por recurso",
+      "type_pt": "Plataforma de dados"
     },
     {
       "id": 723,
       "title": "Common Crawl",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Arquivo aberto de rastreamento da web utilizado em pesquisa, análise linguística e preparação de corpora.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An open web crawl archive used in research, media analysis and corpus preparation.",
       "url": "https://commoncrawl.org/",
-      "type": "Corpus e arquivo web",
-      "access": "Gratuito; obrigações legais e licenças devem ser avaliadas",
+      "type": "Corpus and web archive",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "corpus",
         "web"
       ],
       "description_pt": "Arquivo aberto de rastreamento da web utilizado em pesquisa, análise linguística e preparação de corpora.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; obrigações legais e licenças devem ser avaliadas"
+      "access_pt": "Gratuito; obrigações legais e licenças devem ser avaliadas",
+      "type_pt": "Corpus e arquivo web"
     },
     {
       "id": 724,
       "title": "OPUS",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Coleção de corpora multilíngues e paralelos para pesquisa em tradução e processamento de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A collection of multilingual and parallel corpora for translation and language-processing research.",
       "url": "https://opus.nlpl.eu/",
-      "type": "Corpus linguístico",
-      "access": "Gratuito; licenças variam",
+      "type": "Linguistic corpus",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "multilíngue",
         "NLP"
       ],
       "description_pt": "Coleção de corpora multilíngues e paralelos para pesquisa em tradução e processamento de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licenças variam"
+      "access_pt": "Gratuito; licenças variam",
+      "type_pt": "Corpus linguístico"
     },
     {
       "id": 725,
       "title": "LAION",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Organização e projetos de datasets e ferramentas abertos para pesquisa em aprendizado de máquina multimodal.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An organisation and set of open datasets and tools for multimodal machine learning research.",
       "url": "https://laion.ai/",
-      "type": "Organização e datasets",
-      "access": "Acesso e licenças variam por conjunto",
+      "type": "Organisation and datasets",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "imagem",
         "multimodal"
       ],
       "description_pt": "Organização e projetos de datasets e ferramentas abertos para pesquisa em aprendizado de máquina multimodal.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Acesso e licenças variam por conjunto"
+      "access_pt": "Acesso e licenças variam por conjunto",
+      "type_pt": "Organização e datasets"
     },
     {
       "id": 726,
       "title": "Mozilla Common Voice",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Projeto comunitário de dados de voz para pesquisa e desenvolvimento de tecnologias de fala.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A community project providing voice data for speech technology research and development.",
       "url": "https://commonvoice.mozilla.org/",
-      "type": "Dataset de áudio",
-      "access": "Gratuito; licença por versão",
+      "type": "Audio dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "áudio",
         "fala"
       ],
       "description_pt": "Projeto comunitário de dados de voz para pesquisa e desenvolvimento de tecnologias de fala.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licença por versão"
+      "access_pt": "Gratuito; licença por versão",
+      "type_pt": "Dataset de áudio"
     },
     {
       "id": 727,
       "title": "LibriSpeech",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Corpus de fala em inglês baseado em audiolivros, amplamente utilizado em reconhecimento automático de fala.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An English speech corpus based on audiobooks, widely used in automatic speech recognition research.",
       "url": "https://www.openslr.org/12/",
-      "type": "Dataset de áudio",
-      "access": "Gratuito; conferir licença",
+      "type": "Audio dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "fala",
         "áudio"
       ],
       "description_pt": "Corpus de fala em inglês baseado em audiolivros, amplamente utilizado em reconhecimento automático de fala.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; conferir licença"
+      "access_pt": "Gratuito; conferir licença",
+      "type_pt": "Dataset de áudio"
     },
     {
       "id": 728,
       "title": "OpenSLR",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Repositório de recursos abertos para pesquisa em reconhecimento de fala e linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A repository of open resources for speech recognition and language research.",
       "url": "https://www.openslr.org/",
-      "type": "Repositório de dados",
-      "access": "Gratuito; licenças variam",
+      "type": "Data repository",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "fala",
         "linguagem"
       ],
       "description_pt": "Repositório de recursos abertos para pesquisa em reconhecimento de fala e linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licenças variam"
+      "access_pt": "Gratuito; licenças variam",
+      "type_pt": "Repositório de dados"
     },
     {
       "id": 729,
       "title": "Common Voice Datasets",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Página de acesso aos conjuntos de dados de voz do projeto Common Voice.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "Access page for the Common Voice project's speech datasets.",
       "url": "https://commonvoice.mozilla.org/en/datasets",
       "type": "Dataset",
-      "access": "Gratuito; licença informada pelo projeto",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "voz",
         "multilíngue"
       ],
       "description_pt": "Página de acesso aos conjuntos de dados de voz do projeto Common Voice.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licença informada pelo projeto"
+      "access_pt": "Gratuito; licença informada pelo projeto",
+      "type_pt": "Dataset"
     },
     {
       "id": 730,
       "title": "COCO Dataset",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Dataset de imagens, objetos, segmentação e legendas para pesquisa em visão computacional.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An image dataset with object annotations, segmentation and captions for computer vision research.",
       "url": "https://cocodataset.org/",
-      "type": "Dataset de imagens",
-      "access": "Termos e licença específicos",
+      "type": "Image dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "visão computacional"
       ],
       "description_pt": "Dataset de imagens, objetos, segmentação e legendas para pesquisa em visão computacional.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Termos e licença específicos"
+      "access_pt": "Termos e licença específicos",
+      "type_pt": "Dataset de imagens"
     },
     {
       "id": 731,
       "title": "Open Images Dataset",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Dataset de imagens anotadas para pesquisa em visão computacional.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An annotated image dataset for computer vision research.",
       "url": "https://storage.googleapis.com/openimages/web/index.html",
-      "type": "Dataset de imagens",
-      "access": "Licenças e atribuição por imagem",
+      "type": "Image dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "visão computacional"
       ],
       "description_pt": "Dataset de imagens anotadas para pesquisa em visão computacional.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Licenças e atribuição por imagem"
+      "access_pt": "Licenças e atribuição por imagem",
+      "type_pt": "Dataset de imagens"
     },
     {
       "id": 732,
       "title": "ImageNet",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Banco de imagens organizado para pesquisa em reconhecimento visual e visão computacional.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An image database organised for visual recognition and computer vision research.",
       "url": "https://www.image-net.org/",
-      "type": "Dataset de imagens",
-      "access": "Cadastro e termos de uso",
+      "type": "Image dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "visão computacional"
       ],
       "description_pt": "Banco de imagens organizado para pesquisa em reconhecimento visual e visão computacional.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Cadastro e termos de uso"
+      "access_pt": "Cadastro e termos de uso",
+      "type_pt": "Dataset de imagens"
     },
     {
       "id": 733,
       "title": "Wikimedia Dumps",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Arquivos públicos de conteúdo e metadados de projetos Wikimedia para pesquisa e preservação.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "Public content and metadata dumps from Wikimedia projects for research and preservation.",
       "url": "https://dumps.wikimedia.org/",
-      "type": "Arquivo de dados",
-      "access": "Licenças Wikimedia e termos aplicáveis",
+      "type": "Data archive",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "texto",
         "conhecimento"
       ],
       "description_pt": "Arquivos públicos de conteúdo e metadados de projetos Wikimedia para pesquisa e preservação.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Licenças Wikimedia e termos aplicáveis"
+      "access_pt": "Licenças Wikimedia e termos aplicáveis",
+      "type_pt": "Arquivo de dados"
     },
     {
       "id": 734,
       "title": "Wikipedia Database Downloads",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Instruções e referências para baixar cópias dos bancos de dados da Wikipédia.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "Instructions and references for downloading copies of Wikipedia database dumps.",
       "url": "https://en.wikipedia.org/wiki/Wikipedia:Database_download",
-      "type": "Arquivo de dados",
-      "access": "Gratuito; licença Wikimedia",
+      "type": "Data archive",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "corpus",
         "texto"
       ],
       "description_pt": "Instruções e referências para baixar cópias dos bancos de dados da Wikipédia.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; licença Wikimedia"
+      "access_pt": "Gratuito; licença Wikimedia",
+      "type_pt": "Arquivo de dados"
     },
     {
       "id": 735,
       "title": "The Pile",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Corpus de texto compilado para pesquisa em modelos de linguagem; exige atenção especial às licenças de seus componentes.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A text corpus compiled for language-model research; component-level licences require careful review.",
       "url": "https://pile.eleuther.ai/",
       "type": "Corpus",
-      "access": "Condições variam por componente",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "corpus"
       ],
       "description_pt": "Corpus de texto compilado para pesquisa em modelos de linguagem; exige atenção especial às licenças de seus componentes.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Condições variam por componente"
+      "access_pt": "Condições variam por componente",
+      "type_pt": "Corpus"
     },
     {
       "id": 736,
       "title": "FineWeb",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Dataset de texto web processado para pesquisa e treinamento de modelos de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A processed web-text dataset for language-model research and training.",
       "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
       "type": "Dataset",
-      "access": "Consultar licença e documentação da versão",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "corpus"
       ],
       "description_pt": "Dataset de texto web processado para pesquisa e treinamento de modelos de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Consultar licença e documentação da versão"
+      "access_pt": "Consultar licença e documentação da versão",
+      "type_pt": "Dataset"
     },
     {
       "id": 737,
       "title": "Dolma",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Corpus aberto de texto para pesquisa e treinamento de modelos de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An open text corpus for language-model research and training.",
       "url": "https://allenai.org/dolma",
       "type": "Corpus",
-      "access": "Consultar licença e condições de uso",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "corpus"
       ],
       "description_pt": "Corpus aberto de texto para pesquisa e treinamento de modelos de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Consultar licença e condições de uso"
+      "access_pt": "Consultar licença e condições de uso",
+      "type_pt": "Corpus"
     },
     {
       "id": 738,
       "title": "RedPajama",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Projeto de datasets abertos para pesquisa e treinamento de modelos de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An open dataset project for language-model research and training.",
       "url": "https://together.ai/blog/redpajama",
-      "type": "Projeto de dados",
-      "access": "Verificar licença por versão e componente",
+      "type": "Data project",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "corpus"
       ],
       "description_pt": "Projeto de datasets abertos para pesquisa e treinamento de modelos de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Verificar licença por versão e componente"
+      "access_pt": "Verificar licença por versão e componente",
+      "type_pt": "Projeto de dados"
     },
     {
       "id": 739,
       "title": "GLUE Benchmark",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Conjunto de tarefas e benchmarks para avaliação de compreensão de linguagem natural.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A collection of tasks and benchmarks for evaluating natural language understanding.",
       "url": "https://gluebenchmark.com/",
       "type": "Benchmark",
-      "access": "Gratuito; termos por tarefa",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "NLP",
         "avaliação"
       ],
       "description_pt": "Conjunto de tarefas e benchmarks para avaliação de compreensão de linguagem natural.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; termos por tarefa"
+      "access_pt": "Gratuito; termos por tarefa",
+      "type_pt": "Benchmark"
     },
     {
       "id": 740,
       "title": "SuperGLUE Benchmark",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Benchmark de tarefas avançadas para avaliação de sistemas de compreensão de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "An advanced benchmark suite for evaluating language understanding systems.",
       "url": "https://super.gluebenchmark.com/",
       "type": "Benchmark",
-      "access": "Gratuito; termos por tarefa",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "NLP",
         "avaliação"
       ],
       "description_pt": "Benchmark de tarefas avançadas para avaliação de sistemas de compreensão de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; termos por tarefa"
+      "access_pt": "Gratuito; termos por tarefa",
+      "type_pt": "Benchmark"
     },
     {
       "id": 741,
       "title": "BIG-bench",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Coleção colaborativa de tarefas para avaliar capacidades e limitações de modelos de linguagem.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "A collaborative collection of tasks for evaluating language-model capabilities and limitations.",
       "url": "https://github.com/google/BIG-bench",
       "type": "Benchmark",
-      "access": "Gratuito; verificar licenças de tarefas",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "LLM",
         "avaliação"
       ],
       "description_pt": "Coleção colaborativa de tarefas para avaliar capacidades e limitações de modelos de linguagem.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; verificar licenças de tarefas"
+      "access_pt": "Gratuito; verificar licenças de tarefas",
+      "type_pt": "Benchmark"
     },
     {
       "id": 742,
       "title": "WILDS Benchmark",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Benchmarks para estudar robustez e generalização de modelos em mudanças de distribuição de dados.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "Benchmarks for studying model robustness and generalisation under distribution shifts.",
       "url": "https://wilds.stanford.edu/",
       "type": "Benchmark",
-      "access": "Gratuito; condições por dataset",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "robustez",
         "avaliação"
       ],
       "description_pt": "Benchmarks para estudar robustez e generalização de modelos em mudanças de distribuição de dados.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; condições por dataset"
+      "access_pt": "Gratuito; condições por dataset",
+      "type_pt": "Benchmark"
     },
     {
       "id": 743,
       "title": "IBGE Downloads",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Repositório de arquivos, bases estatísticas, mapas e publicações do IBGE.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "IBGE repository of files, statistical datasets, maps and publications.",
       "url": "https://downloads.ibge.gov.br/",
-      "type": "Portal estatístico",
-      "access": "Gratuito; observar termos de uso",
+      "type": "Statistics portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Brasil",
         "estatística"
       ],
       "description_pt": "Repositório de arquivos, bases estatísticas, mapas e publicações do IBGE.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito; observar termos de uso"
+      "access_pt": "Gratuito; observar termos de uso",
+      "type_pt": "Portal estatístico"
     },
     {
       "id": 744,
       "title": "Banco Central do Brasil - SGS",
       "category": "cross",
-      "subcategory": "Datasets, corpora e avaliação",
-      "description": "Sistema Gerenciador de Séries Temporais com séries econômicas e financeiras do Banco Central.",
+      "subcategory": "Datasets, corpora and evaluation",
+      "description": "The Central Bank of Brazil's time-series management system for economic and financial data.",
       "url": "https://www3.bcb.gov.br/sgspub/",
-      "type": "Base de dados",
-      "access": "Gratuito",
+      "type": "Database",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Brasil",
         "finanças",
@@ -12287,34 +12358,36 @@
       ],
       "description_pt": "Sistema Gerenciador de Séries Temporais com séries econômicas e financeiras do Banco Central.",
       "subcategory_pt": "Datasets, corpora e avaliação",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Base de dados"
     },
     {
       "id": 745,
       "title": "IEEE Standards Association",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Organização de padrões técnicos para redes, eletrônica, computação e engenharia.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A standards organisation covering networking, electronics, computing and engineering.",
       "url": "https://standards.ieee.org/",
-      "type": "Padrões técnicos",
-      "access": "Parte dos padrões exige compra ou assinatura",
+      "type": "Technical standards",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "padrões",
         "eletrônica"
       ],
       "description_pt": "Organização de padrões técnicos para redes, eletrônica, computação e engenharia.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Parte dos padrões exige compra ou assinatura"
+      "access_pt": "Parte dos padrões exige compra ou assinatura",
+      "type_pt": "Padrões técnicos"
     },
     {
       "id": 746,
       "title": "3GPP",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Projeto colaborativo que desenvolve especificações técnicas para redes móveis e telecomunicações.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A collaborative project developing technical specifications for mobile networks and telecommunications.",
       "url": "https://www.3gpp.org/",
-      "type": "Organização de padrões",
-      "access": "Documentos públicos",
+      "type": "Standards organisation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "telecomunicações",
         "5G",
@@ -12322,617 +12395,654 @@
       ],
       "description_pt": "Projeto colaborativo que desenvolve especificações técnicas para redes móveis e telecomunicações.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Documentos públicos"
+      "access_pt": "Documentos públicos",
+      "type_pt": "Organização de padrões"
     },
     {
       "id": 747,
       "title": "International Telecommunication Union",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Agência das Nações Unidas responsável por temas e padrões internacionais de telecomunicações.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "The United Nations specialised agency for international telecommunications issues and standards.",
       "url": "https://www.itu.int/",
-      "type": "Organização internacional",
-      "access": "Muitos documentos públicos",
+      "type": "International organisation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "telecomunicações"
       ],
       "description_pt": "Agência das Nações Unidas responsável por temas e padrões internacionais de telecomunicações.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Muitos documentos públicos"
+      "access_pt": "Muitos documentos públicos",
+      "type_pt": "Organização internacional"
     },
     {
       "id": 748,
       "title": "RIPE NCC Internet Measurements",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Ferramentas, medições e dados públicos sobre conectividade, roteamento e infraestrutura da Internet.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Tools, measurements and public data on Internet connectivity, routing and infrastructure.",
       "url": "https://www.ripe.net/analyse/internet-measurements/",
-      "type": "Dados e ferramentas",
-      "access": "Gratuito; alguns recursos exigem conta",
+      "type": "Data and tools",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "redes",
         "Internet"
       ],
       "description_pt": "Ferramentas, medições e dados públicos sobre conectividade, roteamento e infraestrutura da Internet.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; alguns recursos exigem conta"
+      "access_pt": "Gratuito; alguns recursos exigem conta",
+      "type_pt": "Dados e ferramentas"
     },
     {
       "id": 749,
       "title": "CAIDA",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Centro de pesquisa que estuda arquitetura, comportamento e infraestrutura da Internet.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A research centre studying the architecture, behaviour and infrastructure of the Internet.",
       "url": "https://www.caida.org/",
-      "type": "Centro de pesquisa",
-      "access": "Dados com condições específicas",
+      "type": "Research centre",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "redes",
         "medição"
       ],
       "description_pt": "Centro de pesquisa que estuda arquitetura, comportamento e infraestrutura da Internet.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Dados com condições específicas"
+      "access_pt": "Dados com condições específicas",
+      "type_pt": "Centro de pesquisa"
     },
     {
       "id": 750,
       "title": "APNIC Labs",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Pesquisa e medições sobre infraestrutura, adoção e funcionamento da Internet na região Ásia-Pacífico.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Research and measurements on Internet infrastructure, adoption and performance in the Asia-Pacific region.",
       "url": "https://labs.apnic.net/",
-      "type": "Laboratório de pesquisa",
-      "access": "Conteúdo público",
+      "type": "Research laboratory",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "redes",
         "Internet"
       ],
       "description_pt": "Pesquisa e medições sobre infraestrutura, adoção e funcionamento da Internet na região Ásia-Pacífico.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Conteúdo público"
+      "access_pt": "Conteúdo público",
+      "type_pt": "Laboratório de pesquisa"
     },
     {
       "id": 751,
       "title": "ARIN",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Registro regional de endereços IP e números de sistemas autônomos para América do Norte.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "The regional Internet registry for IP addresses and autonomous system numbers in North America.",
       "url": "https://www.arin.net/",
-      "type": "Registro de Internet",
-      "access": "Consulta pública",
+      "type": "Internet registry",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "endereçamento IP",
         "redes"
       ],
       "description_pt": "Registro regional de endereços IP e números de sistemas autônomos para América do Norte.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Consulta pública"
+      "access_pt": "Consulta pública",
+      "type_pt": "Registro de Internet"
     },
     {
       "id": 752,
       "title": "LACNIC",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Registro regional de recursos de numeração da Internet para América Latina e Caribe.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "The regional Internet registry for numbering resources in Latin America and the Caribbean.",
       "url": "https://www.lacnic.net/",
-      "type": "Registro de Internet",
-      "access": "Consulta pública",
+      "type": "Internet registry",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "endereçamento IP",
         "América Latina"
       ],
       "description_pt": "Registro regional de recursos de numeração da Internet para América Latina e Caribe.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Consulta pública"
+      "access_pt": "Consulta pública",
+      "type_pt": "Registro de Internet"
     },
     {
       "id": 753,
       "title": "Cloudflare Radar",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Painel público de tendências, tráfego, segurança e conectividade da Internet.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A public dashboard of Internet trends, traffic, security and connectivity.",
       "url": "https://radar.cloudflare.com/",
-      "type": "Painel de dados",
-      "access": "Gratuito; recursos variam",
+      "type": "Data dashboard",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "redes",
         "tráfego"
       ],
       "description_pt": "Painel público de tendências, tráfego, segurança e conectividade da Internet.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; recursos variam"
+      "access_pt": "Gratuito; recursos variam",
+      "type_pt": "Painel de dados"
     },
     {
       "id": 754,
       "title": "Measurement Lab",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Projeto de medições abertas de desempenho e qualidade de redes e conexões à Internet.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open measurement project studying network and Internet connection performance and quality.",
       "url": "https://www.measurementlab.net/",
-      "type": "Plataforma de medição",
-      "access": "Dados públicos",
+      "type": "Measurement platform",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "redes",
         "desempenho"
       ],
       "description_pt": "Projeto de medições abertas de desempenho e qualidade de redes e conexões à Internet.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Dados públicos"
+      "access_pt": "Dados públicos",
+      "type_pt": "Plataforma de medição"
     },
     {
       "id": 755,
       "title": "OpenWrt",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Sistema operacional aberto para roteadores e dispositivos de rede embarcados.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open operating system for routers and embedded network devices.",
       "url": "https://openwrt.org/",
-      "type": "Software e documentação",
-      "access": "Gratuito",
+      "type": "Software and documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "roteadores",
         "firmware"
       ],
       "description_pt": "Sistema operacional aberto para roteadores e dispositivos de rede embarcados.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software e documentação"
     },
     {
       "id": 756,
       "title": "Zephyr Project",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Sistema operacional em tempo real de código aberto para dispositivos embarcados e IoT.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open-source real-time operating system for embedded devices and IoT.",
       "url": "https://www.zephyrproject.org/",
       "type": "Software",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "IoT",
         "embarcados"
       ],
       "description_pt": "Sistema operacional em tempo real de código aberto para dispositivos embarcados e IoT.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software"
     },
     {
       "id": 757,
       "title": "FreeRTOS",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Sistema operacional em tempo real para microcontroladores e dispositivos embarcados.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A real-time operating system for microcontrollers and embedded devices.",
       "url": "https://www.freertos.org/",
       "type": "Software",
-      "access": "Gratuito; licença específica",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "microcontroladores",
         "IoT"
       ],
       "description_pt": "Sistema operacional em tempo real para microcontroladores e dispositivos embarcados.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; licença específica"
+      "access_pt": "Gratuito; licença específica",
+      "type_pt": "Software"
     },
     {
       "id": 758,
       "title": "Linux Kernel",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Portal oficial do kernel Linux, seu código-fonte e documentação de desenvolvimento.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "The official portal for the Linux kernel source code and development documentation.",
       "url": "https://www.kernel.org/",
-      "type": "Projeto de software",
-      "access": "Gratuito",
+      "type": "Software project",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "sistemas operacionais"
       ],
       "description_pt": "Portal oficial do kernel Linux, seu código-fonte e documentação de desenvolvimento.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Projeto de software"
     },
     {
       "id": 759,
       "title": "Yocto Project",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Ferramentas e documentação para construir distribuições Linux personalizadas para sistemas embarcados.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Tools and documentation for building custom Linux distributions for embedded systems.",
       "url": "https://www.yoctoproject.org/",
-      "type": "Projeto e ferramentas",
-      "access": "Gratuito",
+      "type": "Project and tools",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Linux",
         "embarcados"
       ],
       "description_pt": "Ferramentas e documentação para construir distribuições Linux personalizadas para sistemas embarcados.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Projeto e ferramentas"
     },
     {
       "id": 760,
       "title": "RISC-V International",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Organização que mantém a arquitetura aberta de conjunto de instruções RISC-V.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "The organisation maintaining the open RISC-V instruction set architecture.",
       "url": "https://riscv.org/",
-      "type": "Padrão e comunidade",
-      "access": "Especificações públicas; condições variam",
+      "type": "Standard and community",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "processadores",
         "arquitetura"
       ],
       "description_pt": "Organização que mantém a arquitetura aberta de conjunto de instruções RISC-V.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Especificações públicas; condições variam"
+      "access_pt": "Especificações públicas; condições variam",
+      "type_pt": "Padrão e comunidade"
     },
     {
       "id": 761,
       "title": "Open Compute Project",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Comunidade que desenvolve projetos abertos de hardware para infraestrutura de computação e data centers.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A community developing open hardware designs for computing infrastructure and data centres.",
       "url": "https://www.opencompute.org/",
-      "type": "Comunidade técnica",
-      "access": "Projetos públicos",
+      "type": "Technical community",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "hardware",
         "data centers"
       ],
       "description_pt": "Comunidade que desenvolve projetos abertos de hardware para infraestrutura de computação e data centers.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Projetos públicos"
+      "access_pt": "Projetos públicos",
+      "type_pt": "Comunidade técnica"
     },
     {
       "id": 762,
       "title": "Arduino Documentation",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Documentação oficial de placas, microcontroladores, bibliotecas e ferramentas Arduino.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Official documentation for Arduino boards, microcontrollers, libraries and tools.",
       "url": "https://docs.arduino.cc/",
-      "type": "Documentação",
-      "access": "Gratuito",
+      "type": "Documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "eletrônica",
         "microcontroladores"
       ],
       "description_pt": "Documentação oficial de placas, microcontroladores, bibliotecas e ferramentas Arduino.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Documentação"
     },
     {
       "id": 763,
       "title": "Raspberry Pi Documentation",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Documentação técnica de computadores de placa única, acessórios e sistemas Raspberry Pi.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Technical documentation for Raspberry Pi single-board computers, accessories and systems.",
       "url": "https://www.raspberrypi.com/documentation/",
-      "type": "Documentação",
-      "access": "Gratuito",
+      "type": "Documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "computadores",
         "hardware"
       ],
       "description_pt": "Documentação técnica de computadores de placa única, acessórios e sistemas Raspberry Pi.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Documentação"
     },
     {
       "id": 764,
       "title": "ESP-IDF Programming Guide",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Documentação do framework oficial para desenvolvimento em microcontroladores ESP32.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Official framework documentation for development on ESP32 microcontrollers.",
       "url": "https://docs.espressif.com/projects/esp-idf/en/latest/",
-      "type": "Documentação",
-      "access": "Gratuito",
+      "type": "Documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "microcontroladores",
         "IoT"
       ],
       "description_pt": "Documentação do framework oficial para desenvolvimento em microcontroladores ESP32.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Documentação"
     },
     {
       "id": 765,
       "title": "Android Open Source Project",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Código, arquitetura e documentação do projeto aberto Android.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Source code, architecture and documentation for the open Android project.",
       "url": "https://source.android.com/",
-      "type": "Projeto e documentação",
-      "access": "Gratuito; licenças por componente",
+      "type": "Project and documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Android",
         "dispositivos móveis"
       ],
       "description_pt": "Código, arquitetura e documentação do projeto aberto Android.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; licenças por componente"
+      "access_pt": "Gratuito; licenças por componente",
+      "type_pt": "Projeto e documentação"
     },
     {
       "id": 766,
       "title": "LineageOS",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Sistema operacional móvel de código aberto baseado em Android, com documentação e suporte comunitário.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open-source mobile operating system based on Android, with documentation and community support.",
       "url": "https://lineageos.org/",
-      "type": "Projeto de software",
-      "access": "Gratuito; compatibilidade por dispositivo",
+      "type": "Software project",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Android",
         "smartphones"
       ],
       "description_pt": "Sistema operacional móvel de código aberto baseado em Android, com documentação e suporte comunitário.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; compatibilidade por dispositivo"
+      "access_pt": "Gratuito; compatibilidade por dispositivo",
+      "type_pt": "Projeto de software"
     },
     {
       "id": 767,
       "title": "OpenROAD Project",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Ferramentas abertas para automação de projeto eletrônico e implementação física de circuitos integrados.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Open tools for electronic design automation and physical implementation of integrated circuits.",
       "url": "https://theopenroadproject.org/",
-      "type": "Projeto de software",
-      "access": "Gratuito",
+      "type": "Software project",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "semicondutores",
         "EDA"
       ],
       "description_pt": "Ferramentas abertas para automação de projeto eletrônico e implementação física de circuitos integrados.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Projeto de software"
     },
     {
       "id": 768,
       "title": "SkyWater Open Source PDK",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Kit aberto de projeto de processo para pesquisa e desenvolvimento de circuitos integrados.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open process design kit for integrated-circuit research and development.",
       "url": "https://skywater-pdk.readthedocs.io/",
-      "type": "Documentação técnica",
-      "access": "Gratuito; termos específicos",
+      "type": "Technical documentation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "semicondutores",
         "chip design"
       ],
       "description_pt": "Kit aberto de projeto de processo para pesquisa e desenvolvimento de circuitos integrados.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; termos específicos"
+      "access_pt": "Gratuito; termos específicos",
+      "type_pt": "Documentação técnica"
     },
     {
       "id": 769,
       "title": "Federal Reserve Economic Data",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Base de séries temporais econômicas mantida pelo Federal Reserve Bank of St. Louis.",
+      "subcategory": "Economic and financial data",
+      "description": "An economic time-series database maintained by the Federal Reserve Bank of St. Louis.",
       "url": "https://fred.stlouisfed.org/",
-      "type": "Base de dados econômica",
-      "access": "Gratuito; termos por série",
+      "type": "Economic database",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "finanças",
         "economia"
       ],
       "description_pt": "Base de séries temporais econômicas mantida pelo Federal Reserve Bank of St. Louis.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Gratuito; termos por série"
+      "access_pt": "Gratuito; termos por série",
+      "type_pt": "Base de dados econômica"
     },
     {
       "id": 770,
       "title": "European Central Bank Data Portal",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Portal de estatísticas monetárias, financeiras e econômicas do Banco Central Europeu.",
+      "subcategory": "Economic and financial data",
+      "description": "The European Central Bank's portal for monetary, financial and economic statistics.",
       "url": "https://data.ecb.europa.eu/",
-      "type": "Portal estatístico",
-      "access": "Gratuito",
+      "type": "Statistics portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "finanças",
         "economia"
       ],
       "description_pt": "Portal de estatísticas monetárias, financeiras e econômicas do Banco Central Europeu.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Portal estatístico"
     },
     {
       "id": 771,
       "title": "Bank for International Settlements Statistics",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Estatísticas internacionais sobre bancos, crédito, mercados financeiros e economia global.",
+      "subcategory": "Economic and financial data",
+      "description": "International statistics on banking, credit, financial markets and the global economy.",
       "url": "https://www.bis.org/statistics/",
-      "type": "Portal estatístico",
-      "access": "Gratuito",
+      "type": "Statistics portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "finanças",
         "economia"
       ],
       "description_pt": "Estatísticas internacionais sobre bancos, crédito, mercados financeiros e economia global.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Portal estatístico"
     },
     {
       "id": 772,
       "title": "CVM Dados Abertos",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Dados públicos do mercado de capitais brasileiro, fundos, companhias e participantes regulados.",
+      "subcategory": "Economic and financial data",
+      "description": "Public data on Brazil's capital markets, funds, companies and regulated participants.",
       "url": "https://dados.cvm.gov.br/",
-      "type": "Portal de dados financeiros",
-      "access": "Gratuito",
+      "type": "Financial data portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Brasil",
         "mercado de capitais"
       ],
       "description_pt": "Dados públicos do mercado de capitais brasileiro, fundos, companhias e participantes regulados.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Portal de dados financeiros"
     },
     {
       "id": 773,
       "title": "B3 Market Data",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Portal de informações e dados de mercado da bolsa brasileira, com condições de acesso por produto.",
+      "subcategory": "Economic and financial data",
+      "description": "Market information and data from Brazil's stock exchange, with access conditions varying by product.",
       "url": "https://www.b3.com.br/pt_br/market-data-e-indices/",
-      "type": "Portal financeiro",
-      "access": "Parte dos dados é paga ou sujeita a cadastro",
+      "type": "Financial portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Brasil",
         "mercados"
       ],
       "description_pt": "Portal de informações e dados de mercado da bolsa brasileira, com condições de acesso por produto.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Parte dos dados é paga ou sujeita a cadastro"
+      "access_pt": "Parte dos dados é paga ou sujeita a cadastro",
+      "type_pt": "Portal financeiro"
     },
     {
       "id": 774,
       "title": "Tesouro Transparente",
       "category": "social",
-      "subcategory": "Dados econômicos e financeiros",
-      "description": "Dados e informações públicas sobre contas, dívida e gestão fiscal do governo brasileiro.",
+      "subcategory": "Economic and financial data",
+      "description": "Public data and information on government accounts, debt and fiscal management in Brazil.",
       "url": "https://www.tesourotransparente.gov.br/",
-      "type": "Portal de dados fiscais",
-      "access": "Gratuito",
+      "type": "Fiscal data portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "Brasil",
         "finanças públicas"
       ],
       "description_pt": "Dados e informações públicas sobre contas, dívida e gestão fiscal do governo brasileiro.",
       "subcategory_pt": "Dados econômicos e financeiros",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Portal de dados fiscais"
     },
     {
       "id": 775,
       "title": "MobilityData",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Organização que mantém padrões abertos para dados de transporte público e mobilidade.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An organisation maintaining open standards for public transport and mobility data.",
       "url": "https://mobilitydata.org/",
-      "type": "Organização técnica",
-      "access": "Recursos públicos",
+      "type": "Technical organisation",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "transporte",
         "GTFS"
       ],
       "description_pt": "Organização que mantém padrões abertos para dados de transporte público e mobilidade.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Recursos públicos"
+      "access_pt": "Recursos públicos",
+      "type_pt": "Organização técnica"
     },
     {
       "id": 776,
       "title": "GTFS",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Especificação aberta para publicação de dados de horários, rotas e informações de transporte público.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open specification for publishing public transport schedules, routes and related information.",
       "url": "https://gtfs.org/",
-      "type": "Padrão de dados",
-      "access": "Gratuito",
+      "type": "Data standard",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "transporte",
         "dados"
       ],
       "description_pt": "Especificação aberta para publicação de dados de horários, rotas e informações de transporte público.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Padrão de dados"
     },
     {
       "id": 777,
       "title": "OpenTripPlanner",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Planejador multimodal de viagens baseado em dados abertos de transporte e mapas.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A multimodal trip planner based on open transport and map data.",
       "url": "https://www.opentripplanner.org/",
       "type": "Software",
-      "access": "Gratuito",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "mobilidade",
         "logística"
       ],
       "description_pt": "Planejador multimodal de viagens baseado em dados abertos de transporte e mapas.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Software"
     },
     {
       "id": 778,
       "title": "OpenRailwayMap",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Mapa colaborativo de infraestrutura ferroviária baseado em dados do OpenStreetMap.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A collaborative map of railway infrastructure based on OpenStreetMap data.",
       "url": "https://www.openrailwaymap.org/",
-      "type": "Mapa",
-      "access": "Gratuito; atribuição e ODbL",
+      "type": "Map",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "ferrovias",
         "logística"
       ],
       "description_pt": "Mapa colaborativo de infraestrutura ferroviária baseado em dados do OpenStreetMap.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; atribuição e ODbL"
+      "access_pt": "Gratuito; atribuição e ODbL",
+      "type_pt": "Mapa"
     },
     {
       "id": 779,
       "title": "OpenSky Network",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Rede de pesquisa que coleta e disponibiliza dados de tráfego aéreo para fins científicos e educacionais.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "A research network collecting and providing air traffic data for scientific and educational use.",
       "url": "https://opensky-network.org/",
-      "type": "Dados de aviação",
-      "access": "Acesso e uso sujeitos a termos",
+      "type": "Aviation data",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "aviação",
         "transporte"
       ],
       "description_pt": "Rede de pesquisa que coleta e disponibiliza dados de tráfego aéreo para fins científicos e educacionais.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Acesso e uso sujeitos a termos"
+      "access_pt": "Acesso e uso sujeitos a termos",
+      "type_pt": "Dados de aviação"
     },
     {
       "id": 780,
       "title": "OurAirports",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Conjunto de dados abertos sobre aeroportos, pistas e instalações aeronáuticas.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An open dataset of airports, runways and aviation facilities.",
       "url": "https://ourairports.com/data/",
       "type": "Dataset",
-      "access": "Gratuito; verificar termos",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "aviação",
         "dados"
       ],
       "description_pt": "Conjunto de dados abertos sobre aeroportos, pistas e instalações aeronáuticas.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito; verificar termos"
+      "access_pt": "Gratuito; verificar termos",
+      "type_pt": "Dataset"
     },
     {
       "id": 781,
       "title": "U.S. Bureau of Transportation Statistics",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Estatísticas e bases de dados sobre transporte, mobilidade, infraestrutura e logística nos Estados Unidos.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "Statistics and datasets on transport, mobility, infrastructure and logistics in the United States.",
       "url": "https://www.bts.gov/",
-      "type": "Portal estatístico",
-      "access": "Gratuito",
+      "type": "Statistics portal",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "transporte",
         "logística"
       ],
       "description_pt": "Estatísticas e bases de dados sobre transporte, mobilidade, infraestrutura e logística nos Estados Unidos.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Gratuito"
+      "access_pt": "Gratuito",
+      "type_pt": "Portal estatístico"
     },
     {
       "id": 782,
       "title": "Open Logistics Foundation",
       "category": "engineering",
-      "subcategory": "Infraestrutura tecnológica, redes e logística",
-      "description": "Iniciativa de desenvolvimento colaborativo de padrões e software aberto para logística.",
+      "subcategory": "Technology infrastructure, networks and logistics",
+      "description": "An initiative for collaborative development of open standards and software for logistics.",
       "url": "https://openlogisticsfoundation.org/",
-      "type": "Fundação e projetos",
-      "access": "Recursos públicos",
+      "type": "Foundation and projects",
+      "access": "See the source for access and reuse conditions",
       "tags": [
         "logística",
         "software"
       ],
       "description_pt": "Iniciativa de desenvolvimento colaborativo de padrões e software aberto para logística.",
       "subcategory_pt": "Infraestrutura tecnológica, redes e logística",
-      "access_pt": "Recursos públicos"
+      "access_pt": "Recursos públicos",
+      "type_pt": "Fundação e projetos"
     },
     {
       "id": 783,
@@ -12949,7 +13059,8 @@
       ],
       "description_pt": "Dados abertos conectados sobre obras, autores, assuntos e coleções da Biblioteca Nacional da França.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 784,
@@ -12966,7 +13077,8 @@
       ],
       "description_pt": "Catálogos de pesquisa, bases de dados e recursos de acervo das instituições Getty.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Portal"
     },
     {
       "id": 785,
@@ -12983,7 +13095,8 @@
       ],
       "description_pt": "Coleção online de obras de arte com imagens, registros de objetos e informações de pesquisa.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 786,
@@ -13000,7 +13113,8 @@
       ],
       "description_pt": "Política de acesso aberto e imagens e metadados para download da National Gallery of Art.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 787,
@@ -13017,7 +13131,8 @@
       ],
       "description_pt": "Acervo de museu pesquisável, com registros e imagens em acesso aberto para muitos objetos.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 788,
@@ -13034,7 +13149,8 @@
       ],
       "description_pt": "Registros de acervo e recursos de pesquisa dos Harvard Art Museums.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 789,
@@ -13051,7 +13167,8 @@
       ],
       "description_pt": "Fotografias, mapas, manuscritos, gravuras e outros materiais digitalizados da New York Public Library.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 790,
@@ -13068,7 +13185,8 @@
       ],
       "description_pt": "Arquivo oficial do Reino Unido para registros governamentais e documentos históricos.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 791,
@@ -13085,7 +13203,8 @@
       ],
       "description_pt": "Registros governamentais, fotografias, mapas e coleções históricas da Austrália.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 792,
@@ -13102,7 +13221,8 @@
       ],
       "description_pt": "Manuscritos, livros raros, mapas e outros materiais históricos digitalizados das Bodleian Libraries de Oxford.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 793,
@@ -13119,7 +13239,8 @@
       ],
       "description_pt": "Manuscritos, livros raros e coleções arquivísticas digitalizadas da Universidade de Cambridge.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 794,
@@ -13136,7 +13257,8 @@
       ],
       "description_pt": "Registros históricos, mapas, fotografias e manuscritos digitalizados sobre o Golfo e regiões próximas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 795,
@@ -13153,7 +13275,8 @@
       ],
       "description_pt": "Livros, periódicos, mapas, fotografias e documentos históricos digitalizados da Biblioteca Nacional da Dieta do Japão.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 796,
@@ -13170,7 +13293,8 @@
       ],
       "description_pt": "Grande coleção digital de preservação e empréstimo de livros e materiais impressos; o acesso varia por item.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 797,
@@ -13187,7 +13311,8 @@
       ],
       "description_pt": "Ebooks em domínio público cuidadosamente formatados e revisados, com edições digitais consistentes.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 798,
@@ -13204,7 +13329,8 @@
       ],
       "description_pt": "Biblioteca multilíngue e gratuita de textos-fonte, documentos históricos e obras em domínio público.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 799,
@@ -13221,7 +13347,8 @@
       ],
       "description_pt": "Biblioteca digital de textos clássicos, traduções, ferramentas linguísticas e materiais sobre o mundo antigo.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 800,
@@ -13238,7 +13365,8 @@
       ],
       "description_pt": "Cursos gratuitos e materiais de aprendizagem da The Open University.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 801,
@@ -13255,7 +13383,8 @@
       ],
       "description_pt": "Cursos online gratuitos e materiais educacionais abertos em diversas áreas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 802,
@@ -13272,7 +13401,8 @@
       ],
       "description_pt": "Livros didáticos abertos e materiais colaborativos de ciências, engenharia, humanidades e outras áreas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 803,
@@ -13289,7 +13419,8 @@
       ],
       "description_pt": "Ferramenta de descoberta de recursos educacionais abertos, livros didáticos e materiais de cursos.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Portal"
     },
     {
       "id": 804,
@@ -13306,7 +13437,8 @@
       ],
       "description_pt": "Repositório de materiais abertos de formação profissional e educação para o trabalho.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 805,
@@ -13323,7 +13455,8 @@
       ],
       "description_pt": "Comunidade colaborativa de aprendizagem com cursos, projetos e recursos educacionais abertos.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 806,
@@ -13340,7 +13473,8 @@
       ],
       "description_pt": "Base de dados de sentenças, decisões e outros documentos jurídicos da Corte Europeia de Direitos Humanos.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 807,
@@ -13357,7 +13491,8 @@
       ],
       "description_pt": "Pesquisa oficial de jurisprudência e informações do Tribunal de Justiça da União Europeia.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 808,
@@ -13374,7 +13509,8 @@
       ],
       "description_pt": "Portal gratuito de informação jurídica com legislação, decisões e materiais de várias jurisdições.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 809,
@@ -13391,7 +13527,8 @@
       ],
       "description_pt": "Plataforma de acesso gratuito à legislação e às decisões judiciais do Canadá.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 810,
@@ -13408,7 +13545,8 @@
       ],
       "description_pt": "Base gratuita de jurisprudência, legislação e materiais jurídicos britânicos e irlandeses.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 811,
@@ -13425,7 +13563,8 @@
       ],
       "description_pt": "Serviço gratuito de pesquisa jurídica para materiais legais australianos e regionais.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 812,
@@ -13442,7 +13581,8 @@
       ],
       "description_pt": "Fonte oficial online da legislação britânica, em versões consolidadas e originais.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 813,
@@ -13459,7 +13599,8 @@
       ],
       "description_pt": "Fonte pública permanente de publicações oficiais do governo federal dos Estados Unidos.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 814,
@@ -13476,7 +13617,8 @@
       ],
       "description_pt": "Coleção pesquisável de decisões judiciais, sustentações orais e dados jurídicos dos Estados Unidos.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 815,
@@ -13493,7 +13635,8 @@
       ],
       "description_pt": "Tratados, direito internacional humanitário consuetudinário e materiais nacionais de implementação do CICV.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 816,
@@ -13510,7 +13653,8 @@
       ],
       "description_pt": "Base global de legislação, tratados e decisões jurídicas sobre propriedade intelectual.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 817,
@@ -13527,7 +13671,8 @@
       ],
       "description_pt": "Base de pesquisa de materiais, decisões e documentos de direito penal internacional.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 818,
@@ -13544,7 +13689,8 @@
       ],
       "description_pt": "Base de dados fonológica comparativa que documenta sons da fala em diferentes línguas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 819,
@@ -13561,7 +13707,8 @@
       ],
       "description_pt": "Arquivo digital que preserva documentação linguística, gravações e materiais de comunidades de línguas ameaçadas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 820,
@@ -13578,7 +13725,8 @@
       ],
       "description_pt": "Arquivo digital de materiais de documentação de línguas e culturas, especialmente da região do Pacífico.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 821,
@@ -13595,7 +13743,8 @@
       ],
       "description_pt": "Portal de descoberta de recursos linguísticos e coleções arquivísticas de todo o mundo.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 822,
@@ -13612,7 +13761,8 @@
       ],
       "description_pt": "Base de pesquisa de transcrições de fala infantil e ferramentas para estudos do desenvolvimento da linguagem.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 823,
@@ -13629,7 +13779,8 @@
       ],
       "description_pt": "Repositório de corpora de linguagem falada e ferramentas para estudar comunicação e interação.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 824,
@@ -13646,7 +13797,8 @@
       ],
       "description_pt": "Coleção multilíngue de corpora textuais e ferramentas para pesquisa em linguística de corpus.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 825,
@@ -13663,7 +13815,8 @@
       ],
       "description_pt": "Base de dados multilíngue e colaborativa de frases de exemplo e traduções.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 826,
@@ -13680,7 +13833,8 @@
       ],
       "description_pt": "Dicionário colaborativo multilíngue com palavras, significados, pronúncias e etimologias.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 827,
@@ -13697,7 +13851,8 @@
       ],
       "description_pt": "Plataforma global de ciência cidadã e fonte de dados sobre observações e distribuição de aves.",
       "subcategory_pt": "Ciências naturais",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 828,
@@ -13714,7 +13869,8 @@
       ],
       "description_pt": "Dados batimétricos globais e produtos que descrevem a forma do fundo oceânico.",
       "subcategory_pt": "Ciências naturais",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 829,
@@ -13731,7 +13887,8 @@
       ],
       "description_pt": "Serviço de busca e download de imagens de satélite, fotografias aéreas e dados de observação da Terra.",
       "subcategory_pt": "Ciências naturais",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 830,
@@ -13748,7 +13905,8 @@
       ],
       "description_pt": "Software de código aberto e rede comunitária para publicar e preservar dados de pesquisa.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 831,
@@ -13765,7 +13923,8 @@
       ],
       "description_pt": "Arquivo virtual internacional de autoridade que conecta registros de nomes de bibliotecas do mundo todo.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 832,
@@ -13782,7 +13941,8 @@
       ],
       "description_pt": "Sistema de identificação de identidades públicas de colaboradores e organizações em áreas criativas e acadêmicas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 833,
@@ -13799,7 +13959,8 @@
       ],
       "description_pt": "Biblioteca colaborativa de partituras em domínio público e disponíveis gratuitamente, conforme as regras locais de direitos autorais.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 834,
@@ -13816,7 +13977,8 @@
       ],
       "description_pt": "Recurso sem fins lucrativos com gravações, partituras e materiais educacionais de música clássica.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 835,
@@ -13833,7 +13995,8 @@
       ],
       "description_pt": "Gravações sonoras históricas disponibilizadas online pela Library of Congress.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 836,
@@ -13850,7 +14013,8 @@
       ],
       "description_pt": "Catálogo e recurso educacional de gravações musicais e faladas de diversas tradições culturais.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 837,
@@ -13867,7 +14031,8 @@
       ],
       "description_pt": "Arquivo independente de arte de vanguarda, poesia, cinema, som e cultura experimental.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 838,
@@ -13884,7 +14049,8 @@
       ],
       "description_pt": "Arquivo nacional de cinema da Espanha e portal para recursos de preservação cinematográfica e patrimônio audiovisual.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 839,
@@ -13901,7 +14067,8 @@
       ],
       "description_pt": "Arquivo do British Film Institute dedicado ao patrimônio cinematográfico e televisivo e à preservação audiovisual.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 840,
@@ -13918,7 +14085,8 @@
       ],
       "description_pt": "Coleção digitalizada de periódicos, livros e materiais históricos sobre cinema e radiodifusão.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 841,
@@ -13935,7 +14103,8 @@
       ],
       "description_pt": "Coleção de materiais de patrimônio cultural fornecidos por bibliotecas e instituições de todo o mundo.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 842,
@@ -13952,7 +14121,8 @@
       ],
       "description_pt": "Publicações, relatórios, documentos e materiais de pesquisa da UNESCO em educação, ciência e cultura.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 843,
@@ -13969,7 +14139,8 @@
       ],
       "description_pt": "Dados e relatórios da Matriz de Rastreamento de Deslocamento sobre mobilidade humana e deslocamento em contextos de crise.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 844,
@@ -13986,7 +14157,8 @@
       ],
       "description_pt": "Estatísticas oficiais da Organização Mundial do Comércio sobre comércio de bens, serviços e indicadores relacionados.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 845,
@@ -14003,7 +14175,8 @@
       ],
       "description_pt": "Padrões estatísticos internacionais, bases de dados e indicadores mantidos pela Divisão de Estatística das Nações Unidas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 846,
@@ -14020,7 +14193,8 @@
       ],
       "description_pt": "Materiais de referência, padrões e recursos do Conselho Internacional de Museus.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 847,
@@ -14037,7 +14211,8 @@
       ],
       "description_pt": "Vocabulários estruturados para arte, arquitetura, patrimônio cultural e áreas de pesquisa relacionadas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 848,
@@ -14054,7 +14229,8 @@
       ],
       "description_pt": "Vocabulário estruturado multilíngue para descrever arte, arquitetura, conservação e cultura material.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 849,
@@ -14071,7 +14247,8 @@
       ],
       "description_pt": "Vocabulário estruturado de nomes geográficos e lugares usado na documentação do patrimônio cultural.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 850,
@@ -14088,7 +14265,8 @@
       ],
       "description_pt": "Arquivo de autoridade estruturado para artistas e outros criadores na pesquisa de arte e patrimônio cultural.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 851,
@@ -14105,7 +14283,8 @@
       ],
       "description_pt": "Livros históricos, manuscritos, filmes e imagens digitalizados relacionados à medicina e à saúde pública.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 852,
@@ -14122,7 +14301,8 @@
       ],
       "description_pt": "Coleção gratuita de museu e biblioteca que explora saúde, medicina, vida e experiência humana.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 853,
@@ -14139,7 +14319,8 @@
       ],
       "description_pt": "Coleção pesquisável de livros e relatórios biomédicos, clínicos e relacionados à saúde.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Coleção digital"
     },
     {
       "id": 854,
@@ -14156,7 +14337,8 @@
       ],
       "description_pt": "Pesquisas, revisões de evidências, indicadores de qualidade e recursos de melhoria dos serviços de saúde da AHRQ.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 855,
@@ -14173,7 +14355,8 @@
       ],
       "description_pt": "Rede internacional e centro de recursos para organizações de saúde pública e informações de políticas.",
       "subcategory_pt": "Saúde e medicina",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 856,
@@ -14190,7 +14373,8 @@
       ],
       "description_pt": "Apresentação da infraestrutura global de compartilhamento de dados de ocorrência de biodiversidade.",
       "subcategory_pt": "Ciências naturais",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 857,
@@ -14207,7 +14391,8 @@
       ],
       "description_pt": "Catálogo pesquisável de periódicos acadêmicos, repositórios e outros canais de publicação indexados pelo OpenAlex.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 858,
@@ -14224,7 +14409,8 @@
       ],
       "description_pt": "Serviço de busca e descoberta de livros e trechos de livros de editoras e bibliotecas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 859,
@@ -14241,7 +14427,8 @@
       ],
       "description_pt": "Catálogo de livros, manuscritos, imagens, mapas e outros itens da Biblioteca Nacional da Austrália.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 860,
@@ -14258,7 +14445,8 @@
       ],
       "description_pt": "Bibliografia nacional e catálogo das coleções da Biblioteca Nacional da França.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 861,
@@ -14275,7 +14463,8 @@
       ],
       "description_pt": "Catálogo de publicações e dados de autoridade mantido pela Biblioteca Nacional da Alemanha.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 862,
@@ -14292,7 +14481,8 @@
       ],
       "description_pt": "Livros, manuscritos, mapas, periódicos e coleções históricas digitalizadas da Biblioteca Nacional de Portugal.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 863,
@@ -14309,7 +14499,8 @@
       ],
       "description_pt": "Plataforma canadense de periódicos acadêmicos, livros e publicações culturais, especialmente em humanidades e ciências sociais.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 864,
@@ -14326,7 +14517,8 @@
       ],
       "description_pt": "API pública para consultar metadados de publicações acadêmicas registrados no Crossref.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 865,
@@ -14343,7 +14535,8 @@
       ],
       "description_pt": "Documentação para acessar registros públicos de pesquisadores e identificadores persistentes pelo ORCID.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 866,
@@ -14360,7 +14553,8 @@
       ],
       "description_pt": "Mecanismo de busca de imagens e áudios com licenças abertas em diversas coleções públicas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 867,
@@ -14377,7 +14571,8 @@
       ],
       "description_pt": "Fotografias históricas e coleções visuais compartilhadas por instituições culturais; os direitos variam por item.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 868,
@@ -14394,7 +14589,8 @@
       ],
       "description_pt": "Documentação, APIs e recursos profissionais para dados de patrimônio cultural e coleções digitais.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 869,
@@ -14411,7 +14607,8 @@
       ],
       "description_pt": "Orientações, padrões e recursos para preservar informação digital e patrimônio cultural.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 870,
@@ -14428,7 +14625,8 @@
       ],
       "description_pt": "Manual prático sobre padrões, fluxos de trabalho e boas práticas de preservação digital.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 871,
@@ -14445,7 +14643,8 @@
       ],
       "description_pt": "Registro de repositórios de pesquisa em acesso aberto e de seu desenvolvimento no mundo.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 872,
@@ -14462,7 +14661,8 @@
       ],
       "description_pt": "Registro de políticas institucionais e de financiadores que apoiam resultados de pesquisa em acesso aberto.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 873,
@@ -14479,7 +14679,8 @@
       ],
       "description_pt": "Diretrizes de interoperabilidade para repositórios, provedores de dados de pesquisa e sistemas de comunicação científica.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 874,
@@ -14496,7 +14697,8 @@
       ],
       "description_pt": "Diretório de descoberta de periódicos de acesso aberto e recursos de informação científica.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Portal"
     },
     {
       "id": 875,
@@ -14513,7 +14715,8 @@
       ],
       "description_pt": "Painéis de monitoramento e indicadores de resultados de pesquisa, ciência aberta e projetos financiados.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 876,
@@ -14530,7 +14733,8 @@
       ],
       "description_pt": "Recurso de autoridade e descoberta que conecta autores, criadores e obras por meio de catálogos de bibliotecas.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 877,
@@ -14547,7 +14751,8 @@
       ],
       "description_pt": "Documentação para consultar registros de livros, edições, autores e dados bibliográficos relacionados.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 878,
@@ -14564,7 +14769,8 @@
       ],
       "description_pt": "Ampla coleção de textos, áudios, vídeos, softwares e arquivos da web digitalizados; direitos e acesso variam por item.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 879,
@@ -14581,7 +14787,8 @@
       ],
       "description_pt": "Serviço de indexação para explorar arquivos de rastreamento da web coletados pelo projeto Common Crawl.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 880,
@@ -14598,7 +14805,8 @@
       ],
       "description_pt": "Arquivo da web de Portugal, que preserva e oferece busca em versões históricas de sites.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 881,
@@ -14615,7 +14823,8 @@
       ],
       "description_pt": "Coleção que preserva sites de valor cultural, histórico e de pesquisa no Reino Unido.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 882,
@@ -14632,7 +14841,8 @@
       ],
       "description_pt": "Sites arquivados e coleções da web preservados pela Library of Congress.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 883,
@@ -14649,7 +14859,8 @@
       ],
       "description_pt": "Sites australianos e publicações online arquivados pela Biblioteca Nacional da Austrália.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 884,
@@ -14666,7 +14877,8 @@
       ],
       "description_pt": "Recursos e programas internacionais de apoio à aprendizagem aberta, educação a distância e tecnologia educacional.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 885,
@@ -14683,7 +14895,8 @@
       ],
       "description_pt": "Recursos, recomendações e materiais de políticas da UNESCO sobre recursos educacionais abertos.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 886,
@@ -14700,7 +14913,8 @@
       ],
       "description_pt": "Iniciativa multilateral com planos nacionais, compromissos e recursos sobre transparência e governo aberto.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 887,
@@ -14717,7 +14931,8 @@
       ],
       "description_pt": "Pesquisas, avaliações e recursos públicos sobre transparência orçamentária, participação e prestação de contas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 888,
@@ -14734,7 +14949,8 @@
       ],
       "description_pt": "Coleção pesquisável de constituições nacionais com ferramentas de comparação e análise.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 889,
@@ -14751,7 +14967,8 @@
       ],
       "description_pt": "Registros oficiais de casos, sentenças, pareceres consultivos e documentos da Corte Internacional de Justiça.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 890,
@@ -14768,7 +14985,8 @@
       ],
       "description_pt": "Base de dados de normas internacionais do trabalho, ratificações e informações nacionais sobre legislação trabalhista.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 891,
@@ -14785,7 +15003,8 @@
       ],
       "description_pt": "Base de dados de documentos e informações nacionais dos órgãos de tratados de direitos humanos das Nações Unidas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 892,
@@ -14802,7 +15021,8 @@
       ],
       "description_pt": "Ferramenta de busca de recomendações e observações dos mecanismos de direitos humanos das Nações Unidas.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 893,
@@ -14819,7 +15039,8 @@
       ],
       "description_pt": "Dados abertos de eletricidade e energia, com ferramentas visuais para analisar sistemas elétricos e transições.",
       "subcategory_pt": "Ambiente, geografia e tecnologia",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Base de dados"
     },
     {
       "id": 894,
@@ -14836,7 +15057,8 @@
       ],
       "description_pt": "Coleção de conjuntos de dados globais de desenvolvimento e ferramentas visuais para explorar tendências de longo prazo.",
       "subcategory_pt": "Cultura, educação e referência",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     },
     {
       "id": 895,
@@ -14853,7 +15075,8 @@
       ],
       "description_pt": "Plataforma de código aberto e recurso de pesquisa para estudar ecossistemas de mídia online e cobertura jornalística.",
       "subcategory_pt": "Sociedade, direito e linguagem",
-      "access_pt": "Site público; acesso e termos de reutilização podem variar por item"
+      "access_pt": "Site público; acesso e termos de reutilização podem variar por item",
+      "type_pt": "Recurso de referência"
     }
   ],
   "version": "1.6.0",
