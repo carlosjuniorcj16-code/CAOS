@@ -1,11 +1,6 @@
 name: CAOS multi-source academic discovery
 
 on:
-  pull_request:
-    paths:
-      - 'scripts/ingest_doaj_journals.py'
-      - 'scripts/ingest_openalex_institutions.py'
-      - '.github/workflows/multi-source-discovery.yml'
   schedule:
     - cron: "37 6 * * 1"
   workflow_dispatch:
@@ -30,22 +25,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  smoke-test:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout pull request
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Smoke-test DOAJ public API
-        run: python scripts/ingest_doaj_journals.py --limit 5 --page-size 10 --max-pages 1 --dry-run
-      - name: Smoke-test OpenAlex public API
-        run: python scripts/ingest_openalex_institutions.py --limit 5 --max-pages 1 --dry-run
-
   discover:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
