@@ -1,0 +1,787 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-11-19",
+  "note": "Curated starting index. Availability, licensing and access conditions vary by resource; inclusion is not endorsement.",
+  "resources": [
+    {
+      "id": 1,
+      "title": "OpenAlex",
+      "category": "cross",
+      "subcategory": "Research discovery",
+      "description": "Open catalog of scholarly works, authors, institutions and topics.",
+      "url": "https://openalex.org/",
+      "type": "Index",
+      "access": "Free",
+      "tags": [
+        "Research discovery"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Directory of Open Access Journals (DOAJ)",
+      "category": "cross",
+      "subcategory": "Open-access journals",
+      "description": "Directory of peer-reviewed open-access journals and articles.",
+      "url": "https://doaj.org/",
+      "type": "Directory",
+      "access": "Free",
+      "tags": [
+        "Open-access journals"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "CORE",
+      "category": "cross",
+      "subcategory": "Research discovery",
+      "description": "Aggregates open-access research papers from repositories and journals.",
+      "url": "https://core.ac.uk/",
+      "type": "Search index",
+      "access": "Free",
+      "tags": [
+        "Research discovery"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Zenodo",
+      "category": "cross",
+      "subcategory": "Research repository",
+      "description": "Open repository for papers, datasets, software and other research outputs; provides DOIs.",
+      "url": "https://zenodo.org/",
+      "type": "Repository",
+      "access": "Free to access",
+      "tags": [
+        "Research repository"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "OpenAIRE Explore",
+      "category": "cross",
+      "subcategory": "Research discovery",
+      "description": "Discover publications, data, software and projects from European and global research.",
+      "url": "https://explore.openaire.eu/",
+      "type": "Search index",
+      "access": "Free",
+      "tags": [
+        "Research discovery"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "OpenDOAR",
+      "category": "cross",
+      "subcategory": "Repository directory",
+      "description": "Directory of academic open-access repositories around the world.",
+      "url": "https://v2.sherpa.ac.uk/opendoar/",
+      "type": "Directory",
+      "access": "Free",
+      "tags": [
+        "Repository directory"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Google Scholar",
+      "category": "cross",
+      "subcategory": "Literature search",
+      "description": "Broad scholarly search across disciplines; access to full text varies.",
+      "url": "https://scholar.google.com/",
+      "type": "Search engine",
+      "access": "Free search",
+      "tags": [
+        "Literature search"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Semantic Scholar",
+      "category": "cross",
+      "subcategory": "Literature search",
+      "description": "AI-assisted discovery of scientific literature and citation connections.",
+      "url": "https://www.semanticscholar.org/",
+      "type": "Search engine",
+      "access": "Free",
+      "tags": [
+        "Literature search"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Directory of Open Access Books (DOAB)",
+      "category": "cross",
+      "subcategory": "Open books",
+      "description": "Discover peer-reviewed open-access academic books.",
+      "url": "https://www.doabooks.org/",
+      "type": "Directory",
+      "access": "Free",
+      "tags": [
+        "Open books"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Internet Archive",
+      "category": "cross",
+      "subcategory": "Digital library",
+      "description": "Nonprofit digital library of books, media, archived web pages and other collections; rights vary.",
+      "url": "https://archive.org/",
+      "type": "Library",
+      "access": "Mixed rights/access",
+      "tags": [
+        "Digital library"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "NASA Science",
+      "category": "natural",
+      "subcategory": "Astronomy & space",
+      "description": "NASA missions, discoveries, science news and educational resources.",
+      "url": "https://science.nasa.gov/",
+      "type": "Institutional portal",
+      "access": "Free",
+      "tags": [
+        "Astronomy & space"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "NASA Open Data",
+      "category": "natural",
+      "subcategory": "Earth & space data",
+      "description": "Public datasets from NASA science and missions.",
+      "url": "https://data.nasa.gov/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Earth & space data"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "NASA Earthdata",
+      "category": "natural",
+      "subcategory": "Earth science",
+      "description": "Earth-observation data, tools and services from NASA.",
+      "url": "https://www.earthdata.nasa.gov/",
+      "type": "Data portal",
+      "access": "Free; account may be required",
+      "tags": [
+        "Earth science"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "European Space Agency (ESA)",
+      "category": "natural",
+      "subcategory": "Astronomy & space",
+      "description": "Space science, Earth observation, missions and educational resources.",
+      "url": "https://www.esa.int/",
+      "type": "Institutional portal",
+      "access": "Free",
+      "tags": [
+        "Astronomy & space"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "NOAA National Centers for Environmental Information",
+      "category": "natural",
+      "subcategory": "Climate & oceans",
+      "description": "Environmental, climate, oceanographic and geophysical datasets.",
+      "url": "https://www.ncei.noaa.gov/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Climate & oceans"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "U.S. Geological Survey (USGS)",
+      "category": "natural",
+      "subcategory": "Earth sciences",
+      "description": "Geology, water, ecosystems, hazards and Earth observation research and data.",
+      "url": "https://www.usgs.gov/",
+      "type": "Institutional portal",
+      "access": "Free",
+      "tags": [
+        "Earth sciences"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Global Biodiversity Information Facility (GBIF)",
+      "category": "natural",
+      "subcategory": "Biodiversity",
+      "description": "Global infrastructure providing open access to biodiversity occurrence data.",
+      "url": "https://www.gbif.org/",
+      "type": "Data portal",
+      "access": "Free; dataset licenses vary",
+      "tags": [
+        "Biodiversity"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Encyclopedia of Life",
+      "category": "natural",
+      "subcategory": "Biodiversity",
+      "description": "Collaborative knowledge about biodiversity and species.",
+      "url": "https://eol.org/",
+      "type": "Knowledge portal",
+      "access": "Free",
+      "tags": [
+        "Biodiversity"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "PubChem",
+      "category": "natural",
+      "subcategory": "Chemistry",
+      "description": "Open chemistry database with information on chemical substances and bioassays.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "type": "Database",
+      "access": "Free",
+      "tags": [
+        "Chemistry"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "ChemRxiv",
+      "category": "natural",
+      "subcategory": "Chemistry research",
+      "description": "Preprint server for chemistry research; preprints are not necessarily peer-reviewed.",
+      "url": "https://chemrxiv.org/",
+      "type": "Preprint repository",
+      "access": "Free",
+      "tags": [
+        "Chemistry research"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "bioRxiv",
+      "category": "natural",
+      "subcategory": "Biology research",
+      "description": "Preprint server for biology research; manuscripts may not be peer-reviewed.",
+      "url": "https://www.biorxiv.org/",
+      "type": "Preprint repository",
+      "access": "Free",
+      "tags": [
+        "Biology research"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "EarthArXiv",
+      "category": "natural",
+      "subcategory": "Earth sciences",
+      "description": "Open preprint repository for Earth, environmental and planetary sciences.",
+      "url": "https://eartharxiv.org/",
+      "type": "Preprint repository",
+      "access": "Free",
+      "tags": [
+        "Earth sciences"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "arXiv",
+      "category": "formal",
+      "subcategory": "Mathematics & computation",
+      "description": "Open research archive spanning mathematics, physics, computer science, statistics and related fields.",
+      "url": "https://arxiv.org/",
+      "type": "Preprint repository",
+      "access": "Free; not peer review",
+      "tags": [
+        "Mathematics & computation"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "zbMATH Open",
+      "category": "formal",
+      "subcategory": "Mathematics",
+      "description": "Abstracting and reviewing service for mathematical literature.",
+      "url": "https://zbmath.org/",
+      "type": "Literature database",
+      "access": "Free",
+      "tags": [
+        "Mathematics"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "OEIS",
+      "category": "formal",
+      "subcategory": "Integer sequences",
+      "description": "The On-Line Encyclopedia of Integer Sequences, a searchable knowledge base of integer sequences.",
+      "url": "https://oeis.org/",
+      "type": "Reference database",
+      "access": "Free",
+      "tags": [
+        "Integer sequences"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Lean Community",
+      "category": "formal",
+      "subcategory": "Logic & proof",
+      "description": "Open ecosystem and community for formalized mathematics and theorem proving.",
+      "url": "https://leanprover-community.github.io/",
+      "type": "Tools & community",
+      "access": "Free/open-source",
+      "tags": [
+        "Logic & proof"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Coq",
+      "category": "formal",
+      "subcategory": "Logic & proof",
+      "description": "Proof assistant for formal specification and verification of programs and mathematics.",
+      "url": "https://coq.inria.fr/",
+      "type": "Software & documentation",
+      "access": "Free/open-source",
+      "tags": [
+        "Logic & proof"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "NIST Digital Library of Mathematical Functions",
+      "category": "formal",
+      "subcategory": "Mathematics reference",
+      "description": "Authoritative reference for mathematical functions and formulas.",
+      "url": "https://dlmf.nist.gov/",
+      "type": "Reference work",
+      "access": "Free",
+      "tags": [
+        "Mathematics reference"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "LMFDB",
+      "category": "formal",
+      "subcategory": "Mathematics database",
+      "description": "L-functions and Modular Forms Database, a collaborative mathematical database.",
+      "url": "https://www.lmfdb.org/",
+      "type": "Database",
+      "access": "Free",
+      "tags": [
+        "Mathematics database"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "World Bank Open Data",
+      "category": "social",
+      "subcategory": "Economics & development",
+      "description": "Open access to global development indicators and country data.",
+      "url": "https://data.worldbank.org/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Economics & development"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "OECD Data Explorer",
+      "category": "social",
+      "subcategory": "Economics & policy",
+      "description": "International comparative statistics and indicators from OECD.",
+      "url": "https://data-explorer.oecd.org/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Economics & policy"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "UN Data",
+      "category": "social",
+      "subcategory": "Global statistics",
+      "description": "Statistical databases and indicators from the United Nations system.",
+      "url": "https://data.un.org/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Global statistics"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Our World in Data",
+      "category": "social",
+      "subcategory": "Society & global trends",
+      "description": "Research and visualizations on major global problems and long-run trends.",
+      "url": "https://ourworldindata.org/",
+      "type": "Research portal",
+      "access": "Free; open licenses vary",
+      "tags": [
+        "Society & global trends"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "International Labour Organization (ILOSTAT)",
+      "category": "social",
+      "subcategory": "Work & labor",
+      "description": "International labor statistics, datasets and methodological resources.",
+      "url": "https://ilostat.ilo.org/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Work & labor"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "UNESCO Institute for Statistics",
+      "category": "social",
+      "subcategory": "Education & culture",
+      "description": "Internationally comparable data on education, science, culture and communication.",
+      "url": "https://uis.unesco.org/",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Education & culture"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "ICPSR",
+      "category": "social",
+      "subcategory": "Social research data",
+      "description": "Archive of social and behavioral science research data; some datasets have access conditions.",
+      "url": "https://www.icpsr.umich.edu/",
+      "type": "Data repository",
+      "access": "Mixed access",
+      "tags": [
+        "Social research data"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Qualitative Data Repository",
+      "category": "social",
+      "subcategory": "Social research data",
+      "description": "Repository for qualitative and multi-method research data.",
+      "url": "https://qdr.syr.edu/",
+      "type": "Data repository",
+      "access": "Access varies",
+      "tags": [
+        "Social research data"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Pew Research Center",
+      "category": "social",
+      "subcategory": "Public opinion",
+      "description": "Nonpartisan research, surveys and datasets on social and demographic trends.",
+      "url": "https://www.pewresearch.org/",
+      "type": "Research institute",
+      "access": "Free",
+      "tags": [
+        "Public opinion"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "PubMed",
+      "category": "health",
+      "subcategory": "Biomedical literature",
+      "description": "Search engine for biomedical and life-sciences literature citations and abstracts.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "type": "Literature database",
+      "access": "Free search",
+      "tags": [
+        "Biomedical literature"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "PubMed Central (PMC)",
+      "category": "health",
+      "subcategory": "Full-text biomedical research",
+      "description": "Free full-text archive of biomedical and life-sciences journal literature.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "type": "Full-text repository",
+      "access": "Free",
+      "tags": [
+        "Full-text biomedical research"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Europe PMC",
+      "category": "health",
+      "subcategory": "Biomedical literature",
+      "description": "Life-sciences literature, preprints, grants and links to supporting data.",
+      "url": "https://europepmc.org/",
+      "type": "Literature database",
+      "access": "Free",
+      "tags": [
+        "Biomedical literature"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "World Health Organization (WHO)",
+      "category": "health",
+      "subcategory": "Public health",
+      "description": "Global health guidance, technical publications, data and institutional resources.",
+      "url": "https://www.who.int/",
+      "type": "Institutional portal",
+      "access": "Free",
+      "tags": [
+        "Public health"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "WHO Global Health Observatory",
+      "category": "health",
+      "subcategory": "Health statistics",
+      "description": "WHO data repository for global health indicators and country statistics.",
+      "url": "https://www.who.int/data/gho",
+      "type": "Data portal",
+      "access": "Free",
+      "tags": [
+        "Health statistics"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Cochrane Library",
+      "category": "health",
+      "subcategory": "Evidence synthesis",
+      "description": "Systematic reviews and evidence resources for healthcare; some content may require access.",
+      "url": "https://www.cochranelibrary.com/",
+      "type": "Evidence database",
+      "access": "Mixed access",
+      "tags": [
+        "Evidence synthesis"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "ClinicalTrials.gov",
+      "category": "health",
+      "subcategory": "Clinical research",
+      "description": "Registry and results database for publicly and privately supported clinical studies.",
+      "url": "https://clinicaltrials.gov/",
+      "type": "Registry",
+      "access": "Free",
+      "tags": [
+        "Clinical research"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Epistemonikos",
+      "category": "health",
+      "subcategory": "Evidence-based healthcare",
+      "description": "Database for systematic reviews and other evidence relevant to health decisions.",
+      "url": "https://www.epistemonikos.org/",
+      "type": "Evidence database",
+      "access": "Free",
+      "tags": [
+        "Evidence-based healthcare"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "MedlinePlus",
+      "category": "health",
+      "subcategory": "Public health information",
+      "description": "Consumer-oriented health information from the U.S. National Library of Medicine.",
+      "url": "https://medlineplus.gov/",
+      "type": "Health information",
+      "access": "Free",
+      "tags": [
+        "Public health information"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "OpenNeuro",
+      "category": "health",
+      "subcategory": "Neuroscience data",
+      "description": "Open platform for sharing neuroimaging and neuroscience datasets.",
+      "url": "https://openneuro.org/",
+      "type": "Data repository",
+      "access": "Free; terms apply",
+      "tags": [
+        "Neuroscience data"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "NCBI Gene",
+      "category": "health",
+      "subcategory": "Genetics",
+      "description": "Gene-centered information from the National Center for Biotechnology Information.",
+      "url": "https://www.ncbi.nlm.nih.gov/gene/",
+      "type": "Database",
+      "access": "Free",
+      "tags": [
+        "Genetics"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "IEEE Xplore",
+      "category": "engineering",
+      "subcategory": "Engineering research",
+      "description": "Digital library for engineering, computing and technology literature; full text varies.",
+      "url": "https://ieeexplore.ieee.org/",
+      "type": "Literature database",
+      "access": "Mixed access",
+      "tags": [
+        "Engineering research"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "ACM Digital Library",
+      "category": "engineering",
+      "subcategory": "Computing research",
+      "description": "Research publications and proceedings in computing and information technology; access varies.",
+      "url": "https://dl.acm.org/",
+      "type": "Literature database",
+      "access": "Mixed access",
+      "tags": [
+        "Computing research"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "NIST",
+      "category": "engineering",
+      "subcategory": "Standards & measurement",
+      "description": "U.S. National Institute of Standards and Technology research, standards, measurements and datasets.",
+      "url": "https://www.nist.gov/",
+      "type": "Institutional portal",
+      "access": "Free",
+      "tags": [
+        "Standards & measurement"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "W3C Standards",
+      "category": "engineering",
+      "subcategory": "Web technologies",
+      "description": "Open web standards, specifications and technical recommendations.",
+      "url": "https://www.w3.org/standards/",
+      "type": "Standards body",
+      "access": "Free",
+      "tags": [
+        "Web technologies"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "GitHub",
+      "category": "engineering",
+      "subcategory": "Open-source software",
+      "description": "Public source-code repositories, collaboration and software development.",
+      "url": "https://github.com/explore",
+      "type": "Code platform",
+      "access": "Public projects vary",
+      "tags": [
+        "Open-source software"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "ROS",
+      "category": "engineering",
+      "subcategory": "Robotics",
+      "description": "Open-source Robot Operating System ecosystem, packages and documentation.",
+      "url": "https://www.ros.org/",
+      "type": "Software ecosystem",
+      "access": "Free/open-source",
+      "tags": [
+        "Robotics"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "OpenStreetMap",
+      "category": "engineering",
+      "subcategory": "Geospatial technology",
+      "description": "Collaborative open geographic database and mapping ecosystem.",
+      "url": "https://www.openstreetmap.org/",
+      "type": "Open data platform",
+      "access": "Free; ODbL license",
+      "tags": [
+        "Geospatial technology"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "CERN Open Data Portal",
+      "category": "engineering",
+      "subcategory": "Scientific engineering",
+      "description": "Open datasets from particle physics experiments and related research resources.",
+      "url": "https://opendata.cern.ch/",
+      "type": "Data portal",
+      "access": "Free; dataset terms vary",
+      "tags": [
+        "Scientific engineering"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "OSTI.GOV",
+      "category": "engineering",
+      "subcategory": "Energy & applied research",
+      "description": "U.S. Department of Energy research results, publications, software and datasets.",
+      "url": "https://www.osti.gov/",
+      "type": "Research portal",
+      "access": "Free",
+      "tags": [
+        "Energy & applied research"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "EngrXiv",
+      "category": "engineering",
+      "subcategory": "Engineering research",
+      "description": "Open preprint repository for engineering research; manuscripts may not be peer-reviewed.",
+      "url": "https://engrxiv.org/",
+      "type": "Preprint repository",
+      "access": "Free",
+      "tags": [
+        "Engineering research"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Open Hardware Repository",
+      "category": "engineering",
+      "subcategory": "Open engineering",
+      "description": "Collaborative platform for open hardware designs and engineering projects.",
+      "url": "https://ohwr.org/",
+      "type": "Project repository",
+      "access": "Open; project licenses vary",
+      "tags": [
+        "Open engineering"
+      ]
+    }
+  ]
+}
