@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Refresh CAOS research radar and subject-based reading recommendations.
 
-Sources: arXiv Atom API, Europe PMC REST API, Crossref REST API.
+Sources: arXiv Atom API, Europe PMC REST API, PubMed E-utilities, Crossref REST API.
 Only bibliographic metadata and source links are stored. Linked full text is never copied.
 """
 import json
@@ -30,6 +30,9 @@ TOPICS = [
     {"id": "robotics", "name": "Robótica e sistemas autônomos", "terms": "robotics autonomous systems", "arxiv": "cat:cs.RO", "europe": 'TITLE_ABS:(robotics OR "autonomous systems")', "pubmed": 'robotics[Title/Abstract] OR "autonomous systems"[Title/Abstract]', "crossref": "robotics autonomous systems"},
     {"id": "biosciences", "name": "Biociências e saúde", "terms": "biology genomics neuroscience", "arxiv": "cat:q-bio.GN OR cat:q-bio.QM OR cat:q-bio.NC", "europe": 'TITLE_ABS:(biology OR genomics OR neuroscience)', "pubmed": "biology[Title/Abstract] OR genomics[Title/Abstract] OR neuroscience[Title/Abstract]", "crossref": "biology genomics neuroscience"},
     {"id": "earth-space", "name": "Terra, clima e espaço", "terms": "climate earth sciences astronomy", "arxiv": "cat:physics.ao-ph OR cat:astro-ph.CO OR cat:astro-ph.EP OR cat:astro-ph.GA", "europe": 'TITLE_ABS:(climate OR "earth science" OR astronomy)', "pubmed": 'climate[Title/Abstract] OR "earth science"[Title/Abstract] OR astronomy[Title/Abstract]', "crossref": "climate earth science astronomy"},
+    {"id": "datacenters", "name": "Data centers e infraestrutura computacional", "terms": "data centers cloud computing high performance computing", "arxiv": "cat:cs.DC OR cat:cs.NI OR cat:cs.PF", "europe": 'TITLE_ABS:("data center" OR "cloud computing" OR "high-performance computing")', "pubmed": '"data center"[Title/Abstract] OR "cloud computing"[Title/Abstract] OR "high performance computing"[Title/Abstract]', "crossref": "data centers cloud computing high performance computing"},
+    {"id": "quantum", "name": "Computação e informação quânticas", "terms": "quantum computing quantum information quantum algorithms", "arxiv": "cat:quant-ph OR cat:cs.ET", "europe": 'TITLE_ABS:("quantum computing" OR "quantum information" OR "quantum algorithms")', "pubmed": '"quantum computing"[Title/Abstract] OR "quantum information"[Title/Abstract] OR "quantum algorithms"[Title/Abstract]', "crossref": "quantum computing quantum information quantum algorithms"},
+    {"id": "energy-thermo", "name": "Energia, termodinâmica e sistemas complexos", "terms": "thermodynamics energy systems entropy statistical mechanics", "arxiv": "cat:physics.class-ph OR cat:physics.app-ph OR cat:cond-mat.stat-mech", "europe": 'TITLE_ABS:(thermodynamics OR entropy OR "energy systems" OR "energy conversion")', "pubmed": 'thermodynamics[Title/Abstract] OR entropy[Title/Abstract] OR "energy systems"[Title/Abstract] OR "energy conversion"[Title/Abstract]', "crossref": "thermodynamics energy systems entropy energy conversion"},
 ]
 
 def clean(value):
@@ -223,7 +226,7 @@ def collect():
         "updated_at": now,
         "window_days": 45,
         "method": "Recent bibliographic metadata from primary or scholarly index APIs; newest-first within each subject; no quality or popularity ranking.",
-        "sources": ["arXiv", "Europe PMC", "Crossref"],
+        "sources": ["arXiv", "Europe PMC", "PubMed", "Crossref"],
         "topics": [{"id": t["id"], "name": t["name"],
                     "items": sorted([x for x in all_items if x["area"] == t["name"]],
                                     key=lambda x: x.get("published", ""), reverse=True)[:5]}
@@ -238,7 +241,7 @@ def write_json(path, payload):
 def main():
     radar, readings = collect()
     assert 1 <= len(radar["items"]) <= 5
-    assert sum(len(t["items"]) for t in readings["topics"]) <= 25
+    assert len(readings["topics"]) == 8\n    assert sum(len(t["items"]) for t in readings["topics"]) <= 40
     for item in radar["items"] + [x for t in readings["topics"] for x in t["items"]]:
         assert item["url"].startswith("https://") and item["title"] and item["published"]
     write_json(RADAR_OUT, radar)
