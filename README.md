@@ -16,6 +16,12 @@ A presença de um link não significa endosso, certificação ou garantia de dis
 
 A interface está disponível em 15 idiomas: português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês, russo, neerlandês, polonês, coreano, árabe, hindi e turco. O seletor altera também o idioma do documento e a direção de leitura para árabe. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As traduções das descrições, categorias, tipos e condições de acesso são armazenadas por registro em `translations` e `topic_i18n`. Use `scripts/translate_catalog.py` para preencher ou atualizar os campos ausentes com um endpoint compatível com LibreTranslate. O processo é retomável e não sobrescreve traduções já existentes.
 
+## Expansão do catálogo
+
+O CAOS está preparado para importar lotes de até 10.000 registros do dump Curlie, que contém aproximadamente 2,9 milhões de entradas. A importação mantém a categoria original, o idioma, a licença e a atribuição; não copia o dump inteiro para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md) antes de importar ou traduzir em massa.
+
+As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
+
 ## Como usar
 
 - Pesquise por nome, assunto, instituição, disciplina ou palavra-chave.
