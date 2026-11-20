@@ -202,7 +202,7 @@ def main():
         topic = str(item.get("topic") or "reference")
         for code, desc in variants.items():
             topic_title = topic_name(topic, code, topics, resources)
-            title = str(item["title"]) + " — " + topic_title + " | CAOS"
+            title = str(item["title"]) + " | " + topic_title + " | CAOS"
             host = parsed.netloc.lower().removeprefix("www.")
             category_route = route_for_category(topic, "pt")
             crumb_label = "Categorias" if code == "pt" else "Categories"
