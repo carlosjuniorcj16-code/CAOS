@@ -71,3 +71,7 @@ O workflow `.github/workflows/multi-source-discovery.yml` executa semanalmente e
 Os cursores de DOAJ e OpenAlex são persistidos em `data/discovery_state.json`, permitindo avançar pelas páginas sem recomeçar sempre do primeiro lote. As execuções manuais começam em modo `dry_run=true`. Execuções agendadas geram um pull request de revisão; não publicam alterações diretamente em `main`. Os importadores não baixam nem copiam textos, PDFs, imagens ou outros conteúdos dos sites listados. A licença de cada site permanece independente da licença do metadado de descoberta.
 
 O Crossref permanece cadastrado como fonte bibliográfica, mas não é usado para fabricar links de homepage: seus endpoints de periódicos e membros oferecem metadados bibliográficos e de organizações, não um campo confiável e universal de site oficial. CORE também não é ingerido até que haja autorização/licença adequada. Veja `data/source_registry.json`.
+
+## Validação do catálogo especializado de IA
+
+`python scripts/validate_catalog.py` também verifica `data/ai_sources.json`: IDs únicos, áreas permitidas, campos obrigatórios, listas de formatos/idiomas/usos e URLs HTTP(S) válidas. A validação do workflow de CI extrai e verifica a sintaxe JavaScript tanto de `index.html` quanto de `ai-data.html`.
