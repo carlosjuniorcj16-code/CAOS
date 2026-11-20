@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: curlie-import
@@ -39,14 +40,14 @@ jobs:
             --catalog data/sources.json \
             --limit 12000 \
             --per-topic 250
-      - name: Commit catalog updates
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- data/sources.json; then
-            git add data/sources.json
-            git commit -m "chore: refresh curated Curlie resources"
-            git push
-          else
-            echo "No new Curlie resources to add."
-          fi
+      - name: Create catalog update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/curlie-catalog-update
+          delete-branch: true
+          commit-message: "chore: refresh curated Curlie resources"
+          title: "chore: refresh Curlie resource catalog"
+          body: |
+            Automated refresh of curated resources imported from the official Curlie dataset.
+            This pull request is created so repository branch protections and required validation checks remain enforced.
+          add-paths: data/sources.json
