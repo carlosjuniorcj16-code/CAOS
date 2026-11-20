@@ -1,6 +1,86 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-20T23:02:17+00:00",
   "source": "arXiv API",
-  "items": []
+  "items": [
+    {
+      "area": "Inteligência artificial",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "summary": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization",
+      "published": "2026-11-19T18:59:53Z",
+      "authors": [
+        "Tuna Han Salih Meral",
+        "Kaan Oktay",
+        "Alec Helbling",
+        "Atakan Kara",
+        "Duen Horng Chau",
+        "Pinar Yanardag"
+      ],
+      "url": "https://arxiv.org/abs/2611.26627v1",
+      "source": "arXiv"
+    },
+    {
+      "area": "Terra, clima e espaço",
+      "title": "Little Red Dots from Primordial Vacuum Bubbles",
+      "summary": "Quantum tunneling transverse to the inflaton trajectory can produce $10^6$--$10^8M_\\odot$ primordial black holes at the abundance of JWST's little red dots, without the enhanced curvature perturbations excluded by limits on CMB spectral distortions. Rare vacuum bubbles nucleate during a brief interval of inflation and later form black holes, with adjustable mass and abundance and a narrow mass spectrum of percent-level width. The leading constraint, from accretion, is satisfied for a population matching the bright ",
+      "published": "2026-11-19T18:58:36Z",
+      "authors": [
+        "Miguel Barroso Varela",
+        "Katherine Freese",
+        "Matthew Kleban",
+        "Cameron Norton",
+        "Evangelos I. Sfakianakis"
+      ],
+      "url": "https://arxiv.org/abs/2611.26620v1",
+      "source": "arXiv"
+    },
+    {
+      "area": "Robótica",
+      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+      "summary": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a fe",
+      "published": "2026-11-19T18:58:14Z",
+      "authors": [
+        "Yuxin Jiang",
+        "Wenqiang Sun",
+        "Jiaqi Li",
+        "Yuchao Gu",
+        "Lvmin Zhang",
+        "Ivor Tsang",
+        "Mike Zheng Shou"
+      ],
+      "url": "https://arxiv.org/abs/2611.26617v1",
+      "source": "arXiv"
+    },
+    {
+      "area": "Linguagem e comunicação",
+      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique ",
+      "published": "2026-11-19T18:57:25Z",
+      "authors": [
+        "Yiyang Du",
+        "Yuxuan Kuang",
+        "Qitao Zhao",
+        "Yixuan Wang",
+        "Zhanqiu Guo",
+        "Yi Xu",
+        "Xin Li",
+        "Wenbin He"
+      ],
+      "url": "https://arxiv.org/abs/2611.26613v1",
+      "source": "arXiv"
+    },
+    {
+      "area": "Biociências",
+      "title": "A Control-Theoretic Approximation to Predictive Coding Dynamics",
+      "summary": "Backpropagation remains the dominant method for training deep neural networks, but its reliance on non-local computations has motivated the search for biologically plausible alternatives. Two prominent frameworks, predictive coding (PC) and deep feedback control (DFC), offer distinct approaches to local learning, yet their relationship remains unclear. Here, we show that DFC arises as a local approximation to predictive coding dynamics near fixed points, with exact equivalence in shallow linear networks and systema",
+      "published": "2026-11-19T16:04:50Z",
+      "authors": [
+        "Ryan Fayyazi",
+        "Kyle Daruwalla",
+        "Mitra Javadzadeh"
+      ],
+      "url": "https://arxiv.org/abs/2611.26319v1",
+      "source": "arXiv"
+    }
+  ]
 }
