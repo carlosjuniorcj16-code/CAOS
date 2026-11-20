@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: caos-pages-\${{ github.ref }}
+  group: caos-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -39,12 +39,14 @@ jobs:
           test -s dist/robots.txt
           test -s dist/sitemap.xml
           test -s dist/categorias/index.html
+          for path in radar.html leituras.html software.html data/research-radar.json data/reading-recommendations.json data/open-source-software.json assets/caos-mark.svg; do test -s "dist/$path"; done
           python - <<'PY'
           from pathlib import Path
           import xml.etree.ElementTree as ET
           root = Path("dist")
           ET.parse(root / "sitemap.xml")
           ET.parse(root / "sitemap-1.xml")
+          ET.parse(root / "assets/caos-mark.svg")
           pages = list(root.rglob("index.html"))
           if len(pages) < 2:
               raise SystemExit("SEO build produced too few HTML pages")
@@ -59,7 +61,7 @@ jobs:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:

@@ -131,12 +131,24 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    for relative in ("index.html", "ai-data.html", "data/sources.json", "data/ai_sources.json", "data/languages.json", "search-index.json"):
+    # Preserve every standalone application page and its runtime data in the
+    # published artifact. GitHub Pages serves dist/ only; omitting these files
+    # makes valid repository pages appear as 404s after deployment.
+    for relative in (
+        "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html",
+        "data/sources.json", "data/ai_sources.json", "data/languages.json",
+        "data/research-radar.json", "data/reading-recommendations.json",
+        "data/open-source-software.json", "search-index.json",
+    ):
         src = ROOT / relative
         if src.exists():
             dest = OUT / relative
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, dest)
+
+    assets = ROOT / "assets"
+    if assets.is_dir():
+        shutil.copytree(assets, OUT / "assets", dirs_exist_ok=True)
 
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
     match = re.search(r"const TOPICS=(\[.*?\]);", index_html, re.S)
