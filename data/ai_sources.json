@@ -545,8 +545,8 @@
         "release-dependent"
       ],
       "volume": "Thousands of hours; varies by release",
-      "license": "CC0 for released contributions; verify release terms",
-      "access": "Dataset download and project platform",
+      "license": "CC0 for contributions and released datasets unless a release specifies otherwise",
+      "access": "Mozilla Data Collective; some downloads may require an email address",
       "update": "Periodic releases",
       "uses": [
         "Speech recognition",
@@ -554,7 +554,7 @@
       ],
       "description_pt": "Gravações de voz e validações comunitárias em muitos idiomas.",
       "description_en": "Community-contributed voice recordings and validations across many languages.",
-      "caveat": "Cobertura e qualidade variam entre idiomas e versões.",
+      "caveat": "Mozilla's terms direct users to access datasets through Mozilla Data Collective and ask users not to mirror or redistribute copies; verify each release's terms.",
       "url": "https://commonvoice.mozilla.org/en/datasets",
       "docs": "https://commonvoice.mozilla.org/en/datasets"
     },
@@ -764,6 +764,144 @@
       "caveat": "Confira a política de cada missão e identifique dados de terceiros.",
       "url": "https://data.nasa.gov/",
       "docs": "https://data.nasa.gov/"
+    },
+    {
+      "id": "madlad-400",
+      "name": "MADLAD-400",
+      "area": "text",
+      "kind": "Multilingual web text corpus",
+      "formats": [
+        "Parquet",
+        "Text"
+      ],
+      "languages": [
+        "419 languages"
+      ],
+      "volume": "419 languages; clean and noisy document-level variants",
+      "license": "ODC-By 1.0 (verify the selected dataset version)",
+      "access": "Hugging Face Hub",
+      "update": "Released versions",
+      "uses": [
+        "Multilingual pretraining",
+        "Machine translation",
+        "Language research"
+      ],
+      "description_pt": "Corpus multilíngue em nível de documento derivado de rastreamentos do Common Crawl, com versões ruidosa e filtrada para pesquisa em centenas de idiomas.",
+      "description_en": "Document-level multilingual corpus derived from Common Crawl snapshots, with noisy and filtered variants for research across hundreds of languages.",
+      "caveat": "A filtragem não elimina ruído nem resolve automaticamente direitos dos conteúdos de origem; confira a licença e a versão usadas.",
+      "url": "https://huggingface.co/datasets/allenai/MADLAD-400",
+      "docs": "https://huggingface.co/datasets/allenai/MADLAD-400"
+    },
+    {
+      "id": "flores-200",
+      "name": "FLORES-200",
+      "area": "evaluation",
+      "kind": "Multilingual translation benchmark",
+      "formats": [
+        "Parquet",
+        "Text"
+      ],
+      "languages": [
+        "200 languages"
+      ],
+      "volume": "Parallel evaluation sentences across 200 languages",
+      "license": "CC BY-SA 4.0",
+      "access": "Hugging Face; dataset conditions must be accepted",
+      "update": "Versioned benchmark",
+      "uses": [
+        "Machine translation",
+        "Multilingual evaluation",
+        "NLP research"
+      ],
+      "description_pt": "Conjunto de avaliação paralela para tradução automática e comparação de sistemas em 200 idiomas, com divisões próprias para desenvolvimento e teste.",
+      "description_en": "Parallel evaluation dataset for machine translation and system comparison across 200 languages, with dedicated development and test splits.",
+      "caveat": "Preserve a integridade das divisões de teste e cumpra atribuição e compartilhamento pela mesma licença quando aplicável.",
+      "url": "https://huggingface.co/datasets/facebook/flores",
+      "docs": "https://huggingface.co/datasets/facebook/flores"
+    },
+    {
+      "id": "fleurs",
+      "name": "FLEURS",
+      "area": "audio",
+      "kind": "Multilingual speech benchmark",
+      "formats": [
+        "Audio",
+        "Parquet"
+      ],
+      "languages": [
+        "102 languages"
+      ],
+      "volume": "Parallel speech corpus; per-language volume varies by release",
+      "license": "CC BY 4.0; verify the dataset card",
+      "access": "Hugging Face Hub",
+      "update": "Released benchmark",
+      "uses": [
+        "Automatic speech recognition",
+        "Speech translation",
+        "Language identification",
+        "Evaluation"
+      ],
+      "description_pt": "Benchmark paralelo de fala em mais de cem idiomas, construído a partir de sentenças do FLORES e útil para reconhecimento e tradução de fala.",
+      "description_en": "Parallel speech benchmark covering more than one hundred languages, built from FLORES sentences and useful for speech recognition and translation.",
+      "caveat": "Áudio de leitura controlada não representa sozinho conversas espontâneas, sotaques e ruído do mundo real.",
+      "url": "https://huggingface.co/datasets/google/fleurs",
+      "docs": "https://huggingface.co/datasets/google/fleurs"
+    },
+    {
+      "id": "mmlu",
+      "name": "MMLU",
+      "area": "evaluation",
+      "kind": "Multitask knowledge benchmark",
+      "formats": [
+        "Parquet",
+        "JSON"
+      ],
+      "languages": [
+        "English"
+      ],
+      "volume": "57 subjects; 14,042 test questions in the original protocol",
+      "license": "MIT (dataset repository; verify revision)",
+      "access": "Hugging Face Hub",
+      "update": "Established benchmark; community revisions exist",
+      "uses": [
+        "Model evaluation",
+        "Knowledge assessment",
+        "Benchmarking"
+      ],
+      "description_pt": "Benchmark de múltipla escolha que avalia conhecimento em 57 disciplinas, abrangendo humanidades, ciências sociais, ciências exatas e áreas profissionais.",
+      "description_en": "Multiple-choice benchmark assessing knowledge across 57 subjects spanning humanities, social sciences, STEM, and professional fields.",
+      "caveat": "Contaminação de dados, protocolo de avaliação e variações de versão podem alterar resultados; cite a revisão e o método usados.",
+      "url": "https://huggingface.co/datasets/cais/mmlu",
+      "docs": "https://huggingface.co/datasets/cais/mmlu"
+    },
+    {
+      "id": "swe-bench",
+      "name": "SWE-bench",
+      "area": "code",
+      "kind": "Software engineering benchmark",
+      "formats": [
+        "JSONL",
+        "Git repositories",
+        "Patch files"
+      ],
+      "languages": [
+        "Python (main benchmark)",
+        "9 languages (multilingual variant)"
+      ],
+      "volume": "Full, Lite, Verified, Multimodal and Multilingual variants",
+      "license": "MIT for the benchmark project; underlying repositories retain their own licenses",
+      "access": "Hugging Face Hub and GitHub",
+      "update": "Versioned benchmark and variants",
+      "uses": [
+        "Coding agents",
+        "Software engineering evaluation",
+        "Repository-level reasoning"
+      ],
+      "description_pt": "Benchmark de engenharia de software baseado em problemas reais de repositórios GitHub, usado para avaliar sistemas que precisam compreender issues e propor correções executáveis.",
+      "description_en": "Software engineering benchmark based on real GitHub repository issues, used to evaluate systems that must understand tasks and produce executable code changes.",
+      "caveat": "Os repositórios, dependências e ambientes de cada tarefa podem ter licenças próprias; execute avaliações em ambientes isolados.",
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench",
+      "docs": "https://github.com/SWE-bench/SWE-bench"
     }
   ]
 }
