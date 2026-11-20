@@ -37,7 +37,7 @@ jobs:
           CHECKS="$(gh api "repos/$REPO/commits/$SHA/check-runs" --jq '[.check_runs[] | select(.name == "Validate catalog and JavaScript" or .name == "build") | {name, status, conclusion}]')"
           echo "$CHECKS"
           python -c 'import json,sys; c=json.load(sys.stdin); required={"Validate catalog and JavaScript","build"}; found={x["name"]:x for x in c}; sys.exit(0 if required <= found.keys() and all(found[n]["status"]=="completed" and found[n]["conclusion"]=="success" for n in required) else 1)' <<< "$CHECKS" || { echo "Required checks are not both successful yet; waiting for the other workflow."; exit 0; }
-          PR="$(gh pr list --repo "$REPO" --state open --head "$BRANCH" --json number,headRefOid,isDraft,url --jq ".[] | select(.headRefOid == \"$SHA\" and .isDraft == false) | .url" | head -n 1)"
+          PR="$(gh pr list --repo "$REPO" --state open --head "$BRANCH" --json number,headRefOid,isDraft,url,author --jq ".[] | select(.headRefOid == \"$SHA\" and .isDraft == false and .author.login == \"github-actions[bot]\") | .url" | head -n 1)"
           if [ -z "$PR" ]; then
             echo "No matching non-draft open PR for this exact commit; nothing to merge."
             exit 0
