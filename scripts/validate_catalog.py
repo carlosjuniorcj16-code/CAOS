@@ -56,4 +56,21 @@ if not re.search(r'<script\b', html, re.I):
 if "data/sources.json" not in html:
     fail("index.html não referencia data/sources.json.")
 
+LANGUAGES = {"pt", "en", "es", "fr", "de", "it", "zh", "ja", "ru", "nl", "pl", "ko", "ar", "hi", "tr"}
+html = HTML.read_text(encoding="utf-8")
+missing_languages = []
+for code in sorted(LANGUAGES):
+    if (f"L.{code}=" not in html) and ((code + ":{") not in html):
+        missing_languages.append(code)
+if missing_languages:
+    fail("Idiomas sem pacote de interface: " + ", ".join(missing_languages))
+for i, item in enumerate(data, 1):
+    translations = item.get("translations", {})
+    if not isinstance(translations, dict):
+        fail(f"Traduções inválidas no registro {i}.")
+    for language, fields in translations.items():
+        if language not in LANGUAGES or not isinstance(fields, dict):
+            fail(f"Pacote de tradução inválido no registro {i}: {language}")
+translated = {lang: sum(bool(x.get("translations", {}).get(lang, {}).get("description")) for x in data) for lang in sorted(LANGUAGES)}
 print(f"OK: {len(data)} registros; IDs, categorias, campos e URLs estruturais válidos.")
+print("Cobertura de descrições traduzidas: " + json.dumps(translated, ensure_ascii=False))

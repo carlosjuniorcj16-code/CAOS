@@ -8,13 +8,19 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão desta expansão reúne **1022 fontes**, distribuídas em **67 categorias temáticas com registros**. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão atual reúne **1.022 fontes**, distribuídas em **67 categorias temáticas com registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
 ## Idiomas
 
-A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As descrições são mantidas em português e inglês quando disponíveis; traduções adicionais podem ser aperfeiçoadas progressivamente.
+A interface está disponível em 15 idiomas: português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês, russo, neerlandês, polonês, coreano, árabe, hindi e turco. O seletor altera também o idioma do documento e a direção de leitura para árabe. O português brasileiro é o idioma inicial. Os nomes oficiais das instituições e serviços são preservados. As traduções das descrições, categorias, tipos e condições de acesso são armazenadas por registro em `translations` e `topic_i18n`. Use `scripts/translate_catalog.py` para preencher ou atualizar os campos ausentes com um endpoint compatível com LibreTranslate. O processo é retomável e não sobrescreve traduções já existentes.
+
+## Expansão do catálogo
+
+O CAOS está preparado para importar lotes de até 10.000 registros do dump Curlie, que contém aproximadamente 2,9 milhões de entradas. A importação mantém a categoria original, o idioma, a licença e a atribuição; não copia o dump inteiro para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md) antes de importar ou traduzir em massa.
+
+As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 
 ## Como usar
 
