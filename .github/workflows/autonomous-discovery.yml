@@ -8,7 +8,7 @@ on:
       limit:
         description: Maximum number of verified new sites
         required: false
-        default: "75"
+        default: "100"
         type: string
       dry_run:
         description: Preview only; do not create a catalog update
@@ -21,7 +21,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: caos-autonomous-discovery
+  group: caos-catalog-ingestion
   cancel-in-progress: false
 
 jobs:
@@ -42,15 +42,15 @@ jobs:
         run: python -m py_compile scripts/discover_wikidata.py
       - name: Preview discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/discover_wikidata.py --limit "${{ inputs.limit }}" --max-checks 250 --dry-run
+        run: python scripts/discover_wikidata.py --limit "${{ inputs.limit }}" --max-checks 350 --dry-run
       - name: Discover and verify official websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
-          LIMIT="75"
+          LIMIT="100"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             LIMIT="${{ inputs.limit }}"
           fi
-          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 250
+          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 350
       - name: Validate updated catalog
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |

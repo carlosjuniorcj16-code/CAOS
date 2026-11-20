@@ -15,7 +15,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: curlie-import
+  group: caos-catalog-ingestion
   cancel-in-progress: false
 
 jobs:
