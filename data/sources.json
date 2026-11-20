@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "updated": "2026-11-19",
   "note": "Diretório público e multilíngue de links para fontes de conhecimento e informação. A CAOS indica fontes originais; disponibilidade, licenças e condições de uso são definidas por cada fonte.",
   "resources": [
@@ -9960,6 +9960,291 @@
       ],
       "description_pt": "Base de dados das Nações Unidas sobre comércio internacional de mercadorias.",
       "subcategory_pt": "Trade"
+    },
+    {
+      "id": 599,
+      "title": "OpenAlex API Documentation",
+      "category": "cross",
+      "subcategory": "Research metadata",
+      "description": "Reference source on research metadata, providing data, documents or resources for consultation and research.",
+      "url": "https://docs.openalex.org/",
+      "type": "Technical documentation",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Research metadata"
+      ],
+      "description_pt": "Fonte de referência sobre research metadata, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Research metadata"
+    },
+    {
+      "id": 600,
+      "title": "DataCite",
+      "category": "cross",
+      "subcategory": "Research data",
+      "description": "Reference source on research data, providing data, documents or resources for consultation and research.",
+      "url": "https://datacite.org/",
+      "type": "Research metadata infrastructure",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Research data"
+      ],
+      "description_pt": "Fonte de referência sobre research data, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Research data"
+    },
+    {
+      "id": 601,
+      "title": "Software Heritage Archive",
+      "category": "engineering",
+      "subcategory": "Source code",
+      "description": "Reference source on source code, providing data, documents or resources for consultation and research.",
+      "url": "https://archive.softwareheritage.org/",
+      "type": "Software archive",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Source code"
+      ],
+      "description_pt": "Fonte de referência sobre source code, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Source code"
+    },
+    {
+      "id": 602,
+      "title": "Public Suffix List",
+      "category": "engineering",
+      "subcategory": "Internet infrastructure",
+      "description": "Reference source on internet infrastructure, providing data, documents or resources for consultation and research.",
+      "url": "https://publicsuffix.org/",
+      "type": "Technical resource",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Internet infrastructure"
+      ],
+      "description_pt": "Fonte de referência sobre internet infrastructure, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Internet infrastructure"
+    },
+    {
+      "id": 603,
+      "title": "WHATWG Standards",
+      "category": "engineering",
+      "subcategory": "Web standards",
+      "description": "Reference source on web standards, providing data, documents or resources for consultation and research.",
+      "url": "https://whatwg.org/",
+      "type": "Technical standards",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Web standards"
+      ],
+      "description_pt": "Fonte de referência sobre web standards, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Web standards"
+    },
+    {
+      "id": 604,
+      "title": "Unicode Consortium",
+      "category": "engineering",
+      "subcategory": "Character encoding",
+      "description": "Reference source on character encoding, providing data, documents or resources for consultation and research.",
+      "url": "https://www.unicode.org/",
+      "type": "Technical standards",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Character encoding"
+      ],
+      "description_pt": "Fonte de referência sobre character encoding, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Character encoding"
+    },
+    {
+      "id": 605,
+      "title": "IANA",
+      "category": "engineering",
+      "subcategory": "Internet protocols",
+      "description": "Reference source on internet protocols, providing data, documents or resources for consultation and research.",
+      "url": "https://www.iana.org/",
+      "type": "Internet registry",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Internet protocols"
+      ],
+      "description_pt": "Fonte de referência sobre internet protocols, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Internet protocols"
+    },
+    {
+      "id": 606,
+      "title": "ICANN",
+      "category": "engineering",
+      "subcategory": "Domain names",
+      "description": "Reference source on domain names, providing data, documents or resources for consultation and research.",
+      "url": "https://www.icann.org/",
+      "type": "Internet governance",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Domain names"
+      ],
+      "description_pt": "Fonte de referência sobre domain names, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Domain names"
+    },
+    {
+      "id": 607,
+      "title": "OpenSSF",
+      "category": "engineering",
+      "subcategory": "Open source security",
+      "description": "Reference source on open source security, providing data, documents or resources for consultation and research.",
+      "url": "https://openssf.org/",
+      "type": "Software security initiative",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open source security"
+      ],
+      "description_pt": "Fonte de referência sobre open source security, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Open source security"
+    },
+    {
+      "id": 608,
+      "title": "CNCF Landscape",
+      "category": "engineering",
+      "subcategory": "Cloud native",
+      "description": "Reference source on cloud native, providing data, documents or resources for consultation and research.",
+      "url": "https://landscape.cncf.io/",
+      "type": "Technology directory",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Cloud native"
+      ],
+      "description_pt": "Fonte de referência sobre cloud native, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Cloud native"
+    },
+    {
+      "id": 609,
+      "title": "Apache Software Foundation",
+      "category": "engineering",
+      "subcategory": "Software",
+      "description": "Reference source on software, providing data, documents or resources for consultation and research.",
+      "url": "https://www.apache.org/",
+      "type": "Open source foundation",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Software"
+      ],
+      "description_pt": "Fonte de referência sobre software, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Software"
+    },
+    {
+      "id": 610,
+      "title": "Linux Foundation",
+      "category": "engineering",
+      "subcategory": "Software infrastructure",
+      "description": "Reference source on software infrastructure, providing data, documents or resources for consultation and research.",
+      "url": "https://www.linuxfoundation.org/",
+      "type": "Open source foundation",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Software infrastructure"
+      ],
+      "description_pt": "Fonte de referência sobre software infrastructure, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Software infrastructure"
+    },
+    {
+      "id": 611,
+      "title": "Open Source Initiative",
+      "category": "engineering",
+      "subcategory": "Open source licenses",
+      "description": "Reference source on open source licenses, providing data, documents or resources for consultation and research.",
+      "url": "https://opensource.org/",
+      "type": "Reference organization",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open source licenses"
+      ],
+      "description_pt": "Fonte de referência sobre open source licenses, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Open source licenses"
+    },
+    {
+      "id": 612,
+      "title": "Public Knowledge Project",
+      "category": "cross",
+      "subcategory": "Academic publishing",
+      "description": "Reference source on academic publishing, providing data, documents or resources for consultation and research.",
+      "url": "https://pkp.sfu.ca/",
+      "type": "Scholarly publishing tools",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Academic publishing"
+      ],
+      "description_pt": "Fonte de referência sobre academic publishing, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Academic publishing"
+    },
+    {
+      "id": 613,
+      "title": "Open Journal Systems",
+      "category": "cross",
+      "subcategory": "Open journals",
+      "description": "Reference source on open journals, providing data, documents or resources for consultation and research.",
+      "url": "https://pkp.sfu.ca/software/ojs/",
+      "type": "Publishing platform",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open journals"
+      ],
+      "description_pt": "Fonte de referência sobre open journals, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Open journals"
+    },
+    {
+      "id": 614,
+      "title": "Open Monograph Press",
+      "category": "cross",
+      "subcategory": "Academic books",
+      "description": "Reference source on academic books, providing data, documents or resources for consultation and research.",
+      "url": "https://pkp.sfu.ca/software/omp/",
+      "type": "Publishing platform",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Academic books"
+      ],
+      "description_pt": "Fonte de referência sobre academic books, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Academic books"
+    },
+    {
+      "id": 615,
+      "title": "DOAJ Blog and Resources",
+      "category": "cross",
+      "subcategory": "Open access",
+      "description": "Reference source on open access, providing data, documents or resources for consultation and research.",
+      "url": "https://doaj.org/apply/guide/",
+      "type": "Editorial guidance",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open access"
+      ],
+      "description_pt": "Fonte de referência sobre open access, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Open access"
+    },
+    {
+      "id": 616,
+      "title": "Open Access Button",
+      "category": "cross",
+      "subcategory": "Open access",
+      "description": "Reference source on open access, providing data, documents or resources for consultation and research.",
+      "url": "https://openaccessbutton.org/",
+      "type": "Research access tool",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Open access"
+      ],
+      "description_pt": "Fonte de referência sobre open access, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Open access"
+    },
+    {
+      "id": 617,
+      "title": "Open Research Europe",
+      "category": "cross",
+      "subcategory": "Research publishing",
+      "description": "Reference source on research publishing, providing data, documents or resources for consultation and research.",
+      "url": "https://open-research-europe.ec.europa.eu/",
+      "type": "Open access journal",
+      "access": "Free; terms may vary",
+      "tags": [
+        "Research publishing"
+      ],
+      "description_pt": "Fonte de referência sobre research publishing, com dados, documentos ou recursos para consulta e pesquisa.",
+      "subcategory_pt": "Research publishing"
     }
   ]
 }
