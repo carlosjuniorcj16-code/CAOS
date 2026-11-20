@@ -294,7 +294,7 @@
           "id": "7zip",
           "name": "7-Zip",
           "url": "https://www.7-zip.org/",
-          "docs": "https://www.7-zip.org/faq.html",
+          "docs": "https://github.com/ip7z/7zip/blob/main/DOC/License.txt",
           "category": "Compactação",
           "model": "Gratuito e open source",
           "platforms": [
