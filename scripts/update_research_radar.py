@@ -25,11 +25,11 @@ TODAY = datetime.now(timezone.utc).date()
 FROM_DATE = TODAY - timedelta(days=45)
 
 TOPICS = [
-    {"id": "ai", "name": "Inteligência artificial", "terms": "machine learning OR artificial intelligence", "arxiv": "cat:cs.AI OR cat:cs.LG", "europe": 'TITLE_ABS:("machine learning" OR "artificial intelligence")', "crossref": "machine learning artificial intelligence"},
-    {"id": "language", "name": "Linguagem e comunicação", "terms": "language linguistics communication", "arxiv": "cat:cs.CL", "europe": 'TITLE_ABS:(language OR linguistics OR communication)', "crossref": "language linguistics communication"},
-    {"id": "robotics", "name": "Robótica e sistemas autônomos", "terms": "robotics autonomous systems", "arxiv": "cat:cs.RO", "europe": 'TITLE_ABS:(robotics OR "autonomous systems")', "crossref": "robotics autonomous systems"},
-    {"id": "biosciences", "name": "Biociências e saúde", "terms": "biology genomics neuroscience", "arxiv": "cat:q-bio.GN OR cat:q-bio.QM OR cat:q-bio.NC", "europe": 'TITLE_ABS:(biology OR genomics OR neuroscience)', "crossref": "biology genomics neuroscience"},
-    {"id": "earth-space", "name": "Terra, clima e espaço", "terms": "climate earth sciences astronomy", "arxiv": "cat:physics.ao-ph OR cat:astro-ph.CO OR cat:astro-ph.EP OR cat:astro-ph.GA", "europe": 'TITLE_ABS:(climate OR "earth science" OR astronomy)', "crossref": "climate earth science astronomy"},
+    {"id": "ai", "name": "Inteligência artificial", "terms": "machine learning OR artificial intelligence", "arxiv": "cat:cs.AI OR cat:cs.LG", "europe": 'TITLE_ABS:("machine learning" OR "artificial intelligence")', "pubmed": '"machine learning"[Title/Abstract] OR "artificial intelligence"[Title/Abstract]', "crossref": "machine learning artificial intelligence"},
+    {"id": "language", "name": "Linguagem e comunicação", "terms": "language linguistics communication", "arxiv": "cat:cs.CL", "europe": 'TITLE_ABS:(language OR linguistics OR communication)', "pubmed": "language[Title/Abstract] OR linguistics[Title/Abstract] OR communication[Title/Abstract]", "crossref": "language linguistics communication"},
+    {"id": "robotics", "name": "Robótica e sistemas autônomos", "terms": "robotics autonomous systems", "arxiv": "cat:cs.RO", "europe": 'TITLE_ABS:(robotics OR "autonomous systems")', "pubmed": 'robotics[Title/Abstract] OR "autonomous systems"[Title/Abstract]', "crossref": "robotics autonomous systems"},
+    {"id": "biosciences", "name": "Biociências e saúde", "terms": "biology genomics neuroscience", "arxiv": "cat:q-bio.GN OR cat:q-bio.QM OR cat:q-bio.NC", "europe": 'TITLE_ABS:(biology OR genomics OR neuroscience)', "pubmed": "biology[Title/Abstract] OR genomics[Title/Abstract] OR neuroscience[Title/Abstract]", "crossref": "biology genomics neuroscience"},
+    {"id": "earth-space", "name": "Terra, clima e espaço", "terms": "climate earth sciences astronomy", "arxiv": "cat:physics.ao-ph OR cat:astro-ph.CO OR cat:astro-ph.EP OR cat:astro-ph.GA", "europe": 'TITLE_ABS:(climate OR "earth science" OR astronomy)', "pubmed": 'climate[Title/Abstract] OR "earth science"[Title/Abstract] OR astronomy[Title/Abstract]', "crossref": "climate earth science astronomy"},
 ]
 
 def clean(value):
@@ -52,10 +52,11 @@ def normalize_date(value):
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00")).date().isoformat()
     except ValueError:
-        for fmt in ("%Y %b %d", "%Y %b", "%Y"):
+        parts = value.split()
+        for count, fmt in ((3, "%Y %b %d"), (2, "%Y %b"), (1, "%Y")):
             try:
-                return datetime.strptime(value[:11].strip(), fmt).date().isoformat()
-            except ValueError:
+                return datetime.strptime(" ".join(parts[:count]), fmt).date().isoformat()
+            except (ValueError, TypeError):
                 pass
         match = re.search(r"\d{4}-\d{2}-\d{2}", value)
         return match.group(0) if match else ""
