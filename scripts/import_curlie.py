@@ -176,8 +176,9 @@ def main():
         })
         existing.add(url)
         if len(additions)>=args.limit: break
+      if len(additions)>=args.limit: break
     if args.dry_run:
-        print(json.dumps({"new_records":len(additions),"by_topic":dict(counts),"source_file":str(sites),"category_file":str(cats)},ensure_ascii=False,indent=2)); return
+        print(json.dumps({"new_records":len(additions),"by_topic":dict(counts),"site_files":len(site_files),"category_files":len(category_files)},ensure_ascii=False,indent=2)); return
     next_id=max((int(x.get("id",0)) for x in catalog["resources"]),default=0)+1
     for item in additions: item["id"]=next_id; next_id+=1
     catalog["resources"].extend(additions)
