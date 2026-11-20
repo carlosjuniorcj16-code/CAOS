@@ -31,6 +31,18 @@ O portal possui uma área especializada em datasets e fontes primárias para IA 
 
 A inclusão no catálogo não certifica qualidade nem concede direitos de treinamento: cada licença, versão e conteúdo de origem deve ser auditado antes do uso.
 
+## Atlas de Software Livre e Open Source
+
+O CAOS mantém um atlas especializado em `software.html`, com **226 recursos curados em oito frentes**: sistemas operacionais; descoberta de software e forjas; linguagens, runtimes e pacotes; ferramentas de desenvolvimento; frameworks e stacks; infraestrutura e dados; segurança e licenças; comunidades e documentação.
+
+A cobertura de sistemas inclui diferentes famílias, sem reduzir o universo ao GNU/Linux: distribuições Linux, BSD, illumos/OpenSolaris, sistemas independentes e experimentais, Android/AOSP, sistemas móveis baseados em Linux e RTOS embarcados. O arcabouço de software acompanha o ciclo completo: linguagens, toolchains, compiladores, gerenciadores e registros de pacotes, bibliotecas, frameworks, IDEs, bancos de dados, virtualização, contêineres, cloud, observabilidade, SBOM, vulnerabilidades, assinatura e proveniência de builds.
+
+- Página: [Atlas de Software Livre](software.html).
+- Dados estruturados: [data/open-source-software.json](data/open-source-software.json).
+- Critérios e referências: [SOURCES.md](SOURCES.md).
+
+Cada entrada mantém plataforma, tipo, descrição, URL oficial, documentação quando disponível e uma nota sobre licenciamento. A presença no atlas não certifica que o projeto esteja ativo, seguro, auditado, inteiramente livre ou adequado a um uso específico. Licenças, versões, dependências, governança, releases e suporte devem ser confirmados no upstream. “Código visível”, gratuito e open source não são equivalentes.
+
 ## Como usar
 
 - Pesquise por nome, assunto, instituição, disciplina ou palavra-chave.
@@ -44,7 +56,7 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 ## Estrutura
 
 - `index.html` — portal principal multilíngue.
-- `ai-data.html` — diretório especializado de datasets e fontes para IA.
+- `ai-data.html` — diretório especializado de datasets e fontes para IA.\n- `software.html` — atlas internacional de sistemas operacionais e ecossistema open source.\n- `data/open-source-software.json` — catálogo estruturado de recursos open source.
 - `data/ai_sources.json` — metadados estruturados de datasets e fontes para IA.
 - `data/sources.json` — catálogo estruturado de fontes e links.
 - `CONTRIBUTING.md` — orientações para contribuições.
