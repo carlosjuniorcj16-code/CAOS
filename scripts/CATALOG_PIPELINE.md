@@ -60,3 +60,14 @@ O importador `scripts/ingest_openalex_institutions.py` adiciona somente metadado
 5. O workflow só permite importação na branch `main`, deduplica por URL e cria um commit do catálogo se houver novos registros.
 
 O OpenAlex exige uma chave gratuita para paginação por cursor além da primeira página. Respeite os limites atuais da API e faça lotes pequenos no começo. Consulte `data/source_registry.json` para a política de proveniência e reutilização.
+
+## Descoberta acadêmica multi-fonte
+
+O workflow `.github/workflows/multi-source-discovery.yml` executa semanalmente e pode ser iniciado manualmente em Actions. Ele consulta:
+
+- **DOAJ:** metadados de periódicos de acesso aberto e URLs de homepage fornecidas pelos periódicos. O metadado de nível de periódico é CC0 1.0. A API pública é consultada com intervalo conservador.
+- **OpenAlex:** instituições de pesquisa e URLs oficiais. Metadados CC0 1.0. A rotina automática limita-se a uma página por execução para não depender de chave de API; paginação ampliada permanece disponível no workflow manual existente.
+
+As execuções manuais começam em modo `dry_run=true`. Execuções agendadas geram um pull request de revisão; não publicam alterações diretamente em `main`. Os importadores não baixam nem copiam textos, PDFs, imagens ou outros conteúdos dos sites listados. A licença de cada site permanece independente da licença do metadado de descoberta.
+
+O Crossref permanece cadastrado como fonte bibliográfica, mas não é usado para fabricar links de homepage: seus endpoints de periódicos e membros oferecem metadados bibliográficos e de organizações, não um campo confiável e universal de site oficial. CORE também não é ingerido até que haja autorização/licença adequada. Veja `data/source_registry.json`.
