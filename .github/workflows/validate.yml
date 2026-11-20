@@ -42,14 +42,15 @@ jobs:
           assert data.get("schema_version") == 1
           categories = data.get("categories", [])
           assert len(categories) == 8, f"Expected 8 categories, got {len(categories)}"
-          ids, urls = set(), set()
+          names, urls = set(), set()
           total = 0
           for category in categories:
               assert category.get("id") and category.get("title") and category.get("description")
               for item in category.get("resources", []):
                   total += 1
                   assert item.get("name") and item.get("description_pt") and item.get("platform")
-                  assert item.get("category") is None
+                  assert item["name"] not in names, f"Duplicate resource name: {item['name']}"
+                  names.add(item["name"])
                   assert item.get("url", "").startswith("https://"), item.get("name")
                   assert item["url"] not in urls, f"Duplicate URL: {item['url']}"
                   urls.add(item["url"])
