@@ -303,11 +303,11 @@
             "macOS"
           ],
           "capacity": "Compactação e extração de arquivos",
-          "license_status": "open source com condições específicas para alguns componentes",
-          "license_spdx": "LGPL-2.1-or-later",
+          "license_status": "open source com LGPL predominante, componentes BSD e restrição unRAR específica",
+          "license_spdx": null,
           "maintenance": "Ativo; releases oficiais",
           "evidence": "O projeto publica downloads, código e FAQ no domínio oficial.",
-          "risks": "O pacote inclui componentes com avisos de licença específicos. Não execute arquivos extraídos de fontes desconhecidas.",
+          "risks": "O código de extração RAR tem restrição própria e não pode ser usado para recriar o algoritmo proprietário RAR. Confira License.txt e não execute arquivos extraídos de fontes desconhecidas.",
           "priority": "Alta"
         },
         {
@@ -323,8 +323,8 @@
             "Linux"
           ],
           "capacity": "Cofre local de senhas com criptografia",
-          "license_status": "software livre",
-          "license_spdx": "GPL-2.0-or-later",
+          "license_status": "software livre; código principal sob GPL-2 ou GPL-3, arquivos de terceiros podem ter outras licenças",
+          "license_spdx": null,
           "maintenance": "Ativo; releases no projeto",
           "evidence": "Projeto oficial publica código, downloads, documentação e política de segurança.",
           "risks": "Proteja o arquivo do banco e suas cópias de segurança. Baixe apenas do site oficial ou canais assinados indicados pelo projeto.",
@@ -389,6 +389,72 @@
           "evidence": "Projeto OBS publica downloads, documentação, código e notas de versão.",
           "risks": "Plugins e scripts podem acessar arquivos e dispositivos. Instale apenas fontes conhecidas e mantenha o programa atualizado.",
           "priority": "Média"
+        },
+        {
+          "id": "powertoys",
+          "name": "Microsoft PowerToys",
+          "url": "https://learn.microsoft.com/en-us/windows/powertoys",
+          "docs": "https://github.com/microsoft/PowerToys",
+          "category": "Utilitários Windows",
+          "model": "Gratuito e open source",
+          "platforms": [
+            "Windows 10 2004+",
+            "Windows 11",
+            "x64",
+            "ARM64"
+          ],
+          "capacity": "Mais de 30 utilitários de produtividade, janelas, teclado, busca e personalização",
+          "license_status": "open source",
+          "license_spdx": "MIT",
+          "maintenance": "Ativo; releases e repositório oficial da Microsoft",
+          "evidence": "A documentação Microsoft descreve compatibilidade com Windows 10 e 11; o repositório oficial indica licença MIT.",
+          "risks": "O aplicativo coleta dados básicos de diagnóstico. Baixe pela Microsoft Store, WinGet ou repositório oficial. Extensões comunitárias precisam de avaliação separada.",
+          "priority": "Alta"
+        },
+        {
+          "id": "bitwarden-free",
+          "name": "Bitwarden Free",
+          "url": "https://bitwarden.com/pt-br/pricing/",
+          "docs": "https://bitwarden.com/pt-br/open-source/",
+          "category": "Gerenciador de senhas",
+          "model": "Plano individual gratuito; sincronização entre dispositivos",
+          "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Android",
+            "iOS",
+            "Navegadores"
+          ],
+          "capacity": "Armazenamento de logins, notas, cartões e identidades com sincronização e criptografia ponta a ponta",
+          "license_status": "modelo misto: clientes e repositórios publicados; código distribuído sob AGPL-3.0 e Bitwarden License conforme componente; serviço cloud proprietário",
+          "license_spdx": null,
+          "maintenance": "Ativo; releases e auditorias publicados pelo fornecedor",
+          "evidence": "Bitwarden publica o código dos clientes e servidor, documenta licenças distintas por repositório e oferece plano individual gratuito.",
+          "risks": "Não confunda código publicado com licença única para todo o serviço. Proteja a conta com senha mestra forte e MFA; revise a política de recuperação e a confiança no serviço cloud.",
+          "priority": "Muito alta"
+        },
+        {
+          "id": "sysinternals",
+          "name": "Microsoft Sysinternals Suite",
+          "url": "https://learn.microsoft.com/en-us/sysinternals/",
+          "docs": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite",
+          "category": "Diagnóstico e administração",
+          "model": "Freeware gratuito para uso conforme os termos Microsoft; código não é open source",
+          "platforms": [
+            "Windows 10",
+            "Windows 11",
+            "Windows Server",
+            "x64",
+            "ARM64 conforme ferramenta"
+          ],
+          "capacity": "Ferramentas oficiais para processos, inicialização, rede, disco, diagnóstico e administração Windows",
+          "license_status": "freeware proprietário; termos Microsoft",
+          "license_spdx": null,
+          "maintenance": "Ativo; ferramentas e documentação atualizadas pela Microsoft",
+          "evidence": "A Microsoft mantém a suíte e páginas oficiais de cada utilitário, incluindo downloads e documentação.",
+          "risks": "Ferramentas administrativas podem alterar o sistema e encerrar processos. Execute somente o utilitário necessário, com privilégios mínimos, e baixe apenas de learn.microsoft.com ou Microsoft Sysinternals.",
+          "priority": "Alta"
         }
       ]
     }
