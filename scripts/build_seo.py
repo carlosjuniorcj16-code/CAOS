@@ -51,13 +51,15 @@ def topic_name(topic, lang, topics, resources):
         return meta.get("en") or next((x.get("topic_en") for x in resources if x.get("topic") == topic and x.get("topic_en")), meta.get("pt", topic))
     for item in resources:
         if item.get("topic") == topic:
-            value = item.get("topic_i18n", {}).get(lang)
+            topic_i18n = item.get("topic_i18n") or {}
+            value = topic_i18n.get(lang) if isinstance(topic_i18n, dict) else None
             if isinstance(value, str) and value.strip():
                 return value
     return meta.get("en") or meta.get("pt") or topic
 
 def description(item, lang):
-    translated = item.get("translations", {}).get(lang, {})
+    translations = item.get("translations") or {}
+    translated = translations.get(lang, {}) if isinstance(translations, dict) else {}
     if isinstance(translated, dict) and translated.get("description"):
         return str(translated["description"]).strip()
     if lang == "pt":
