@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated_at": "2026-11-20",
   "editorial_policy": "Links point to official project, documentation, source-code, package-index or foundation pages. Open source does not imply that every firmware, driver, codec, cloud service, mobile app or bundled component is open. Project status and licensing must be checked at the upstream source before adoption.",
   "categories": [
@@ -820,6 +820,363 @@
           "Graph for understanding software supply-chain metadata and relationships."
         ]
       ]
+    },
+    {
+      "id": "toolchains-frameworks",
+      "title": "Linguagens, toolchains, frameworks e infraestrutura de aplicações",
+      "description": "A camada de construção e execução do software: linguagens, compiladores, runtimes, build systems, frameworks web, bibliotecas de interface, bancos de dados, containers, orquestração e infraestrutura como código. Licenças e edições podem variar por componente.",
+      "resources": [
+        [
+          "GCC",
+          "https://gcc.gnu.org/",
+          "Compiler toolchain",
+          "GNU Compiler Collection for C, C++, Fortran and other languages."
+        ],
+        [
+          "LLVM",
+          "https://llvm.org/",
+          "Compiler infrastructure",
+          "Modular compiler and toolchain infrastructure, including LLVM IR and Clang."
+        ],
+        [
+          "Clang",
+          "https://clang.llvm.org/",
+          "Compiler",
+          "C-family compiler frontend built on LLVM."
+        ],
+        [
+          "CMake",
+          "https://cmake.org/",
+          "Build system",
+          "Cross-platform build-system generator."
+        ],
+        [
+          "Meson",
+          "https://mesonbuild.com/",
+          "Build system",
+          "Open-source build system designed for speed and developer productivity."
+        ],
+        [
+          "Ninja",
+          "https://ninja-build.org/",
+          "Build system",
+          "Small build system focused on fast incremental builds."
+        ],
+        [
+          "Bazel",
+          "https://bazel.build/",
+          "Build system",
+          "Build and test system for multi-language, multi-platform projects."
+        ],
+        [
+          "Gradle",
+          "https://gradle.org/",
+          "Build automation",
+          "Build automation platform for JVM and multi-language projects; check edition and plugin licenses."
+        ],
+        [
+          "Apache Maven",
+          "https://maven.apache.org/",
+          "Build automation",
+          "Build and dependency-management tool for Java projects."
+        ],
+        [
+          "OpenJDK",
+          "https://openjdk.org/",
+          "Language runtime",
+          "Open-source Java development kit project."
+        ],
+        [
+          "Python",
+          "https://www.python.org/",
+          "Programming language",
+          "Programming language, reference implementation and ecosystem."
+        ],
+        [
+          "Rust",
+          "https://www.rust-lang.org/",
+          "Programming language",
+          "Systems programming language and tooling ecosystem."
+        ],
+        [
+          "Go",
+          "https://go.dev/",
+          "Programming language",
+          "Programming language, compiler, standard library and toolchain."
+        ],
+        [
+          "Node.js",
+          "https://nodejs.org/",
+          "Runtime",
+          "JavaScript runtime and ecosystem."
+        ],
+        [
+          "TypeScript",
+          "https://www.typescriptlang.org/",
+          "Programming language",
+          "Typed superset of JavaScript and compiler."
+        ],
+        [
+          ".NET",
+          "https://dotnet.microsoft.com/",
+          "Development platform",
+          "Open-source developer platform and runtime; verify components and support lifecycle."
+        ],
+        [
+          "PHP",
+          "https://www.php.net/",
+          "Programming language",
+          "Open-source scripting language and runtime."
+        ],
+        [
+          "Ruby",
+          "https://www.ruby-lang.org/",
+          "Programming language",
+          "Dynamic programming language and interpreter."
+        ],
+        [
+          "Julia",
+          "https://julialang.org/",
+          "Programming language",
+          "High-level language for technical and scientific computing."
+        ],
+        [
+          "R Project",
+          "https://www.r-project.org/",
+          "Programming language",
+          "Language and environment for statistical computing and graphics."
+        ],
+        [
+          "Swift",
+          "https://swift.org/",
+          "Programming language",
+          "Open-source programming language and toolchain."
+        ],
+        [
+          "Kotlin",
+          "https://kotlinlang.org/",
+          "Programming language",
+          "Open-source language and compiler ecosystem."
+        ],
+        [
+          "Dart",
+          "https://dart.dev/",
+          "Programming language",
+          "Language and SDK used for client, server and Flutter development."
+        ],
+        [
+          "Django",
+          "https://www.djangoproject.com/",
+          "Web framework",
+          "Python web framework with batteries-included architecture."
+        ],
+        [
+          "FastAPI",
+          "https://fastapi.tiangolo.com/",
+          "Web framework",
+          "Python framework for building APIs with type hints and OpenAPI support."
+        ],
+        [
+          "Flask",
+          "https://flask.palletsprojects.com/",
+          "Web framework",
+          "Lightweight Python web framework."
+        ],
+        [
+          "Spring",
+          "https://spring.io/projects",
+          "Application framework",
+          "Java application framework ecosystem."
+        ],
+        [
+          "Quarkus",
+          "https://quarkus.io/",
+          "Application framework",
+          "Kubernetes-native Java framework and runtime."
+        ],
+        [
+          "ASP.NET Core",
+          "https://learn.microsoft.com/aspnet/core/",
+          "Web framework",
+          "Cross-platform, open-source framework for modern .NET web applications."
+        ],
+        [
+          "Laravel",
+          "https://laravel.com/",
+          "Web framework",
+          "PHP web application framework."
+        ],
+        [
+          "Symfony",
+          "https://symfony.com/",
+          "Web framework",
+          "PHP framework and reusable components."
+        ],
+        [
+          "Ruby on Rails",
+          "https://rubyonrails.org/",
+          "Web framework",
+          "Ruby framework for database-backed web applications."
+        ],
+        [
+          "Phoenix",
+          "https://www.phoenixframework.org/",
+          "Web framework",
+          "Elixir framework for web applications and real-time features."
+        ],
+        [
+          "React",
+          "https://react.dev/",
+          "UI library",
+          "JavaScript library for building user interfaces; license and governance are upstream-defined."
+        ],
+        [
+          "Vue.js",
+          "https://vuejs.org/",
+          "UI framework",
+          "Progressive JavaScript framework for user interfaces."
+        ],
+        [
+          "Angular",
+          "https://angular.dev/",
+          "Web framework",
+          "Web application framework maintained by the Angular team."
+        ],
+        [
+          "Svelte",
+          "https://svelte.dev/",
+          "UI framework",
+          "Compiler-based framework for building web interfaces."
+        ],
+        [
+          "Qt",
+          "https://www.qt.io/",
+          "Application framework",
+          "Cross-platform application framework; licensing varies by modules and distribution model."
+        ],
+        [
+          "GTK",
+          "https://www.gtk.org/",
+          "UI toolkit",
+          "Cross-platform toolkit for graphical user interfaces."
+        ],
+        [
+          "PostgreSQL",
+          "https://www.postgresql.org/",
+          "Database",
+          "Open-source relational database system."
+        ],
+        [
+          "SQLite",
+          "https://sqlite.org/",
+          "Database",
+          "Embedded SQL database engine in the public domain."
+        ],
+        [
+          "MariaDB",
+          "https://mariadb.org/",
+          "Database",
+          "Community-developed relational database."
+        ],
+        [
+          "Valkey",
+          "https://valkey.io/",
+          "In-memory data store",
+          "Open-source high-performance key/value datastore."
+        ],
+        [
+          "ClickHouse",
+          "https://clickhouse.com/",
+          "Database",
+          "Open-source column-oriented analytical database."
+        ],
+        [
+          "Apache Kafka",
+          "https://kafka.apache.org/",
+          "Data infrastructure",
+          "Distributed event streaming platform."
+        ],
+        [
+          "Kubernetes",
+          "https://kubernetes.io/",
+          "Container orchestration",
+          "Open-source system for automating deployment, scaling and management of containerized applications."
+        ],
+        [
+          "containerd",
+          "https://containerd.io/",
+          "Container runtime",
+          "Industry-standard container runtime."
+        ],
+        [
+          "Podman",
+          "https://podman.io/",
+          "Container engine",
+          "Daemonless container engine and tooling."
+        ],
+        [
+          "OpenTofu",
+          "https://opentofu.org/",
+          "Infrastructure as code",
+          "Open-source infrastructure provisioning tool."
+        ],
+        [
+          "Ansible",
+          "https://www.ansible.com/",
+          "Automation framework",
+          "Open-source automation platform and configuration-management ecosystem."
+        ]
+      ]
     }
-  ]
+  ],
+  "record_schema": {
+    "required": [
+      "id",
+      "name",
+      "canonical_url",
+      "category_id",
+      "resource_type",
+      "license_status",
+      "maintenance_status",
+      "source_verified_at"
+    ],
+    "optional": [
+      "upstream_repository",
+      "documentation_url",
+      "supported_platforms",
+      "architectures",
+      "latest_version",
+      "release_date",
+      "license_spdx",
+      "license_url",
+      "license_scope",
+      "proprietary_components",
+      "package_managers",
+      "registries",
+      "dependencies",
+      "sbom_formats",
+      "vulnerability_sources",
+      "build_provenance",
+      "artifact_signing",
+      "secure_update_framework",
+      "governance_url",
+      "maintainers",
+      "last_activity_at",
+      "evidence_urls",
+      "content_rights",
+      "notes"
+    ],
+    "field_rules": {
+      "license_spdx": "Use SPDX identifiers only when verified for the exact project/version; otherwise null and set license_status to unknown, mixed, source-available or proprietary.",
+      "license_scope": "Separate project license, bundled component licenses, dependency licenses, documentation license and content/data rights.",
+      "maintenance_status": "Use maintained, limited, experimental, archived or unknown; support with dated upstream evidence.",
+      "supported_platforms": "List operating systems and hardware architectures explicitly; do not infer compatibility from language or source availability.",
+      "proprietary_components": "Record firmware, drivers, codecs, cloud services, app stores and other non-open components when documented.",
+      "sbom_formats": "Record actual published or generated SPDX/CycloneDX artifacts, not assumed support.",
+      "vulnerability_sources": "Prefer OSV and upstream advisories; record scan timestamp and version scope.",
+      "build_provenance": "Record SLSA/in-toto attestations only when verifiable.",
+      "artifact_signing": "Record signing system and verification instructions, not merely the presence of a checksum."
+    },
+    "current_seed_records": "The current 150+ entries are discovery seeds with name, official URL, resource type and editorial note. They are not yet fully enriched records; fields absent from the seed are unknown, not negative."
+  }
 }
