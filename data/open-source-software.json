@@ -5,8 +5,8 @@
   "categories": [
     {
       "id": "linux",
-      "title": "GNU/Linux distributions and ecosystems",
-      "description": "Independent distributions, families, immutable systems, source-based systems and fully free distributions. Follow each project's release, support and package policy.",
+      "title": "Distribuições GNU/Linux e ecossistemas",
+      "description": "Distribuições independentes, famílias, sistemas imutáveis, projetos baseados em código-fonte e distribuições de software livre. Consulte políticas de versões, suporte e pacotes de cada projeto.",
       "resources": [
         [
           "Debian",
@@ -186,8 +186,8 @@
     },
     {
       "id": "bsd-unix",
-      "title": "BSD, illumos and Unix-derived systems",
-      "description": "Independent kernels and operating-system families outside the Linux distribution ecosystem.",
+      "title": "BSD, illumos e sistemas derivados de Unix",
+      "description": "Kernels e sistemas operacionais independentes fora do ecossistema de distribuições Linux.",
       "resources": [
         [
           "FreeBSD",
@@ -308,8 +308,8 @@
     },
     {
       "id": "alternative",
-      "title": "Alternative, experimental and research operating systems",
-      "description": "Projects exploring different kernels, compatibility models, architectures or historical lineages. These are not all production-ready; verify hardware support and project activity.",
+      "title": "Sistemas operacionais alternativos, experimentais e de pesquisa",
+      "description": "Projetos que exploram kernels, arquiteturas, compatibilidade e linhagens históricas diferentes. Nem todos são indicados para produção; confira suporte de hardware e atividade.",
       "resources": [
         [
           "Haiku",
@@ -421,8 +421,8 @@
     },
     {
       "id": "mobile",
-      "title": "Mobile and handheld open-source ecosystems",
-      "description": "Mobile platforms and distributions. AOSP-based systems can still depend on proprietary firmware, drivers, app services or device-specific components.",
+      "title": "Sistemas móveis e plataformas portáteis",
+      "description": "Android/AOSP, sistemas móveis comunitários e ambientes alternativos para celulares e dispositivos portáteis.",
       "resources": [
         [
           "Android Open Source Project",
@@ -491,8 +491,8 @@
     },
     {
       "id": "embedded",
-      "title": "Embedded, real-time, router and device systems",
-      "description": "Operating systems, build systems and firmware foundations for routers, appliances, IoT, robotics and real-time hardware.",
+      "title": "Sistemas embarcados, tempo real, roteadores e dispositivos",
+      "description": "RTOS, sistemas para IoT, roteadores, microcontroladores e ferramentas para construir sistemas embarcados.",
       "resources": [
         [
           "OpenWrt",
@@ -564,8 +564,8 @@
     },
     {
       "id": "software-platforms",
-      "title": "Software distribution, desktops and package ecosystems",
-      "description": "Where software is packaged, signed, built, discovered and installed across operating systems. These channels are not interchangeable; prefer upstream project releases and native repositories when appropriate.",
+      "title": "Distribuição de software, desktops e ecossistemas de pacotes",
+      "description": "Diretórios de aplicações, catálogos, formatos de distribuição, gerenciadores e repositórios de pacotes.",
       "resources": [
         [
           "Flathub",
@@ -734,8 +734,8 @@
     },
     {
       "id": "developer-ecosystem",
-      "title": "Software engineering, source code and package registries",
-      "description": "The software-development backbone: source forges, project foundations, language registries, build systems, documentation and reusable components.",
+      "title": "Engenharia de software, código-fonte e registros de pacotes",
+      "description": "Forjas de código, linguagens, toolchains, bibliotecas, registros de pacotes e recursos para desenvolvimento.",
       "resources": [
         [
           "Git",
@@ -992,8 +992,8 @@
     },
     {
       "id": "software-assurance",
-      "title": "Licensing, provenance, security and software supply chain",
-      "description": "The framework that makes software discoverable and safer to reuse: license identification, SBOMs, vulnerability intelligence, signing, provenance, reproducible builds and project health.",
+      "title": "Licenças, proveniência, segurança e cadeia de suprimentos",
+      "description": "Ferramentas e padrões para avaliar licenças, vulnerabilidades, SBOM, assinatura, proveniência e integridade de builds.",
       "resources": [
         [
           "SPDX",
@@ -1150,8 +1150,8 @@
     },
     {
       "id": "toolchains-frameworks",
-      "title": "Linguagens, toolchains, frameworks e infraestrutura de aplicações",
-      "description": "A camada de construção e execução do software: linguagens, compiladores, runtimes, build systems, frameworks web, bibliotecas de interface, bancos de dados, containers, orquestração e infraestrutura como código. Licenças e edições podem variar por componente.",
+      "title": "Linguagens, toolchains, frameworks e aplicações",
+      "description": "Compiladores, sistemas de build, IDEs, bibliotecas, frameworks web/mobile/desktop e runtimes.",
       "resources": [
         [
           "GCC",
@@ -1691,8 +1691,8 @@
     },
     {
       "id": "software-infrastructure",
-      "title": "Infrastructure, data, cloud and observability",
-      "description": "Databases, storage, virtualization, containers, cloud platforms, web servers, proxies and observability systems.",
+      "title": "Infraestrutura, dados, nuvem e observabilidade",
+      "description": "Bancos de dados, armazenamento, virtualização, contêineres, plataformas cloud, servidores, proxies e monitoramento.",
       "resources": [
         [
           "DuckDB",
@@ -1896,8 +1896,8 @@
     },
     {
       "id": "software-community",
-      "title": "Documentation, communities and contribution",
-      "description": "Technical documentation, learning, contribution pathways, governance and project sustainability.",
+      "title": "Documentação, comunidades e contribuição",
+      "description": "Documentação técnica, aprendizagem, caminhos de contribuição, governança e sustentabilidade de projetos.",
       "resources": [
         [
           "MDN Web Docs",
