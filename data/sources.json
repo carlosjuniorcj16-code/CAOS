@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updated": "2026-11-19",
-  "note": "Curated starting index. Availability, licensing and access conditions vary by resource; inclusion is not endorsement.",
+  "note": "Curated starting index expanded with international and Brazilian research resources. Availability, licensing and access conditions vary; inclusion is not endorsement. Verify terms at each source.",
   "resources": [
     {
       "id": 1,
@@ -962,6 +962,1190 @@
       "description_pt": "Plataforma colaborativa para projetos e desenhos de hardware aberto.",
       "subcategory_pt": "Engenharia aberta",
       "access_pt": "Aberto; licenças dos projetos variam"
+    },
+    {
+      "id": 61,
+      "title": "NASA Astrophysics Data System",
+      "category": "natural",
+      "subcategory": "Astronomy literature",
+      "description": "Bibliographic database for astronomy and physics research.",
+      "url": "https://ui.adsabs.harvard.edu/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Astronomy literature"
+      ],
+      "description_pt": "Base bibliográfica de literatura em astronomia e física.",
+      "subcategory_pt": "Astronomy literature",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 62,
+      "title": "MAST (Mikulski Archive for Space Telescopes)",
+      "category": "natural",
+      "subcategory": "Astronomy data",
+      "description": "Archive of astronomical data from space telescopes and missions.",
+      "url": "https://mast.stsci.edu/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Astronomy data"
+      ],
+      "description_pt": "Arquivo de dados astronômicos de telescópios espaciais e missões.",
+      "subcategory_pt": "Astronomy data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 63,
+      "title": "SIMBAD Astronomical Database",
+      "category": "natural",
+      "subcategory": "Astronomy database",
+      "description": "Reference database for astronomical objects beyond the Solar System.",
+      "url": "https://simbad.cds.unistra.fr/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Astronomy database"
+      ],
+      "description_pt": "Base de referência de objetos astronômicos fora do Sistema Solar.",
+      "subcategory_pt": "Astronomy database",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 64,
+      "title": "VizieR Catalogue Service",
+      "category": "natural",
+      "subcategory": "Astronomy catalogues",
+      "description": "Access to astronomical catalogues and tables from published research.",
+      "url": "https://vizier.cds.unistra.fr/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Astronomy catalogues"
+      ],
+      "description_pt": "Acesso a catálogos e tabelas astronômicas de pesquisas publicadas.",
+      "subcategory_pt": "Astronomy catalogues",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 65,
+      "title": "PANGAEA",
+      "category": "natural",
+      "subcategory": "Earth and environmental data",
+      "description": "Open data library for Earth system, environmental and biodiversity research.",
+      "url": "https://www.pangaea.de/",
+      "type": "Research resource",
+      "access": "Gratuito; condições por conjunto de dados",
+      "tags": [
+        "Earth and environmental data"
+      ],
+      "description_pt": "Biblioteca de dados abertos sobre sistema terrestre, meio ambiente e biodiversidade.",
+      "subcategory_pt": "Earth and environmental data",
+      "access_pt": "Gratuito; condições por conjunto de dados"
+    },
+    {
+      "id": 66,
+      "title": "Ocean Biodiversity Information System (OBIS)",
+      "category": "natural",
+      "subcategory": "Marine biodiversity",
+      "description": "Global open-access data system for marine biodiversity and species occurrences.",
+      "url": "https://obis.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Marine biodiversity"
+      ],
+      "description_pt": "Sistema global de dados abertos sobre biodiversidade marinha e ocorrências de espécies.",
+      "subcategory_pt": "Marine biodiversity",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 67,
+      "title": "iNaturalist",
+      "category": "natural",
+      "subcategory": "Citizen science and biodiversity",
+      "description": "Community platform for documenting observations of biodiversity.",
+      "url": "https://www.inaturalist.org/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças variam",
+      "tags": [
+        "Citizen science and biodiversity"
+      ],
+      "description_pt": "Plataforma comunitária para registrar observações de biodiversidade.",
+      "subcategory_pt": "Citizen science and biodiversity",
+      "access_pt": "Gratuito; licenças variam"
+    },
+    {
+      "id": 68,
+      "title": "RCSB Protein Data Bank",
+      "category": "natural",
+      "subcategory": "Structural biology",
+      "description": "Repository of experimentally determined 3D structures of biological macromolecules.",
+      "url": "https://www.rcsb.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Structural biology"
+      ],
+      "description_pt": "Repositório de estruturas tridimensionais de macromoléculas biológicas determinadas experimentalmente.",
+      "subcategory_pt": "Structural biology",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 69,
+      "title": "EMBL-EBI",
+      "category": "natural",
+      "subcategory": "Molecular biology",
+      "description": "European bioinformatics institute offering molecular data resources and tools.",
+      "url": "https://www.ebi.ac.uk/",
+      "type": "Research resource",
+      "access": "Gratuito; termos variam",
+      "tags": [
+        "Molecular biology"
+      ],
+      "description_pt": "Instituto europeu de bioinformática com bases de dados e ferramentas de biologia molecular.",
+      "subcategory_pt": "Molecular biology",
+      "access_pt": "Gratuito; termos variam"
+    },
+    {
+      "id": 70,
+      "title": "EarthChem",
+      "category": "natural",
+      "subcategory": "Geochemistry",
+      "description": "Community data resources for geochemistry and Earth sciences.",
+      "url": "https://www.earthchem.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Geochemistry"
+      ],
+      "description_pt": "Recursos comunitários de dados para geoquímica e ciências da Terra.",
+      "subcategory_pt": "Geochemistry",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 71,
+      "title": "Smithsonian Global Volcanism Program",
+      "category": "natural",
+      "subcategory": "Volcanology",
+      "description": "Scientific information and records on active and historical volcanoes.",
+      "url": "https://volcano.si.edu/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Volcanology"
+      ],
+      "description_pt": "Informações científicas e registros de vulcões ativos e históricos.",
+      "subcategory_pt": "Volcanology",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 72,
+      "title": "INPE – Instituto Nacional de Pesquisas Espaciais",
+      "category": "natural",
+      "subcategory": "Earth observation and space research",
+      "description": "Brazilian institute for space research, Earth observation and atmospheric science.",
+      "url": "https://www.gov.br/inpe/pt-br",
+      "type": "Research resource",
+      "access": "Gratuito; serviços específicos podem exigir cadastro",
+      "tags": [
+        "Earth observation and space research"
+      ],
+      "description_pt": "Instituto brasileiro dedicado à pesquisa espacial, observação da Terra e ciências atmosféricas.",
+      "subcategory_pt": "Earth observation and space research",
+      "access_pt": "Gratuito; serviços específicos podem exigir cadastro"
+    },
+    {
+      "id": 73,
+      "title": "INMET – Instituto Nacional de Meteorologia",
+      "category": "natural",
+      "subcategory": "Meteorology and climate",
+      "description": "Brazilian meteorological observations, forecasts and climate information.",
+      "url": "https://portal.inmet.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Meteorology and climate"
+      ],
+      "description_pt": "Observações meteorológicas, previsões e informações climáticas do Brasil.",
+      "subcategory_pt": "Meteorology and climate",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 74,
+      "title": "MapBiomas",
+      "category": "natural",
+      "subcategory": "Land use and ecosystems",
+      "description": "Annual mapping and data on land cover and land use in Brazil.",
+      "url": "https://brasil.mapbiomas.org/",
+      "type": "Research resource",
+      "access": "Gratuito; termos de uso",
+      "tags": [
+        "Land use and ecosystems"
+      ],
+      "description_pt": "Mapeamento anual e dados sobre cobertura e uso da terra no Brasil.",
+      "subcategory_pt": "Land use and ecosystems",
+      "access_pt": "Gratuito; termos de uso"
+    },
+    {
+      "id": 75,
+      "title": "MathSciNet",
+      "category": "formal",
+      "subcategory": "Mathematical literature",
+      "description": "Bibliographic and review database for mathematical research.",
+      "url": "https://mathscinet.ams.org/",
+      "type": "Research resource",
+      "access": "Acesso institucional ou assinatura",
+      "tags": [
+        "Mathematical literature"
+      ],
+      "description_pt": "Base bibliográfica e de resenhas de pesquisas matemáticas.",
+      "subcategory_pt": "Mathematical literature",
+      "access_pt": "Acesso institucional ou assinatura"
+    },
+    {
+      "id": 76,
+      "title": "Project Euclid",
+      "category": "formal",
+      "subcategory": "Mathematics and statistics publishing",
+      "description": "Platform for scholarly journals and books in mathematics and statistics.",
+      "url": "https://projecteuclid.org/",
+      "type": "Research resource",
+      "access": "Acesso misto",
+      "tags": [
+        "Mathematics and statistics publishing"
+      ],
+      "description_pt": "Plataforma de periódicos e livros acadêmicos de matemática e estatística.",
+      "subcategory_pt": "Mathematics and statistics publishing",
+      "access_pt": "Acesso misto"
+    },
+    {
+      "id": 77,
+      "title": "Electronic Library of Mathematics (ELibM)",
+      "category": "formal",
+      "subcategory": "Mathematical publications",
+      "description": "Collection of electronic mathematical publications and journals.",
+      "url": "https://www.emis.de/ELibM.html",
+      "type": "Research resource",
+      "access": "Gratuito; acesso varia",
+      "tags": [
+        "Mathematical publications"
+      ],
+      "description_pt": "Coleção de publicações e periódicos eletrônicos de matemática.",
+      "subcategory_pt": "Mathematical publications",
+      "access_pt": "Gratuito; acesso varia"
+    },
+    {
+      "id": 78,
+      "title": "Lobachevskii Journal of Mathematics",
+      "category": "formal",
+      "subcategory": "Mathematics journal",
+      "description": "Peer-reviewed mathematics journal with research articles.",
+      "url": "https://ljm.kpfu.ru/",
+      "type": "Research resource",
+      "access": "Acesso aberto",
+      "tags": [
+        "Mathematics journal"
+      ],
+      "description_pt": "Periódico de matemática com artigos de pesquisa e revisão por pares.",
+      "subcategory_pt": "Mathematics journal",
+      "access_pt": "Acesso aberto"
+    },
+    {
+      "id": 79,
+      "title": "Crossref",
+      "category": "formal",
+      "subcategory": "Scholarly metadata",
+      "description": "Infrastructure and metadata services for identifying and linking scholarly publications.",
+      "url": "https://www.crossref.org/",
+      "type": "Research resource",
+      "access": "Gratuito para consulta",
+      "tags": [
+        "Scholarly metadata"
+      ],
+      "description_pt": "Infraestrutura e serviços de metadados para identificar e conectar publicações acadêmicas.",
+      "subcategory_pt": "Scholarly metadata",
+      "access_pt": "Gratuito para consulta"
+    },
+    {
+      "id": 80,
+      "title": "OpenCitations",
+      "category": "formal",
+      "subcategory": "Citation data",
+      "description": "Open scholarly citation data and services for bibliometric analysis.",
+      "url": "https://opencitations.net/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Citation data"
+      ],
+      "description_pt": "Dados abertos de citações acadêmicas e serviços para análise bibliométrica.",
+      "subcategory_pt": "Citation data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 81,
+      "title": "DBLP Computer Science Bibliography",
+      "category": "formal",
+      "subcategory": "Computer science bibliography",
+      "description": "Curated bibliographic information on computer science publications.",
+      "url": "https://dblp.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Computer science bibliography"
+      ],
+      "description_pt": "Informações bibliográficas curadas sobre publicações em ciência da computação.",
+      "subcategory_pt": "Computer science bibliography",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 82,
+      "title": "SSRN",
+      "category": "social",
+      "subcategory": "Social sciences and law",
+      "description": "Preprint and working-paper platform covering social sciences, economics and law.",
+      "url": "https://www.ssrn.com/",
+      "type": "Research resource",
+      "access": "Gratuito; condições variam; preprints não são necessariamente revisados",
+      "tags": [
+        "Social sciences and law"
+      ],
+      "description_pt": "Plataforma de preprints e artigos de trabalho em ciências sociais, economia e direito.",
+      "subcategory_pt": "Social sciences and law",
+      "access_pt": "Gratuito; condições variam; preprints não são necessariamente revisados"
+    },
+    {
+      "id": 83,
+      "title": "SocArXiv",
+      "category": "social",
+      "subcategory": "Sociology and social sciences",
+      "description": "Open preprint archive for sociology and related social sciences.",
+      "url": "https://osf.io/preprints/socarxiv",
+      "type": "Research resource",
+      "access": "Gratuito; preprints não são necessariamente revisados",
+      "tags": [
+        "Sociology and social sciences"
+      ],
+      "description_pt": "Arquivo aberto de preprints em sociologia e ciências sociais relacionadas.",
+      "subcategory_pt": "Sociology and social sciences",
+      "access_pt": "Gratuito; preprints não são necessariamente revisados"
+    },
+    {
+      "id": 84,
+      "title": "Harvard Dataverse",
+      "category": "social",
+      "subcategory": "Social science and research data",
+      "description": "Repository for sharing, preserving, citing and exploring research datasets.",
+      "url": "https://dataverse.harvard.edu/",
+      "type": "Research resource",
+      "access": "Gratuito; condições por conjunto de dados",
+      "tags": [
+        "Social science and research data"
+      ],
+      "description_pt": "Repositório para compartilhar, preservar, citar e explorar conjuntos de dados de pesquisa.",
+      "subcategory_pt": "Social science and research data",
+      "access_pt": "Gratuito; condições por conjunto de dados"
+    },
+    {
+      "id": 85,
+      "title": "UK Data Service",
+      "category": "social",
+      "subcategory": "Social and economic data",
+      "description": "Major collection of UK social and economic research data and documentation.",
+      "url": "https://ukdataservice.ac.uk/",
+      "type": "Research resource",
+      "access": "Acesso misto; cadastro pode ser exigido",
+      "tags": [
+        "Social and economic data"
+      ],
+      "description_pt": "Grande coleção de dados e documentação de pesquisas sociais e econômicas do Reino Unido.",
+      "subcategory_pt": "Social and economic data",
+      "access_pt": "Acesso misto; cadastro pode ser exigido"
+    },
+    {
+      "id": 86,
+      "title": "European Social Survey (ESS)",
+      "category": "social",
+      "subcategory": "Public opinion and society",
+      "description": "Cross-national survey data on attitudes, beliefs and social change in Europe.",
+      "url": "https://www.europeansocialsurvey.org/",
+      "type": "Research resource",
+      "access": "Gratuito; cadastro pode ser exigido",
+      "tags": [
+        "Public opinion and society"
+      ],
+      "description_pt": "Dados de pesquisas comparativas sobre atitudes, crenças e mudanças sociais na Europa.",
+      "subcategory_pt": "Public opinion and society",
+      "access_pt": "Gratuito; cadastro pode ser exigido"
+    },
+    {
+      "id": 87,
+      "title": "World Values Survey",
+      "category": "social",
+      "subcategory": "Values and social change",
+      "description": "International survey program studying values, beliefs and social attitudes.",
+      "url": "https://www.worldvaluessurvey.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Values and social change"
+      ],
+      "description_pt": "Programa internacional de pesquisas sobre valores, crenças e atitudes sociais.",
+      "subcategory_pt": "Values and social change",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 88,
+      "title": "Afrobarometer",
+      "category": "social",
+      "subcategory": "Public opinion in Africa",
+      "description": "Survey data and analysis on democracy, governance and quality of life in Africa.",
+      "url": "https://www.afrobarometer.org/",
+      "type": "Research resource",
+      "access": "Gratuito; termos variam",
+      "tags": [
+        "Public opinion in Africa"
+      ],
+      "description_pt": "Dados de pesquisas e análises sobre democracia, governança e qualidade de vida na África.",
+      "subcategory_pt": "Public opinion in Africa",
+      "access_pt": "Gratuito; termos variam"
+    },
+    {
+      "id": 89,
+      "title": "Latinobarómetro",
+      "category": "social",
+      "subcategory": "Public opinion in Latin America",
+      "description": "Regional public-opinion surveys on democracy, economy and society.",
+      "url": "https://www.latinobarometro.org/",
+      "type": "Research resource",
+      "access": "Acesso varia por conjunto de dados",
+      "tags": [
+        "Public opinion in Latin America"
+      ],
+      "description_pt": "Pesquisas regionais de opinião pública sobre democracia, economia e sociedade.",
+      "subcategory_pt": "Public opinion in Latin America",
+      "access_pt": "Acesso varia por conjunto de dados"
+    },
+    {
+      "id": 90,
+      "title": "IBGE – Instituto Brasileiro de Geografia e Estatística",
+      "category": "social",
+      "subcategory": "Brazilian statistics",
+      "description": "Official Brazilian statistics on population, economy, territory and society.",
+      "url": "https://www.ibge.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Brazilian statistics"
+      ],
+      "description_pt": "Estatísticas oficiais brasileiras sobre população, economia, território e sociedade.",
+      "subcategory_pt": "Brazilian statistics",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 91,
+      "title": "IPEA – Instituto de Pesquisa Econômica Aplicada",
+      "category": "social",
+      "subcategory": "Economics and public policy",
+      "description": "Brazilian research, publications and indicators on economics and public policy.",
+      "url": "https://www.ipea.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Economics and public policy"
+      ],
+      "description_pt": "Pesquisas, publicações e indicadores brasileiros sobre economia e políticas públicas.",
+      "subcategory_pt": "Economics and public policy",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 92,
+      "title": "IPEADATA",
+      "category": "social",
+      "subcategory": "Economic and social indicators",
+      "description": "Time series and indicators for economic and social research in Brazil.",
+      "url": "http://www.ipeadata.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Economic and social indicators"
+      ],
+      "description_pt": "Séries históricas e indicadores para pesquisas econômicas e sociais no Brasil.",
+      "subcategory_pt": "Economic and social indicators",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 93,
+      "title": "TSE – Dados Abertos",
+      "category": "social",
+      "subcategory": "Electoral data",
+      "description": "Official Brazilian electoral datasets, including candidates, results and accounts.",
+      "url": "https://dadosabertos.tse.jus.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Electoral data"
+      ],
+      "description_pt": "Conjuntos de dados eleitorais oficiais do Brasil, incluindo candidaturas, resultados e prestações de contas.",
+      "subcategory_pt": "Electoral data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 94,
+      "title": "medRxiv",
+      "category": "health",
+      "subcategory": "Medical preprints",
+      "description": "Preprint server for clinical and health sciences research; manuscripts may not be peer-reviewed.",
+      "url": "https://www.medrxiv.org/",
+      "type": "Research resource",
+      "access": "Gratuito; preprints não são necessariamente revisados",
+      "tags": [
+        "Medical preprints"
+      ],
+      "description_pt": "Servidor de preprints em pesquisa clínica e ciências da saúde; os manuscritos podem não ter revisão por pares.",
+      "subcategory_pt": "Medical preprints",
+      "access_pt": "Gratuito; preprints não são necessariamente revisados"
+    },
+    {
+      "id": 95,
+      "title": "LILACS",
+      "category": "health",
+      "subcategory": "Latin American health literature",
+      "description": "Index of scientific and technical literature in health sciences from Latin America and the Caribbean.",
+      "url": "https://lilacs.bvsalud.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Latin American health literature"
+      ],
+      "description_pt": "Índice de literatura científica e técnica em ciências da saúde da América Latina e do Caribe.",
+      "subcategory_pt": "Latin American health literature",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 96,
+      "title": "BVS – Biblioteca Virtual em Saúde",
+      "category": "health",
+      "subcategory": "Health information",
+      "description": "Regional network of health-science information sources and services.",
+      "url": "https://bvsalud.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Health information"
+      ],
+      "description_pt": "Rede regional de fontes e serviços de informação em ciências da saúde.",
+      "subcategory_pt": "Health information",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 97,
+      "title": "SciELO Saúde Pública",
+      "category": "health",
+      "subcategory": "Public health literature",
+      "description": "Open-access collection of public health journals and research from Latin America and beyond.",
+      "url": "https://www.scielosp.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Public health literature"
+      ],
+      "description_pt": "Coleção de acesso aberto de periódicos e pesquisas em saúde pública da América Latina e de outras regiões.",
+      "subcategory_pt": "Public health literature",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 98,
+      "title": "Registro Brasileiro de Ensaios Clínicos (ReBEC)",
+      "category": "health",
+      "subcategory": "Clinical trials",
+      "description": "Brazilian public registry of clinical trials and study information.",
+      "url": "https://ensaiosclinicos.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Clinical trials"
+      ],
+      "description_pt": "Registro público brasileiro de ensaios clínicos e informações sobre estudos.",
+      "subcategory_pt": "Clinical trials",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 99,
+      "title": "PEDro – Physiotherapy Evidence Database",
+      "category": "health",
+      "subcategory": "Physiotherapy evidence",
+      "description": "Database of randomized trials, systematic reviews and clinical practice guidelines in physiotherapy.",
+      "url": "https://pedro.org.au/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Physiotherapy evidence"
+      ],
+      "description_pt": "Base de ensaios clínicos, revisões sistemáticas e diretrizes em fisioterapia.",
+      "subcategory_pt": "Physiotherapy evidence",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 100,
+      "title": "Trip Database",
+      "category": "health",
+      "subcategory": "Evidence-based medicine",
+      "description": "Search engine for evidence-based clinical content and healthcare research.",
+      "url": "https://www.tripdatabase.com/",
+      "type": "Research resource",
+      "access": "Gratuito; recursos adicionais podem ser pagos",
+      "tags": [
+        "Evidence-based medicine"
+      ],
+      "description_pt": "Ferramenta de busca de conteúdos clínicos e pesquisas em saúde baseada em evidências.",
+      "subcategory_pt": "Evidence-based medicine",
+      "access_pt": "Gratuito; recursos adicionais podem ser pagos"
+    },
+    {
+      "id": 101,
+      "title": "NICE Guidance",
+      "category": "health",
+      "subcategory": "Clinical guidelines",
+      "description": "Evidence-based guidelines and recommendations for health and care.",
+      "url": "https://www.nice.org.uk/guidance",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Clinical guidelines"
+      ],
+      "description_pt": "Diretrizes e recomendações baseadas em evidências para saúde e assistência.",
+      "subcategory_pt": "Clinical guidelines",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 102,
+      "title": "CDC Data and Statistics",
+      "category": "health",
+      "subcategory": "Public health data",
+      "description": "Public health surveillance, statistics and datasets from the U.S. CDC.",
+      "url": "https://www.cdc.gov/datastatistics/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Public health data"
+      ],
+      "description_pt": "Vigilância, estatísticas e conjuntos de dados de saúde pública do CDC dos Estados Unidos.",
+      "subcategory_pt": "Public health data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 103,
+      "title": "Global Health Data Exchange (GHDx)",
+      "category": "health",
+      "subcategory": "Global health datasets",
+      "description": "Catalog of population health data sources, surveys and research datasets.",
+      "url": "https://ghdx.healthdata.org/",
+      "type": "Research resource",
+      "access": "Gratuito; acesso aos dados varia",
+      "tags": [
+        "Global health datasets"
+      ],
+      "description_pt": "Catálogo de fontes de dados, pesquisas e conjuntos de dados sobre saúde populacional.",
+      "subcategory_pt": "Global health datasets",
+      "access_pt": "Gratuito; acesso aos dados varia"
+    },
+    {
+      "id": 104,
+      "title": "DATASUS",
+      "category": "health",
+      "subcategory": "Brazilian health data",
+      "description": "Brazilian public health information systems, indicators and datasets.",
+      "url": "https://datasus.saude.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Brazilian health data"
+      ],
+      "description_pt": "Sistemas de informação, indicadores e conjuntos de dados da saúde pública brasileira.",
+      "subcategory_pt": "Brazilian health data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 105,
+      "title": "Fiocruz – Fundação Oswaldo Cruz",
+      "category": "health",
+      "subcategory": "Health research",
+      "description": "Brazilian institution for health research, public health, education and scientific communication.",
+      "url": "https://portal.fiocruz.br/",
+      "type": "Research resource",
+      "access": "Gratuito; serviços específicos podem variar",
+      "tags": [
+        "Health research"
+      ],
+      "description_pt": "Instituição brasileira de pesquisa em saúde, saúde pública, educação e divulgação científica.",
+      "subcategory_pt": "Health research",
+      "access_pt": "Gratuito; serviços específicos podem variar"
+    },
+    {
+      "id": 106,
+      "title": "Materials Project",
+      "category": "engineering",
+      "subcategory": "Materials science",
+      "description": "Open computational materials database with predicted properties and tools.",
+      "url": "https://materialsproject.org/",
+      "type": "Research resource",
+      "access": "Gratuito; cadastro e termos podem se aplicar",
+      "tags": [
+        "Materials science"
+      ],
+      "description_pt": "Base computacional aberta de materiais, com propriedades previstas e ferramentas.",
+      "subcategory_pt": "Materials science",
+      "access_pt": "Gratuito; cadastro e termos podem se aplicar"
+    },
+    {
+      "id": 107,
+      "title": "MatWeb",
+      "category": "engineering",
+      "subcategory": "Materials engineering",
+      "description": "Searchable materials property database for engineering applications.",
+      "url": "https://www.matweb.com/",
+      "type": "Research resource",
+      "access": "Gratuito com limitações; condições variam",
+      "tags": [
+        "Materials engineering"
+      ],
+      "description_pt": "Base pesquisável de propriedades de materiais para aplicações de engenharia.",
+      "subcategory_pt": "Materials engineering",
+      "access_pt": "Gratuito com limitações; condições variam"
+    },
+    {
+      "id": 108,
+      "title": "UCI Machine Learning Repository",
+      "category": "engineering",
+      "subcategory": "Machine learning datasets",
+      "description": "Collection of datasets for machine learning research and education.",
+      "url": "https://archive.ics.uci.edu/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Machine learning datasets"
+      ],
+      "description_pt": "Coleção de conjuntos de dados para pesquisa e ensino em aprendizado de máquina.",
+      "subcategory_pt": "Machine learning datasets",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 109,
+      "title": "Google Patents",
+      "category": "engineering",
+      "subcategory": "Patents and technology",
+      "description": "Search engine for patent publications and technical disclosures worldwide.",
+      "url": "https://patents.google.com/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Patents and technology"
+      ],
+      "description_pt": "Ferramenta de busca de publicações de patentes e divulgações técnicas internacionais.",
+      "subcategory_pt": "Patents and technology",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 110,
+      "title": "EPO Espacenet",
+      "category": "engineering",
+      "subcategory": "Patent information",
+      "description": "European Patent Office service for searching patent documents worldwide.",
+      "url": "https://worldwide.espacenet.com/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Patent information"
+      ],
+      "description_pt": "Serviço do Escritório Europeu de Patentes para buscar documentos de patentes do mundo todo.",
+      "subcategory_pt": "Patent information",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 111,
+      "title": "NIST Public Data Repository",
+      "category": "engineering",
+      "subcategory": "Measurement and engineering data",
+      "description": "Public repository for datasets produced by NIST research and measurement programs.",
+      "url": "https://data.nist.gov/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Measurement and engineering data"
+      ],
+      "description_pt": "Repositório público de conjuntos de dados produzidos por pesquisas e programas de metrologia do NIST.",
+      "subcategory_pt": "Measurement and engineering data",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 112,
+      "title": "OpenFAST",
+      "category": "engineering",
+      "subcategory": "Renewable energy engineering",
+      "description": "Open-source wind turbine simulation tool and technical documentation.",
+      "url": "https://openfast.readthedocs.io/",
+      "type": "Research resource",
+      "access": "Gratuito e código aberto",
+      "tags": [
+        "Renewable energy engineering"
+      ],
+      "description_pt": "Ferramenta de código aberto para simulação de turbinas eólicas e documentação técnica.",
+      "subcategory_pt": "Renewable energy engineering",
+      "access_pt": "Gratuito e código aberto"
+    },
+    {
+      "id": 113,
+      "title": "KiCad",
+      "category": "engineering",
+      "subcategory": "Electronic design automation",
+      "description": "Open-source suite for electronic schematic capture and printed circuit board design.",
+      "url": "https://www.kicad.org/",
+      "type": "Research resource",
+      "access": "Gratuito e código aberto",
+      "tags": [
+        "Electronic design automation"
+      ],
+      "description_pt": "Suíte de código aberto para esquemáticos eletrônicos e projeto de placas de circuito impresso.",
+      "subcategory_pt": "Electronic design automation",
+      "access_pt": "Gratuito e código aberto"
+    },
+    {
+      "id": 114,
+      "title": "FreeCAD",
+      "category": "engineering",
+      "subcategory": "Computer-aided design",
+      "description": "Open-source parametric 3D CAD modeler for engineering and product design.",
+      "url": "https://www.freecad.org/",
+      "type": "Research resource",
+      "access": "Gratuito e código aberto",
+      "tags": [
+        "Computer-aided design"
+      ],
+      "description_pt": "Modelador CAD 3D paramétrico de código aberto para engenharia e design de produtos.",
+      "subcategory_pt": "Computer-aided design",
+      "access_pt": "Gratuito e código aberto"
+    },
+    {
+      "id": 115,
+      "title": "OpenFOAM",
+      "category": "engineering",
+      "subcategory": "Computational fluid dynamics",
+      "description": "Open-source computational fluid dynamics software and documentation.",
+      "url": "https://www.openfoam.com/",
+      "type": "Research resource",
+      "access": "Gratuito; versões e serviços variam",
+      "tags": [
+        "Computational fluid dynamics"
+      ],
+      "description_pt": "Software de código aberto para dinâmica dos fluidos computacional e sua documentação.",
+      "subcategory_pt": "Computational fluid dynamics",
+      "access_pt": "Gratuito; versões e serviços variam"
+    },
+    {
+      "id": 116,
+      "title": "OpenTopography",
+      "category": "engineering",
+      "subcategory": "Geospatial and terrain data",
+      "description": "Platform for high-resolution topographic data and processing tools.",
+      "url": "https://opentopography.org/",
+      "type": "Research resource",
+      "access": "Gratuito; alguns recursos podem exigir cadastro",
+      "tags": [
+        "Geospatial and terrain data"
+      ],
+      "description_pt": "Plataforma de dados topográficos de alta resolução e ferramentas de processamento.",
+      "subcategory_pt": "Geospatial and terrain data",
+      "access_pt": "Gratuito; alguns recursos podem exigir cadastro"
+    },
+    {
+      "id": 117,
+      "title": "SciELO",
+      "category": "cross",
+      "subcategory": "Multidisciplinary scholarly publishing",
+      "description": "Brazilian-origin network of open-access scholarly journals across many disciplines.",
+      "url": "https://www.scielo.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Multidisciplinary scholarly publishing"
+      ],
+      "description_pt": "Rede de origem brasileira de periódicos científicos de acesso aberto em diversas áreas.",
+      "subcategory_pt": "Multidisciplinary scholarly publishing",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 118,
+      "title": "Oasisbr",
+      "category": "cross",
+      "subcategory": "Brazilian open science discovery",
+      "description": "Brazilian portal aggregating open-access scientific publications and repositories.",
+      "url": "https://oasisbr.ibict.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Brazilian open science discovery"
+      ],
+      "description_pt": "Portal brasileiro que agrega publicações científicas e repositórios de acesso aberto.",
+      "subcategory_pt": "Brazilian open science discovery",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 119,
+      "title": "Biblioteca Digital Brasileira de Teses e Dissertações (BDTD)",
+      "category": "cross",
+      "subcategory": "Theses and dissertations",
+      "description": "Search portal for Brazilian theses and dissertations from research institutions.",
+      "url": "https://bdtd.ibict.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Theses and dissertations"
+      ],
+      "description_pt": "Portal de busca de teses e dissertações brasileiras de instituições de pesquisa.",
+      "subcategory_pt": "Theses and dissertations",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 120,
+      "title": "Portal de Periódicos CAPES",
+      "category": "cross",
+      "subcategory": "Scholarly literature",
+      "description": "Brazilian academic portal providing access to journals, books and research databases; access depends on institution.",
+      "url": "https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/",
+      "type": "Research resource",
+      "access": "Acesso institucional e conteúdos abertos",
+      "tags": [
+        "Scholarly literature"
+      ],
+      "description_pt": "Portal acadêmico brasileiro com periódicos, livros e bases de pesquisa; o acesso depende da instituição.",
+      "subcategory_pt": "Scholarly literature",
+      "access_pt": "Acesso institucional e conteúdos abertos"
+    },
+    {
+      "id": 121,
+      "title": "BrCris",
+      "category": "cross",
+      "subcategory": "Brazilian research information",
+      "description": "Platform integrating information about Brazilian scientific research and its outputs.",
+      "url": "https://brcris.ibict.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Brazilian research information"
+      ],
+      "description_pt": "Plataforma que integra informações sobre a pesquisa científica brasileira e seus resultados.",
+      "subcategory_pt": "Brazilian research information",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 122,
+      "title": "Deposita Dados",
+      "category": "cross",
+      "subcategory": "Research data repository",
+      "description": "Brazilian repository infrastructure for sharing research datasets.",
+      "url": "https://depositadados.ibict.br/",
+      "type": "Research resource",
+      "access": "Gratuito; termos podem variar",
+      "tags": [
+        "Research data repository"
+      ],
+      "description_pt": "Infraestrutura brasileira de repositório para compartilhamento de conjuntos de dados de pesquisa.",
+      "subcategory_pt": "Research data repository",
+      "access_pt": "Gratuito; termos podem variar"
+    },
+    {
+      "id": 123,
+      "title": "Open Science Framework (OSF)",
+      "category": "cross",
+      "subcategory": "Research collaboration",
+      "description": "Open platform for managing research projects, materials, data and preprints.",
+      "url": "https://osf.io/",
+      "type": "Research resource",
+      "access": "Gratuito; planos e recursos variam",
+      "tags": [
+        "Research collaboration"
+      ],
+      "description_pt": "Plataforma aberta para gerenciar projetos, materiais, dados e preprints de pesquisa.",
+      "subcategory_pt": "Research collaboration",
+      "access_pt": "Gratuito; planos e recursos variam"
+    },
+    {
+      "id": 124,
+      "title": "Figshare",
+      "category": "cross",
+      "subcategory": "Research outputs repository",
+      "description": "Repository for publishing and citing datasets, figures, media and other research outputs.",
+      "url": "https://figshare.com/",
+      "type": "Research resource",
+      "access": "Acesso misto; condições variam",
+      "tags": [
+        "Research outputs repository"
+      ],
+      "description_pt": "Repositório para publicar e citar conjuntos de dados, figuras, mídias e outros resultados de pesquisa.",
+      "subcategory_pt": "Research outputs repository",
+      "access_pt": "Acesso misto; condições variam"
+    },
+    {
+      "id": 125,
+      "title": "Dryad",
+      "category": "cross",
+      "subcategory": "Research data repository",
+      "description": "Curated repository for sharing and preserving research datasets.",
+      "url": "https://datadryad.org/",
+      "type": "Research resource",
+      "access": "Acesso gratuito aos dados; depósito pode ter custos",
+      "tags": [
+        "Research data repository"
+      ],
+      "description_pt": "Repositório curado para compartilhar e preservar conjuntos de dados de pesquisa.",
+      "subcategory_pt": "Research data repository",
+      "access_pt": "Acesso gratuito aos dados; depósito pode ter custos"
+    },
+    {
+      "id": 126,
+      "title": "re3data",
+      "category": "cross",
+      "subcategory": "Research repository registry",
+      "description": "Global registry of research data repositories across disciplines.",
+      "url": "https://www.re3data.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Research repository registry"
+      ],
+      "description_pt": "Registro global de repositórios de dados de pesquisa de diversas áreas.",
+      "subcategory_pt": "Research repository registry",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 127,
+      "title": "BASE (Bielefeld Academic Search Engine)",
+      "category": "cross",
+      "subcategory": "Academic search",
+      "description": "Search engine for scholarly web resources, especially open-access documents.",
+      "url": "https://www.base-search.net/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Academic search"
+      ],
+      "description_pt": "Ferramenta de busca de recursos acadêmicos na web, especialmente documentos de acesso aberto.",
+      "subcategory_pt": "Academic search",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 128,
+      "title": "The Lens",
+      "category": "cross",
+      "subcategory": "Scholarly works and patents",
+      "description": "Discovery platform connecting scholarly publications, patents and innovation data.",
+      "url": "https://www.lens.org/",
+      "type": "Research resource",
+      "access": "Gratuito com cadastro; recursos variam",
+      "tags": [
+        "Scholarly works and patents"
+      ],
+      "description_pt": "Plataforma de descoberta que conecta publicações científicas, patentes e dados de inovação.",
+      "subcategory_pt": "Scholarly works and patents",
+      "access_pt": "Gratuito com cadastro; recursos variam"
+    },
+    {
+      "id": 129,
+      "title": "Wikidata",
+      "category": "cross",
+      "subcategory": "Structured knowledge graph",
+      "description": "Collaborative, multilingual and machine-readable knowledge base.",
+      "url": "https://www.wikidata.org/",
+      "type": "Research resource",
+      "access": "Gratuito; conteúdo sob licenças abertas",
+      "tags": [
+        "Structured knowledge graph"
+      ],
+      "description_pt": "Base de conhecimento colaborativa, multilíngue e legível por máquinas.",
+      "subcategory_pt": "Structured knowledge graph",
+      "access_pt": "Gratuito; conteúdo sob licenças abertas"
+    },
+    {
+      "id": 130,
+      "title": "Wikimedia Commons",
+      "category": "cross",
+      "subcategory": "Open media library",
+      "description": "Media repository of freely licensed and public-domain images, audio and video.",
+      "url": "https://commons.wikimedia.org/",
+      "type": "Research resource",
+      "access": "Gratuito; verificar licença de cada item",
+      "tags": [
+        "Open media library"
+      ],
+      "description_pt": "Repositório de imagens, áudios e vídeos com licenças livres ou em domínio público.",
+      "subcategory_pt": "Open media library",
+      "access_pt": "Gratuito; verificar licença de cada item"
+    },
+    {
+      "id": 131,
+      "title": "MIT OpenCourseWare",
+      "category": "cross",
+      "subcategory": "Open educational resources",
+      "description": "Free teaching materials from courses taught at the Massachusetts Institute of Technology.",
+      "url": "https://ocw.mit.edu/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças variam",
+      "tags": [
+        "Open educational resources"
+      ],
+      "description_pt": "Materiais didáticos gratuitos de disciplinas ministradas no Instituto de Tecnologia de Massachusetts.",
+      "subcategory_pt": "Open educational resources",
+      "access_pt": "Gratuito; licenças variam"
+    },
+    {
+      "id": 132,
+      "title": "OpenStax",
+      "category": "cross",
+      "subcategory": "Open textbooks",
+      "description": "Peer-reviewed, openly licensed textbooks and educational resources.",
+      "url": "https://openstax.org/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Open textbooks"
+      ],
+      "description_pt": "Livros didáticos com revisão por pares e recursos educacionais com licenças abertas.",
+      "subcategory_pt": "Open textbooks",
+      "access_pt": "Gratuito"
+    },
+    {
+      "id": 133,
+      "title": "OER Commons",
+      "category": "cross",
+      "subcategory": "Open educational resources",
+      "description": "Searchable library of open educational resources and teaching materials.",
+      "url": "https://oercommons.org/",
+      "type": "Research resource",
+      "access": "Gratuito; licenças variam",
+      "tags": [
+        "Open educational resources"
+      ],
+      "description_pt": "Biblioteca pesquisável de recursos educacionais abertos e materiais de ensino.",
+      "subcategory_pt": "Open educational resources",
+      "access_pt": "Gratuito; licenças variam"
+    },
+    {
+      "id": 134,
+      "title": "Portal Brasileiro de Dados Abertos",
+      "category": "cross",
+      "subcategory": "Brazilian public data",
+      "description": "Central catalog of public datasets published by Brazilian government bodies.",
+      "url": "https://dados.gov.br/",
+      "type": "Research resource",
+      "access": "Gratuito",
+      "tags": [
+        "Brazilian public data"
+      ],
+      "description_pt": "Catálogo central de conjuntos de dados públicos publicados por órgãos do governo brasileiro.",
+      "subcategory_pt": "Brazilian public data",
+      "access_pt": "Gratuito"
     }
   ]
 }
