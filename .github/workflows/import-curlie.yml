@@ -18,10 +18,6 @@ concurrency:
   group: caos-catalog-ingestion
   cancel-in-progress: false
 
-concurrency:
-  group: curlie-import
-  cancel-in-progress: false
-
 jobs:
   import:
     runs-on: ubuntu-latest
