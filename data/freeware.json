@@ -299,8 +299,7 @@
           "model": "Gratuito e open source",
           "platforms": [
             "Windows",
-            "Linux",
-            "macOS"
+            "Linux"
           ],
           "capacity": "Compactação e extração de arquivos",
           "license_status": "open source com LGPL predominante, componentes BSD e restrição unRAR específica",
@@ -384,7 +383,7 @@
           ],
           "capacity": "Gravação de tela, captura e transmissão ao vivo",
           "license_status": "software livre",
-          "license_spdx": "GPL-2.0-or-later",
+          "license_spdx": "GPL-2.0-only",
           "maintenance": "Ativo; releases oficiais",
           "evidence": "Projeto OBS publica downloads, documentação, código e notas de versão.",
           "risks": "Plugins e scripts podem acessar arquivos e dispositivos. Instale apenas fontes conhecidas e mantenha o programa atualizado.",
