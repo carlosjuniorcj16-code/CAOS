@@ -1138,24 +1138,6 @@
           "https://www.bestpractices.dev/"
         ],
         [
-          "The Update Framework (TUF)",
-          "https://theupdateframework.io/",
-          "Secure update framework",
-          "Framework para proteger sistemas de atualização de software contra ataques a metadados, chaves e distribuição. Plataforma: Cross-platform / software supply chain",
-          "Cross-platform / software supply chain",
-          "Consulte as licenças do framework, implementações e integrações; a especificação e o código têm escopos distintos.",
-          "https://theupdateframework.io/docs/"
-        ],
-        [
-          "OpenChain Project",
-          "https://openchainproject.org/",
-          "Open source compliance",
-          "Projeto de governança e boas práticas para gestão de conformidade open source na cadeia de suprimentos. Plataforma: Organizational governance",
-          "Organizational governance",
-          "Materiais, especificações e ferramentas podem ter termos diferentes; confira a licença de cada recurso.",
-          "https://openchainproject.org/resources"
-        ],
-        [
           "FOSSology",
           "https://www.fossology.org/",
           "License compliance scanner",
@@ -2034,7 +2016,7 @@
       "build_provenance": "Record SLSA/in-toto attestations only when verifiable.",
       "artifact_signing": "Record signing system and verification instructions, not merely the presence of a checksum."
     },
-    "current_seed_records": "The atlas now contains 273 discovery seeds. Legacy entries may contain the original four tuple fields [name, canonical URL, resource type, editorial note]; newly curated entries may additionally include platform context, a licensing caveat and a documentation URL. They are not yet fully enriched records; fields absent from a seed are unknown, not negative.",
+    "current_seed_records": "The atlas now contains 271 discovery seeds. Legacy entries may contain the original four tuple fields [name, canonical URL, resource type, editorial note]; newly curated entries may additionally include platform context, a licensing caveat and a documentation URL. They are not yet fully enriched records; fields absent from a seed are unknown, not negative.",
     "seed_tuple_fields": [
       "name",
       "canonical_url",
