@@ -1,0 +1,53 @@
+name: CAOS live research radar
+
+on:
+  schedule:
+    - cron: "20 7,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: caos-live-research-radar
+  cancel-in-progress: false
+
+jobs:
+  update-radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect recent primary research metadata
+        run: python scripts/update_research_radar.py
+      - name: Validate radar payload
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("data/research-radar.json").read_text(encoding="utf-8"))
+          assert data.get("schema_version") == 1
+          assert isinstance(data.get("items"), list) and len(data["items"]) <= 5
+          for item in data["items"]:
+              assert item["url"].startswith("https://arxiv.org/abs/")
+              assert item["title"] and item["area"] and item["published"]
+          print("Radar payload valid.")
+          PY
+      - name: Commit updated radar data
+        run: |
+          if git diff --quiet -- data/research-radar.json; then
+            echo "No radar changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research-radar.json
+          git commit -m "chore: refresh live research radar"
+          git push origin HEAD:main
