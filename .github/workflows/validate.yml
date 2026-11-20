@@ -33,6 +33,32 @@ jobs:
         run: python -m py_compile scripts/*.py
       - name: Validate catalog
         run: python scripts/validate_catalog.py
+      - name: Validate open-source software atlas
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("data/open-source-software.json").read_text(encoding="utf-8"))
+          assert data.get("schema_version") == 1
+          categories = data.get("categories", [])
+          assert len(categories) == 8, f"Expected 8 categories, got {len(categories)}"
+          ids, urls = set(), set()
+          total = 0
+          for category in categories:
+              assert category.get("id") and category.get("title") and category.get("description")
+              for item in category.get("resources", []):
+                  total += 1
+                  assert item.get("name") and item.get("description_pt") and item.get("platform")
+                  assert item.get("category") is None
+                  assert item.get("url", "").startswith("https://"), item.get("name")
+                  assert item["url"] not in urls, f"Duplicate URL: {item['url']}"
+                  urls.add(item["url"])
+                  assert item.get("license_note"), f"Missing license note: {item.get('name')}"
+                  if item.get("docs"):
+                      assert item["docs"].startswith("https://"), item["name"]
+          assert total >= 200, f"Expected at least 200 curated resources, got {total}"
+          print(f"Open-source atlas valid: {total} resources across {len(categories)} categories.")
+          PY
       - name: Validate research feed schemas and source URLs
         run: |
           python - <<'PY'
@@ -63,7 +89,7 @@ jobs:
           from pathlib import Path
           import re
           total = 0
-          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html"):
+          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html", "software.html"):
               html = Path(page).read_text(encoding="utf-8")
               scripts = [body for attrs, body in re.findall(r"<script\b([^>]*)>([\s\S]*?)</script>", html, re.I) if "application/ld+json" not in attrs.lower()]
               for i, script in enumerate(scripts):
