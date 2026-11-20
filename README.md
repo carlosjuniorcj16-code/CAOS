@@ -1,69 +1,69 @@
 # CAOS — Cúpula dos Agentes Ordenados e Sensoriais
 
-**An open, decentralized gateway to humanity's public knowledge.**
+**Um portal aberto, descentralizado e multilíngue para o conhecimento público da humanidade.**
 
-CAOS is an independent, public knowledge-indexing initiative. Its first implementation is deliberately simple: a curated, searchable directory connecting people and machines to useful public sources across five scientific domains.
+A CAOS é uma iniciativa independente para indexar, organizar e facilitar a descoberta de fontes públicas de conhecimento. Sua primeira implementação é intencionalmente simples: um diretório pesquisável que conecta pessoas e sistemas a fontes relevantes nas cinco grandes áreas científicas.
 
-> CAOS is a gateway, not an owner of knowledge. The knowledge remains distributed across the people, institutions, repositories and communities that create it.
+> A CAOS é um portal, não proprietária do conhecimento. O conhecimento permanece distribuído entre as pessoas, instituições, repositórios e comunidades que o produzem.
 
-## Mission
+## Missão
 
-Improve the discoverability, organization, interoperability and reuse of humanity's publicly available knowledge. Lower the friction between curiosity and reliable sources. Help humans and AI systems navigate the information landscape while preserving provenance, context and access conditions.
+Melhorar a descoberta, a organização, a interoperabilidade e o reúso do conhecimento publicamente disponível. Reduzir a distância entre curiosidade e fontes confiáveis. Ajudar pessoas e sistemas de IA a navegar pelo universo informacional, preservando procedência, contexto e condições de acesso.
 
-## Five-domain taxonomy
+## Cinco áreas do conhecimento
 
-1. **Natural Sciences** — biology, chemistry, physics, astronomy, Earth and environmental sciences.
-2. **Formal Sciences** — mathematics, logic, statistics, theoretical computer science and systems theory.
-3. **Social Sciences** — sociology, economics, anthropology, history, political science and related study of human systems.
-4. **Health & Medical Sciences** — medicine, public health, neuroscience, epidemiology and health research.
-5. **Engineering & Applied Sciences** — engineering disciplines, robotics, materials, applied computing and technology.
+1. **Ciências naturais** — biologia, química, física, astronomia, ciências da Terra e ambientais.
+2. **Ciências formais** — matemática, lógica, estatística, ciência da computação teórica e teoria dos sistemas.
+3. **Ciências sociais** — sociologia, economia, antropologia, história, ciência política e estudos dos sistemas humanos.
+4. **Ciências da saúde e médicas** — medicina, saúde pública, neurociência, epidemiologia e pesquisa em saúde.
+5. **Engenharia e ciências aplicadas** — disciplinas de engenharia, robótica, materiais, computação aplicada e tecnologia.
 
-Cross-disciplinary resources may be classified as **Cross-disciplinary** when they genuinely span multiple domains.
+Fontes que realmente abrangem várias disciplinas podem receber a classificação **Multidisciplinares**.
 
-## Why a directory first?
+## Por que começar por um diretório?
 
-A reliable index is a smaller, cheaper and more maintainable first step than training or operating a multi-agent system. CAOS can later expose structured data and APIs for search, retrieval, research agents and AI training workflows. No model training is required for the initial portal.
+Um índice confiável é uma primeira etapa menor, mais econômica e mais simples de manter do que treinar ou operar um sistema multiagente. Posteriormente, a CAOS poderá oferecer dados estruturados e APIs para busca, recuperação de informação, agentes de pesquisa e fluxos de treinamento de IA. A versão inicial não exige chaves de API, servidor de banco de dados ou modelo de IA.
 
-## Repository structure
+## Estrutura do repositório
 
-- `index.html` — static public portal and client-side search/filter interface.
-- `data/sources.json` — structured resource directory.
-- `CONTRIBUTING.md` — contribution and curation rules.
-- `SOURCES.md` — initial source notes and reference guides.
+- `index.html` — portal estático bilíngue (português brasileiro como padrão; inglês como segunda opção), com busca e filtros.
+- `data/sources.json` — diretório estruturado de fontes, com descrições em português e inglês.
+- `CONTRIBUTING.md` — orientações para contribuições e curadoria.
+- `SOURCES.md` — notas sobre a seleção inicial de fontes e referências.
 
-## Run locally
+## Executar localmente
 
-Open `index.html` through a local static server (recommended) so the browser can load `data/sources.json`. For example:
+Abra `index.html por meio de um servidor estático local (recomendado) para que o navegador carregue `data/sources.json`. Exemplo:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Acesse `http://localhost:8000`.
 
-No API key, backend, database server or AI model is required.
+Nenhuma chave de API, backend, servidor de banco de dados ou modelo de IA é necessário.
 
-## Public access and deployment
+## Publicação
 
-The portal is a static website and can be hosted by GitHub Pages or any static hosting provider. Enable GitHub Pages in the repository settings and select the `main` branch and root folder.
+O portal é um site estático e pode ser hospedado pelo GitHub Pages ou por qualquer serviço de hospedagem estática. Ative o GitHub Pages nas configurações do repositório e selecione a branch `main` e a pasta raiz.
 
-## Principles
+## Princípios
 
-- Publicly accessible sources first.
-- Open-source software and open contribution.
-- Preserve original links and source attribution.
-- Record access and licensing caveats; do not imply that every linked item is open-license.
-- Distinguish peer-reviewed research, preprints, datasets, institutional guidance and general reference material.
-- Inclusion is not endorsement or a guarantee of accuracy.
-- Prefer primary sources and established repositories.
-- Respect privacy, copyright, terms of service and applicable law.
-- Do not collect credentials, bypass access controls, target private individuals or facilitate covert surveillance. CAOS indexes lawful public knowledge; it is not an intrusion or espionage platform.
-- AI-generated classifications and summaries, when introduced, must remain traceable and reviewable by humans.
+- Priorizar fontes legalmente acessíveis ao público.
+- Software de código aberto e contribuição aberta.
+- Preservar links originais e atribuição das fontes.
+- Registrar ressalvas de licença e acesso; não sugerir que todo conteúdo vinculado tenha licença aberta.
+- Diferenciar pesquisas revisadas por pares, preprints, conjuntos de dados, orientações institucionais e obras de referência.
+- A inclusão de uma fonte não significa endosso nem garantia de exatidão.
+- Priorizar fontes primárias e repositórios reconhecidos.
+- Respeitar privacidade, direitos autorais, termos de uso e legislação aplicável.
+- Não coletar credenciais, contornar controles de acesso, visar indivíduos privados ou facilitar vigilância clandestina. A CAOS indexa conhecimento público obtido legalmente.
+- Classificações e resumos gerados por IA, quando introduzidos, devem ser rastreáveis e passíveis de revisão humana.
 
-## Current status
+## Situação atual
 
-**Stage 1 — Static knowledge portal / seed directory.** The initial collection is a starting point, not an exhaustive index of the internet. Links should be periodically checked and reviewed by contributors.
+**Etapa 1 — Portal estático e diretório inicial.** A coleção atual é um ponto de partida, não um índice exaustivo da internet. Os links devem ser verificados periodicamente e revisados pela comunidade.
 
-## License
+## Licenças
 
-The CAOS source code is intended to be released under the MIT License. The resource metadata is intended to be reusable under CC0 where legally possible. These licenses do not change the licenses or terms of linked third-party content.
+O código-fonte da CAOS pretende ser distribuído sob a licença MIT. Os metadados do diretório pretendem ser reutilizáveis sob CC0 quando legalmente possível. Essas licenças não alteram as licenças nem os termos dos conteúdos de terceiros vinculados.
