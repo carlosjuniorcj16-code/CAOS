@@ -78,6 +78,7 @@ def main() -> None:
     all_urls: set[str] = set()
     per_catalog: dict[str, int] = {}
     record_counts: dict[str, int] = {}
+    homepage_source_urls: set[str] = set()
 
     for name, (relative, fields) in DATASETS.items():
         path = ROOT / relative
@@ -89,6 +90,18 @@ def main() -> None:
             continue
         data = load_json(path)
         found: set[str] = set()
+        if name in {"main_directory", "international_sources", "wikidata_discovery"}:
+            rows = data if isinstance(data, list) else (
+                data.get("resources") or data.get("records") or data.get("items") or []
+                if isinstance(data, dict) else []
+            )
+            if isinstance(rows, list):
+                for row in rows:
+                    if isinstance(row, dict) and isinstance(row.get("url"), str):
+                        # Match the homepage's source deduplication rule.
+                        key = row["url"].strip().rstrip("/").lower()
+                        if key:
+                            homepage_source_urls.add(key)
         collect_urls(data, fields, found)
         if name in {"open_source_software", "quantum_references"} and isinstance(data, dict):
             for category in data.get("categories", []):
@@ -136,6 +149,7 @@ def main() -> None:
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_unique_urls": len(all_urls),
+        "total_catalogue_sources": len(homepage_source_urls),
         "catalogue_record_counts": record_counts,
         "unique_urls_by_catalogue": per_catalog,
         "counting_policy": (

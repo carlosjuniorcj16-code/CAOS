@@ -345,6 +345,14 @@ def main():
     if count_placeholder not in homepage:
         raise SystemExit("Marcador da contagem não encontrado em index.html.")
     homepage = homepage.replace(count_placeholder, count_markup, 1)
+    catalogue_count = stats.get("total_catalogue_sources")
+    if not isinstance(catalogue_count, int) or isinstance(catalogue_count, bool) or catalogue_count < 0:
+        raise SystemExit("Contagem de fontes no catálogo inválida em site-stats.json.")
+    catalogue_placeholder = '<strong id="catalogueCount" aria-live="polite">—</strong>'
+    catalogue_markup = f'<strong id="catalogueCount" aria-live="polite">{catalogue_count:,}</strong>'
+    if catalogue_placeholder not in homepage:
+        raise SystemExit("Marcador da contagem de fontes não encontrado em index.html.")
+    homepage = homepage.replace(catalogue_placeholder, catalogue_markup, 1)
     homepage = homepage.replace("</head>", root_meta + "\n</head>")
     homepage = homepage.replace('<select class="lang" id="language"',
         '<a href="' + e(absolute("/categorias/")) + '" style="font-size:12px;color:#f0c54b;text-decoration:none">Mapa de categorias</a><select class="lang" id="language"')
