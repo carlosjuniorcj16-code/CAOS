@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **13.519 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **13,559 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -24,11 +24,11 @@ A coleção combina fontes primárias, instituições públicas, bibliotecas, ar
 
 O atlas `quantum.html` e seu catálogo `data/quantum.json` reúnem fontes oficiais de universidades, laboratórios, institutos metrológicos, agências científicas, periódicos, repositórios e projetos de software. A seleção cobre fundamentos, informação quântica, computação, materiais, óptica, sensores, redes, teoria de campos, simulação e literatura.
 
-Referências institucionais de partida incluem NIST, NSF, Berkeley Lab, RIKEN, CERN, Oxford, Sandia, Quantum Frontiers, ICFO, QuTech e os periódicos PRX Quantum e Quantum. A seleção de destaques recentes aponta para as páginas originais do Nobel, RIKEN, Sandia, Oxford e Quantum Frontiers. Preprints devem ser identificados como tal e não descritos como artigos revisados por pares. Anúncios de programas ou instituições não substituem artigos, dados experimentais ou documentação técnica.
+Referências institucionais de partida incluem NIST, NSF, Berkeley Lab, RIKEN, CERN, Oxford, Sandia, Quantum Frontiers, ICFO, QuTech e os periódicos PRX Quantum e Quantum. A seleção de registros recentes aponta para as páginas originais do Nobel, RIKEN, Sandia, Oxford e Quantum Frontiers. Preprints devem ser identificados como tal e não descritos como artigos revisados por pares. Anúncios de programas ou instituições não substituem artigos, dados experimentais ou documentação técnica.
 
 ## Categorias
 
-O seletor apresenta uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
+O seletor apresenta 113 temas indexados, dos quais 102 possuem registros na versão documentada, em uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
 
 ## Idiomas
 
@@ -100,3 +100,15 @@ O arquivo data/open-source-software.json contém as sementes de descoberta e um 
 - Microsoft Sysinternals: https://learn.microsoft.com/en-us/sysinternals/
 
 A curadoria distingue cotas gratuitas recorrentes, créditos temporários, planos gratuitos limitados, serviços serverless e software livre. Nenhuma oferta cloud é tratada como capacidade ilimitada ou SLA de produção. Limites e elegibilidade devem ser revalidados nas fontes oficiais antes do uso.
+
+
+## Neutralidade de apresentação
+
+Nenhum campo, tecnologia, provedor, país ou instituição recebe destaque comercial ou promocional na página inicial. Os atlas especializados continuam preservados como rotas de consulta, sem prioridade editorial sobre as demais áreas. A diversidade geográfica deve ser avaliada pela distribuição real dos registros, não apenas pela variedade de links de navegação. Registre país, idioma, tipo institucional e proveniência sempre que esses dados forem confirmados.
+
+
+## Expansão global suplementar
+
+O arquivo `data/global-sources.json` acrescenta 45 fontes em 30 temas: estudos africanos e asiáticos, conhecimentos indígenas, cartografia, demografia, desenvolvimento, preservação digital, etnomusicologia, sistemas alimentares, florestas, água doce, estudos de gênero, história da ciência, design industrial, recuperação da informação, estudos marítimos, paz e conflitos, administração e finanças públicas, estudos regionais, desenvolvimento rural, política científica, serviço social, tradução, artes visuais, zoologia, línguas indígenas, patrimônio cultural e migração. Os registros são incluídos no índice compacto e submetidos à mesma validação de IDs, categorias, campos e URLs do catálogo principal.
+
+A diversidade não é medida apenas pelo número de países. A curadoria deve buscar instituições locais, idiomas sub-representados, conhecimento comunitário e fontes produzidas nas próprias regiões, evitando tratar plataformas internacionais como substitutas de acervos nacionais e locais. A inclusão não implica endosso; confirme sempre a procedência, os termos e a adequação de cada recurso.

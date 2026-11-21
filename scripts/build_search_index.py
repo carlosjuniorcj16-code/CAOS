@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data" / "sources.json"
 OUTPUT = ROOT / "search-index.json"
+SUPPLEMENT = ROOT / "data" / "global-sources.json"
 FIELDS = (
     "id", "title", "url", "category", "topic", "topic_pt", "topic_en",
     "topic_i18n", "topic_group", "subcategory", "subcategory_pt", "tags",
@@ -33,6 +34,15 @@ def main():
         fail(f"Cannot read canonical catalogue: {exc}")
 
     records = raw if isinstance(raw, list) else raw.get("resources") if isinstance(raw, dict) else None
+    if isinstance(records, list) and SUPPLEMENT.exists():
+        try:
+            supplemental = json.loads(SUPPLEMENT.read_text(encoding="utf-8"))
+            extra = supplemental.get("records") if isinstance(supplemental, dict) else None
+            if not isinstance(extra, list):
+                fail("Supplemental global catalogue must contain a records list.")
+            records = records + extra
+        except Exception as exc:
+            fail(f"Cannot read supplemental global catalogue: {exc}")
     if not isinstance(records, list) or not records:
         fail("Canonical catalogue must contain a non-empty resources list.")
 

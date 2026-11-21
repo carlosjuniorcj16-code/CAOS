@@ -45,6 +45,6 @@ Toda alteração está sujeita à revisão. O fluxo automatizado verifica estrut
 
 ## Idiomas
 
-A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês e russo. As descrições do catálogo estão em português e inglês quando disponíveis. Traduções adicionais devem preservar o nome oficial e o sentido da descrição original.
+A interface está disponível em português brasileiro, inglês, espanhol, francês, alemão, italiano, chinês simplificado, japonês, russo, neerlandês, polonês, coreano, árabe, hindi e turco. As descrições do catálogo estão em português e inglês quando disponíveis. Traduções adicionais devem preservar o nome oficial e o sentido da descrição original.
 
 A CAOS é um índice informativo, não um endosso. Cada pessoa deve avaliar as fontes em seu contexto.
