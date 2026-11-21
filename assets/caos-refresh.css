@@ -83,3 +83,23 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
  .search-filters{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 @media(max-width:380px){.search-filters{grid-template-columns:1fr!important}}
+
+
+/* CAOS home: restore a clear international scope note below the live count */
+.hero-note{max-width:390px!important;min-width:0!important}
+.hero-note #heroCount{display:block!important;margin:0 0 5px!important;color:#fff!important;font:400 clamp(34px,4vw,48px)/1.05 Georgia,serif!important;letter-spacing:-.03em!important}
+.hero-note #heroNoteText{display:block!important;margin:0!important;color:#d6deed!important;font:400 13px/1.65 "Avenir Next",Arial,sans-serif!important;letter-spacing:0!important;text-transform:none!important;max-width:360px!important}
+@media(max-width:850px){.hero-note{max-width:100%!important}.hero-note #heroNoteText{max-width:620px!important}}
+/* Category results: stable title, count and direct-open affordance */
+.category-results{grid-template-columns:minmax(0,1fr)!important;align-items:stretch!important}
+.category-results-meta{position:sticky!important;top:0!important;z-index:1!important;display:block!important;padding:12px 16px!important;line-height:1.4!important}
+.category-suggestion{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:14px!important;min-height:64px!important;padding:12px 16px!important}
+.category-suggestion-name{display:flex!important;min-width:0!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;white-space:normal!important}
+.category-suggestion-title{display:block!important;max-width:100%!important;font:700 15px/1.4 "Avenir Next",Arial,sans-serif!important;letter-spacing:0!important;overflow-wrap:anywhere!important}
+.category-alias-match{display:block!important;max-width:100%!important;font:400 12px/1.4 "Avenir Next",Arial,sans-serif!important;overflow-wrap:anywhere!important}
+.category-suggestion-meta{display:inline-flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important;white-space:nowrap!important}
+.category-suggestion .topic-count{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:34px!important;padding:5px 8px!important;border:1px solid #dce3ef!important;border-radius:999px!important;background:#f5f7fb!important;color:#536176!important;font:700 11px/1.2 "Avenir Next",Arial,sans-serif!important}
+.category-open-icon{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:27px!important;height:27px!important;border-radius:50%!important;background:#edf2ff!important;color:#244da8!important;font:700 15px/1 Arial,sans-serif!important}
+.category-suggestion:hover .category-open-icon,.category-suggestion:focus-visible .category-open-icon,.category-suggestion.active .category-open-icon{background:#244da8!important;color:#fff!important}
+.category-suggestion:focus-visible{outline:3px solid rgba(49,88,189,.22)!important;outline-offset:-3px!important}
+@media(max-width:560px){.hero-note{padding-left:15px!important}.hero-note #heroNoteText{font-size:13px!important;line-height:1.6!important}.category-suggestion{min-height:60px!important;padding:11px 12px!important}.category-suggestion-title{font-size:14px!important}.category-suggestion-meta{gap:7px!important}}
