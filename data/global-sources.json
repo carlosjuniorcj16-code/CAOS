@@ -2006,7 +2006,7 @@
       "checked_at": null
     },
     {
-      "id": "global-who-data",
+      "id": "global-who-data-portal",
       "title": "WHO Data",
       "url": "https://data.who.int/",
       "category": "health",
@@ -2552,7 +2552,7 @@
       "checked_at": null
     },
     {
-      "id": "global-oapen",
+      "id": "global-oapen-library",
       "title": "OAPEN Library",
       "url": "https://library.oapen.org/",
       "category": "cross",
@@ -2578,7 +2578,7 @@
       "checked_at": null
     },
     {
-      "id": "global-scielo",
+      "id": "global-scielo-network",
       "title": "SciELO",
       "url": "https://scielo.org/",
       "category": "health",
