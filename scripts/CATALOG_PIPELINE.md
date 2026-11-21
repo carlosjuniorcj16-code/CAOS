@@ -98,3 +98,12 @@ A página \`radar.html\` resume sinais recentes; \`leituras.html\` apresenta as 
 O workflow gera um PR automático com apenas os dois arquivos JSON. A revisão humana permanece necessária para publicar as atualizações. A execução automática depende da permissão do repositório para que GitHub Actions crie pull requests (Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests). Se uma execução falhar, consulte os logs da etapa correspondente em Actions.
 
 Política de conteúdo: guardar metadados bibliográficos mínimos e links diretos; não copiar PDFs, textos integrais ou imagens. Resumos e abstracts podem ter direitos próprios, portanto não são reproduzidos na página de sugestões. Consulte \`data/source_registry.json\` para a proveniência e os limites de reutilização por provedor.
+
+
+## Descoberta global ROR e contagem do site
+
+O workflow `.github/workflows/ingest-ror.yml` é executado mensalmente e baixa a versão mais recente do dump ROR v2 por meio do DOI conceitual `10.5281/zenodo.6347574`. O checksum do ZIP é conferido antes da leitura. O importador seleciona até 1.000 organizações ativas com site oficial listado no registro, distribuídas por país, e evita duplicatas por ROR ID e URL. Apenas metadados CC0 e URLs são reutilizados; nenhum conteúdo dos sites é copiado. Os registros são identificados como listados no ROR, mas não verificados em tempo real no destino. O fluxo abre um PR, executa CI e Pages build e só integra automaticamente quando as verificações exigidas passam.
+
+O script `scripts/build_site_stats.py` conta URLs externas únicas dos catálogos e dos links de referência nas páginas do portal. O build gera `site-stats.json` em cada publicação e a homepage exibe esse total atualizado, sem número fixo no HTML.
+
+A descoberta diária foi ampliada para até 150 novos sites Wikidata com no máximo 500 verificações de homepage; o fluxo acadêmico pode processar até 500 registros por provedor DOAJ e OpenAlex, em cinco páginas por execução. Esses limites são tetos operacionais, não metas garantidas. OpenAlex continua dependendo do secret `OPENALEX_API_KEY` para paginação contínua.
