@@ -161,6 +161,8 @@ def build_record(item: dict, record_id: int) -> dict | None:
         "issn": issns,
         "languages": languages,
         "discovery_method": "doaj_public_journal_metadata",
+        "verification_status": "publisher_metadata_not_live_checked",
+        "checked_at": None,
     }
 
 def main() -> None:

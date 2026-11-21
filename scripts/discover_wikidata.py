@@ -218,6 +218,8 @@ def build_record(item: dict, record_id: int) -> dict | None:
         "content_license": "Not determined; consult the institution's website.",
         "country": country,
         "discovery_method": "wikidata_official_website_verified",
+        "verification_status": "homepage_live_checked",
+        "checked_at": datetime.now(timezone.utc).isoformat(),
     }
 
 def main() -> None:

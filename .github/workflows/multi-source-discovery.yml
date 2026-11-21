@@ -8,7 +8,7 @@ on:
       limit:
         description: Maximum new records from each provider
         required: false
-        default: "300"
+        default: "500"
         type: string
       dry_run:
         description: Preview only; do not modify the catalog
@@ -45,7 +45,7 @@ jobs:
           python -m py_compile scripts/ingest_openalex_institutions.py
       - name: Preview DOAJ journal discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json --dry-run
+        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json --dry-run
       - name: Preview OpenAlex institution discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         env:
@@ -54,20 +54,20 @@ jobs:
           if [ -z "$OPENALEX_API_KEY" ]; then
             echo "::notice::OpenAlex preview skipped: configure OPENALEX_API_KEY to enable cursor-based discovery."
           else
-            python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json --dry-run
+            python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json --dry-run
           fi
       - name: Import DOAJ journal websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '300' || inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json
+        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '500' || inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json
       - name: Import OpenAlex institutions
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           if [ -z "$OPENALEX_API_KEY" ]; then
-            echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based weekly discovery."
+            echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based daily discovery."
           else
-            python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '300' || inputs.limit }}" --max-pages 3 --state-file data/discovery_state.json
+            python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '500' || inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json
           fi
       - name: Validate catalog and rebuild search index
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
@@ -83,7 +83,7 @@ jobs:
           branch: automation/multi-source-academic-discovery
           delete-branch: true
           commit-message: "chore: expand directory from DOAJ and OpenAlex"
-          title: "chore: add verified-source academic directory records"
+          title: "chore: add journal and institutional links from open metadata"
           body: |
             ## Multi-source academic discovery batch
 
@@ -91,7 +91,7 @@ jobs:
             - DOAJ public journal-level metadata (CC0 1.0).
             - OpenAlex institution metadata (CC0 1.0).
 
-            Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
+            Only provider metadata and homepage URLs are stored; these DOAJ and OpenAlex destinations are not live-checked by this importer. Each new record is marked accordingly. Metadata licenses do not determine the linked website's content rights. The workflow does not copy or crawl linked website content. Existing URLs are deduplicated. This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
           add-paths: |
             data/sources.json
             data/discovery_state.json

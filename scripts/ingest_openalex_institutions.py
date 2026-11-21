@@ -133,6 +133,9 @@ def main() -> None:
                 "source_updated_at": item.get("updated_date"),
                 "imported_at": datetime.now(timezone.utc).isoformat(),
                 "content_license": "Not determined; consult the institution's website.",
+                "verification_status": "openalex_metadata_not_live_checked",
+                "checked_at": None,
+                "discovery_method": "openalex_institution_metadata",
                 "country_code": country,
             })
             known_urls.add(url_key)

@@ -51,3 +51,35 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .collection-links small{font-size:12px;line-height:1.8}
 .collection-links a{color:#f0c54b;text-decoration:none}
 .collection-links a:hover{text-decoration:underline}
+
+
+/* Live category search: one field, immediate matching suggestions */
+.category-control{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;position:relative}
+.category-search-label{display:block!important;margin:0!important;font-size:13px!important;font-weight:800!important;color:var(--caos-ink)!important;text-align:left!important}
+.category-search-input{width:100%!important;min-height:58px!important;border:1px solid #b8c5d8!important;border-radius:7px!important;background:#fff!important;color:#17243b!important;font-size:17px!important;padding:14px 17px!important;box-shadow:0 2px 8px rgba(23,36,59,.04)!important}
+.category-search-input:focus{border-color:#3158bd!important;outline:3px solid rgba(49,88,189,.14)!important}
+.category-results{display:grid!important;grid-template-columns:1fr!important;gap:0!important;max-height:390px!important;overflow-y:auto!important;border:1px solid #d5deeb!important;border-radius:7px!important;background:#fff!important;box-shadow:0 8px 22px rgba(23,36,59,.08)!important}
+.category-results[hidden]{display:none!important}
+.category-results-meta,.category-results-more{padding:10px 14px!important;color:#657184!important;background:#f5f7fb!important;font-size:12px!important;font-weight:700!important;text-align:left!important}
+.category-suggestion{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;width:100%!important;min-height:52px!important;padding:10px 14px!important;border:0!important;border-bottom:1px solid #edf0f5!important;background:#fff!important;color:#17243b!important;text-align:left!important;cursor:pointer!important}
+.category-suggestion:hover,.category-suggestion:focus-visible,.category-suggestion.active{background:#eaf0ff!important;color:#173d91!important;outline:none!important}
+.category-suggestion-name{display:flex!important;flex-direction:column!important;gap:2px!important;font-size:15px!important;font-weight:700!important}
+.category-suggestion .topic-count{flex:none!important;color:#69768a!important;font-size:12px!important}
+.category-alias-match{color:#64748b!important;font-size:11px!important;font-weight:500!important}
+.category-suggestion .search-match{background:#ffe08a!important;color:#222!important;font-weight:900!important}
+.category-results .category-empty{margin:0!important;padding:15px!important;text-align:left!important}
+.external-research{display:grid!important;grid-template-columns:1fr!important;align-items:start!important;justify-content:start!important;gap:14px!important;margin:18px 0 24px!important;padding:22px 24px!important;border:1px solid #d9e1ec!important;border-left:4px solid #3158bd!important;border-radius:8px!important;background:#f5f7fb!important;text-align:left!important}
+.external-research strong{display:block!important;margin:0!important;font:700 19px/1.35 Georgia,serif!important;color:#17243b!important;text-align:left!important}
+.external-research-links{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;gap:11px!important;margin:0!important}
+.external-research-links a{display:inline-block!important;width:max-content!important;max-width:100%!important;color:#244da8!important;font-size:18px!important;font-weight:800!important;line-height:1.35!important;text-align:left!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important}
+.external-research-links a:hover{color:#17243b!important}
+.search-filters{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:600px){
+ .external-research{padding:18px!important;gap:12px!important;margin:16px 0 20px!important}
+ .external-research strong{font-size:18px!important}
+ .external-research-links a{font-size:17px!important}
+ .category-search-input{min-height:54px!important;font-size:16px!important}
+ .category-results{max-height:340px!important}
+ .search-filters{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:380px){.search-filters{grid-template-columns:1fr!important}}

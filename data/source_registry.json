@@ -112,6 +112,19 @@
       "redistribution": "bibliographic_metadata_and_source_links",
       "content_license": "abstracts_and_full_text_have_independent_rights",
       "notes": "Use ESearch and ESummary in low-volume batches. The NCBI API key is optional for this conservative cadence; observe current request limits."
+    },
+    {
+      "id": "ror",
+      "name": "Research Organization Registry (ROR)",
+      "kind": "global research organization registry",
+      "endpoint": "https://zenodo.org/api/records/6347574",
+      "documentation": "https://ror.readme.io/docs/data-dump",
+      "metadata_license": "CC0 1.0",
+      "attribution_required": false,
+      "recommended_attribution": "Research Organization Registry (ROR)",
+      "redistribution": "allowed_for_metadata",
+      "content_license": "unknown_per_linked_organization",
+      "notes": "Monthly import of a checksum-verified current ROR v2 data dump. Only organization metadata and website URLs listed in ROR are reused; linked website content is not copied or assumed to be CC0."
     }
   ]
 }

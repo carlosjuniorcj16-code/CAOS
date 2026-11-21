@@ -11,7 +11,7 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão atual reúne **mais de 13,5 mil registros no catálogo principal e complementar**, navegáveis por **186 categorias temáticas**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O lote complementar inicial acrescenta 75 referências institucionais, culturais e internacionais candidatas, identificadas separadamente para conferência de links, proveniência e licenças. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão atual reúne **mais de 13,5 mil registros no catálogo principal e complementar**, navegáveis por **300 categorias temáticas**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. A busca de categorias apresenta sugestões conforme os caracteres e palavras digitados, destaca as correspondências e permite selecionar assuntos sem menus de ordem alfabética. A amostra transversal é determinística e idêntica em computadores e celulares. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O lote complementar inicial acrescenta 75 referências institucionais, culturais e internacionais candidatas, identificadas separadamente para conferência de links, proveniência e licenças. A contagem exibida na abertura é recalculada em cada build a partir de URLs externas únicas nos catálogos e páginas de referência. Os fluxos automáticos de descoberta criam lotes revisáveis, executam validações e só publicam atualizações quando os testes passam. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
@@ -94,3 +94,8 @@ Acesse `http://localhost:8000`. O portal não exige chave de API, backend ou ban
 
 O código-fonte pretende ser distribuído sob MIT. Os metadados do diretório pretendem ser reutilizáveis sob CC0 quando legalmente possível. Essas licenças não alteram as licenças nem os termos dos conteúdos de terceiros vinculados.
 
+
+
+## Descoberta automática
+
+O CAOS mantém descoberta diária via Wikidata, DOAJ e OpenAlex, atualização periódica do catálogo Curlie e importação mensal do dump ROR v2, com verificação de checksum e seleção de instituições distribuídas por país. Os lotes passam por pull requests, CI e build do GitHub Pages. Os limites são tetos, não garantias de novos links; OpenAlex requer o secret `OPENALEX_API_KEY` para paginação contínua.
