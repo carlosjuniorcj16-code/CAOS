@@ -215,6 +215,7 @@ def build_record(source: dict, record_id: int) -> dict | None:
         "country_code": country_code,
         "organization_types": types,
         "verification_status": "ror_registry_listed_not_live_checked",
+        "checked_at": None,
         "discovery_method": "ror_cc0_data_dump",
     }
 
