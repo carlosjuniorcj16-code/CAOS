@@ -103,3 +103,39 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .category-suggestion:hover .category-open-icon,.category-suggestion:focus-visible .category-open-icon,.category-suggestion.active .category-open-icon{background:#244da8!important;color:#fff!important}
 .category-suggestion:focus-visible{outline:3px solid rgba(49,88,189,.22)!important;outline-offset:-3px!important}
 @media(max-width:560px){.hero-note{padding-left:15px!important}.hero-note #heroNoteText{font-size:13px!important;line-height:1.6!important}.category-suggestion{min-height:60px!important;padding:11px 12px!important}.category-suggestion-title{font-size:14px!important}.category-suggestion-meta{gap:7px!important}}
+
+
+/* CAOS homepage structure repair: preserve hierarchy and prevent viewport overflow */
+.directory-section{width:100%;max-width:100%;min-width:0;margin:0;padding:0}
+#areas,.directory-section,.about,.translation-notice{min-width:0;max-width:100%}
+#areas *, .directory-section *, .about *{min-width:0}
+#areas .topic-highlights{grid-template-columns:repeat(4,minmax(0,1fr))}
+#areas .topic-highlight{overflow-wrap:anywhere;word-break:normal}
+.directory-section .searchbox{width:100%;max-width:100%;min-width:0}
+.directory-section .category-control,.directory-section .category-results{width:100%;max-width:100%;min-width:0}
+.directory-section .category-suggestion{min-width:0}
+.directory-section .selected-category-card{display:block;width:100%;max-width:100%;margin:0 0 18px;overflow-wrap:anywhere}
+.directory-section .selected-category-card[hidden]{display:none!important}
+.directory-section .search-filters{grid-template-columns:repeat(3,minmax(0,1fr))}
+.directory-section .search-filters label,.directory-section .search-filters select{min-width:0;max-width:100%}
+.directory-section .resource{grid-template-columns:52px minmax(0,1fr) minmax(120px,150px);min-width:0}
+.directory-section .resource-main,.directory-section .resource-meta{min-width:0}
+.directory-section .resource h3,.directory-section .resource p,.directory-section .resource-link{max-width:100%;overflow-wrap:anywhere;word-break:break-word}
+.directory-section .resource-link{white-space:normal}
+@media(max-width:850px){
+ #areas .topic-highlights{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .directory-section .resource{grid-template-columns:42px minmax(0,1fr)}
+ .directory-section .resource-meta{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center}
+}
+@media(max-width:560px){
+ #areas .topic-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .directory-section .search-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .directory-section .resource{grid-template-columns:28px minmax(0,1fr);gap:9px;padding:18px 2px}
+ .directory-section .resource-meta{grid-column:1/-1;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+ .directory-section .resource-link{margin-left:auto}
+ .directory-section .selected-category-card{padding:14px 15px}
+}
+@media(max-width:380px){
+ .directory-section .search-filters{grid-template-columns:1fr}
+}
+html,body{max-width:100%;overflow-x:hidden}
