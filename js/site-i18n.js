@@ -31,7 +31,18 @@ function apply(code){
  const search=$("search")||$("qsearch")||$("q");if(search){search.placeholder=t.search;search.setAttribute("aria-label",t.search)}
  for(const id of ["category","qcategory","area","kind","use","format","datasetLanguage"]){const el=$(id);if(el&&el.options.length)el.options[0].textContent=t.all}
  const authIds=["pageTitle","modeHint","loginTab","signupTab","submitButton","emailLabel","passwordLabel","forgotButton","recoveryTitle","recoveryHint","newPasswordLabel","savePasswordButton","accountTitle","accountHint","signOutButton"];
- if(page==="acesso.html"){const a=t.auth;const values=[a[0],a[6],a[2],a[3],a[4],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];authIds.forEach((id,i)=>{const el=$(id);if(el&&values[i])el.textContent=values[i]})}
+ if(page==="acesso.html"){
+ const a=t.auth;
+ const setText=(selector,value)=>{const el=document.querySelector(selector);if(el&&value)el.textContent=value};
+ setText("#pageTitle",a[0]);setText(".intro",a[1]);setText("#loginTab strong",a[2]);setText("#loginTab small",a[3]);setText("#signupTab strong",a[4]);setText("#signupTab small",a[5]);setText("#modeHint",a[6]);
+ const labels=document.querySelectorAll("#authForm label");if(labels[0])labels[0].textContent=a[7];if(labels[1])labels[1].textContent=a[8];
+ setText("#submitButton",a[2]);setText("#forgotButton",a[9]);
+ const heads=document.querySelectorAll("#recoveryView h2,#accountView h2");if(heads[0])heads[0].textContent=a[10];if(heads[1])heads[1].textContent=a[13];
+ const paras=document.querySelectorAll("#recoveryView p,#accountView p");if(paras[0])paras[0].textContent=a[11];if(paras[1])paras[1].textContent=a[14];
+ const recoveryLabel=document.querySelector("#recoveryForm label");if(recoveryLabel)recoveryLabel.textContent=a[8];
+ const recoveryButton=document.querySelector("#recoveryForm button");if(recoveryButton)recoveryButton.textContent=a[12];
+ setText("#signOutButton",a[15]);
+}
  document.querySelectorAll("header .brand small").forEach(el=>{if(page==="software.html")el.textContent=t.nav[4];else if(page==="freeware.html")el.textContent=t.nav[5];else if(page==="quantum.html")el.textContent=t.nav[6];else if(page==="radar.html")el.textContent=t.nav[1];else if(page==="leituras.html")el.textContent=t.nav[2];else if(page==="ai-data.html")el.textContent=t.nav[3]});
  try{localStorage.setItem("caos-language",lang)}catch(e){}
  document.dispatchEvent(new CustomEvent("caos:languagechange",{detail:{language:lang}}));
