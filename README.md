@@ -11,7 +11,7 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão atual reúne **13.519 fontes**, distribuídas em **83 temas indexados, dos quais 67 já possuem registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão atual reúne **13.579 fontes**, distribuídas em **113 temas indexados, dos quais 107 já possuem registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
@@ -90,3 +90,6 @@ O código-fonte pretende ser distribuído sob MIT. Os metadados do diretório pr
 ## Neutralidade e descoberta ampla
 
 A página inicial não promove categorias, serviços, provedores ou tecnologias. Áreas especializadas, incluindo freeware, software livre, dados para IA e física quântica, permanecem disponíveis como partes equivalentes do diretório. A navegação privilegia descoberta transversal, diversidade de fontes e transparência sobre proveniência, acesso, licenças e limitações. A CAOS não adota um telos editorial: a inclusão de uma fonte não implica endosso, preferência ou hierarquia de valor.
+
+
+A expansão de novembro de 2026 acrescenta 60 fontes institucionais e de pesquisa em 30 novos temas, com cobertura de organizações e acervos de diferentes regiões. Esses registros ficam em `data/global-sources.json` e são incorporados ao índice de busca pelo pipeline. A coleção suplementar deve ser revisada continuamente; país e origem indicam a instituição ou o contexto principal do recurso, não uma classificação cultural exclusiva.
