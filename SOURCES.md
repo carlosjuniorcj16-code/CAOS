@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **13.519 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **mais de 13,5 mil fontes e recursos**, navegáveis por **186 categorias temáticas** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -107,3 +107,8 @@ A curadoria distingue cotas gratuitas recorrentes, créditos temporários, plano
 O arquivo `data/global-sources.json` contém um lote complementar de portais nacionais de dados, institutos estatísticos, infraestruturas de pesquisa, repositórios e catálogos internacionais. O lote inicial amplia a cobertura para América Latina, África, Sul, Leste e Sudeste da Ásia, Europa e Oceania, além de infraestruturas globais. Cada registro aponta para o domínio institucional ou serviço de origem. A inclusão não certifica a qualidade de cada conjunto nem concede direitos de reutilização; confirme a licença e a proveniência no registro original.
 
 A navegação temática mantém categorias transversais e específicas. Categorias sem registros no momento permanecem disponíveis como taxonomia de descoberta e podem receber contribuições futuras. Não são apresentadas como se já contivessem fontes.
+
+
+## Lote complementar de alcance internacional
+
+O arquivo `data/global-sources.json` acrescenta 56 registros candidatos de portais nacionais de dados, institutos de estatística, infraestruturas de pesquisa e repositórios em diferentes regiões. Para evitar falsa impressão de auditoria, cada registro começa com `verification_status: candidate_unverified` e `checked_at: null`. Esses links precisam de verificação individual de destino, entidade responsável, escopo, idioma, licença e disponibilidade antes de serem classificados como verificados. A interface elimina URLs repetidas ao combinar os catálogos.
