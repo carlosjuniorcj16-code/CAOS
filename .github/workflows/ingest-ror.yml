@@ -40,17 +40,17 @@ jobs:
         with:
           python-version: "3.12"
       - name: Compile ROR importer
-        run: python -m py_compile scripts/ingest_ror.py scripts/build_site_stats.py
+        run: python -m py_compile scripts/import_ror_registry.py scripts/build_site_stats.py
       - name: Preview latest ROR release
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_ror.py --limit "${{ inputs.limit }}" --dry-run
+        run: python scripts/import_ror_registry.py --limit "${{ inputs.limit }}" --dry-run
       - name: Import diverse official organization websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python scripts/ingest_ror.py --limit 1000
+            python scripts/import_ror_registry.py --limit 1000
           else
-            python scripts/ingest_ror.py --limit "${{ inputs.limit }}"
+            python scripts/import_ror_registry.py --limit "${{ inputs.limit }}"
           fi
       - name: Validate catalogue and rebuild exact indexes
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
