@@ -25,7 +25,9 @@
         "governo"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-ibge",
@@ -49,7 +51,9 @@
         "IBGE"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-bcb-open-data",
@@ -73,7 +77,9 @@
         "banco central"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-argentina-datos",
@@ -97,7 +103,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-indec",
@@ -121,7 +129,9 @@
         "censo"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-colombia",
@@ -145,7 +155,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-dane",
@@ -169,7 +181,9 @@
         "censo"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-uruguay",
@@ -193,7 +207,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-chile",
@@ -217,7 +233,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-peru",
@@ -241,7 +259,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-mexico",
@@ -265,7 +285,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-datos-costa-rica",
@@ -289,7 +311,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-ghana-data",
@@ -313,7 +337,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-kenya-data",
@@ -337,7 +363,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-south-africa-data",
@@ -361,7 +389,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-rwanda-data",
@@ -385,7 +415,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-nigeria-data",
@@ -409,7 +441,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-morocco-data",
@@ -433,7 +467,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-tunisia-data",
@@ -457,7 +493,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-egypt-capmas",
@@ -481,7 +519,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-india-data",
@@ -505,7 +545,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-nepal-nso",
@@ -529,7 +571,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-bhutan-nsb",
@@ -553,7 +597,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-mongolia-nso",
@@ -577,7 +623,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-indonesia-data",
@@ -601,7 +649,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-philippines-data",
@@ -625,7 +675,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-japan-data",
@@ -649,7 +701,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-taiwan-data",
@@ -673,7 +727,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-korea-data",
@@ -697,7 +753,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-australia-data",
@@ -721,7 +779,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-new-zealand-data",
@@ -745,7 +805,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-canada-data",
@@ -769,7 +831,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-us-data",
@@ -793,7 +857,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-uk-data",
@@ -817,7 +883,9 @@
         "pesquisa"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-france-data",
@@ -841,7 +909,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-germany-data",
@@ -865,7 +935,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-portugal-data",
@@ -889,7 +961,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-estonia-data",
@@ -913,7 +987,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-finland-data",
@@ -937,7 +1013,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-sweden-data",
@@ -961,7 +1039,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-poland-data",
@@ -985,7 +1065,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-romania-data",
@@ -1009,7 +1091,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-switzerland-data",
@@ -1033,7 +1117,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-eu-data",
@@ -1057,7 +1143,9 @@
         "dados abertos"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-worldbank-data",
@@ -1081,7 +1169,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-un-data",
@@ -1105,7 +1195,9 @@
         "estatística"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-unesco-data",
@@ -1129,7 +1221,9 @@
         "educação"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-who-data",
@@ -1153,7 +1247,9 @@
         "saúde"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-fao-data",
@@ -1177,7 +1273,9 @@
         "agricultura"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-gbif",
@@ -1201,7 +1299,9 @@
         "espécies"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-openalex",
@@ -1225,7 +1325,9 @@
         "bibliometria"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-crossref",
@@ -1249,7 +1351,9 @@
         "publicações"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-doaj",
@@ -1273,7 +1377,9 @@
         "acesso aberto"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-oapen",
@@ -1297,7 +1403,9 @@
         "humanidades"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-zenodo",
@@ -1321,7 +1429,9 @@
         "dados de pesquisa"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     },
     {
       "id": "global-openstreetmap",
@@ -1345,7 +1455,9 @@
         "geografia"
       ],
       "source": "CAOS Global Sources",
-      "translations": {}
+      "translations": {},
+      "verification_status": "candidate_unverified",
+      "checked_at": null
     }
   ]
 }
