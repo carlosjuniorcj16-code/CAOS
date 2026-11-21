@@ -8,6 +8,8 @@ import shutil
 from pathlib import Path
 from urllib.parse import urlparse
 
+from catalog_io import load_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist"
 BASE = os.environ.get("CAOS_SITE_URL", "https://carlosjuniorcj16-code.github.io/CAOS").rstrip("/")
@@ -150,13 +152,16 @@ def main():
     assets = ROOT / "assets"
     if assets.is_dir():
         shutil.copytree(assets, OUT / "assets", dirs_exist_ok=True)
+    shard_dir = ROOT / "data" / "sources"
+    if shard_dir.is_dir():
+        shutil.copytree(shard_dir, OUT / "data" / "sources", dirs_exist_ok=True)
 
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
     match = re.search(r"const TOPICS=(\[.*?\]);", index_html, re.S)
     if not match:
         raise SystemExit("Não foi possível localizar TOPICS em index.html.")
     topics = json.loads(match.group(1))
-    data = json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8"))
+    data = load_catalog(ROOT / "data/sources.json")
     resources = data if isinstance(data, list) else data.get("resources", [])
     if not isinstance(resources, list):
         raise SystemExit("data/sources.json não contém uma lista de recursos.")
