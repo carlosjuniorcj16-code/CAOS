@@ -32,8 +32,9 @@ jobs:
         env:
           CAOS_SITE_URL: https://carlosjuniorcj16-code.github.io/CAOS
         run: |
-          python -m py_compile scripts/build_seo.py scripts/build_search_index.py
+          python -m py_compile scripts/build_seo.py scripts/build_search_index.py scripts/build_site_stats.py
           python scripts/build_search_index.py
+          python scripts/build_site_stats.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -48,8 +49,10 @@ jobs:
           test -s dist/robots.txt
           test -s dist/sitemap.xml
           test -s dist/search-index.json
+          test -s dist/site-stats.json
+          test -s dist/data/global-sources.json
           test -s dist/categorias/index.html
-          for path in ai-data.html radar.html leituras.html software.html freeware.html quantum.html data/ai_sources.json data/languages.json data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json data/quantum.json assets/caos-mark.svg assets/caos-refresh.css; do test -s "dist/$path"; done
+          for path in ai-data.html radar.html leituras.html software.html freeware.html quantum.html data/global-sources.json data/ai_sources.json data/languages.json data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json data/quantum.json assets/caos-mark.svg assets/caos-refresh.css; do test -s "dist/$path"; done
           python - <<'PY'
           from pathlib import Path
           import xml.etree.ElementTree as ET
