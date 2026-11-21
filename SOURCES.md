@@ -124,3 +124,8 @@ O índice compacto `search-index.json` é gerado no processo de build a partir d
 ## Descoberta institucional ROR
 
 O workflow `.github/workflows/ingest-ror.yml` consulta mensalmente o registro ROR por meio do DOI conceitual do dump, que sempre aponta para a versão mais recente. O arquivo ZIP é verificado pelo checksum publicado no Zenodo antes da leitura. Cada lote seleciona até 1.000 sites oficiais listados em registros ativos, com distribuição por país e deduplicação por ROR ID e URL. Os metadados ROR são CC0 1.0; a licença do conteúdo dos sites vinculados não é presumida. Os lotes passam por pull request, validação e build antes da integração automática autorizada.
+
+
+## Estado de verificação dos links
+
+Os registros automáticos carregam `verification_status` e `checked_at`. Wikidata só é marcado como verificado após a checagem da homepage. DOAJ, OpenAlex, Curlie e ROR são importados a partir de metadados ou diretórios e permanecem explicitamente marcados como não verificados em tempo real. Licença de metadados nunca é tratada como licença do conteúdo do site de destino.
