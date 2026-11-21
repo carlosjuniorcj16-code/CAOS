@@ -3,31 +3,6 @@
   "description": "Supplemental globally curated sources. Review each provider's own terms, access conditions and provenance.",
   "records": [
     {
-      "id": 13522,
-      "title": "African Journals Online",
-      "category": "social",
-      "subcategory": "African studies",
-      "subcategory_pt": "Estudos africanos",
-      "description": "Scholarly publishing portal for African-published journals across disciplines.",
-      "description_pt": "Portal de periódicos acadêmicos publicados na África, abrangendo diversas disciplinas.",
-      "url": "https://www.ajol.info/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "african-studies",
-        "NG",
-        "international source"
-      ],
-      "topic": "african-studies",
-      "topic_pt": "Estudos africanos",
-      "topic_en": "African studies",
-      "topic_group": "social",
-      "country_code": "NG",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13523,
       "title": "African Union",
       "category": "social",
@@ -153,56 +128,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13528,
-      "title": "OpenStreetMap",
-      "category": "engineering",
-      "subcategory": "Cartography and geoinformation",
-      "subcategory_pt": "Cartografia e geoinformação",
-      "description": "Collaborative open geographic database maintained by a global community.",
-      "description_pt": "Base geográfica aberta e colaborativa mantida por uma comunidade global.",
-      "url": "https://www.openstreetmap.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "cartography",
-        "GB",
-        "international source"
-      ],
-      "topic": "cartography",
-      "topic_pt": "Cartografia e geoinformação",
-      "topic_en": "Cartography and geoinformation",
-      "topic_group": "engineering",
-      "country_code": "GB",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13529,
-      "title": "Natural Earth",
-      "category": "formal",
-      "subcategory": "Cartography and geoinformation",
-      "subcategory_pt": "Cartografia e geoinformação",
-      "description": "Public-domain map dataset for cartography at multiple scales.",
-      "description_pt": "Conjunto de dados cartográficos de domínio público em várias escalas.",
-      "url": "https://www.naturalearthdata.com/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "cartography",
-        "US",
-        "international source"
-      ],
-      "topic": "cartography",
-      "topic_pt": "Cartografia e geoinformação",
-      "topic_en": "Cartography and geoinformation",
-      "topic_group": "engineering",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13530,
       "title": "UN DESA Population Division",
       "category": "social",
@@ -303,81 +228,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13534,
-      "title": "Digital Preservation Coalition",
-      "category": "cross",
-      "subcategory": "Digital preservation",
-      "subcategory_pt": "Preservação digital",
-      "description": "Guidance, standards and community resources for long-term digital preservation.",
-      "description_pt": "Orientações, padrões e recursos comunitários para preservação digital de longo prazo.",
-      "url": "https://www.dpconline.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "digital-preservation",
-        "GB",
-        "international source"
-      ],
-      "topic": "digital-preservation",
-      "topic_pt": "Preservação digital",
-      "topic_en": "Digital preservation",
-      "topic_group": "cross",
-      "country_code": "GB",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13535,
-      "title": "Trove, National Library of Australia",
-      "category": "cross",
-      "subcategory": "Digital preservation",
-      "subcategory_pt": "Preservação digital",
-      "description": "Australian discovery service connecting libraries, archives, museums and digitized collections.",
-      "description_pt": "Serviço australiano de descoberta que conecta bibliotecas, arquivos, museus e coleções digitalizadas.",
-      "url": "https://trove.nla.gov.au/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "digital-preservation",
-        "AU",
-        "international source"
-      ],
-      "topic": "digital-preservation",
-      "topic_pt": "Preservação digital",
-      "topic_en": "Digital preservation",
-      "topic_group": "cross",
-      "country_code": "AU",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13536,
-      "title": "Smithsonian Folkways",
-      "category": "cross",
-      "subcategory": "Ethnomusicology and musical traditions",
-      "subcategory_pt": "Etnomusicologia e tradições musicais",
-      "description": "Educational archive documenting music and sound traditions from around the world.",
-      "description_pt": "Arquivo educacional que documenta tradições musicais e sonoras de várias partes do mundo.",
-      "url": "https://folkways.si.edu/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "ethnomusicology",
-        "US",
-        "international source"
-      ],
-      "topic": "ethnomusicology",
-      "topic_pt": "Etnomusicologia e tradições musicais",
-      "topic_en": "Ethnomusicology and musical traditions",
-      "topic_group": "arts",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13537,
       "title": "British Library Sounds",
       "category": "cross",
@@ -403,31 +253,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13538,
-      "title": "FAO",
-      "category": "natural",
-      "subcategory": "Food systems",
-      "subcategory_pt": "Sistemas alimentares",
-      "description": "International food and agriculture data, reports and technical resources.",
-      "description_pt": "Dados internacionais, relatórios e recursos técnicos sobre alimentação e agricultura.",
-      "url": "https://www.fao.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "food-systems",
-        "IT",
-        "international source"
-      ],
-      "topic": "food-systems",
-      "topic_pt": "Sistemas alimentares",
-      "topic_en": "Food systems",
-      "topic_group": "natural",
-      "country_code": "IT",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13539,
       "title": "CGIAR",
       "category": "natural",
@@ -450,31 +275,6 @@
       "topic_en": "Food systems",
       "topic_group": "natural",
       "country_code": "FR",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13540,
-      "title": "Global Forest Watch",
-      "category": "natural",
-      "subcategory": "Forest sciences",
-      "subcategory_pt": "Ciências florestais",
-      "description": "Open monitoring platform for forest change and geospatial datasets.",
-      "description_pt": "Plataforma aberta de monitoramento de mudanças florestais e dados geoespaciais.",
-      "url": "https://www.globalforestwatch.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "forestry",
-        "US",
-        "international source"
-      ],
-      "topic": "forestry",
-      "topic_pt": "Ciências florestais",
-      "topic_en": "Forest sciences",
-      "topic_group": "natural",
-      "country_code": "US",
       "content_license": "Not determined; consult the source's own terms."
     },
     {
@@ -803,56 +603,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13554,
-      "title": "Uppsala Conflict Data Program",
-      "category": "social",
-      "subcategory": "Peace, conflict and human security",
-      "subcategory_pt": "Paz, conflitos e segurança humana",
-      "description": "Research datasets and documentation on organized violence and armed conflict.",
-      "description_pt": "Dados e documentação de pesquisa sobre violência organizada e conflitos armados.",
-      "url": "https://ucdp.uu.se/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "peace-conflict",
-        "SE",
-        "international source"
-      ],
-      "topic": "peace-conflict",
-      "topic_pt": "Paz, conflitos e segurança humana",
-      "topic_en": "Peace, conflict and human security",
-      "topic_group": "social",
-      "country_code": "SE",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13555,
-      "title": "SIPRI",
-      "category": "social",
-      "subcategory": "Peace, conflict and human security",
-      "subcategory_pt": "Paz, conflitos e segurança humana",
-      "description": "Research on security, armaments, arms control and disarmament.",
-      "description_pt": "Pesquisas sobre segurança, armamentos, controle de armas e desarmamento.",
-      "url": "https://www.sipri.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "peace-conflict",
-        "SE",
-        "international source"
-      ],
-      "topic": "peace-conflict",
-      "topic_pt": "Paz, conflitos e segurança humana",
-      "topic_en": "Peace, conflict and human security",
-      "topic_group": "social",
-      "country_code": "SE",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13556,
       "title": "UN DESA Public Institutions",
       "category": "social",
@@ -903,56 +653,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13558,
-      "title": "International Monetary Fund Data",
-      "category": "formal",
-      "subcategory": "Public finance",
-      "subcategory_pt": "Finanças públicas",
-      "description": "Macroeconomic and public finance datasets from the IMF.",
-      "description_pt": "Conjuntos de dados macroeconômicos e de finanças públicas do FMI.",
-      "url": "https://www.imf.org/en/Data",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "public-finance",
-        "US",
-        "international source"
-      ],
-      "topic": "public-finance",
-      "topic_pt": "Finanças públicas",
-      "topic_en": "Public finance",
-      "topic_group": "social",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13559,
-      "title": "International Budget Partnership",
-      "category": "social",
-      "subcategory": "Public finance",
-      "subcategory_pt": "Finanças públicas",
-      "description": "Research on public budget transparency, participation and oversight.",
-      "description_pt": "Pesquisas sobre transparência, participação e fiscalização de orçamentos públicos.",
-      "url": "https://internationalbudget.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "public-finance",
-        "US",
-        "international source"
-      ],
-      "topic": "public-finance",
-      "topic_pt": "Finanças públicas",
-      "topic_en": "Public finance",
-      "topic_group": "social",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13560,
       "title": "RCAAP",
       "category": "cross",
@@ -975,31 +675,6 @@
       "topic_en": "Regional studies and integration",
       "topic_group": "social",
       "country_code": "PT",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13561,
-      "title": "CONICET",
-      "category": "cross",
-      "subcategory": "Regional studies and integration",
-      "subcategory_pt": "Estudos regionais e integração",
-      "description": "Argentina's national scientific and technical research council and research outputs.",
-      "description_pt": "Conselho argentino de pesquisas científicas e técnicas e produção de pesquisa.",
-      "url": "https://www.conicet.gov.ar/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "regional-studies",
-        "AR",
-        "international source"
-      ],
-      "topic": "regional-studies",
-      "topic_pt": "Estudos regionais e integração",
-      "topic_en": "Regional studies and integration",
-      "topic_group": "social",
-      "country_code": "AR",
       "content_license": "Not determined; consult the source's own terms."
     },
     {
@@ -1153,31 +828,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13568,
-      "title": "European Language Resources Association",
-      "category": "cross",
-      "subcategory": "Translation studies and language resources",
-      "subcategory_pt": "Estudos da tradução e recursos linguísticos",
-      "description": "Association supporting language resources, data and language technology research.",
-      "description_pt": "Associação que apoia recursos linguísticos, dados e pesquisa em tecnologias da linguagem.",
-      "url": "https://www.elra.info/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "translation-studies",
-        "FR",
-        "international source"
-      ],
-      "topic": "translation-studies",
-      "topic_pt": "Estudos da tradução e recursos linguísticos",
-      "topic_en": "Translation studies and language resources",
-      "topic_group": "languages",
-      "country_code": "FR",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13569,
       "title": "META-NET",
       "category": "cross",
@@ -1200,31 +850,6 @@
       "topic_en": "Translation studies and language resources",
       "topic_group": "languages",
       "country_code": "DE",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13570,
-      "title": "Europeana",
-      "category": "cross",
-      "subcategory": "Visual arts and heritage",
-      "subcategory_pt": "Artes visuais e patrimônio",
-      "description": "European cultural heritage platform with digitized museum, library and archive collections.",
-      "description_pt": "Plataforma europeia de patrimônio cultural com coleções digitalizadas de museus, bibliotecas e arquivos.",
-      "url": "https://www.europeana.eu/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "visual-arts",
-        "NL",
-        "international source"
-      ],
-      "topic": "visual-arts",
-      "topic_pt": "Artes visuais e patrimônio",
-      "topic_en": "Visual arts and heritage",
-      "topic_group": "arts",
-      "country_code": "NL",
       "content_license": "Not determined; consult the source's own terms."
     },
     {
@@ -1278,31 +903,6 @@
       "content_license": "Not determined; consult the source's own terms."
     },
     {
-      "id": 13573,
-      "title": "UN-Water",
-      "category": "social",
-      "subcategory": "Water governance",
-      "subcategory_pt": "Governança da água",
-      "description": "United Nations platform for water and sanitation data, reports and policy resources.",
-      "description_pt": "Plataforma da ONU para dados, relatórios e políticas sobre água e saneamento.",
-      "url": "https://www.unwater.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "water-governance",
-        "US",
-        "international source"
-      ],
-      "topic": "water-governance",
-      "topic_pt": "Governança da água",
-      "topic_en": "Water governance",
-      "topic_group": "social",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
       "id": 13574,
       "title": "Smithsonian National Museum of Natural History",
       "category": "natural",
@@ -1311,31 +911,6 @@
       "description": "Collections and research on biodiversity, zoology, evolution and natural history.",
       "description_pt": "Coleções e pesquisas sobre biodiversidade, zoologia, evolução e história natural.",
       "url": "https://naturalhistory.si.edu/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "zoology",
-        "US",
-        "international source"
-      ],
-      "topic": "zoology",
-      "topic_pt": "Zoologia e biodiversidade animal",
-      "topic_en": "Zoology and animal biodiversity",
-      "topic_group": "natural",
-      "country_code": "US",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13575,
-      "title": "iNaturalist",
-      "category": "natural",
-      "subcategory": "Zoology and animal biodiversity",
-      "subcategory_pt": "Zoologia e biodiversidade animal",
-      "description": "Community science platform for recording and identifying observations of organisms.",
-      "description_pt": "Plataforma de ciência cidadã para registrar e identificar observações de organismos.",
-      "url": "https://www.inaturalist.org/",
       "type": "Institutional resource",
       "type_pt": "Recurso institucional",
       "access": "Free to consult; conditions vary",
@@ -1425,81 +1000,6 @@
       "topic_en": "Cultural heritage and memory",
       "topic_group": "arts",
       "country_code": "FR",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13579,
-      "title": "UNESCO Memory of the World",
-      "category": "social",
-      "subcategory": "Cultural heritage and memory",
-      "subcategory_pt": "Patrimônio cultural e memória",
-      "description": "International programme for preservation and access to documentary heritage and archival collections.",
-      "description_pt": "Programa internacional de preservação e acesso ao patrimônio documental e coleções arquivísticas.",
-      "url": "https://www.unesco.org/en/memory-world",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "cultural-heritage",
-        "FR",
-        "international source"
-      ],
-      "topic": "cultural-heritage",
-      "topic_pt": "Patrimônio cultural e memória",
-      "topic_en": "Cultural heritage and memory",
-      "topic_group": "arts",
-      "country_code": "FR",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13580,
-      "title": "International Organization for Migration",
-      "category": "social",
-      "subcategory": "Migration studies",
-      "subcategory_pt": "Estudos migratórios",
-      "description": "Research, data and policy resources on migration, displacement and human mobility.",
-      "description_pt": "Pesquisas, dados e políticas sobre migração, deslocamento e mobilidade humana.",
-      "url": "https://www.iom.int/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "migration-studies",
-        "CH",
-        "international source"
-      ],
-      "topic": "migration-studies",
-      "topic_pt": "Estudos migratórios",
-      "topic_en": "Migration studies",
-      "topic_group": "social",
-      "country_code": "CH",
-      "content_license": "Not determined; consult the source's own terms."
-    },
-    {
-      "id": 13581,
-      "title": "Migration Data Portal",
-      "category": "formal",
-      "subcategory": "Migration studies",
-      "subcategory_pt": "Estudos migratórios",
-      "description": "International data portal bringing together migration indicators, sources and methods.",
-      "description_pt": "Portal internacional que reúne indicadores, fontes e métodos sobre migração.",
-      "url": "https://www.migrationdataportal.org/",
-      "type": "Institutional resource",
-      "type_pt": "Recurso institucional",
-      "access": "Free to consult; conditions vary",
-      "access_pt": "Consulta gratuita; condições variam",
-      "tags": [
-        "migration-studies",
-        "DE",
-        "international source"
-      ],
-      "topic": "migration-studies",
-      "topic_pt": "Estudos migratórios",
-      "topic_en": "Migration studies",
-      "topic_group": "social",
-      "country_code": "DE",
       "content_license": "Not determined; consult the source's own terms."
     }
   ]
