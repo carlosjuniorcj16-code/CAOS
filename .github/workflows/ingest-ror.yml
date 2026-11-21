@@ -1,0 +1,90 @@
+name: CAOS ROR global institution discovery
+
+on:
+  schedule:
+    - cron: "17 8 2 * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum new organization websites in this batch
+        required: false
+        default: "1000"
+        type: string
+      dry_run:
+        description: Preview only; do not update the catalogue
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: caos-catalog-ingestion
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout current catalogue
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile ROR importer
+        run: python -m py_compile scripts/ingest_ror.py scripts/build_site_stats.py
+      - name: Preview latest ROR release
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: python scripts/ingest_ror.py --limit "${{ inputs.limit }}" --dry-run
+      - name: Import diverse official organization websites
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python scripts/ingest_ror.py --limit 1000
+          else
+            python scripts/ingest_ror.py --limit "${{ inputs.limit }}"
+          fi
+      - name: Validate catalogue and rebuild exact indexes
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        run: |
+          python scripts/validate_catalog.py
+          python scripts/build_search_index.py
+          python scripts/build_site_stats.py
+      - name: Open reviewed catalogue update
+        id: cpr
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/ror-registry-discovery
+          delete-branch: true
+          commit-message: "chore: add global institutions from ROR registry"
+          title: "chore: expand global institutional sources from ROR"
+          body: |
+            ## ROR global institution discovery
+
+            - Latest ROR v2 data dump is resolved through the official Zenodo concept DOI.
+            - ZIP checksum is verified before processing.
+            - Up to 1,000 active organizations with a website listed in ROR are selected per monthly run, round-robin across countries.
+            - ROR metadata is CC0 1.0. The linked websites' content licenses remain independent and are not inferred.
+            - Only metadata and official homepage URLs are stored; no linked-site text, documents, images or other content is copied.
+            - Registry-listed URLs are not represented as live-checked by this importer.
+            - The update remains subject to catalogue validation and Pages build before trusted auto-merge.
+          add-paths: |
+            data/sources.json
+      - name: Dispatch validation and Pages build
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: automation/ror-registry-discovery
+        run: |
+          gh workflow run "Validate project" --ref "$BRANCH"
+          gh workflow run "Build and deploy CAOS SEO site" --ref "$BRANCH"
