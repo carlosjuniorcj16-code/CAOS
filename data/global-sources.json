@@ -355,7 +355,7 @@
     {
       "id": 13536,
       "title": "Smithsonian Folkways",
-      "category": "arts",
+      "category": "cross",
       "subcategory": "Ethnomusicology and musical traditions",
       "subcategory_pt": "Etnomusicologia e tradições musicais",
       "description": "Educational archive documenting music and sound traditions from around the world.",
@@ -380,7 +380,7 @@
     {
       "id": 13537,
       "title": "British Library Sounds",
-      "category": "arts",
+      "category": "cross",
       "subcategory": "Ethnomusicology and musical traditions",
       "subcategory_pt": "Etnomusicologia e tradições musicais",
       "description": "Audio collections documenting languages, music, oral history and sound heritage.",
@@ -1155,7 +1155,7 @@
     {
       "id": 13568,
       "title": "European Language Resources Association",
-      "category": "languages",
+      "category": "cross",
       "subcategory": "Translation studies and language resources",
       "subcategory_pt": "Estudos da tradução e recursos linguísticos",
       "description": "Association supporting language resources, data and language technology research.",
@@ -1180,7 +1180,7 @@
     {
       "id": 13569,
       "title": "META-NET",
-      "category": "languages",
+      "category": "cross",
       "subcategory": "Translation studies and language resources",
       "subcategory_pt": "Estudos da tradução e recursos linguísticos",
       "description": "European network on multilingual technologies, language resources and digital language equality.",
@@ -1205,7 +1205,7 @@
     {
       "id": 13570,
       "title": "Europeana",
-      "category": "arts",
+      "category": "cross",
       "subcategory": "Visual arts and heritage",
       "subcategory_pt": "Artes visuais e patrimônio",
       "description": "European cultural heritage platform with digitized museum, library and archive collections.",
@@ -1230,7 +1230,7 @@
     {
       "id": 13571,
       "title": "Google Arts & Culture",
-      "category": "arts",
+      "category": "cross",
       "subcategory": "Visual arts and heritage",
       "subcategory_pt": "Artes visuais e patrimônio",
       "description": "Digital exhibitions and collections contributed by cultural institutions.",
@@ -1355,7 +1355,7 @@
     {
       "id": 13576,
       "title": "Living Tongues Institute",
-      "category": "languages",
+      "category": "cross",
       "subcategory": "Indigenous languages and language documentation",
       "subcategory_pt": "Línguas indígenas e documentação linguística",
       "description": "Organization supporting documentation and revitalization of endangered and Indigenous languages.",
@@ -1380,7 +1380,7 @@
     {
       "id": 13577,
       "title": "Endangered Languages Project",
-      "category": "languages",
+      "category": "cross",
       "subcategory": "Indigenous languages and language documentation",
       "subcategory_pt": "Línguas indígenas e documentação linguística",
       "description": "Collaborative resource on endangered languages and documentation projects.",
@@ -1405,7 +1405,7 @@
     {
       "id": 13578,
       "title": "ICOMOS",
-      "category": "arts",
+      "category": "social",
       "subcategory": "Cultural heritage and memory",
       "subcategory_pt": "Patrimônio cultural e memória",
       "description": "International professional organization for conservation of cultural heritage and sites.",
@@ -1430,7 +1430,7 @@
     {
       "id": 13579,
       "title": "UNESCO Memory of the World",
-      "category": "arts",
+      "category": "social",
       "subcategory": "Cultural heritage and memory",
       "subcategory_pt": "Patrimônio cultural e memória",
       "description": "International programme for preservation and access to documentary heritage and archival collections.",
