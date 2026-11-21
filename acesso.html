@@ -37,6 +37,16 @@ main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:
 <div class="status" id="status" role="status" aria-live="polite"></div>
 <div class="note">A criação de uma conta não concede automaticamente acesso a áreas restritas. Solicitações de acesso especial passam por análise separada. Use um endereço de e-mail ao qual você tenha acesso.</div>
 </div>
+<div class="account" id="recoveryView">
+<h2>Redefinir senha</h2>
+<p>Escolha uma nova senha para sua conta.</p>
+<form id="recoveryForm">
+<label for="newPassword">Nova senha</label>
+<input id="newPassword" type="password" autocomplete="new-password" minlength="8" required>
+<button class="primary" type="submit">Salvar nova senha</button>
+</form>
+<div class="status" id="recoveryStatus" role="status" aria-live="polite"></div>
+</div>
 <div class="account" id="accountView">
 <h2>Você está conectado</h2>
 <p id="accountEmail"></p>
@@ -74,11 +84,13 @@ function setMode(next) {
 }
 function showAccount(user) {
   authView.style.display = "none";
+  $("recoveryView").style.display = "none";
   accountView.style.display = "block";
   $("accountEmail").textContent = user?.email || "Conta autenticada";
 }
 function showAuth() {
   accountView.style.display = "none";
+  $("recoveryView").style.display = "none";
   authView.style.display = "block";
 }
 $("loginTab").addEventListener("click", () => setMode("login"));
@@ -145,10 +157,33 @@ $("signOutButton").addEventListener("click", async () => {
   showStatus("Você saiu da sua conta.", "success");
 });
 
+$("recoveryForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const password = $("newPassword").value;
+  try {
+    const { error } = await supabase.auth.updateUser({ password });
+    if (error) throw error;
+    $("recoveryStatus").textContent = "Senha atualizada. Você já pode continuar usando sua conta.";
+    $("recoveryStatus").dataset.kind = "success";
+    $("recoveryStatus").style.display = "block";
+    $("recoveryForm").hidden = true;
+  } catch (error) {
+    $("recoveryStatus").textContent = error.message || "Não foi possível atualizar a senha.";
+    $("recoveryStatus").dataset.kind = "error";
+    $("recoveryStatus").style.display = "block";
+  }
+});
+
 const { data: { session } } = await supabase.auth.getSession();
 if (session?.user) showAccount(session.user);
-supabase.auth.onAuthStateChange((_event, sessionNow) => {
-  if (sessionNow?.user) showAccount(sessionNow.user);
+supabase.auth.onAuthStateChange((event, sessionNow) => {
+  if (event === "PASSWORD_RECOVERY") {
+    authView.style.display = "none";
+    accountView.style.display = "none";
+    $("recoveryView").style.display = "block";
+  } else if (sessionNow?.user) {
+    showAccount(sessionNow.user);
+  }
 });
 </script>
 </body>
