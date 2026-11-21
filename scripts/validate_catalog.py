@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
+SUPPLEMENT = ROOT / "data" / "global-sources.json"
 AI_CATALOG = ROOT / "data" / "ai_sources.json"
 HTML = ROOT / "index.html"
 ALLOWED = {"natural", "formal", "social", "health", "engineering", "cross"}
@@ -24,6 +25,16 @@ except Exception as exc:
 
 if not isinstance(data, list) or not data:
     fail("O catálogo precisa ser uma lista não vazia.")
+
+if SUPPLEMENT.exists():
+    try:
+        supplemental = json.loads(SUPPLEMENT.read_text(encoding="utf-8"))
+        extra = supplemental.get("records") if isinstance(supplemental, dict) else None
+        if not isinstance(extra, list):
+            fail("Catálogo global complementar deve conter uma lista records.")
+        data.extend(extra)
+    except Exception as exc:
+        fail(f"JSON inválido em data/global-sources.json: {exc}")
 
 ids, urls = set(), set()
 for i, item in enumerate(data, 1):
