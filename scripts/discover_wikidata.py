@@ -20,6 +20,8 @@ from urllib.parse import urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
+from catalog_io import load_catalog, save_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 ENDPOINT = "https://query.wikidata.org/sparql"
@@ -232,7 +234,7 @@ def main() -> None:
     if not 1 <= args.limit <= 200 or not 1 <= args.max_checks <= 500:
         parser.error("--limit deve ficar entre 1 e 200; --max-checks entre 1 e 500.")
 
-    raw = json.loads(args.catalog.read_text(encoding="utf-8"))
+    raw = load_catalog(args.catalog)
     catalog = raw if isinstance(raw, dict) else {"resources": raw}
     resources = catalog.get("resources")
     if not isinstance(resources, list):
@@ -297,7 +299,7 @@ def main() -> None:
         return
     resources.extend(additions)
     catalog["resources"] = resources
-    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    save_catalog(args.catalog, catalog)
 
 if __name__ == "__main__":
     try:
