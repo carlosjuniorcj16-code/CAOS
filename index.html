@@ -197,7 +197,7 @@ function render(){
  filtered=chosen.map(v=>v.x);
  const visible=filtered.slice(0,shown);
  $("resultCount").textContent=filtered.length.toLocaleString()+" "+t("count");
- $("heroCount").textContent=(siteTotalCount||all.length).toLocaleString();
+ if(siteTotalCount||all.length)$("heroCount").textContent=(siteTotalCount||all.length).toLocaleString();
  const selected=$("selectedCategoryCard");selected.hidden=active==="all";selected.innerHTML=active==="all"?"":'<strong>'+safe(topicName(active))+'</strong><span>'+t("selectedCategoryLabel")+" · "+filtered.length.toLocaleString()+" "+t("count")+'</span>';
  $("resources").innerHTML=visible.length?visible.map((x,i)=>'<article class="resource" data-category="'+safe(x.category)+'"><span class="resource-index">'+String(i+1).padStart(2,"0")+'</span><div class="resource-main"><h3>'+highlight(x.title,raw)+'</h3><p>'+highlight(description(x),raw)+'</p></div><div class="resource-meta"><span class="category-tag">'+safe(topicName(x.topic))+'</span><span class="resource-type">'+safe(resourceType(x))+(resourceAccess(x)?' · '+safe(resourceAccess(x)):'')+'</span><a class="resource-link" href="'+safe(x.url)+'" target="_blank" rel="noopener noreferrer">'+t("visit")+'</a></div></article>').join(""):'<div class="empty">'+t("empty")+'</div>';
  $("loadMore").hidden=filtered.length<=shown;
