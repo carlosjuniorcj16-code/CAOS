@@ -33,6 +33,8 @@ jobs:
         run: python -m py_compile scripts/*.py
       - name: Validate catalog
         run: python scripts/validate_catalog.py
+      - name: Build exact site-wide URL count
+        run: python scripts/build_site_stats.py
       - name: Validate shared CSS and SVG assets
         run: |
           python - <<'PY'
@@ -102,8 +104,10 @@ jobs:
           assert match, "Topic taxonomy not found"
           topics = json.loads(match.group(1))
           topic_ids = [x["id"] for x in topics]
-          assert len(topics) >= 180 and len(topic_ids) == len(set(topic_ids))
+          assert len(topics) >= 290 and len(topic_ids) == len(set(topic_ids))
           assert all(x["topic"] in set(topic_ids) for x in items)
+          assert "categoryResults" in html and "Math.random()" not in html
+          assert "id=\"categoryToggle\"" not in html and "id=\"categoryGroups\"" not in html
           main_data = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
           main_items = main_data if isinstance(main_data, list) else main_data.get("resources", [])
           main_urls = {x.get("url", "").strip().rstrip("/").lower() for x in main_items}
