@@ -53,3 +53,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .quantum-feature-stat strong{display:block;font:400 clamp(30px,3.8vw,44px)/1.08 Georgia,serif;color:#fff;margin:12px 0}
 .quantum-feature-stat span{display:block;color:#dce6f4;font-size:14px;line-height:1.65}
 @media(max-width:700px){.quantum-feature{grid-template-columns:1fr;gap:20px}.quantum-feature-stat{border-left:0;border-top:1px solid #ffffff44;padding:20px 0 0}}
+
+
+/* Brand hierarchy: keep the descriptor visibly separated from the mark/name. */
+.topbar .brandline,.brand .brandline{display:block!important;margin-top:10px!important;line-height:1.5!important;max-width:260px}
+@media(max-width:600px){.topbar .brandline,.brand .brandline{margin-top:8px!important;max-width:220px}}
