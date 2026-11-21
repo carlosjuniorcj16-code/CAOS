@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17254a">
+<meta name="description" content="Acesse sua conta CAOS.">
+<title>CAOS | Acesso</title>
+<style>
+:root{--navy:#17254a;--blue:#3158bd;--paper:#fffdf8;--cream:#f5f0e5;--ink:#202a35;--muted:#68727b;--line:#dedbd2;--orange:#e66a3b;--yellow:#f0c54b;--green:#327653}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font:16px/1.6 "Avenir Next",Avenir,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+a{color:inherit}button,input{font:inherit}.top{background:var(--navy);color:white;padding:18px 24px}.top-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{text-decoration:none;font:700 22px Georgia,serif;letter-spacing:.14em}.back{font-size:13px;color:#e0e5f0;text-decoration:none}.back:hover{color:var(--yellow)}
+main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);font-weight:800}.panel{margin-top:12px;padding:30px;background:white;border:1px solid var(--line);box-shadow:0 12px 32px rgba(23,37,74,.08)}h1{margin:0 0 8px;color:var(--navy);font:400 34px/1.15 Georgia,serif}.intro{margin:0 0 22px;color:var(--muted);font-size:13px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 20px}.tabs button{padding:10px;border:1px solid var(--line);background:var(--paper);color:var(--navy);font-weight:700;cursor:pointer}.tabs button[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:white}label{display:block;margin:14px 0 6px;color:var(--navy);font-size:12px;font-weight:800}input{display:block;width:100%;padding:12px;border:1px solid #cbc6ba;background:#fff;color:var(--ink);border-radius:2px}input:focus{outline:2px solid rgba(49,88,189,.2);border-color:var(--blue)}.primary{width:100%;margin-top:20px;padding:12px 16px;border:0;background:var(--navy);color:white;font-weight:800;cursor:pointer}.primary:hover{background:var(--blue)}.primary:disabled{opacity:.6;cursor:wait}.subtle{display:block;margin-top:14px;border:0;background:none;color:var(--blue);text-decoration:underline;cursor:pointer;font-size:12px;padding:0}.status{display:none;margin:16px 0 0;padding:11px 13px;background:#eef1fa;border-left:4px solid var(--blue);font-size:13px;overflow-wrap:anywhere}.status[data-kind=error]{background:#fff0ed;border-color:#c45145;color:#782e29}.status[data-kind=success]{background:#edf6ef;border-color:var(--green);color:#245c35}.account{display:none}.account h2{font:400 24px Georgia,serif;color:var(--navy);margin:0 0 8px}.account p{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.note{margin-top:22px;padding:13px 15px;background:var(--cream);color:#5d5548;font-size:11px;line-height:1.6}footer{text-align:center;padding:20px;color:var(--muted);font-size:10px}
+@media(max-width:520px){.panel{padding:22px 18px}main{padding:30px 0}.top{padding:15px 16px}.brand{font-size:19px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner"><a class="brand" href="./index.html">CAOS</a><a class="back" href="./index.html">Voltar ao diretório</a></div></header>
+<main>
+<div class="eyebrow">Conta CAOS</div>
+<section class="panel" aria-labelledby="pageTitle">
+<div id="authView">
+<h1 id="pageTitle">Acesse sua conta</h1>
+<p class="intro">Entre ou crie uma conta para acessar os recursos reservados da plataforma.</p>
+<div class="tabs" role="tablist" aria-label="Tipo de acesso">
+<button type="button" id="loginTab" role="tab" aria-selected="true">Entrar</button>
+<button type="button" id="signupTab" role="tab" aria-selected="false">Criar conta</button>
+</div>
+<form id="authForm">
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+<label for="password">Senha</label>
+<input id="password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+<button class="primary" id="submitButton" type="submit">Entrar</button>
+</form>
+<button class="subtle" id="forgotButton" type="button">Esqueci minha senha</button>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<div class="note">A criação de uma conta não concede automaticamente acesso a áreas restritas. Solicitações de acesso especial passam por análise separada. Use um endereço de e-mail ao qual você tenha acesso.</div>
+</div>
+<div class="account" id="accountView">
+<h2>Você está conectado</h2>
+<p id="accountEmail"></p>
+<p>Sua sessão está ativa neste navegador.</p>
+<button class="primary" id="signOutButton" type="button">Sair da conta</button>
+<div class="status" id="accountStatus" role="status" aria-live="polite"></div>
+</div>
+</section>
+</main>
+<footer>CAOS · Diretório público do conhecimento</footer>
+<script type="module">
+import { supabase } from "./js/supabase-client.js";
+
+const $ = (id) => document.getElementById(id);
+const authView = $("authView");
+const accountView = $("accountView");
+let mode = "login";
+
+function showStatus(message, kind = "info", target = "status") {
+  const el = $(target);
+  el.textContent = message;
+  el.dataset.kind = kind;
+  el.style.display = "block";
+}
+function setMode(next) {
+  mode = next;
+  const signup = mode === "signup";
+  $("loginTab").setAttribute("aria-selected", String(!signup));
+  $("signupTab").setAttribute("aria-selected", String(signup));
+  $("pageTitle").textContent = signup ? "Crie sua conta" : "Acesse sua conta";
+  $("submitButton").textContent = signup ? "Criar conta" : "Entrar";
+  $("password").autocomplete = signup ? "new-password" : "current-password";
+  $("forgotButton").hidden = signup;
+  $("status").style.display = "none";
+}
+function showAccount(user) {
+  authView.style.display = "none";
+  accountView.style.display = "block";
+  $("accountEmail").textContent = user?.email || "Conta autenticada";
+}
+function showAuth() {
+  accountView.style.display = "none";
+  authView.style.display = "block";
+}
+$("loginTab").addEventListener("click", () => setMode("login"));
+$("signupTab").addEventListener("click", () => setMode("signup"));
+
+$("authForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const button = $("submitButton");
+  const email = $("email").value.trim();
+  const password = $("password").value;
+  button.disabled = true;
+  $("status").style.display = "none";
+  try {
+    if (mode === "signup") {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: { emailRedirectTo: window.location.href.split("#")[0] }
+      });
+      if (error) throw error;
+      if (data.session) {
+        showAccount(data.user);
+      } else {
+        showStatus("Cadastro recebido. Verifique sua caixa de entrada e confirme o e-mail antes de entrar.", "success");
+      }
+    } else {
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) throw error;
+      showAccount(data.user);
+    }
+  } catch (error) {
+    showStatus(error.message || "Não foi possível concluir a operação. Tente novamente.", "error");
+  } finally {
+    button.disabled = false;
+  }
+});
+
+$("forgotButton").addEventListener("click", async () => {
+  const email = $("email").value.trim();
+  if (!email) {
+    showStatus("Digite seu e-mail no campo acima para receber o link de recuperação.", "info");
+    $("email").focus();
+    return;
+  }
+  try {
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.href.split("#")[0]
+    });
+    if (error) throw error;
+    showStatus("Se esse endereço estiver cadastrado, você receberá um link para redefinir a senha.", "success");
+  } catch (error) {
+    showStatus(error.message || "Não foi possível enviar o link agora.", "error");
+  }
+});
+
+$("signOutButton").addEventListener("click", async () => {
+  const { error } = await supabase.auth.signOut();
+  if (error) {
+    showStatus(error.message || "Não foi possível sair da conta.", "error", "accountStatus");
+    return;
+  }
+  showAuth();
+  setMode("login");
+  showStatus("Você saiu da sua conta.", "success");
+});
+
+const { data: { session } } = await supabase.auth.getSession();
+if (session?.user) showAccount(session.user);
+supabase.auth.onAuthStateChange((_event, sessionNow) => {
+  if (sessionNow?.user) showAccount(sessionNow.user);
+});
+</script>
+</body>
+</html>
