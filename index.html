@@ -222,8 +222,9 @@ $("loadMore").addEventListener("click",()=>{shown+=48;render()});
 Promise.all([
  fetch("./search-index.json").then(r=>r.ok?r.json():null).catch(()=>null),
  fetch("./data/global-sources.json").then(r=>r.ok?r.json():{resources:[]}).catch(()=>({resources:[]})),
- fetch("./site-stats.json").then(r=>r.ok?r.json():null).catch(()=>null)
-]).then(async([index,extra,stats])=>{
+ fetch("./site-stats.json").then(r=>r.ok?r.json():null).catch(()=>null),
+ fetch("./data/wikidata-discovery.json").then(r=>r.ok?r.json():{resources:[]}).catch(()=>({resources:[]}))
+]).then(async([index,extra,stats,wikidata])=>{
  let base=index&&Array.isArray(index.resources)&&index.resources.length?index.resources:null;
  if(!base){
   const response=await fetch("./data/sources.json");
@@ -231,7 +232,7 @@ Promise.all([
   const raw=await response.json();
   base=Array.isArray(raw)?raw:(raw.resources||[]);
  }
- all=[...base,...(extra.resources||[])];
+ all=[...base,...(extra.resources||[]),...(wikidata.resources||[])];
  const seen=new Set();
  all=all.filter(x=>{const key=String(x.url||"").trim().replace(/\/$/,"").toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true});
  siteTotalCount=Number.isSafeInteger(stats?.total_unique_urls)&&stats.total_unique_urls>0?stats.total_unique_urls:all.length;
