@@ -49,7 +49,7 @@ jobs:
           test -s dist/sitemap.xml
           test -s dist/search-index.json
           test -s dist/categorias/index.html
-          for path in radar.html leituras.html software.html freeware.html data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json assets/caos-mark.svg; do test -s "dist/$path"; done
+          for path in ai-data.html radar.html leituras.html software.html freeware.html quantum.html data/ai_sources.json data/languages.json data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json data/quantum.json assets/caos-mark.svg assets/caos-refresh.css; do test -s "dist/$path"; done
           python - <<'PY'
           from pathlib import Path
           import xml.etree.ElementTree as ET
