@@ -80,6 +80,41 @@ jobs:
                       assert item.get("url", "").startswith("https://")
           print("Research feeds structurally valid.")
           PY
+      - name: Validate global taxonomy and supplemental sources
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          data = json.loads(Path("data/global-sources.json").read_text(encoding="utf-8"))
+          items = data.get("resources", [])
+          assert data.get("schema_version") == 1
+          assert len(items) >= 50, f"Expected at least 50 supplemental sources, found {len(items)}"
+          ids = [str(x.get("id", "")) for x in items]
+          assert len(ids) == len(set(ids)) and all(ids)
+          urls = [x.get("url", "") for x in items]
+          assert all(u.startswith("https://") for u in urls)
+          assert len(urls) == len(set(u.rstrip("/").lower() for u in urls))
+          required = {"title", "topic", "description_pt", "verification_status", "checked_at"}
+          assert all(required <= set(x) for x in items)
+          assert all(x["verification_status"] == "candidate_unverified" and x["checked_at"] is None for x in items)
+          html = Path("index.html").read_text(encoding="utf-8")
+          match = re.search(r"const TOPICS=(\[.*?\]);", html, re.S)
+          assert match, "Topic taxonomy not found"
+          topics = json.loads(match.group(1))
+          topic_ids = [x["id"] for x in topics]
+          assert len(topics) >= 180 and len(topic_ids) == len(set(topic_ids))
+          assert all(x["topic"] in set(topic_ids) for x in items)
+          main_data = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
+          main_items = main_data if isinstance(main_data, list) else main_data.get("resources", [])
+          main_urls = {x.get("url", "").strip().rstrip("/").lower() for x in main_items}
+          new_unique = {x["url"].strip().rstrip("/").lower() for x in items} - main_urls
+          assert len(new_unique) >= 20, f"Too few distinct new source URLs: {len(new_unique)}"
+          assert "freeware-feature" not in html and "quantum-feature" not in html
+          assert 'fetch("./data/sources.json")' in html and 'fetch("./data/global-sources.json")' in html
+          css = Path("assets/caos-refresh.css").read_text(encoding="utf-8")
+          assert ".brandline{margin-top:10px" in css
+          print(f"Global catalogue: {len(items)} candidates, {len(new_unique)} distinct additional URLs; taxonomy: {len(topics)} unique categories.")
+          PY
       - name: Build compact search index
         run: python scripts/build_search_index.py
       - name: Check compact index output

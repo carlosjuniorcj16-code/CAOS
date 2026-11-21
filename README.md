@@ -11,7 +11,7 @@ O catálogo é amplo e aberto a novas áreas. A organização por categorias ser
 
 ## Catálogo
 
-A versão atual reúne **13.519 fontes**, distribuídas em **67 categorias temáticas com registros**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
+A versão atual reúne **mais de 13,5 mil registros no catálogo principal e complementar**, navegáveis por **186 categorias temáticas**. O projeto agora inclui pipelines para ampliar o catálogo com conjuntos externos licenciados e para gerar traduções armazenadas para cada idioma. O seletor de categorias é recolhível, apresenta a quantidade de fontes por assunto e permite filtrar o catálogo sem depender de um agrupamento rígido. A busca destaca os termos encontrados nos resultados e ignora diferenças de acentuação. O lote complementar inicial acrescenta 75 referências institucionais, culturais e internacionais candidatas, identificadas separadamente para conferência de links, proveniência e licenças. O número cresce por meio de contribuições e curadoria contínua. O catálogo inclui recursos científicos, educacionais, culturais, jurídicos, históricos, geográficos, estatísticos, tecnológicos, ambientais, médicos e de muitos outros campos.
 
 A presença de um link não significa endosso, certificação ou garantia de disponibilidade. Cada fonte define suas próprias condições de acesso, direitos autorais, licenças e termos de reutilização.
 
@@ -24,6 +24,14 @@ A interface está disponível em 15 idiomas: português brasileiro, inglês, esp
 O catálogo atual inclui 12.000 registros selecionados do dump oficial do Curlie, que contém aproximadamente 2,9 milhões de entradas; isso não representa a importação integral do diretório. Os registros mantêm a categoria de origem, a licença CC BY 3.0 e a atribuição obrigatória. Novas importações devem ocorrer em lotes revisados, sem copiar o dump completo para o navegador. Consulte [`scripts/CATALOG_PIPELINE.md`](scripts/CATALOG_PIPELINE.md).
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
+
+## Coleções especializadas
+
+As páginas de dados para IA, software livre, freeware e ciência quântica permanecem disponíveis como catálogos complementares. Não recebem destaque promocional na página inicial; seus conteúdos são documentais e seguem os mesmos critérios de neutralidade, proveniência e transparência.
+
+## Coleções especializadas
+
+As páginas de dados para IA, software livre, freeware e ciência quântica permanecem disponíveis como catálogos complementares. Não recebem destaque promocional na página inicial; seus conteúdos são documentais e seguem os mesmos critérios de neutralidade, proveniência e transparência.
 
 ## Física quântica
 
@@ -55,7 +63,8 @@ O diretório pode apoiar estudo, ensino, jornalismo, pesquisa, descoberta de dad
 - `freeware.html`: curadoria de freeware confiável, servidores cloud e plataformas gratuitas.
 - `data/freeware.json`: metadados, limites, licenças, riscos e evidências oficiais da curadoria gratuita.
 - `data/ai_sources.json`: metadados estruturados de datasets e fontes para IA.
-- `data/sources.json`: catálogo estruturado de fontes e links.
+- `data/sources.json`: catálogo estruturado principal de fontes e links.
+- `data/global-sources.json`: lote complementar de fontes nacionais e internacionais, com estado de verificação explícito.
 - `CONTRIBUTING.md`: orientações para contribuições.
 - `SOURCES.md`: critérios editoriais e referências de curadoria.
 
