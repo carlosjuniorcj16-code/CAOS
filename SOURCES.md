@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **mais de 13,5 mil fontes e recursos**, navegáveis por **186 categorias temáticas** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **mais de 13,5 mil fontes e recursos**, navegáveis por **205 categorias temáticas** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -115,3 +115,12 @@ O arquivo `data/global-sources.json` acrescenta 75 registros candidatos de porta
 
 
 O índice compacto `search-index.json` é gerado no processo de build a partir do catálogo principal. A página inicial também carrega o catálogo canônico como fallback quando o índice servido está vazio e combina os registros complementares de `data/global-sources.json`; URLs repetidas são removidas na interface. A validação automatizada verifica separadamente o índice principal e o lote complementar.
+
+
+## Contagem global de URLs
+
+`python scripts/build_site_stats.py` gera `site-stats.json` com a contagem deduplicada de destinos HTTP(S) externos nos catálogos e links de referência das páginas especializadas. O build de publicação gera esse arquivo novamente em cada execução; a homepage lê o total em vez de manter um número estático.
+
+## Descoberta institucional ROR
+
+O workflow `.github/workflows/ingest-ror.yml` consulta mensalmente o registro ROR por meio do DOI conceitual do dump, que sempre aponta para a versão mais recente. O arquivo ZIP é verificado pelo checksum publicado no Zenodo antes da leitura. Cada lote seleciona até 1.000 sites oficiais listados em registros ativos, com distribuição por país e deduplicação por ROR ID e URL. Os metadados ROR são CC0 1.0; a licença do conteúdo dos sites vinculados não é presumida. Os lotes passam por pull request, validação e build antes da integração automática autorizada.
