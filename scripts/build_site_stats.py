@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
+from catalog_io import load_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "site-stats.json"
 DATASETS = {
