@@ -67,6 +67,8 @@ def collect_urls(value, allowed_fields: set[str], found: set[str]) -> None:
 
 def load_json(path: Path):
     try:
+        if path == ROOT / "data" / "sources.json":
+            return load_catalog(path)
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
         raise SystemExit(f"Cannot read {path.relative_to(ROOT)}: {exc}") from exc
