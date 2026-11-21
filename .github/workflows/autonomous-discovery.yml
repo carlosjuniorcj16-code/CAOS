@@ -51,7 +51,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             LIMIT="${{ inputs.limit }}"
           fi
-          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 350
+          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 500
       - name: Validate updated catalog
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
