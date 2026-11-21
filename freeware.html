@@ -49,4 +49,5 @@ fetch("./data/freeware.json?"+Date.now()).then(r=>{if(!r.ok)throw Error("catalog
 }).catch(()=>{$("updated").textContent="Catálogo indisponível";$("catalog").innerHTML='<div class="empty">Não foi possível carregar a curadoria.</div>'});
 $("search").addEventListener("input",render);$("category").addEventListener("change",render);
 </script>
+<script src="./js/site-i18n.js"></script>
 </body></html>

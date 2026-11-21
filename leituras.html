@@ -29,4 +29,5 @@ fetch("./data/reading-recommendations.json?"+Date.now()).then(r=>{if(!r.ok)throw
  $("updated").textContent=data.updated_at?"Atualizado em "+fmt(data.updated_at)+" · "+(data.sources||[]).join(" + "):"Aguardando a primeira coleta automática";
  $("topics").innerHTML=topics.length?topics.map((t,i)=>'<section class="topic"><div class="topic-head"><h2>'+esc(t.name)+'</h2><small>'+t.items.length+' leitura(s)</small></div><div class="cards">'+(t.items.length?t.items.map(x=>'<article class="card"><div class="meta">'+esc(fmt(x.published))+' · '+esc(x.source)+'</div><h3>'+esc(x.title)+'</h3><p class="authors">'+esc((x.authors||[]).slice(0,5).join(", "))+'</p>'+(x.venue?'<p class="venue">'+esc(x.venue)+'</p>':'')+'<a class="link" href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Abrir publicação ↗</a></article>').join(""):'<div class="empty">Nenhuma leitura recente nesta subárea.</div>')+'</div></section>').join(""):'<div class="empty">Ainda não há sugestões. O sistema tentará novamente na próxima coleta.</div>';
 }).catch(()=>{$("updated").textContent="Não foi possível carregar a atualização";$("topics").innerHTML='<div class="empty">As sugestões estão temporariamente indisponíveis.</div>'});
-</script></body></html>
+</script><script src="./js/site-i18n.js"></script>
+</body></html>

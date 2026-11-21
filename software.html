@@ -46,4 +46,5 @@ fetch("./data/open-source-software.json?"+Date.now()).then(r=>{if(!r.ok)throw Er
  render();
 }).catch(()=>{$("updated").textContent="Não foi possível carregar o catálogo";$("catalog").innerHTML='<div class="empty">O atlas está temporariamente indisponível.</div>'});
 $("search").addEventListener("input",render);$("category").addEventListener("change",render);
-</script></body></html>
+</script><script src="./js/site-i18n.js"></script>
+</body></html>

@@ -86,4 +86,5 @@ fetch("./data/quantum.json").then(r=>{if(!r.ok)throw Error("Catálogo indisponí
  renderQuantum();
 }).catch(()=>{$("qcatalog").innerHTML='<div class="quantum-empty">Não foi possível carregar o catálogo. Atualize a página ou consulte o repositório CAOS.</div>'});
 $("qsearch").addEventListener("input",renderQuantum);$("qcategory").addEventListener("change",renderQuantum);
-</script></body></html>
+</script><script src="./js/site-i18n.js"></script>
+</body></html>
