@@ -59,7 +59,13 @@ main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:
 </main>
 <footer>CAOS · Diretório público do conhecimento</footer>
 <script type="module">
-import { supabase } from "./js/supabase-client.js";
+let supabasePromise;
+const getSupabase = () => {
+  if (!supabasePromise) {
+    supabasePromise = import("./js/supabase-client.js").then(({ supabase }) => supabase);
+  }
+  return supabasePromise;
+};
 
 const $ = (id) => document.getElementById(id);
 const authView = $("authView");
@@ -120,6 +126,7 @@ $("authForm").addEventListener("submit", async (event) => {
   button.disabled = true;
   $("status").style.display = "none";
   try {
+    const supabase = await getSupabase();
     if (mode === "signup") {
       const { data, error } = await supabase.auth.signUp({
         email,
@@ -152,6 +159,7 @@ $("forgotButton").addEventListener("click", async () => {
     return;
   }
   try {
+    const supabase = await getSupabase();
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
       redirectTo: window.location.href.split("#")[0]
     });
@@ -163,8 +171,15 @@ $("forgotButton").addEventListener("click", async () => {
 });
 
 $("signOutButton").addEventListener("click", async () => {
-  const { error } = await supabase.auth.signOut();
-  if (error) {
+  try {
+    const supabase = await getSupabase();
+    const { error } = await supabase.auth.signOut();
+    if (error) throw error;
+  } catch (error) {
+    showStatus(error.message || "Não foi possível sair da conta.", "error", "accountStatus");
+    return;
+  }
+  {
     showStatus(error.message || "Não foi possível sair da conta.", "error", "accountStatus");
     return;
   }
@@ -177,6 +192,7 @@ $("recoveryForm").addEventListener("submit", async (event) => {
   event.preventDefault();
   const password = $("newPassword").value;
   try {
+    const supabase = await getSupabase();
     const { error } = await supabase.auth.updateUser({ password });
     if (error) throw error;
     $("recoveryStatus").textContent = "Senha atualizada. Você já pode continuar usando sua conta.";
@@ -190,16 +206,20 @@ $("recoveryForm").addEventListener("submit", async (event) => {
   }
 });
 
-const { data: { session } } = await supabase.auth.getSession();
-if (session?.user) showAccount(session.user);
-supabase.auth.onAuthStateChange((event, sessionNow) => {
-  if (event === "PASSWORD_RECOVERY") {
-    authView.style.display = "none";
-    accountView.style.display = "none";
-    $("recoveryView").style.display = "block";
-  } else if (sessionNow?.user) {
-    showAccount(sessionNow.user);
-  }
+getSupabase().then(async (supabase) => {
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session?.user) showAccount(session.user);
+  supabase.auth.onAuthStateChange((event, sessionNow) => {
+    if (event === "PASSWORD_RECOVERY") {
+      authView.style.display = "none";
+      accountView.style.display = "none";
+      $("recoveryView").style.display = "block";
+    } else if (sessionNow?.user) {
+      showAccount(sessionNow.user);
+    }
+  });
+}).catch((error) => {
+  showStatus("A tela está funcionando, mas não foi possível conectar ao serviço de autenticação. Verifique sua conexão e tente novamente. " + (error.message || ""), "error");
 });
 </script>
 </body>
