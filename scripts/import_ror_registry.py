@@ -49,7 +49,7 @@ def request_json(url: str) -> dict:
         try:
             with urlopen(request, timeout=90) as response:
                 return json.loads(response.read().decode("utf-8"))
-        except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError) as exc:
             last_error = exc
             if isinstance(exc, HTTPError) and exc.code not in {429, 500, 502, 503, 504}:
                 break
@@ -86,19 +86,30 @@ def download_and_verify(file_info: dict, target: Path) -> None:
     algorithm, expected = checksum.split(":", 1)
     if algorithm not in {"md5", "sha256"}:
         raise RuntimeError(f"Unsupported Zenodo checksum algorithm: {algorithm}")
-    digest = hashlib.new(algorithm)
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=180) as response, target.open("wb") as output:
-        while True:
-            chunk = response.read(1024 * 1024)
-            if not chunk:
-                break
-            output.write(chunk)
-            digest.update(chunk)
-    actual = digest.hexdigest()
-    if actual.lower() != expected.lower():
-        target.unlink(missing_ok=True)
-        raise RuntimeError(f"ROR dump checksum mismatch: expected {expected}, got {actual}")
+    for attempt in range(4):
+        digest = hashlib.new(algorithm)
+        try:
+            with urlopen(request, timeout=180) as response, target.open("wb") as output:
+                while True:
+                    chunk = response.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    output.write(chunk)
+                    digest.update(chunk)
+            actual = digest.hexdigest()
+            if actual.lower() == expected.lower():
+                return
+            raise RuntimeError(f"ROR dump checksum mismatch: expected {expected}, got {actual}")
+        except (HTTPError, URLError, TimeoutError, OSError, RuntimeError) as exc:
+            target.unlink(missing_ok=True)
+            if isinstance(exc, HTTPError) and exc.code not in {429, 500, 502, 503, 504}:
+                raise
+            if attempt == 3:
+                raise
+            delay = min(45, 5 * (2 ** attempt))
+            print(f"ROR download attempt {attempt + 1} failed ({exc}); retrying in {delay}s.")
+            time.sleep(delay)
 
 
 def display_name(record: dict) -> str:
