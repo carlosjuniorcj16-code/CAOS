@@ -8,7 +8,7 @@ on:
       limit:
         description: Maximum new records from each provider
         required: false
-        default: "500"
+        default: "1000"
         type: string
       dry_run:
         description: Preview only; do not modify the catalog
@@ -45,7 +45,7 @@ jobs:
           python -m py_compile scripts/ingest_openalex_institutions.py
       - name: Preview DOAJ journal discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json --dry-run
+        run: python scripts/ingest_doaj_journals.py --limit "${{ inputs.limit }}" --max-pages 10 --state-file data/discovery_state.json --dry-run
       - name: Preview OpenAlex institution discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         env:
@@ -58,7 +58,7 @@ jobs:
           fi
       - name: Import DOAJ journal websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
-        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '500' || inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json
+        run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '1000' || inputs.limit }}" --max-pages 10 --state-file data/discovery_state.json
       - name: Import OpenAlex institutions
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
