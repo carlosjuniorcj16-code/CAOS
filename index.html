@@ -152,9 +152,6 @@ function fillDiscoveryFilters(){
   select.innerHTML='<option value="">'+safe(t(allKey))+'</option>'+options.map(([value,count])=>'<option value="'+safe(value)+'">'+safe(labels.get(value))+' ('+count.toLocaleString()+')</option>').join("");
   if(options.some(([value])=>value===current))select.value=current;
  }
- const sort=$("sortResults"),currentSort=sort.value||"relevance";
- sort.innerHTML='<option value="relevance">'+safe(t("relevance"))+'</option><option value="az">'+safe(t("alphabeticalAZ"))+'</option><option value="za">'+safe(t("alphabeticalZA"))+'</option>';
- sort.value=currentSort;
 }
 
 function renderCategories(){
@@ -229,7 +226,7 @@ Promise.all([
  all=[...base,...(extra.resources||[])];
  const seen=new Set();
  all=all.filter(x=>{const key=String(x.url||"").trim().replace(/\/$/,"").toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true});
- siteTotalCount=Number.isSafeInteger(stats?.total_unique_urls)&&stats.total_unique_urls>=all.length?stats.total_unique_urls:all.length;
+ siteTotalCount=Number.isSafeInteger(stats?.total_unique_urls)&&stats.total_unique_urls>0?stats.total_unique_urls:all.length;
  $("heroCount").textContent=siteTotalCount.toLocaleString();prepareSearch();fillDiscoveryFilters();$("curlieCredit").hidden=!all.some(x=>x.source==="Curlie");render();
 }).catch(error=>{$("resultCount").textContent=t("error");$("resources").innerHTML='<div class="empty">O catálogo não pôde ser carregado. Verifique a conexão e tente novamente.</div>';console.error(error)});
 setLanguage("pt");
