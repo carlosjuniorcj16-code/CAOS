@@ -10,7 +10,7 @@
 :root{--navy:#17254a;--blue:#3158bd;--paper:#fffdf8;--cream:#f5f0e5;--ink:#202a35;--muted:#68727b;--line:#dedbd2;--orange:#e66a3b;--yellow:#f0c54b;--green:#327653}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font:16px/1.6 "Avenir Next",Avenir,"Segoe UI",sans-serif;display:flex;flex-direction:column}
 a{color:inherit}button,input{font:inherit}.top{background:var(--navy);color:white;padding:18px 24px}.top-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{text-decoration:none;font:700 22px Georgia,serif;letter-spacing:.14em}.back{font-size:13px;color:#e0e5f0;text-decoration:none}.back:hover{color:var(--yellow)}
-main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);font-weight:800}.panel{margin-top:12px;padding:30px;background:white;border:1px solid var(--line);box-shadow:0 12px 32px rgba(23,37,74,.08)}h1{margin:0 0 8px;color:var(--navy);font:400 34px/1.15 Georgia,serif}.intro{margin:0 0 22px;color:var(--muted);font-size:13px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 20px}.tabs button{padding:10px;border:1px solid var(--line);background:var(--paper);color:var(--navy);font-weight:700;cursor:pointer}.tabs button[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:white}label{display:block;margin:14px 0 6px;color:var(--navy);font-size:12px;font-weight:800}input{display:block;width:100%;padding:12px;border:1px solid #cbc6ba;background:#fff;color:var(--ink);border-radius:2px}input:focus{outline:2px solid rgba(49,88,189,.2);border-color:var(--blue)}.primary{width:100%;margin-top:20px;padding:12px 16px;border:0;background:var(--navy);color:white;font-weight:800;cursor:pointer}.primary:hover{background:var(--blue)}.primary:disabled{opacity:.6;cursor:wait}.subtle{display:block;margin-top:14px;border:0;background:none;color:var(--blue);text-decoration:underline;cursor:pointer;font-size:12px;padding:0}.status{display:none;margin:16px 0 0;padding:11px 13px;background:#eef1fa;border-left:4px solid var(--blue);font-size:13px;overflow-wrap:anywhere}.status[data-kind=error]{background:#fff0ed;border-color:#c45145;color:#782e29}.status[data-kind=success]{background:#edf6ef;border-color:var(--green);color:#245c35}.account{display:none}.account h2{font:400 24px Georgia,serif;color:var(--navy);margin:0 0 8px}.account p{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.note{margin-top:22px;padding:13px 15px;background:var(--cream);color:#5d5548;font-size:11px;line-height:1.6}footer{text-align:center;padding:20px;color:var(--muted);font-size:10px}
+main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);font-weight:800}.panel{margin-top:12px;padding:30px;background:white;border:1px solid var(--line);box-shadow:0 12px 32px rgba(23,37,74,.08)}h1{margin:0 0 8px;color:var(--navy);font:400 34px/1.15 Georgia,serif}.intro{margin:0 0 22px;color:var(--muted);font-size:13px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 12px;padding:6px;background:#f2f3f7;border:1px solid #e2e5ed;border-radius:12px}.tabs button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-height:76px;padding:12px 14px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--muted);text-align:left;cursor:pointer;transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,color .18s ease}.tabs button strong{font-size:14px;color:inherit}.tabs button small{font-size:11px;font-weight:500;line-height:1.35;color:inherit;opacity:.82}.tabs button[aria-selected=true]{background:#fff;border-color:#d9deeb;color:var(--navy);box-shadow:0 2px 8px rgba(23,37,74,.09)}.tabs button:focus-visible{outline:3px solid rgba(49,88,189,.35);outline-offset:2px}.mode-hint{min-height:38px;margin:0 2px 18px;color:var(--muted);font-size:12px;line-height:1.5}label{display:block;margin:14px 0 6px;color:var(--navy);font-size:12px;font-weight:800}input{display:block;width:100%;padding:12px;border:1px solid #cbc6ba;background:#fff;color:var(--ink);border-radius:2px}input:focus{outline:2px solid rgba(49,88,189,.2);border-color:var(--blue)}.primary{width:100%;margin-top:20px;padding:12px 16px;border:0;background:var(--navy);color:white;font-weight:800;cursor:pointer}.primary:hover{background:var(--blue)}.primary:disabled{opacity:.6;cursor:wait}.subtle{display:block;margin-top:14px;border:0;background:none;color:var(--blue);text-decoration:underline;cursor:pointer;font-size:12px;padding:0}.status{display:none;margin:16px 0 0;padding:11px 13px;background:#eef1fa;border-left:4px solid var(--blue);font-size:13px;overflow-wrap:anywhere}.status[data-kind=error]{background:#fff0ed;border-color:#c45145;color:#782e29}.status[data-kind=success]{background:#edf6ef;border-color:var(--green);color:#245c35}.account{display:none}.account h2{font:400 24px Georgia,serif;color:var(--navy);margin:0 0 8px}.account p{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.note{margin-top:22px;padding:13px 15px;background:var(--cream);color:#5d5548;font-size:11px;line-height:1.6}footer{text-align:center;padding:20px;color:var(--muted);font-size:10px}
 @media(max-width:520px){.panel{padding:22px 18px}main{padding:30px 0}.top{padding:15px 16px}.brand{font-size:19px}}
 </style>
 </head>
@@ -22,11 +22,12 @@ main{width:min(100% - 32px,480px);margin:auto;padding:48px 0}.eyebrow{font-size:
 <div id="authView">
 <h1 id="pageTitle">Acesse sua conta</h1>
 <p class="intro">Entre ou crie uma conta para acessar os recursos reservados da plataforma.</p>
-<div class="tabs" role="tablist" aria-label="Tipo de acesso">
-<button type="button" id="loginTab" role="tab" aria-selected="true">Entrar</button>
-<button type="button" id="signupTab" role="tab" aria-selected="false">Criar conta</button>
+<div class="tabs" role="tablist" aria-label="Escolha como deseja acessar">
+<button type="button" id="loginTab" role="tab" aria-selected="true" aria-controls="authForm" tabindex="0"><strong>Entrar</strong><small>Já tenho uma conta</small></button>
+<button type="button" id="signupTab" role="tab" aria-selected="false" aria-controls="authForm" tabindex="-1"><strong>Criar conta</strong><small>Primeiro acesso ao CAOS</small></button>
 </div>
-<form id="authForm">
+<p class="mode-hint" id="modeHint">Use seu e-mail e sua senha para continuar de onde parou.</p>
+<form id="authForm" role="tabpanel" aria-labelledby="loginTab">
 <label for="email">E-mail</label>
 <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
 <label for="password">Senha</label>
@@ -76,8 +77,14 @@ function setMode(next) {
   const signup = mode === "signup";
   $("loginTab").setAttribute("aria-selected", String(!signup));
   $("signupTab").setAttribute("aria-selected", String(signup));
+  $("loginTab").tabIndex = signup ? -1 : 0;
+  $("signupTab").tabIndex = signup ? 0 : -1;
+  $("authForm").setAttribute("aria-labelledby", signup ? "signupTab" : "loginTab");
+  $("modeHint").textContent = signup
+    ? "Cadastre seu e-mail e escolha uma senha com pelo menos 8 caracteres. Você poderá precisar confirmar o endereço por e-mail."
+    : "Use seu e-mail e sua senha para continuar de onde parou.";
   $("pageTitle").textContent = signup ? "Crie sua conta" : "Acesse sua conta";
-  $("submitButton").textContent = signup ? "Criar conta" : "Entrar";
+  $("submitButton").textContent = signup ? "Criar minha conta" : "Entrar na minha conta";
   $("password").autocomplete = signup ? "new-password" : "current-password";
   $("forgotButton").hidden = signup;
   $("status").style.display = "none";
@@ -93,8 +100,17 @@ function showAuth() {
   $("recoveryView").style.display = "none";
   authView.style.display = "block";
 }
-$("loginTab").addEventListener("click", () => setMode("login"));
-$("signupTab").addEventListener("click", () => setMode("signup"));
+const tabButtons = [$("loginTab"), $("signupTab")];
+tabButtons.forEach((tab, index) => {
+  tab.addEventListener("click", () => setMode(index === 0 ? "login" : "signup"));
+  tab.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight" && event.key !== "Home" && event.key !== "End") return;
+    event.preventDefault();
+    const nextIndex = event.key === "Home" ? 0 : event.key === "End" ? 1 : (index + (event.key === "ArrowRight" ? 1 : -1) + 2) % 2;
+    tabButtons[nextIndex].focus();
+    setMode(nextIndex === 0 ? "login" : "signup");
+  });
+});
 
 $("authForm").addEventListener("submit", async (event) => {
   event.preventDefault();
