@@ -39,8 +39,8 @@ jobs:
           python scripts/import_curlie.py \
             --dump /tmp/curlie-rdf-all.tar.gz \
             --catalog data/sources.json \
-            --limit 12000 \
-            --per-topic 250
+            --limit 50000 \
+            --per-topic 1000
       - name: Create catalog update pull request
         id: cpr
         uses: peter-evans/create-pull-request@v7
