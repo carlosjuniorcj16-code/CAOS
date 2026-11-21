@@ -138,7 +138,8 @@ def main():
         "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html",
         "data/sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
-        "data/open-source-software.json", "data/freeware.json", "data/quantum.json", "search-index.json",
+        "data/open-source-software.json", "data/freeware.json", "data/quantum.json",
+        "data/global-sources.json", "search-index.json", "site-stats.json",
     ):
         src = ROOT / relative
         if src.exists():
