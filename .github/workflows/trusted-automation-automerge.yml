@@ -22,7 +22,7 @@ jobs:
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
       contains(fromJSON('["pull_request","workflow_dispatch"]'), github.event.workflow_run.event) &&
-      contains(fromJSON('["automation/wikidata-discovery","automation/multi-source-academic-discovery","automation/research-radar","automation/curlie-catalog-update"]'), github.event.workflow_run.head_branch)
+      contains(fromJSON('["automation/wikidata-discovery","automation/multi-source-academic-discovery","automation/research-radar","automation/curlie-catalog-update","automation/ror-registry-discovery"]'), github.event.workflow_run.head_branch)
     runs-on: ubuntu-latest
     steps:
       - name: Verify both required checks and locate the exact open PR
