@@ -57,10 +57,24 @@ jobs:
           from pathlib import Path
           import xml.etree.ElementTree as ET
           root = Path("dist")
-          ET.parse(root / "sitemap.xml")
-          sitemap = ET.parse(root / "sitemap-1.xml")
+          sitemap_index = ET.parse(root / "sitemap.xml")
           ET.parse(root / "assets/caos-mark.svg")
-          locations = {node.text for node in sitemap.findall(".//{*}loc")}
+          # The sitemap is intentionally sharded at 40,000 URLs. Read every
+          # shard declared by the sitemap index; standalone pages are appended
+          # after generated catalogue URLs and may live in a later shard.
+          sitemap_files = []
+          for node in sitemap_index.findall(".//{*}loc"):
+              url = node.text or ""
+              name = url.rsplit("/", 1)[-1]
+              if not name.startswith("sitemap-") or not name.endswith(".xml"):
+                  raise SystemExit(f"Unexpected sitemap entry: {url}")
+              sitemap_files.append(name)
+          if not sitemap_files:
+              raise SystemExit("Sitemap index contains no sitemap files.")
+          locations = set()
+          for name in sitemap_files:
+              shard = ET.parse(root / name)
+              locations.update(node.text for node in shard.findall(".//{*}loc") if node.text)
           for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
               expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
               if expected not in locations:
