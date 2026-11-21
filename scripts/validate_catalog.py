@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 AI_CATALOG = ROOT / "data" / "ai_sources.json"
+WIKIDATA_CATALOG = ROOT / "data" / "wikidata-discovery.json"
 HTML = ROOT / "index.html"
 ALLOWED = {"natural", "formal", "social", "health", "engineering", "cross"}
 REQUIRED = {"id", "title", "category", "url", "type", "access", "tags"}
@@ -24,6 +25,16 @@ except Exception as exc:
 
 if not isinstance(data, list) or not data:
     fail("O catálogo precisa ser uma lista não vazia.")
+
+try:
+    wikidata_raw = json.loads(WIKIDATA_CATALOG.read_text(encoding="utf-8"))
+    wikidata_records = wikidata_raw.get("resources") if isinstance(wikidata_raw, dict) else None
+except Exception as exc:
+    fail(f"JSON inválido em data/wikidata-discovery.json: {exc}")
+
+if not isinstance(wikidata_records, list):
+    fail("O catálogo complementar do Wikidata precisa conter uma lista resources.")
+data.extend(wikidata_records)
 
 ids, urls = set(), set()
 for i, item in enumerate(data, 1):
