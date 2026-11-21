@@ -8,7 +8,7 @@ on:
       limit:
         description: Maximum number of verified new sites
         required: false
-        default: "100"
+        default: "150"
         type: string
       dry_run:
         description: Preview only; do not create a catalog update
@@ -43,15 +43,15 @@ jobs:
         run: python -m py_compile scripts/discover_wikidata.py
       - name: Preview discovery
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/discover_wikidata.py --limit "${{ inputs.limit }}" --max-checks 350 --dry-run
+        run: python scripts/discover_wikidata.py --limit "${{ inputs.limit }}" --max-checks 500 --dry-run
       - name: Discover and verify official websites
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
-          LIMIT="100"
+          LIMIT="150"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             LIMIT="${{ inputs.limit }}"
           fi
-          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 350
+          python scripts/discover_wikidata.py --limit "$LIMIT" --max-checks 500
       - name: Validate updated catalog
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: |
