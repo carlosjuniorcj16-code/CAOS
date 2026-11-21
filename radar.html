@@ -28,4 +28,5 @@ fetch("./data/research-radar.json?"+Date.now()).then(r=>{if(!r.ok)throw Error("f
  $("updated").textContent=data.updated_at?"Atualizado em "+fmt(data.updated_at)+" · dados de fonte primária":"Aguardando a primeira coleta automática";
  $("results").innerHTML=items.length?items.map((x,i)=>'<article class="item"><div class="tag">'+esc(x.area)+'</div><h2>'+esc(x.title)+'</h2><div class="meta">'+esc(fmt(x.published))+' · '+esc(x.source||"arXiv")+'</div><p>'+esc(x.summary)+'</p><div class="authors">'+esc((x.authors||[]).slice(0,5).join(", "))+'</div><a class="link" href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Abrir publicação ↗</a></article>').join(""):'<div class="empty">Nenhuma publicação foi retornada nesta atualização. O radar tentará novamente na próxima coleta.</div>';
 }).catch(()=>{$("updated").textContent="Não foi possível carregar a atualização";$("results").innerHTML='<div class="empty">O radar está temporariamente indisponível. Tente novamente mais tarde.</div>'});
-</script></body></html>
+</script><script src="./js/site-i18n.js"></script>
+</body></html>
