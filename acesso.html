@@ -179,10 +179,6 @@ $("signOutButton").addEventListener("click", async () => {
     showStatus(error.message || "Não foi possível sair da conta.", "error", "accountStatus");
     return;
   }
-  {
-    showStatus(error.message || "Não foi possível sair da conta.", "error", "accountStatus");
-    return;
-  }
   showAuth();
   setMode("login");
   showStatus("Você saiu da sua conta.", "success");
