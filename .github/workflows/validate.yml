@@ -104,7 +104,7 @@ jobs:
           assert match, "Topic taxonomy not found"
           topics = json.loads(match.group(1))
           topic_ids = [x["id"] for x in topics]
-          assert len(topics) >= 200 and len(topic_ids) == len(set(topic_ids))
+          assert len(topics) >= 290 and len(topic_ids) == len(set(topic_ids))
           assert all(x["topic"] in set(topic_ids) for x in items)
           assert "categoryResults" in html and "Math.random()" not in html
           assert "id=\"categoryToggle\"" not in html and "id=\"categoryGroups\"" not in html
