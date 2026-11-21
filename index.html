@@ -119,16 +119,24 @@ hi:["विषय के अनुसार खोजें","ज्ञान �
 tr:["Konuya göre keşfet","Farklı bilgi alanlarına hızlıca ulaşın.","Kaynak türü","Erişim","Kayıt kaynağı","Sonuçları sırala","Tüm türler","Tüm erişim türleri","Tüm kaynaklar","Alaka düzeyi","Ad: A–Z","Ad: Z–A"]
 };
 Object.entries(DISCOVERY_UI).forEach(([code,v])=>Object.assign(L[code],{featuredTitle:v[0],featuredCopy:v[1],filterType:v[2],filterAccess:v[3],filterSource:v[4],sortResults:v[5],allTypes:v[6],allAccess:v[7],allSources:v[8],relevance:v[9],alphabeticalAZ:v[10],alphabeticalZA:v[11]}));
-const FEATURED_TOPICS=["artificial-intelligence","astronomy","biology","medicine","mathematics","computing","history","philosophy","law","economics","climate","education","libraries","open-data","quantum-science","psychology"];
+L.pt.featuredTitle="Amostra transversal";
+L.pt.featuredCopy="Uma seleção variável de áreas presentes no catálogo. O índice completo permanece aberto à exploração.";
+L.en.featuredTitle="Cross-disciplinary sample";
+L.en.featuredCopy="A changing sample of fields represented in the catalogue. The full index remains open for exploration.";
 
-let all=[],filtered=[],active="all",lang="pt",shown=48,searchPrepared=[],topicSamples={};
+let all=[],filtered=[],active="all",lang="pt",shown=48,searchPrepared=[],topicSamples={},discoveryPicks=[];
 const $=id=>document.getElementById(id);
 function t(k){return L[lang][k]||L.pt[k]||k}
 function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function topicName(id){const item=topicSamples[id]||all.find(x=>x.topic===id);const meta=TOPICS.find(x=>x.id===id);return item?.topic_i18n?.[lang]||(lang==="pt"?(item?.topic_pt||meta?.pt):(item?.topic_en||meta?.en))||id}
 function renderFeaturedTopics(){
  const counts={};all.forEach(x=>counts[x.topic]=(counts[x.topic]||0)+1);
- const picks=FEATURED_TOPICS.filter(id=>counts[id]).slice(0,12);
+ if(!discoveryPicks.length){
+  const candidates=Object.keys(counts).filter(id=>counts[id]>0);
+  for(let i=candidates.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]]}
+  discoveryPicks=candidates.slice(0,12);
+ }
+ const picks=discoveryPicks.filter(id=>counts[id]);
  $("topicHighlights").innerHTML=picks.map(id=>'<button type="button" class="topic-highlight" data-topic="'+safe(id)+'" aria-label="'+safe(topicName(id))+'"><strong>'+safe(topicName(id))+'</strong><span>'+counts[id].toLocaleString()+" "+safe(t("count"))+'</span></button>').join("");
 }
 function fillDiscoveryFilters(){
