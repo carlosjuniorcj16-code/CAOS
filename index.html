@@ -259,7 +259,7 @@ Promise.all([
  const seen=new Set();
  all=all.filter(x=>{const key=String(x.url||"").trim().replace(/\/$/,"").toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true});
  siteTotalCount=Number.isSafeInteger(stats?.total_unique_urls)&&stats.total_unique_urls>0?stats.total_unique_urls:(siteTotalCount||all.length);
- const catalogueUrlCount=Number.isSafeInteger(stats?.unique_urls_by_catalogue?.main_directory)&&stats.unique_urls_by_catalogue.main_directory>=0?stats.unique_urls_by_catalogue.main_directory:all.length;$("heroCount").textContent=catalogueUrlCount.toLocaleString();prepareSearch();fillDiscoveryFilters();$("curlieCredit").hidden=!all.some(x=>x.source==="Curlie");render();
+ const catalogueUrlCount=stats?.unique_urls_by_catalogue?.main_directory;if(Number.isSafeInteger(catalogueUrlCount)&&catalogueUrlCount>=0)$("heroCount").textContent=catalogueUrlCount.toLocaleString();prepareSearch();fillDiscoveryFilters();$("curlieCredit").hidden=!all.some(x=>x.source==="Curlie");render();
 }).catch(error=>{$("resources").innerHTML='<div class="empty">O catálogo não pôde ser carregado. Verifique a conexão e tente novamente.</div>';console.error(error)});
 setLanguage("pt");
 </script><script>
