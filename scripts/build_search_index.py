@@ -36,8 +36,20 @@ def main():
     if not isinstance(records, list) or not records:
         fail("Canonical catalogue must contain a non-empty resources list.")
 
+    supplemental_path = ROOT / "data" / "global-sources.json"
+    if supplemental_path.exists():
+        try:
+            supplemental = json.loads(supplemental_path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            fail(f"Cannot read supplemental global catalogue: {exc}")
+        extra = supplemental.get("resources", []) if isinstance(supplemental, dict) else None
+        if not isinstance(extra, list):
+            fail("Supplemental global catalogue must contain a resources list.")
+        records = records + extra
+
     compact = []
     seen = set()
+    seen_urls = set()
     for number, item in enumerate(records, 1):
         if not isinstance(item, dict):
             fail(f"Record {number} is not an object.")
@@ -51,14 +63,19 @@ def main():
         parsed = urlparse(str(item["url"]))
         if parsed.scheme not in ("http", "https") or not parsed.netloc:
             fail(f"Invalid URL in record {number}: {item['url']}")
+        canonical = str(item["url"]).strip().rstrip("/").lower()
+        if canonical in seen_urls:
+            print(f"Skipping duplicate canonical URL: {item['url']}")
+            continue
+        seen_urls.add(canonical)
         compact.append({
             key: item[key]
             for key in FIELDS
             if key in item and item[key] not in (None, "", [], {})
         })
 
-    if len(compact) != len(records):
-        fail(f"Index is incomplete: {len(compact)} of {len(records)} records.")
+    if not compact:
+        fail("Refusing to write an empty search index.")
 
     payload = {"version": 1, "total": len(compact), "resources": compact}
     temporary = OUTPUT.with_suffix(".json.tmp")
