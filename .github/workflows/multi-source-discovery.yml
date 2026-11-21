@@ -65,7 +65,7 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           if [ -z "$OPENALEX_API_KEY" ]; then
-            echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based weekly discovery."
+            echo "::notice::OpenAlex skipped: add the OPENALEX_API_KEY repository secret to enable cursor-based daily discovery."
           else
             python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '500' || inputs.limit }}" --max-pages 5 --state-file data/discovery_state.json
           fi
@@ -83,7 +83,7 @@ jobs:
           branch: automation/multi-source-academic-discovery
           delete-branch: true
           commit-message: "chore: expand directory from DOAJ and OpenAlex"
-          title: "chore: add verified-source academic directory records"
+          title: "chore: add journal and institutional links from open metadata"
           body: |
             ## Multi-source academic discovery batch
 
@@ -91,7 +91,7 @@ jobs:
             - DOAJ public journal-level metadata (CC0 1.0).
             - OpenAlex institution metadata (CC0 1.0).
 
-            Only source metadata and official homepage URLs are stored. The workflow does not copy or crawl linked website content. Existing URLs and domains are deduplicated. This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
+            Only provider metadata and homepage URLs are stored; these DOAJ and OpenAlex destinations are not live-checked by this importer. Each new record is marked accordingly. Metadata licenses do not determine the linked website's content rights. The workflow does not copy or crawl linked website content. Existing URLs are deduplicated. This trusted data-update PR is eligible for automatic squash merge after the required catalog validation and Pages build succeed. If checks fail or branch protections require action, it remains open.
           add-paths: |
             data/sources.json
             data/discovery_state.json
