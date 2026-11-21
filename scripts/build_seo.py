@@ -337,22 +337,15 @@ def main():
     if not stats_path.is_file():
         raise SystemExit("site-stats.json não foi gerado antes da construção do site.")
     stats = json.loads(stats_path.read_text(encoding="utf-8"))
-    unique_url_count = stats.get("total_unique_urls")
-    if not isinstance(unique_url_count, int) or isinstance(unique_url_count, bool) or unique_url_count < 0:
-        raise SystemExit("Contagem de URLs únicas inválida em site-stats.json.")
+    catalogue_counts = stats.get("unique_urls_by_catalogue", {})
+    catalogue_url_count = catalogue_counts.get("main_directory") if isinstance(catalogue_counts, dict) else None
+    if not isinstance(catalogue_url_count, int) or isinstance(catalogue_url_count, bool) or catalogue_url_count < 0:
+        raise SystemExit("Contagem de URLs do catálogo principal inválida em site-stats.json.")
     count_placeholder = '<span id="heroCount" aria-live="polite">—</span>'
-    count_markup = f'<span id="heroCount" aria-live="polite" aria-label="URLs únicas no catálogo">{unique_url_count:,}</span>'
+    count_markup = f'<span id="heroCount" aria-live="polite" aria-label="URLs únicas no catálogo principal">{catalogue_url_count:,}</span>'
     if count_placeholder not in homepage:
-        raise SystemExit("Marcador da contagem não encontrado em index.html.")
+        raise SystemExit("Marcador da contagem de URLs não encontrado em index.html.")
     homepage = homepage.replace(count_placeholder, count_markup, 1)
-    catalogue_count = stats.get("total_catalogue_sources")
-    if not isinstance(catalogue_count, int) or isinstance(catalogue_count, bool) or catalogue_count < 0:
-        raise SystemExit("Contagem de fontes no catálogo inválida em site-stats.json.")
-    catalogue_placeholder = '<strong id="catalogueCount" aria-live="polite">—</strong>'
-    catalogue_markup = f'<strong id="catalogueCount" aria-live="polite">{catalogue_count:,}</strong>'
-    if catalogue_placeholder not in homepage:
-        raise SystemExit("Marcador da contagem de fontes não encontrado em index.html.")
-    homepage = homepage.replace(catalogue_placeholder, catalogue_markup, 1)
     homepage = homepage.replace("</head>", root_meta + "\n</head>")
     homepage = homepage.replace('<select class="lang" id="language"',
         '<a href="' + e(absolute("/categorias/")) + '" style="font-size:12px;color:#f0c54b;text-decoration:none">Mapa de categorias</a><select class="lang" id="language"')
