@@ -75,7 +75,7 @@ jobs:
           for name in sitemap_files:
               shard = ET.parse(root / name)
               locations.update(node.text for node in shard.findall(".//{*}loc") if node.text)
-          for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
+          for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html", "rede-tor.html"):
               expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
               if expected not in locations:
                   raise SystemExit(f"Missing standalone page in sitemap: {page}")
