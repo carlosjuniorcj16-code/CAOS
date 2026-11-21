@@ -104,11 +104,16 @@ jobs:
           topic_ids = [x["id"] for x in topics]
           assert len(topics) >= 180 and len(topic_ids) == len(set(topic_ids))
           assert all(x["topic"] in set(topic_ids) for x in items)
+          main_data = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
+          main_items = main_data if isinstance(main_data, list) else main_data.get("resources", [])
+          main_urls = {x.get("url", "").strip().rstrip("/").lower() for x in main_items}
+          new_unique = {x["url"].strip().rstrip("/").lower() for x in items} - main_urls
+          assert len(new_unique) >= 20, f"Too few distinct new source URLs: {len(new_unique)}"
           assert "freeware-feature" not in html and "quantum-feature" not in html
           assert 'fetch("./data/sources.json")' in html and 'fetch("./data/global-sources.json")' in html
           css = Path("assets/caos-refresh.css").read_text(encoding="utf-8")
           assert ".brandline{margin-top:10px" in css
-          print(f"Global catalogue: {len(items)} candidate records; taxonomy: {len(topics)} unique categories.")
+          print(f"Global catalogue: {len(items)} candidates, {len(new_unique)} distinct additional URLs; taxonomy: {len(topics)} unique categories.")
           PY
       - name: Build compact search index
         run: python scripts/build_search_index.py
