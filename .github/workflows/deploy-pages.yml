@@ -46,6 +46,7 @@ jobs:
           PY
           python scripts/build_seo.py
           test -s dist/index.html
+          test -s dist/acesso.html
           test -s dist/robots.txt
           test -s dist/sitemap.xml
           test -s dist/search-index.json
