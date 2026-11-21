@@ -14,6 +14,7 @@ DATASETS = {
     "main_directory": ("data/sources.json", {"url"}),
     "international_sources": ("data/global-sources.json", {"url"}),
     "ai_data_sources": ("data/ai_sources.json", {"url", "docs"}),
+    "open_source_software": ("data/open-source-software.json", {"url"}),
     "freeware_resources": ("data/freeware.json", {"url", "docs"}),
     "quantum_references": ("data/quantum.json", {"url"}),
     "research_radar": ("data/research-radar.json", {"url"}),
@@ -84,6 +85,18 @@ def main() -> None:
         data = load_json(path)
         found: set[str] = set()
         collect_urls(data, fields, found)
+        if name in {"open_source_software", "quantum_references"} and isinstance(data, dict):
+            for category in data.get("categories", []):
+                rows = category.get("resources", []) if name == "open_source_software" else category.get("items", [])
+                for row in rows:
+                    if isinstance(row, list) and len(row) > 1 and isinstance(row[1], str):
+                        normalized = normalize_url(row[1])
+                        if normalized:
+                            found.add(normalized)
+                    elif isinstance(row, dict) and isinstance(row.get("url"), str):
+                        normalized = normalize_url(row["url"])
+                        if normalized:
+                            found.add(normalized)
         per_catalog[name] = len(found)
         all_urls.update(found)
         if isinstance(data, list):
