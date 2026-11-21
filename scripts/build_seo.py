@@ -135,7 +135,7 @@ def main():
     # published artifact. GitHub Pages serves dist/ only; omitting these files
     # makes valid repository pages appear as 404s after deployment.
     for relative in (
-        "index.html", "acesso.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html",
+        "index.html", "acesso.html", "js/supabase-client.js", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html",
         "data/sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
         "data/open-source-software.json", "data/freeware.json", "data/quantum.json",
