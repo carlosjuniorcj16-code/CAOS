@@ -1,6 +1,6 @@
 # Curadoria de fontes
 
-O catálogo reúne **13.519 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
+O catálogo reúne **13.579 fontes e recursos**, distribuídos em **67 categorias temáticas com registros** de diferentes países, idiomas e áreas. CAOS funciona como um diretório amplo: as categorias ajudam a navegar, mas não limitam os assuntos que podem ser incluídos.
 
 ## Escopo
 
@@ -28,7 +28,7 @@ Referências institucionais de partida incluem NIST, NSF, Berkeley Lab, RIKEN, C
 
 ## Categorias
 
-O seletor apresenta 83 temas indexados, dos quais 67 possuem registros na versão documentada, em uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
+O seletor apresenta 113 temas indexados, dos quais 107 possuem registros na versão documentada, em uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
 
 ## Idiomas
 
@@ -105,3 +105,10 @@ A curadoria distingue cotas gratuitas recorrentes, créditos temporários, plano
 ## Neutralidade de apresentação
 
 Nenhum campo, tecnologia, provedor, país ou instituição recebe destaque comercial ou promocional na página inicial. Os atlas especializados continuam preservados como rotas de consulta, sem prioridade editorial sobre as demais áreas. A diversidade geográfica deve ser avaliada pela distribuição real dos registros, não apenas pela variedade de links de navegação. Registre país, idioma, tipo institucional e proveniência sempre que esses dados forem confirmados.
+
+
+## Expansão global suplementar
+
+O arquivo `data/global-sources.json` acrescenta 60 fontes em 30 temas: estudos africanos e asiáticos, conhecimentos indígenas, cartografia, demografia, desenvolvimento, preservação digital, etnomusicologia, sistemas alimentares, florestas, água doce, estudos de gênero, história da ciência, design industrial, recuperação da informação, estudos marítimos, paz e conflitos, administração e finanças públicas, estudos regionais, desenvolvimento rural, política científica, serviço social, tradução, artes visuais, zoologia, línguas indígenas, patrimônio cultural e migração. Os registros são incluídos no índice compacto e submetidos à mesma validação de IDs, categorias, campos e URLs do catálogo principal.
+
+A diversidade não é medida apenas pelo número de países. A curadoria deve buscar instituições locais, idiomas sub-representados, conhecimento comunitário e fontes produzidas nas próprias regiões, evitando tratar plataformas internacionais como substitutas de acervos nacionais e locais. A inclusão não implica endosso; confirme sempre a procedência, os termos e a adequação de cada recurso.
