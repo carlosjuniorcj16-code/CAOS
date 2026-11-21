@@ -168,15 +168,15 @@ function renderCategories(){
   const haystack=normalize([name,topic.pt,topic.en,topic.id,...aliases].join(" "));
   const tokens=query.split(/\s+/).filter(Boolean);
   if(!tokens.every(token=>haystack.includes(token)))return null;
-  const nameText=normalize(name),alias=aliases.find(value=>tokens.every(token=>normalize(value).includes(token)))||"";
-  const score=nameText.startsWith(query)?30:nameText.includes(query)?20:alias?10:0;
-  return {topic,name,alias,score};
+  const nameText=normalize(name),matchField=[topic.pt,topic.en,topic.id,...aliases].find(value=>tokens.every(token=>normalize(value).includes(token)))||"";
+  const score=nameText.startsWith(query)?30:nameText.includes(query)?20:matchField?10:0;
+  return {topic,name,matchField,score};
  }).filter(Boolean).sort((a,b)=>(a.topic.id===active?-1:b.topic.id===active?1:0)||b.score-a.score||a.name.localeCompare(b.name,lang));
  const visible=matches.slice(0,40);
  box.hidden=false;
  box.innerHTML=matches.length?
   '<div class="category-results-meta">'+matches.length.toLocaleString()+' '+safe(t("categoryMatches"))+'</div>'+
-  visible.map(({topic,name,alias})=>'<button type="button" class="category-suggestion'+(active===topic.id?' active':'')+'" data-topic="'+safe(topic.id)+'" role="option" aria-selected="'+(active===topic.id)+'"><span class="category-suggestion-name">'+highlight(name,raw)+(alias&&!normalize(name).includes(query)?'<small class="category-alias-match">'+highlight(alias,raw)+'</small>':'')+'</span><span class="topic-count">'+(counts[topic.id]||0).toLocaleString()+'</span></button>').join("")+
+  visible.map(({topic,name,matchField})=>'<button type="button" class="category-suggestion'+(active===topic.id?' active':'')+'" data-topic="'+safe(topic.id)+'" role="option" aria-selected="'+(active===topic.id)+'"><span class="category-suggestion-name">'+highlight(name,raw)+(matchField&&!query.split(/\\s+/).every(token=>normalize(name).includes(token))?'<small class="category-alias-match">'+highlight(matchField,raw)+'</small>':'')+'</span><span class="topic-count">'+(counts[topic.id]||0).toLocaleString()+'</span></button>').join("")+
   (matches.length>visible.length?'<div class="category-results-more">'+safe(t("categoryMore"))+'</div>':"")
   :'<p class="category-empty">'+safe(t("noCategoriesFound"))+'</p>';
 }
