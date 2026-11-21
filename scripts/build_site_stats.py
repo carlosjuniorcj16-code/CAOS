@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
+from catalog_io import load_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "site-stats.json"
 DATASETS = {
@@ -65,6 +67,8 @@ def collect_urls(value, allowed_fields: set[str], found: set[str]) -> None:
 
 def load_json(path: Path):
     try:
+        if path == ROOT / "data" / "sources.json":
+            return load_catalog(path)
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
         raise SystemExit(f"Cannot read {path.relative_to(ROOT)}: {exc}") from exc

@@ -18,6 +18,8 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
+from catalog_io import load_catalog, save_catalog
+
 LANGUAGES = ["pt", "en", "es", "fr", "de", "it", "zh", "ja", "ru", "nl", "pl", "ko", "ar", "hi", "tr"]
 
 def request_translation(text, target, endpoint, api_key, source):
@@ -57,7 +59,7 @@ def main():
     args = parser.parse_args()
     if not args.endpoint:
         raise SystemExit("Defina TRANSLATE_API_URL com um endpoint compatível com LibreTranslate.")
-    data = json.loads(args.catalog.read_text(encoding="utf-8"))
+    data = load_catalog(args.catalog)
     languages = [code.strip() for code in args.languages.split(",") if code.strip()]
     cache = {}
 
@@ -117,7 +119,7 @@ def main():
         item["topic_i18n"] = topic_translations.get(topic, {})
         processed += 1
         if processed % 10 == 0:
-            args.catalog.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            save_catalog(args.catalog, data)
             print(f"Salvos: {processed} registros incompletos processados")
 
     args.catalog.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

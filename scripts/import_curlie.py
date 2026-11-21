@@ -11,6 +11,8 @@ from collections import defaultdict
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
+from catalog_io import load_catalog, save_catalog
+
 TOPIC_RULES = [
     ("science", "research"), ("computers", "computing"), ("business", "business"),
     ("health", "medicine"), ("arts", "arts"), ("society", "society"),
@@ -214,7 +216,7 @@ def main():
             if category_id and category_path:
                 category_map[category_id] = category_path
 
-    catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
+    catalog = load_catalog(args.catalog)
     resources = catalog.get("resources", [])
     # The validator combines this catalogue with Wikidata. Reserve IDs from
     # both datasets before assigning or repairing any Curlie IDs.
@@ -304,7 +306,7 @@ def main():
         item["id"] = next_id
         next_id += 1
     resources.extend(additions)
-    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    save_catalog(args.catalog, catalog)
     print(
         f"Importados {len(additions)} novos registros Curlie; "
         f"{len(curlie_records)} registros Curlie existentes renumerados. "

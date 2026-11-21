@@ -248,7 +248,13 @@ Promise.all([
   const response=await fetch("./data/sources.json");
   if(!response.ok)throw Error("catalogue unavailable");
   const raw=await response.json();
-  base=Array.isArray(raw)?raw:(raw.resources||[]);
+  if(raw&&raw._caos_shards===1){
+   const parts=await Promise.all((raw.shards||[]).map(file=>fetch("./data/"+file).then(r=>{if(!r.ok)throw Error("catalogue shard unavailable");return r.json()})));
+   base=parts.flat();
+   if(base.length!==raw.record_count)throw Error("catalogue shard count mismatch");
+  }else{
+   base=Array.isArray(raw)?raw:(raw.resources||[]);
+  }
  }
  all=[...base,...(extra.resources||[]),...(wikidata.resources||[])];
  const seen=new Set();

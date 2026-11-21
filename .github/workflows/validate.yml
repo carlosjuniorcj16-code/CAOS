@@ -85,8 +85,10 @@ jobs:
       - name: Validate global taxonomy and supplemental sources
         run: |
           python - <<'PY'
-          import json, re
+          import json, re, sys
           from pathlib import Path
+          sys.path.insert(0, "scripts")
+          from catalog_io import load_catalog
           data = json.loads(Path("data/global-sources.json").read_text(encoding="utf-8"))
           items = data.get("resources", [])
           assert data.get("schema_version") == 1
@@ -108,7 +110,7 @@ jobs:
           assert all(x["topic"] in set(topic_ids) for x in items)
           assert "categoryResults" in html and "Math.random()" not in html
           assert "id=\"categoryToggle\"" not in html and "id=\"categoryGroups\"" not in html
-          main_data = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
+          main_data = load_catalog(Path("data/sources.json"))
           main_items = main_data if isinstance(main_data, list) else main_data.get("resources", [])
           main_urls = {x.get("url", "").strip().rstrip("/").lower() for x in main_items}
           new_unique = {x["url"].strip().rstrip("/").lower() for x in items} - main_urls

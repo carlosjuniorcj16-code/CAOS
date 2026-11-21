@@ -4,6 +4,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+from catalog_io import load_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 AI_CATALOG = ROOT / "data" / "ai_sources.json"
@@ -17,7 +19,7 @@ def fail(message):
     raise SystemExit(1)
 
 try:
-    data = json.loads(CATALOG.read_text(encoding="utf-8"))
+    data = load_catalog(CATALOG)
     if isinstance(data, dict):
         data = data.get("resources")
 except Exception as exc:

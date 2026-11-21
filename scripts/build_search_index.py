@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+from catalog_io import load_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data" / "sources.json"
 OUTPUT = ROOT / "search-index.json"
@@ -28,7 +30,7 @@ def fail(message):
 
 def main():
     try:
-        raw = json.loads(SOURCE.read_text(encoding="utf-8"))
+        raw = load_catalog(SOURCE)
     except Exception as exc:
         fail(f"Cannot read canonical catalogue: {exc}")
 

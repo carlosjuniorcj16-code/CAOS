@@ -20,6 +20,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
+from catalog_io import load_catalog, save_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 ZENODO_CONCEPT_API = "https://zenodo.org/api/records/6347574"
@@ -233,7 +235,7 @@ def main() -> None:
     if not 1 <= args.limit <= 5000:
         parser.error("--limit must be between 1 and 5000")
 
-    raw = json.loads(args.catalog.read_text(encoding="utf-8"))
+    raw = load_catalog(args.catalog)
     catalog = raw if isinstance(raw, dict) else {"resources": raw}
     resources = catalog.get("resources")
     if not isinstance(resources, list) or not resources:
@@ -337,7 +339,7 @@ def main() -> None:
         return
     resources.extend(additions)
     catalog["resources"] = resources
-    args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    save_catalog(args.catalog, catalog)
 
 
 if __name__ == "__main__":

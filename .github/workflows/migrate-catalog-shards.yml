@@ -1,0 +1,63 @@
+name: Migrate CAOS catalogue into bounded shards
+
+on:
+  push:
+    branches: [fix/catalog-sharding]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: caos-catalog-shard-migration
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout migration branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile catalog tools
+        run: python -m py_compile scripts/*.py
+      - name: Test shard reader and writer
+        env:
+          PYTHONPATH: scripts
+        run: python -m unittest discover -s scripts/tests -v
+      - name: Split canonical catalogue and verify exact integrity
+        run: python scripts/migrate_catalog_shards.py --max-shard-mb 18
+      - name: Validate all catalog consumers
+        run: |
+          python scripts/validate_catalog.py
+          python scripts/build_search_index.py
+          python scripts/build_site_stats.py
+          CAOS_SITE_URL=https://carlosjuniorcj16-code.github.io/CAOS python scripts/build_seo.py
+          test -s dist/index.html
+          test -s dist/search-index.json
+          test -s dist/site-stats.json
+          test -s dist/data/sources.json
+          test -d dist/data/sources
+      - name: Commit migration to pull request branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources.json data/sources/
+          if git diff --cached --quiet; then
+            echo "Catalogue is already sharded; no migration commit is needed."
+            exit 0
+          fi
+          git commit -m "[catalog-shards] Split canonical catalogue into bounded JSON files"
+          # The validation/build steps create disposable tracked and untracked outputs.
+          # Clear those outputs before rebasing the catalogue-only commit.
+          git restore --worktree .
+          git clean -fd
+          git fetch origin "${GITHUB_REF_NAME}"
+          git rebase "origin/${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
