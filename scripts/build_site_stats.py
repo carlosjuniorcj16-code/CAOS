@@ -102,8 +102,15 @@ def main() -> None:
         if isinstance(data, list):
             record_counts[name] = len(data)
         elif isinstance(data, dict):
-            rows = data.get("resources") or data.get("records") or data.get("items") or []
-            record_counts[name] = len(rows) if isinstance(rows, list) else 0
+            if name == "open_source_software":
+                record_counts[name] = sum(len(category.get("resources", [])) for category in data.get("categories", []))
+            elif name in {"freeware_resources", "quantum_references"}:
+                record_counts[name] = sum(len(category.get("items", [])) for category in data.get("categories", []))
+                if name == "quantum_references":
+                    record_counts[name] += len(data.get("research_highlights", []))
+            else:
+                rows = data.get("resources") or data.get("records") or data.get("items") or []
+                record_counts[name] = len(rows) if isinstance(rows, list) else 0
         else:
             record_counts[name] = 0
 
