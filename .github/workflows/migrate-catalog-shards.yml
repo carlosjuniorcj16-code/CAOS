@@ -54,6 +54,10 @@ jobs:
             exit 0
           fi
           git commit -m "[catalog-shards] Split canonical catalogue into bounded JSON files"
+          # The validation/build steps create disposable tracked and untracked outputs.
+          # Clear those outputs before rebasing the catalogue-only commit.
+          git restore --worktree .
+          git clean -fd
           git fetch origin "${GITHUB_REF_NAME}"
           git rebase "origin/${GITHUB_REF_NAME}"
           git push origin HEAD:"${GITHUB_REF_NAME}"
