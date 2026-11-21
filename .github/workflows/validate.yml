@@ -33,6 +33,17 @@ jobs:
         run: python -m py_compile scripts/*.py
       - name: Validate catalog
         run: python scripts/validate_catalog.py
+      - name: Validate shared CSS and SVG assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          css = Path("assets/caos-refresh.css").read_text(encoding="utf-8")
+          if r"\n." in css:
+              raise SystemExit("Malformed literal backslash-n sequence in shared CSS")
+          ET.parse("assets/caos-mark.svg")
+          print("Shared CSS and SVG assets valid.")
+          PY
       - name: Validate research feed schemas and source URLs
         run: |
           python - <<'PY'
@@ -80,7 +91,7 @@ jobs:
           from pathlib import Path
           import re
           total = 0
-          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html"):
+          for page in ("index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
               html = Path(page).read_text(encoding="utf-8")
               scripts = [body for attrs, body in re.findall(r"<script\b([^>]*)>([\s\S]*?)</script>", html, re.I) if "application/ld+json" not in attrs.lower()]
               for i, script in enumerate(scripts):

@@ -34,12 +34,22 @@ jobs:
         run: |
           python -m py_compile scripts/build_seo.py scripts/build_search_index.py
           python scripts/build_search_index.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          source = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
+          resources = source if isinstance(source, list) else source.get("resources", [])
+          index = json.loads(Path("search-index.json").read_text(encoding="utf-8"))
+          assert resources and index.get("total") == len(resources) == len(index.get("resources", [])), "Search index does not cover the complete catalogue"
+          print(f"Search index verified: {index['total']:,} records")
+          PY
           python scripts/build_seo.py
           test -s dist/index.html
           test -s dist/robots.txt
           test -s dist/sitemap.xml
+          test -s dist/search-index.json
           test -s dist/categorias/index.html
-          for path in radar.html leituras.html software.html freeware.html data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json assets/caos-mark.svg; do test -s "dist/$path"; done
+          for path in ai-data.html radar.html leituras.html software.html freeware.html quantum.html data/ai_sources.json data/languages.json data/research-radar.json data/reading-recommendations.json data/open-source-software.json data/freeware.json data/quantum.json assets/caos-mark.svg assets/caos-refresh.css; do test -s "dist/$path"; done
           python - <<'PY'
           from pathlib import Path
           import xml.etree.ElementTree as ET
@@ -48,7 +58,7 @@ jobs:
           sitemap = ET.parse(root / "sitemap-1.xml")
           ET.parse(root / "assets/caos-mark.svg")
           locations = {node.text for node in sitemap.findall(".//{*}loc")}
-          for page in ("radar.html", "leituras.html", "software.html", "freeware.html"):
+          for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
               expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
               if expected not in locations:
                   raise SystemExit(f"Missing standalone page in sitemap: {page}")
