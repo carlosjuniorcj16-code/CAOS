@@ -25,6 +25,10 @@ O catálogo atual inclui 12.000 registros selecionados do dump oficial do Curlie
 
 As descrições em português e inglês já estão normalizadas em `translations`. Os outros idiomas têm pacotes de interface completos; as descrições e metadados dos registros são preenchidos pelo pipeline de tradução, que requer um endpoint compatível com LibreTranslate.
 
+## Coleções especializadas
+
+As páginas de dados para IA, software livre, freeware e ciência quântica permanecem disponíveis como catálogos complementares. Não recebem destaque promocional na página inicial; seus conteúdos são documentais e seguem os mesmos critérios de neutralidade, proveniência e transparência.
+
 ## Física quântica
 
 O portal possui um atlas especializado em [Física Quântica](quantum.html), com catálogo próprio em [data/quantum.json](data/quantum.json). A curadoria inicial reúne 47 recursos em nove frentes: fundamentos, informação e computação, materiais quânticos, óptica, sensores e metrologia, comunicações e redes, teoria quântica de campos, simulação e literatura científica. Inclui instituições, laboratórios, periódicos, ferramentas, cursos e destaques de pesquisa. Preprints, anúncios institucionais e resultados revisados por pares são identificados de forma distinta; a inclusão de uma fonte não representa endosso nem validação de cada resultado.
