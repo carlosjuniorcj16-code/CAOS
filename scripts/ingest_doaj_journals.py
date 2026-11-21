@@ -17,6 +17,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
+from catalog_io import load_catalog, save_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 API = "https://doaj.org/api/v4/search/journals"
@@ -177,7 +179,7 @@ def main() -> None:
     if not 1 <= args.limit <= 1000 or not 1 <= args.page_size <= 100 or not 1 <= args.max_pages <= 10:
         parser.error("--limit: 1-1000; --page-size: 1-100; --max-pages: 1-10")
 
-    raw = json.loads(args.catalog.read_text(encoding="utf-8"))
+    raw = load_catalog(args.catalog)
     catalog = raw if isinstance(raw, dict) else {"resources": raw}
     resources = catalog.get("resources")
     if not isinstance(resources, list):
@@ -242,7 +244,7 @@ def main() -> None:
     if additions:
         resources.extend(additions)
         catalog["resources"] = resources
-        args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_catalog(args.catalog, catalog)
 
 if __name__ == "__main__":
     try:
