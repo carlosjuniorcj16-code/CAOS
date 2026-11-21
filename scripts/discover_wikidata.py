@@ -96,7 +96,7 @@ def fetch_wikidata(limit: int) -> list[dict]:
     last_error = None
     for attempt in range(4):
         try:
-            with urlopen(request, timeout=60) as response:
+            with urlopen(request, timeout=30) as response:
                 payload = json.loads(response.read().decode("utf-8"))
             return payload.get("results", {}).get("bindings", [])
         except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
@@ -113,7 +113,7 @@ def robots_allows(url: str) -> bool:
     parser.set_url(robots_url)
     request = Request(robots_url, headers={"User-Agent": USER_AGENT})
     try:
-        with urlopen(request, timeout=12) as response:
+        with urlopen(request, timeout=8) as response:
             body = response.read(256_000).decode("utf-8", errors="replace")
         parser.parse(body.splitlines())
     except HTTPError as exc:
@@ -133,7 +133,7 @@ def homepage_is_live(url: str) -> tuple[bool, str]:
     for method in ("HEAD", "GET"):
         request = Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-1023"}, method=method)
         try:
-            with urlopen(request, timeout=15) as response:
+            with urlopen(request, timeout=8) as response:
                 status = getattr(response, "status", 200)
                 final_url = response.geturl()
                 if status < 200 or status >= 400 or not normalized_url(final_url):
@@ -225,8 +225,8 @@ def build_record(item: dict, record_id: int) -> dict | None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, default=CATALOG)
-    parser.add_argument("--limit", type=int, default=75, help="Maximum new records per run (1-200)")
-    parser.add_argument("--max-checks", type=int, default=250, help="Maximum homepages to verify (1-500)")
+    parser.add_argument("--limit", type=int, default=150, help="Maximum new records per run (1-200)")
+    parser.add_argument("--max-checks", type=int, default=200, help="Maximum homepages to verify (1-500)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if not 1 <= args.limit <= 200 or not 1 <= args.max_checks <= 500:
@@ -247,7 +247,13 @@ def main() -> None:
 
     bindings = fetch_wikidata(args.max_checks)
     additions, checked, rejected, seen_entities = [], 0, {}, set()
+    started = time.monotonic()
+    deadline_seconds = 17 * 60
+    time_budget_reached = False
     for item in bindings:
+        if time.monotonic() - started >= deadline_seconds:
+            time_budget_reached = True
+            break
         if len(additions) >= args.limit or checked >= args.max_checks:
             break
         entity_url = binding_value(item, "item")
@@ -271,7 +277,7 @@ def main() -> None:
         additions.append(record)
         known_urls.add(url)
         known_domains.add(domain)
-        time.sleep(0.25)
+        time.sleep(0.1)
 
     summary = {
         "provider": "Wikidata",
@@ -282,6 +288,8 @@ def main() -> None:
         "rejected": rejected,
         "catalog_total_after_run": len(resources) + len(additions),
         "dry_run": args.dry_run,
+        "time_budget_reached": time_budget_reached,
+        "elapsed_seconds": round(time.monotonic() - started, 1),
         "records": [{"title": x["title"], "url": x["url"], "type": x["type"], "country": x.get("country", "")} for x in additions[:20]],
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
