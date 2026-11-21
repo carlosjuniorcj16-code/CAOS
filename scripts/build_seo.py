@@ -331,6 +331,20 @@ def main():
         }, ensure_ascii=False).replace("<", "\\u003c") + '</script>'
     )
     homepage = (OUT / "index.html").read_text(encoding="utf-8")
+    # Publish the generated unique-URL total in the initial HTML so the count
+    # is visible immediately, without waiting for the large catalogue index.
+    stats_path = ROOT / "site-stats.json"
+    if not stats_path.is_file():
+        raise SystemExit("site-stats.json não foi gerado antes da construção do site.")
+    stats = json.loads(stats_path.read_text(encoding="utf-8"))
+    unique_url_count = stats.get("total_unique_urls")
+    if not isinstance(unique_url_count, int) or isinstance(unique_url_count, bool) or unique_url_count < 0:
+        raise SystemExit("Contagem de URLs únicas inválida em site-stats.json.")
+    count_placeholder = '<span id="heroCount" aria-live="polite">—</span>'
+    count_markup = f'<span id="heroCount" aria-live="polite" aria-label="URLs únicas no catálogo">{unique_url_count:,}</span>'
+    if count_placeholder not in homepage:
+        raise SystemExit("Marcador da contagem não encontrado em index.html.")
+    homepage = homepage.replace(count_placeholder, count_markup, 1)
     homepage = homepage.replace("</head>", root_meta + "\n</head>")
     homepage = homepage.replace('<select class="lang" id="language"',
         '<a href="' + e(absolute("/categorias/")) + '" style="font-size:12px;color:#f0c54b;text-decoration:none">Mapa de categorias</a><select class="lang" id="language"')
