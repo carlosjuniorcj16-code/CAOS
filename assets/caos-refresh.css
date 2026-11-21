@@ -21,10 +21,6 @@ main{padding-top:42px!important;padding-bottom:88px!important}
 .category-toggle{padding:17px 6px!important}
 .category-toggle b{font-size:16px!important}
 .topic-button{font-size:15px!important;padding:11px 12px!important}
-.topic-highlights{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))!important;gap:16px!important}
-.topic-highlight-heading{margin:20px 0 14px!important;font-size:15px!important}
-.topic-highlight-heading strong{font-size:17px!important}
-.topic-highlight-heading span{font-size:14px!important}
 .resource{grid-template-columns:58px minmax(0,1fr) 170px!important;gap:22px!important;padding:25px 16px!important}
 .resource h3{font-size:25px!important;line-height:1.25!important}
 .resource p{max-width:900px!important}
@@ -109,8 +105,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .directory-section{width:100%;max-width:100%;min-width:0;margin:0;padding:0}
 #areas,.directory-section,.about,.translation-notice{min-width:0;max-width:100%}
 #areas *, .directory-section *, .about *{min-width:0}
-#areas .topic-highlights{grid-template-columns:repeat(4,minmax(0,1fr))}
-#areas .topic-highlight{overflow-wrap:anywhere;word-break:normal}
 .directory-section .searchbox{width:100%;max-width:100%;min-width:0}
 .directory-section .category-control,.directory-section .category-results{width:100%;max-width:100%;min-width:0}
 .directory-section .category-suggestion{min-width:0}
@@ -123,12 +117,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .directory-section .resource h3,.directory-section .resource p,.directory-section .resource-link{max-width:100%;overflow-wrap:anywhere;word-break:break-word}
 .directory-section .resource-link{white-space:normal}
 @media(max-width:850px){
- #areas .topic-highlights{grid-template-columns:repeat(3,minmax(0,1fr))}
  .directory-section .resource{grid-template-columns:42px minmax(0,1fr)}
  .directory-section .resource-meta{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center}
 }
 @media(max-width:560px){
- #areas .topic-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}
  .directory-section .search-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
  .directory-section .resource{grid-template-columns:28px minmax(0,1fr);gap:9px;padding:18px 2px}
  .directory-section .resource-meta{grid-column:1/-1;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
