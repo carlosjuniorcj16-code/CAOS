@@ -100,3 +100,10 @@ O arquivo data/open-source-software.json contém as sementes de descoberta e um 
 - Microsoft Sysinternals: https://learn.microsoft.com/en-us/sysinternals/
 
 A curadoria distingue cotas gratuitas recorrentes, créditos temporários, planos gratuitos limitados, serviços serverless e software livre. Nenhuma oferta cloud é tratada como capacidade ilimitada ou SLA de produção. Limites e elegibilidade devem ser revalidados nas fontes oficiais antes do uso.
+
+
+## Expansão global de fontes
+
+O arquivo `data/global-sources.json` contém um lote complementar de portais nacionais de dados, institutos estatísticos, infraestruturas de pesquisa, repositórios e catálogos internacionais. O lote inicial amplia a cobertura para América Latina, África, Sul, Leste e Sudeste da Ásia, Europa e Oceania, além de infraestruturas globais. Cada registro aponta para o domínio institucional ou serviço de origem. A inclusão não certifica a qualidade de cada conjunto nem concede direitos de reutilização; confirme a licença e a proveniência no registro original.
+
+A navegação temática mantém categorias transversais e específicas. Categorias sem registros no momento permanecem disponíveis como taxonomia de descoberta e podem receber contribuições futuras. Não são apresentadas como se já contivessem fontes.
