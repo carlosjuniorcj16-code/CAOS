@@ -112,3 +112,6 @@ A navegação temática mantém categorias transversais e específicas. Categori
 ## Lote complementar de alcance internacional
 
 O arquivo `data/global-sources.json` acrescenta 75 registros candidatos de portais nacionais de dados, institutos de estatística, infraestruturas de pesquisa e repositórios em diferentes regiões. Para evitar falsa impressão de auditoria, cada registro começa com `verification_status: candidate_unverified` e `checked_at: null`. Esses links precisam de verificação individual de destino, entidade responsável, escopo, idioma, licença e disponibilidade antes de serem classificados como verificados. A interface elimina URLs repetidas ao combinar os catálogos.
+
+
+O índice compacto `search-index.json` é gerado no processo de build a partir do catálogo principal. A página inicial também carrega o catálogo canônico como fallback quando o índice servido está vazio e combina os registros complementares de `data/global-sources.json`; URLs repetidas são removidas na interface. A validação automatizada verifica separadamente o índice principal e o lote complementar.
