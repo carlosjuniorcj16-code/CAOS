@@ -36,9 +36,11 @@ jobs:
           python scripts/build_search_index.py
           python scripts/build_site_stats.py
           python - <<'PY'
-          import json
+          import json, sys
           from pathlib import Path
-          source = json.loads(Path("data/sources.json").read_text(encoding="utf-8"))
+          sys.path.insert(0, "scripts")
+          from catalog_io import load_catalog
+          source = load_catalog(Path("data/sources.json"))
           resources = source if isinstance(source, list) else source.get("resources", [])
           index = json.loads(Path("search-index.json").read_text(encoding="utf-8"))
           assert resources and index.get("total") == len(resources) == len(index.get("resources", [])), "Search index does not cover the complete catalogue"
