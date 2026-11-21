@@ -136,7 +136,7 @@ def main():
     # makes valid repository pages appear as 404s after deployment.
     for relative in (
         "index.html", "ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html",
-        "data/sources.json", "data/ai_sources.json", "data/languages.json",
+        "data/sources.json", "data/global-sources.json", "data/ai_sources.json", "data/languages.json",
         "data/research-radar.json", "data/reading-recommendations.json",
         "data/open-source-software.json", "data/freeware.json", "data/quantum.json", "search-index.json",
     ):
@@ -157,6 +157,8 @@ def main():
     topics = json.loads(match.group(1))
     data = json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8"))
     resources = data if isinstance(data, list) else data.get("resources", [])
+    supplement = json.loads((ROOT / "data/global-sources.json").read_text(encoding="utf-8"))
+    resources += supplement.get("records", [])
     if not isinstance(resources, list):
         raise SystemExit("data/sources.json não contém uma lista de recursos.")
 
