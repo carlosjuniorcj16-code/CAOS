@@ -176,7 +176,7 @@ function renderCategories(){
  const visible=matches.slice(0,40);
  box.hidden=false;
  box.innerHTML=matches.length?
-  '<div class="category-results-meta">'+matches.length.toLocaleString()+' '+safe(t("categoryMatches"))+' · '+safe(t("categoryOpenHint"))+'</div>'+
+  '<div class="category-results-meta">'+matches.length.toLocaleString()+' '+safe(t("categoryMatches"))+'</div>'+
   visible.map(({topic,name,matchedField,count})=>'<button type="button" class="category-suggestion'+(active===topic.id?' active':'')+'" data-topic="'+safe(topic.id)+'" role="option" aria-selected="'+(active===topic.id)+'" aria-label="'+safe(name)+' · '+count.toLocaleString()+'"><span class="category-suggestion-name"><strong class="category-suggestion-title">'+highlight(name,raw)+'</strong>'+(matchedField&&normalize(matchedField)!==normalize(name)?'<small class="category-alias-match">'+highlight(matchedField,raw)+'</small>':'')+'</span><span class="category-suggestion-meta"><span class="topic-count">'+count.toLocaleString()+'</span><span class="category-open-icon" aria-hidden="true">↗</span></span></button>').join("")+
   (matches.length>visible.length?'<div class="category-results-more">'+safe(t("categoryMore"))+'</div>':"")
   :'<p class="category-empty">'+safe(t("noCategoriesFound"))+'</p>';
