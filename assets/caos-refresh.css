@@ -139,3 +139,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
  .directory-section .search-filters{grid-template-columns:1fr}
 }
 html,body{max-width:100%;overflow-x:hidden}
+
+
+/* Selected category card: clear action stays visible at the right edge */
+.directory-section .selected-category-card{display:flex!important;align-items:center;justify-content:space-between;gap:18px}
+.directory-section .selected-category-info{flex:1 1 auto;min-width:0}
+.directory-section .selected-category-info strong{overflow-wrap:anywhere}
+.directory-section .clear-category-button{flex:0 0 auto;min-height:40px;padding:9px 14px;border:1px solid #3158bd;border-radius:5px;background:#fff;color:#244da8;font:700 13px/1.2 "Avenir Next",Arial,sans-serif;cursor:pointer;white-space:nowrap}
+.directory-section .clear-category-button:hover,.directory-section .clear-category-button:focus-visible{background:#244da8;color:#fff;outline:3px solid rgba(49,88,189,.18);outline-offset:2px}
+.directory-section .selected-category-card[hidden]{display:none!important}
+@media(max-width:420px){.directory-section .selected-category-card{gap:10px;padding:12px}.directory-section .clear-category-button{min-height:38px;padding:8px 10px;font-size:12px;white-space:normal}}
