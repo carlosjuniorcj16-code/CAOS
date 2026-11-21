@@ -2,7 +2,7 @@ name: Import Curlie directory data
 
 on:
   push:
-    branches: [main]
+    branches: [main, automation/curlie-catalog-update]
     paths:
       - 'scripts/import_curlie.py'
       - '.github/workflows/import-curlie.yml'
@@ -41,7 +41,19 @@ jobs:
             --catalog data/sources.json \
             --limit 50000 \
             --per-topic 1000
+      - name: Commit repaired catalog to the existing PR branch
+        if: github.ref == 'refs/heads/automation/curlie-catalog-update'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m "fix: reassign Curlie IDs after Wikidata range"
+            git push origin HEAD:automation/curlie-catalog-update
+          fi
+
       - name: Create catalog update pull request
+        if: github.ref != 'refs/heads/automation/curlie-catalog-update'
         id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
@@ -55,7 +67,7 @@ jobs:
           add-paths: data/sources.json
 
       - name: Dispatch validation and build for the bot PR
-        if: steps.cpr.outputs.pull-request-number != ''
+        if: github.ref == 'refs/heads/automation/curlie-catalog-update' || steps.cpr.outputs.pull-request-number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: automation/curlie-catalog-update

@@ -215,7 +215,26 @@ def main():
                 category_map[category_id] = category_path
 
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
-    existing = {norm_url(item.get("url", "")) for item in catalog.get("resources", [])}
+    resources = catalog.get("resources", [])
+    # The validator combines this catalogue with Wikidata. Reserve IDs from
+    # both datasets before assigning or repairing any Curlie IDs.
+    wikidata_path = args.catalog.parent / "wikidata-discovery.json"
+    wikidata_records = []
+    if wikidata_path.exists():
+        wikidata_data = json.loads(wikidata_path.read_text(encoding="utf-8"))
+        wikidata_records = wikidata_data.get("resources", []) if isinstance(wikidata_data, dict) else []
+    reserved_ids = [
+        int(item["id"]) for item in resources
+        if item.get("source") != "Curlie" and isinstance(item.get("id"), int)
+        and not isinstance(item.get("id"), bool)
+    ]
+    reserved_ids.extend(
+        int(item["id"]) for item in wikidata_records
+        if isinstance(item, dict) and isinstance(item.get("id"), int)
+        and not isinstance(item.get("id"), bool)
+    )
+    next_id = max(reserved_ids, default=0) + 1
+    existing = {norm_url(item.get("url", "")) for item in resources}
     counts = defaultdict(int)
     additions = []
 
@@ -274,13 +293,23 @@ def main():
         }, ensure_ascii=False, indent=2))
         return
 
-    next_id = max((int(item.get("id", 0)) for item in catalog["resources"]), default=0) + 1
+    # Reassign IDs for all Curlie records, including those already imported.
+    # This repairs prior collisions with IDs reserved by Wikidata while
+    # preserving every record and its URL/metadata.
+    curlie_records = [item for item in resources if item.get("source") == "Curlie"]
+    for item in curlie_records:
+        item["id"] = next_id
+        next_id += 1
     for item in additions:
         item["id"] = next_id
         next_id += 1
-    catalog["resources"].extend(additions)
+    resources.extend(additions)
     args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Importados {len(additions)} registros Curlie. Total: {len(catalog['resources'])}.")
+    print(
+        f"Importados {len(additions)} novos registros Curlie; "
+        f"{len(curlie_records)} registros Curlie existentes renumerados. "
+        f"Total: {len(resources)}."
+    )
 
 if __name__ == "__main__":
     main()
