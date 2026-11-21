@@ -16,6 +16,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
+from catalog_io import load_catalog, save_catalog
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "data" / "sources.json"
 API = "https://api.openalex.org/institutions"
@@ -80,7 +82,7 @@ def main() -> None:
     if args.max_pages > 1 and not api_key:
         parser.error("Defina OPENALEX_API_KEY para paginação além da primeira página (cursor).")
 
-    raw = json.loads(args.catalog.read_text(encoding="utf-8"))
+    raw = load_catalog(args.catalog)
     catalog = raw if isinstance(raw, dict) else {"resources": raw}
     resources = catalog.get("resources", [])
     if not isinstance(resources, list):
@@ -165,7 +167,7 @@ def main() -> None:
     if additions:
         resources.extend(additions)
         catalog["resources"] = resources
-        args.catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_catalog(args.catalog, catalog)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
