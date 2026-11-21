@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "site-stats.json"
 DATASETS = {
     "main_directory": ("data/sources.json", {"url"}),
+    "wikidata_discovery": ("data/wikidata-discovery.json", {"url"}),
     "international_sources": ("data/global-sources.json", {"url"}),
     "ai_data_sources": ("data/ai_sources.json", {"url", "docs"}),
     "open_source_software": ("data/open-source-software.json", {"url"}),
