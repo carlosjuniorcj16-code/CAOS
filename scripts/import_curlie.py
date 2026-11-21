@@ -254,7 +254,9 @@ def main():
                 "source_category_path": category_path,
                 "source_language": language_from_path(category_path),
                 "source_license": "CC BY 3.0",
-                "source_attribution": "Content from Curlie.org"
+                "source_attribution": "Content from Curlie.org",
+                "verification_status": "curlie_directory_entry_not_live_checked",
+                "checked_at": None
             })
             existing.add(url)
             if len(additions) >= args.limit:
