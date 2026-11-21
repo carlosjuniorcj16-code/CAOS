@@ -1,86 +1,118 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-11-20T23:02:17+00:00",
-  "source": "arXiv API",
+  "schema_version": 2,
+  "updated_at": "2026-11-21T15:25:45+00:00",
+  "window_days": 45,
+  "sources": [
+    "arXiv",
+    "Europe PMC",
+    "PubMed",
+    "Crossref"
+  ],
   "items": [
     {
       "area": "Inteligência artificial",
-      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-      "summary": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization",
-      "published": "2026-11-19T18:59:53Z",
+      "title": "Next-generation anti-obesity drugs: emerging molecular targets and translational opportunities.",
+      "published": "2027-06-01",
       "authors": [
-        "Tuna Han Salih Meral",
-        "Kaan Oktay",
-        "Alec Helbling",
-        "Atakan Kara",
-        "Duen Horng Chau",
-        "Pinar Yanardag"
+        "Shetty S",
+        "Rangle A",
+        "Mukherjee AG",
+        "Bharti AK",
+        "Jena SP",
+        "Prince SE"
       ],
-      "url": "https://arxiv.org/abs/2611.26627v1",
-      "source": "arXiv"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065563/",
+      "source": "PubMed",
+      "doi": "10.1007/s40200-026-02101-4",
+      "venue": "Journal of diabetes and metabolic disorders"
     },
     {
-      "area": "Terra, clima e espaço",
-      "title": "Little Red Dots from Primordial Vacuum Bubbles",
-      "summary": "Quantum tunneling transverse to the inflaton trajectory can produce $10^6$--$10^8M_\\odot$ primordial black holes at the abundance of JWST's little red dots, without the enhanced curvature perturbations excluded by limits on CMB spectral distortions. Rare vacuum bubbles nucleate during a brief interval of inflation and later form black holes, with adjustable mass and abundance and a narrow mass spectrum of percent-level width. The leading constraint, from accretion, is satisfied for a population matching the bright ",
-      "published": "2026-11-19T18:58:36Z",
+      "area": "Biociências e saúde",
+      "title": "Super-speciality medicine in India: A critical review of growth referral gaps and cluster-based reform.",
+      "published": "2027-06-01",
       "authors": [
-        "Miguel Barroso Varela",
-        "Katherine Freese",
-        "Matthew Kleban",
-        "Cameron Norton",
-        "Evangelos I. Sfakianakis"
+        "Ghosh K"
       ],
-      "url": "https://arxiv.org/abs/2611.26620v1",
-      "source": "arXiv"
-    },
-    {
-      "area": "Robótica",
-      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-      "summary": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a fe",
-      "published": "2026-11-19T18:58:14Z",
-      "authors": [
-        "Yuxin Jiang",
-        "Wenqiang Sun",
-        "Jiaqi Li",
-        "Yuchao Gu",
-        "Lvmin Zhang",
-        "Ivor Tsang",
-        "Mike Zheng Shou"
-      ],
-      "url": "https://arxiv.org/abs/2611.26617v1",
-      "source": "arXiv"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43065585/",
+      "source": "PubMed",
+      "doi": "10.1016/j.hpopen.2026.100195",
+      "venue": "Health policy OPEN"
     },
     {
       "area": "Linguagem e comunicação",
-      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
-      "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique ",
-      "published": "2026-11-19T18:57:25Z",
+      "title": "Life and Symbols",
+      "published": "2026-11-21",
       "authors": [
-        "Yiyang Du",
-        "Yuxuan Kuang",
-        "Qitao Zhao",
-        "Yixuan Wang",
-        "Zhanqiu Guo",
-        "Yi Xu",
-        "Xin Li",
-        "Wenbin He"
+        "Fernando C. Pereira"
       ],
-      "url": "https://arxiv.org/abs/2611.26613v1",
-      "source": "arXiv"
+      "url": "https://doi.org/10.1162/coli.a.662",
+      "source": "Crossref",
+      "doi": "10.1162/coli.a.662",
+      "venue": "Computational Linguistics"
     },
     {
-      "area": "Biociências",
-      "title": "A Control-Theoretic Approximation to Predictive Coding Dynamics",
-      "summary": "Backpropagation remains the dominant method for training deep neural networks, but its reliance on non-local computations has motivated the search for biologically plausible alternatives. Two prominent frameworks, predictive coding (PC) and deep feedback control (DFC), offer distinct approaches to local learning, yet their relationship remains unclear. Here, we show that DFC arises as a local approximation to predictive coding dynamics near fixed points, with exact equivalence in shallow linear networks and systema",
-      "published": "2026-11-19T16:04:50Z",
+      "area": "Robótica e sistemas autônomos",
+      "title": "Patient perception of robotic-assisted spine surgery.",
+      "published": "2026-11-21",
       "authors": [
-        "Ryan Fayyazi",
-        "Kyle Daruwalla",
-        "Mitra Javadzadeh"
+        "Watkins V RG",
+        "Skaggs DL",
+        "Mikhail C"
       ],
-      "url": "https://arxiv.org/abs/2611.26319v1",
-      "source": "arXiv"
+      "url": "https://doi.org/10.1007/s11701-026-04195-7",
+      "source": "Europe PMC",
+      "doi": "10.1007/s11701-026-04195-7"
+    },
+    {
+      "area": "Terra, clima e espaço",
+      "title": "Suicide Risk Flags in Electronic Health Record Vignettes: Impact on Clinician Responses",
+      "published": "2026-11-21",
+      "authors": [
+        "Mingcong Tang",
+        "Alexis May",
+        "Eirini Zoupou",
+        "Brian Vu",
+        "Reem AlRabiah",
+        "Yiqin Zhu"
+      ],
+      "url": "https://doi.org/10.1007/s41347-026-00768-3",
+      "source": "Crossref",
+      "doi": "10.1007/s41347-026-00768-3",
+      "venue": "Journal of Technology in Behavioral Science"
     }
-  ]
+  ],
+  "source_health": {
+    "ai:arXiv": "ok",
+    "ai:Europe PMC": "ok",
+    "ai:PubMed": "ok",
+    "ai:Crossref": "ok",
+    "language:arXiv": "ok",
+    "language:Europe PMC": "ok",
+    "language:PubMed": "ok",
+    "language:Crossref": "ok",
+    "robotics:arXiv": "ok",
+    "robotics:Europe PMC": "ok",
+    "robotics:PubMed": "ok",
+    "robotics:Crossref": "ok",
+    "biosciences:arXiv": "ok",
+    "biosciences:Europe PMC": "ok",
+    "biosciences:PubMed": "ok",
+    "biosciences:Crossref": "ok",
+    "earth-space:arXiv": "ok",
+    "earth-space:Europe PMC": "ok",
+    "earth-space:PubMed": "ok",
+    "earth-space:Crossref": "ok",
+    "datacenters:arXiv": "ok",
+    "datacenters:Europe PMC": "ok",
+    "datacenters:PubMed": "ok",
+    "datacenters:Crossref": "ok",
+    "quantum:arXiv": "ok",
+    "quantum:Europe PMC": "ok",
+    "quantum:PubMed": "ok",
+    "quantum:Crossref": "ok",
+    "energy-thermo:arXiv": "ok",
+    "energy-thermo:Europe PMC": "ok",
+    "energy-thermo:PubMed": "ok",
+    "energy-thermo:Crossref": "ok"
+  }
 }

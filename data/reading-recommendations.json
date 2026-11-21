@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-21T15:25:45+00:00",
   "window_days": 45,
-  "method": "Metadados bibliográficos recentes consultados diretamente em APIs acadêmicas; ordenação por data dentro de cada subárea; sem ranking de qualidade ou popularidade.",
+  "method": "Recent bibliographic metadata from primary or scholarly index APIs; newest-first within each subject; no quality or popularity ranking.",
   "sources": [
     "arXiv",
     "Europe PMC",
@@ -13,43 +13,658 @@
     {
       "id": "ai",
       "name": "Inteligência artificial",
-      "items": []
+      "items": [
+        {
+          "area": "Inteligência artificial",
+          "title": "Next-generation anti-obesity drugs: emerging molecular targets and translational opportunities.",
+          "published": "2027-06-01",
+          "authors": [
+            "Shetty S",
+            "Rangle A",
+            "Mukherjee AG",
+            "Bharti AK",
+            "Jena SP",
+            "Prince SE"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43065563/",
+          "source": "PubMed",
+          "doi": "10.1007/s40200-026-02101-4",
+          "venue": "Journal of diabetes and metabolic disorders"
+        },
+        {
+          "area": "Inteligência artificial",
+          "title": "The impact of Generative Artificial Intelligence on employee green well-being: The mediating role of employee engagement in Vietnamese enterprises",
+          "published": "2026-11-21",
+          "authors": [
+            "Nguyen Thi Anh Thu",
+            "Nguyen Thi Phương Anh",
+            "Tran Nha Ghi"
+          ],
+          "url": "https://doi.org/10.64211/oidaijsd191106",
+          "source": "Crossref",
+          "doi": "10.64211/oidaijsd191106",
+          "venue": "OIDA International Journal of Sustainable Development"
+        },
+        {
+          "area": "Inteligência artificial",
+          "title": "Relationship Between the Professional Learning Community (PLC) Practices and the Development of Elementary Public School Teachers' Collaborative Skills",
+          "published": "2026-11-21",
+          "authors": [
+            "Ruth Emmanuelle C. Zarate",
+            "Alvin S. Sicat"
+          ],
+          "url": "https://doi.org/10.65339/ijggsd.v1.i1.94",
+          "source": "Crossref",
+          "doi": "10.65339/ijggsd.v1.i1.94",
+          "venue": "International Journal of Global Goals and Sustainable Development"
+        },
+        {
+          "area": "Inteligência artificial",
+          "title": "Analysis of the Development Needs of Digital Interactive Learning Media of the Circulatory System to Facilitate Critical Thinking of Elementary School Students",
+          "published": "2026-11-21",
+          "authors": [
+            "Ginanjar Husnul Azizah",
+            "Ristiana Dyah Purwandari"
+          ],
+          "url": "https://doi.org/10.58230/27454312.5181",
+          "source": "Crossref",
+          "doi": "10.58230/27454312.5181",
+          "venue": "Didaktika: Jurnal Kependidikan"
+        },
+        {
+          "area": "Inteligência artificial",
+          "title": "Early Detection of Common Infant Illnesses (0–3 Years) Using Explainable Machine Learning: A Symptom-Based Decision Support System for Caregivers",
+          "published": "2026-11-21",
+          "authors": [
+            "Radoanul Arifen",
+            "S.M. Meriyan Islam",
+            "Naznin Sultana"
+          ],
+          "url": "https://doi.org/10.36481/cynq5729",
+          "source": "Crossref",
+          "doi": "10.36481/cynq5729",
+          "venue": "Journal of Emerging Global Health"
+        }
+      ]
     },
     {
       "id": "language",
       "name": "Linguagem e comunicação",
-      "items": []
+      "items": [
+        {
+          "area": "Linguagem e comunicação",
+          "title": "Life and Symbols",
+          "published": "2026-11-21",
+          "authors": [
+            "Fernando C. Pereira"
+          ],
+          "url": "https://doi.org/10.1162/coli.a.662",
+          "source": "Crossref",
+          "doi": "10.1162/coli.a.662",
+          "venue": "Computational Linguistics"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "Beyond interpersonal disputes: a text network analysis of conflict and negative communication experiences among experienced nurses",
+          "published": "2026-11-21",
+          "authors": [
+            "Su Jin Sim",
+            "Keum Seong Jang",
+            "Hye Won Jeong"
+          ],
+          "url": "https://doi.org/10.1186/s12912-026-05634-4",
+          "source": "Crossref",
+          "doi": "10.1186/s12912-026-05634-4",
+          "venue": "BMC Nursing"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "The publics and politics of digitizing incarcerated media",
+          "published": "2026-11-21",
+          "authors": [
+            "Jessa Lingel"
+          ],
+          "url": "https://doi.org/10.1093/ccc/tcag038",
+          "source": "Crossref",
+          "doi": "10.1093/ccc/tcag038",
+          "venue": "Communication, Culture &amp; Critique"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "ASL and English grammar knowledge related to deaf students’ writing performance",
+          "published": "2026-11-21",
+          "authors": [
+            "Emily Jo Noschese",
+            "Do-Hong Kim"
+          ],
+          "url": "https://doi.org/10.1080/09500782.2026.2761936",
+          "source": "Crossref",
+          "doi": "10.1080/09500782.2026.2761936",
+          "venue": "Language and Education"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "LANGUAGE -TEACHING MODEL FOR DEVELOPING FOREIGN LANGUAGE COMPETENCE IN ACADEMIC WRITING FOR MASTER’S STUDENTS",
+          "published": "2026-11-21",
+          "authors": [
+            "Yana Strelchuk"
+          ],
+          "url": "https://doi.org/10.52058/3150-0870-2026-1(1)-266-279",
+          "source": "Crossref",
+          "doi": "10.52058/3150-0870-2026-1(1)-266-279",
+          "venue": "VOLIA"
+        }
+      ]
     },
     {
       "id": "robotics",
       "name": "Robótica e sistemas autônomos",
-      "items": []
+      "items": [
+        {
+          "area": "Robótica e sistemas autônomos",
+          "title": "Patient perception of robotic-assisted spine surgery.",
+          "published": "2026-11-21",
+          "authors": [
+            "Watkins V RG",
+            "Skaggs DL",
+            "Mikhail C"
+          ],
+          "url": "https://doi.org/10.1007/s11701-026-04195-7",
+          "source": "Europe PMC",
+          "doi": "10.1007/s11701-026-04195-7"
+        },
+        {
+          "area": "Robótica e sistemas autônomos",
+          "title": "Communicating dermatologic drug safety: a comparative evaluation of United States and United Kingdom pharmacovigilance systems using dapsone as a model medication",
+          "published": "2026-11-21",
+          "authors": [
+            "Sarah E Burstein",
+            "Howard Maibach"
+          ],
+          "url": "https://doi.org/10.1007/s00228-026-04231-3",
+          "source": "Crossref",
+          "doi": "10.1007/s00228-026-04231-3",
+          "venue": "European Journal of Clinical Pharmacology"
+        },
+        {
+          "area": "Robótica e sistemas autônomos",
+          "title": "AMORe: An Agnostic Multi-Objective Framework for Recommendation",
+          "published": "2026-11-21",
+          "authors": [
+            "Vincenzo Paparella",
+            "Vito Walter Anelli",
+            "Franco Maria Nardini",
+            "Raffaele Perego",
+            "Tommaso Di Noia"
+          ],
+          "url": "https://doi.org/10.1145/3857349",
+          "source": "Crossref",
+          "doi": "10.1145/3857349",
+          "venue": "ACM Transactions on Information Systems"
+        },
+        {
+          "area": "Robótica e sistemas autônomos",
+          "title": "Middle Miocene deep-sea mixed carbonate-siliciclastic depositional systems linked to regional tectonics and climate: insights from the South China Sea",
+          "published": "2026-11-21",
+          "authors": [
+            "Jinhai Yang",
+            "Qian Pang",
+            "Anqing Chen",
+            "Jianhui Han",
+            "Haiyang Cao",
+            "Yazhen Zhang"
+          ],
+          "url": "https://doi.org/10.1007/s13131-025-2626-6",
+          "source": "Crossref",
+          "doi": "10.1007/s13131-025-2626-6",
+          "venue": "Acta Oceanologica Sinica"
+        },
+        {
+          "area": "Robótica e sistemas autônomos",
+          "title": "Assessing the Diversity of Trees in Silvopastoral Farming Systems in the Northern Mountainous Landscape of Lao PDR",
+          "published": "2026-11-21",
+          "authors": [
+            "Bounthavy CHALEUNSOUK",
+            "Nout XAYPHENG",
+            "Simone VONGKHAMHO",
+            "Riina JALONEN"
+          ],
+          "url": "https://doi.org/10.71026/sj.v26i2.168",
+          "source": "Crossref",
+          "doi": "10.71026/sj.v26i2.168",
+          "venue": "ວາລະສານ ວິທະຍາສາດທຳມະຊາດ"
+        }
+      ]
     },
     {
       "id": "biosciences",
       "name": "Biociências e saúde",
-      "items": []
+      "items": [
+        {
+          "area": "Biociências e saúde",
+          "title": "Super-speciality medicine in India: A critical review of growth referral gaps and cluster-based reform.",
+          "published": "2027-06-01",
+          "authors": [
+            "Ghosh K"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43065585/",
+          "source": "PubMed",
+          "doi": "10.1016/j.hpopen.2026.100195",
+          "venue": "Health policy OPEN"
+        },
+        {
+          "area": "Biociências e saúde",
+          "title": "Next-generation anti-obesity drugs: emerging molecular targets and translational opportunities.",
+          "published": "2027-06-01",
+          "authors": [
+            "Shetty S",
+            "Rangle A",
+            "Mukherjee AG",
+            "Bharti AK",
+            "Jena SP",
+            "Prince SE"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43065563/",
+          "source": "PubMed",
+          "doi": "10.1007/s40200-026-02101-4",
+          "venue": "Journal of diabetes and metabolic disorders"
+        },
+        {
+          "area": "Biociências e saúde",
+          "title": "In vitro and ex vivo animal-free models for host-pathogen interaction studies in the feline species: permissiveness, pathogen replication, and immune responses.",
+          "published": "2026-12-01",
+          "authors": [
+            "Rouzet J",
+            "Faivre C",
+            "Le Roux D"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43065363/",
+          "source": "PubMed",
+          "doi": "10.1016/j.vas.2026.100937",
+          "venue": "Veterinary and animal science"
+        },
+        {
+          "area": "Biociências e saúde",
+          "title": "Spawning aggregation of bristletooth surgeonfish (Ctenochaetus striatus) in an Okinawan coral reef: lunar phase and tidal rhythm periodicities of aggregation by using non-lethal methods",
+          "published": "2026-11-21",
+          "authors": [
+            "Atsushi Nanami"
+          ],
+          "url": "https://doi.org/10.1007/s10641-026-01940-7",
+          "source": "Crossref",
+          "doi": "10.1007/s10641-026-01940-7",
+          "venue": "Environmental Biology of Fishes"
+        },
+        {
+          "area": "Biociências e saúde",
+          "title": "Using gene co-expression graph topological fingerprints to enhance pathway activity scoring via xGATE",
+          "published": "2026-11-21",
+          "authors": [
+            "Yuxia Xie",
+            "Orlando Ferrer",
+            "Jichun Xie"
+          ],
+          "url": "https://doi.org/10.1186/s13059-026-04341-2",
+          "source": "Crossref",
+          "doi": "10.1186/s13059-026-04341-2",
+          "venue": "Genome Biology"
+        }
+      ]
     },
     {
       "id": "earth-space",
       "name": "Terra, clima e espaço",
-      "items": []
+      "items": [
+        {
+          "area": "Terra, clima e espaço",
+          "title": "Suicide Risk Flags in Electronic Health Record Vignettes: Impact on Clinician Responses",
+          "published": "2026-11-21",
+          "authors": [
+            "Mingcong Tang",
+            "Alexis May",
+            "Eirini Zoupou",
+            "Brian Vu",
+            "Reem AlRabiah",
+            "Yiqin Zhu"
+          ],
+          "url": "https://doi.org/10.1007/s41347-026-00768-3",
+          "source": "Crossref",
+          "doi": "10.1007/s41347-026-00768-3",
+          "venue": "Journal of Technology in Behavioral Science"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "Between ecofatigue and hope: climate emotions among pre-service teachers and their implications for climate change education",
+          "published": "2026-11-21",
+          "authors": [
+            "L. Masero-González",
+            "I. Corbacho-Cuello",
+            "M. C. Conde-Núñez",
+            "A. Muñoz-Losa"
+          ],
+          "url": "https://doi.org/10.1080/13504622.2026.2766341",
+          "source": "Crossref",
+          "doi": "10.1080/13504622.2026.2766341",
+          "venue": "Environmental Education Research"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "LABORATORY OF CLIMATE CHANGE AND FOOD SECURITY. CHARTER",
+          "published": "2026-11-21",
+          "authors": [
+            "New Euro Vision: exhibitions, marketing, research s.r.o."
+          ],
+          "url": "https://doi.org/10.66659/6e93kf50",
+          "source": "Crossref",
+          "doi": "10.66659/6e93kf50",
+          "venue": "Pollution and Diseases"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "Aesthetic Rehabilitation of Maxillary Anterior Teeth Affected by Moderate-to-Severe Dental Fluorosis Using Ceramic Veneers: A Clinical Case Report",
+          "published": "2026-11-21",
+          "authors": [
+            "Dr. Sharon Sara Thomas",
+            "Dr. Vijay Kumar Shakya",
+            "Dr. Promila Verma",
+            "Dr. Rakesh Kumar Yadav",
+            "Dr Shailja Singh"
+          ],
+          "url": "https://doi.org/10.55640/ijmsdh-12-11-06",
+          "source": "Crossref",
+          "doi": "10.55640/ijmsdh-12-11-06",
+          "venue": "International Journal of Medical Science and Dental Health"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "Middle Miocene deep-sea mixed carbonate-siliciclastic depositional systems linked to regional tectonics and climate: insights from the South China Sea",
+          "published": "2026-11-21",
+          "authors": [
+            "Jinhai Yang",
+            "Qian Pang",
+            "Anqing Chen",
+            "Jianhui Han",
+            "Haiyang Cao",
+            "Yazhen Zhang"
+          ],
+          "url": "https://doi.org/10.1007/s13131-025-2626-6",
+          "source": "Crossref",
+          "doi": "10.1007/s13131-025-2626-6",
+          "venue": "Acta Oceanologica Sinica"
+        }
+      ]
     },
     {
       "id": "datacenters",
       "name": "Data centers e infraestrutura computacional",
-      "items": []
+      "items": [
+        {
+          "area": "Data centers e infraestrutura computacional",
+          "title": "Acid degradation performance and composition optimization of PBS/PLA blends as diverting agents for acid fracturing applications",
+          "published": "2026-11-21",
+          "authors": [
+            "Jianpin Ding",
+            "Zhicheng Zhao",
+            "Jide Wang",
+            "Jinxing Xue",
+            "Wang Zhang"
+          ],
+          "url": "https://doi.org/10.1007/s10965-026-05154-4",
+          "source": "Crossref",
+          "doi": "10.1007/s10965-026-05154-4",
+          "venue": "Journal of Polymer Research"
+        },
+        {
+          "area": "Data centers e infraestrutura computacional",
+          "title": "Comparison of Health Literacy Between Students of an Urban and a Rural State Senior High School in Sumedang Regency, West Java",
+          "published": "2026-11-21",
+          "authors": [
+            "Syahla' Khairiyah Saputra",
+            "Popi Sopiah",
+            "Amanda Puspanditaning Sejati"
+          ],
+          "url": "https://doi.org/10.23917/jk.v19i3.20931",
+          "source": "Crossref",
+          "doi": "10.23917/jk.v19i3.20931",
+          "venue": "Jurnal Kesehatan"
+        },
+        {
+          "area": "Data centers e infraestrutura computacional",
+          "title": "A comparison of data reduction approaches for the identification of non-cognitive symptom subsyndromes in Alzheimer's disease, based on Neuropsychiatric Inventory scores",
+          "published": "2026-11-21",
+          "authors": [
+            "Peter Patrick Henley",
+            "Peter Holmans",
+            "Patrick Gavin Kehoe",
+            "Rebecca Sims",
+            "Lindsey Sinclair"
+          ],
+          "url": "https://doi.org/10.1177/13872877261507355",
+          "source": "Crossref",
+          "doi": "10.1177/13872877261507355",
+          "venue": "Journal of Alzheimer’s Disease"
+        },
+        {
+          "area": "Data centers e infraestrutura computacional",
+          "title": "Prudential Regulatory Compliance and Financial Performance of Microfinance Banks in Uasin Gishu County, Kenya",
+          "published": "2026-11-21",
+          "authors": [
+            "Sheddy Mamati",
+            "Julius Miroga"
+          ],
+          "url": "https://doi.org/10.9734/sajsse/2026/v23i111414",
+          "source": "Crossref",
+          "doi": "10.9734/sajsse/2026/v23i111414",
+          "venue": "South Asian Journal of Social Studies and Economics"
+        },
+        {
+          "area": "Data centers e infraestrutura computacional",
+          "title": "The Effect Of Workload And Work Motivation On Employee Performance Of Pt. Carefastindo At The Grand Jati Junction Apartment In Medan",
+          "published": "2026-11-21",
+          "authors": [
+            "Sefilina Putri Lawolo",
+            "Awaludin Awaludin",
+            "Zainal Arifin Siregar"
+          ],
+          "url": "https://doi.org/10.58540/isihumor.v4i1.2348",
+          "source": "Crossref",
+          "doi": "10.58540/isihumor.v4i1.2348",
+          "venue": "Jurnal Ilmu Sosial dan Humaniora"
+        }
+      ]
     },
     {
       "id": "quantum",
       "name": "Computação e informação quânticas",
-      "items": []
+      "items": [
+        {
+          "area": "Computação e informação quânticas",
+          "title": "Ensemble Capsule Network Berbasis MFCC20 Untuk Klasifikasi Audio Batuk",
+          "published": "2026-11-21",
+          "authors": [
+            "Desta Andhika",
+            "Faisal Muttaqin",
+            "Fetty tri Anggraeny"
+          ],
+          "url": "https://doi.org/10.56667/jveit.v7i2.2539",
+          "source": "Crossref",
+          "doi": "10.56667/jveit.v7i2.2539",
+          "venue": "Journal of Vocational Education and Information Technology (JVEIT)"
+        },
+        {
+          "area": "Computação e informação quânticas",
+          "title": "AMORe: An Agnostic Multi-Objective Framework for Recommendation",
+          "published": "2026-11-21",
+          "authors": [
+            "Vincenzo Paparella",
+            "Vito Walter Anelli",
+            "Franco Maria Nardini",
+            "Raffaele Perego",
+            "Tommaso Di Noia"
+          ],
+          "url": "https://doi.org/10.1145/3857349",
+          "source": "Crossref",
+          "doi": "10.1145/3857349",
+          "venue": "ACM Transactions on Information Systems"
+        },
+        {
+          "area": "Computação e informação quânticas",
+          "title": "Impact of Information Presentation on Undergraduates’ Comprehension in Arabic Academic Information Environments",
+          "published": "2026-11-21",
+          "authors": [
+            "Emhimmid Elsanosi Algazairi",
+            "Anwar Alhenshiri"
+          ],
+          "url": "https://doi.org/10.65405/yn8b7v28",
+          "source": "Crossref",
+          "doi": "10.65405/yn8b7v28",
+          "venue": "Comprehensive Journal of Science"
+        },
+        {
+          "area": "Computação e informação quânticas",
+          "title": "An optimized MobileNetV3-based framework with enhanced preprocessing and hybrid feature extraction for automated brain aneurysm detection and classification",
+          "published": "2026-11-21",
+          "authors": [
+            "P. Poojitha",
+            "M. Dharani"
+          ],
+          "url": "https://doi.org/10.1007/s00500-026-11640-0",
+          "source": "Crossref",
+          "doi": "10.1007/s00500-026-11640-0",
+          "venue": "Soft Computing"
+        },
+        {
+          "area": "Computação e informação quânticas",
+          "title": "Information about the Barnaul`s flora based on materials from botanical works of the 18th–19th centuries",
+          "published": "2026-11-21",
+          "authors": [
+            "E. A. Tankova",
+            "M. M. Silantyeva"
+          ],
+          "url": "https://doi.org/10.14258/pbssm.2026068",
+          "source": "Crossref",
+          "doi": "10.14258/pbssm.2026068",
+          "venue": "Проблемы ботаники Южной Сибири и Монголии"
+        }
+      ]
     },
     {
       "id": "energy-thermo",
       "name": "Energia, termodinâmica e sistemas complexos",
-      "items": []
+      "items": [
+        {
+          "area": "Energia, termodinâmica e sistemas complexos",
+          "title": "Communicating dermatologic drug safety: a comparative evaluation of United States and United Kingdom pharmacovigilance systems using dapsone as a model medication",
+          "published": "2026-11-21",
+          "authors": [
+            "Sarah E Burstein",
+            "Howard Maibach"
+          ],
+          "url": "https://doi.org/10.1007/s00228-026-04231-3",
+          "source": "Crossref",
+          "doi": "10.1007/s00228-026-04231-3",
+          "venue": "European Journal of Clinical Pharmacology"
+        },
+        {
+          "area": "Energia, termodinâmica e sistemas complexos",
+          "title": "AMORe: An Agnostic Multi-Objective Framework for Recommendation",
+          "published": "2026-11-21",
+          "authors": [
+            "Vincenzo Paparella",
+            "Vito Walter Anelli",
+            "Franco Maria Nardini",
+            "Raffaele Perego",
+            "Tommaso Di Noia"
+          ],
+          "url": "https://doi.org/10.1145/3857349",
+          "source": "Crossref",
+          "doi": "10.1145/3857349",
+          "venue": "ACM Transactions on Information Systems"
+        },
+        {
+          "area": "Energia, termodinâmica e sistemas complexos",
+          "title": "Middle Miocene deep-sea mixed carbonate-siliciclastic depositional systems linked to regional tectonics and climate: insights from the South China Sea",
+          "published": "2026-11-21",
+          "authors": [
+            "Jinhai Yang",
+            "Qian Pang",
+            "Anqing Chen",
+            "Jianhui Han",
+            "Haiyang Cao",
+            "Yazhen Zhang"
+          ],
+          "url": "https://doi.org/10.1007/s13131-025-2626-6",
+          "source": "Crossref",
+          "doi": "10.1007/s13131-025-2626-6",
+          "venue": "Acta Oceanologica Sinica"
+        },
+        {
+          "area": "Energia, termodinâmica e sistemas complexos",
+          "title": "Assessing the Diversity of Trees in Silvopastoral Farming Systems in the Northern Mountainous Landscape of Lao PDR",
+          "published": "2026-11-21",
+          "authors": [
+            "Bounthavy CHALEUNSOUK",
+            "Nout XAYPHENG",
+            "Simone VONGKHAMHO",
+            "Riina JALONEN"
+          ],
+          "url": "https://doi.org/10.71026/sj.v26i2.168",
+          "source": "Crossref",
+          "doi": "10.71026/sj.v26i2.168",
+          "venue": "ວາລະສານ ວິທະຍາສາດທຳມະຊາດ"
+        },
+        {
+          "area": "Energia, termodinâmica e sistemas complexos",
+          "title": "Greenhouse gas responses to coastal wetland land use change vary by ecosystem and conversion pathway",
+          "published": "2026-11-21",
+          "authors": [
+            "Zihao Wang",
+            "Feifei Yan",
+            "Can Wang",
+            "Jingyu Sun",
+            "Mingzhi Liu",
+            "Xianbiao Lin"
+          ],
+          "url": "https://doi.org/10.1038/s41467-026-79685-1",
+          "source": "Crossref",
+          "doi": "10.1038/s41467-026-79685-1",
+          "venue": "Nature Communications"
+        }
+      ]
     }
   ],
-  "source_health": {}
+  "source_health": {
+    "ai:arXiv": "ok",
+    "ai:Europe PMC": "ok",
+    "ai:PubMed": "ok",
+    "ai:Crossref": "ok",
+    "language:arXiv": "ok",
+    "language:Europe PMC": "ok",
+    "language:PubMed": "ok",
+    "language:Crossref": "ok",
+    "robotics:arXiv": "ok",
+    "robotics:Europe PMC": "ok",
+    "robotics:PubMed": "ok",
+    "robotics:Crossref": "ok",
+    "biosciences:arXiv": "ok",
+    "biosciences:Europe PMC": "ok",
+    "biosciences:PubMed": "ok",
+    "biosciences:Crossref": "ok",
+    "earth-space:arXiv": "ok",
+    "earth-space:Europe PMC": "ok",
+    "earth-space:PubMed": "ok",
+    "earth-space:Crossref": "ok",
+    "datacenters:arXiv": "ok",
+    "datacenters:Europe PMC": "ok",
+    "datacenters:PubMed": "ok",
+    "datacenters:Crossref": "ok",
+    "quantum:arXiv": "ok",
+    "quantum:Europe PMC": "ok",
+    "quantum:PubMed": "ok",
+    "quantum:Crossref": "ok",
+    "energy-thermo:arXiv": "ok",
+    "energy-thermo:Europe PMC": "ok",
+    "energy-thermo:PubMed": "ok",
+    "energy-thermo:Crossref": "ok"
+  }
 }
