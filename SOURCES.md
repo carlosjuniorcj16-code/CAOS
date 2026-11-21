@@ -24,11 +24,11 @@ A coleção combina fontes primárias, instituições públicas, bibliotecas, ar
 
 O atlas `quantum.html` e seu catálogo `data/quantum.json` reúnem fontes oficiais de universidades, laboratórios, institutos metrológicos, agências científicas, periódicos, repositórios e projetos de software. A seleção cobre fundamentos, informação quântica, computação, materiais, óptica, sensores, redes, teoria de campos, simulação e literatura.
 
-Referências institucionais de partida incluem NIST, NSF, Berkeley Lab, RIKEN, CERN, Oxford, Sandia, Quantum Frontiers, ICFO, QuTech e os periódicos PRX Quantum e Quantum. A seleção de destaques recentes aponta para as páginas originais do Nobel, RIKEN, Sandia, Oxford e Quantum Frontiers. Preprints devem ser identificados como tal e não descritos como artigos revisados por pares. Anúncios de programas ou instituições não substituem artigos, dados experimentais ou documentação técnica.
+Referências institucionais de partida incluem NIST, NSF, Berkeley Lab, RIKEN, CERN, Oxford, Sandia, Quantum Frontiers, ICFO, QuTech e os periódicos PRX Quantum e Quantum. A seleção de registros recentes aponta para as páginas originais do Nobel, RIKEN, Sandia, Oxford e Quantum Frontiers. Preprints devem ser identificados como tal e não descritos como artigos revisados por pares. Anúncios de programas ou instituições não substituem artigos, dados experimentais ou documentação técnica.
 
 ## Categorias
 
-O seletor apresenta uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
+O seletor apresenta 83 temas indexados, dos quais 67 possuem registros na versão documentada, em uma lista temática ampla e plana, com categorias específicas e contagem de fontes em cada uma. A lista pode ser aberta e recolhida, e não depende do agrupamento anterior em seis áreas gerais. Recursos que atravessam diferentes campos podem ser encontrados também pela busca textual.
 
 ## Idiomas
 
@@ -100,3 +100,8 @@ O arquivo data/open-source-software.json contém as sementes de descoberta e um 
 - Microsoft Sysinternals: https://learn.microsoft.com/en-us/sysinternals/
 
 A curadoria distingue cotas gratuitas recorrentes, créditos temporários, planos gratuitos limitados, serviços serverless e software livre. Nenhuma oferta cloud é tratada como capacidade ilimitada ou SLA de produção. Limites e elegibilidade devem ser revalidados nas fontes oficiais antes do uso.
+
+
+## Neutralidade de apresentação
+
+Nenhum campo, tecnologia, provedor, país ou instituição recebe destaque comercial ou promocional na página inicial. Os atlas especializados continuam preservados como rotas de consulta, sem prioridade editorial sobre as demais áreas. A diversidade geográfica deve ser avaliada pela distribuição real dos registros, não apenas pela variedade de links de navegação. Registre país, idioma, tipo institucional e proveniência sempre que esses dados forem confirmados.
