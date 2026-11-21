@@ -58,7 +58,7 @@ jobs:
           sitemap = ET.parse(root / "sitemap-1.xml")
           ET.parse(root / "assets/caos-mark.svg")
           locations = {node.text for node in sitemap.findall(".//{*}loc")}
-          for page in ("radar.html", "leituras.html", "software.html", "freeware.html"):
+          for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
               expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
               if expected not in locations:
                   raise SystemExit(f"Missing standalone page in sitemap: {page}")
