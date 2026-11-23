@@ -1,1 +1,22 @@
-{"_caos_shards":1,"format":"caos-json-shards-v1","max_shard_bytes":18874368,"record_count":126828,"catalog_is_list":false,"catalog_metadata":{"version":"1.6.0","updated":"2026-11-20","note":"International public directory of links to knowledge, culture, data, institutions, collections and information resources. CAOS is the directory name; each linked source defines its own availability, licences and terms."},"shards":["sources/part-00001.json","sources/part-00002.json","sources/part-00003.json","sources/part-00004.json","sources/part-00005.json","sources/part-00006.json","sources/part-00007.json"]}
+{
+  "_caos_shards": 1,
+  "format": "caos-json-shards-v1",
+  "max_shard_bytes": 18874368,
+  "record_count": 126869,
+  "catalog_is_list": false,
+  "catalog_metadata": {
+    "version": "1.6.0",
+    "updated": "2026-11-23",
+    "note": "International public directory of links to knowledge, culture, data, institutions, collections and information resources. CAOS is the directory name; each linked source defines its own availability, licences and terms."
+  },
+  "shards": [
+    "sources/part-00001.json",
+    "sources/part-00002.json",
+    "sources/part-00003.json",
+    "sources/part-00004.json",
+    "sources/part-00005.json",
+    "sources/part-00006.json",
+    "sources/part-00007.json",
+    "sources/part-00008.json"
+  ]
+}
