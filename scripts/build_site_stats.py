@@ -76,6 +76,8 @@ def load_json(path: Path):
 
 def main() -> None:
     all_urls: set[str] = set()
+    directory_urls: set[str] = set()
+    directory_datasets = {"main_directory", "wikidata_discovery", "international_sources"}
     per_catalog: dict[str, int] = {}
     record_counts: dict[str, int] = {}
 
@@ -103,6 +105,8 @@ def main() -> None:
                         if normalized:
                             found.add(normalized)
         per_catalog[name] = len(found)
+        if name in directory_datasets:
+            directory_urls.update(found)
         all_urls.update(found)
         if isinstance(data, list):
             record_counts[name] = len(data)
@@ -118,6 +122,8 @@ def main() -> None:
                 record_counts[name] = len(rows) if isinstance(rows, list) else 0
         else:
             record_counts[name] = 0
+
+    per_catalog["public_directory"] = len(directory_urls)
 
     static_links: set[str] = set()
     for relative in HTML_PAGES:
@@ -140,9 +146,10 @@ def main() -> None:
         "unique_urls_by_catalogue": per_catalog,
         "counting_policy": (
             "Unique external HTTP(S) destinations found in the CAOS source catalogues "
-            "and static reference links. Host names are normalized, www and trailing "
-            "slashes are removed, fragments are ignored, and duplicate destinations "
-            "are counted once. Linked-site content is not copied."
+            "and static reference links. public_directory combines the main directory, "
+            "Wikidata discovery and international sources. Host names are normalized, "
+            "www and trailing slashes are removed, fragments are ignored, and duplicate "
+            "destinations are counted once. Linked-site content is not copied."
         ),
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
