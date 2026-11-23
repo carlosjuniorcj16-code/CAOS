@@ -227,12 +227,12 @@ def build_record(item: dict, record_id: int) -> dict | None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, default=CATALOG)
-    parser.add_argument("--limit", type=int, default=150, help="Maximum new records per run (1-200)")
-    parser.add_argument("--max-checks", type=int, default=200, help="Maximum homepages to verify (1-500)")
+    parser.add_argument("--limit", type=int, default=300, help="Maximum new records per run (1-500)")
+    parser.add_argument("--max-checks", type=int, default=1000, help="Maximum homepages to verify (1-1500)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if not 1 <= args.limit <= 200 or not 1 <= args.max_checks <= 500:
-        parser.error("--limit deve ficar entre 1 e 200; --max-checks entre 1 e 500.")
+    if not 1 <= args.limit <= 500 or not 1 <= args.max_checks <= 1500:
+        parser.error("--limit deve ficar entre 1 e 500; --max-checks entre 1 e 1500.")
 
     raw = load_catalog(args.catalog)
     catalog = raw if isinstance(raw, dict) else {"resources": raw}
