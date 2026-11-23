@@ -2,7 +2,7 @@
 
 ## Escopo atual
 
-O diretório contém 13.519 registros, distribuídos em 67 categorias com fontes. Desses, 12.000 são registros selecionados do dump Curlie — não a totalidade das aproximadamente 2,9 milhões de entradas disponíveis. Novos lotes devem preservar URL, título, descrição, categoria de origem, idioma, licença e atribuição, com deduplicação e revisão antes da publicação.
+O catálogo principal contém mais de 126 mil registros, conforme o campo `record_count` do manifesto `data/sources.json`, distribuídos em 67 categorias com fontes. Desse total, 12.000 são registros selecionados do dump Curlie — não a totalidade das aproximadamente 2,9 milhões de entradas disponíveis. Os catálogos complementares devem ser contabilizados separadamente. Novos lotes devem preservar URL, título, descrição, categoria de origem, idioma, licença e atribuição, com deduplicação e revisão antes da publicação.
 
 O dump Curlie é distribuído em TSV, contém aproximadamente 2,9 milhões de entradas e é atualizado periodicamente. A licença do conteúdo é CC BY 3.0 Unported; a atribuição pública é obrigatória. Fontes:
 - https://www.curlie.org/docs/en/rdf.html
