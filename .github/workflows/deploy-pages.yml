@@ -48,6 +48,8 @@ jobs:
           PY
           python scripts/build_seo.py
           test -s dist/index.html
+          test -s dist/google2b327fbc3ae3d9fa.html
+          test "$(cat dist/google2b327fbc3ae3d9fa.html)" = "google-site-verification: google2b327fbc3ae3d9fa.html"
           test -s dist/acesso.html
           test -s dist/robots.txt
           test -s dist/sitemap.xml
