@@ -74,14 +74,29 @@ jobs:
               sitemap_files.append(name)
           if not sitemap_files:
               raise SystemExit("Sitemap index contains no sitemap files.")
-          locations = set()
+          locations = []
           for name in sitemap_files:
               shard = ET.parse(root / name)
-              locations.update(node.text for node in shard.findall(".//{*}loc") if node.text)
-          for page in ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html"):
+              locations.extend(node.text for node in shard.findall(".//{*}loc") if node.text)
+          if len(locations) != len(set(locations)):
+              raise SystemExit("Sitemap contains duplicate URL locations.")
+          standalone_pages = ("ai-data.html", "radar.html", "leituras.html", "software.html", "freeware.html", "quantum.html")
+          for page in standalone_pages:
               expected = "https://carlosjuniorcj16-code.github.io/CAOS/" + page
               if expected not in locations:
                   raise SystemExit(f"Missing standalone page in sitemap: {page}")
+              html = (root / page).read_text(encoding="utf-8")
+              required_tags = (
+                  f'<link rel="canonical" href="{expected}">',
+                  '<meta name="robots" content="index,follow,max-image-preview:large">',
+                  'property="og:title"',
+                  'property="og:description"',
+                  f'property="og:url" content="{expected}"',
+                  'name="twitter:card"',
+              )
+              missing = [tag for tag in required_tags if tag not in html]
+              if missing:
+                  raise SystemExit(f"Incomplete SEO metadata in {page}: {missing}")
           pages = list(root.rglob("index.html"))
           if len(pages) < 2:
               raise SystemExit("SEO build produced too few HTML pages")
