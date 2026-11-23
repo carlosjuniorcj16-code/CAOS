@@ -351,14 +351,54 @@ def main():
         '<a href="' + e(absolute("/categorias/")) + '" style="font-size:12px;color:#f0c54b;text-decoration:none">Mapa de categorias</a><select class="lang" id="language"')
     (OUT / "index.html").write_text(homepage, encoding="utf-8")
 
-    ai_page = OUT / "ai-data.html"
-    if ai_page.exists():
-        ai = ai_page.read_text(encoding="utf-8")
-        ai = ai.replace("</head>", '<link rel="canonical" href="' + e(absolute("/ai-data.html")) + '"><meta name="robots" content="index,follow"></head>')
-        ai_page.write_text(ai, encoding="utf-8")
+    # Give every standalone catalogue page a complete, consistent search
+    # preview. Preserve metadata already authored in each page and fill only
+    # missing tags, so this step remains safe to rerun on every build.
+    standalone_pages = (
+        "ai-data.html", "radar.html", "leituras.html",
+        "software.html", "freeware.html", "quantum.html",
+    )
+    for relative in standalone_pages:
+        page_path = OUT / relative
+        if not page_path.is_file():
+            continue
+        page = page_path.read_text(encoding="utf-8")
+        canonical_url = absolute("/" + relative)
+        title_match = re.search(r"<title>(.*?)</title>", page, re.I | re.S)
+        description_match = re.search(
+            r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']',
+            page, re.I | re.S
+        )
+        page_title = html.unescape(title_match.group(1).strip()) if title_match else "CAOS | Diretório público"
+        page_description = html.unescape(description_match.group(1).strip()) if description_match else (
+            "Explore fontes, ferramentas, pesquisas e recursos especializados no diretório internacional CAOS."
+        )
+        additions = []
+        if not re.search(r'<link\s+rel=["\']canonical["\']', page, re.I):
+            additions.append('<link rel="canonical" href="' + e(canonical_url) + '">')
+        if not re.search(r'<meta\s+name=["\']robots["\']', page, re.I):
+            additions.append('<meta name="robots" content="index,follow,max-image-preview:large">')
+        social_tags = (
+            ("property", "og:type", "website"),
+            ("property", "og:site_name", "CAOS"),
+            ("property", "og:title", page_title),
+            ("property", "og:description", page_description),
+            ("property", "og:url", canonical_url),
+            ("name", "twitter:card", "summary"),
+        )
+        for attribute, key, value in social_tags:
+            pattern = r'<meta\s+' + attribute + r'=["\']' + re.escape(key) + r'["\']'
+            if not re.search(pattern, page, re.I):
+                additions.append('<meta ' + attribute + '="' + e(key) + '" content="' + e(value) + '">')
+        if additions:
+            page = page.replace("</head>", "\n" + "\n".join(additions) + "\n</head>", 1)
+            page_path.write_text(page, encoding="utf-8")
     add_url("/")
     for standalone in ("/ai-data.html", "/radar.html", "/leituras.html", "/software.html", "/freeware.html", "/quantum.html"):
         add_url(standalone)
+
+    # Keep the sitemap index deterministic and free of duplicate locations.
+    sitemap_urls = list(dict.fromkeys(sitemap_urls))
 
     chunks = [sitemap_urls[i:i + 40000] for i in range(0, len(sitemap_urls), 40000)]
     sitemap_names = []
