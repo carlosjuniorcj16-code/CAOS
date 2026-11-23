@@ -16,23 +16,6 @@
       "items": [
         {
           "area": "Inteligência artificial",
-          "title": "Next-generation anti-obesity drugs: emerging molecular targets and translational opportunities.",
-          "published": "2027-06-01",
-          "authors": [
-            "Shetty S",
-            "Rangle A",
-            "Mukherjee AG",
-            "Bharti AK",
-            "Jena SP",
-            "Prince SE"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43065563/",
-          "source": "PubMed",
-          "doi": "10.1007/s40200-026-02101-4",
-          "venue": "Journal of diabetes and metabolic disorders"
-        },
-        {
-          "area": "Inteligência artificial",
           "title": "The impact of Generative Artificial Intelligence on employee green well-being: The mediating role of employee engagement in Vietnamese enterprises",
           "published": "2026-11-21",
           "authors": [
@@ -240,49 +223,6 @@
       "id": "biosciences",
       "name": "Biociências e saúde",
       "items": [
-        {
-          "area": "Biociências e saúde",
-          "title": "Super-speciality medicine in India: A critical review of growth referral gaps and cluster-based reform.",
-          "published": "2027-06-01",
-          "authors": [
-            "Ghosh K"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43065585/",
-          "source": "PubMed",
-          "doi": "10.1016/j.hpopen.2026.100195",
-          "venue": "Health policy OPEN"
-        },
-        {
-          "area": "Biociências e saúde",
-          "title": "Next-generation anti-obesity drugs: emerging molecular targets and translational opportunities.",
-          "published": "2027-06-01",
-          "authors": [
-            "Shetty S",
-            "Rangle A",
-            "Mukherjee AG",
-            "Bharti AK",
-            "Jena SP",
-            "Prince SE"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43065563/",
-          "source": "PubMed",
-          "doi": "10.1007/s40200-026-02101-4",
-          "venue": "Journal of diabetes and metabolic disorders"
-        },
-        {
-          "area": "Biociências e saúde",
-          "title": "In vitro and ex vivo animal-free models for host-pathogen interaction studies in the feline species: permissiveness, pathogen replication, and immune responses.",
-          "published": "2026-12-01",
-          "authors": [
-            "Rouzet J",
-            "Faivre C",
-            "Le Roux D"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43065363/",
-          "source": "PubMed",
-          "doi": "10.1016/j.vas.2026.100937",
-          "venue": "Veterinary and animal science"
-        },
         {
           "area": "Biociências e saúde",
           "title": "Spawning aggregation of bristletooth surgeonfish (Ctenochaetus striatus) in an Okinawan coral reef: lunar phase and tidal rhythm periodicities of aggregation by using non-lethal methods",
