@@ -1,0 +1,54 @@
+name: Export CAOS outreach pilot sample
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: Number of catalog records to include
+        required: true
+        default: "100"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: outreach-pilot-export
+  cancel-in-progress: false
+
+jobs:
+  export:
+    name: Generate reviewed-contact worksheet
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile outreach tool
+        run: python -m py_compile scripts/outreach_pilot.py
+
+      - name: Export sample
+        env:
+          SAMPLE_COUNT: ${{ inputs.count }}
+        run: |
+          python - <<'PY'
+          import os
+          count = int(os.environ["SAMPLE_COUNT"])
+          if not 1 <= count <= 500:
+              raise SystemExit("count must be between 1 and 500")
+          PY
+          python scripts/outreach_pilot.py export-sample --count "$SAMPLE_COUNT"
+
+      - name: Upload pilot CSV
+        uses: actions/upload-artifact@v4
+        with:
+          name: caos-outreach-pilot-${{ github.run_number }}
+          path: outreach/pilot.csv
+          if-no-files-found: error
+          retention-days: 14
