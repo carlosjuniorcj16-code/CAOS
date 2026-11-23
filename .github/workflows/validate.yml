@@ -82,6 +82,38 @@ jobs:
                       assert item.get("url", "").startswith("https://")
           print("Research feeds structurally valid.")
           PY
+      - name: Reject future-dated research records
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import date
+          from pathlib import Path
+
+          today = date.today()
+          feeds = {
+              "data/research-radar.json": lambda data: data.get("items", []),
+              "data/reading-recommendations.json": lambda data: [
+                  item for topic in data.get("topics", [])
+                  for item in topic.get("items", [])
+              ],
+          }
+          for filename, get_items in feeds.items():
+              data = json.loads(Path(filename).read_text(encoding="utf-8"))
+              for item in get_items(data):
+                  published = item.get("published")
+                  if not published:
+                      continue
+                  try:
+                      publication_date = date.fromisoformat(published)
+                  except (TypeError, ValueError):
+                      raise SystemExit(f"Invalid publication date in {filename}: {published!r}")
+                  if publication_date > today:
+                      raise SystemExit(
+                          f"Future-dated research item in {filename}: "
+                          f"{published} — {item.get('title', '(untitled)')}"
+                      )
+          print("Research feeds contain no future-dated publications.")
+          PY
       - name: Validate global taxonomy and supplemental sources
         run: |
           python - <<'PY'
