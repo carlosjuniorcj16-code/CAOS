@@ -190,6 +190,21 @@ def main() -> None:
         raise SystemExit("Invalid catalog: resources must be a list.")
     known_urls = {normalized_url(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
     known_domains = {domain_key(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
+    # The validator combines this catalogue with the Wikidata discovery catalogue.
+    # Exclude those URLs during ingestion to prevent cross-catalogue duplicates.
+    wikidata_path = ROOT / "data" / "wikidata-discovery.json"
+    if wikidata_path.exists():
+        wikidata_data = json.loads(wikidata_path.read_text(encoding="utf-8"))
+        wikidata_records = wikidata_data.get("resources", []) if isinstance(wikidata_data, dict) else []
+        if not isinstance(wikidata_records, list):
+            raise SystemExit("Invalid Wikidata discovery catalogue: resources must be a list.")
+        for item in wikidata_records:
+            if isinstance(item, dict):
+                value = str(item.get("url", ""))
+                key = normalized_url(value)
+                if key:
+                    known_urls.add(key)
+                    known_domains.add(domain_key(value))
     next_id = max((int(x.get("id", 0)) for x in resources if isinstance(x, dict) and str(x.get("id", "")).isdigit()), default=0) + 1
 
     state = json.loads(args.state_file.read_text(encoding="utf-8")) if args.state_file.exists() else {}

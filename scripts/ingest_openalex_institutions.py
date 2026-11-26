@@ -88,6 +88,18 @@ def main() -> None:
     if not isinstance(resources, list):
         raise SystemExit("Formato inválido: resources deve ser uma lista.")
     known_urls = {normalized_url(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
+    # The validator also checks Wikidata records; filter those URLs before import.
+    wikidata_path = ROOT / "data" / "wikidata-discovery.json"
+    if wikidata_path.exists():
+        wikidata_data = json.loads(wikidata_path.read_text(encoding="utf-8"))
+        wikidata_records = wikidata_data.get("resources", []) if isinstance(wikidata_data, dict) else []
+        if not isinstance(wikidata_records, list):
+            raise SystemExit("Invalid Wikidata discovery catalogue: resources must be a list.")
+        for item in wikidata_records:
+            if isinstance(item, dict):
+                key = normalized_url(str(item.get("url", "")))
+                if key:
+                    known_urls.add(key)
     next_id = max((int(x.get("id", 0)) for x in resources if isinstance(x, dict) and str(x.get("id", "")).isdigit()), default=0) + 1
     state = json.loads(args.state_file.read_text(encoding="utf-8")) if args.state_file.exists() else {}
     cursor = str(state.get("openalex_next_cursor") or "*")
