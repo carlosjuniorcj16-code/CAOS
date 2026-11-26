@@ -67,12 +67,17 @@ def normalize_date(value):
 def record(area, title, published, url, source, authors=None, doi=""):
     title = clean(title)
     url = clean(url)
-    if not title or not url.startswith("https://"):
+    published_date = normalize_date(published)
+    # Upstream indexes can return future-dated records despite date filters.
+    # Never publish an undated or future-dated item.
+    if not title or not url.startswith("https://") or not published_date:
+        return None
+    if published_date > TODAY.isoformat():
         return None
     return {
         "area": area,
         "title": title,
-        "published": normalize_date(published),
+        "published": published_date,
         "authors": [clean(x) for x in (authors or []) if clean(x)][:6],
         "url": url,
         "source": source,
