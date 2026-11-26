@@ -124,8 +124,9 @@ def robots_allows(url: str) -> bool:
             parser.parse([])
         else:
             return False
-    except (URLError, TimeoutError):
+    except (URLError, TimeoutError, OSError):
         # Fail closed when the site's crawl policy cannot be retrieved.
+        # Socket resets are OSError subclasses and must not abort the batch.
         return False
     return parser.can_fetch("CAOS-Directory", url)
 
@@ -154,7 +155,7 @@ def homepage_is_live(url: str) -> tuple[bool, str]:
             if method == "HEAD":
                 continue
             return False, f"http_{exc.code}"
-        except (URLError, TimeoutError):
+        except (URLError, TimeoutError, OSError):
             if method == "HEAD":
                 continue
             return False, "network_error"
