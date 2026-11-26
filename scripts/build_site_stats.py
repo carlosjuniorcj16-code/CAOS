@@ -76,6 +76,8 @@ def load_json(path: Path):
 
 def main() -> None:
     all_urls: set[str] = set()
+    public_directory_urls: set[str] = set()
+    directory_datasets = {"main_directory", "wikidata_discovery", "international_sources"}
     per_catalog: dict[str, int] = {}
     record_counts: dict[str, int] = {}
 
@@ -103,6 +105,8 @@ def main() -> None:
                         if normalized:
                             found.add(normalized)
         per_catalog[name] = len(found)
+        if name in directory_datasets:
+            public_directory_urls.update(found)
         all_urls.update(found)
         if isinstance(data, list):
             record_counts[name] = len(data)
@@ -118,6 +122,8 @@ def main() -> None:
                 record_counts[name] = len(rows) if isinstance(rows, list) else 0
         else:
             record_counts[name] = 0
+
+    per_catalog["public_directory"] = len(public_directory_urls)
 
     static_links: set[str] = set()
     for relative in HTML_PAGES:
