@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T00:22:59+00:00",
+  "updated_at": "2026-11-26T17:48:11+00:00",
   "window_days": 45,
   "sources": [
     "arXiv",
@@ -10,21 +10,79 @@
   ],
   "items": [
     {
-      "area": "Robótica e sistemas autônomos",
-      "title": "Polyimide-Encapsulated Ag/Aramid-Reinforced Graphene Aerogel for Ultrasensitive and Fatigue-Resistant Wearable Motion Sensing.",
-      "published": "2026-11-23",
+      "area": "Inteligência artificial",
+      "title": "Physics-Motivated Machine Learning Prediction of Hubbard Interaction Parameters in Transition-Metal Oxides.",
+      "published": "2026-11-26",
       "authors": [
-        "Shao J",
-        "Zhuang M",
-        "Song L",
-        "Zhang Q",
-        "Bai R",
-        "Yuan J"
+        "Kim J",
+        "Reddy IR",
+        "Kim B",
+        "Kim S"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43064369/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43096939/",
       "source": "PubMed",
-      "doi": "10.1021/acsami.6c18219",
-      "venue": "ACS applied materials & interfaces"
+      "doi": "10.1021/acs.jpclett.6c02654",
+      "venue": "The journal of physical chemistry letters"
+    },
+    {
+      "area": "Linguagem e comunicação",
+      "title": "Equity in Digital Health: A Scoping Review on Cultural Tailoring and Co-Design of Telehealth Interventions with Immigrants and Refugees.",
+      "published": "2026-11-26",
+      "authors": [
+        "Allana S",
+        "Jeyakumaran T",
+        "Rathod D",
+        "Khan M",
+        "Blake T",
+        "Ku D"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43096990/",
+      "source": "PubMed",
+      "doi": "10.1177/2752535x261507136",
+      "venue": "Community health equity research & policy"
+    },
+    {
+      "area": "Robótica e sistemas autônomos",
+      "title": "Global Agentic Healthcare Intelligence",
+      "published": "2026-11-26",
+      "authors": [
+        "Mostafa Mohamad",
+        "Ganka Ivanova",
+        "Rakan Alhrahsheh",
+        "Tareq N. Hashem"
+      ],
+      "url": "https://doi.org/10.3991/ijoe.v22i11.63310",
+      "source": "Crossref",
+      "doi": "10.3991/ijoe.v22i11.63310",
+      "venue": "International Journal of Online and Biomedical Engineering (iJOE)"
+    },
+    {
+      "area": "Biociências e saúde",
+      "title": "The tape of life has run once, and what that means for biological foundation models.",
+      "published": "2026-11-26",
+      "authors": [
+        "Matsen FA 4th",
+        "Song YS"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43096923/",
+      "source": "PubMed",
+      "doi": "10.1093/genetics/iyag325",
+      "venue": "Genetics"
+    },
+    {
+      "area": "Terra, clima e espaço",
+      "title": "Seasonal water scarcity and household storage practices as determinants of microbial contamination in stored drinking water in remote karst highlands of northern Vietnam.",
+      "published": "2026-11-26",
+      "authors": [
+        "Nguyen HT",
+        "Kashima S",
+        "Meng X",
+        "Gong X"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43096905/",
+      "source": "PubMed",
+      "doi": "10.1080/09603123.2026.2768357",
+      "venue": "International journal of environmental health research"
     }
   ],
   "source_health": {
@@ -33,14 +91,14 @@
     "ai:PubMed": "ok",
     "ai:Crossref": "ok",
     "language:arXiv": "ok",
-    "language:Europe PMC": "ok",
+    "language:Europe PMC": "error: The read operation timed out",
     "language:PubMed": "ok",
     "language:Crossref": "ok",
-    "robotics:arXiv": "error: The read operation timed out",
+    "robotics:arXiv": "ok",
     "robotics:Europe PMC": "ok",
     "robotics:PubMed": "ok",
     "robotics:Crossref": "ok",
-    "biosciences:arXiv": "error: HTTP Error 429: Unknown Error",
+    "biosciences:arXiv": "ok",
     "biosciences:Europe PMC": "ok",
     "biosciences:PubMed": "ok",
     "biosciences:Crossref": "ok",
@@ -48,15 +106,15 @@
     "earth-space:Europe PMC": "ok",
     "earth-space:PubMed": "ok",
     "earth-space:Crossref": "ok",
-    "datacenters:arXiv": "error: The read operation timed out",
-    "datacenters:Europe PMC": "ok",
+    "datacenters:arXiv": "ok",
+    "datacenters:Europe PMC": "error: The read operation timed out",
     "datacenters:PubMed": "ok",
     "datacenters:Crossref": "ok",
     "quantum:arXiv": "ok",
     "quantum:Europe PMC": "ok",
     "quantum:PubMed": "ok",
     "quantum:Crossref": "ok",
-    "energy-thermo:arXiv": "error: HTTP Error 429: Unknown Error",
+    "energy-thermo:arXiv": "ok",
     "energy-thermo:Europe PMC": "ok",
     "energy-thermo:PubMed": "ok",
     "energy-thermo:Crossref": "ok"
