@@ -57,8 +57,19 @@ jobs:
             python scripts/ingest_openalex_institutions.py --limit "${{ inputs.limit }}" --max-pages 10 --state-file data/discovery_state.json --dry-run
           fi
       - name: Import DOAJ journal websites
+        id: doaj
+        continue-on-error: true
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         run: python scripts/ingest_doaj_journals.py --limit "${{ github.event_name == 'schedule' && '1000' || inputs.limit }}" --max-pages 10 --state-file data/discovery_state.json
+      - name: Report provider collection status
+        if: always()
+        env:
+          DOAJ_OUTCOME: ${{ steps.doaj.outcome }}
+        run: |
+          if [ "$DOAJ_OUTCOME" = "failure" ]; then
+            echo "::warning::DOAJ collection failed; continuing with OpenAlex so one upstream outage does not block the entire discovery batch."
+          fi
+
       - name: Import OpenAlex institutions
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
