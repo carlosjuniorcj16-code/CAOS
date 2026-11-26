@@ -52,7 +52,7 @@ def domain_key(value: str) -> str:
     return (urlsplit(normalized).hostname or "").removeprefix("www.") if normalized else ""
 
 def request_page(page: int, page_size: int) -> dict:
-    url = API + "/" + quote("*", safe="") + "?" + urlencode({"page": page, "pageSize": page_size})
+    url = API + "/" + quote("*", safe="*") + "?" + urlencode({"page": page, "pageSize": page_size})
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
     for attempt in range(5):
         try:
@@ -62,7 +62,7 @@ def request_page(page: int, page_size: int) -> dict:
             if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
                 raise
             time.sleep(min(30, 2 ** attempt * 2))
-        except (URLError, TimeoutError, json.JSONDecodeError):
+        except (URLError, TimeoutError, OSError, json.JSONDecodeError):
             if attempt == 4:
                 raise
             time.sleep(min(30, 2 ** attempt * 2))
