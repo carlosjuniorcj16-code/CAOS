@@ -256,9 +256,10 @@ Promise.all([
   }
  }
  all=[...base,...(extra.resources||[]),...(wikidata.resources||[])];
+ const normalizeDirectoryUrl=value=>{try{const u=new URL(String(value||"").trim());if(!["http:","https:"].includes(u.protocol)||u.username||u.password)return "";const host=u.hostname.toLowerCase().replace(/^www\./,"");if(["carlosjuniorcj16-code.github.io","localhost","127.0.0.1"].includes(host)||!host.includes("."))return "";u.hostname=host;u.hash="";const path=u.pathname.replace(/\/+$/,"")||"/";return u.protocol+"//"+u.host+path+u.search}catch{return ""}};
  const seen=new Set();
- all=all.filter(x=>{const key=String(x.url||"").trim().replace(/\/$/,"").toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true});
- const catalogueUrlCount=stats?.unique_urls_by_catalogue?.main_directory;if(Number.isSafeInteger(catalogueUrlCount)&&catalogueUrlCount>=0)$("heroCount").textContent=catalogueUrlCount.toLocaleString();prepareSearch();fillDiscoveryFilters();$("curlieCredit").hidden=!all.some(x=>x.source==="Curlie");render();
+ all=all.filter(x=>{const key=normalizeDirectoryUrl(x.url);if(!key||seen.has(key))return false;seen.add(key);return true});
+ const catalogueUrlCount=stats?.unique_urls_by_catalogue?.public_directory;if(Number.isSafeInteger(catalogueUrlCount)&&catalogueUrlCount>=0)$("heroCount").textContent=catalogueUrlCount.toLocaleString();prepareSearch();fillDiscoveryFilters();$("curlieCredit").hidden=!all.some(x=>x.source==="Curlie");render();
 }).catch(error=>{$("resources").innerHTML='<div class="empty">O catálogo não pôde ser carregado. Verifique a conexão e tente novamente.</div>';console.error(error)});
 setLanguage("pt");
 </script><script>
