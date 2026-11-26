@@ -53,7 +53,7 @@ def fetch_page(cursor: str, api_key: str | None, per_page: int) -> dict:
             if exc.code not in {429, 500, 502, 503, 504} or attempt == 5:
                 raise
             time.sleep(min(60, 2 ** attempt))
-        except URLError:
+        except (URLError, OSError, json.JSONDecodeError):
             if attempt == 5:
                 raise
             time.sleep(min(60, 2 ** attempt))
