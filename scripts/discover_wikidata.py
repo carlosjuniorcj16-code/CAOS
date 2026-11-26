@@ -25,6 +25,7 @@ from catalog_io import load_catalog, save_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
+WIKIDATA_CATALOG = ROOT / "data" / "wikidata-discovery.json"
 ENDPOINTS = (
     "https://query.wikidata.org/sparql",
     # Independent public Wikidata SPARQL mirror; used only if WDQS is unavailable.
@@ -263,10 +264,21 @@ def main() -> None:
     if not isinstance(resources, list):
         raise SystemExit("Formato inválido: resources deve ser uma lista.")
 
-    known_urls = {normalized_url(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
-    known_domains = {domain_key(str(x.get("url", ""))) for x in resources if isinstance(x, dict)}
+    # The validator combines the canonical catalog with the legacy Wikidata
+    # supplemental catalog. Exclude both here so a rediscovered homepage cannot
+    # make the entire ingestion PR fail validation.
+    supplemental_records = []
+    if WIKIDATA_CATALOG.exists():
+        supplemental_raw = json.loads(WIKIDATA_CATALOG.read_text(encoding="utf-8"))
+        supplemental_records = supplemental_raw.get("resources", []) if isinstance(supplemental_raw, dict) else []
+        if not isinstance(supplemental_records, list):
+            raise ValueError("Formato inválido: resources deve ser uma lista em data/wikidata-discovery.json.")
+
+    known_records = [x for x in resources + supplemental_records if isinstance(x, dict)]
+    known_urls = {normalized_url(str(x.get("url", ""))) for x in known_records}
+    known_domains = {domain_key(str(x.get("url", ""))) for x in known_records}
     next_id = max(
-        (int(x.get("id", 0)) for x in resources if isinstance(x, dict) and str(x.get("id", "")).isdigit()),
+        (int(x.get("id", 0)) for x in known_records if str(x.get("id", "")).isdigit()),
         default=0,
     ) + 1
 
