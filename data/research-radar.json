@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-23T00:22:59+00:00",
+  "updated_at": "2026-11-26T02:15:20+00:00",
   "window_days": 45,
   "sources": [
     "arXiv",
@@ -10,37 +10,93 @@
   ],
   "items": [
     {
-      "area": "Robótica e sistemas autônomos",
-      "title": "Polyimide-Encapsulated Ag/Aramid-Reinforced Graphene Aerogel for Ultrasensitive and Fatigue-Resistant Wearable Motion Sensing.",
-      "published": "2026-11-23",
+      "area": "Inteligência artificial",
+      "title": "Peer Review Week 2026: Why Artificial Intelligence Disclosure by Authors Still Matters for Capacity, Speed, and Quality.",
+      "published": "2027-01-01",
       "authors": [
-        "Shao J",
-        "Zhuang M",
-        "Song L",
-        "Zhang Q",
-        "Bai R",
-        "Yuan J"
+        "Gould KA"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43064369/",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084739/",
       "source": "PubMed",
-      "doi": "10.1021/acsami.6c18219",
-      "venue": "ACS applied materials & interfaces"
+      "doi": "10.1097/dcc.0000000000000812",
+      "venue": "Dimensions of critical care nursing : DCCN"
+    },
+    {
+      "area": "Linguagem e comunicação",
+      "title": "Patient- and Family-centred Nursing Communication in the Intensive Care Unit: A Bibliometric Analysis.",
+      "published": "2027-01-01",
+      "authors": [
+        "Li M",
+        "Lan Y",
+        "Li J",
+        "Chen C",
+        "Zhang S"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084737/",
+      "source": "PubMed",
+      "doi": "10.1097/dcc.0000000000000808",
+      "venue": "Dimensions of critical care nursing : DCCN"
+    },
+    {
+      "area": "Biociências e saúde",
+      "title": "Say No to Catheter-Associated Urinary Tract Infections: A Sustained Quality Improvement Initiative in the Neuro Intensive Care Unit.",
+      "published": "2027-01-01",
+      "authors": [
+        "Hicks S",
+        "Miller B",
+        "Anderson B",
+        "Tucker ET"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084729/",
+      "source": "PubMed",
+      "doi": "10.1097/dcc.0000000000000807",
+      "venue": "Dimensions of critical care nursing : DCCN"
+    },
+    {
+      "area": "Terra, clima e espaço",
+      "title": "Unlocking the unparalleled paleoclimate record of Antarctic blue ice areas.",
+      "published": "2026-12-08",
+      "authors": [
+        "Tollenaar V",
+        "Legrain E"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43084562/",
+      "source": "PubMed",
+      "doi": "10.1073/pnas.2603650123",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "area": "Robótica e sistemas autônomos",
+      "title": "Gap test-inspired crack-parallel tension tests of fracture of soft-knitted polymer composites simulated by microplane triads.",
+      "published": "2026-12-01",
+      "authors": [
+        "Ding X",
+        "Niu Y",
+        "Zhao Y",
+        "Chen H",
+        "Bae C",
+        "Nguyen AT"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43077514/",
+      "source": "PubMed",
+      "doi": "10.1073/pnas.2620941123",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America"
     }
   ],
   "source_health": {
     "ai:arXiv": "ok",
-    "ai:Europe PMC": "ok",
+    "ai:Europe PMC": "error: The read operation timed out",
     "ai:PubMed": "ok",
     "ai:Crossref": "ok",
     "language:arXiv": "ok",
     "language:Europe PMC": "ok",
     "language:PubMed": "ok",
     "language:Crossref": "ok",
-    "robotics:arXiv": "error: The read operation timed out",
+    "robotics:arXiv": "ok",
     "robotics:Europe PMC": "ok",
     "robotics:PubMed": "ok",
     "robotics:Crossref": "ok",
-    "biosciences:arXiv": "error: HTTP Error 429: Unknown Error",
+    "biosciences:arXiv": "ok",
     "biosciences:Europe PMC": "ok",
     "biosciences:PubMed": "ok",
     "biosciences:Crossref": "ok",
@@ -48,7 +104,7 @@
     "earth-space:Europe PMC": "ok",
     "earth-space:PubMed": "ok",
     "earth-space:Crossref": "ok",
-    "datacenters:arXiv": "error: The read operation timed out",
+    "datacenters:arXiv": "ok",
     "datacenters:Europe PMC": "ok",
     "datacenters:PubMed": "ok",
     "datacenters:Crossref": "ok",
@@ -56,7 +112,7 @@
     "quantum:Europe PMC": "ok",
     "quantum:PubMed": "ok",
     "quantum:Crossref": "ok",
-    "energy-thermo:arXiv": "error: HTTP Error 429: Unknown Error",
+    "energy-thermo:arXiv": "ok",
     "energy-thermo:Europe PMC": "ok",
     "energy-thermo:PubMed": "ok",
     "energy-thermo:Crossref": "ok"
