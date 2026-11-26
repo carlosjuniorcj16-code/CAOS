@@ -71,6 +71,8 @@ jobs:
           fi
 
       - name: Import OpenAlex institutions
+        id: openalex
+        continue-on-error: true
         if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
@@ -80,14 +82,31 @@ jobs:
           else
             python scripts/ingest_openalex_institutions.py --limit "${{ github.event_name == 'schedule' && '1000' || inputs.limit }}" --max-pages 10 --state-file data/discovery_state.json
           fi
+      - name: Report independent provider outcomes
+        if: always()
+        env:
+          DOAJ_OUTCOME: ${{ steps.doaj.outcome }}
+          OPENALEX_OUTCOME: ${{ steps.openalex.outcome }}
+        run: |
+          echo "DOAJ: ${DOAJ_OUTCOME:-not_run}"
+          echo "OpenAlex: ${OPENALEX_OUTCOME:-not_run}"
+          if [ "$DOAJ_OUTCOME" = "failure" ]; then
+            echo "::warning::DOAJ failed; its cursor was not advanced. Other providers remain independent."
+          fi
+          if [ "$OPENALEX_OUTCOME" = "failure" ]; then
+            echo "::warning::OpenAlex failed; its cursor was not advanced. Other providers remain independent."
+          fi
+          if [ "$DOAJ_OUTCOME" != "success" ] && [ "$OPENALEX_OUTCOME" != "success" ]; then
+            echo "::warning::No discovery provider completed successfully; no catalog PR will be created."
+          fi
       - name: Validate catalog and rebuild search index
-        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        if: ${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run)) && (steps.doaj.outcome == 'success' || steps.openalex.outcome == 'success') }}
         run: |
           python scripts/validate_catalog.py
           python scripts/build_search_index.py
       - name: Open reviewed catalog update
         id: cpr
-        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run) }}
+        if: ${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run)) && (steps.doaj.outcome == 'success' || steps.openalex.outcome == 'success') }}
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
