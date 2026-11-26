@@ -22,6 +22,10 @@ from catalog_io import load_catalog, save_catalog
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
 API = "https://doaj.org/api/v4/search/journals"
+# DOAJ disables wildcard queries. This broad OR query uses ordinary indexed terms
+# so the public search endpoint can be paginated without the rejected "*" pattern.
+# It is a discovery slice, not a claim that every possible title language is covered.
+SEARCH_QUERY = "a OR e OR i OR o OR u OR y"
 USER_AGENT = "CAOS-Directory/1.2 (responsible metadata discovery; https://github.com/carlosjuniorcj16-code/CAOS)"
 TOPICS = {
     "natural": ("Ciências naturais", "Natural sciences"),
@@ -52,7 +56,7 @@ def domain_key(value: str) -> str:
     return (urlsplit(normalized).hostname or "").removeprefix("www.") if normalized else ""
 
 def request_page(page: int, page_size: int) -> dict:
-    url = API + "/" + quote("*", safe="*") + "?" + urlencode({"page": page, "pageSize": page_size})
+    url = API + "/" + quote(SEARCH_QUERY, safe="") + "?" + urlencode({"page": page, "pageSize": page_size})
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
     for attempt in range(5):
         try:
