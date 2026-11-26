@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -24,7 +25,12 @@ from catalog_io import load_catalog, save_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "sources.json"
-ENDPOINT = "https://query.wikidata.org/sparql"
+ENDPOINTS = (
+    "https://query.wikidata.org/sparql",
+    # Independent public Wikidata SPARQL mirror; used only if WDQS is unavailable.
+    "https://qlever.cs.uni-freiburg.de/api/wikidata",
+)
+QUERY_TIMEOUT_SECONDS = max(15, min(120, int(os.environ.get("WIKIDATA_QUERY_TIMEOUT", "45"))))
 USER_AGENT = "CAOS-Directory/1.1 (https://github.com/carlosjuniorcj16-code/CAOS; responsible open-data discovery)"
 MAX_QUERY_RESULTS = 1200
 
@@ -80,33 +86,49 @@ def domain_key(value: str) -> str:
     return (p.hostname or "").removeprefix("www.")
 
 def fetch_wikidata(limit: int) -> list[dict]:
+    """Query WDQS first, then an independent SPARQL mirror if it is unavailable."""
     values = " ".join("wd:" + qid for qid in CLASSES)
     query = f"""
-    SELECT DISTINCT ?item ?itemLabel ?website ?class ?classLabel ?countryLabel WHERE {{
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT DISTINCT ?item ?itemLabel ?website ?class ?countryLabel WHERE {{
       VALUES ?class {{ {values} }}
       ?item wdt:P31 ?class ;
-            wdt:P856 ?website .
-      OPTIONAL {{ ?item wdt:P17 ?country . }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,pt". }}
+            wdt:P856 ?website ;
+            rdfs:label ?itemLabel .
+      FILTER(LANG(?itemLabel) IN ("en", "pt"))
+      OPTIONAL {{
+        ?item wdt:P17 ?country .
+        ?country rdfs:label ?countryLabel .
+        FILTER(LANG(?countryLabel) IN ("en", "pt"))
+      }}
     }}
     LIMIT {min(MAX_QUERY_RESULTS, max(limit * 8, 300))}
     """
-    request = Request(
-        ENDPOINT + "?" + urlencode({"query": query, "format": "json"}),
-        headers={"User-Agent": USER_AGENT, "Accept": "application/sparql-results+json"},
-    )
+    params = urlencode({"query": query, "format": "json"})
     last_error = None
-    for attempt in range(4):
-        try:
-            with urlopen(request, timeout=30) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-            return payload.get("results", {}).get("bindings", [])
-        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError) as exc:
-            last_error = exc
-            if isinstance(exc, HTTPError) and exc.code not in {429, 500, 502, 503, 504}:
-                break
-            time.sleep(min(30, 2 ** attempt * 3))
-    raise RuntimeError(f"Wikidata query failed: {last_error}")
+    for endpoint in ENDPOINTS:
+        request = Request(
+            endpoint + "?" + params,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/sparql-results+json, application/json",
+            },
+        )
+        for attempt in range(2):
+            try:
+                with urlopen(request, timeout=QUERY_TIMEOUT_SECONDS) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+                bindings = payload.get("results", {}).get("bindings")
+                if not isinstance(bindings, list):
+                    raise ValueError("Unexpected SPARQL response: results.bindings is missing")
+                return bindings
+            except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, ValueError) as exc:
+                last_error = exc
+                if isinstance(exc, HTTPError) and exc.code not in {429, 500, 502, 503, 504}:
+                    break
+                if attempt == 0:
+                    time.sleep(3)
+    raise RuntimeError(f"All Wikidata SPARQL endpoints failed: {last_error}")
 
 def robots_allows(url: str) -> bool:
     p = urlsplit(url)
