@@ -101,7 +101,7 @@ def fetch_wikidata(limit: int) -> list[dict]:
             with urlopen(request, timeout=30) as response:
                 payload = json.loads(response.read().decode("utf-8"))
             return payload.get("results", {}).get("bindings", [])
-        except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError) as exc:
             last_error = exc
             if isinstance(exc, HTTPError) and exc.code not in {429, 500, 502, 503, 504}:
                 break
