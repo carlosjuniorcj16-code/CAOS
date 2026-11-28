@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-26T17:48:11+00:00",
+  "updated_at": "2026-11-28T02:01:26+00:00",
   "window_days": 45,
   "sources": [
     "arXiv",
@@ -11,78 +11,81 @@
   "items": [
     {
       "area": "Inteligência artificial",
-      "title": "Physics-Motivated Machine Learning Prediction of Hubbard Interaction Parameters in Transition-Metal Oxides.",
-      "published": "2026-11-26",
+      "title": "Learning-Based Grey Wolf Optimizer for Resource Optimization Design in Cloud-Edge Collaborative Environments",
+      "published": "2026-11-28",
       "authors": [
-        "Kim J",
-        "Reddy IR",
-        "Kim B",
-        "Kim S"
+        "Tian Wang",
+        "Linli Xu",
+        "Lei Zhou",
+        "Bohan Zhang",
+        "Mingze Huang"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43096939/",
-      "source": "PubMed",
-      "doi": "10.1021/acs.jpclett.6c02654",
-      "venue": "The journal of physical chemistry letters"
+      "url": "https://doi.org/10.1142/s0218126626503196",
+      "source": "Crossref",
+      "doi": "10.1142/s0218126626503196",
+      "venue": "Journal of Circuits, Systems and Computers"
     },
     {
       "area": "Linguagem e comunicação",
-      "title": "Equity in Digital Health: A Scoping Review on Cultural Tailoring and Co-Design of Telehealth Interventions with Immigrants and Refugees.",
-      "published": "2026-11-26",
+      "title": "Correction to “Artificial intelligence and knowledge research networks between Central Asia and the European Union: A bibliometric study using OpenAlex (2000–2024)”",
+      "published": "2026-11-28",
       "authors": [
-        "Allana S",
-        "Jeyakumaran T",
-        "Rathod D",
-        "Khan M",
-        "Blake T",
-        "Ku D"
+        "Alyona Dmitriyeva",
+        "Zhaslan Nurbayev",
+        "Ruslan Abdullin",
+        "Yerbolat Sergazin",
+        "Balaussa Seilkhan"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43096990/",
-      "source": "PubMed",
-      "doi": "10.1177/2752535x261507136",
-      "venue": "Community health equity research & policy"
+      "url": "https://doi.org/10.47909/ijsmc.423",
+      "source": "Crossref",
+      "doi": "10.47909/ijsmc.423",
+      "venue": "Iberoamerican Journal of Science Measurement and Communication"
     },
     {
       "area": "Robótica e sistemas autônomos",
-      "title": "Global Agentic Healthcare Intelligence",
-      "published": "2026-11-26",
+      "title": "Comparative analysis of three classification systems for Mullerian anomalies using magnetic resonance imaging",
+      "published": "2026-11-28",
       "authors": [
-        "Mostafa Mohamad",
-        "Ganka Ivanova",
-        "Rakan Alhrahsheh",
-        "Tareq N. Hashem"
+        "Mousam Panigrahi",
+        "Mohit K Shrivastva"
       ],
-      "url": "https://doi.org/10.3991/ijoe.v22i11.63310",
+      "url": "https://doi.org/10.4329/wjr.127277",
       "source": "Crossref",
-      "doi": "10.3991/ijoe.v22i11.63310",
-      "venue": "International Journal of Online and Biomedical Engineering (iJOE)"
+      "doi": "10.4329/wjr.127277",
+      "venue": "World Journal of Radiology"
     },
     {
       "area": "Biociências e saúde",
-      "title": "The tape of life has run once, and what that means for biological foundation models.",
-      "published": "2026-11-26",
+      "title": "From formulation stability to soil-plant performance: Development and validation of an Azospirillum brasilense biostimulant for L’Aquila Saffron PDO",
+      "published": "2026-11-28",
       "authors": [
-        "Matsen FA 4th",
-        "Song YS"
+        "Beatrice Farda",
+        "Rihab Djebaili",
+        "Loretta Pace",
+        "Giancarlo Pagnani",
+        "Michele Pisante",
+        "Marika Pellegrini"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43096923/",
-      "source": "PubMed",
-      "doi": "10.1093/genetics/iyag325",
-      "venue": "Genetics"
+      "url": "https://doi.org/10.1007/s00374-026-02078-5",
+      "source": "Crossref",
+      "doi": "10.1007/s00374-026-02078-5",
+      "venue": "Biology and Fertility of Soils"
     },
     {
       "area": "Terra, clima e espaço",
-      "title": "Seasonal water scarcity and household storage practices as determinants of microbial contamination in stored drinking water in remote karst highlands of northern Vietnam.",
-      "published": "2026-11-26",
+      "title": "Enhancing SDLC Efficiency: A Case Study Comparing Low-Code and Traditional Development Approaches",
+      "published": "2026-11-28",
       "authors": [
-        "Nguyen HT",
-        "Kashima S",
-        "Meng X",
-        "Gong X"
+        "Hyggor da Silva Medeiros",
+        "Julio Jordanny Herrera Moncayo",
+        "Leandro De Souza Bezerra",
+        "Jefferson Tiago Santos De Oliveira",
+        "Fernando Trinidad España"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43096905/",
-      "source": "PubMed",
-      "doi": "10.1080/09603123.2026.2768357",
-      "venue": "International journal of environmental health research"
+      "url": "https://doi.org/10.3897/jucs.174345",
+      "source": "Crossref",
+      "doi": "10.3897/jucs.174345",
+      "venue": "JUCS - Journal of Universal Computer Science"
     }
   ],
   "source_health": {
@@ -91,7 +94,7 @@
     "ai:PubMed": "ok",
     "ai:Crossref": "ok",
     "language:arXiv": "ok",
-    "language:Europe PMC": "error: The read operation timed out",
+    "language:Europe PMC": "ok",
     "language:PubMed": "ok",
     "language:Crossref": "ok",
     "robotics:arXiv": "ok",
@@ -107,7 +110,7 @@
     "earth-space:PubMed": "ok",
     "earth-space:Crossref": "ok",
     "datacenters:arXiv": "ok",
-    "datacenters:Europe PMC": "error: The read operation timed out",
+    "datacenters:Europe PMC": "ok",
     "datacenters:PubMed": "ok",
     "datacenters:Crossref": "ok",
     "quantum:arXiv": "ok",

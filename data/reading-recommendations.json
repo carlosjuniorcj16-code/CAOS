@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T17:48:11+00:00",
+  "updated_at": "2026-11-28T02:01:26+00:00",
   "window_days": 45,
   "method": "Recent bibliographic metadata from primary or scholarly index APIs; newest-first within each subject; no quality or popularity ranking.",
   "sources": [
@@ -16,76 +16,75 @@
       "items": [
         {
           "area": "Inteligência artificial",
-          "title": "Physics-Motivated Machine Learning Prediction of Hubbard Interaction Parameters in Transition-Metal Oxides.",
-          "published": "2026-11-26",
+          "title": "Learning-Based Grey Wolf Optimizer for Resource Optimization Design in Cloud-Edge Collaborative Environments",
+          "published": "2026-11-28",
           "authors": [
-            "Kim J",
-            "Reddy IR",
-            "Kim B",
-            "Kim S"
+            "Tian Wang",
+            "Linli Xu",
+            "Lei Zhou",
+            "Bohan Zhang",
+            "Mingze Huang"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096939/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpclett.6c02654",
-          "venue": "The journal of physical chemistry letters"
+          "url": "https://doi.org/10.1142/s0218126626503196",
+          "source": "Crossref",
+          "doi": "10.1142/s0218126626503196",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Inteligência artificial",
-          "title": "The tape of life has run once, and what that means for biological foundation models.",
-          "published": "2026-11-26",
+          "title": "Model Artificial Neural Network (NARX) untuk Prediksi Harga Emas sebagai Dasar Pengambilan Keputusan Investasi di Tengah Ketidakpastian Ekonomi",
+          "published": "2026-11-28",
           "authors": [
-            "Matsen FA 4th",
-            "Song YS"
+            "Baginda Hamzah"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096923/",
-          "source": "PubMed",
-          "doi": "10.1093/genetics/iyag325",
-          "venue": "Genetics"
+          "url": "https://doi.org/10.47747/snfmi.v4i1.3831",
+          "source": "Crossref",
+          "doi": "10.47747/snfmi.v4i1.3831",
+          "venue": "Prosiding Seminar Nasional Forum Manajemen Indonesia - e-ISSN 3026-4499"
         },
         {
           "area": "Inteligência artificial",
-          "title": "Pancreatic Neuroendocrine Neoplasms (PanNENs): From Historical Evolution to Precision Oncology in the Era of Molecular Imaging, Genomics, and Theranostics.",
-          "published": "2026-11-26",
+          "title": "Integrating engineered image features with artificial intelligence to distinguish non-small cell lung cancer histological subtypes",
+          "published": "2026-11-28",
           "authors": [
-            "Okabayashi T",
-            "Tabuchi M",
-            "Tokumaru T",
-            "Uemura S",
-            "Tamura S"
+            "Ke Jin",
+            "Ye Li",
+            "Yi-Xuan Wang",
+            "Yin Zhang",
+            "Ning Zhan",
+            "Wen-Cheng Shao"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096918/",
-          "source": "PubMed",
-          "doi": "10.1080/07357907.2026.2763587",
-          "venue": "Cancer investigation"
+          "url": "https://doi.org/10.4329/wjr.127481",
+          "source": "Crossref",
+          "doi": "10.4329/wjr.127481",
+          "venue": "World Journal of Radiology"
         },
         {
           "area": "Inteligência artificial",
-          "title": "Unimolecular Kinetics of Alkoxy Radicals: A Computational Approach to Understanding Branching Ratios.",
-          "published": "2026-11-26",
+          "title": "A Gossip Learning-based Multi Agent Reinforcement Learning for Intrusion Detection",
+          "published": "2026-11-28",
           "authors": [
-            "Singh B",
-            "Johnson VL",
-            "Sharma S"
+            "Faten Louati",
+            "Ikram Amous"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096848/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpca.6c05211",
-          "venue": "The journal of physical chemistry. A"
+          "url": "https://doi.org/10.3897/jucs.202976",
+          "source": "Crossref",
+          "doi": "10.3897/jucs.202976",
+          "venue": "JUCS - Journal of Universal Computer Science"
         },
         {
           "area": "Inteligência artificial",
-          "title": "In Situ Optical Spectroscopy to Investigate the Early Stage of Crystallization from Solution.",
-          "published": "2026-11-26",
+          "title": "Pedagogical Design and Learning Outcomes in Online and Blended Library and Information Science Education",
+          "published": "2026-11-28",
           "authors": [
-            "Hedderick KR",
-            "Barbosa N",
-            "Brazard J",
-            "Adachi TBM"
+            "Rani Siti Fitriani",
+            "Saima Hasin Roompa",
+            "Rita Aguilar Gonzalez"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096803/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpcb.6c05782",
-          "venue": "The journal of physical chemistry. B"
+          "url": "https://doi.org/10.65140/gei202604.26",
+          "source": "Crossref",
+          "doi": "10.65140/gei202604.26",
+          "venue": "Global Education Insights"
         }
       ]
     },
@@ -95,77 +94,77 @@
       "items": [
         {
           "area": "Linguagem e comunicação",
-          "title": "Equity in Digital Health: A Scoping Review on Cultural Tailoring and Co-Design of Telehealth Interventions with Immigrants and Refugees.",
-          "published": "2026-11-26",
+          "title": "Correction to “Artificial intelligence and knowledge research networks between Central Asia and the European Union: A bibliometric study using OpenAlex (2000–2024)”",
+          "published": "2026-11-28",
           "authors": [
-            "Allana S",
-            "Jeyakumaran T",
-            "Rathod D",
-            "Khan M",
-            "Blake T",
-            "Ku D"
+            "Alyona Dmitriyeva",
+            "Zhaslan Nurbayev",
+            "Ruslan Abdullin",
+            "Yerbolat Sergazin",
+            "Balaussa Seilkhan"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096990/",
-          "source": "PubMed",
-          "doi": "10.1177/2752535x261507136",
-          "venue": "Community health equity research & policy"
+          "url": "https://doi.org/10.47909/ijsmc.423",
+          "source": "Crossref",
+          "doi": "10.47909/ijsmc.423",
+          "venue": "Iberoamerican Journal of Science Measurement and Communication"
         },
         {
           "area": "Linguagem e comunicação",
-          "title": "Impacts of COVID-19 on Modifiable Lifestyle Behaviors and Associations With Mental Well-Being Among Medical Students and Health Care Workers in Vietnam: Cross-Sectional Online Survey.",
-          "published": "2026-11-26",
+          "title": "ലിംഗപദവി: സൈദ്ധാന്തിക സമീപനങ്ങൾ",
+          "published": "2026-11-28",
           "authors": [
-            "Nguyen TT",
-            "Nguyen HT",
-            "Boyer L",
-            "Auquier P",
-            "Fond G",
-            "Nguyen DC"
+            "Martin Joseph"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096953/",
+          "url": "https://doi.org/10.63090/ijmlrs/3108.1924.0032",
+          "source": "Crossref",
+          "doi": "10.63090/ijmlrs/3108.1924.0032",
+          "venue": "Indian Journal of Malayalam Language Research Studies - സംസ്‌കൃതി"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "Corrección de “Prácticas y políticas editoriales de las revistas científicas que incomodan a los autores”",
+          "published": "2026-11-28",
+          "authors": [
+            "Francisco Ganga-Contreras",
+            "Nancy Alarcón",
+            "Wendolin Suárez-Amaya",
+            "David Álvarez-Maldonado"
+          ],
+          "url": "https://doi.org/10.47909/ijsmc.424",
+          "source": "Crossref",
+          "doi": "10.47909/ijsmc.424",
+          "venue": "Iberoamerican Journal of Science Measurement and Communication"
+        },
+        {
+          "area": "Linguagem e comunicação",
+          "title": "National Nutrition Week Engagement and Behavioral Adherence to Dietary Recommendations Across BMI Categories in Chinese Adults: Cross-Sectional Study.",
+          "published": "2026-11-27",
+          "authors": [
+            "Wei Q",
+            "Yao K",
+            "Liu S",
+            "Wang L",
+            "Xiao L",
+            "Wang F"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102977/",
           "source": "PubMed",
-          "doi": "10.2196/85697",
+          "doi": "10.2196/109903",
           "venue": "JMIR public health and surveillance"
         },
         {
           "area": "Linguagem e comunicação",
-          "title": "The tape of life has run once, and what that means for biological foundation models.",
-          "published": "2026-11-26",
+          "title": "Verification Behavior and Metacognitive Calibration in AI-Assisted Clinical Reasoning Among Physiotherapy Students: Cross-Sectional, 3-Group Comparative Study.",
+          "published": "2026-11-27",
           "authors": [
-            "Matsen FA 4th",
-            "Song YS"
+            "Kurç D",
+            "Dansuk E",
+            "Tunalı AN"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096923/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102976/",
           "source": "PubMed",
-          "doi": "10.1093/genetics/iyag325",
-          "venue": "Genetics"
-        },
-        {
-          "area": "Linguagem e comunicação",
-          "title": "Analysis of flurothyl-induced seizures and epileptogenesis in mice with targeted deletions of exons 3 and 4 in Dock7.",
-          "published": "2026-11-26",
-          "authors": [
-            "Ferland RJ",
-            "Lizotte T",
-            "Becker KA"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096886/",
-          "source": "PubMed",
-          "doi": "10.1002/epi4.70383",
-          "venue": "Epilepsia open"
-        },
-        {
-          "area": "Linguagem e comunicação",
-          "title": "Physical Rules of Heterocycle-Controlled Electronic Structure in Peptide-Chromophore Conjugates: A Comparative DFT/TD-DFT Study of Benzotriazole- and Benzothiazole-Cinnamate-Glycine Systems.",
-          "published": "2026-11-26",
-          "authors": [
-            "Shidpour R",
-            "Al-Abri M"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096852/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpca.6c05913",
-          "venue": "The journal of physical chemistry. A"
+          "doi": "10.2196/105832",
+          "venue": "JMIR medical education"
         }
       ]
     },
@@ -175,80 +174,71 @@
       "items": [
         {
           "area": "Robótica e sistemas autônomos",
-          "title": "Global Agentic Healthcare Intelligence",
-          "published": "2026-11-26",
+          "title": "Comparative analysis of three classification systems for Mullerian anomalies using magnetic resonance imaging",
+          "published": "2026-11-28",
           "authors": [
-            "Mostafa Mohamad",
-            "Ganka Ivanova",
-            "Rakan Alhrahsheh",
-            "Tareq N. Hashem"
+            "Mousam Panigrahi",
+            "Mohit K Shrivastva"
           ],
-          "url": "https://doi.org/10.3991/ijoe.v22i11.63310",
+          "url": "https://doi.org/10.4329/wjr.127277",
           "source": "Crossref",
-          "doi": "10.3991/ijoe.v22i11.63310",
-          "venue": "International Journal of Online and Biomedical Engineering (iJOE)"
+          "doi": "10.4329/wjr.127277",
+          "venue": "World Journal of Radiology"
         },
         {
           "area": "Robótica e sistemas autônomos",
-          "title": "A Systems Level Logic Model of the Neuroinflammatory Response in Late Stage <scp>G93A SOD1</scp> Mice",
-          "published": "2026-11-26",
+          "title": "Learning-Based Grey Wolf Optimizer for Resource Optimization Design in Cloud-Edge Collaborative Environments",
+          "published": "2026-11-28",
           "authors": [
-            "Alex Foster‐Powell",
-            "Donald E. Mager",
-            "Amin Rostami‐Hodjegan",
-            "Guy Meno‐Tetang",
-            "Kayode Ogungbenro"
+            "Tian Wang",
+            "Linli Xu",
+            "Lei Zhou",
+            "Bohan Zhang",
+            "Mingze Huang"
           ],
-          "url": "https://doi.org/10.1002/psp4.70357",
+          "url": "https://doi.org/10.1142/s0218126626503196",
           "source": "Crossref",
-          "doi": "10.1002/psp4.70357",
-          "venue": "CPT: Pharmacometrics &amp; Systems Pharmacology"
+          "doi": "10.1142/s0218126626503196",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Robótica e sistemas autônomos",
-          "title": "Correction to “ZnO-Modified Carboxymethyl Cellulose Hydrogels for Sustainable Control of Fat, Oil, and Grease Deposition in Sewer Systems”",
-          "published": "2026-11-26",
+          "title": "THE <i>k</i> -FLIP ISING GAME",
+          "published": "2026-11-28",
           "authors": [
-            "Kaphi",
-            "Sachin Yadav",
-            "Sachin Yadav",
-            "Rina Sharma",
-            "Anuj Krishna",
-            "Biplob Kumar. Pramanik"
+            "ALEKSANDR KOVALENKO",
+            "ANDREY LEONIDOV"
           ],
-          "url": "https://doi.org/10.1021/acsestwater.6c01596",
+          "url": "https://doi.org/10.1142/s0219525926500104",
           "source": "Crossref",
-          "doi": "10.1021/acsestwater.6c01596",
-          "venue": "ACS ES&amp;T Water"
+          "doi": "10.1142/s0219525926500104",
+          "venue": "Advances in Complex Systems"
         },
         {
           "area": "Robótica e sistemas autônomos",
-          "title": "Phenolamides: Connecting Plant Metabolism, Pollinator Ecology, Food Systems and Human Nutrition",
-          "published": "2026-11-26",
+          "title": "Coordinated Threshold-Voltage Reduction for a Sub-1 V 32 nm Bulk-FinFET mm-Wave Front-End: A TC-Cascode LNA, Current-Reuse Gilbert Mixer and Neutralized PA in PTM-MG",
+          "published": "2026-11-28",
           "authors": [
-            "Cristina Matarazzo",
-            "Rosaria Cozzolino",
-            "Jean-Luc Wolfender",
-            "Andrei Zviagin",
-            "Antonio De Cristofaro",
-            "Massimo Iorizzo"
+            "T. Tamilselvi",
+            "A. Kaleel Rahuman"
           ],
-          "url": "https://doi.org/10.3390/molecules31234321",
+          "url": "https://doi.org/10.1142/s0218126626503135",
           "source": "Crossref",
-          "doi": "10.3390/molecules31234321",
-          "venue": "Molecules"
+          "doi": "10.1142/s0218126626503135",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Robótica e sistemas autônomos",
-          "title": "Characterizing Dynamic Cognitive Systems",
-          "published": "2026-11-26",
+          "title": "Local boundedness for solutions to mixed local and nonlocal elliptic systems",
+          "published": "2026-11-28",
           "authors": [
-            "Felipe De Brigard"
+            "Jiaxiang Zhang",
+            "Shenzhou Zheng"
           ],
-          "url": "https://doi.org/10.1007/s10670-026-01194-w",
+          "url": "https://doi.org/10.1515/gmj-2026-3059",
           "source": "Crossref",
-          "doi": "10.1007/s10670-026-01194-w",
-          "venue": "Erkenntnis"
+          "doi": "10.1515/gmj-2026-3059",
+          "venue": "Georgian Mathematical Journal"
         }
       ]
     },
@@ -258,78 +248,77 @@
       "items": [
         {
           "area": "Biociências e saúde",
-          "title": "The tape of life has run once, and what that means for biological foundation models.",
-          "published": "2026-11-26",
+          "title": "From formulation stability to soil-plant performance: Development and validation of an Azospirillum brasilense biostimulant for L’Aquila Saffron PDO",
+          "published": "2026-11-28",
           "authors": [
-            "Matsen FA 4th",
-            "Song YS"
+            "Beatrice Farda",
+            "Rihab Djebaili",
+            "Loretta Pace",
+            "Giancarlo Pagnani",
+            "Michele Pisante",
+            "Marika Pellegrini"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096923/",
-          "source": "PubMed",
-          "doi": "10.1093/genetics/iyag325",
-          "venue": "Genetics"
+          "url": "https://doi.org/10.1007/s00374-026-02078-5",
+          "source": "Crossref",
+          "doi": "10.1007/s00374-026-02078-5",
+          "venue": "Biology and Fertility of Soils"
         },
         {
           "area": "Biociências e saúde",
-          "title": "Pancreatic Neuroendocrine Neoplasms (PanNENs): From Historical Evolution to Precision Oncology in the Era of Molecular Imaging, Genomics, and Theranostics.",
-          "published": "2026-11-26",
+          "title": "Sintesis Hijau Nanopartikel Perak (AgNP) berbasis Ekstrak Tanaman: Karakterisasi dan Aktivitas Antibakteri",
+          "published": "2026-11-28",
           "authors": [
-            "Okabayashi T",
-            "Tabuchi M",
-            "Tokumaru T",
-            "Uemura S",
-            "Tamura S"
+            "Rahma Amalia",
+            "Munir Alinu Mulki",
+            "Yesica Natalia Lawrence"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096918/",
-          "source": "PubMed",
-          "doi": "10.1080/07357907.2026.2763587",
-          "venue": "Cancer investigation"
+          "url": "https://doi.org/10.30743/best.v8i2.14169",
+          "source": "Crossref",
+          "doi": "10.30743/best.v8i2.14169",
+          "venue": "BEST Journal (Biology Education, Sains and Technology)"
         },
         {
           "area": "Biociências e saúde",
-          "title": "Hippocampal representations differentiate reactive and anticipatory responses during foraging under threat.",
-          "published": "2026-11-26",
+          "title": "Iron, inflammation, and fibroblast growth factor 23: Integrating molecular crosstalk, cardiovascular biology, and therapeutic perspectives",
+          "published": "2026-11-28",
           "authors": [
-            "Damphousse CC",
-            "Calvin OL",
-            "Redish AD"
+            "Javier Donate-Correa"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096904/",
-          "source": "PubMed",
-          "doi": "10.7554/elife.111762",
-          "venue": "eLife"
+          "url": "https://doi.org/10.5528/wjtm.127250",
+          "source": "Crossref",
+          "doi": "10.5528/wjtm.127250",
+          "venue": "World Journal of Translational Medicine"
         },
         {
           "area": "Biociências e saúde",
-          "title": "Cnidarian mucosae: structural and molecular parallels with human mucosal barriers.",
-          "published": "2026-11-26",
+          "title": "Whole-plant visualization of endogenous RNA with an RNA-sensing fluorescence reporter toward single-molecule imaging.",
+          "published": "2026-11-27",
           "authors": [
-            "Oakley J",
-            "Burgess JG",
-            "Bythell J",
-            "Cummins S"
+            "Bai J",
+            "Zhang J",
+            "Ren H",
+            "Pan S",
+            "Tao Y",
+            "Lei M"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096672/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102931/",
           "source": "PubMed",
-          "doi": "10.1080/21688370.2026.2769879",
-          "venue": "Tissue barriers"
+          "doi": "10.1126/sciadv.aeh1555",
+          "venue": "Science advances"
         },
         {
           "area": "Biociências e saúde",
-          "title": "Fibrinogen Replacement in Liver Transplantation: A Clinical Review of Fibrinogen Concentrate Versus Cryoprecipitate for Hemostatic Management.",
-          "published": "2026-11-26",
+          "title": "New insights into cholesterol homeostasis and their clinical translation.",
+          "published": "2026-11-27",
           "authors": [
-            "Doyal AS",
-            "Vander Ploeg MR",
-            "Smeltz A",
-            "Egan E",
-            "McLean D",
-            "Quinn J"
+            "Hayes M",
+            "Connolly D",
+            "Dias IHK"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096185/",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102889/",
           "source": "PubMed",
-          "doi": "10.1177/08850666261493092",
-          "venue": "Journal of intensive care medicine"
+          "doi": "10.1097/mco.0000000000001271",
+          "venue": "Current opinion in clinical nutrition and metabolic care"
         }
       ]
     },
@@ -339,79 +328,71 @@
       "items": [
         {
           "area": "Terra, clima e espaço",
-          "title": "Seasonal water scarcity and household storage practices as determinants of microbial contamination in stored drinking water in remote karst highlands of northern Vietnam.",
-          "published": "2026-11-26",
+          "title": "Enhancing SDLC Efficiency: A Case Study Comparing Low-Code and Traditional Development Approaches",
+          "published": "2026-11-28",
           "authors": [
-            "Nguyen HT",
-            "Kashima S",
-            "Meng X",
-            "Gong X"
+            "Hyggor da Silva Medeiros",
+            "Julio Jordanny Herrera Moncayo",
+            "Leandro De Souza Bezerra",
+            "Jefferson Tiago Santos De Oliveira",
+            "Fernando Trinidad España"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096905/",
-          "source": "PubMed",
-          "doi": "10.1080/09603123.2026.2768357",
-          "venue": "International journal of environmental health research"
-        },
-        {
-          "area": "Terra, clima e espaço",
-          "title": "Towards Clarifying the Duty to Minimise Healthcare's Environmental Impacts.",
-          "published": "2026-11-26",
-          "authors": [
-            "Pratt B"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096148/",
-          "source": "PubMed",
-          "doi": "10.1111/bioe.70214",
-          "venue": "Bioethics"
-        },
-        {
-          "area": "Terra, clima e espaço",
-          "title": "\"We Felt This Tether to the Hospital\": Lessons From the 2025 Los Angeles Wildfires for Climate-Era Disaster Preparedness in Pediatric Cancer Care.",
-          "published": "2026-11-26",
-          "authors": [
-            "Schmitt ML",
-            "Weaver K",
-            "Riego APD",
-            "Zamora E",
-            "Maese LD",
-            "Ghosh T"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096127/",
-          "source": "PubMed",
-          "doi": "10.1002/1545-5017.70839",
-          "venue": "Pediatric blood & cancer"
-        },
-        {
-          "area": "Terra, clima e espaço",
-          "title": "The combined effects of co-exposure and temperature on a planktonic crustacean.",
-          "published": "2026-11-26",
-          "authors": [
-            "Bereza E",
-            "Almkiass G",
-            "Halle S",
-            "Ben-Ami F"
-          ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43094411/",
-          "source": "PubMed",
-          "doi": "10.1098/rstb.2025.0294",
-          "venue": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences"
-        },
-        {
-          "area": "Terra, clima e espaço",
-          "title": "Training load and postexercise biochemical markers during small-sided games with and without a floater in U-18 soccer players",
-          "published": "2026-11-26",
-          "authors": [
-            "Junghyun Lee",
-            "Hokyung Choi",
-            "Kwonseok Han",
-            "Yoonhwan Kim",
-            "Taewan Kim",
-            "Jiwoo Im"
-          ],
-          "url": "https://doi.org/10.1186/s13102-026-02291-7",
+          "url": "https://doi.org/10.3897/jucs.174345",
           "source": "Crossref",
-          "doi": "10.1186/s13102-026-02291-7",
-          "venue": "BMC Sports Science, Medicine and Rehabilitation"
+          "doi": "10.3897/jucs.174345",
+          "venue": "JUCS - Journal of Universal Computer Science"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "LLAMA3-Powered Threat Hunting with MITRE ATT&amp;amp;CK in Real-Time",
+          "published": "2026-11-28",
+          "authors": [
+            "Dilkhaz Mohammed",
+            "Shahram Jamali"
+          ],
+          "url": "https://doi.org/10.3897/jucs.164056",
+          "source": "Crossref",
+          "doi": "10.3897/jucs.164056",
+          "venue": "JUCS - Journal of Universal Computer Science"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "An Evaluation of the Barriers to Uptake of Climate Information Services: The Case of Smallholder Vegetable Farmers in Leribe District, Lesotho",
+          "published": "2026-11-28",
+          "authors": [
+            "R.A. Mojaki",
+            "S.S. Letsoalo",
+            "N.D. Malahlela"
+          ],
+          "url": "https://doi.org/10.17159/2413-3221/2026/v54n9a25365",
+          "source": "Crossref",
+          "doi": "10.17159/2413-3221/2026/v54n9a25365",
+          "venue": "South African Journal of Agricultural Extension (SAJAE)"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "Fact or Fiction? Fake News Detection with Metadata Fusion and Transformer Models",
+          "published": "2026-11-28",
+          "authors": [
+            "Furkan Göz"
+          ],
+          "url": "https://doi.org/10.3897/jucs.167630",
+          "source": "Crossref",
+          "doi": "10.3897/jucs.167630",
+          "venue": "JUCS - Journal of Universal Computer Science"
+        },
+        {
+          "area": "Terra, clima e espaço",
+          "title": "A Gossip Learning-based Multi Agent Reinforcement Learning for Intrusion Detection",
+          "published": "2026-11-28",
+          "authors": [
+            "Faten Louati",
+            "Ikram Amous"
+          ],
+          "url": "https://doi.org/10.3897/jucs.202976",
+          "source": "Crossref",
+          "doi": "10.3897/jucs.202976",
+          "venue": "JUCS - Journal of Universal Computer Science"
         }
       ]
     },
@@ -421,78 +402,83 @@
       "items": [
         {
           "area": "Data centers e infraestrutura computacional",
-          "title": "Recent advances in transition metal based catalysts for efficient removal of organic pollutants: mechanisms, performance and challenges",
-          "published": "2026-11-26",
+          "title": "That's SIC: How Government Data Underrepresents the UK's Regional Music Sectors",
+          "published": "2026-11-28",
           "authors": [
-            "Noura Sghir",
-            "Mustapha Lamrani",
-            "Nadia El Baraka",
-            "Hanan Taybi",
-            "Abdeslam Mouadili"
+            "Richard Anderson",
+            "Jacob Simmons",
+            "Mathew Flynn"
           ],
-          "url": "https://doi.org/10.1007/s13738-026-03715-4",
+          "url": "https://doi.org/10.2478/ijmbr-2026-0016",
           "source": "Crossref",
-          "doi": "10.1007/s13738-026-03715-4",
-          "venue": "Journal of the Iranian Chemical Society"
+          "doi": "10.2478/ijmbr-2026-0016",
+          "venue": "International Journal of Music Business Research"
         },
         {
           "area": "Data centers e infraestrutura computacional",
-          "title": "Reproducible performance evaluation of active crypto-ransomware strains",
-          "published": "2026-11-26",
+          "title": "Numerical simulation and experimental verification of filling, solidification, and warpage for large scale integrated aluminum alloy high-pressure die casting parts",
+          "published": "2026-11-28",
           "authors": [
-            "Simon Davies",
-            "Richard Macfarlane"
+            "Xiao-ying Ma",
+            "Yu-ling Lang",
+            "Ming-lei Li",
+            "Shi-wen Xu",
+            "Jia-xin Hou",
+            "Hai-ping Chang"
           ],
-          "url": "https://doi.org/10.1007/s11416-026-00676-3",
+          "url": "https://doi.org/10.1007/s41230-026-4277-4",
           "source": "Crossref",
-          "doi": "10.1007/s11416-026-00676-3",
-          "venue": "Journal of Computer Virology and Hacking Techniques"
+          "doi": "10.1007/s41230-026-4277-4",
+          "venue": "China Foundry"
         },
         {
           "area": "Data centers e infraestrutura computacional",
-          "title": "Rescue and curation of 1950s biodiversity records from northeastern Atlantic rocky shores",
-          "published": "2026-11-26",
+          "title": "Learning-Based Grey Wolf Optimizer for Resource Optimization Design in Cloud-Edge Collaborative Environments",
+          "published": "2026-11-28",
           "authors": [
-            "Ana Luísa Sinde-Mano",
-            "Cátia Monteiro",
-            "Rocio Nieto-Vilela",
-            "Rita da Silva",
-            "Joana Pereira",
-            "Fernando P. Lima"
+            "Tian Wang",
+            "Linli Xu",
+            "Lei Zhou",
+            "Bohan Zhang",
+            "Mingze Huang"
           ],
-          "url": "https://doi.org/10.1038/s41597-026-08947-w",
+          "url": "https://doi.org/10.1142/s0218126626503196",
           "source": "Crossref",
-          "doi": "10.1038/s41597-026-08947-w",
-          "venue": "Scientific Data"
+          "doi": "10.1142/s0218126626503196",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Data centers e infraestrutura computacional",
-          "title": "The Effect of Job Placement and Competence on Employee Performance Through Job Satisfaction in Liquiçá Municipality, Timor-Leste",
-          "published": "2026-11-26",
+          "title": "From formulation stability to soil-plant performance: Development and validation of an Azospirillum brasilense biostimulant for L’Aquila Saffron PDO",
+          "published": "2026-11-28",
           "authors": [
-            "Olivia dos Santos da Conceição",
-            "Dhani Ichsanuddin Nur",
-            "Oka Warmana"
+            "Beatrice Farda",
+            "Rihab Djebaili",
+            "Loretta Pace",
+            "Giancarlo Pagnani",
+            "Michele Pisante",
+            "Marika Pellegrini"
           ],
-          "url": "https://doi.org/10.9734/ajeba/2026/v26i122444",
+          "url": "https://doi.org/10.1007/s00374-026-02078-5",
           "source": "Crossref",
-          "doi": "10.9734/ajeba/2026/v26i122444",
-          "venue": "Asian Journal of Economics, Business and Accounting"
+          "doi": "10.1007/s00374-026-02078-5",
+          "venue": "Biology and Fertility of Soils"
         },
         {
           "area": "Data centers e infraestrutura computacional",
-          "title": "Convolution based techniques for computing self attraction and loading in MOM6",
-          "published": "2026-11-26",
+          "title": "High-Speed Terpene Pathway Analysis &lt;i&gt;via&lt;/i&gt; Double-Ended Transition State Search Method Combined with ML Potentials Uncovers the Intricate Rearrangement Reaction in Spiroalbatene Biosynthesis",
+          "published": "2026-11-28",
           "authors": [
-            "Anthony Chen",
-            "He Wang",
-            "Brian K. Arbic",
-            "Robert Krasny"
+            "Moe Nakano",
+            "Masayuki Karasawa",
+            "Takuto Ohmura",
+            "Tohru Terada",
+            "Hajime Sato"
           ],
-          "url": "https://doi.org/10.5194/gmd-19-11337-2026",
+          "url": "https://doi.org/10.1248/cpb.c26-00434",
           "source": "Crossref",
-          "doi": "10.5194/gmd-19-11337-2026",
-          "venue": "Geoscientific Model Development"
+          "doi": "10.1248/cpb.c26-00434",
+          "venue": "Chemical and Pharmaceutical Bulletin"
         }
       ]
     },
@@ -502,78 +488,73 @@
       "items": [
         {
           "area": "Computação e informação quânticas",
-          "title": "Investigating the effectiveness and boundary conditions of generative AI scaffolding in science game-based learning",
-          "published": "2026-11-26",
+          "title": "An Evaluation of the Barriers to Uptake of Climate Information Services: The Case of Smallholder Vegetable Farmers in Leribe District, Lesotho",
+          "published": "2026-11-28",
           "authors": [
-            "Yulin Gong",
-            "Minkai Wang",
-            "Wei Li",
-            "Hanjie Gu",
-            "Haihua Peng",
-            "Huijuan Chi"
+            "R.A. Mojaki",
+            "S.S. Letsoalo",
+            "N.D. Malahlela"
           ],
-          "url": "https://doi.org/10.1007/s10639-026-14188-6",
+          "url": "https://doi.org/10.17159/2413-3221/2026/v54n9a25365",
           "source": "Crossref",
-          "doi": "10.1007/s10639-026-14188-6",
-          "venue": "Education and Information Technologies"
+          "doi": "10.17159/2413-3221/2026/v54n9a25365",
+          "venue": "South African Journal of Agricultural Extension (SAJAE)"
         },
         {
           "area": "Computação e informação quânticas",
-          "title": "Hybrid CNN–Quantum Representation Learning with Tri-Level Feature Fusion for Intelligent Fruit and Leaf Disease Recognition",
-          "published": "2026-11-26",
+          "title": "Pedagogical Design and Learning Outcomes in Online and Blended Library and Information Science Education",
+          "published": "2026-11-28",
           "authors": [
-            "N. Mageshkumar",
-            "Srinivasan Saravanan",
-            "R. Manikandan",
-            "A. Vijayaraj",
-            "N. Arun Priya"
+            "Rani Siti Fitriani",
+            "Saima Hasin Roompa",
+            "Rita Aguilar Gonzalez"
           ],
-          "url": "https://doi.org/10.1007/s10341-026-02106-6",
+          "url": "https://doi.org/10.65140/gei202604.26",
           "source": "Crossref",
-          "doi": "10.1007/s10341-026-02106-6",
-          "venue": "Applied Fruit Science"
+          "doi": "10.65140/gei202604.26",
+          "venue": "Global Education Insights"
         },
         {
           "area": "Computação e informação quânticas",
-          "title": "Usability as a feature of an information system for health status measures: the DataCIF concept",
-          "published": "2026-11-26",
+          "title": "Beyond the gap: benchmarking MC-PDFT and MRSF-TDDFT for exchange properties in high-spin organic diradicals.",
+          "published": "2026-11-27",
           "authors": [
-            "Paulo Henrique Ferreira de Araújo Barbosa",
-            "Ellen Cristine Ferreira da Silva",
-            "Thiago Vidal Pereira",
-            "Cariele de Aguiar Freitas",
-            "Juliana Martins Pinto",
-            "Jorge Andrés Cormane Angarita"
+            "Odonkor G",
+            "Aqiqi S",
+            "Odoh SO"
           ],
-          "url": "https://doi.org/10.59681/2175-4411.v18.iespecial.2026.1823",
-          "source": "Crossref",
-          "doi": "10.59681/2175-4411.v18.iespecial.2026.1823",
-          "venue": "Journal of Health Informatics"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102880/",
+          "source": "PubMed",
+          "doi": "10.1039/d6cp04147g",
+          "venue": "Physical chemistry chemical physics : PCCP"
         },
         {
           "area": "Computação e informação quânticas",
-          "title": "Convolution based techniques for computing self attraction and loading in MOM6",
-          "published": "2026-11-26",
+          "title": "Hot-injection synthesis of red luminescent titanium nitride quantum dots.",
+          "published": "2026-11-27",
           "authors": [
-            "Anthony Chen",
-            "He Wang",
-            "Brian K. Arbic",
-            "Robert Krasny"
+            "Khaldi SE",
+            "Nayak DD",
+            "Maladan A",
+            "Biju V"
           ],
-          "url": "https://doi.org/10.5194/gmd-19-11337-2026",
-          "source": "Crossref",
-          "doi": "10.5194/gmd-19-11337-2026",
-          "venue": "Geoscientific Model Development"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43102434/",
+          "source": "PubMed",
+          "doi": "10.1039/d6nr03637f",
+          "venue": "Nanoscale"
         },
         {
           "area": "Computação e informação quânticas",
-          "title": "Issue Information",
-          "published": "2026-11-26",
-          "authors": [],
-          "url": "https://doi.org/10.1111/ijpo.70119",
+          "title": "Information management for disassembly and adaptability in buildings",
+          "published": "2026-11-27",
+          "authors": [
+            "Amélie Halbach",
+            "Aurélie de Boissieu"
+          ],
+          "url": "https://doi.org/10.1038/s41598-026-79109-6",
           "source": "Crossref",
-          "doi": "10.1111/ijpo.70119",
-          "venue": "Pediatric Obesity"
+          "doi": "10.1038/s41598-026-79109-6",
+          "venue": "Scientific Reports"
         }
       ]
     },
@@ -583,78 +564,71 @@
       "items": [
         {
           "area": "Energia, termodinâmica e sistemas complexos",
-          "title": "First-Passage Time Fluctuation Theorem and Thermodynamic Bound in Cooperative Biomolecular Networks.",
-          "published": "2026-11-26",
+          "title": "Comparative analysis of three classification systems for Mullerian anomalies using magnetic resonance imaging",
+          "published": "2026-11-28",
           "authors": [
-            "Piephoff DE",
-            "Cao J"
+            "Mousam Panigrahi",
+            "Mohit K Shrivastva"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096934/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpclett.6c02760",
-          "venue": "The journal of physical chemistry letters"
+          "url": "https://doi.org/10.4329/wjr.127277",
+          "source": "Crossref",
+          "doi": "10.4329/wjr.127277",
+          "venue": "World Journal of Radiology"
         },
         {
           "area": "Energia, termodinâmica e sistemas complexos",
-          "title": "Temperature-Dependent Defect Thermodynamics and Nonradiative Recombination in Cubic CsPbBr3: The Role of Anharmonic Lattice Dynamics.",
-          "published": "2026-11-26",
+          "title": "Learning-Based Grey Wolf Optimizer for Resource Optimization Design in Cloud-Edge Collaborative Environments",
+          "published": "2026-11-28",
           "authors": [
-            "Pan J",
-            "Zhou J",
-            "Ren C",
-            "Yang Y",
-            "Wen M",
-            "Huang L"
+            "Tian Wang",
+            "Linli Xu",
+            "Lei Zhou",
+            "Bohan Zhang",
+            "Mingze Huang"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096931/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpclett.6c03243",
-          "venue": "The journal of physical chemistry letters"
+          "url": "https://doi.org/10.1142/s0218126626503196",
+          "source": "Crossref",
+          "doi": "10.1142/s0218126626503196",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Energia, termodinâmica e sistemas complexos",
-          "title": "A Density Functional Theory Study on the Separation of Strontium from Lanthanides and Actinides by TODGA.",
-          "published": "2026-11-26",
+          "title": "THE <i>k</i> -FLIP ISING GAME",
+          "published": "2026-11-28",
           "authors": [
-            "Wang W",
-            "Wang Z",
-            "Dong C",
-            "Ding X"
+            "ALEKSANDR KOVALENKO",
+            "ANDREY LEONIDOV"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096844/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpca.6c03755",
-          "venue": "The journal of physical chemistry. A"
+          "url": "https://doi.org/10.1142/s0219525926500104",
+          "source": "Crossref",
+          "doi": "10.1142/s0219525926500104",
+          "venue": "Advances in Complex Systems"
         },
         {
           "area": "Energia, termodinâmica e sistemas complexos",
-          "title": "Theoretical Kinetic Study on Unimolecular Decomposition of tert-Amyl Methyl Ether.",
-          "published": "2026-11-26",
+          "title": "Coordinated Threshold-Voltage Reduction for a Sub-1 V 32 nm Bulk-FinFET mm-Wave Front-End: A TC-Cascode LNA, Current-Reuse Gilbert Mixer and Neutralized PA in PTM-MG",
+          "published": "2026-11-28",
           "authors": [
-            "Zhang J",
-            "Guo HT",
-            "Ding Q",
-            "Cui Y",
-            "Zhou CW"
+            "T. Tamilselvi",
+            "A. Kaleel Rahuman"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096837/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpca.6c05576",
-          "venue": "The journal of physical chemistry. A"
+          "url": "https://doi.org/10.1142/s0218126626503135",
+          "source": "Crossref",
+          "doi": "10.1142/s0218126626503135",
+          "venue": "Journal of Circuits, Systems and Computers"
         },
         {
           "area": "Energia, termodinâmica e sistemas complexos",
-          "title": "Effect of Surface Topography and Hydrophobicity on the Entropy of Individual Interfacial Water.",
-          "published": "2026-11-26",
+          "title": "Local boundedness for solutions to mixed local and nonlocal elliptic systems",
+          "published": "2026-11-28",
           "authors": [
-            "Kumar A",
-            "Jain M",
-            "Mukherjee A"
+            "Jiaxiang Zhang",
+            "Shenzhou Zheng"
           ],
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43096823/",
-          "source": "PubMed",
-          "doi": "10.1021/acs.jpcb.6c03853",
-          "venue": "The journal of physical chemistry. B"
+          "url": "https://doi.org/10.1515/gmj-2026-3059",
+          "source": "Crossref",
+          "doi": "10.1515/gmj-2026-3059",
+          "venue": "Georgian Mathematical Journal"
         }
       ]
     }
@@ -665,7 +639,7 @@
     "ai:PubMed": "ok",
     "ai:Crossref": "ok",
     "language:arXiv": "ok",
-    "language:Europe PMC": "error: The read operation timed out",
+    "language:Europe PMC": "ok",
     "language:PubMed": "ok",
     "language:Crossref": "ok",
     "robotics:arXiv": "ok",
@@ -681,7 +655,7 @@
     "earth-space:PubMed": "ok",
     "earth-space:Crossref": "ok",
     "datacenters:arXiv": "ok",
-    "datacenters:Europe PMC": "error: The read operation timed out",
+    "datacenters:Europe PMC": "ok",
     "datacenters:PubMed": "ok",
     "datacenters:Crossref": "ok",
     "quantum:arXiv": "ok",
